@@ -1,0 +1,49 @@
+{
+  "name": "website",
+  "version": "0.0.1",
+  "description": "ACM website frontend",
+  "private": true,
+  "main": "main.js",
+  "scripts": {
+    "build": "webpack -p --progress --color",
+    "build-dev": "webpack-dev-server -w --progress --color"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uclaacm/website.git"
+  },
+  "author": "nkansal96",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/uclaacm/website/issues"
+  },
+  "homepage": "https://github.com/uclaacm/website#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.0.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-object-assign": "^6.22.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "css-loader": "^0.28.7",
+    "eslint": "^4.7.0",
+    "eslint-plugin-react": "^7.3.0",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "node-sass": "^4.5.3",
+    "sass-loader": "^6.0.6",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.8.2"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-redux": "^5.0.6",
+    "react-router-dom": "^4.2.2",
+    "react-router-redux": "^5.0.0-alpha.6",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0",
+    "whatwg-fetch": "^2.0.3"
+  }
+}
