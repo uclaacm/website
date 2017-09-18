@@ -2,8 +2,13 @@
  * Base styles and variables         *
  ************************************/
 
+$primary-blue: #3B59ED;
+$secondary-blue: #262938;
+
 $font-display: 'Poppins', 'Helvetica Neue', 'Helvetica', sans-serif;
 $font-primary-color: #333333;
+
+$font-body: 'Chivo', sans-serif;
 
 body {
 	margin: 0;
@@ -15,3 +20,4 @@ body {
  ************************************/
 
 @import 'components/Navbar/style';
+@import 'components/Home/style';
