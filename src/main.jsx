@@ -10,11 +10,7 @@ import {render} from 'react-dom';
 
 import {store, history} from 'reducers';
 
-class Main extends React.Component {
-	render() {
-		return <h1>Hello, World!</h1>;
-	}
-}
+import Home from 'containers/home';
 
 class App extends React.Component {
 	render(){
@@ -23,7 +19,12 @@ class App extends React.Component {
 				<ConnectedRouter onUpdate={() => window.scrollTo(0, 0)} history={history}>
 					<div>
 						<Switch>
-							<Route path="/" component={Main}/>
+							<Route path="/" component={Home}/>
+							<Route path="/about" component={Home}/>
+							<Route path="/events" component={Home}/>
+							<Route path="/projects" component={Home}/>
+							<Route path="/members" component={Home}/>
+							<Route path="/sponsors" component={Home}/>
 							<Redirect to="/"/>
 						</Switch>
 					</div>

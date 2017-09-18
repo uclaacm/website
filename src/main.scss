@@ -1,0 +1,17 @@
+/*************************************
+ * Base styles and variables         *
+ ************************************/
+
+$font-display: 'Poppins', 'Helvetica Neue', 'Helvetica', sans-serif;
+$font-primary-color: #333333;
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+/*************************************
+ * Import CSS styles for components  *
+ ************************************/
+
+@import 'components/Navbar/style';

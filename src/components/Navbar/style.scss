@@ -1,0 +1,72 @@
+#navbar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 60px;
+	width: 100%;
+	border-bottom: 1px solid #EAEAEA;
+	font-family: $font-display;
+	font-color: $font-primary-color;
+
+	#navbar-inner {
+		width: 100%;
+		margin: auto;
+		max-width: 1000px;
+	}
+
+	.nav-section.left {
+		text-align: left;
+		display: inline-block;
+	}
+
+	.nav-section.right {
+		text-align: right;
+		display: inline-block;
+		float: right;
+	}
+
+	#nav-title {
+		margin-left: 20px;
+	}
+
+	#acm-logo {
+		background-size: cover;
+		vertical-align: top;
+		height: 50px;
+		width: 50px;
+		margin-top: 5px;
+	}
+
+	#acm-title {
+		display: inline-block;
+		vertical-align: top;
+		line-height: 50px;
+		margin: 5px 10px;
+		font-size: 1.2em;
+	}
+
+	ul#nav-items {
+		list-style: none;
+		display: inline-block;
+	}
+
+	ul#nav-items li {
+		display: inline-block;
+		text-transform: lowercase;
+		font-size: 0.95em;
+		padding: 0px 20px;
+	}
+
+	ul#nav-items li:hover {
+		color: #666666;
+		cursor: pointer;
+	}
+
+	a, a:visited {
+		color: inherit;
+	}
+
+	a.active li {
+		font-weight: bold;
+	}
+}
