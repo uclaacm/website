@@ -5,7 +5,6 @@
 	height: 60px;
 	width: 100%;
 	background: white;
-	border-bottom: 1px solid #EAEAEA;
 	font-family: $font-display;
 	font-color: $font-primary-color;
 
@@ -56,10 +55,11 @@
 		text-transform: lowercase;
 		font-size: 0.95em;
 		padding: 0px 20px;
+		font-weight: bold;
 	}
 
 	ul#nav-items li:hover {
-		color: #666666;
+		color: #999999;
 		cursor: pointer;
 	}
 
@@ -67,7 +67,8 @@
 		color: inherit;
 	}
 
-	a.active li {
-		font-weight: bold;
+	a.active li,
+	a.active ul#nav-items li:hover {
+		color: $acm-cobalt !important;
 	}
 }
