@@ -126,11 +126,13 @@
 			margin: auto;
 			text-align: center;
 			float: none;
+			padding: 0px;
 		}
 
 		ul.nav-items li {
 			display: block;
 			margin: 40px auto;
+			padding: 0px;
 			text-transform: lowercase;
 			transform: translate3d(0, -50%, 0);
 			opacity: 0;
