@@ -31,9 +31,10 @@ $netsec-black: #3A3327;
 $netsec-tint: #EDCD98;
 
 $font-display: 'Poppins', 'Helvetica Neue', 'Helvetica', sans-serif;
-$font-primary-color: #333333;
-
+$font-header: 'Palanquin Dark', sans-serif;
 $font-body: 'Chivo', sans-serif;
+
+$font-primary-color: #333333;
 
 body {
 	margin: 0;
@@ -45,4 +46,5 @@ body {
  ************************************/
 
 @import 'components/Navbar/style';
+@import 'components/Button/style';
 @import 'components/Home/style';

@@ -1,5 +1,6 @@
 #navbar {
-	position: absolute;
+	position: fixed;
+	z-index: 10;
 	top: 0;
 	left: 0;
 	height: 60px;
@@ -55,7 +56,7 @@
 		text-transform: lowercase;
 		font-size: 0.95em;
 		padding: 0px 20px;
-		font-weight: bold;
+		font-weight: 600;
 	}
 
 	ul#nav-items li:hover {

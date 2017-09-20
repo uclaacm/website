@@ -1,0 +1,47 @@
+<svg width="350" height="350" viewBox="0 0 350 350" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>logo-netsec</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-3970 -4502)">
+<g id="logo-netsec">
+<g id="Vector">
+<use xlink:href="#path0_fill" transform="translate(3970 4502)" fill="#FFBA44"/>
+</g>
+<g id="Group">
+<g id="Group">
+<g id="Rectangle 5">
+<use xlink:href="#path1_fill" transform="matrix(0.999996 -0.00290966 0.00294411 0.999996 4093 4642.67)" fill="#FFFFFF"/>
+</g>
+</g>
+<g id="Group">
+<g id="Ellipse 7">
+<use xlink:href="#path2_fill" transform="matrix(1 2.83083e-09 9.39108e-09 1 4109.32 4601)" fill="#FFFFFF"/>
+</g>
+<g id="Ellipse 5">
+<use xlink:href="#path3_fill" transform="matrix(0.924481 -0.385018 0.390996 0.918828 4113.14 4623.53)" fill="#FFBA44"/>
+</g>
+<g id="Ellipse 6">
+<use xlink:href="#path4_fill" transform="matrix(0.789408 -0.613869 0.618368 0.785888 4132.18 4628.76)" fill="#FFFFFF"/>
+</g>
+</g>
+<g id="Rectangle 10">
+<use xlink:href="#path5_fill" transform="translate(4139.32 4657)" fill="#FFBA44"/>
+</g>
+<g id="Rectangle 11">
+<use xlink:href="#path6_fill" transform="translate(4139.32 4719)" fill="#FFBA44"/>
+</g>
+<g id="Rectangle 11">
+<use xlink:href="#path6_fill" transform="translate(4139.32 4697)" fill="#FFBA44"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 342.274 193.669L 193.669 342.274C 183.367 352.575 166.633 352.575 156.331 342.274L 7.72592 193.669C -2.57531 183.367 -2.57531 166.633 7.72592 156.331L 156.331 7.72592C 166.633 -2.57531 183.367 -2.57531 193.669 7.72592L 342.274 156.331C 352.575 166.633 352.575 183.367 342.274 193.669Z"/>
+<path id="path1_fill" d="M 0 10C 0 4.47715 4.47715 0 10 0L 92.9363 0C 98.4591 0 102.936 4.47715 102.936 10L 102.936 92.3322C 102.936 97.855 98.4591 102.332 92.9363 102.332L 10 102.332C 4.47715 102.332 0 97.855 0 92.3322L 0 10Z"/>
+<path id="path2_fill" d="M 71 35.5C 71 55.1061 55.1061 71 35.5 71C 15.8939 71 0 55.1061 0 35.5C 0 15.8939 15.8939 0 35.5 0C 55.1061 0 71 15.8939 71 35.5Z"/>
+<path id="path3_fill" d="M 48.1791 24.2297C 48.1791 37.6114 37.3939 48.4594 24.0896 48.4594C 10.7853 48.4594 0 37.6114 0 24.2297C 0 10.848 10.7853 0 24.0896 0C 37.3939 0 48.1791 10.848 48.1791 24.2297Z"/>
+<path id="path4_fill" d="M 18.2622 9.18135C 18.2622 14.2521 14.1741 18.3627 9.13112 18.3627C 4.08814 18.3627 0 14.2521 0 9.18135C 0 4.11063 4.08814 0 9.13112 0C 14.1741 0 18.2622 4.11063 18.2622 9.18135Z"/>
+<path id="path5_fill" d="M 0 2C 0 0.895431 0.895431 0 2 0L 9 0C 10.1046 0 11 0.895431 11 2L 11 68.5833C 11 69.6879 10.1046 70.5833 9 70.5833L 2 70.5833C 0.895431 70.5833 0 69.6879 0 68.5833L 0 2Z"/>
+<path id="path6_fill" d="M 0 2C 0 0.895431 0.895431 0 2 0L 20 0C 21.1046 0 22 0.895431 22 2L 22 9C 22 10.1046 21.1046 11 20 11L 2 11C 0.895431 11 0 10.1046 0 9L 0 2Z"/>
+</defs>
+</svg>

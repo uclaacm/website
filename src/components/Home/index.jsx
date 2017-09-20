@@ -1,6 +1,8 @@
 import React from 'react';
+import Config from 'config';
 
 import Navbar from 'components/Navbar';
+import Button from 'components/Button';
 
 Number.prototype.map = function(fn) {
 	const res = [];
@@ -10,26 +12,24 @@ Number.prototype.map = function(fn) {
 };
 
 const generateRows = (n, m, classPattern=['']) => {
-	return n.map(i => {
-		return <div className="square-col" key={i}>
+	return n.map(i =>
+		<div className="square-col" key={i}>
 			{m.map(j => {
 				const classNames = ['square'];
-				if (classPattern.length > 0) {
-					const name = classPattern[j % classPattern.length];
-					if (name !== "") {
-						classNames.push(classPattern[j % classPattern.length]);
-					} else {
-						const r = Math.random();
-						if (r < 0.10)
-							classNames.push('white');
-						else if (r < 0.40)
-							classNames.push('light');
-					}
+				const name = classPattern[j % classPattern.length];
+				if (name !== "") {
+					classNames.push(classPattern[j % classPattern.length]);
+				} else {
+					const r = Math.random();
+					if (r < 0.08)
+						classNames.push('white');
+					else if (r < 0.40)
+						classNames.push('light');
 				}
 				return <div className={classNames.join(" ")} key={j} />
 			})}
 		</div>
-	});
+	);
 }
 
 export default class Home extends React.Component {
@@ -43,11 +43,10 @@ export default class Home extends React.Component {
 		this.timer = setInterval(() => {
 			const committees = ['acm', 'hack', 'studio', 'icpc', 'netsec', 'w', 'ai'];
 			const el = document.querySelector('.banner');
-			console.log(el);
 			el.classList.remove(committees[this.color]);
 			this.color = (this.color + 1) % committees.length;
 			el.classList.add(committees[this.color]);
-			this.setState(this.state);
+			this.forceUpdate();
 		}, 3000)
 	}
 
@@ -71,6 +70,21 @@ export default class Home extends React.Component {
 					<div className="title">
 						<h1>code the future.</h1>
 					</div>
+				</div>
+				<h1>The largest Computer Science community at UCLA</h1>
+				<div className="committees">
+					{ Config.committees.map(committee =>
+						<div key={committee.name} className={`committee ${committee.class}`}>
+							<img src={committee.image} />
+							<div className="info">
+								<h2><span>ACM</span> {committee.name}</h2>
+								<p>{committee.tagline}</p>
+							</div>
+						</div>
+					)}
+				</div>
+				<div className="button-section">
+					<Button text="Learn More" />
 				</div>
 			</div>
 		);
