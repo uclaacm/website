@@ -5,6 +5,7 @@ import Navbar from 'components/Navbar';
 import Button from 'components/Button';
 import Footer from 'components/Footer';
 import Banner from 'components/Home/Banner';
+import Carousal from 'components/Home/Carousal';
 import Committees from 'components/Home/Committees';
 
 export default class Home extends React.Component {
@@ -20,7 +21,8 @@ export default class Home extends React.Component {
 				<Committees committees={Config.committees} />
 				<div className="button-section">
 					<Button text="Learn More" />
-				</div>
+				</div><br />
+				<Carousal images={Config.carousal.images} />
 				<Footer />
 			</div>
 		);

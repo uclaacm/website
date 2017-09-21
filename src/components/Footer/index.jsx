@@ -10,8 +10,7 @@ export default class Footer extends React.Component {
 							<h3>Find us on social media</h3>
 							<div className="sm-icon" id="twitter" />
 							<div className="sm-icon" id="facebook" />
-							<div className="sm-icon" id="medium" />
-							<div className="sm-icon" id="medium" />
+							<div className="sm-icon" id="github" />
 							<div className="sm-icon" id="medium" />
 						</div>
 						<div className="footer-item">

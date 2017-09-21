@@ -38,7 +38,17 @@
 		border-radius: 2px;
 		margin: 0px 3px;
 		display: inline-block;
-		background: #676f98;
+		background-color: #676f98;
+
+		&#facebook { background-image: url(/images/social_media/facebook.svg); }
+		&#twitter { background-image: url(/images/social_media/twitter.svg); }
+		&#github { background-image: url(/images/social_media/github.svg); }
+		&#medium { background-image: url(/images/social_media/medium.svg); }
+
+		&:hover {
+			background-color: $acm-black;
+			cursor: pointer;
+		}
 	}
 
 	#footer-bottom {

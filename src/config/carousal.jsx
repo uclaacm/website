@@ -1,0 +1,28 @@
+export default {
+	images: [
+		// '/images/carousal/1.png',
+		// '/images/carousal/2.png',
+		// '/images/carousal/3.png',
+		// '/images/carousal/4.png',
+		// '/images/carousal/5.png',
+		// '/images/carousal/6.png',
+		// '/images/carousal/1.png',
+		// '/images/carousal/2.png',
+		// '/images/carousal/3.png',
+		// '/images/carousal/4.png',
+		// '/images/carousal/5.png',
+		// '/images/carousal/6.png',
+		'https://scontent.fsnc1-1.fna.fbcdn.net/v/t31.0-8/19223040_1672484212791649_8079993358413697708_o.jpg?oh=0a32738f58526aecf5edfbd4160448d4&oe=5A39F081',
+		'https://scontent.fsnc1-1.fna.fbcdn.net/v/t31.0-8/16179783_1467185846654821_1550326942890993244_o.jpg?oh=83b9cbb58b470db365a30489ca37d03f&oe=5A5CE14C',
+		'https://scontent.fsnc1-1.fna.fbcdn.net/v/t31.0-8/12240437_871067436341437_4575689715690800629_o.jpg?oh=5e840f07ab9667188ad884291732ac78&oe=5A5A26DD',
+		'https://scontent.fsnc1-1.fna.fbcdn.net/v/t31.0-8/19400543_1672484612791609_5721528249738809043_o.jpg?oh=5f239607d512091cfc6f886e6f817427&oe=5A5018DE',
+		'https://scontent.fsnc1-1.fna.fbcdn.net/v/t31.0-8/19243098_1672482409458496_17941831125917935_o.jpg?oh=225ca02f0803c795ce9d109dea56714e&oe=5A4280C1',
+		'https://scontent.fsnc1-1.fna.fbcdn.net/v/t31.0-8/19264386_1672484389458298_4639295939221124163_o.jpg?oh=30eb9d252980fc334213b89604c241a8&oe=5A39D9CC',
+		'https://scontent.fsnc1-1.fna.fbcdn.net/v/t31.0-8/19250424_1671296932910377_1646818750920237091_o.jpg?oh=bccb61c2fd21dd30c544db473f265b54&oe=5A422DDE',
+		'https://scontent.fsnc1-1.fna.fbcdn.net/v/t31.0-8/19222641_10203594072967983_1705411486598077192_o.jpg?oh=1355079dbaf1690c560a34ca23d3d21c&oe=5A50DDCD',
+		'https://scontent.fsnc1-1.fna.fbcdn.net/v/t31.0-8/14615674_1314756608564413_3266422273247914982_o.jpg?oh=39ffa0328dad01ac2ac0a33eadbae2fd&oe=5A3A93A9',
+		'https://scontent.fsnc1-1.fna.fbcdn.net/v/t31.0-8/13254662_1177941972245878_997037389007426763_o.jpg?oh=95feea3f606d5caac57d0f1e9238e8a8&oe=5A5EEF58',
+		'https://scontent.fsnc1-1.fna.fbcdn.net/v/t31.0-8/14570634_1314755891897818_4278307639962782570_o.jpg?oh=83378ac3923c4d9d9e8a543195196255&oe=5A42E200',
+		'https://scontent.fsnc1-1.fna.fbcdn.net/v/t31.0-8/1504270_725493037490776_1101746_o.jpg?oh=53946e81caa6d29133b08f0c3cd021d9&oe=5A488855',
+	]
+}

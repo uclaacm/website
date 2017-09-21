@@ -1,0 +1,32 @@
+#carousal {
+	height: 480px;
+	min-width: 100%;
+	background: #FAFAFA;
+	overflow: hidden;
+	position: relative;
+
+	#carousal-inner {
+		width: 1600px;
+	}
+
+	.carousal-sect {
+		position: absolute;
+		background: linear-gradient(rgba($acm-black, 0.7), rgba($acm-black, 1.0));
+		width: 1600px;
+		top: 0;
+
+		div {
+			width: 300px;
+			height: 240px;
+			opacity: 0.8;
+			background-size: cover;
+			display: inline-block;
+			vertical-align: top;
+			margin: 0;
+			padding: 0;
+
+			&.red { background: red; }
+			&.blue { background: blue; }
+		}
+	}
+}
