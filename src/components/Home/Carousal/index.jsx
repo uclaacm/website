@@ -2,35 +2,26 @@ import React from 'react';
 
 // width of each img in px
 // needs to be updated if style.scss changes
-const IMAGE_WIDTH = 300;
+const IMAGE_WIDTH = 360;
 
 export default class Carousal extends React.Component {
 	constructor(props) {
 		super(props);
 
 		const numItems = this.props.images.length;
-		const itemsA = this.props.images.slice(0, numItems / 2);
-		const itemsB = this.props.images.slice(numItems / 2);
+		const sections = [];
+
+		for (let i = 0; i < numItems; i += 4) {
+			sections.push({
+				left: (i / 4) * (IMAGE_WIDTH * 2),
+				width: (IMAGE_WIDTH * 2),
+				items: this.props.images.slice(i, i + 4).map((item, i) => <div style={{backgroundImage: 'url('+item+')'}} key={i} />),
+			});
+		}
 
 		this.timer = null;
 		this.state = {
-			sections: [
-				{
-					left: 0,
-					width: IMAGE_WIDTH * numItems / 4,
-					items: itemsA.map((item, i) => <div style={{backgroundImage: 'url('+item+')'}} key={i} />),
-				},
-				{
-					left: IMAGE_WIDTH * numItems / 4,
-					width: IMAGE_WIDTH * numItems / 4,
-					items: itemsB.map((item, i) => <div style={{backgroundImage: 'url('+item+')'}} key={i} />),
-				},
-				{
-					left: IMAGE_WIDTH * numItems / 2,
-					width: IMAGE_WIDTH * numItems / 4,
-					items: itemsA.map((item, i) => <div style={{backgroundImage: 'url('+item+')'}} key={i} />),
-				},
-			],
+			sections,
 		};
 	}
 
