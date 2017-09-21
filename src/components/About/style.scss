@@ -1,0 +1,51 @@
+.shadow-square {
+		height: 200px;
+		width: 200px;
+		position: absolute;
+		border-radius: 20px;
+		background: $acm-tint;
+		right: 30px;
+		top: 70px;
+		transform: rotate(45deg);
+}
+
+.square-splash {
+	position: absolute;
+	height: 250px;
+	width: 250px;
+	left: 30px;
+	top: -65px;
+	border-radius: 25px;
+	background-image: url(/images/square1.jpg);
+	background-size: cover;
+	background-color: $acm-cobalt;
+}
+
+.square-small {
+	position: absolute;
+	height: 50px;
+	width: 50px;
+	right: -110px;
+	top: 0px;
+	border-radius: 5px;
+	background-color: $acm-cobalt;
+}
+
+.square-tiny {
+	position: absolute;
+	height: 18px;
+	width: 18px;
+	right: -105px;
+	top: -25px;
+	border-radius: 2px;
+	background-color: $acm-cobalt;
+}
+
+.text-section {
+	display: inline-block;
+	max-width: 56%;
+}
+
+.about-page .content-section {
+	margin: 20px auto 40px auto;
+}

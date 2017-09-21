@@ -11,6 +11,7 @@ import {render} from 'react-dom';
 import {store, history} from 'reducers';
 
 import Home from 'containers/home';
+import About from 'containers/about';
 
 // hack for convenience
 Number.prototype.map = function(fn) {
@@ -27,10 +28,10 @@ class App extends React.Component {
 				<ConnectedRouter onUpdate={() => window.scrollTo(0, 0)} history={history}>
 					<div>
 						<Switch>
-							<Route path="/" component={Home}/>
-							<Route path="/about" component={Home}/>
-							<Route path="/events" component={Home}/>
-							<Route path="/sponsors" component={Home}/>
+							<Route exact path="/" component={Home}/>
+							<Route exact path="/about" component={About}/>
+							<Route exact path="/events" component={Home}/>
+							<Route exact path="/sponsors" component={Home}/>
 							<Redirect to="/"/>
 						</Switch>
 					</div>

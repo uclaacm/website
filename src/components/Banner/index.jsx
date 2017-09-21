@@ -29,7 +29,9 @@ export default class Banner extends React.Component {
 	}
 
 	componentDidMount() {
-		const committees = ['acm', 'hack', 'studio', 'icpc', 'netsec', 'w', 'ai'];
+		const committees = ['acm'];
+		if (!this.props.decorative)
+			committees.push('hack', 'studio', 'icpc', 'netsec', 'w', 'ai');
 		const el = document.querySelector('.banner');
 		this.timer = setInterval(() => {
 			el.classList.remove(committees[this.color]);
@@ -45,28 +47,31 @@ export default class Banner extends React.Component {
 	}
 
 	render() {
-		const sideCols = this.props.sideCols || 7;
-		const height = this.props.height || 7;
+		const decorative = this.props.decorative || false;
+
+		const sideCols = this.props.sideCols || (decorative ? 14 : 7);
+		const height = this.props.height || (decorative ? 2 : 7);
 		const width = this.props.width || 5;
 		return (
-			<div className="banner">
+			<div className={`banner ${ decorative ? 'decorative' : '' }`}>
 				<div className="square-col-container">
-					{ generateCols(1, height, ['','','','','white','white','white']) }
-					{ generateCols(1, height, ['','','','','','white','white']) }
+					{ (!decorative) && generateCols(1, height, ['','','','','white','white','white']) }
+					{ (!decorative) && generateCols(1, height, ['','','','','','white','white']) }
 					{ generateCols(1, height, ['','','','','','','white']) }
 					{ generateCols(sideCols, height) }
-					{ generateCols(1, height, ['','','white','white','','','']) }
-					{ generateCols(width, height, ['','','white','white','white','','']) }
-					{ generateCols(1, height, ['','','','white','white','','']) }
+					{ (!decorative) && generateCols(1, height, ['','','white','white','','','']) }
+					{ (!decorative) && generateCols(width, height, ['','','white','white','white','','']) }
+					{ (!decorative) && generateCols(1, height, ['','','','white','white','','']) }
 					{ generateCols(sideCols, height) }
 					{ generateCols(1, height, ['white','','','','','','']) }
-					{ generateCols(1, height, ['white','white','','','','','']) }
-					{ generateCols(1, height, ['white','white','white','','','','']) }
-
+					{ (!decorative) && generateCols(1, height, ['white','white','','','','','']) }
+					{ (!decorative) && generateCols(1, height, ['white','white','white','','','','']) }
 				</div>
-				<div className="title">
-					<h1>code the future.</h1>
-				</div>
+				{ (!decorative) &&
+					<div className="title">
+						<h1>code the future.</h1>
+					</div>
+				}
 			</div>
 		);
 	}
