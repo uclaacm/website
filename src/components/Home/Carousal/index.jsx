@@ -15,7 +15,7 @@ export default class Carousal extends React.Component {
 			sections.push({
 				left: (i / 4) * (IMAGE_WIDTH * 2),
 				width: (IMAGE_WIDTH * 2),
-				items: this.props.images.slice(i, i + 4).map((item, i) => <div style={{backgroundImage: 'url('+item+')'}} key={i} />),
+				items: this.props.images.slice(i, i + 4).map((item, i) => <a href={item} target="_BLANK" key={i}><div style={{backgroundImage: 'url('+item+')'}} /></a>),
 			});
 		}
 
