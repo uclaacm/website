@@ -63,17 +63,20 @@
 		transition: 0.2s;
 
 		&.button {
-			color: white;
+			background: white;
 			border-radius: 4px;
-			background-color: $acm-cobalt;
+			color: $acm-cobalt;
+			border: 2px solid $acm-cobalt;
 		}
 
 		&.button:hover {
 			color: white;
+			background: $acm-cobalt;
 		}
 
 		&.button:active {
 			background-color: $acm-black;
+			border: 2px solid $acm-black;
 		}
 	}
 
