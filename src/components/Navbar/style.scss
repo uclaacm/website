@@ -3,10 +3,10 @@
 	z-index: 10;
 	top: 0;
 	left: 0;
-	height: 60px;
+	height: 70px;
 	width: 100%;
 	background: white;
-	box-shadow: 0px 0px 3px #EAEAEA;
+	box-shadow: 0px 0px 4px #E2E2E2;
 	font-family: $font-display;
 	font-color: $font-primary-color;
 
@@ -17,18 +17,14 @@
 	}
 
 	.nav-section.left {
-		text-align: left;
-		display: inline-block;
+		float: left;
+		margin-left: 20px;
 	}
 
 	.nav-section.right {
 		text-align: right;
-		display: inline-block;
+		margin-right: 20px;
 		float: right;
-	}
-
-	#nav-title {
-		margin-left: 20px;
 	}
 
 	#acm-logo {
@@ -36,19 +32,22 @@
 		vertical-align: top;
 		height: 50px;
 		width: 50px;
-		margin-top: 5px;
+		margin-top: 10px;
 	}
 
 	#acm-title {
 		display: inline-block;
 		vertical-align: top;
-		line-height: 50px;
-		margin: 5px 10px;
+		line-height: 70px;
+		margin: 0px 10px;
 		font-size: 1.2em;
 	}
 
 	ul.nav-items {
 		list-style: none;
+		height: 100%;
+		margin: 0;
+		padding: 0;
 		display: inline-block;
 	}
 
@@ -57,7 +56,25 @@
 		text-transform: lowercase;
 		font-size: 0.95em;
 		padding: 0px 20px;
+		height: 40px;
+		line-height: 40px;
+		margin-top: 15px;
 		font-weight: 600;
+		transition: 0.2s;
+
+		&.button {
+			color: white;
+			border-radius: 4px;
+			background-color: $acm-cobalt;
+		}
+
+		&.button:hover {
+			color: white;
+		}
+
+		&.button:active {
+			background-color: $acm-black;
+		}
 	}
 
 	ul.nav-items li:hover {
@@ -76,7 +93,7 @@
 	.hamburger-icon {
 		height: 50px;
 		width: 50px;
-		margin: 5px 20px;
+		margin: 10px 20px;
 		display: flex;
 		justify-content: center;
 		flex-direction: column;
@@ -124,6 +141,9 @@
 			list-style: none;
 			display: block;
 			margin: auto;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
 			text-align: center;
 			float: none;
 			padding: 0px;
@@ -139,6 +159,14 @@
 			font-size: 1.8em;
 			font-weight: 600;
 			transition: all 1.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+
+			&.button {
+				padding: 10px 20px;
+			}
+
+			&.button:hover {
+				color: white;
+			}
 		}
 
 		ul.nav-items li:hover {

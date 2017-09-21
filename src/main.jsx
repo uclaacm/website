@@ -12,6 +12,14 @@ import {store, history} from 'reducers';
 
 import Home from 'containers/home';
 
+// hack for convenience
+Number.prototype.map = function(fn) {
+	const res = [];
+	for (let i = 0; i < this.valueOf(); i++)
+		res.push(fn(i, res));
+	return res;
+};
+
 class App extends React.Component {
 	render(){
 		return (
@@ -22,8 +30,6 @@ class App extends React.Component {
 							<Route path="/" component={Home}/>
 							<Route path="/about" component={Home}/>
 							<Route path="/events" component={Home}/>
-							<Route path="/projects" component={Home}/>
-							<Route path="/members" component={Home}/>
 							<Route path="/sponsors" component={Home}/>
 							<Redirect to="/"/>
 						</Switch>

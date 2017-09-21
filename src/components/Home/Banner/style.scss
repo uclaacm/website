@@ -1,0 +1,89 @@
+.banner {
+	width: 100%;
+	overflow: hidden;
+	height: 360px;
+	margin-top: 50px;
+	position: relative;
+
+	.square-col-container {
+		width: 150%;
+		height: 100%;
+		margin-left: -25%;
+		overflow: hidden;
+		display: flex;
+		justify-content: center;
+		flex-direction: row;
+	}
+
+	.square-col {
+		height: 100%;
+		width: 50px;
+		margin: 0px 10px;
+		padding: 0px 5px;
+		transform: rotate(45deg);
+	}
+
+	.square {
+		height: 50px;
+		width: 50px;
+		margin-bottom: 6px;
+		border-radius: 5px;
+		transition: background 2.5s ease-in-out;
+	}
+
+	.square      { background-color: $acm-cobalt; }
+	.square.dark  { background-color: $acm-black; }
+	.square.light { background-color: $acm-tint; }
+	.square.white { background-color: white !important; }
+
+	&.hack .square       { background-color: $hack-purple; }
+	&.hack .square.dark  { background-color: $hack-black; }
+	&.hack .square.light { background-color: $hack-tint; }
+
+	&.ai .square         { background-color: $ai-arctic; }
+	&.ai .square.dark         { background-color: $ai-black; }
+	&.ai .square.light         { background-color: $ai-tint; }
+
+	&.w .square          { background-color: $w-teal; }
+	&.w .square.dark          { background-color: $w-black; }
+	&.w .square.light          { background-color: $w-tint; }
+
+	&.netsec .square    { background-color: $netsec-amber; }
+	&.netsec .square.dark    { background-color: $netsec-black; }
+	&.netsec .square.light    { background-color: $netsec-tint; }
+
+	&.studio .square    { background-color: $studio-raspberry; }
+	&.studio .square.dark    { background-color: $studio-black; }
+	&.studio .square.light    { background-color: $studio-tint; }
+
+	&.icpc .square      { background-color: $icpc-tangerine; }
+	&.icpc .square.dark      { background-color: $icpc-black; }
+	&.icpc .square.light      { background-color: $icpc-tint; }
+
+	.title {
+		position: absolute;
+		top: 50px;
+		left: 0;
+		height: 280px;
+		width: 100%;
+		line-height: 280px;
+		text-align: center;
+
+		h1 {
+			font-family: $font-display;
+			font-weight: bold;
+			color: $acm-cobalt;
+			margin: 0;
+			padding: 0;
+			font-size: 2.3em;
+			transition: color 2.5s ease-in-out;
+		}
+	}
+
+	&.hack   .title h1 { color: $hack-purple; }
+	&.ai     .title h1 { color: $ai-arctic; }
+	&.w      .title h1 { color: $w-teal; }
+	&.netsec .title h1 { color: $netsec-amber; }
+	&.studio .title h1 { color: $studio-raspberry; }
+	&.icpc   .title h1 { color: $icpc-tangerine; }
+}

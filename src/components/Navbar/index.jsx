@@ -39,8 +39,8 @@ export default class Navbar extends React.Component {
 						<ul className="nav-items">
 							<NavLink to="/about"><li>About</li></NavLink>
 							<NavLink to="/events"><li>Events</li></NavLink>
-							<NavLink to="/projects"><li>Projects</li></NavLink>
-							<NavLink to="/members"><li>Members</li></NavLink>
+							<NavLink to="/sponsors"><li>Sponsors</li></NavLink>
+							<a href="https://members.uclaacm.com"><li className="button">Member Login</li></a>
 						</ul>
 					</div>
 					<div className="nav-section right" id="mobile-nav">
@@ -56,8 +56,8 @@ export default class Navbar extends React.Component {
 							<ul className="nav-items">
 								<NavLink to="/about"><li>About</li></NavLink>
 								<NavLink to="/events"><li>Events</li></NavLink>
-								<NavLink to="/projects"><li>Projects</li></NavLink>
-								<NavLink to="/members"><li>Members</li></NavLink>
+								<NavLink to="/sponsors"><li>Sponsors</li></NavLink>
+								<a href="https://members.uclaacm.com"><li className="button">Member Login</li></a>
 							</ul>
 						</div>
 					</div>
