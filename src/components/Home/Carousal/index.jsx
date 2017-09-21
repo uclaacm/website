@@ -39,6 +39,11 @@ export default class Carousal extends React.Component {
 		}, 90);
 	}
 
+	componentWillUnmount() {
+		clearInterval(this.timer);
+		this.timer = null;
+	}
+
 	render() {
 		return (
 			<div id="carousal">

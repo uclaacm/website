@@ -1,14 +1,13 @@
 import 'main.scss';
-import 'babel-polyfill';
-import 'whatwg-fetch';
+// import 'babel-polyfill';
+// import 'whatwg-fetch';
 
 import React from 'react';
-import {Provider, createStore} from 'react-redux';
-import {Route, Switch, Redirect} from 'react-router-dom';
-import {ConnectedRouter} from 'react-router-redux';
+// import {Provider, createStore} from 'react-redux';
+import {Route, Switch, Redirect, BrowserRouter} from 'react-router-dom';
 import {render} from 'react-dom';
 
-import {store, history} from 'reducers';
+// import {store} from 'reducers';
 
 import Home from 'containers/home';
 import About from 'containers/about';
@@ -24,8 +23,8 @@ Number.prototype.map = function(fn) {
 class App extends React.Component {
 	render(){
 		return (
-			<Provider store={store}>
-				<ConnectedRouter onUpdate={() => window.scrollTo(0, 0)} history={history}>
+			// <Provider store={store}>
+				<BrowserRouter onUpdate={() => window.scrollTo(0, 0)}>
 					<div>
 						<Switch>
 							<Route exact path="/" component={Home}/>
@@ -35,8 +34,8 @@ class App extends React.Component {
 							<Redirect to="/"/>
 						</Switch>
 					</div>
-				</ConnectedRouter>
-			</Provider>
+				</BrowserRouter>
+			// </Provider>
 		);
 	}
 }

@@ -42,8 +42,8 @@ export default class Banner extends React.Component {
 	}
 
 	componentWillUnmount() {
-		clearInterval(timer);
-		timer = null;
+		clearInterval(this.timer);
+		this.timer = null;
 	}
 
 	render() {
