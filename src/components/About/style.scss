@@ -1,12 +1,16 @@
-.shadow-square {
-		height: 200px;
-		width: 200px;
-		position: absolute;
-		border-radius: 20px;
-		background: $acm-tint;
-		right: 30px;
-		top: 70px;
-		transform: rotate(45deg);
+.square-ornament {
+	height: 200px;
+	width: 200px;
+	position: absolute;
+	border-radius: 20px;
+	background: $acm-tint;
+	right: 30px;
+	top: 70px;
+	transform: rotate(45deg);
+}
+
+.square-ornament.ornament-left {
+	left: -70px;
 }
 
 .square-splash {
@@ -41,11 +45,39 @@
 	background-color: $acm-cobalt;
 }
 
-.text-section {
-	display: inline-block;
-	max-width: 56%;
-}
-
 .about-page .content-section {
 	margin: 20px auto 40px auto;
+
+	.text-section {
+		display: inline-block;
+		text-align: left;
+		max-width: 56%;
+	}
+
+	h1 {
+		text-align: left;
+	}
+}
+
+@media (max-width: 600px) {
+	.square-ornament {
+		position: relative;
+		display: block;
+		margin: 0px auto 150px auto;
+
+		left: -70px;
+		right: 0px;
+	}
+
+	.about-page .content-section {
+		.text-section {
+			display: inline-block;
+			text-align: left;
+			max-width: 100%;
+		}
+
+		h1 {
+			text-align: center;
+		}
+	}
 }
