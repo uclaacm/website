@@ -21,7 +21,20 @@ export default class Home extends React.Component {
 				<Committees committees={Config.committees} />
 				<div className="button-section center">
 					<Button text="Learn More" />
-				</div><br />
+				</div><br /><br /><br />
+				<div className="full-width blue">
+					<div id="sign-up-section" className="content-section">
+						<div id="sign-up-left" className="half-width">
+							<h2>Want to stay updated on what's going on?</h2>
+						</div>
+						<div id="sign-up-right" className="half-width">
+							<form>
+								<input type="text" placeholder="enter your email..." />
+								<div id="submit-form"><i className="fa fa-chevron-right"></i></div>
+							</form>
+						</div>
+					</div>
+				</div>
 				<Carousal images={Config.carousal.images} />
 				<Footer />
 			</div>
