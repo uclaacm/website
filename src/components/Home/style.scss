@@ -121,3 +121,15 @@
 		}
 	}
 }
+
+@media (max-width: 600px) {
+	.half-width {
+		width: 100%;
+	}
+
+	#sign-up-section {
+		text-align: center;
+		flex-direction: column;
+		padding-bottom: 40px;
+	}
+}
