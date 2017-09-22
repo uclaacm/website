@@ -20,7 +20,7 @@ export default [
 	{
 		name: "Studio",
 		class: "studio",
-		tagline: "[stil waiting on Studio's tagline]",
+		tagline: "Creative Expression through Games and VR",
 		image: "/images/committees/logo-studio.svg",
 	},
 	{
