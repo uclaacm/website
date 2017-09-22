@@ -3,6 +3,7 @@ import React from 'react';
 // width of each img in px
 // needs to be updated if style.scss changes
 const IMAGE_WIDTH = 360;
+const ITEMS_PER_SECTION = 4;
 
 export default class Carousal extends React.Component {
 	constructor(props) {
@@ -10,11 +11,12 @@ export default class Carousal extends React.Component {
 
 		const numItems = this.props.images.length;
 		const sections = [];
+		this.sectionWidth = (IMAGE_WIDTH * ITEMS_PER_SECTION / 2);
 
-		for (let i = 0; i < numItems; i += 4) {
+		for (let i = 0; i < numItems; i += ITEMS_PER_SECTION) {
 			sections.push({
-				left: (i / 4) * (IMAGE_WIDTH * 2),
-				width: (IMAGE_WIDTH * 2),
+				left: (i / ITEMS_PER_SECTION) * this.sectionWidth,
+				width: this.sectionWidth,
 				items: this.props.images.slice(i, i + 4).map((item, i) => <a href={item} target="_BLANK" key={i}><div style={{backgroundImage: 'url('+item+')'}} /></a>),
 			});
 		}
@@ -30,8 +32,8 @@ export default class Carousal extends React.Component {
 			this.setState({
 				sections: this.state.sections.map(section => {
 					section.left -= 1;
-					if (section.left < -(IMAGE_WIDTH * section.items.length)) {
-						section.left = ((this.props.images.length - 1) / 4) * (IMAGE_WIDTH * 2);
+					if (section.left < -this.sectionWidth) {
+						section.left = (this.state.sections.length - 1) * this.sectionWidth;
 					}
 					return section;
 				})
