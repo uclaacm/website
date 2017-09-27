@@ -20,7 +20,8 @@ export default class Home extends React.Component {
 				</div>
 				<Committees committees={Config.committees} />
 				<div className="button-section center">
-					<Button text="Learn More" />
+					{ /** CHANGE THIS LINK TO ABOUT PAGE LATER */ }
+					<a href="https://www.facebook.com/uclaacm" target="_BLANK"><Button text="Learn More" /></a>
 				</div><br /><br /><br />
 				<div className="full-width blue">
 					<div id="sign-up-section" className="content-section">
