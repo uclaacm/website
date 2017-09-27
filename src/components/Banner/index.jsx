@@ -49,7 +49,7 @@ export default class Banner extends React.Component {
 	render() {
 		const decorative = this.props.decorative || false;
 
-		const sideCols = this.props.sideCols || (decorative ? 14 : 7);
+		const sideCols = this.props.sideCols || (decorative ? 12 : 7);
 		const height = this.props.height || (decorative ? 2 : 7);
 		const width = this.props.width || 5;
 		return (

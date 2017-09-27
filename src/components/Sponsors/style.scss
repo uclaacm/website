@@ -1,0 +1,18 @@
+.sponsor-container {
+	text-align: center;
+	margin: 30px auto;
+
+	.sponsor {
+		max-width: 200px;
+		max-height: 80px;
+		background-position: 50 50%;
+		vertical-align: middle;
+		display: inline-block;
+		padding: 30px;
+
+		&.sponsor-big {
+			max-width: 400px;
+			max-height: 180px;
+		}
+	}
+}
