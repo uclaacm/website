@@ -41,6 +41,7 @@
 		line-height: 70px;
 		margin: 0px 10px;
 		font-size: 1.2em;
+		margin-top: 2px;
 	}
 
 	ul.nav-items {
@@ -58,13 +59,14 @@
 		padding: 0px 20px;
 		height: 40px;
 		line-height: 40px;
-		margin-top: 15px;
+		margin-top: 13px;
 		font-weight: 600;
 		transition: 0.2s;
 
 		&.button {
 			background: white;
 			border-radius: 4px;
+			margin-left: 15px;
 			color: $acm-cobalt;
 			border: 2px solid $acm-cobalt;
 		}
