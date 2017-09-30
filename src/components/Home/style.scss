@@ -56,6 +56,7 @@
 
 .half-width {
 	width: 50%;
+	text-align: center;
 }
 
 .blue {
@@ -68,57 +69,41 @@
 	}
 }
 
+#achievements-container {
+	width: 100%;
+	text-align: center;
+
+	.achievement {
+		display: inline-block;
+		vertical-align: top;
+		width: 350px;
+		min-height: 200px;
+		margin: 20px;
+
+		img {
+			text-align: center;
+			max-height: 200px;
+			max-width: 350px;
+		}
+
+		h3 {
+			font-weight: bold;
+			font-size: 0.8em;
+			text-transform: uppercase;
+			font-family: $font-body;
+		}
+	}
+}
+
 #sign-up-section {
 	display: flex;
 	flex-direction: row;
 
 	#sign-up-right {
 		display: flex;
-		flex-direction: column;
-		justify-content: center;
-
-		form {
-			display: flex;
-			flex-direction: row;
-			justify-content: center;
-
-			input[type=text] {
-				border: none;
-				outline: none;
-				width: 80%;
-				max-width: 240px;
-				height: 30px;
-				padding: 0px 10px;
-				border-top-left-radius: 3px;
-				border-bottom-left-radius: 3px;
-				color: $font-primary-color;
-				font-family: $font-body;
-				font-weight: 300;
-				font-size: 1em;
-				background: white;
-				vertical-align: middle;
-				transition: 0.35s cubic-bezier(0.05, 1.04, 0.72, 0.98);
-			}
-
-			input[type=text]:focus {
-				background: #f0f1f5;
-				height: 28px;
-				border-bottom: 2px solid $acm-black;
-				color: $acm-black;
-			}
-
-			#submit-form {
-				height: 30px;
-				width: 30px;
-				line-height: 32px;
-				text-align: center;
-				cursor: pointer;
-				color: white;
-				background: $acm-black;
-				border-top-right-radius: 3px;
-				border-bottom-right-radius: 3px;
-			}
-		}
+		align-items: center;
+  	justify-content: center;
+		text-align: center;
 	}
 }
 

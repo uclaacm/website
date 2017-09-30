@@ -12,16 +12,45 @@ button {
 	background-color: $acm-cobalt;
 	display: inline-block;
 	transition: 0.2s;
+
+	&:hover {
+		cursor: pointer;
+		background-color: $acm-black;
+		// margin-top: 1px;
+		box-shadow: 0px 2px 0px $acm-black;
+	}
+
+	&:active {
+		margin-top: 2px;
+		background-color: $acm-black;
+		box-shadow: 0px 0px 0px $acm-black;
+	}
 }
 
-button:hover {
-	cursor: pointer;
-	margin-top: 1px;
-	box-shadow: 0px 1px 0px $acm-black;
+button.tight {
+	min-width: 0px;
+	width: auto;
 }
 
-button:active {
-	margin-top: 2px;
+button.fade-light {
+	&:active {
+		background: white;
+		color: $acm-black;
+		box-shadow: 0px 0px 0px white;
+	}
+}
+
+button.dark {
 	background-color: $acm-black;
-	box-shadow: 0px 0px 0px $acm-black;
+
+	&:hover {
+		background: $acm-tint;
+		box-shadow: 0px 1px 0px $acm-tint;
+	}
+
+	&:active {
+		background: white;
+		color: $acm-black;
+		box-shadow: 0px 0px 0px white;
+	}
 }

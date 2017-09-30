@@ -22,17 +22,31 @@ export default class Home extends React.Component {
 				<div className="button-section center">
 					{ /** CHANGE THIS LINK TO ABOUT PAGE LATER */ }
 					<a href="https://www.facebook.com/uclaacm" target="_BLANK"><Button text="Learn More" /></a>
+				</div><br /><br />
+
+				<div className="content-section center">
+					<h2>Recent Achievements</h2>
+					<div id="achievements-container">
+						<div className="achievement">
+							<img src="/images/award-graphic.png" />
+							<h3>2016-2017 Student Chapter Excellence Award</h3>
+						</div>
+						<div className="achievement">
+							<img src="/images/icpc-award.jpg" />
+							<h3>ICPC Places 2nd in SoCal Regionals, Qualifies for World Finals</h3>
+						</div>
+					</div>
 				</div><br /><br /><br />
+
 				<div className="full-width blue">
 					<div id="sign-up-section" className="content-section">
 						<div id="sign-up-left" className="half-width">
 							<h2>Want to stay updated on what's going on?</h2>
 						</div>
 						<div id="sign-up-right" className="half-width">
-							<form>
-								<input type="text" placeholder="enter your email..." />
-								<div id="submit-form"><i className="fa fa-chevron-right"></i></div>
-							</form>
+							<a href="http://eepurl.com/c5pE6P" target="_BLANK">
+								<Button text="Join our Mailing List" style="tight dark" />
+							</a>
 						</div>
 					</div>
 				</div>

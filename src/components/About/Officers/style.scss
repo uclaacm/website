@@ -1,4 +1,4 @@
-.committees {
+#officers-container {
 	width: 100%;
 	max-width: 900px;
 	padding: 0px 20px;
@@ -6,24 +6,27 @@
 	margin: auto;
 	text-align: center;
 
-	.committee {
+	.officer {
 		width: 280px;
-		height: 120px;
+		height: 100px;
 		display: inline-block;
 		color: $font-primary-color;
 		text-align: left;
 		transition: transform 0.1s;
+		// border: 1px solid red;
 
 		&:hover {
-			cursor: pointer;
-			transform: scale(1.08);
+			// cursor: pointer;
+			// transform: scale(1.08);
 		}
 
 		img {
 			margin: 25px 10px;
 			height: 70px;
 			width: 70px;
+			border: 2px solid #EAEAEA;
 			display: inline-block;
+			border-radius: 50%;
 		}
 
 		.info {
@@ -35,10 +38,10 @@
 				margin: 0px;
 				padding: 0px;
 				margin-top: 35px;
-				font-weight: 500;
+				font-weight: 600;
 				display: inline-block;
-				font-size: 1.7em;
-				line-height: 1.5em;
+				font-size: 1.3em;
+				line-height: 1.8em;
 				font-family: $font-display;
 
 				span {
@@ -56,12 +59,5 @@
 				vertical-align: top;
 			}
 		}
-
-		&.hack   .info h2 { color: $hack-purple; }
-		&.ai     .info h2 { color: $ai-arctic; }
-		&.w      .info h2 { color: $w-teal; }
-		&.netsec .info h2 { color: $netsec-amber; }
-		&.studio .info h2 { color: $studio-raspberry; }
-		&.icpc   .info h2 { color: $icpc-tangerine; }
 	}
 }

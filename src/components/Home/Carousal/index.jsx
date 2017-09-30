@@ -33,7 +33,7 @@ export default class Carousal extends React.Component {
 				sections: this.state.sections.map(section => {
 					section.left -= 1;
 					if (section.left < -this.sectionWidth) {
-						section.left = (this.state.sections.length - 1) * this.sectionWidth;
+						section.left = (this.state.sections.length - 1) * this.sectionWidth - 1;
 					}
 					return section;
 				})
