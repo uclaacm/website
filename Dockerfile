@@ -26,7 +26,7 @@ COPY src/ /var/www/acm/working/src/
 COPY .babelrc *.js Makefile /var/www/acm/working/
 
 # build and copy files to server root
-RUN make build && \
+RUN make build-static && \
     cp -rv static/* ../static/ && \
     cp -rv lib/build/* ../static/build/
 

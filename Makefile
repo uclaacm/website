@@ -9,12 +9,8 @@ run:
 deploy:
 	heroku container:push web -a ucla-acm
 
-build-static: build
+build-static:
 	NODE_ENV=production npm run build
-	rm -rf public
-	mkdir public
-	cp -rv static/* public/
-	cp -rv lib/build public/
 
 dev:
 	WEBPACK=true npm run build-dev
