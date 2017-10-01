@@ -1,7 +1,9 @@
 all: run
 
-run:
+prod-build:
 	sudo docker build . -t uclaacm/website
+
+prod-run:
 	sudo docker run -p "443:443" -p "80:80" -d uclaacm/website
 
 run-dev:

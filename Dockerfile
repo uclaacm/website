@@ -3,7 +3,7 @@
 FROM alpine:3.5
 
 # Download and install packages
-RUN apk add -U nginx python make g++ nodejs
+RUN apk add -U nginx python make g++ nodejs bash
 
 # Create directories
 #   /working is the build directory
@@ -33,9 +33,9 @@ RUN make build && \
 # Copy the configuration file
 RUN mkdir -p /run/nginx
 COPY conf/ /etc/nginx/
+COPY start.sh /var/www/acm
 WORKDIR /var/www/acm/static
 
 # Run the server
-EXPOSE 80
-EXPOSE 443
-CMD ["nginx", "-g", "daemon off;"]
+#CMD ["nginx", "-g", "daemon off;"]
+CMD ["/var/www/acm/start.sh"]
