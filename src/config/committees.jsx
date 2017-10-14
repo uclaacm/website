@@ -18,7 +18,7 @@ export default [
 		class: 'ai',
 		tagline: 'Learning Machine Learning',
 		image: '/images/committees/logo-ai.svg',
-		link: 'https://www.facebook.com/groups/uclaacmai',
+		link: 'https://uclaacmai.github.io/',
 	},
 	{
 		name: 'Studio',
