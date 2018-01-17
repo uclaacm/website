@@ -26,7 +26,7 @@ export default class Footer extends React.Component {
 						</div>
 					</div>
 					<div id="footer-bottom">
-						<span>&copy; UCLA ACM 2017</span>
+						<span>&copy; UCLA ACM 2018</span>
 					</div>
 				</div>
 			</div>
