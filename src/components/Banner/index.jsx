@@ -31,7 +31,7 @@ export default class Banner extends React.Component {
 	componentDidMount() {
 		const committees = ['acm'];
 		if (!this.props.decorative)
-			committees.push('hack', 'studio', 'icpc', 'cyber', 'w', 'ai');
+			committees.push('hack', 'studio', 'icpc', 'design', 'cyber', 'teachla', 'w', 'ai');
 		const el = document.querySelector('.banner');
 		this.timer = setInterval(() => {
 			el.classList.remove(committees[this.color]);
