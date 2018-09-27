@@ -9,7 +9,7 @@ export default [
 	{
 		name: 'W',
 		class: 'w',
-		tagline: 'Starting Conversations About Diversity in Tech',
+		tagline: 'Starting Conversations about Diversity in Tech',
 		image: '/images/committees/logo-w.svg',
 		link: 'https://www.facebook.com/groups/uclaacmw',
 	},
@@ -40,5 +40,19 @@ export default [
 		tagline: 'Cybersecurity Made Simple',
 		image: '/images/committees/logo-cyber.svg',
 		link: 'https://www.facebook.com/groups/320869398280511',
+	},
+	{
+		name: 'Design',
+		class: 'design',
+		tagline: 'Form Follows Function',
+		image: '/images/committees/logo-design.svg',
+		link: 'https://www.facebook.com/uclaacm/'
+	},
+	{
+		name: 'Teach LA',
+		class: 'teachla',
+		tagline: 'Learn It, Teach It',
+		image: '/images/committees/logo-teachla.svg',
+		link: 'https://www.facebook.com/teachlaucla/'
 	}
 ]

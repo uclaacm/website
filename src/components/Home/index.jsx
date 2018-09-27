@@ -28,7 +28,11 @@ export default class Home extends React.Component {
 					<h2>Recent Achievements</h2>
 					<div id="achievements-container">
 						<div className="achievement">
-							<img src="/images/award-graphic.png" />
+							<img src="/images/2018-acm-excellence-award.png" />
+							<h3>2017-2018 Student Chapter Excellence Award</h3>
+						</div>
+						<div className="achievement">
+							<img src="/images/2017-acm-excellence-award.png" />
 							<h3>2016-2017 Student Chapter Excellence Award</h3>
 						</div>
 						<div className="achievement">

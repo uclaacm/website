@@ -37,7 +37,7 @@
 				margin-top: 35px;
 				font-weight: 500;
 				display: inline-block;
-				font-size: 1.7em;
+				font-size: 1.5em;
 				line-height: 1.5em;
 				font-family: $font-display;
 
@@ -57,11 +57,13 @@
 			}
 		}
 
-		&.hack   .info h2 { color: $hack-purple; }
-		&.ai     .info h2 { color: $ai-arctic; }
-		&.w      .info h2 { color: $w-teal; }
-		&.cyber  .info h2 { color: $cyber-amber; }
-		&.studio .info h2 { color: $studio-raspberry; }
-		&.icpc   .info h2 { color: $icpc-tangerine; }
+		&.hack    .info h2 { color: $hack-purple; }
+		&.ai      .info h2 { color: $ai-arctic; }
+		&.w       .info h2 { color: $w-teal; }
+		&.cyber   .info h2 { color: $cyber-amber; }
+		&.studio  .info h2 { color: $studio-raspberry; }
+		&.icpc    .info h2 { color: $icpc-tangerine; }
+		&.design  .info h2 { color: $design-orange; }
+		&.teachla .info h2 { color: $teachla-green; }
 	}
 }
