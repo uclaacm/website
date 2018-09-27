@@ -35,10 +35,10 @@ export default [
 		link: 'https://www.facebook.com/groups/ucla.icpc',
 	},
 	{
-		name: 'NetSec',
-		class: 'netsec',
+		name: 'Cyber',
+		class: 'cyber',
 		tagline: 'Cybersecurity Made Simple',
-		image: '/images/committees/logo-netsec.svg',
+		image: '/images/committees/logo-cyber.svg',
 		link: 'https://www.facebook.com/groups/320869398280511',
 	}
 ]

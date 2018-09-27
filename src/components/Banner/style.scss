@@ -53,9 +53,9 @@
 	&.w .square.dark          { background-color: $w-black; }
 	&.w .square.light          { background-color: $w-tint; }
 
-	&.netsec .square    { background-color: $netsec-amber; }
-	&.netsec .square.dark    { background-color: $netsec-black; }
-	&.netsec .square.light    { background-color: $netsec-tint; }
+	&.cyber .square    { background-color: $cyber-amber; }
+	&.cyber .square.dark    { background-color: $cyber-black; }
+	&.cyber .square.light    { background-color: $cyber-tint; }
 
 	&.studio .square    { background-color: $studio-raspberry; }
 	&.studio .square.dark    { background-color: $studio-black; }
@@ -88,7 +88,7 @@
 	&.hack   .title h1 { color: $hack-purple; }
 	&.ai     .title h1 { color: $ai-arctic; }
 	&.w      .title h1 { color: $w-teal; }
-	&.netsec .title h1 { color: $netsec-amber; }
+	&.cyber .title h1 { color: $cyber-amber; }
 	&.studio .title h1 { color: $studio-raspberry; }
 	&.icpc   .title h1 { color: $icpc-tangerine; }
 }
