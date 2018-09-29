@@ -14,31 +14,31 @@ export default [
 	{
 		name: "Natasha Kohli",
 		title: "Internal VP",
-		email: "jdliaw@ucla.edu",
+		email: "natashakohli@ucla.edu",
 		image: "/images/officers/natasha.jpg"
 	},
 	{
 		name: "Adit Deshpande",
 		title: "President of AI",
-		email: "rvarm1@gmail.com",
+		email: "adeshpande3@ucla.edu",
 		image: "/images/officers/adit.jpg"
 	},
 	{
 		name: "Kevin Tan",
 		title: "President of Hack",
-		email: "rvarm1@gmail.com",
+		email: "ktan17@ucla.edu",
 		image: "/images/officers/kevin.jpg"
 	},
 	{
 		name: "Jeffrey Zhao",
 		title: "President of ICPC",
-		email: "jerrylinew@gmail.com",
+		email: "zhouhengsun@gmail.com",
 		image: "/images/officers/jeffrey.jpg"
 	},
 	{
 		name: "Akshara S.",
 		title: "President of Cyber",
-		email: "alrehanitanya@gmail.com",
+		email: "akshara.sundar@gmail.com",
 		image: "/images/officers/akshara.jpg"
 	},
 	{
@@ -50,7 +50,19 @@ export default [
 	{
 		name: "Caroline Quigg",
 		title: "President of ACM-W",
-		email: "glunawat@ucla.edu",
+		email: "quiggc@ucla.edu",
 		image: "/images/officers/caroline.jpg"
 	},
+	{
+		name: "Arpi Beshlikyan",
+		title: "President of Design",
+		email: "aybeshlikyan@ucla.edu",
+		image: "/images/officers/arpi.jpg"
+	},
+	{
+		name: "John Stucky",
+		title: "President of Teach LA",
+		email: "stuckyj@gmail.com",
+		image: "/images/officers/john.jpg"
+	}
 ];
