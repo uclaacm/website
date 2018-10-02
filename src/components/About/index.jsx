@@ -32,7 +32,7 @@ export default class About extends React.Component {
 					</div>
 					<div className="text-section">
 						<h1>What are ACM committees?</h1>
-						<p className="half-size">ACM is split into six committees, each serving a different topic and mission. Some of our events may be categorized as a part of a specific committee, but being a member of a committee is the same as being a member of ACM. Our events are open to everyone. We strive to cover all of our members' interests and encourage members to explore new topics and events as well!</p>
+						<p className="half-size">ACM is split into eight committees, each serving a different topic and mission. Some of our events may be categorized as a part of a specific committee, but being a member of a committee is the same as being a member of ACM. Our events are open to everyone. We strive to cover all of our members' interests and encourage members to explore new topics and events as well!</p>
 					</div>
 				</div>
 				<div className="content-section left">
