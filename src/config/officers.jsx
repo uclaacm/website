@@ -43,9 +43,15 @@ export default [
 	},
 	{
 		name: "Judy Kim",
-		title: "President of Studio",
+		title: "Co-President of Studio",
 		email: "judyapplekim@gmail.com",
 		image: "/images/officers/judy.jpg"
+	},
+	{
+		name: "CJ Ordog",
+		title: "Co-President of Studio",
+		email: "cjordog@gmail.com",
+		image: "/images/officers/cj.jpg"
 	},
 	{
 		name: "Caroline Quigg",
