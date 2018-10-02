@@ -41,7 +41,7 @@ export default class About extends React.Component {
 					</div>
 					<div className="text-section">
 						<h1>How do I get involved?</h1>
-						<p className="half-size">ACM holds various events throughout the year. No matter what background or major you come from, you're welcome to participate in all of our activities. At our general meeting on Monday, October 2nd, we'll be covering how you can join as an official member, what topics our committees cover, and what we have planned for the upcoming year. To become a member, you should join <a href="https://members.uclaacm.com">the membership portal</a>. You can see events, get attendance points, and see a community-wide leaderboard. There might even be prizes!</p>
+						<p className="half-size">ACM holds various events throughout the year. No matter what background or major you come from, you're welcome to participate in all of our activities. At our general meeting on Monday, October 6th, we'll be covering how you can join as an official member, what topics our committees cover, and what we have planned for the upcoming year. To become a member, you should join <a href="https://members.uclaacm.com">the membership portal</a>. You can see events, get attendance points, and see a community-wide leaderboard. There might even be prizes!</p>
 					</div>
 				</div>
 				<div className="content-section center" style={{marginBottom: '0px'}}>
