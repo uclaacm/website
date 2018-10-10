@@ -4,7 +4,7 @@ export default [
 		class: 'hack',
 		tagline: 'Move Fast, Build Things',
 		image: '/images/committees/logo-hack.svg',
-		link: 'http://hackucla.com',
+		link: 'https://www.facebook.com/groups/acmhack/',
 	},
 	{
 		name: 'W',
