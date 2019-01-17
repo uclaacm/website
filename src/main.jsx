@@ -10,6 +10,7 @@ import {render} from 'react-dom';
 // import {store} from 'reducers';
 
 import Home from 'containers/home';
+import History from 'containers/history';
 import About from 'containers/about';
 import Sponsors from 'containers/sponsors';
 
@@ -31,6 +32,7 @@ class App extends React.Component {
 							<Route exact path="/" component={Home}/>
 							<Route exact path="/about" component={About}/>
 							<Route exact path="/events" component={Home}/>
+							<Route exact path="/history" component={History}/>
 							<Route exact path="/sponsors" component={Sponsors}/>
 							<Redirect to="/"/>
 						</Switch>
