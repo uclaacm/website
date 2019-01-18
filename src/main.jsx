@@ -11,6 +11,7 @@ import {render} from 'react-dom';
 
 import Home from 'containers/home';
 import About from 'containers/about';
+import History from 'containers/history';
 import Sponsors from 'containers/sponsors';
 
 // hack for convenience
@@ -30,6 +31,7 @@ class App extends React.Component {
 						<Switch>
 							<Route exact path="/" component={Home}/>
 							<Route exact path="/about" component={About}/>
+							<Route exact path="/history" component={History}/>
 							<Route exact path="/events" component={Home}/>
 							<Route exact path="/sponsors" component={Sponsors}/>
 							<Redirect to="/"/>
