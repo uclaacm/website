@@ -16,7 +16,7 @@ export default class Media extends React.Component {
 					<h2>Our Media</h2>
 					<p className="subheading">Rad pics.</p>
 						{Config.media.map(media =>
-							<p> {media.name} </p>
+							<p> {media.name} {media.date} {media.tagline} </p>
 						)}
 				</div>
 				<Footer />
