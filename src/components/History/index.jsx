@@ -14,7 +14,9 @@ export default class History extends React.Component {
 				<Banner decorative />
 				<div className="content-section center">
 					<h2>Our History</h2>
-					<p className="subheading">Ya we're pretty cool. You don't have to waste your time taking another physics lab.</p>
+						{Config.history.map(history =>
+							<p> {history.name} {history.date} {history.tagline} </p>
+						)}
 				</div>
 				<Footer />
 			</div>
