@@ -9,7 +9,7 @@ import Banner from 'components/Banner';
 export default class History extends React.Component {
 	render() {
 		return (
-			<div className="about-page">
+			<div className="history-page">
 				<Navbar />
 				<Banner decorative />
 				<div className="content-section center">
