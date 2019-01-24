@@ -11,9 +11,9 @@ export default class History extends React.Component {
 		return (
 			<div className="history-page">
 				<p className="subheading">ACM is a longstanding organization at UCLA. Here are some important dates in our history.</p>
-					{Config.history.map(history =>
-						<p> {history.date} </p>
-					)}
+				{Config.history.map(history =>
+					<p>{history.date}</p>
+				)}
 			</div>
 		);
 	}
