@@ -13,11 +13,11 @@ export default class Media extends React.Component {
 			<Navbar />
 			<Banner decorative />
 			<div className="content-section center">
-				<h2> Media </h2>
-				<p> Here are some of the times ACM has been mentioned in the media: </p>
-					{Config.media.map(media =>
-						<p> {media.date} - {media.description} </p>
-					)}
+				<h2>Media</h2>
+				<p>Here are some of the times ACM has been mentioned in the media:</p>
+				{Config.media.map(media =>
+					<p>{media.date} - {media.description}</p>
+				)}
 			</div>
 
 				
