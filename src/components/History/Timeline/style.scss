@@ -3,9 +3,46 @@
 		display: flex;
 		flex-direction: row;
 
+		.history-date {
+			p {
+				white-space: nowrap;
+				margin-top: 14px;
+				width: 120px;
+				text-align: right;
+			}
+		}
+
 		.history-info {
 			text-align: left;
 			border-left: 1px solid black;
+
+			h2 {
+				padding-top: 0px;
+			}
 		}
+	}
+
+	@media (max-width: 600px) {
+		.history-tile {
+			display: block;
+
+			.history-date {
+				p {
+					text-align: left;
+					margin-top: 0px;
+					margin-bottom: 0px;
+				}
+			}
+
+			.history-info {
+				border: none;
+			}
+		}
+	}
+}
+
+@media (max-width: 600px) {
+	#timeline {
+		border-left: 1px solid black;
 	}
 }
