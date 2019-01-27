@@ -1,10 +1,11 @@
 #timeline {
-    .history-tile {
-        display: flex;
-        flex-direction: row;
+	.history-tile {
+		display: flex;
+		flex-direction: row;
 
-        .history-info {
-            text-align: left;
-        }
-    }
+		.history-info {
+			text-align: left;
+			border-left: 1px solid black;
+		}
+	}
 }
