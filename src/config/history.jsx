@@ -5,7 +5,7 @@ export default [
 		description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
 	},
 	{
-		tutle: 'ACM got rid of Physics Requirements',
+		title: 'ACM got rid of Physics Requirements',
 		time: '08/25/2001',
 		description: 'Id venenatis a condimentum vitae. Volutpat odio facilisis mauris sit amet. Faucibus scelerisque eleifend donec pretium. Justo donec enim diam vulputate ut. Egestas purus viverra accumsan in nisl nisi scelerisque eu. Nunc lobortis mattis aliquam faucibus purus in massa tempor nec. Turpis in eu mi bibendum neque egestas. Faucibus ornare suspendisse sed nisi. Odio ut enim blandit volutpat maecenas volutpat blandit aliquam. Nisl suscipit adipiscing bibendum est ultricies integer quis. Sit amet risus nullam eget felis eget.',
 	},
