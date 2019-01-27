@@ -15,8 +15,8 @@ export default class History extends React.Component {
 				<Banner decorative />
 				<div className="content-section center">
 					<h2>History of ACM</h2>
+					<Timeline history={Config.history}/>
 				</div>
-				<Timeline history={Config.history}/>
 				<Footer />
 			</div>
 		);
