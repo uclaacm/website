@@ -1,0 +1,10 @@
+#timeline {
+    .history-tile {
+        display: flex;
+        flex-direction: row;
+
+        .history-info {
+            text-align: left;
+        }
+    }
+}

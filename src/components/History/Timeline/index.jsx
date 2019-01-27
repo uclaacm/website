@@ -5,10 +5,8 @@ import HistoryTile from './historytile';
 export default class Timeline extends React.Component {
 	render() {
 		return (
-			<div id="history-tile">
-				<div id="history-inner">
-					{ this.props.history.map(history => <HistoryTile history={history} /> ) }
-				</div>
+			<div id="timeline">
+				{ this.props.history.map(history => <HistoryTile key={history.title} history={history} /> ) }
 			</div>
 		);
 	}
