@@ -6,7 +6,7 @@
 		.history-date {
 			p {
 				white-space: nowrap;
-				margin-top: 14px;
+				margin-top: 20px;
 				width: 120px;
 				text-align: right;
 			}
@@ -16,8 +16,8 @@
 			text-align: left;
 			border-left: 1px solid black;
 
-			h2 {
-				padding-top: 0px;
+			h3 {
+				margin: 1em 22px;
 			}
 		}
 	}
@@ -36,6 +36,10 @@
 
 			.history-info {
 				border: none;
+				
+				h3 {
+					margin: 0 22px 1em 22px;
+				}
 			}
 		}
 	}
