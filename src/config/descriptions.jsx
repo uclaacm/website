@@ -4,7 +4,7 @@ export default [
 		class: 'hack',
 		description: 'test',
 		image: '/images/committees/logo-hack.svg',
-		link: 'hack.uclaacm.com',
+		link: 'https://hack.uclaacm.com',
 	},
 	{
 		name: 'W',

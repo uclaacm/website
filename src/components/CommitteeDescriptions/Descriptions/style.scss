@@ -1,13 +1,16 @@
 .descriptions {
+	padding-bottom: 50px;
+
 	.committee-component{
-		margin: 20px auto 120px auto;
+		height: 200px;
+		padding-bottom: 40px;
 
 		.left {
-			right: 550px;
+			right: 570px;
 		}
 
 		.right {
-			left: 300px;
+			left: 270px;
 		}
 
 		.ornament {
@@ -23,7 +26,6 @@
 		}
 
 		.text-section {
-			margin: 60px auto;
 
 			.info {
 				text-align: left;
