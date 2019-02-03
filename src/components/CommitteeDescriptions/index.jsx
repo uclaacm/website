@@ -14,8 +14,6 @@ export default class CommitteeDescriptions extends React.Component {
 				<Navbar />
 				<Banner decorative />
 				<Descriptions descriptions={Config.descriptions} />
-
-
 				<Footer />
 			</div>
 		);

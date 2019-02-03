@@ -4,7 +4,7 @@ export default [
 		class: 'hack',
 		description: 'test',
 		image: '/images/committees/logo-hack.svg',
-		link: 'https://www.facebook.com/groups/acmhack/',
+		link: 'hack.uclaacm.com',
 	},
 	{
 		name: 'W',
@@ -16,7 +16,7 @@ export default [
 	{
 		name: 'AI',
 		class: 'ai',
-		description: 'test',
+		description: 'ACM AI is focused on creating and developing a community of UCLA students who are interested in artificial intelligence and machine learning. Our group hopes to achieve this by teaching AI/ML through workshops, coordinating internal and external projects, as well as hosting events that inspire and cultivate interest in the field.',
 		image: '/images/committees/logo-ai.svg',
 		link: 'https://uclaacmai.github.io/',
 	},
