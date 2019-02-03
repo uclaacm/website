@@ -21,7 +21,7 @@ export default class Home extends React.Component {
 				<Committees committees={Config.committees} />
 				<div className="button-section center">
 					{ /** CHANGE THIS LINK TO ABOUT PAGE LATER */ }
-					<a href="https://www.facebook.com/uclaacm" target="_BLANK"><Button text="Learn More" /></a>
+					<a href="/committees" target="_BLANK"><Button text="Learn More" /></a>
 				</div><br /><br />
 
 				<div className="content-section center">
