@@ -9,7 +9,7 @@ export default [
 	{
 		name: 'W',
 		class: 'w',
-		description: 'test',
+		description: 'ACM-W supports, celebrates, and advocates for the full engagement of all who are interested in computer science. Additionally, ACM-W endeavors to increase all aspects of diversity in the technical field by providing a range of programs and services to UCLA students.',
 		image: '/images/committees/logo-w.svg',
 		link: 'https://www.facebook.com/groups/uclaacmw',
 	},
@@ -23,7 +23,7 @@ export default [
 	{
 		name: 'Studio',
 		class: 'studio',
-		description: 'test',
+		description: 'ACM Game Studio is focused on using games and VR as a medium of creativity and expression. We want to help students learn the tools and skills necessary to create exciting experiences as well as providing a space to find teammates to work on year-long projects.',
 		image: '/images/committees/logo-studio.svg',
 		link: 'https://www.facebook.com/groups/uclaacmstudio',
 	},
@@ -51,7 +51,7 @@ export default [
 	{
 		name: 'Teach LA',
 		class: 'teachla',
-		description: 'test',
+		description: 'TeachLA is an ACM committee attempting to assist schools across Los Angeles build their computer science curriculums. We do so by connecting student volunteers with local elementary, middle, and high schools that would like to explore a programming education, but would otherwise not have the chance. We recruit every quarter, so be sure to follow our FB page for more updates!',
 		image: '/images/committees/logo-teachla.svg',
 		link: 'https://www.facebook.com/teachlaucla/'
 	}
