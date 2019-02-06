@@ -1,17 +1,14 @@
 export default [
 	{
-		name: 'New Committees!',
-		date: '',
-		tagline: 'design',
+		title:'Excellence Award',
+		media_type:'img',
+		image:'/images/2017-acm-excellence-award.png',
+		link:'',
 	},
 	{
-		name: 'HOTH',
-		date: '',
-		tagline: 'a good time for some good memes'
-	},
-	{
-		name: 'Rad Pics',
-		date: '',
-		tagline: '',
+		title:'yeet',
+		media_type:'quote',
+		quote:'acm is in the media',
+		link:'',
 	}
 ]

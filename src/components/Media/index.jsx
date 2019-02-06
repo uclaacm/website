@@ -5,6 +5,7 @@ import Navbar from 'components/Navbar';
 import Button from 'components/Button';
 import Footer from 'components/Footer';
 import Banner from 'components/Banner';
+import MediaTiles from 'components/Media/MediaTiles';
 
 export default class Media extends React.Component {
 	render() {
@@ -13,14 +14,13 @@ export default class Media extends React.Component {
 				<Navbar />
 				<Banner decorative />
 				<div className="content-section center">
-					<h2>Our Media</h2>
-					<p className="subheading">Rad pics.</p>
-					{Config.media.map(media =>
-						<p>{media.name} {media.date} {media.tagline}</p>
-					)}
+					<h2>ACM in the Media</h2>
+					<MediaTiles media={Config.media} />
 				</div>
 				<Footer />
 			</div>
 		);
 	}
-}
+} 
+
+
