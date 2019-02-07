@@ -24,19 +24,16 @@ Number.prototype.map = function(fn) {
 class App extends React.Component {
 	render(){
 		return (
-			// <Provider store={store}>
-				<BrowserRouter onUpdate={() => window.scrollTo(0, 0)}>
-					<div>
-						<Switch>
-							<Route exact path="/" component={Home}/>
-							<Route exact path="/about" component={About}/>
-							<Route exact path="/events" component={Home}/>
-							<Route exact path="/sponsors" component={Sponsors}/>
-							<Redirect to="/"/>
-						</Switch>
-					</div>
-				</BrowserRouter>
-			// </Provider>
+			<BrowserRouter onUpdate={() => window.scrollTo(0, 0)}>
+				<div>
+					<Switch>
+						<Route exact path="/" component={Home}/>
+						<Route exact path="/about" component={About}/>
+						<Route exact path="/sponsors" component={Sponsors}/>
+						<Redirect to="/"/>
+					</Switch>
+				</div>
+			</BrowserRouter>
 		);
 	}
 }
