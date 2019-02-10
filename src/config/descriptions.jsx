@@ -1,7 +1,7 @@
 export default [
 	{
 		name: 'Hack',
-		class: 'hack',
+		class: 'Hack is a committee dedicated to helping students build amazing things and encouraging them to explore the limits of what is possible through code. Hack\'s events range from coding bootcamps for web and mobile dev to beginner-friendly all-day hackathons.',
 		description: 'test',
 		image: '/images/committees/logo-hack.svg',
 		link: 'https://hack.uclaacm.com',
@@ -37,14 +37,14 @@ export default [
 	{
 		name: 'Cyber',
 		class: 'cyber',
-		description: 'test',
+		description: 'ACM Cyber is UCLA’s primary cybersecurity club. Our goal is to make cybersecurity more accessible and form a community of people passionate about learning about it. We run workshops starting from introductory Computer Science concepts that walk members through cyber security methods and tools, many of which are aimed to prepare students for the yearly California CTF, and by extension to potential security careers.',
 		image: '/images/committees/logo-cyber.svg',
 		link: 'https://www.facebook.com/groups/320869398280511',
 	},
 	{
 		name: 'Design',
 		class: 'design',
-		description: 'test',
+		description: 'The goal of Design is to manage and develop ACM\'s visual identity, promote ACM as an organization, as well as provide a platform to introduce students to design in the tech community at UCLA. We create marketing materials for ACM events and provide UCLA students an introduction to design and its role in the field of Computer Science.',
 		image: '/images/committees/logo-design.svg',
 		link: 'https://uclaacm.github.io/Styleguide/'
 	},
