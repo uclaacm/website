@@ -1,8 +1,8 @@
 export default [
 	{
 		name: 'Hack',
-		class: 'Hack is a committee dedicated to helping students build amazing things and encouraging them to explore the limits of what is possible through code. Hack\'s events range from coding bootcamps for web and mobile dev to beginner-friendly all-day hackathons.',
-		description: 'test',
+		class: 'hack',
+		description: 'Hack is a committee dedicated to helping students build amazing things and encouraging them to explore the limits of what is possible through code. Hack\'s events range from coding bootcamps for web and mobile dev to beginner-friendly all-day hackathons.',
 		image: '/images/committees/logo-hack.svg',
 		link: 'https://hack.uclaacm.com',
 	},
