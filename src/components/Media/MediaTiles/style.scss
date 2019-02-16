@@ -1,41 +1,48 @@
 ﻿#mediatiles {
-    /*width: 100%;
-    max-width: 900px;
-    padding: 0px 20px;
-    box-sizing: border-box;
-    margin: auto;
-    text-align: center;*/
 
-    .media {
+    a {
+        text-decoration: none;
 
-        &:hover {
-            cursor: pointer;
-            transform: scale(1.08);
-        }
+        .media {
 
-        h2 {
-            /*margin: 25px 10px;
-            height: 70px;
-            width: 70px;
-            display: inline-block;*/
-        }
+            border-radius: 25px;
+            //padding: 20px;
+            width: 750px;
+            //height: 100px;
 
-        p{
+            &:hover {
+                cursor: pointer;
+                transform: scale(1.08);
+            }
 
-        }
-
-        .speaker {
-            /*display: inline-block;
-            vertical-align: top;
-            width: 180px;*/
+            h2 {
+                /*margin: 25px 10px;
+                height: 70px;
+                width: 70px;
+                display: inline-block;*/
+            }
 
             p {
+                text-decoration: none;
+                color: white;
+                font-style: italic;
+            }
+
+            .speaker {
                 /*display: inline-block;
-                font-family: $font-body;
-                margin: 0px 0px;
-                margin-top: -5px;
-                font-size: 0.7em;
-                vertical-align: top;*/
+                vertical-align: top;
+                width: 180px;*/
+                p {
+                    color: white;
+                    text-align: right;
+                    font-style: italic;
+                    /*display: inline-block;
+                    font-family: $font-body;
+                    margin: 0px 0px;
+                    margin-top: -5px;
+                    font-size: 0.7em;
+                    vertical-align: top;*/
+                }
             }
         }
     }
