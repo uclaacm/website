@@ -14,7 +14,7 @@ export default class Media extends React.Component {
 				<Navbar />
 				<Banner decorative />
 				<div className="content-section center">
-					<h2>ACM in the Media</h2>
+					<h1>ACM in the Media</h1>
 					<MediaTiles media={Config.media} />
 				</div>
 				<Footer />

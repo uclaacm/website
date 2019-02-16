@@ -1,50 +1,42 @@
 ﻿#mediatiles {
-    width: 100%;
+    /*width: 100%;
     max-width: 900px;
     padding: 0px 20px;
     box-sizing: border-box;
     margin: auto;
-    text-align: center;
+    text-align: center;*/
 
-    .image {
-        width: 280px;
-        height: 120px;
-        display: inline-block;
-        //transition: transform 0.1s;
-        img {
-            margin: 25px;
-            width: 400px;
-            //display: inline-block;
-        }
+    .media {
 
-        .title {
-        }
-
-        .link {
-        }
-        /*&:hover {
+        &:hover {
             cursor: pointer;
             transform: scale(1.08);
-        }*/
-    }
-
-    .quote {
-
-        p {
         }
 
-        .title {
+        h2 {
+            /*margin: 25px 10px;
+            height: 70px;
+            width: 70px;
+            display: inline-block;*/
         }
 
-        .link {
+        p{
+
         }
-        /*&:hover {
-            // cursor: pointer;
-            // transform: scale(1.08);
-        }*/
+
+        .speaker {
+            /*display: inline-block;
+            vertical-align: top;
+            width: 180px;*/
+
+            p {
+                /*display: inline-block;
+                font-family: $font-body;
+                margin: 0px 0px;
+                margin-top: -5px;
+                font-size: 0.7em;
+                vertical-align: top;*/
+            }
+        }
     }
 }
-
-//two rows 
-//infinite columns
-

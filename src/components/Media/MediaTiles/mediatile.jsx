@@ -2,17 +2,16 @@
 
 export default class MediaTile extends React.Component {
 	render() {
-		var mediaRender;
-		if(this.props.media.media_type == 'img')
-			mediaRender = <img src={this.props.media.image} />
-		if(this.props.media.media_type == 'quote')
-			mediaRender = <p>{this.props.media.quote} </p>
 		return (
-			<div className= "media">
-				{mediaRender}
-				<h2>{this.props.media.title}</h2><br />
-				<p>{this.props.media.link}</p>
+			<div className= "media" style= {{backgroundImage: 'url(' + this.props.media.image + ')'}}>
+				<h2><a href={this.props.media.link}>{this.props.media.title}</a></h2>
+				<p>{this.props.media.quote[0].content}</p>
+				<div className= "speaker">
+					<p>{this.props.media.quote[0].speaker}</p>
+					<p>{this.props.media.quote[0].position}</p>
+				</div>
 			</div>
 		);
 	}
 }
+
