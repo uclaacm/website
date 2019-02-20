@@ -4,11 +4,22 @@
         text-decoration: none;
 
         .media {
-
-            border-radius: 25px;
+            border-radius: 20px;
             //padding: 20px;
             width: 750px;
-            //height: 100px;
+            height: 275px;
+            background-size: 750px;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin-bottom: 20px;
+            opacity: .6;
+
+
+            /*img {
+                height: 40px;
+                position: relative;
+                bottom: 20px;
+            }*/
 
             &:hover {
                 cursor: pointer;
@@ -20,12 +31,19 @@
                 height: 70px;
                 width: 70px;
                 display: inline-block;*/
+                color: white;
+                text-shadow: 2px 2px 5px #000000;
             }
 
             p {
                 text-decoration: none;
+                position: center;
                 color: white;
                 font-style: italic;
+                line-height: 25px;
+                text-align: center;
+                vertical-align: middle;
+                text-shadow: 1px 1px 20px #000000;
             }
 
             .speaker {

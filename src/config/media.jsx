@@ -16,6 +16,7 @@ export default [
 		],
 		image:'/images/media/genericlaptop.jpg',
 		link:'https://dailybruin.com/2018/05/01/ucla-student-organization-seeks-to-educate-students-on-cybersecurity/',
+		logo:'/images/media/db-logo.png',
 	},
 	{
 		title:'ACM opens Speaker Series with talk by Internet pioneer, UCLA professor',
@@ -34,6 +35,7 @@ export default [
 		],
 		image:'/images/media/kleinrock.jpg',
 		link:'https://dailybruin.com/2014/11/13/acm-opens-speaker-series-with-talk-by-internet-pioneer-ucla-professor/',
+		logo:'/images/media/db-logo.png',
 	},
 	{
 		title:'Students devise unique coding projects at UCLA’s Hack on the Hill',
@@ -52,6 +54,7 @@ export default [
 		],
 		image:'/images/media/hackonthehill.jpg',
 		link:'https://dailybruin.com/2017/11/13/students-devise-unique-coding-projects-at-uclas-hack-on-the-hill/',
+		logo:'/images/media/db-logo.png',
 	},
 	{
 		title:'Hacker Expo offers computer science students chance to present projects',
@@ -70,6 +73,7 @@ export default [
 		],
 		image:'/images/media/hackerexpo.jpg',
 		link:'http://dailybruin.com/2018/03/02/hacker-expo-offers-computer-science-students-chance-to-present-projects/',
+		logo:'/images/media/db-logo.png',
 	},
 	{
 		title:'ACM-W aims to provide community for women in technology',
@@ -91,8 +95,9 @@ export default [
 				position:'ACM President and ACM-W Co-founder'
 			}
 		],
-		image:'/images/media/acmw.jpg',
+		image:'/images/media/acm_w.jpg',
 		link:'https://dailybruin.com/2015/09/29/acm-w-aims-to-provide-community-for-women-in-technology/ ',
+		logo:'/images/media/db-logo.png',
 	}
 	/*{
 		title:'',
