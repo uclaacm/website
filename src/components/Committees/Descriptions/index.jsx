@@ -6,7 +6,7 @@ export default class Descriptions extends React.Component {
 	render() {
 		return (
 			<div className="descriptions">
-				{ this.props.descriptions.map(description => <Description description={description} />) }
+				{ this.props.committees.map(description => <Description description={description} />) }
 			</div>
 		);
 	}
