@@ -1,46 +1,47 @@
 .descriptions {
-	padding-bottom: 50px;
-
-	.committee-component{
-		height: 200px;
-		padding-bottom: 50px;
-
-		.left {
-			right: 570px;
-		}
-
-		.right {
-			left: 270px;
-		}
-
-		.ornament {
-			position: absolute;
-		}
-
-		.image-ornament {
-			width: 100%;
-			max-width: 150px;
-			img {
-				width: 100%;
-			}
-		}
-
-		.text-section {
-
-			.info {
-				text-align: left;
-				max-width: 56%;
-				height: 88px;
-			}
-
-			a:link{
-				text-decoration: none;
-			}
-
-			p {
-				text-align: left;
-				max-width: 56%;
-			}
-		}
+	.committee-component {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		width: 80%;
+		margin-left: 10%;
 	}
+
+	img {
+		height: 150px;
+		width: 150px;
+		margin-right: 5%;
+		margin-top: 6%;
+	}
+
+	.text-section {
+		margin-top: 5%;
+		margin-bottom: 3%;
+		align-self: flex-start;
+		width: 50%;
+
+		h1 {
+			display: inline-block;
+			margin-bottom: 0;
+			font-size: 1.8em;
+			font-color: $font-primary-color;
+			font-family: $font-display;
+		}
+
+		a {
+			font-color: $font-primary-color;
+		}
+
+		p {
+			display: inline-block;
+			font-family: $font-body;
+			font-color: $font-primary-color;
+			line-height: 1.5em;
+			font-size: 0.8em;
+			vertical-align: top;
+		}
+
+	}
+
+	margin-bottom: 5%;
 }
