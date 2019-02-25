@@ -12,7 +12,7 @@ import {render} from 'react-dom';
 import Home from 'containers/home';
 import About from 'containers/about';
 import Sponsors from 'containers/sponsors';
-import CommitteeDescriptions from 'containers/committeedescriptions';
+import Committees from 'containers/committees';
 
 // hack for convenience
 Number.prototype.map = function(fn) {
@@ -33,7 +33,7 @@ class App extends React.Component {
 							<Route exact path="/about" component={About}/>
 							<Route exact path="/events" component={Home}/>
 							<Route exact path="/sponsors" component={Sponsors}/>
-							<Route exact path="/committees" component={CommitteeDescriptions}/>
+							<Route exact path="/committees" component={Committees}/>
 							<Redirect to="/"/>
 						</Switch>
 					</div>
