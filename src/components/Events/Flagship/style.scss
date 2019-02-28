@@ -1,0 +1,58 @@
+.season-events {
+	text-align: left;
+	align-items: center;
+
+	.flagship-event {
+		display: grid;
+		grid-template-columns: 200px calc(100% - 200px);
+		grid-template-rows: 50px 150px;
+		padding-bottom: 20px;
+
+		img {
+			height: 200px;
+			width: 200px;
+			object-fit: cover;
+			border-radius: 1em;
+		}
+
+		h3 {
+			margin: 0 22px 14px;
+			grid-column-start: 2;
+			grid-row-start: 1;
+			align-self: end;
+		}
+
+		p {
+			grid-column-start: 2;
+			grid-row-start: 2;
+			align-self: start;
+		}
+	}
+	
+	@media (max-width:600px) {
+		.flagship-event {
+			grid-template-columns: 100%;
+			grid-template-rows: 50px 200px auto;
+
+			img {
+				grid-row-start: 2;
+				place-self: center;
+			}
+
+			h3 {
+				grid-row-start: 1;
+				grid-column-start: 1;
+				text-align: center;
+			}
+
+			p {
+				grid-row-start: 3;
+				grid-column-start: 1;
+				margin-top: 14px;
+				text-align: center;
+			}
+		}
+	}
+}
+
+
