@@ -12,18 +12,16 @@
             background-position: center;
             background-repeat: no-repeat;
             margin-bottom: 20px;
-            opacity: .6;
-
-
+            opacity: .8;
+            box-shadow: 5px 5px navy;
             /*img {
                 height: 40px;
                 position: relative;
                 bottom: 20px;
             }*/
-
             &:hover {
                 cursor: pointer;
-                transform: scale(1.08);
+                transform: scale(1.01);
             }
 
             h2 {
@@ -39,11 +37,12 @@
                 text-decoration: none;
                 position: center;
                 color: white;
-                font-style: italic;
+                //font-style: italic;
                 line-height: 25px;
                 text-align: center;
                 vertical-align: middle;
-                text-shadow: 1px 1px 20px #000000;
+                text-shadow: 1px 1px black, 1px 1px black, 1px 1px black, 1px 1px black;
+                font-size: 14px;
             }
 
             .speaker {
@@ -53,7 +52,7 @@
                 p {
                     color: white;
                     text-align: right;
-                    font-style: italic;
+                    //font-style: italic;
                     /*display: inline-block;
                     font-family: $font-body;
                     margin: 0px 0px;

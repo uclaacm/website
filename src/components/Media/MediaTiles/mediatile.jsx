@@ -2,6 +2,9 @@
 
 export default class MediaTile extends React.Component {
 	render() {
+		function nextQuote () {
+		
+		}
 		return (
 			<a href={this.props.media.link}>
 				<div className= "media" style= {{backgroundImage: 'url(' + this.props.media.image + ')'}}> 

@@ -4,7 +4,7 @@ export default [
 		num_quotes: 2,
 		quote:[
 			{
-				content:'NetSec aims to give people the cybersecurity skills necessary to become penetration testers or to write code that is secure and can’t be hacked.',
+				content:'NetSec aims to give people the cybersecurity skills necessary to become penetration testers or to write code that is secure and can\'t be hacked.',
 				speaker:'Tanya Al-Rehani',
 				position:'President of NetSec'
 			},
@@ -38,7 +38,7 @@ export default [
 		logo:'/images/media/db-logo.png',
 	},
 	{
-		title:'Students devise unique coding projects at UCLA’s Hack on the Hill',
+		title:'Students devise unique coding projects at UCLA\'s Hack on the Hill',
 		num_quotes: 2,
 		quote:[
 			{
@@ -47,7 +47,7 @@ export default [
 				position:'Computer Science'
 			},
 			{
-				content:'It’s really cool that this environment forces you to work with people. In any given room, there’s always a lot of really smart people, and you can learn a lot from them.',
+				content:'It\'s really cool that this environment forces you to work with people. In any given room, there’s always a lot of really smart people, and you can learn a lot from them.',
 				speaker:'Chris Lin',
 				position:'Chemical Engineering'
 			}
