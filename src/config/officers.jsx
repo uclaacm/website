@@ -1,74 +1,74 @@
 export default [
 	{
-		name: "Yvonne Chen",
-		title: "President",
-		email: "ycyvonne@ucla.edu",
-		image: "/images/officers/yvonne.jpg"
-	},
-	{
-		name: "Nathan Yang",
-		title: "External VP",
-		email: "thenathanyang@ucla.edu",
-		image: "/images/officers/nathan.jpg"
-	},
-	{
-		name: "Natasha Kohli",
-		title: "Internal VP",
-		email: "natashakohli@ucla.edu",
-		image: "/images/officers/natasha.jpg"
-	},
-	{
-		name: "Adit Deshpande",
-		title: "President of AI",
-		email: "adeshpande3@ucla.edu",
-		image: "/images/officers/adit.jpg"
-	},
-	{
 		name: "Kevin Tan",
-		title: "President of Hack",
+		title: "President",
 		email: "ktan17@ucla.edu",
-		image: "/images/officers/kevin.jpg"
+		image: "/images/officers/KevinTan.jpg"
 	},
 	{
-		name: "Jeffrey Zhao",
+		name: "Vivian Doan",
+		title: "External VP",
+		email: "viviandoan@engineering.ucla.edu",
+		image: "/images/officers/VivianDoan.jpg"
+	},
+	{
+		name: "Rucha Patki",
+		title: "Internal VP",
+		email: "ruchapatki@gmail.com",
+		image: "/images/officers/RuchaPatki.jpg"
+	},
+	{
+		name: "Megha Ilango",
+		title: "President of AI",
+		email: "meghailango@ucla.edu",
+		image: "/images/officers/MeghaIlango.jpg"
+	},
+	{
+		name: "Connie Chen",
+		title: "Co-President of Hack",
+		email: "conniechen@engineering.ucla.edu",
+		image: "/images/officers/ConnieChen.jpg"
+	},
+	{
+		name: "Lea Blum",
+		title: "Co-President of Hack",
+		email: "leab1308@gmail.com",
+		image: "/images/officers/LeaBlum.jpeg"
+	},
+	{
+		name: "Justin Li",
 		title: "President of ICPC",
-		email: "zhouhengsun@gmail.com",
-		image: "/images/officers/jeffrey.jpg"
+		email: "justindli@gmail.com",
+		image: "/images/officers/KevinTan.jpg"
 	},
 	{
-		name: "Akshara S.",
+		name: "Aaron Yoo",
 		title: "President of Cyber",
-		email: "akshara.sundar@gmail.com",
-		image: "/images/officers/akshara.jpg"
+		email: "atyoo99@gmail.com",
+		image: "/images/officers/AaronYoo.jpg"
 	},
 	{
-		name: "Judy Kim",
-		title: "Co-President of Studio",
-		email: "judyapplekim@gmail.com",
-		image: "/images/officers/judy.jpg"
+		name: "Kevin Chuang",
+		title: "President of Game Studio",
+		email: "kevinchuang2@gmail.com",
+		image: "/images/officers/KevinChuang.jpg"
 	},
 	{
-		name: "CJ Ordog",
-		title: "Co-President of Studio",
-		email: "cjordog@gmail.com",
-		image: "/images/officers/cj.jpg"
-	},
-	{
-		name: "Caroline Quigg",
+		name: "Baolinh Nguyen",
 		title: "President of ACM-W",
-		email: "quiggc@ucla.edu",
-		image: "/images/officers/caroline.jpg"
+		email: "Baolinh.nguyen@ucla.edu",
+		image: "/images/officers/BaolinhNguyen.jpg"
 	},
 	{
-		name: "Arpi Beshlikyan",
+		name: "Isra Ameen ",
 		title: "President of Design",
-		email: "aybeshlikyan@ucla.edu",
-		image: "/images/officers/arpi.jpg"
+		email: "israameen1@gmail.com",
+		image: "/images/officers/IsraAmeen.png"
 	},
 	{
-		name: "John Stucky",
+		name: "Christina I.",
 		title: "President of Teach LA",
-		email: "stuckyj@gmail.com",
-		image: "/images/officers/john.jpg"
+		email: "christina.indudhara@gmail.com",
+		image: "/images/officers/ChristinaIndudhara.jpeg"
 	}
 ];
