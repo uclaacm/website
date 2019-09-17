@@ -39,7 +39,7 @@ export default [
 		name: "Justin Li",
 		title: "President of ICPC",
 		email: "justindli@gmail.com",
-		image: "/images/officers/KevinTan.jpg"
+		image: "/images/officers/JustinLi.jpg"
 	},
 	{
 		name: "Aaron Yoo",
@@ -60,7 +60,7 @@ export default [
 		image: "/images/officers/BaolinhNguyen.jpg"
 	},
 	{
-		name: "Isra Ameen ",
+		name: "Isra Ameen",
 		title: "President of Design",
 		email: "israameen1@gmail.com",
 		image: "/images/officers/IsraAmeen.png"
