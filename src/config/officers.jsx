@@ -33,7 +33,7 @@ export default [
 		name: "Lea Blum",
 		title: "Co-President of Hack",
 		email: "leab1308@gmail.com",
-		image: "/images/officers/LeaBlum.jpeg"
+		image: "/images/officers/LeaBlum.jpg"
 	},
 	{
 		name: "Justin Li",
@@ -63,12 +63,12 @@ export default [
 		name: "Isra Ameen",
 		title: "President of Design",
 		email: "israameen1@gmail.com",
-		image: "/images/officers/IsraAmeen.png"
+		image: "/images/officers/IsraAmeen.jpg"
 	},
 	{
 		name: "Christina I.",
 		title: "President of Teach LA",
 		email: "christina.indudhara@gmail.com",
-		image: "/images/officers/ChristinaIndudhara.jpeg"
+		image: "/images/officers/ChristinaIndudhara.jpg"
 	}
 ];
