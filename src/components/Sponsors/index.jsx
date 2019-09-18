@@ -14,7 +14,7 @@ export default class Sponsors extends React.Component {
 				<Banner decorative />
 				<div className="content-section center">
 					<h2>Our Sponsors</h2>
-					<p className="subheading">Thanks to the UCLA Computer Science department for their contuinuous support of our programs. Thanks to UCLA Reslife for logistics and organizational help with our events, as well as for providing great venues to host them.</p>
+					<p className="subheading">Thanks to the UCLA Computer Science department for their continuous support of our programs. Thanks to UCLA Reslife for logistics and organizational help with our events, as well as for providing great venues to host them.</p>
 					<div className="sponsor-container">
 						<img className="sponsor sponsor-big" src="/images/sponsors/ucla-cs.jpg" />
 						<img className="sponsor sponsor-big" src="/images/sponsors/reslife.svg" />
