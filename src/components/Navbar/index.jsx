@@ -31,8 +31,7 @@ export default class Navbar extends React.Component {
 				<div id="navbar-inner">
 					<NavLink to="/">
 						<div id="nav-title" className="nav-section left">
-							<img src="/images/logo-acm.png" id="acm-logo"></img>
-							<div id="acm-title">UCLA <b>ACM</b></div>
+							<img src="/images/acm-rebrand-logo.png" id="acm-logo"></img>
 						</div>
 					</NavLink>
 					<div className="nav-section right" id="desktop-nav">
