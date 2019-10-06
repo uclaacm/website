@@ -53,6 +53,6 @@ export default [
 		class: 'teachla',
 		tagline: 'Learn It, Teach It',
 		image: '/images/committees/logo-teachla.svg',
-		link: 'https://www.facebook.com/teachlaucla/'
+		link: 'https://teachla.uclaacm.com'
 	}
 ]
