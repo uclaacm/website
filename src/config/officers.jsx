@@ -42,10 +42,10 @@ export default [
 		image: "/images/officers/JustinLi.jpg"
 	},
 	{
-		name: "Aaron Yoo",
+		name: "Sanjana Sarda",
 		title: "President of Cyber",
-		email: "atyoo99@gmail.com",
-		image: "/images/officers/AaronYoo.jpg"
+		email: "sanjanas.sardas@gmail.com",
+		image: "/images/officers/SanjanaSarda.jpg"
 	},
 	{
 		name: "Kevin Chuang",
