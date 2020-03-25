@@ -29,7 +29,7 @@ export default class Home extends React.Component {
 					<div id="achievements-container">
 						<div className="achievement">
 							<img src="/images/icpc_natls_2020.jpg" />
-							<h3>ICPC Qualifies for North America Championship</h3>
+							<h3>ICPC Qualifies for North America Championship (2020)</h3>
 						</div>
 						<div className="achievement">
 							<img src="/images/2018-acm-excellence-award.png" />
