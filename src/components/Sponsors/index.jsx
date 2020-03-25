@@ -25,6 +25,10 @@ export default class Sponsors extends React.Component {
 							<img className="sponsor" alt={sponsor.name} key={sponsor.name} src={sponsor.image} />
 						)}
 					</div>
+					<h3>Interesting in becoming a sponsor?</h3>
+					<div className="button-section center">
+						<a href="mailto:acm@ucla.edu"><Button text="Contact Us" /></a>
+					</div><br /><br />
 				</div>
 				<Footer />
 			</div>
