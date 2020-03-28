@@ -16,7 +16,7 @@ export default class Home extends React.Component {
 				<Banner />
 				<div className="content-section center">
 					<h2>The largest Computer Science community at UCLA</h2>
-					<p className="subheading">ACM is the largest computer science student organization at UCLA. We welcome students of all different backgrounds, interests, and skill levels to join our community and share in our passion for CS. ACM is split into eight committees &mdash; each serving a different topic and mission. Although some events "belong" to a committee, being a member of a committee is the same as being a member of ACM overall. Our events are open to everyone.</p>
+					<p className="subheading">As the largest Computer Science student organization at UCLA and in Southern California, <b>ACM at UCLA</b> welcomes students of all backgrounds, interests, and skill levels to join our community and share in our passion for CS. ACM comprises eight committees — each serves a unique topic and mission. Regardless of major or experience, our events are open to everyone!</p>
 				</div>
 				<Committees committees={Config.committees} />
 				<div className="button-section center">
@@ -27,6 +27,10 @@ export default class Home extends React.Component {
 				<div className="content-section center">
 					<h2>Recent Achievements</h2>
 					<div id="achievements-container">
+						<div className="achievement">
+							<img src="/images/icpc_natls_2020.jpg" />
+							<h3>ICPC Qualifies for North America Championship (2020)</h3>
+						</div>
 						<div className="achievement">
 							<img src="/images/2018-acm-excellence-award.png" />
 							<h3>2017-2018 Student Chapter Excellence Award</h3>

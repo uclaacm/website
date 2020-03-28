@@ -11,8 +11,8 @@ export default class Footer extends React.Component {
 							<h3>Find us on social media</h3>
 							<a href="https://www.facebook.com/uclaacm" target="_BLANK"><div className="sm-icon" id="facebook" /></a>
 							<a href="https://www.github.com/uclaacm" target="_BLANK"><div className="sm-icon" id="github" /></a>
+							<a href="https://www.instagram.com/acm.ucla/" target="_BLANK"><div className="sm-icon" id="instagram" /></a>
 							<a href="https://medium.com/techatucla" target="_BLANK"><div className="sm-icon" id="medium" /></a>
-							<a href="https://twitter.com/uclaacm" target="_BLANK"><div className="sm-icon" id="twitter" /></a>
 						</div>
 						<div className="footer-item">
 							<h3>Reach us at</h3>
@@ -26,7 +26,7 @@ export default class Footer extends React.Component {
 						</div>
 					</div>
 					<div id="footer-bottom">
-						<span>&copy; ACM @ UCLA 2019</span>
+						<span>&copy; ACM at UCLA 2020.</span>
 					</div>
 				</div>
 			</div>

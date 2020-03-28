@@ -14,10 +14,10 @@ export default class Sponsors extends React.Component {
 				<Banner decorative />
 				<div className="content-section center">
 					<h2>Our Sponsors</h2>
-					<p className="subheading">Thanks to the UCLA Computer Science department for their continuous support of our programs. Thanks to UCLA Reslife for logistics and organizational help with our events, as well as for providing great venues to host them.</p>
+					<p className="subheading">We would like to thank the <b>UCLA Computer Science department</b> for their continuous support of ACM. Thanks to <b>UCLA ResLife</b> for logistical and organizational help with our events, as well as for providing great venues to host them.</p>
 					<div className="sponsor-container">
-						<img className="sponsor sponsor-big" src="/images/sponsors/ucla-cs.jpg" />
-						<img className="sponsor sponsor-big" src="/images/sponsors/reslife.svg" />
+						<a href="https://cs.ucla.edu" target="_BLANK"><img className="sponsor sponsor-big" src="/images/sponsors/ucla_cs_dept.png" /></a>
+						<a href="https://reslife.ucla.edu" target="_BLANK"><img className="sponsor sponsor-big" src="/images/sponsors/reslife.svg" /></a>
 					</div>
 					<p className="subheading">A special thanks to all of the UCLA Computer Science sponsors for helping support our programs:</p>
 					<div className="sponsor-container">
@@ -25,6 +25,10 @@ export default class Sponsors extends React.Component {
 							<img className="sponsor" alt={sponsor.name} key={sponsor.name} src={sponsor.image} />
 						)}
 					</div>
+					<h3>Interesting in becoming a sponsor?</h3>
+					<div className="button-section center">
+						<a href="mailto:acm@ucla.edu"><Button text="Contact Us" /></a>
+					</div><br /><br />
 				</div>
 				<Footer />
 			</div>

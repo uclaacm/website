@@ -21,18 +21,18 @@ export default class About extends React.Component {
 					</div>
 					<div className="text-section">
 						<h1>What is ACM?</h1>
-						<p className="half-size">ACM is the largest computer science student organization at UCLA. We welcome students of all different backgrounds and skill levels to join our community and share in our passion for CS!</p>
-						<p className="half-size">From infosessions to workshops to hackathons and competitions, our events cover a variety of topics including artificial intelligence, virtual reality, security, beginner workshops, diversity initiatives, community outreach, and more.</p>
-						<p className="half-size">At UCLA ACM, we aim to develop students' technical and professional skills while cultivating an inclusive and supportive community for all those interested in computer science.</p>
+						<p className="half-size">ACM is the largest Computer Science student organization at UCLA and in Southern California. We welcome students of all different backgrounds and skill levels to join our community and share in our passion for CS!</p>
+						<p className="half-size">With events such as infosessions, workshops, speaker panels, hackathons, and competitions, we cover a variety of topics including artificial intelligence, virtual reality, cybersecurity, app development, diversity initiatives, community outreach, and much more.</p>
+						<p className="half-size">At ACM at UCLA, we aim to develop students’ technical and professional skills while cultivating an inclusive and supportive community for everyone interested in computer science, regardless of major or experience.</p>
 					</div>
 				</div>
 				<div className="content-section right">
 					<div className="ornament image-ornament image-ornament-left">
-						<img src="/images/committee-diagram.svg" />
+						<img src="/images/acm_committees.svg" />
 					</div>
 					<div className="text-section">
 						<h1>What are ACM committees?</h1>
-						<p className="half-size">ACM is split into eight committees, each serving a different topic and mission. Some of our events may be categorized as a part of a specific committee, but being a member of a committee is the same as being a member of ACM. Our events are open to everyone. We strive to cover all of our members' interests and encourage members to explore new topics and events as well!</p>
+						<p className="half-size">ACM comprises eight committees, each serving a unique topic and mission. All of our events are open to everyone. We strive to cover all of our members’ interests and encourage members to explore new topics and events, too!</p>
 					</div>
 				</div>
 				<div className="content-section left">
@@ -41,7 +41,8 @@ export default class About extends React.Component {
 					</div>
 					<div className="text-section">
 						<h1>How do I get involved?</h1>
-						<p className="half-size">ACM holds various events throughout the year. No matter what background or major you come from, you're welcome to participate in all of our activities. At our general meeting on Monday, October 6th, we'll be covering how you can join as an official member, what topics our committees cover, and what we have planned for the upcoming year. To become a member, you should join <a href="https://members.uclaacm.com">the membership portal</a>. You can see events, get attendance points, and see a community-wide leaderboard. There might even be prizes!</p>
+						<p className="half-size">No matter what your background or major is, we welcome you to participate in all of our events and activities!</p>
+						<p className="half-size">To become a member and keep up with upcoming events, you should join <a href="https://members.uclaacm.com" target="_BLANK">the membership portal</a> and sign up for <a href="http://eepurl.com/c5pE6P" target="_BLANK">our weekly newsletter</a>. Signing up will keep you up to date with everything ACM, and earning points on the portal might even earn you a prize!</p>
 					</div>
 				</div>
 				<div className="content-section center" style={{marginBottom: '0px'}}>
