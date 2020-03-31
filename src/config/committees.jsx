@@ -46,7 +46,7 @@ export default [
 		class: 'design',
 		tagline: 'Form Follows Function',
 		image: '/images/committees/logo-design.svg',
-		link: 'https://www.facebook.com/uclaacm/'
+		link: 'https://www.facebook.com/groups/acmdesign/'
 	},
 	{
 		name: 'Teach LA',
