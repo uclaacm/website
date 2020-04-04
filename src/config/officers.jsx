@@ -21,7 +21,7 @@ export default [
 		name: "Raji Jadhav",
 		title: "President, Hack",
 		email: "rajeshwari.jadhav6@gmail.com",
-		image: "/images/officers/RajiJadhav.png"
+		image: "/images/officers/RajiJadhav.jpg"
 	},
 	{
 		name: "Julia Baylon",
@@ -33,7 +33,7 @@ export default [
 		name: "John Dang",
 		title: "President, AI",
 		email: "jamqd@ucla.edu",
-		image: "/images/officers/JohnDang.png"
+		image: "/images/officers/JohnDang.jpg"
 	},
 	{
 		name: "Kade Adams",
@@ -75,6 +75,6 @@ export default [
 		name: "Tomoki Fukazawa",
 		title: "Co-President, Design",
 		email: "tomoki@fukazawa.dev",
-		image: "/images/officers/TomokiFukazawa.png"
+		image: "/images/officers/TomokiFukazawa.jpg"
 	}
 ];
