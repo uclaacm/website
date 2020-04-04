@@ -1,13 +1,13 @@
 #officers-container {
 	width: 100%;
-	max-width: 900px;
+	max-width: 1000px;
 	padding: 0px 20px;
 	box-sizing: border-box;
 	margin: auto;
 	text-align: center;
 
 	.officer {
-		width: 280px;
+		width: 300px;
 		height: 100px;
 		display: inline-block;
 		color: $font-primary-color;
@@ -32,7 +32,7 @@
 		.info {
 			display: inline-block;
 			vertical-align: top;
-			width: 180px;
+			width: 200px;
 
 			h2 {
 				margin: 0px;
