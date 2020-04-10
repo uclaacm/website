@@ -11,7 +11,7 @@ export default class Footer extends React.Component {
 							<h3>Find us on social media</h3>
 							<a href="https://www.facebook.com/uclaacm" target="_BLANK"><div className="sm-icon" id="facebook" /></a>
 							<a href="https://www.github.com/uclaacm" target="_BLANK"><div className="sm-icon" id="github" /></a>
-							<a href="https://www.instagram.com/acm.ucla/" target="_BLANK"><div className="sm-icon" id="instagram" /></a>
+							<a href="https://www.instagram.com/uclaacm/" target="_BLANK"><div className="sm-icon" id="instagram" /></a>
 							<a href="https://medium.com/techatucla" target="_BLANK"><div className="sm-icon" id="medium" /></a>
 						</div>
 						<div className="footer-item">
