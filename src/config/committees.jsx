@@ -39,7 +39,7 @@ export default [
 		class: 'cyber',
 		tagline: 'Cybersecurity Made Simple',
 		image: '/images/committees/logo-cyber.svg',
-		link: 'https://www.facebook.com/groups/320869398280511',
+		link: 'https://acmcyber.com/',
 	},
 	{
 		name: 'Design',
