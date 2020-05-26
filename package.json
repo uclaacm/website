@@ -30,15 +30,15 @@
     "eslint": "^4.7.0",
     "eslint-plugin-react": "^7.3.0",
     "extract-text-webpack-plugin": "^3.0.0",
-    "node-sass": "^4.9.3",
+    "node-sass": "^4.14.1",
     "sass-loader": "^6.0.6",
     "webpack": "^3.6.0",
-    "webpack-dev-server": "^2.8.2"
+    "webpack-dev-server": "^2.11.5"
   },
   "dependencies": {
     "lodash": "^4.17.15",
     "lodash-es": "^4.17.15",
-    "npm": "^6.11.3",
+    "npm": "^6.14.5",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-redux": "^5.0.6",

@@ -53,12 +53,18 @@ export default [
 		email: "elenaescalas@g.ucla.edu",
 		image: "/images/officers/ElenaEscalas.jpg"
 	},
-	{
-		name: "Sanjana Sarda",
-		title: "President, Cyber",
-		email: "sanjanas.sardas@gmail.com",
-		image: "/images/officers/SanjanaSarda.jpg"
-	},
+    {
+        name: "Disha Zambani",
+        title: "Co-President, Cyber",
+        email: "dmzambani@gmail.com",
+        image: "/images/officers/DishaZambani.jpg"
+    },
+    {
+        name: "Ellie Cheng",
+        title: "Co-President, Cyber",
+        email: "ellieyhc@gmail.com",
+        image: "/images/officers/EllieCheng.jpg"
+    },
 	{
 		name: "Matt Wang",
 		title: "President, Teach LA",
