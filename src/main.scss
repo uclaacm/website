@@ -52,6 +52,16 @@ body {
 	color: $font-primary-color;
 }
 
+.app-container{
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+.main-container {
+	flex: 1 0 auto;
+}
+
 /*************************************
  * Import CSS styles for components  *
  ************************************/

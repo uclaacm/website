@@ -1,9 +1,7 @@
 import React from 'react';
 import Config from 'config';
 
-import Navbar from 'components/Navbar';
 import Button from 'components/Button';
-import Footer from 'components/Footer';
 import Banner from 'components/Banner';
 import Carousal from 'components/Home/Carousal';
 import Committees from 'components/Home/Committees';
@@ -12,7 +10,6 @@ export default class Home extends React.Component {
 	render() {
 		return (
 			<div className="home-page">
-				<Navbar />
 				<Banner />
 				<div className="content-section center">
 					<h2>The largest Computer Science community at UCLA</h2>
@@ -59,7 +56,6 @@ export default class Home extends React.Component {
 					</div>
 				</div>
 				<Carousal images={Config.carousal.images} />
-				<Footer />
 			</div>
 		);
 	}

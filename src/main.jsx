@@ -9,6 +9,9 @@ import {render} from 'react-dom';
 
 // import {store} from 'reducers';
 
+import Footer from './components/Footer/';
+import Navbar from './components/Navbar';
+
 import Home from 'containers/home';
 import About from 'containers/about';
 import Sponsors from 'containers/sponsors';
@@ -26,14 +29,18 @@ class App extends React.Component {
 	render(){
 		return (
 			<BrowserRouter onUpdate={() => window.scrollTo(0, 0)}>
-				<div>
-					<Switch>
-						<Route exact path="/" component={Home}/>
-						<Route exact path="/about" component={About}/>
-						<Route exact path="/events" component={Events}/>
-						<Route exact path="/sponsors" component={Sponsors}/>
-						<Redirect to="/"/>
-					</Switch>
+				<div className="app-container">
+					<Navbar />
+					<div className="main-container">
+						<Switch>
+							<Route exact path="/" component={Home}/>
+							<Route exact path="/about" component={About}/>
+							<Route exact path="/events" component={Events}/>
+							<Route exact path="/sponsors" component={Sponsors}/>
+							<Redirect to="/"/>
+						</Switch>
+					</div>
+					<Footer />
 				</div>
 			</BrowserRouter>
 		);
