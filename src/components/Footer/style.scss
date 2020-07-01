@@ -2,6 +2,7 @@
 	width: 100%;
 	min-height: 120px;
 	background-color: $acm-black;
+	flex-shrink: 0;
 
 	#footer-inner {
 		max-width: 1000px;

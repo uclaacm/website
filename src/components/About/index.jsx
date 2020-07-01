@@ -2,8 +2,6 @@ import React from 'react';
 import Config from 'config';
 
 import Navbar from 'components/Navbar';
-import Button from 'components/Button';
-import Footer from 'components/Footer';
 import Banner from 'components/Banner';
 import Officers from 'components/About/Officers';
 
@@ -11,7 +9,6 @@ export default class About extends React.Component {
 	render() {
 		return (
 			<div className="about-page">
-				<Navbar />
 				<Banner decorative />
 				<div className="content-section">
 					<div className="ornament square-ornament">
@@ -49,7 +46,6 @@ export default class About extends React.Component {
 					<h2>Officers</h2>
 				</div>
 				<Officers officers={Config.officers} /><br /><br />
-				<Footer />
 			</div>
 		);
 	}

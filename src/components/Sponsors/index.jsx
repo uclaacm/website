@@ -1,16 +1,13 @@
 import React from 'react';
 import Config from 'config';
 
-import Navbar from 'components/Navbar';
 import Button from 'components/Button';
-import Footer from 'components/Footer';
 import Banner from 'components/Banner';
 
 export default class Sponsors extends React.Component {
 	render() {
 		return (
 			<div className="about-page">
-				<Navbar />
 				<Banner decorative />
 				<div className="content-section center">
 					<h2>Our Sponsors</h2>
@@ -30,7 +27,6 @@ export default class Sponsors extends React.Component {
 						<a href="mailto:acm@ucla.edu"><Button text="Contact Us" /></a>
 					</div><br /><br />
 				</div>
-				<Footer />
 			</div>
 		);
 	}
