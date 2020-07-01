@@ -1,21 +1,16 @@
 import 'main.scss';
-// import 'babel-polyfill';
-// import 'whatwg-fetch';
 
 import React from 'react';
-// import {Provider, createStore} from 'react-redux';
 import {Route, Switch, Redirect, BrowserRouter} from 'react-router-dom';
 import {render} from 'react-dom';
-
-// import {store} from 'reducers';
 
 import Footer from './components/Footer/';
 import Navbar from './components/Navbar';
 
-import Home from 'containers/home';
-import About from 'containers/about';
-import Sponsors from 'containers/sponsors';
-import Events from 'containers/events';
+import Home from './components/home';
+import About from './components/about';
+import Sponsors from './components/sponsors';
+import Events from './components/events';
 
 // hack for convenience
 Number.prototype.map = function(fn) {
