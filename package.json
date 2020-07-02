@@ -25,6 +25,12 @@
     "type": "git",
     "url": "git+https://github.com/uclaacm/website.git"
   },
+  "author": "uclaacm",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/uclaacm/website/issues"
+  },
+  "homepage": "https://uclaacm.com",
   "browserslist": {
     "production": [
       ">0.2%",
