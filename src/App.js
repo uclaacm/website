@@ -11,13 +11,6 @@ import About from './components/About/About';
 import Sponsors from './components/Sponsors/Sponsor';
 import Events from './components/Events/Event';
 
-Number.prototype.map = function(fn) {
-	const res = [];
-	for (let i = 0; i < this.valueOf(); i++)
-		res.push(fn(i, res));
-	return res;
-};
-
 function App() {
   return (
     <BrowserRouter onUpdate={() => window.scrollTo(0, 0)}>
