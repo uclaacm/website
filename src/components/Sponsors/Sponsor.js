@@ -1,8 +1,9 @@
 import React from 'react';
-import Config from 'config';
 
-import Button from 'components/Button';
-import Banner from 'components/Banner';
+import Config from '../../config';
+
+import Button from '../Button/Button';
+import Banner from '../Banner/Banner';
 
 export default class Sponsors extends React.Component {
 	render() {

@@ -8,6 +8,7 @@ export default class Calendar extends React.Component {
                     className="calendar-main"
                     frameBorder="0"
                     scrolling="0"
+                    title="calendar"
                     />
             </div>
         )

@@ -1,5 +1,5 @@
 import React from 'react';
-import Officer from './officer';
+import Officer from './Officer';
 
 export default class Officers extends React.Component {
 	render() {

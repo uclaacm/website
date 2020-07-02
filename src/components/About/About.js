@@ -1,9 +1,8 @@
 import React from 'react';
-import Config from 'config';
+import Config from '../../config';
 
-import Navbar from 'components/Navbar';
-import Banner from 'components/Banner';
-import Officers from 'components/About/Officers';
+import Banner from '../Banner/Banner';
+import Officers from './Officers/Officers';
 
 export default class About extends React.Component {
 	render() {

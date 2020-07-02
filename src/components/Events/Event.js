@@ -1,8 +1,8 @@
 import React from 'react';
-import Config from 'config';
+import Config from '../../config';
 
-import Banner from 'components/Banner';
-import Calendar from 'components/Events/Calendar';
+import Banner from '../Banner/Banner';
+import Calendar from './Calendar/Calendar';
 
 export default class Events extends React.Component {
     render() {

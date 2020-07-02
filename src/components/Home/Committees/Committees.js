@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Committee from './committee';
+import Committee from './Committee';
 
 export default class Committees extends React.Component {
 	render() {

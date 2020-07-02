@@ -1,10 +1,11 @@
 import React from 'react';
-import Config from 'config';
 
-import Button from 'components/Button';
-import Banner from 'components/Banner';
-import Carousal from 'components/Home/Carousal';
-import Committees from 'components/Home/Committees';
+import Config from '../../config';
+
+import Button from '../Button/Button';
+import Banner from '../Banner/Banner';
+import Carousel from './Carousel/Carousel';
+import Committees from './Committees/Committees';
 
 export default class Home extends React.Component {
 	render() {
@@ -55,7 +56,7 @@ export default class Home extends React.Component {
 						</div>
 					</div>
 				</div>
-				<Carousal images={Config.carousal.images} />
+				<Carousel images={Config.carousel.images} />
 			</div>
 		);
 	}

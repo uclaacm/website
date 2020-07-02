@@ -1,12 +1,12 @@
 import Committees from './committees';
-import Carousal from './carousal';
+import Carousel from './carousel';
 import Sponsors from './sponsors';
 import Officers from './officers';
 import Events from './events';
 
 export default {
 	committees: Committees,
-	carousal: Carousal,
+	carousel: Carousel,
 	sponsors: Sponsors,
 	officers: Officers,
 	events: Events
