@@ -25,19 +25,19 @@ function Home (props) {
 				<h2>Recent Achievements</h2>
 				<div id="achievements-container">
 					<div className="achievement">
-						<img src="/images/icpc_natls_2020.jpg" alt="ICPC members celebrating victory!" />
+						<img src={process.env.PUBLIC_URL + "/images/icpc_natls_2020.jpg"} alt="ICPC members celebrating victory!" />
 						<h3>ICPC Qualifies for North America Championship (2020)</h3>
 					</div>
 					<div className="achievement">
-						<img src="/images/2018-acm-excellence-award.png" alt="2017-2018 Student Chapter Excellence Award"/>
+						<img src={process.env.PUBLIC_URL + "/images/2018-acm-excellence-award.png"} alt="2017-2018 Student Chapter Excellence Award"/>
 						<h3>2017-2018 Student Chapter Excellence Award</h3>
 					</div>
 					<div className="achievement">
-						<img src="/images/2017-acm-excellence-award.png" alt="2016-2017 Student Chapter Excellence Award"/>
+						<img src={process.env.PUBLIC_URL + "/images/2017-acm-excellence-award.png"} alt="2016-2017 Student Chapter Excellence Award"/>
 						<h3>2016-2017 Student Chapter Excellence Award</h3>
 					</div>
 					<div className="achievement">
-						<img src="/images/icpc-award.jpg" alt="ICPC members at SoCal Regionals" />
+						<img src={process.env.PUBLIC_URL + "/images/icpc-award.jpg"} alt="ICPC members at SoCal Regionals" />
 						<h3>ICPC Places 2nd in SoCal Regionals, Qualifies for World Finals</h3>
 					</div>
 				</div>

@@ -5,7 +5,7 @@ import React from 'react';
 const IMAGE_WIDTH = 360;
 const ITEMS_PER_SECTION = 4;
 
-export default class Carousal extends React.Component {
+export default class Carousel extends React.Component {
 	constructor(props) {
 		super(props);
 
@@ -17,7 +17,15 @@ export default class Carousal extends React.Component {
 			sections.push({
 				left: (i / ITEMS_PER_SECTION) * this.sectionWidth,
 				width: this.sectionWidth,
-				items: this.props.images.slice(i, i + 4).map((item, i) => <a href={item} target="_blank" rel="noreferrer noopener" key={i}><div style={{backgroundImage: 'url('+item+')'}} /></a>),
+				items: this.props.images.slice(i, i + 4).map((item, i) => 
+					<a 
+						href={item} target="_blank" 
+						rel="noreferrer noopener" 
+						key={i}>
+							<div 
+							style={{backgroundImage: 'url('+ process.env.PUBLIC_URL + item + ')'}}>
+							</div>
+					</a>),
 			});
 		}
 

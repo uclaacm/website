@@ -13,13 +13,17 @@ function Sponsors() {
 				<h2>Our Sponsors</h2>
 				<p className="subheading">We would like to thank the <b>UCLA Computer Science department</b> for their continuous support of ACM. Thanks to <b>UCLA ResLife</b> for logistical and organizational help with our events, as well as for providing great venues to host them.</p>
 				<div className="sponsor-container">
-					<a href="https://cs.ucla.edu" target="_blank" rel="noreferrer noopener"><img className="sponsor sponsor-big" src="/images/sponsors/ucla_cs_dept.png" alt="UCLA CS Dept Logo" /></a>
-					<a href="https://reslife.ucla.edu" target="_blank" rel="noreferrer noopener"><img className="sponsor sponsor-big" src="/images/sponsors/reslife.svg" alt="UCLA ResLife Logo" /></a>
+					<a href="https://cs.ucla.edu" target="_blank" rel="noreferrer noopener">
+						<img className="sponsor sponsor-big" src={process.env.PUBLIC_URL + "/images/sponsors/ucla_cs_dept.png"} alt="UCLA CS Dept Logo" />
+					</a>
+					<a href="https://reslife.ucla.edu" target="_blank" rel="noreferrer noopener">
+						<img className="sponsor sponsor-big" src={process.env.PUBLIC_URL + "/images/sponsors/reslife.svg"} alt="UCLA ResLife Logo" />
+					</a>
 				</div>
 				<p className="subheading">A special thanks to all of the UCLA Computer Science sponsors for helping support our programs:</p>
 				<div className="sponsor-container">
 					{Config.sponsors.map(sponsor =>
-						<img className="sponsor" alt={sponsor.name} key={sponsor.name} src={sponsor.image} />
+						<img className="sponsor" alt={sponsor.name} key={sponsor.name} src={process.env.PUBLIC_URL + sponsor.image} />
 					)}
 				</div>
 				<h3>Interesting in becoming a sponsor?</h3>
