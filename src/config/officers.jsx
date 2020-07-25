@@ -48,10 +48,10 @@ export default [
 		image: "/images/officers/EvanCharfauros.jpg"
 	},
 	{
-		name: "Elena Escalas",
+		name: "Nikil Selvam",
 		title: "President, ICPC",
-		email: "elenaescalas@g.ucla.edu",
-		image: "/images/officers/ElenaEscalas.jpg"
+		email: "nikilrselvam@gmail.com ",
+		image: "/images/officers/NikilSelvam.jpg"
 	},
     {
         name: "Disha Zambani",
