@@ -16,7 +16,7 @@ RUN mkdir -p /var/www/acm/working && \
 WORKDIR /var/www/acm/working
 COPY *.json /var/www/acm/working/
 RUN /usr/bin/node --max_semi_space_size=8 \
-                  --max_old_space_size=298 \
+                  --max_old_space_size=4096 \
                   --max_executable_size=248 \
                   /usr/bin/npm install
 
