@@ -1,9 +1,17 @@
 import React from 'react';
 
+// this can get refactored into something better
+const mapUpToSum = (num, fn) => {
+	const res = [];
+	for (let i = 0; i < num; i++)
+		res.push(fn(i, res));
+	return res;
+};
+
 const generateCols = (n, m, classPattern=['']) => {
-	return n.map(i =>
+	return mapUpToSum(n,(i =>
 		<div className="square-col" key={i}>
-			{m.map(j => {
+			{mapUpToSum(m,(j => {
 				const classNames = ['square'];
 				const name = classPattern[j % classPattern.length];
 				if (name !== "") {
@@ -16,9 +24,9 @@ const generateCols = (n, m, classPattern=['']) => {
 						classNames.push('light');
 				}
 				return <div className={classNames.join(" ")} key={j} />
-			})}
+			}))}
 		</div>
-	);
+	));
 }
 
 export default class Banner extends React.Component {
