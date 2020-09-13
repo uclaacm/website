@@ -79,11 +79,19 @@
 		width: 350px;
 		min-height: 200px;
 		margin: 20px;
+		text-decoration: none;
+
+		&:hover {
+			cursor: pointer;
+			transform: scale(1.02);
+		}
 
 		img {
 			text-align: center;
-			max-height: 200px;
-			max-width: 350px;
+			height: 200px;
+			width: 350px;
+			border-radius: 10px;
+			box-shadow: 5px -5px 8px #888888;
 		}
 
 		h3 {
@@ -91,6 +99,7 @@
 			font-size: 0.8em;
 			text-transform: uppercase;
 			font-family: $font-body;
+			color: $font-primary-color;
 		}
 	}
 }
