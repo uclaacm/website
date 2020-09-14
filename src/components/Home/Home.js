@@ -44,7 +44,7 @@ function Home (props) {
 					</a>
 					<a href="https://samueli.ucla.edu/tech-gala-recognizes-top-student-computer-science-projects/">
 					<div className="achievement">
-						<img src={process.env.PUBLIC_URL + "/images/tech-gala.jpg"} alt="ACM Tech Gala Image" />
+						<img src={process.env.PUBLIC_URL + "/images/tech-gala.jpg"} alt="ACM Tech Gala" />
 						<h3>Tech Gala 2020</h3>
 					</div>										
 					</a>
