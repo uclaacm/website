@@ -27,7 +27,7 @@ function Home (props) {
 					<a href="https://samueli.ucla.edu/bruinlabs-ucla-clubs-offers-free-program-to-teach-product-development-skills/">
 					<div className="achievement">
 						<img src={process.env.PUBLIC_URL + "/images/bruinlabs.png"} alt="BruinLabs Collaborative Program"/> 
-						<h3>BE x ACM: BruinLabs</h3>
+						<h3>BruinLabs: the collaboration of BruinEntrepreneurs, DevX, and ACM</h3>
 					</div>
 					</a>
 					<a href="https://samueli.ucla.edu/engineering-student-clubs-adapt-to-a-virtual-spring-quarter/">
