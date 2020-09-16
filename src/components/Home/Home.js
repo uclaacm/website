@@ -17,6 +17,7 @@ function Home (props) {
 				<p className="subheading">As the largest Computer Science student organization at UCLA and in Southern California, <b>ACM at UCLA</b> welcomes students of all backgrounds, interests, and skill levels to join our community and share in our passion for CS. ACM comprises eight committees — each serves a unique topic and mission. Regardless of major or experience, our events are open to everyone!</p>
 				<SocialMedia />
 			</div>
+			<br />
 			<Committees committees={Config.committees} />
 			<div className="button-section center">
 				{ /** CHANGE THIS LINK TO ABOUT PAGE LATER */ }
