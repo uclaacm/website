@@ -37,29 +37,6 @@
 		text-decoration-color: $acm-tint;
 	}
 
-	.sm-icon {
-		height: 30px;
-		width: 30px;
-		border-radius: 2px;
-		margin: 0px 3px;
-		display: inline-block;
-		color: white;
-
-		&#facebook { background-image: url(/images/social_media/facebook.svg); }
-		&#twitter { background-image: url(/images/social_media/twitter.svg); }
-		&#github { background-image: url(/images/social_media/github.svg); }
-		&#medium { background-image: url(/images/social_media/medium.svg); }
-		&#instagram { background-image: url(/images/social_media/instagram.svg); }
-		&#discord { background-image: url(/images/social_media/discord.svg); }
-		&#youtube { background-image: url(/images/social_media/youtube.svg); }
-
-
-		&:hover {
-			background-color: $acm-black;
-			cursor: pointer;
-		}
-	}
-
 	#footer-bottom {
 		width: 100%;
 		text-align: center;

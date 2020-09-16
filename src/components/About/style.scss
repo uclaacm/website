@@ -80,27 +80,6 @@
 	}
 }
 
-.sm-icon {
-	height: 30px;
-	width: 30px;
-	border-radius: 2px;
-	margin: 0px 3px;
-	display: inline-block;
-
-	&#facebook { background-image: url(/images/social_media/facebookDark.svg); }
-	&#twitter { background-image: url(/images/social_media/twitterDark.svg); }
-	&#github { background-image: url(/images/social_media/githubDark.svg); }
-	&#medium { background-image: url(/images/social_media/mediumDark.svg); }
-	&#instagram { background-image: url(/images/social_media/instagramDark.svg); }
-	&#discord { background-image: url(/images/social_media/discordDark.svg); }
-	&#youtube { background-image: url(/images/social_media/youtubeDark.svg); }
-
-
-	&:hover {
-		transform: scale(1.02);
-		cursor: pointer;
-	}
-}
 
 @media (max-width: 750px) {
 }

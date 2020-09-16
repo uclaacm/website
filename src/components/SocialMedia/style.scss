@@ -1,4 +1,4 @@
-.sm {
+.sm-icon {
     height: 30px;
     width: 30px;
     border-radius: 2px;
@@ -34,7 +34,7 @@
 
 
     &:hover {
-        transform: scale(1.02);
+        background-color: $acm-black;
         cursor: pointer;
     }
 
