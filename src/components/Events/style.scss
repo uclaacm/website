@@ -2,6 +2,23 @@
     text-align: center;
 }
 
+.events-sm {
+    height: 30px;
+    width: 35px;
+    border-radius: 2px;
+    margin: 0px 3px;
+     display: inline-block;
+    vertical-align: middle; 
+
+    &#youtube { background-image: url(/images/social_media/youtubeDark.svg); }
+
+    &:hover {
+        transform: scale(1.03);
+        cursor: pointer;
+    }
+}
+
+
 h2 {
     font-family: $font-display;
 }

@@ -66,32 +66,7 @@
 		color: $acm-tint;
 		padding: 20px 0px;
 		line-height: 135%;
-	}
-}
-
-#achievements-container {
-	width: 100%;
-	text-align: center;
-
-	.achievement {
-		display: inline-block;
-		vertical-align: top;
-		width: 350px;
-		min-height: 200px;
-		margin: 20px;
-
-		img {
-			text-align: center;
-			max-height: 200px;
-			max-width: 350px;
-		}
-
-		h3 {
-			font-weight: bold;
-			font-size: 0.8em;
-			text-transform: uppercase;
-			font-family: $font-body;
-		}
+		font-size: 2em;
 	}
 }
 

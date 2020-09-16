@@ -39,8 +39,8 @@ $teachla-black: #2C3022;
 $teachla-tint: #C6DC85;
 
 $font-display: 'Poppins', 'Helvetica Neue', 'Helvetica', sans-serif;
-$font-header: 'Poppins', 'Palanquin Dark', sans-serif;
-$font-body: 'Chivo', sans-serif;
+$font-header: 'Poppins', sans-serif;
+$font-body: 'Open Sans', sans-serif;
 
 $font-primary-color: #333333;
 $font-secondary-color: #777777;
@@ -72,9 +72,11 @@ body {
 @import 'components/Home/style';
 @import 'components/Home/Carousel/style';
 @import 'components/Home/Committees/style';
+@import 'components/Home/News/style';
 @import 'components/About/style';
 @import 'components/About/Officers/style';
 @import 'components/Sponsors/style';
 @import 'components/Footer/style';
 @import 'components/Events/style';
 @import 'components/Events/Calendar/style';
+@import 'components/SocialMedia/style.scss';

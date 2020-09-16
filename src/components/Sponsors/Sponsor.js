@@ -23,7 +23,9 @@ function Sponsors() {
 				<p className="subheading">A special thanks to all of the UCLA Computer Science sponsors for helping support our programs:</p>
 				<div className="sponsor-container">
 					{Config.sponsors.map(sponsor =>
+						<a href={sponsor.link} target="_blank" rel="noreferrer noopener">
 						<img className="sponsor" alt={sponsor.name} key={sponsor.name} src={process.env.PUBLIC_URL + sponsor.image} />
+						</a>
 					)}
 				</div>
 				<h3>Interesting in becoming a sponsor?</h3>
