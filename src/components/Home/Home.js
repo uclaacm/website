@@ -51,6 +51,26 @@ function Home (props) {
 						<h3>Tech Gala 2020</h3>
 					</div>										
 					</a>
+					<a href="https://www.cs.ucla.edu/cs-undergraduate-students-win-4th-in-icpc-southern-california-regionals/" target="_blank" rel="noreferrer noopener">
+					<div className="achievement">
+						<img src={process.env.PUBLIC_URL + "/images/icpc_natls_2020.jpg"} alt="ICPC members celebrating victory!" />
+						<h3>ICPC Qualifies for North America Championship (2020)</h3>
+					</div>
+					</a>
+					<a href="https://www.cs.ucla.edu/ucla-acm-upe-receive-chapter-excellence-awards/" target="_blank" rel="noreferrer noopener">
+					<div className="achievement">
+						<img src={process.env.PUBLIC_URL + "/images/2018-acm-excellence-award.png"} alt="2017-2018 Student Chapter Excellence Award"/>
+						<h3>2017-2018 Student Chapter Excellence Award</h3>
+					</div>
+					</a>
+					<a href="https://www.cs.ucla.edu/ucla-acm-receives-student-chapter-excellence-award/" target="_blank" rel="noreferrer noopener">
+					<div className="achievement">
+						<img src={process.env.PUBLIC_URL + "/images/2017-acm-excellence-award.png"} alt="2016-2017 Student Chapter Excellence Award"/>
+						<h3>2016-2017 Student Chapter Excellence Award</h3>
+					</div>
+					</a>
+
+
 				</div>
 			</div>
 			
