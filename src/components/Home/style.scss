@@ -70,38 +70,6 @@
 	}
 }
 
-#achievements-container {
-	width: 100%;
-	text-align: center;
-
-	.achievement {
-		display: inline-block;
-		vertical-align: top;
-		width: 350px;
-		min-height: 200px;
-		margin: 20px;
-		text-decoration: none;
-
-
-
-		img {
-			text-align: center;
-			height: 200px;
-			width: 350px;
-			border-radius: 10px;
-			border: 2px solid #EAEAEA;
-		}
-
-		h3 {
-			font-weight: bold;
-			font-size: 0.9em;
-			text-transform: capitalize;
-			font-family: $font-body;
-			color: $font-primary-color;
-		}
-	}
-}
-
 #sign-up-section {
 	display: flex;
 	flex-direction: row;
