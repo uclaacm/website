@@ -1,21 +1,23 @@
 .achievements-container {
 	width: 100%;
 	text-align: center;
+	margin: auto;
 
 	.achievement {
 		display: inline-block;
 		vertical-align: top;
+		max-width: 100%;
 		width: 350px;
 		min-height: 200px;
 		margin: 20px;
 		text-decoration: none;
-
+		text-align: center;
 
 
 		img {
-			text-align: center;
 			height: 200px;
-			width: 350px;
+			max-width: 350px;
+			max-width: 100%;
 			border-radius: 10px;
 			border: 2px solid #EAEAEA;
 		}
@@ -28,4 +30,14 @@
 			color: $font-primary-color;
 		}
 	}
+
+	@media (max-width: 600px) {
+		.achievement {
+			display: block;
+			margin-left: 0px;
+			margin-right: 0px;
+		}
+	}
 }
+
+
