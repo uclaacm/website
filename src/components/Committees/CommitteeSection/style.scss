@@ -1,0 +1,104 @@
+.committees {
+	width: 100%;
+	max-width: 900px;
+	box-sizing: border-box;
+	margin: auto;
+	text-align: center;
+
+	.intro-container {
+		text-align: left;
+
+		.intro-row {
+			margin: 80px 0 0 0;
+
+			.intro-column {
+				float: left;
+				width: 50%;
+			}
+
+			h1 {
+				font-size: 1.5em;
+				font-weight: 700;
+			}
+			h2 {
+				font-size: 1em;
+				font-weight: 100;
+			}
+			img {
+				width: 100%;
+			}
+	
+			.learn-more {
+				padding: 20px;
+				text-transform: uppercase;
+				font-weight: 700;
+				letter-spacing: .9em;
+				h3 {
+					margin: 0px 0px 20px 0px;
+				}
+				.sm-icon {
+					margin: 0px 20px 0px 0px;
+				}
+			}
+	
+
+		}
+
+		.intro-row:after {
+			content: "";
+			display: table;
+			clear: both;
+		  }
+	}
+
+	.committee-header {
+		height: 120px;
+		color: $font-primary-color;
+		text-align: left;
+		margin: 0px 0px 30px;
+
+		img {
+			margin: 40px 10px;
+			height: 120px;
+			width: 120px;
+			display: inline-block;
+		}
+
+		.info {
+			display: inline-block;
+			vertical-align: top;
+
+			h2 {
+				margin: 0px;
+				padding: 0px;
+				margin-top: 35px;
+				font-weight: 500;
+				display: inline-block;
+				font-size: 5em;
+				font-family: $font-display;
+
+				span {
+					font-weight: 700;
+				}
+			}
+
+			p {
+				display: inline-block;
+				font-family: $font-body;
+				margin: 0px 0px;
+				margin-top: -5px;
+				font-size: 0.7em;
+				vertical-align: top;
+			}
+		}
+
+		&.hack    .info h2 { color: $hack-purple; }
+		&.ai      .info h2 { color: $ai-arctic; }
+		&.w       .info h2 { color: $w-teal; }
+		&.cyber   .info h2 { color: $cyber-amber; }
+		&.studio  .info h2 { color: $studio-raspberry; }
+		&.icpc    .info h2 { color: $icpc-tangerine; }
+		&.design  .info h2 { color: $design-orange; }
+		&.teachla .info h2 { color: $teachla-green; }
+	}
+}

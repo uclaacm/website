@@ -10,6 +10,8 @@ import Home from './components/Home/Home';
 import About from './components/About/About';
 import Sponsors from './components/Sponsors/Sponsor';
 import Events from './components/Events/Event';
+import Committees from './components/Committees/Committees';
+
 
 function App() {
   return (
@@ -22,6 +24,7 @@ function App() {
             <Route exact path="/about" component={About}/>
             <Route exact path="/events" component={Events}/>
             <Route exact path="/sponsors" component={Sponsors}/>
+            <Route exact path="/committees" component={Committees}/>
             <Redirect to="/"/>
           </Switch>
         </div>
