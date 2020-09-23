@@ -9,10 +9,10 @@ export default class Sponsors extends React.Component {
 		return (
 			<div className="about-page">
 				<Banner decorative />
-				<div className="content-section center">
+				{/* <div className="content-section center">
 						<CommitteeLogos committees={Config.committees} />
 				</div>
-				<Banner decorative />
+				<Banner decorative /> */}
 				<div className="content-section center committee-sections-container">
 					<div className="left">
 						<CommitteeSections committees={Config.committees} />
