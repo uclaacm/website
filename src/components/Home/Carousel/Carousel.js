@@ -17,12 +17,12 @@ export default class Carousel extends React.Component {
 			sections.push({
 				left: (i / ITEMS_PER_SECTION) * this.sectionWidth,
 				width: this.sectionWidth,
-				items: this.props.images.slice(i, i + 4).map((item, i) => 
-					<a 
-						href={item} target="_blank" 
-						rel="noreferrer noopener" 
+				items: this.props.images.slice(i, i + 4).map((item, i) =>
+					<a
+						href={item} target="_blank"
+						rel="noreferrer noopener"
 						key={i}>
-							<div 
+							<div
 							style={{backgroundImage: 'url('+ process.env.PUBLIC_URL + item + ')'}}>
 							</div>
 					</a>),
@@ -46,7 +46,7 @@ export default class Carousel extends React.Component {
 					return section;
 				})
 			});
-		}, 90);
+		}, 30);
 	}
 
 	componentWillUnmount() {
@@ -56,10 +56,10 @@ export default class Carousel extends React.Component {
 
 	render() {
 		return (
-			<div id="carousal">
-				<div id="carousal-inner">
+			<div id="carousel">
+				<div id="carousel-inner">
 					{this.state.sections.map((section, i) =>
-						<div className="carousal-sect" style={{ left: section.left + 'px', width: section.width + 'px' }} key={i}>
+						<div className="carousel-sect" style={{ left: section.left + 'px', width: section.width + 'px' }} key={i}>
 							{ section.items }
 						</div>
 					)}
