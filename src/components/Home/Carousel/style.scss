@@ -1,15 +1,15 @@
-#carousal {
+#carousel {
 	height: 480px;
 	min-width: 100%;
 	background: #FAFAFA;
 	overflow: hidden;
 	position: relative;
 
-	#carousal-inner {
+	#carousel-inner {
 		width: 1600px;
 	}
 
-	.carousal-sect {
+	.carousel-sect {
 		position: absolute;
 		background: linear-gradient(rgba($acm-black, 0.8), rgba($acm-black, 1.0));
 		width: 1600px;
@@ -18,7 +18,7 @@
 		div {
 			width: 360px;
 			height: 240px;
-			opacity: 0.7;
+			opacity: 0.9;
 			background-size: cover;
 			display: inline-block;
 			vertical-align: top;
@@ -26,7 +26,7 @@
 			padding: 0;
 			transition: 0.35s cubic-bezier(0.05, 1.04, 0.72, 0.98);
 
-			&:hover { opacity: 1.0; }
+			&:hover { opacity: 0.6; }
 		}
 	}
 }
