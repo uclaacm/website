@@ -1,0 +1,42 @@
+.achievements-container {
+	width: 100%;
+	text-align: center;
+	margin: auto;
+
+	.achievement {
+		display: inline-block;
+		vertical-align: top;
+		max-width: 100%;
+		width: 350px;
+		min-height: 200px;
+		margin: 20px;
+		text-decoration: none;
+		text-align: center;
+
+
+		img {
+			height: 200px;
+			max-width: 350px;
+			max-width: 100%;
+			border-radius: 10px;
+			border: 2px solid #EAEAEA;
+		}
+
+		h3 {
+			font-weight: bold;
+			font-size: 0.9em;
+			text-transform: capitalize;
+			font-family: $font-body;
+			color: $font-primary-color;
+		}
+	}
+
+	@media (max-width: 600px) {
+		.achievement {
+			margin-left: 0px;
+			margin-right: 0px;
+		}
+	}
+}
+
+

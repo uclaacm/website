@@ -1,6 +1,7 @@
 import React from 'react';
 import Config from '../../config';
 
+import SocialMedia from '../SocialMedia/SocialMedia';
 import Banner from '../Banner/Banner';
 import Officers from './Officers/Officers';
 
@@ -38,6 +39,10 @@ function About() {
 					<h1>How do I get involved?</h1>
 					<p className="half-size">No matter what your background or major is, we welcome you to participate in all of our events and activities!</p>
 					<p className="half-size">To become a member and keep up with upcoming events, you should join <a href="https://members.uclaacm.com" target="_blank" rel="noreferrer noopener">our membership portal</a>, follow <a href="https://www.facebook.com/groups/uclaacm" target="_blank" rel="noreferrer noopener">our Facebook group</a>, and sign up for <a href="http://eepurl.com/c5pE6P" target="_blank" rel="noreferrer noopener">our weekly newsletter</a>. Signing up will keep you up to date with everything ACM, and earning points on the portal might even earn you a prize!</p>
+					<p>Here's our social media, where you can see what we're up to:</p>
+					<div style={{display: 'flex', justifyContent: 'center'}} >	
+						<SocialMedia/>				
+					</div>
 				</div>
 			</div>
 			<div className="content-section center" style={{marginBottom: '0px'}}>
