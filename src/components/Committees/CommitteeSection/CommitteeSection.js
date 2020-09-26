@@ -28,6 +28,7 @@ export default class CommitteeSection extends React.Component {
                         </div>
                     </div>
                 </div>
+                <h2>What do we do?</h2>
                 <div className="body-wrapper">
                     { this.props.committee.infoCards.map(card => <InfoCard image={card.image} title={card.title} desc={card.desc} />) }
                 </div>

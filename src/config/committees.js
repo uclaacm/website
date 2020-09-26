@@ -372,7 +372,7 @@ export default [
 					src: '',
 					alt: ''
 				},
-				desc: 'Our goal with Passion Talks is to inspire and empower individuals by showing them a variety of computer science applications in different fields through a series of talks on topics such as EdTech, Space Tech and Product management. https://www.youtube.com/playlist?list=PLPO7_kXilXFartXh7vu7OI6zq8JOF5k5u'
+				desc: 'Our goal with Passion Talks is to inspire and empower individuals by showing them a variety of computer science applications in different fields through a series of talks on topics such as EdTech, Space Tech and Product management.'
 			},
 			{
 				title: 'CLxACM Hack presents Bloom',
