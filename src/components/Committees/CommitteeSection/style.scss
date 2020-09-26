@@ -1,6 +1,6 @@
 .committees {
 	width: 100%;
-	max-width: 900px;
+	max-width: 1000px;
 	box-sizing: border-box;
 	margin: auto;
 	text-align: center;
@@ -101,4 +101,36 @@
 		&.design  .info h2 { color: $design-orange; }
 		&.teachla .info h2 { color: $teachla-green; }
 	}
+}
+
+
+.body-wrapper {
+	margin-top: 1rem;
+	display: flex;
+	flex-wrap: wrap;
+	
+	.info-card-container {
+		flex: 0 0 31%;
+		margin: 1rem 1% 2rem 1%;
+
+		h1 {
+			margin: 1rem 0 .5rem 0;
+			font-size: 1.5em;
+			padding: 0px;
+		}
+
+		p {
+			margin: 0px;
+			padding: 0px;
+			text-align: left;
+			font-size: 1em;
+		}
+
+		img {
+			height: auto;
+			width: 100%;
+		}
+	
+	}
+
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import SocialMedia from '../../SocialMedia/SocialMedia';
+import InfoCard from '../InfoCard/InfoCard';
 
 export default class CommitteeSection extends React.Component {
 	render() {
@@ -28,7 +29,7 @@ export default class CommitteeSection extends React.Component {
                     </div>
                 </div>
                 <div className="body-wrapper">
-
+                    { this.props.committee.infoCards.map(card => <InfoCard image={card.image} title={card.title} desc={card.desc} />) }
                 </div>
             </div>
         )
