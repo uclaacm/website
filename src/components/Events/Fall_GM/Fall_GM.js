@@ -24,18 +24,22 @@ function Fall_GM (props) {
 				<h1 id="time-to-gm-headline">Fall General Meeting 2020 begins in</h1>
 				<div id="countdown-wrapper">
 					<div className="countdown-cards">
+						<div className="square-background"/>
 						<div className="countdown-numbers">{days}</div>
 						<div className="countdown-labels">{dayString}</div>
 					</div>
 					<div className="countdown-cards">
+						<div className="square-background"/>
 						<div className="countdown-numbers">{hours}</div>
 						<div className="countdown-labels">{hourString}</div>
 					</div>
 					<div className="countdown-cards">
+						<div className="square-background"/>
 						<div className="countdown-numbers">{minutes}</div>
 						<div className="countdown-labels">{minuteString}</div>
 					</div>
 					<div className="countdown-cards">
+						<div className="square-background"/>
 						<div className="countdown-numbers">{seconds}</div>
 						<div className="countdown-labels">{secondString}</div>
 					</div>

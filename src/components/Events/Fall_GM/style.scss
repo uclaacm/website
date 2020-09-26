@@ -10,16 +10,30 @@
   display: flex;
   justify-content: center;
   margin: auto;
+  margin-top: -125px;
   width: 75%;
 
   .countdown-cards {
-    margin: 25px;
+    color: white;
+    margin: 40px;
+    .square-background {
+      position: relative;
+      top: 140px;
+      z-index: -1;
+      height: 150px;
+      width: 150px;
+      border-radius: 15px;
+      transform: rotate(45deg);
+      background-color: $acm-cobalt;
+    }
     .countdown-numbers {
+      z-index: 3;
       font-size: 4em;
       font-weight: bold;
       text-align: center;
     }
     .countdown-labels {
+      text-align: center;
       font-size: 2em;
     }
   }
