@@ -4,10 +4,6 @@ import Banner from '../../Banner/Banner'
 import Countdown from 'react-countdown';
 
 export default class Fall_GM extends React.Component {
-	constructor(props) {
-		super(props);
-	}
-
 	render() {
 		const FALL_GM_2020_START_TIME = new Date('2020-10-05T18:30:00-0700'); //October 5th 2020 at 6:30 PDT 
 	
