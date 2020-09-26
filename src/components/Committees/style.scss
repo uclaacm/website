@@ -1,5 +1,6 @@
-.content-section {
-	max-width: 900px;
+.page-content {
+	width: 100%;
+	max-width: 1000px;
 	padding: 0px 20px;
 	position: relative;
 	margin: auto;
@@ -38,22 +39,6 @@
 	}
 }
 
-.left {
-    text-align: left;
-}
-
-.center {
-	text-align: center;
-}
-
-.right {
-	text-align: right;
-}
-
-.inline {
-	display: inline-block;
-}
-
 .full-width {
 	width: 100%;
 }
@@ -61,54 +46,6 @@
 .half-width {
 	width: 50%;
 	text-align: center;
-}
-
-.blue {
-	background-color: $acm-cobalt;
-
-	h1, h2 {
-		color: $acm-tint;
-		padding: 20px 0px;
-		line-height: 135%;
-	}
-}
-
-#achievements-container {
-	width: 100%;
-	text-align: center;
-
-	.achievement {
-		display: inline-block;
-		vertical-align: top;
-		width: 350px;
-		min-height: 200px;
-		margin: 20px;
-
-		img {
-			text-align: center;
-			max-height: 200px;
-			max-width: 350px;
-		}
-
-		h3 {
-			font-weight: bold;
-			font-size: 0.8em;
-			text-transform: uppercase;
-			font-family: $font-body;
-		}
-	}
-}
-
-#sign-up-section {
-	display: flex;
-	flex-direction: row;
-
-	#sign-up-right {
-		display: flex;
-		align-items: center;
-  	justify-content: center;
-		text-align: center;
-	}
 }
 
 @media (max-width: 600px) {

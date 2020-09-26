@@ -1,38 +1,51 @@
-.committees {
+.committee-sections-container {
 	width: 100%;
-	max-width: 1000px;
 	box-sizing: border-box;
 	margin: auto;
 	text-align: center;
 
+	img {
+		width: 100%;
+		border-radius: 20px;
+	}
+
 	.intro-container {
 		text-align: left;
+		margin-bottom: 1em;
 
 		.intro-row {
-			margin: 80px 0 0 0;
+			margin: 40px 0 20px 0;
+			padding: 0;
 
 			.intro-column {
-				float: left;
-				width: 50%;
+				.left {
+					float: left;
+					width: 40%;
+					height: 400px;
+				}
+				.right {
+					float: left;
+					width: 60%;
+				}
 			}
 
 			h1 {
 				font-size: 1.5em;
 				font-weight: 700;
 			}
+
 			h2 {
 				font-size: 1em;
 				font-weight: 100;
 			}
-			img {
-				width: 100%;
-			}
 	
 			.learn-more {
 				padding: 20px;
+				color: #B6B6B6;
 				text-transform: uppercase;
 				font-weight: 700;
 				letter-spacing: .9em;
+				margin-bottom: 0;
 				h3 {
 					margin: 0px 0px 20px 0px;
 				}
@@ -52,15 +65,13 @@
 	}
 
 	.committee-header {
-		height: 120px;
 		color: $font-primary-color;
 		text-align: left;
-		margin: 0px 0px 30px;
 
 		img {
-			margin: 40px 10px;
-			height: 120px;
-			width: 120px;
+			margin: 0px 10px 0px 10px;
+			height: 100px;
+			width: 100px;
 			display: inline-block;
 		}
 
@@ -69,26 +80,15 @@
 			vertical-align: top;
 
 			h2 {
-				margin: 0px;
 				padding: 0px;
-				margin-top: 35px;
-				font-weight: 500;
-				display: inline-block;
-				font-size: 5em;
+				font-weight: 100;
+				font-size: 4em;
 				font-family: $font-display;
 
 				span {
 					font-weight: 700;
+					color: $font-primary-color;
 				}
-			}
-
-			p {
-				display: inline-block;
-				font-family: $font-body;
-				margin: 0px 0px;
-				margin-top: -5px;
-				font-size: 0.7em;
-				vertical-align: top;
 			}
 		}
 
@@ -105,13 +105,13 @@
 
 
 .body-wrapper {
-	margin-top: 1rem;
+	margin: 1rem 0 5rem 0;
 	display: flex;
 	flex-wrap: wrap;
 	
 	.info-card-container {
 		flex: 0 0 31%;
-		margin: 1rem 1% 2rem 1%;
+		margin: 0rem 1% 2rem 1%;
 
 		h1 {
 			margin: 1rem 0 .5rem 0;
