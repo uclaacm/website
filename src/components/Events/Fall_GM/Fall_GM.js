@@ -49,6 +49,7 @@ export default class Fall_GM extends React.Component {
 							<div className="countdown-labels">{secondString}</div>
 						</div>
 					</div>
+					<p id="cant-wait">Can't wait to join in on the fun? Jump in right now with our <a href="https://linktr.ee/acmucla">Linktree</a> or hop into the official <a href="https://bit.ly/ACMdiscord">Discord</a> and say hello!</p>
 				</div>
 			);
 		};
