@@ -59,6 +59,7 @@ body {
 }
 
 .main-container {
+	margin-top: 70px; //To account for height of Navbar, which uses fixed positioning
 	flex: 1 0 auto;
 }
 
@@ -79,4 +80,5 @@ body {
 @import 'components/Footer/style';
 @import 'components/Events/style';
 @import 'components/Events/Calendar/style';
+@import 'components/Events/Fall_GM/style';
 @import 'components/SocialMedia/style.scss';
