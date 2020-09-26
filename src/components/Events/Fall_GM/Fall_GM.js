@@ -12,7 +12,7 @@ export default class Fall_GM extends React.Component {
 		const FALL_GM_2020_START_TIME = new Date('2020-10-05T18:30:00-0700'); //October 5th 2020 at 6:30 PDT 
 	
 		const renderHumanReadableTime = ({ days, hours, minutes, seconds, completed }) => {
-			if (completed) return <h1 id="time-to-gm-headline-now">Fall General Meeting 2020 is happening right now!</h1>;
+			if (completed) return <h1 id="time-to-gm-headline-now">Fall General Meeting 2020 is happening right now!</h1>; //EVAN TODO: add the rest of the program and links to zoom / slack here
 	
 			let dayString ="Day";
 			let hourString = "Hour";
