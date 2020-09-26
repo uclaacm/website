@@ -2,12 +2,11 @@
 	width: 100%;
 	overflow: hidden;
 	height: 360px;
-	margin-top: 50px;
 	position: relative;
 
 	&.decorative {
 		height: 150px;
-		margin-top: 30px;
+		margin-top: -20px;
 	}
 
 	.square-col-container {
@@ -23,7 +22,7 @@
 	.square-col {
 		height: 100%;
 		width: 50px;
-		margin: 0px 10px;
+		margin: -20px 10px;
 		padding: 0px 5px;
 		transform: rotate(45deg);
 	}
@@ -75,7 +74,7 @@
 
 	.title {
 		position: absolute;
-		top: 50px;
+		top: 30px;
 		left: 0;
 		height: 280px;
 		width: 100%;
