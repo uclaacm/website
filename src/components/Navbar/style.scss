@@ -198,7 +198,11 @@
 		color: $acm-cobalt !important;
 	}
 
+<<<<<<< HEAD
 	@media (max-width: 925px) {
+=======
+	@media (max-width: 875px) {
+>>>>>>> d6149109a745555f3065575eb34101a53b3da707
 		#desktop-nav { display: none; }
 		#mobile-nav { display: inline-block; }
 	}
