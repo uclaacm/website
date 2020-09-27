@@ -8,6 +8,7 @@
 }
 #countdown-wrapper {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin: auto;
   margin-top: -125px;
