@@ -23,7 +23,7 @@ function App() {
             <Route exact path="/about" component={About}/>
             <Route exact path="/events" component={Events}/>
             <Route exact path="/sponsors" component={Sponsors}/>
-            <Route exact path="/fall_gm" component={Fall_GM}/>
+            <Route exact path="/fall-gm" component={Fall_GM}/>
             <Redirect to="/"/>
           </Switch>
         </div>
