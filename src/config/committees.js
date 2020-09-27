@@ -4,10 +4,12 @@ export default [
 		class: 'studio',
 		tagline: 'Creative Expression through Games and VR',
 		image: '/images/committees/logo-studio.svg',
-		links: {
-			main: 'https://www.facebook.com/groups/uclaacmstudio',
-			facebook: 'https://www.facebook.com/groups/uclaacmstudio'
-		},
+		links: [
+			{
+				platform: 'facebook',
+				link: 'https://www.facebook.com/groups/uclaacmstudio'
+			}
+		],
 		infoCards: [
 			{
 				title: 'Projects',
@@ -50,11 +52,16 @@ export default [
 		class: 'icpc',
 		tagline: 'Mastering Algorithms and Competitive Programming',
 		image: '/images/committees/logo-icpc.svg',
-		links: {
-			main: 'https://www.facebook.com/groups/ucla.icpc',
-			facebook: 'https://www.facebook.com/groups/ucla.icpc/',
-			email: 'uclaicpc@gmail.com',
-		},
+		links: [
+			{
+				platform: 'facebook',
+				link: 'https://www.facebook.com/groups/ucla.icpc/'
+			},
+			{
+				platform: 'email',
+				link: 'uclaicpc@gmail.com'
+			}
+		],
 		infoCards: [
 			{
 				title: 'CodeSprintLA',
@@ -97,11 +104,16 @@ export default [
 		class: 'design',
 		tagline: 'Form Follows Function',
 		image: '/images/committees/logo-design.svg',
-		links: {
-			main: 'https://www.facebook.com/groups/acmdesign/',
-			facebook: 'https://www.facebook.com/groups/acmdesign',
-			styleguide: 'https://design.uclaacm.com/',
-		},
+		links: [
+			{
+				platform: 'facebook',
+				link: 'https://www.facebook.com/groups/acmdesign'
+			},
+			{
+				platform: 'website',
+				link: 'https://design.uclaacm.com/'
+			}
+		],
 		infoCards: [
 			{
 				title: 'ACM Rebranding',
@@ -144,12 +156,20 @@ export default [
 		class: 'cyber',
 		tagline: 'Cybersecurity Made Simple',
 		image: '/images/committees/logo-cyber.svg',
-		links: {
-			main: 'https://acmcyber.com/',
-			website: 'https://acmcyber.com/',
-			facebook: 'https://www.facebook.com/groups/320869398280511',
-			email: 'uclacyber@gmail.com',
-		},
+		links: [
+			{
+				platform: 'website',
+				link: 'https://acmcyber.com/',
+			},
+			{
+				platform: 'facebook',
+				link: 'https://www.facebook.com/groups/320869398280511',
+			},
+			{
+				platform: 'email',
+				link: 'uclacyber@gmail.com',
+			}
+		],
 		infoCards: [
 			{
 				title: 'Cyber Academy: Forensics',
@@ -184,11 +204,16 @@ export default [
 		class: 'teachla',
 		tagline: 'Learn It, Teach It',
 		image: '/images/committees/logo-teachla.svg',
-		links: {
-			main: 'https://teachla.uclaacm.com',
-			website: 'https://teachla.uclaacm.com ',
-			facebook: 'https://www.facebook.com/teachlaucla/',
-		},
+		links: [
+			{
+				platform: 'website',
+				link: 'https://teachla.uclaacm.com'
+			},
+			{
+				platform: 'facebook',
+				link: 'https://www.facebook.com/teachlaucla/'
+			}
+		],
 		infoCards: [
 			{
 				title: 'Synchronous and Asynchronous Classes',
@@ -239,10 +264,12 @@ export default [
 		class: 'w',
 		tagline: 'Starting Conversations about Diversity in Tech',
 		image: '/images/committees/logo-w.svg',
-		links: {
-			main: 'https://www.facebook.com/groups/uclaacmw',
-			facebook: 'https://www.facebook.com/groups/uclaacmw',
-		},
+		links: [
+			{
+				platform: 'facebook',
+				link: 'https://www.facebook.com/groups/uclaacmw'
+			},
+		],
 		infoCards: [
 			{
 				title: 'Day of Code, WESP, QWER Hacks',
@@ -285,14 +312,28 @@ export default [
 		class: 'ai',
 		tagline: 'Learning Machine Learning',
 		image: '/images/committees/logo-ai.svg',
-		links: {
-			main: 'https://uclaacmai.github.io/',
-			facebook: 'https://www.facebook.com/groups/uclaacmai',
-			website: 'https://uclaacmai.github.io/',
-			instagram: 'https://www.instagram.com/acm_ai_ucla/',
-			twitter: 'https://twitter.com/acm_ai_ucla',
-			github: 'https://github.com/uclaacmai',
-		},
+		links: [
+			{
+				platform: 'website',
+				link: 'https://uclaacmai.github.io/'
+			},
+			{
+				platform: 'facebook',
+				link: 'https://www.facebook.com/groups/uclaacmai'
+			},
+			{
+				platform: 'instagram',
+				link: 'https://www.instagram.com/acm_ai_ucla/'
+			},
+			{
+				platform: 'twitter',
+				link: 'https://twitter.com/acm_ai_ucla'
+			},			
+			{
+				platform: 'github',
+				link: 'https://github.com/uclaacmai'
+			},
+		],
 		infoCards: [
 			{
 				title: 'Video Game AI (Collaboration with ACM Game Studio)',
@@ -343,12 +384,20 @@ export default [
 		class: 'hack',
 		tagline: 'Move Fast, Build Things',
 		image: '/images/committees/logo-hack.svg',
-		links: {
-			main: 'https://hack.uclaacm.com',
-			facebook: 'https://hack.uclaacm.com/',
-			website: 'https://www.facebook.com/groups/acmhack',
-			instagram: 'https://www.instagram.com/uclahack',
-		},
+		links: [
+			{
+				platform: 'website',
+				link: 'https://hack.uclaacm.com'
+			},
+			{
+				platform: 'facebook',
+				link: 'https://www.facebook.com/groups/acmhack'
+			},
+			{
+				platform: 'instagram',
+				link: 'https://www.instagram.com/uclahack'
+			}
+		],
 		infoCards: [
 			{
 				title: 'Tooling series',

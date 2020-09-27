@@ -20,7 +20,7 @@ export default class CommitteeSection extends React.Component {
                                 <h2><strong>Mission:</strong> {this.props.committee.mission}</h2>
                                 <div className="learn-more">
                                     <h3>Learn More ></h3>
-                                    <SocialMedia />
+                                        { this.props.committee.links.map(link => <a href={link.link} target="_blank" rel="noreferrer noopener"><div className={'sm-icon'} id={link.platform} /></a>) }
                                 </div>
                             </div>
                         </div>

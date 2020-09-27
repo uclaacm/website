@@ -45,7 +45,9 @@ export default class Fall_GM extends React.Component {
 							<div className="countdown-labels">{secondString}</div>
 						</div>
 					</div>
+					<h3>Zoom and (other links) will be provided on Monday, October 5th, 2020 at 6:30 p.m. PDT</h3>
 					<p id="cant-wait">Can't wait to join in on the fun? Jump in right now with our <a href="https://linktr.ee/acmucla">Linktree</a> or hop into the official <a href="https://bit.ly/ACMdiscord">Discord</a> and say hello!</p>
+					<img id="fall-gm-2020-graphic" src={process.env.PUBLIC_URL + "/images/Fall_GM_2020_graphic.png"} alt="Fall General Meeting 2020 graphic" />
 				</div>
 			);
 		};
