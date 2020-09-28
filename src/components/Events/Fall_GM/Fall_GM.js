@@ -13,11 +13,21 @@ export default class Fall_GM extends React.Component {
 					<h1 id="time-to-gm-headline-now">Fall General Meeting 2020 is happening right now!</h1>
 					<div id="gm-main-content">
 						<div id="join-links-wrapper">
-							<div id="zoom-join-link-wrapper">
-								Zoom
+							<div className="click-to-join">
+								<a href="http://example.com/" target="_blank">
+									<div id="zoom-join-link-wrapper" className="join-links">
+										<img src={process.env.PUBLIC_URL + "/images/ZoomLogo.png"} alt="Zoom logo" className="join-links-img"/>
+									</div>
+								</a>
+								<p className="join-us">Join us from 6:30 to 7:10 p.m. PDT in Zoom</p>
 							</div>
-							<div id="discord-join-link-wrapper">
-								Discord
+							<div className="click-to-join">
+								<a href="https://discord.com/invite/eWmzKsY" target="_blank" id="discord-join-link-wrapper" className="join-links">
+									<div id="discord-join-link-wrapper" className="join-links">
+										<img src={process.env.PUBLIC_URL + "/images/DiscordLogoWordmark.png"} alt="Discord logo" className="join-links-img"/>
+									</div>
+								</a>
+								<p className="join-us">Join us from 7:10 p.m. PDT onwards in Discord</p>
 							</div>
 						</div>
 						<div id="gm-program-wrapper">
@@ -42,14 +52,14 @@ export default class Fall_GM extends React.Component {
 							<div className="row-description-wrapper">
 								<h3 className="row-description-heading">Committee Presentations</h3>
 								<p className="row-description-subheading">Learn more about each of ACM's eight committees: what they have to offer, and why you should join them</p>
-								<p><span id="studio"><img src="/images/committees/logo-studio.svg" alt="Logo for ACM Studio" className="committee-logos"/>ACM Studio</span>: Kade Adams, Evan Charfauros</p>
-								<p><span id="icpc"><img src="/images/committees/logo-icpc.svg" alt="Logo for ACM ICPC" className="committee-logos"/>ACM ICPC</span>: Nikil Selvam</p>
-								<p><span id="design"><img src="/images/committees/logo-design.svg" alt="Logo for ACM Design" className="committee-logos"/>ACM Design</span>: Haki Alpay, Tomoki Fukazawa</p>
-								<p><span id="cyber"><img src="/images/committees/logo-cyber.svg" alt="Logo for ACM Cyber" className="committee-logos"/>ACM Cyber</span>: Disha Zambani, Ellie Cheng</p>
-								<p><span id="teach"><img src="/images/committees/logo-teachla.svg" alt="Logo for ACM TeachLA" className="committee-logos"/>ACM TeachLA</span>: Matt Wang</p>
-								<p><span id="w"><img src="/images/committees/logo-w.svg" alt="Logo for ACM W" className="committee-logos"/>ACM W</span>: Julia Baylon</p>
-								<p><span id="ai"><img src="/images/committees/logo-ai.svg" alt="Logo for ACM AI" className="committee-logos"/>ACM AI</span>: John Dang</p>
-								<p><span id="hack"><img src="/images/committees/logo-hack.svg" alt="Logo for ACM Hack" className="committee-logos"/>ACM Hack</span>: Raji Jadhav</p>
+								<p><span id="studio"><img src={process.env.PUBLIC_URL + "/images/committees/logo-studio.svg"} alt="Logo for ACM Studio" className="committee-logos"/>ACM Studio</span>: Kade Adams, Evan Charfauros</p>
+								<p><span id="icpc"><img src={process.env.PUBLIC_URL + "/images/committees/logo-icpc.svg"} alt="Logo for ACM ICPC" className="committee-logos"/>ACM ICPC</span>: Nikil Selvam</p>
+								<p><span id="design"><img src={process.env.PUBLIC_URL + "/images/committees/logo-design.svg"} alt="Logo for ACM Design" className="committee-logos"/>ACM Design</span>: Haki Alpay, Tomoki Fukazawa</p>
+								<p><span id="cyber"><img src={process.env.PUBLIC_URL + "/images/committees/logo-cyber.svg"} alt="Logo for ACM Cyber" className="committee-logos"/>ACM Cyber</span>: Disha Zambani, Ellie Cheng</p>
+								<p><span id="teach"><img src={process.env.PUBLIC_URL + "/images/committees/logo-teachla.svg"} alt="Logo for ACM TeachLA" className="committee-logos"/>ACM TeachLA</span>: Matt Wang</p>
+								<p><span id="w"><img src={process.env.PUBLIC_URL + "/images/committees/logo-w.svg"} alt="Logo for ACM W" className="committee-logos"/>ACM W</span>: Julia Baylon</p>
+								<p><span id="ai"><img src={process.env.PUBLIC_URL + "/images/committees/logo-ai.svg"} alt="Logo for ACM AI" className="committee-logos"/>ACM AI</span>: John Dang</p>
+								<p><span id="hack"><img src={process.env.PUBLIC_URL + "/images/committees/logo-hack.svg"} alt="Logo for ACM Hack" className="committee-logos"/>ACM Hack</span>: Raji Jadhav</p>
 							</div>
 						</div>
 						<div className="row">
