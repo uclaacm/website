@@ -11,7 +11,16 @@ export default class Fall_GM extends React.Component {
 			if (completed) return (
 				<div id="gm-now-wrapper">
 					<h1 id="time-to-gm-headline-now">Fall General Meeting 2020 is happening right now!</h1>
-					<div id="gm-program-wrapper">
+					<div id="gm-main-content">
+						<div id="join-links-wrapper">
+							<div id="zoom-join-link-wrapper">
+								Zoom
+							</div>
+							<div id="discord-join-link-wrapper">
+								Discord
+							</div>
+						</div>
+						<div id="gm-program-wrapper">
 						<h2>Program</h2>
 						<div className="row">
 							<p className="timestamps">6:35 p.m. PDT</p>
@@ -62,6 +71,7 @@ export default class Fall_GM extends React.Component {
 								<p>Daniel Jaffe, Evan Zhong</p>
 							</div>
 						</div>
+					</div>
 					</div>
 				</div>
 			);

@@ -70,42 +70,54 @@
       font-size: 3em;
       text-align: center;
     }
-    #gm-program-wrapper {
+    #gm-main-content{
       margin: auto;
       width: 75%;
-      .row {
+      #join-links-wrapper {
         display: flex;
-        margin-top: 25px;
-        margin-bottom: 25px;
-        .timestamps{
-          margin: 0px;
-          padding-top: 3px;
-          min-width: 105px;
-          white-space: nowrap;
+        justify-content: space-around;
+        #zoom-join-link-wrapper {
+  
         }
-        .row-description-wrapper{
-          margin-left: 350px;
-          h3.row-description-heading {
+        #zoom-join-link-wrapper {
+  
+        }
+      }
+      #gm-program-wrapper {
+        .row {
+          display: flex;
+          margin-top: 25px;
+          margin-bottom: 25px;
+          .timestamps{
             margin: 0px;
-            color: $acm-cobalt;
+            padding-top: 3px;
+            min-width: 105px;
+            white-space: nowrap;
           }
-          p.row-description-subheading {
-            margin-top: 4px;
-            color: $acm-tint;
-          }
-          #studio { color: $studio-raspberry; }
-          #icpc { color: $icpc-tangerine; }
-          #design { color: $design-orange; }
-          #cyber{ color: $cyber-amber; }
-          #teach { color: $teachla-green; }
-          #w { color: $w-teal; }
-          #ai { color: $ai-arctic; }
-          #hack { color: $hack-purple; }
-          .committee-logos {
-            margin-right: 5px;
-            height: 20px;
-            width: 20px;
-            vertical-align: text-bottom;
+          .row-description-wrapper{
+            margin-left: 350px;
+            h3.row-description-heading {
+              margin: 0px;
+              color: $acm-cobalt;
+            }
+            p.row-description-subheading {
+              margin-top: 4px;
+              color: $acm-tint;
+            }
+            #studio { color: $studio-raspberry; }
+            #icpc { color: $icpc-tangerine; }
+            #design { color: $design-orange; }
+            #cyber{ color: $cyber-amber; }
+            #teach { color: $teachla-green; }
+            #w { color: $w-teal; }
+            #ai { color: $ai-arctic; }
+            #hack { color: $hack-purple; }
+            .committee-logos {
+              margin-right: 5px;
+              height: 20px;
+              width: 20px;
+              vertical-align: text-bottom;
+            }
           }
         }
       }
