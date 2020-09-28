@@ -93,30 +93,14 @@
             margin-top: 4px;
             color: $acm-tint;
           }
-          #studio {
-            color: $studio-raspberry;
-          }
-          #icpc{
-            color: $icpc-tangerine;
-          }
-          #design {
-            color: $design-orange;
-          }
-          #cyber{
-            color: $cyber-amber;
-          }
-          #teach {
-            color: $teachla-green;
-          }
-          #w {
-            color: $w-teal;
-          }
-          #ai {
-            color: $ai-arctic;
-          }
-          #hack {
-            color: $hack-purple;
-          }
+          #studio { color: $studio-raspberry; }
+          #icpc { color: $icpc-tangerine; }
+          #design { color: $design-orange; }
+          #cyber{ color: $cyber-amber; }
+          #teach { color: $teachla-green; }
+          #w { color: $w-teal; }
+          #ai { color: $ai-arctic; }
+          #hack { color: $hack-purple; }
           .committee-logos {
             margin-right: 5px;
             height: 20px;
@@ -125,6 +109,9 @@
           }
         }
       }
+    }
+    @media (max-width: 915px) {
+      .row-description-wrapper { margin-left: 15px !important;}
     }
   }
 }
