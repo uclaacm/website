@@ -3,6 +3,35 @@ import React from 'react';
 import Banner from '../../Banner/Banner'
 import Countdown from 'react-countdown';
 
+export default class Fall_GM extends React.Component {
+	render() {
+		const FALL_GM_2020_START_TIME = new Date('2020-10-05T18:30:00-0700'); //October 5th 2020 at 6:30 PDT
+
+		const renderHumanReadableTime = ({ days, hours, minutes, seconds, completed }) => {
+			if (completed) return <GM_NOW/>;
+			else {
+				let dayString = "Day";
+				let hourString = "Hour";
+				let minuteString = "Minute";
+				let secondString = "Second";
+				if(days !== 1) dayString += "s";
+				if(hours !== 1) hourString += "s";
+				if(minutes !== 1) minuteString += "s";
+				if(seconds !== 1) secondString += "s";
+
+				return <GM_COUNTDOWN days={days} hours={hours} minutes={minutes} seconds={seconds} dayString={dayString} hourString={hourString} minuteString={minuteString} secondString={secondString}/>
+			}
+		};
+	
+		return (
+			<div id="fall-gm-page">
+				<Banner decorative />
+				<Countdown date={FALL_GM_2020_START_TIME} renderer={renderHumanReadableTime} />
+			</div>
+		);
+	}
+}
+
 class GM_NOW extends React.Component{
 	render () {
 		return (
@@ -114,35 +143,6 @@ class GM_COUNTDOWN extends React.Component {
 				<h3 id="fall-gm-zoom-release">Zoom and (other links) will be provided on Monday, October 5th, 2020 at 6:30 p.m. PDT</h3>
 				<p id="cant-wait">Can't wait to join in on the fun? Jump in right now with our <a href="https://linktr.ee/acmucla">Linktree</a> or hop into the official <a href="https://bit.ly/ACMdiscord">Discord</a> and say hello!</p>
 				<img id="fall-gm-2020-graphic" src={process.env.PUBLIC_URL + "/images/Fall_GM_2020_graphic.png"} alt="Fall General Meeting 2020 graphic" />
-			</div>
-		);
-	}
-}
-
-export default class Fall_GM extends React.Component {
-	render() {
-		const FALL_GM_2020_START_TIME = new Date('2020-10-05T18:30:00-0700'); //October 5th 2020 at 6:30 PDT 
-	
-		const renderHumanReadableTime = ({ days, hours, minutes, seconds, completed }) => {
-			if (completed) return <GM_NOW/>;
-			else {
-				let dayString = "Day";
-				let hourString = "Hour";
-				let minuteString = "Minute";
-				let secondString = "Second";
-				if(days !== 1) dayString += "s";
-				if(hours !== 1) hourString += "s";
-				if(minutes !== 1) minuteString += "s";
-				if(seconds !== 1) secondString += "s";
-
-				return <GM_COUNTDOWN days={days} hours={hours} minutes={minutes} seconds={seconds} dayString={dayString} hourString={hourString} minuteString={minuteString} secondString={secondString}/>
-			}
-		};
-	
-		return (
-			<div id="fall-gm-page">
-				<Banner decorative />
-				<Countdown date={FALL_GM_2020_START_TIME} renderer={renderHumanReadableTime} />
 			</div>
 		);
 	}
