@@ -40,8 +40,8 @@ class GM_NOW extends React.Component{
 						<div className="row-description-wrapper">
 							<h3 className="row-description-heading">Alumni: Why ACM?</h3>
 							<p className="row-description-subheading">Hear perspectives of alumni on what their experience with ACM at UCLA meant to them</p>
-							<p>[FPO] Elena Escalas (class of 2020)</p>
-							<p>[FPO] Kevin Tan (class of 2020)</p>
+							<p>Elena Escalas (class of 2020)</p>
+							<p>Kevin Tan (class of 2020)</p>
 						</div>
 					</div>
 					<div className="row">
