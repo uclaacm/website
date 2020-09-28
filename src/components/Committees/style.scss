@@ -12,14 +12,19 @@
 		padding: 20px;
 		font-size: 2em;
 		margin: 0;
+		text-align: center;
 	}
 
 	h2 {
 		color: $font-primary-color;
 		font-family: $font-header;
-		padding: 20px 10px 10px;
+		padding: 20px;
 		font-size: 1.2em;
 		margin: 0;
+	}
+
+	h3 {
+		margin: 0px 0px 20px 0px;
 	}
 
 	p {
@@ -31,6 +36,11 @@
 		&.subheading {
 			font-size: 1em;
 		}
+	}
+
+	img {
+		border-radius: 20px;
+		width: 100%;
 	}
 
 }
