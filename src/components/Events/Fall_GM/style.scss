@@ -1,69 +1,130 @@
 #fall-gm-page{
-  #time-to-gm-headline {
-    font-size: 3em;
-    text-align: center;
-  }
-  #time-to-gm-headline-now {
-    font-size: 3em;
-    text-align: center;
-  }
-  #countdown-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: auto;
-    margin-top: -125px;
-    width: 75%;
+  #time-to-gm-wrapper{
+    #time-to-gm-headline {
+      font-size: 3em;
+      text-align: center;
+    }
+    #countdown-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: auto;
+      margin-top: -125px;
+      width: 75%;
 
-    .countdown-cards {
-      color: white;
-      margin: 40px;
-      .square-background {
-        position: relative;
-        top: 140px;
-        z-index: -1;
-        height: 150px;
-        width: 150px;
-        border-radius: 15px;
-        transform: rotate(45deg);
-        background-color: $acm-cobalt;
+      .countdown-cards {
+        color: white;
+        margin: 40px;
+        .square-background {
+          position: relative;
+          top: 140px;
+          z-index: -1;
+          height: 150px;
+          width: 150px;
+          border-radius: 15px;
+          transform: rotate(45deg);
+          background-color: $acm-cobalt;
+        }
+        .countdown-numbers {
+          z-index: 3;
+          font-size: 3.75em;
+          font-weight: bold;
+          text-align: center;
+        }
+        .countdown-labels {
+          text-align: center;
+          font-size: 1.5em;
+        }
       }
-      .countdown-numbers {
-        z-index: 3;
-        font-size: 3.75em;
-        font-weight: bold;
-        text-align: center;
-      }
-      .countdown-labels {
-        text-align: center;
-        font-size: 1.5em;
-      }
+    }
+
+    h3#fall-gm-zoom-release {
+      margin: auto;
+      margin-top: 25px;
+      width: 75%;
+      text-align: center;
+    }
+    p#cant-wait {
+      text-align: center;
+      margin: auto;
+      margin-top: 25px;
+      margin-bottom: 50px;
+      width: 90%;
+    }
+
+    #fall-gm-2020-graphic {
+      display: block;
+      margin: auto;
+      margin-top: 100px;
+      width: 85vw;
+    }
+
+    @media (max-width: 915px) {
+      .countdown-cards { height: 175px; }
+      #countdown-wrapper { margin-bottom: 125px;}
     }
   }
 
-  h3#fall-gm-zoom-release {
-    margin: auto;
-    margin-top: 25px;
-    width: 75%;
-    text-align: center;
-  }
-  p#cant-wait {
-    text-align: center;
-    margin: auto;
-    margin-top: 25px;
-    margin-bottom: 50px;
-    width: 90%;
-  }
-
-  #fall-gm-2020-graphic {
-    display: block;
-    margin: auto;
-    margin-top: 100px;
-    width: 85vw;
-  }
-
-  @media (max-width: 915px) {
-    .countdown-cards { height: 175px; }
-    #countdown-wrapper { margin-bottom: 125px;}
+  #gm-now-wrapper {
+    #time-to-gm-headline-now {
+      font-size: 3em;
+      text-align: center;
+    }
+    #gm-program-wrapper {
+      margin: auto;
+      width: 75%;
+      .row {
+        display: flex;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        .timestamps{
+          margin: 0px;
+          padding-top: 3px;
+          min-width: 105px;
+          white-space: nowrap;
+        }
+        .row-description-wrapper{
+          margin-left: 350px;
+          h3.row-description-heading {
+            margin: 0px;
+            color: $acm-cobalt;
+          }
+          p.row-description-subheading {
+            margin-top: 4px;
+            color: $acm-tint;
+          }
+          #studio {
+            color: $studio-raspberry;
+          }
+          #icpc{
+            color: $icpc-tangerine;
+          }
+          #design {
+            color: $design-orange;
+          }
+          #cyber{
+            color: $cyber-amber;
+          }
+          #teach {
+            color: $teachla-green;
+          }
+          #w {
+            color: $w-teal;
+          }
+          #ai {
+            color: $ai-arctic;
+          }
+          #hack {
+            color: $hack-purple;
+          }
+          .committee-logos {
+            margin-right: 5px;
+            height: 20px;
+            width: 20px;
+            vertical-align: text-bottom;
+          }
+        }
+      }
+    }
   }
 }
