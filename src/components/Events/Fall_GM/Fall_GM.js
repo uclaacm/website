@@ -7,7 +7,7 @@ export default class Fall_GM extends React.Component {
 	render() {
 		const FALL_GM_2020_START_TIME = new Date('2020-10-05T18:30:00-0700'); //October 5th 2020 at 6:30 PDT
 
-		const renderHumanReadableTime = ({ days, hours, minutes, seconds, completed }) => {
+		const renderCountdownOrNow = ({ days, hours, minutes, seconds, completed }) => {
 			if (completed) return <GM_NOW/>;
 			else {
 				let dayString = "Day";
@@ -19,20 +19,79 @@ export default class Fall_GM extends React.Component {
 				if(minutes !== 1) minuteString += "s";
 				if(seconds !== 1) secondString += "s";
 
-				return <GM_COUNTDOWN days={days} hours={hours} minutes={minutes} seconds={seconds} dayString={dayString} hourString={hourString} minuteString={minuteString} secondString={secondString}/>
+				return <GM_COUNTDOWN days={days} hours={hours} minutes={minutes} seconds={seconds}
+				dayString={dayString} hourString={hourString} minuteString={minuteString} secondString={secondString}/>
 			}
 		};
 	
 		return (
 			<div id="fall-gm-page">
 				<Banner decorative />
-				<Countdown date={FALL_GM_2020_START_TIME} renderer={renderHumanReadableTime} />
+				<Countdown date={FALL_GM_2020_START_TIME} renderer={renderCountdownOrNow} />
 			</div>
 		);
 	}
 }
 
 class GM_NOW extends React.Component{
+	renderCommitteeSpeakers() {
+		const committeeData = [
+			{
+				id: "studio",
+				displayName: "ACM Studio",
+				speakers: "Kade Adams, Evan Charfauros",
+				logo: "/images/committees/logo-studio.svg",
+			},
+			{
+				id: "icpc",
+				displayName: "ACM ICPC",
+				speakers: "Nikil Selvam",
+				logo: "/images/committees/logo-icpc.svg",
+			},
+			{
+				id: "design",
+				displayName: "ACM Design",
+				speakers: "Haki Alpay, Tomoki Fukazawa",
+				logo: "/images/committees/logo-design.svg",
+			},
+			{
+				id: "cyber",
+				displayName: "ACM Cyber",
+				speakers: "Disha Zambani, Ellie Cheng",
+				logo: "/images/committees/logo-cyber.svg",
+			},
+			{
+				id: "teach",
+				displayName: "ACM TeachLA",
+				speakers: "Matt Wang",
+				logo: "/images/committees/logo-teachla.svg",
+			},
+			{
+				id: "w",
+				displayName: "ACM W",
+				speakers: "Julia Baylon",
+				logo: "/images/committees/logo-w.svg",
+			},
+			{
+				id: "ai",
+				displayName: "ACM AI",
+				speakers: "John Dang",
+				logo: "/images/committees/logo-ai.svg",
+			},
+			{
+				id: "hack",
+				displayName: "ACM Hack",
+				speakers: "Raji Jadhav",
+				logo: "/images/committees/logo-hack.svg",
+			},
+		]
+		return committeeData.map((committee) => {
+			return (
+			<p><span id={committee.id}><img src={process.env.PUBLIC_URL + committee.logo} alt={"Logo for " + committee.displayName} className="committee-logos"/>{committee.displayName}</span>: {committee.speakers}</p>
+			);
+		})
+	}
+
 	render () {
 		return (
 			<div id="gm-now-wrapper">
@@ -78,14 +137,7 @@ class GM_NOW extends React.Component{
 						<div className="row-description-wrapper">
 							<h3 className="row-description-heading">Committee Presentations</h3>
 							<p className="row-description-subheading">Learn more about each of ACM's eight committees: what they have to offer, and why you should join them</p>
-							<p><span id="studio"><img src={process.env.PUBLIC_URL + "/images/committees/logo-studio.svg"} alt="Logo for ACM Studio" className="committee-logos"/>ACM Studio</span>: Kade Adams, Evan Charfauros</p>
-							<p><span id="icpc"><img src={process.env.PUBLIC_URL + "/images/committees/logo-icpc.svg"} alt="Logo for ACM ICPC" className="committee-logos"/>ACM ICPC</span>: Nikil Selvam</p>
-							<p><span id="design"><img src={process.env.PUBLIC_URL + "/images/committees/logo-design.svg"} alt="Logo for ACM Design" className="committee-logos"/>ACM Design</span>: Haki Alpay, Tomoki Fukazawa</p>
-							<p><span id="cyber"><img src={process.env.PUBLIC_URL + "/images/committees/logo-cyber.svg"} alt="Logo for ACM Cyber" className="committee-logos"/>ACM Cyber</span>: Disha Zambani, Ellie Cheng</p>
-							<p><span id="teach"><img src={process.env.PUBLIC_URL + "/images/committees/logo-teachla.svg"} alt="Logo for ACM TeachLA" className="committee-logos"/>ACM TeachLA</span>: Matt Wang</p>
-							<p><span id="w"><img src={process.env.PUBLIC_URL + "/images/committees/logo-w.svg"} alt="Logo for ACM W" className="committee-logos"/>ACM W</span>: Julia Baylon</p>
-							<p><span id="ai"><img src={process.env.PUBLIC_URL + "/images/committees/logo-ai.svg"} alt="Logo for ACM AI" className="committee-logos"/>ACM AI</span>: John Dang</p>
-							<p><span id="hack"><img src={process.env.PUBLIC_URL + "/images/committees/logo-hack.svg"} alt="Logo for ACM Hack" className="committee-logos"/>ACM Hack</span>: Raji Jadhav</p>
+							{this.renderCommitteeSpeakers()}
 						</div>
 					</div>
 					<div className="row">
