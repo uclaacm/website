@@ -54,6 +54,10 @@ export default [
 		image: '/images/committees/logo-icpc.svg',
 		links: [
 			{
+				platform: 'website',
+				link: 'https://icpc.uclaacm.com/#/'
+			},
+			{
 				platform: 'facebook',
 				link: 'https://www.facebook.com/groups/ucla.icpc/'
 			},
@@ -106,12 +110,12 @@ export default [
 		image: '/images/committees/logo-design.svg',
 		links: [
 			{
-				platform: 'facebook',
-				link: 'https://www.facebook.com/groups/acmdesign'
-			},
-			{
 				platform: 'website',
 				link: 'https://design.uclaacm.com/'
+			},
+			{
+				platform: 'facebook',
+				link: 'https://www.facebook.com/groups/acmdesign'
 			}
 		],
 		infoCards: [
