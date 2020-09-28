@@ -14,13 +14,13 @@ export default class Fall_GM extends React.Component {
 					<div id="gm-program-wrapper">
 						<h2>Program</h2>
 						<div className="row">
-							<p className="timestamps">6:05 p.m. PDT</p>
+							<p className="timestamps">6:35 p.m. PDT</p>
 							<div className="row-description-wrapper">
 								<h3 className="row-description-heading">Rucha Patki: Welcome</h3>
 							</div>
 						</div>
 						<div className="row">
-							<p className="timestamps">6:08 p.m. PDT</p>
+							<p className="timestamps">6:38 p.m. PDT</p>
 							<div className="row-description-wrapper">
 								<h3 className="row-description-heading">Alumni: Why ACM?</h3>
 								<p className="row-description-subheading">Hear perspectives of alumni on what their experience with ACM at UCLA meant to them</p>
@@ -29,7 +29,7 @@ export default class Fall_GM extends React.Component {
 							</div>
 						</div>
 						<div className="row">
-							<p className="timestamps">6:10 p.m. PDT</p>
+							<p className="timestamps">6:40 p.m. PDT</p>
 							<div className="row-description-wrapper">
 								<h3 className="row-description-heading">Committee Presentations</h3>
 								<p className="row-description-subheading">Learn more about each of ACM's eight committees: what they have to offer, and why you should join them</p>
@@ -44,7 +44,7 @@ export default class Fall_GM extends React.Component {
 							</div>
 						</div>
 						<div className="row">
-							<p className="timestamps">6:35 p.m. PDT</p>
+							<p className="timestamps">7:05 p.m. PDT</p>
 							<div className="row-description-wrapper">
 								<h3 className="row-description-heading">Lightning Round: Joining ACM / ACM Board</h3>
 								<p className="row-description-subheading">How to become even more invovled with ACM beyond attending workshops and events</p>
@@ -55,7 +55,7 @@ export default class Fall_GM extends React.Component {
 							</div>
 						</div>
 						<div className="row">
-							<p className="timestamps">6:40 p.m. PDT</p>
+							<p className="timestamps">7:10 p.m. PDT</p>
 							<div className="row-description-wrapper">
 								<h3 className="row-description-heading">Tabling and Social</h3>
 								<p className="row-description-subheading">Join us in our official ACM Discord for Committee tabling and socials</p>
