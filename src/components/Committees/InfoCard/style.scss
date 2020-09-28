@@ -1,3 +1,23 @@
 .info-card-container {
+    flex: 0 0 31%;
+    margin: 0rem 1% 2rem 1%;
     text-align: left;
+
+    h1 {
+        margin: 1rem 0 0 0;
+        font-size: 1.2em;
+        padding: 0px;
+    }
+
+    p {
+        margin: 0px;
+        padding: 0px;
+        text-align: left;
+        font-size: 1em;
+    }
+
+    img {
+        height: auto;
+        width: 100%;
+    }
 }

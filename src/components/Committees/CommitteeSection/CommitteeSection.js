@@ -32,7 +32,7 @@ export default class CommitteeSection extends React.Component {
                         </div>
                     </div>
                 </div>
-                <h2>Events and Projects</h2>
+                <h1>Events and Projects</h1>
                 <div className="body-wrapper">
                     { this.props.committee.infoCards.map(card => <InfoCard image={card.image} title={card.title} desc={card.desc} />) }
                 </div>

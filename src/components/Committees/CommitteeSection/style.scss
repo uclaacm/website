@@ -110,29 +110,7 @@
 	display: flex;
 	flex-wrap: wrap;
 	
-	.info-card-container {
-		flex: 0 0 31%;
-		margin: 0rem 1% 2rem 1%;
 
-		h1 {
-			margin: 1rem 0 .5rem 0;
-			font-size: 1em;
-			padding: 0px;
-		}
-
-		p {
-			margin: 0px;
-			padding: 0px;
-			text-align: left;
-			font-size: .8em;
-		}
-
-		img {
-			height: auto;
-			width: 100%;
-		}
-	
-	}
 
 }
 
@@ -190,6 +168,8 @@
 
 	.intro-container .intro-row{
 		@media (max-width: 850px) {
+			margin-bottom: 0px;
+
 			.show-mobile {
 				display: block;
 			}
@@ -198,6 +178,24 @@
 			}
 			.right {
 				display: none;
+			}
+		}
+
+		@media (max-width: 500px) {
+			margin-top: 20px;
+
+			.left {
+				h1 {
+					padding: 10px 10px 10px 10px;
+				}
+
+				h2 {
+					padding: 10px;
+				}
+			}
+
+			.learn-more {
+				padding: 10px;
 			}
 		}
 	}
@@ -220,4 +218,5 @@
 			flex: 100%;
 		}
 	}
+
 }

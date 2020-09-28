@@ -17,46 +17,20 @@
 	h2 {
 		color: $font-primary-color;
 		font-family: $font-header;
-		padding: 20px;
-		font-size: 1.5em;
+		padding: 20px 10px 10px;
+		font-size: 1.2em;
 		margin: 0;
 	}
 
 	p {
 		font-family: $font-body;
-		font-size: 0.8em;
+		font-size: 1em;
 		line-height: 150%;
-		margin: 0 22px 14px 22px;
+		margin: 0px 10px 10px;
 
 		&.subheading {
 			font-size: 1em;
 		}
 	}
 
-	.button-section {
-		width: 100%;
-		text-align: center;
-		margin: 20px 0px;
-	}
-}
-
-.full-width {
-	width: 100%;
-}
-
-.half-width {
-	width: 50%;
-	text-align: center;
-}
-
-@media (max-width: 600px) {
-	.half-width {
-		width: 100%;
-	}
-
-	#sign-up-section {
-		text-align: center;
-		flex-direction: column;
-		padding-bottom: 40px;
-	}
 }
