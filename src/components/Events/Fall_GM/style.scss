@@ -1,62 +1,69 @@
-#time-to-gm-headline {
-  font-size: 3em;
-  text-align: center;
-}
-#time-to-gm-headline-now {
-  font-size: 3em;
-  text-align: center;
-}
-#countdown-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: auto;
-  margin-top: -125px;
-  width: 75%;
+#fall-gm-page{
+  #time-to-gm-headline {
+    font-size: 3em;
+    text-align: center;
+  }
+  #time-to-gm-headline-now {
+    font-size: 3em;
+    text-align: center;
+  }
+  #countdown-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    margin-top: -125px;
+    width: 75%;
 
-  .countdown-cards {
-    color: white;
-    margin: 40px;
-    .square-background {
-      position: relative;
-      top: 140px;
-      z-index: -1;
-      height: 150px;
-      width: 150px;
-      border-radius: 15px;
-      transform: rotate(45deg);
-      background-color: $acm-cobalt;
-    }
-    .countdown-numbers {
-      z-index: 3;
-      font-size: 4em;
-      font-weight: bold;
-      text-align: center;
-    }
-    .countdown-labels {
-      text-align: center;
-      font-size: 1.75em;
+    .countdown-cards {
+      color: white;
+      margin: 40px;
+      .square-background {
+        position: relative;
+        top: 140px;
+        z-index: -1;
+        height: 150px;
+        width: 150px;
+        border-radius: 15px;
+        transform: rotate(45deg);
+        background-color: $acm-cobalt;
+      }
+      .countdown-numbers {
+        z-index: 3;
+        font-size: 3.75em;
+        font-weight: bold;
+        text-align: center;
+      }
+      .countdown-labels {
+        text-align: center;
+        font-size: 1.5em;
+      }
     }
   }
-}
 
-h3#fall-gm-zoom-release {
-  margin: auto;
-  margin-top: 25px;
-  width: 75%;
-  text-align: center;
-}
-p#cant-wait {
-  text-align: center;
-  margin: auto;
-  margin-top: 25px;
-  margin-bottom: 50px;
-  width: 100%;
-}
+  h3#fall-gm-zoom-release {
+    margin: auto;
+    margin-top: 25px;
+    width: 75%;
+    text-align: center;
+  }
+  p#cant-wait {
+    text-align: center;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    width: 90%;
+  }
 
-#fall-gm-2020-graphic {
-  display: block;
-  margin: auto;
-  margin-top: 100px;
-  width: 85vw;
+  #fall-gm-2020-graphic {
+    display: block;
+    margin: auto;
+    margin-top: 100px;
+    width: 85vw;
+  }
+
+  @media (max-width: 915px) {
+    .countdown-cards { height: 175px; }
+    #countdown-wrapper { margin-bottom: 125px;}
+  }
 }
