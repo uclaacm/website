@@ -1,117 +1,24 @@
-.committee-sections-container {
-	width: 100%;
-	box-sizing: border-box;
-	margin: auto;
-	text-align: center;
-
-	img {
-		width: 100%;
-		border-radius: 20px;
-	}
-
-
-	.intro-container {
-		text-align: left;
-		margin-bottom: 1em;
-
-		.intro-row {
-			margin: 40px 0 20px 0;
-			padding: 0;
-
-			.show-mobile{
-				display: none;
-			}
-
-			.left {
-				float: left;
-				width: 40%;
-			}
-			.right {
-				float: left;
-				width: 60%;
-			}
-
-			h1 {
-				font-size: 1.5em;
-				font-weight: 700;
-			}
-
-			h2 {
-				font-size: 1em;
-				font-weight: 100;
-			}
-	
-			.learn-more {
-				padding: 20px;
-				color: $font-secondary-color;
-				text-transform: uppercase;
-				font-weight: 700;
-				letter-spacing: 1em;
-				margin-bottom: 0;
-
-				h3 {
-					margin: 0px 0px 20px 0px;
-				}
-				.sm-icon {
-					margin: 0px 30px 0px 0px;
-				}
-			}
-		}
-
-		.intro-row:after {
-			content: "";
-			display: table;
-			clear: both;
-		  }
-	}
-
-	.committee-header {
-		color: $font-primary-color;
-		text-align: left;
-
-		img {
-			margin: 0px 10px 0px 10px;
-			height: 100px;
-			width: 100px;
-			display: inline-block;
-		}
-
-		.info {
-			display: inline-block;
-			vertical-align: top;
-
-			h2 {
-				padding: 0px;
-				font-weight: 100;
-				font-size: 4em;
-				font-family: $font-display;
-
-				span {
-					font-weight: 700;
-					color: $font-primary-color;
-				}
-			}
-		}
-
-		&.hack    .info h2 { color: $hack-purple; }
-		&.ai      .info h2 { color: $ai-arctic; }
-		&.w       .info h2 { color: $w-teal; }
-		&.cyber   .info h2 { color: $cyber-amber; }
-		&.studio  .info h2 { color: $studio-raspberry; }
-		&.icpc    .info h2 { color: $icpc-tangerine; }
-		&.design  .info h2 { color: $design-orange; }
-		&.teachla .info h2 { color: $teachla-green; }
-	}
-}
-
-
 .body-wrapper {
 	margin-bottom: 5rem;
 	display: flex;
 	flex-wrap: wrap;
-	
 
+	@media (max-width: 850px) {
+		margin-bottom: 3rem;
+	}
+	@media (max-width: 500px) {
+		margin-bottom: 2rem;
+	}
 
+	.info-card-container {
+		@media (max-width: 850px) {
+			flex: 0 0 48%;
+		}
+
+		@media (max-width: 500px) {
+			flex: 100%;
+		}
+	}
 }
 
 .sm-icon {
@@ -154,69 +61,5 @@
         background-color: $acm-black;
         cursor: pointer;
     }
-
-}
-
-.committee-sections-container {
-	.committee-header {
-		@media (max-width: 650px) {
-			img {
-				display: none;
-			}
-		}
-	}
-
-	.intro-container .intro-row{
-		@media (max-width: 850px) {
-			margin-bottom: 0px;
-
-			.show-mobile {
-				display: block;
-			}
-			.left {
-				width: 100%;
-			}
-			.right {
-				display: none;
-			}
-		}
-
-		@media (max-width: 500px) {
-			margin-top: 20px;
-
-			.left {
-				h1 {
-					padding: 10px 10px 10px 10px;
-				}
-
-				h2 {
-					padding: 10px;
-				}
-			}
-
-			.learn-more {
-				padding: 10px;
-			}
-		}
-	}
-}
-
-.body-wrapper {
-	@media (max-width: 850px) {
-		margin-bottom: 3rem;
-	}
-	@media (max-width: 500px) {
-		margin-bottom: 2rem;
-	}
-
-	.info-card-container {
-		@media (max-width: 850px) {
-			flex: 0 0 48%;
-		}
-
-		@media (max-width: 500px) {
-			flex: 100%;
-		}
-	}
 
 }

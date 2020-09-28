@@ -7,7 +7,7 @@ import Banner from '../Banner/Banner';
 export default class Sponsors extends React.Component {
 	render() {
 		return (
-			<div className="committees-page">
+			<div>
 				<Banner decorative />
 				{/* <div className="content-section center">
 						<CommitteeLogos committees={Config.committees} />
