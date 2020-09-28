@@ -22,7 +22,7 @@ export default class Fall_GM extends React.Component {
 								<p className="join-us">Join us from 6:30 to 7:10 p.m. PDT in Zoom</p>
 							</div>
 							<div className="click-to-join">
-								<a href="https://discord.com/invite/eWmzKsY" target="_blank" id="discord-join-link-wrapper" className="join-links">
+								<a href="https://bit.ly/ACMdiscord" target="_blank" id="discord-join-link-wrapper" className="join-links">
 									<div id="discord-join-link-wrapper" className="join-links">
 										<img src={process.env.PUBLIC_URL + "/images/DiscordLogoWordmark.png"} alt="Discord logo" className="join-links-img"/>
 									</div>
