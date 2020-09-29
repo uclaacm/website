@@ -174,30 +174,30 @@ function GMLiveProgram() {
 	)
 }
 
-function GM_COUNTDOWN() {
+function GM_COUNTDOWN(props) {
 	return (
 		<div id="time-to-gm-wrapper">
 			<h1 id="time-to-gm-headline">Fall General Meeting 2020 begins in</h1>
 			<div id="countdown-wrapper">
 				<div className="countdown-cards">
 					<div className="square-background"/>
-					<div className="countdown-numbers">{this.props.days}</div>
-					<div className="countdown-labels">{this.props.dayString}</div>
+					<div className="countdown-numbers">{props.days}</div>
+					<div className="countdown-labels">{props.dayString}</div>
 				</div>
 				<div className="countdown-cards">
 					<div className="square-background"/>
-					<div className="countdown-numbers">{this.props.hours}</div>
-					<div className="countdown-labels">{this.props.hourString}</div>
+					<div className="countdown-numbers">{props.hours}</div>
+					<div className="countdown-labels">{props.hourString}</div>
 				</div>
 				<div className="countdown-cards">
 					<div className="square-background"/>
-					<div className="countdown-numbers">{this.props.minutes}</div>
-					<div className="countdown-labels">{this.props.minuteString}</div>
+					<div className="countdown-numbers">{props.minutes}</div>
+					<div className="countdown-labels">{props.minuteString}</div>
 				</div>
 				<div className="countdown-cards">
 					<div className="square-background"/>
-					<div className="countdown-numbers">{this.props.seconds}</div>
-					<div className="countdown-labels">{this.props.secondString}</div>
+					<div className="countdown-numbers">{props.seconds}</div>
+					<div className="countdown-labels">{props.secondString}</div>
 				</div>
 			</div>
 			<h3 id="fall-gm-zoom-release">Zoom and (other links) will be provided on Monday, October 5th, 2020 at 6:30 p.m. PDT</h3>
