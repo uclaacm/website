@@ -6,20 +6,26 @@ import Countdown from 'react-countdown';
 const FALL_GM_2020_START_TIME = new Date('2020-10-05T18:30:00-0700'); //October 5th 2020 at 6:30 PDT
 
 export default function FallGM() {
+	const calculateTimeStrings = ({days, hours, minutes, seconds}) => {
+		let dayString = "Day";
+		let hourString = "Hour";
+		let minuteString = "Minute";
+		let secondString = "Second";
+		if(days !== 1){ dayString += "s" }
+		if(hours !== 1){ hourString += "s" }
+		if(minutes !== 1){ minuteString += "s" }
+		if(seconds !== 1){ secondString += "s" }
+
+		return {dayString, hourString, minuteString, secondString};
+	}
+
 	const renderCountdownOrNow = ({ days, hours, minutes, seconds, completed }) => {
 		if (completed){ return <GM_NOW/> }
 		else {
-			let dayString = "Day";
-			let hourString = "Hour";
-			let minuteString = "Minute";
-			let secondString = "Second";
-			if(days !== 1){ dayString += "s" }
-			if(hours !== 1){ hourString += "s" }
-			if(minutes !== 1){ minuteString += "s" }
-			if(seconds !== 1){ secondString += "s" }
+			const {dayString, hourString, minuteString, secondString} = calculateTimeStrings({days, hours, minutes, seconds});
 
-			return <GM_COUNTDOWN days={days} hours={hours} minutes={minutes} seconds={seconds}
-			dayString={dayString} hourString={hourString} minuteString={minuteString} secondString={secondString}/>
+			return (<GM_COUNTDOWN days={days} hours={hours} minutes={minutes} seconds={seconds}
+			dayString={dayString} hourString={hourString} minuteString={minuteString} secondString={secondString}/>);
 		}
 	};
 	
