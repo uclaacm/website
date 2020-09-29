@@ -173,37 +173,36 @@ function GMLiveProgram() {
 		</div>
 	)
 }
-class GM_COUNTDOWN extends React.Component {
-	render() {
-		return (
-			<div id="time-to-gm-wrapper">
-				<h1 id="time-to-gm-headline">Fall General Meeting 2020 begins in</h1>
-				<div id="countdown-wrapper">
-					<div className="countdown-cards">
-						<div className="square-background"/>
-						<div className="countdown-numbers">{this.props.days}</div>
-						<div className="countdown-labels">{this.props.dayString}</div>
-					</div>
-					<div className="countdown-cards">
-						<div className="square-background"/>
-						<div className="countdown-numbers">{this.props.hours}</div>
-						<div className="countdown-labels">{this.props.hourString}</div>
-					</div>
-					<div className="countdown-cards">
-						<div className="square-background"/>
-						<div className="countdown-numbers">{this.props.minutes}</div>
-						<div className="countdown-labels">{this.props.minuteString}</div>
-					</div>
-					<div className="countdown-cards">
-						<div className="square-background"/>
-						<div className="countdown-numbers">{this.props.seconds}</div>
-						<div className="countdown-labels">{this.props.secondString}</div>
-					</div>
+
+function GM_COUNTDOWN() {
+	return (
+		<div id="time-to-gm-wrapper">
+			<h1 id="time-to-gm-headline">Fall General Meeting 2020 begins in</h1>
+			<div id="countdown-wrapper">
+				<div className="countdown-cards">
+					<div className="square-background"/>
+					<div className="countdown-numbers">{this.props.days}</div>
+					<div className="countdown-labels">{this.props.dayString}</div>
 				</div>
-				<h3 id="fall-gm-zoom-release">Zoom and (other links) will be provided on Monday, October 5th, 2020 at 6:30 p.m. PDT</h3>
-				<p id="cant-wait">Can't wait to join in on the fun? Jump in right now with our <a href="https://linktr.ee/acmucla">Linktree</a> or hop into the official <a href="https://bit.ly/ACMdiscord">Discord</a> and say hello!</p>
-				<img id="fall-gm-2020-graphic" src={process.env.PUBLIC_URL + "/images/Fall_GM_2020_graphic.png"} alt="Fall General Meeting 2020 graphic" />
+				<div className="countdown-cards">
+					<div className="square-background"/>
+					<div className="countdown-numbers">{this.props.hours}</div>
+					<div className="countdown-labels">{this.props.hourString}</div>
+				</div>
+				<div className="countdown-cards">
+					<div className="square-background"/>
+					<div className="countdown-numbers">{this.props.minutes}</div>
+					<div className="countdown-labels">{this.props.minuteString}</div>
+				</div>
+				<div className="countdown-cards">
+					<div className="square-background"/>
+					<div className="countdown-numbers">{this.props.seconds}</div>
+					<div className="countdown-labels">{this.props.secondString}</div>
+				</div>
 			</div>
-		);
-	}
+			<h3 id="fall-gm-zoom-release">Zoom and (other links) will be provided on Monday, October 5th, 2020 at 6:30 p.m. PDT</h3>
+			<p id="cant-wait">Can't wait to join in on the fun? Jump in right now with our <a href="https://linktr.ee/acmucla">Linktree</a> or hop into the official <a href="https://bit.ly/ACMdiscord">Discord</a> and say hello!</p>
+			<img id="fall-gm-2020-graphic" src={process.env.PUBLIC_URL + "/images/Fall_GM_2020_graphic.png"} alt="Fall General Meeting 2020 graphic" />
+		</div>
+	);
 }
