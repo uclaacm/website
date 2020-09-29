@@ -44,7 +44,7 @@ export default [
 				desc: 'These tutorials cater to students more interested in the artistic side of gamedev, focusing on how to incorporate skills besides coding into a game project workflow.'
 			}
 		],
-		introImage: '/images/committees/placeholder.png',
+		introImage: '/images/committees/studio_motif_applied.png',
 		mission: 'Our mission is to teach skills revolving around video game development such as computer science, game design and art in order to help usher students into the game development industry.',
 	},
 	{
@@ -100,7 +100,7 @@ export default [
 				desc: 'All you need is a passion for problem-solving! Whether you are completely new to competitive programming (or even CS!), or a veteran coder we have a learning opportunity for you this Fall. Introducing Project A*, our weekly algorithm academy! Our Intro to Competitive Programming track will cover all the essentials from the bottom up to get you started in competitive programming. The Advanced Training track will delve deeper into more complicated data structures and algorithms to help you compete at the highest level.'
 			}
 		],
-		introImage: '/images/committees/placeholder.png',
+		introImage: '/images/committees/icpc_motif_applied.png',
 		mission: 'To promote algorithmic thinking and help build proficient problem solvers.',
 	},
 	{
@@ -152,7 +152,7 @@ export default [
 				desc: 'Teach those interested in a UI/UX Design or Product related job how to create a portfolio that best showcases your skills and your breadth of knowledge.'
 			}
 		],
-		introImage: '/images/committees/placeholder.png',
+		introImage: '/images/committees/design_motif_applied.png',
 		mission: 'Our mission is to design, manage, and support the visual identity of ACM at UCLA. We create the club\'s branding, event banners, and more elements, while also doing workshops to teach UI/UX to the UCLA community.',
 	},
 	{
@@ -200,7 +200,7 @@ export default [
 				desc: 'Compete with others and challenge yourself using your knowledge from Cyber Academy with our mini CTF for prizes and glory.'
 			}
 		],
-		introImage: '/images/committees/placeholder.png',
+		introImage: '/images/committees/cyber_motif_applied.png',
 		mission: 'Our mission is to create a community in which both experts and beginners alike can grow in the field of cybersecurity skills and knowledge. We want to make cybersecurity simple and accessible for everyone. To that end, we hold workshops and special events designed for beginners with no experience or just beginning in cybersecurity.',
 	},
 	{
@@ -260,7 +260,7 @@ export default [
 				desc: 'Whether you’re a complete beginner in web development or a seasoned pro, our dev team meetings are a blend of training & development (where we cover both intro and intermediate web dev topics), and a chance to work on projects with a diverse team.',
 			},
 		],
-		introImage: '/images/committees/placeholder.png',
+		introImage: '/images/committees/teachLA_motif_applied.png',
 		mission: 'Our mission is to provide equal access to K-12 CS education in the Los Angeles area. We do this by teaching classes, running workshops and events, and writing software!',
 	},
 	{
@@ -308,7 +308,7 @@ export default [
 				desc: 'Potential collab with Human Capital'
 			}
 		],
-		introImage: '/images/committees/placeholder.png',
+		introImage: '/images/committees/w_motif_applied.png',
 		mission: 'Our goal is to promote diversity in tech through mentorship, networking, and professional development opportunities. We’re a safe space for everyone interested in computer science. :)',
 	},
 	{
@@ -380,7 +380,7 @@ export default [
 				desc: 'UCLA is one of the world’s leading AI research producing institutions. ACM AI will be hosting a panel of world-class AI researchers from UCLA in a discussion on their ongoing work at UCLA, the greater AI research landscape, and how undergraduates can get involved.'
 			}
 		],
-		introImage: '/images/committees/placeholder.png',
+		introImage: '/images/committees/ai_motif_applied.png',
 		mission: 'ACM AI’s mission is to grow and develop a community of students interested in Artificial Intelligence (AI) at UCLA, Los Angeles, and beyond. Our initiatives aim to serve everyone who has an interest in AI regardless of background, including people with no prior experience or knowledge in AI and non-CS majors.',
 	},
 	{
@@ -453,7 +453,7 @@ export default [
 				desc: 'Join one of our families to meet new people and find a close support group to hang out with, study with, and form long lasting friendships for life with.'
 			}
 		],
-		introImage: '/images/committees/placeholder.png',
+		introImage: '/images/committees/hack_motif_applie.png',
 		mission: 'To empower the community by providing the means to build amazing things and explore what is possible through code!',
 	}
 ]
