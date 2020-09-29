@@ -162,6 +162,7 @@
     @media (max-width: 915px) {
       .row-description-wrapper { margin-left: 15px !important;}
       #join-links-wrapper{
+        flex-direction: column;
         width: 100%;
         .click-to-join {
           min-width: 200px;
