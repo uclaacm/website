@@ -3,34 +3,32 @@ import React from 'react';
 import Banner from '../../Banner/Banner'
 import Countdown from 'react-countdown';
 
-export default class Fall_GM extends React.Component {
-	render() {
-		const FALL_GM_2020_START_TIME = new Date('2020-10-05T18:30:00-0700'); //October 5th 2020 at 6:30 PDT
+export default function FallGM() {
+	const FALL_GM_2020_START_TIME = new Date('2020-10-05T18:30:00-0700'); //October 5th 2020 at 6:30 PDT
 
-		const renderCountdownOrNow = ({ days, hours, minutes, seconds, completed }) => {
-			if (completed) return <GM_NOW/>;
-			else {
-				let dayString = "Day";
-				let hourString = "Hour";
-				let minuteString = "Minute";
-				let secondString = "Second";
-				if(days !== 1) dayString += "s";
-				if(hours !== 1) hourString += "s";
-				if(minutes !== 1) minuteString += "s";
-				if(seconds !== 1) secondString += "s";
+	const renderCountdownOrNow = ({ days, hours, minutes, seconds, completed }) => {
+		if (completed) return <GM_NOW/>;
+		else {
+			let dayString = "Day";
+			let hourString = "Hour";
+			let minuteString = "Minute";
+			let secondString = "Second";
+			if(days !== 1) dayString += "s";
+			if(hours !== 1) hourString += "s";
+			if(minutes !== 1) minuteString += "s";
+			if(seconds !== 1) secondString += "s";
 
-				return <GM_COUNTDOWN days={days} hours={hours} minutes={minutes} seconds={seconds}
-				dayString={dayString} hourString={hourString} minuteString={minuteString} secondString={secondString}/>
-			}
-		};
+			return <GM_COUNTDOWN days={days} hours={hours} minutes={minutes} seconds={seconds}
+			dayString={dayString} hourString={hourString} minuteString={minuteString} secondString={secondString}/>
+		}
+	};
 	
-		return (
-			<div id="fall-gm-page">
-				<Banner decorative />
-				<Countdown date={FALL_GM_2020_START_TIME} renderer={renderCountdownOrNow} />
-			</div>
-		);
-	}
+	return (
+		<div id="fall-gm-page">
+			<Banner decorative />
+			<Countdown date={FALL_GM_2020_START_TIME} renderer={renderCountdownOrNow} />
+		</div>
+	);
 }
 
 class GM_NOW extends React.Component{

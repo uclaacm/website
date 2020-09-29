@@ -10,7 +10,7 @@ import Home from './components/Home/Home';
 import About from './components/About/About';
 import Sponsors from './components/Sponsors/Sponsor';
 import Events from './components/Events/Event';
-import Fall_GM from './components/Events/Fall_GM/Fall_GM';
+import FallGM from './components/Events/Fall_GM/Fall_GM';
 
 function App() {
   return (
@@ -23,7 +23,7 @@ function App() {
             <Route exact path="/about" component={About}/>
             <Route exact path="/events" component={Events}/>
             <Route exact path="/sponsors" component={Sponsors}/>
-            <Route exact path="/fall-gm" component={Fall_GM}/>
+            <Route exact path="/fall-gm" component={FallGM}/>
             <Redirect to="/"/>
           </Switch>
         </div>
