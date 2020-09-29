@@ -164,7 +164,7 @@ function GMLiveProgram() {
 					<p className="timestamps">7:10 p.m. PDT</p>
 					<div className="row-description-wrapper">
 						<h3 className="row-description-heading">Tabling and Social</h3>
-						<p className="row-description-subheading">Join us in our official ACM Discord for Committee tabling and socials</p>
+						<p className="row-description-subheading">Join us in our official <a href="https://bit.ly/ACMdiscord"  target="_blank" rel="noopener noreferrer" id="acm-discord-invite-cta">ACM Discord</a> for Committee tabling and socials</p>
 						<p>Daniel Jaffe, Evan Zhong</p>
 					</div>
 				</div>

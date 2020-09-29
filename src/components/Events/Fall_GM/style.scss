@@ -136,6 +136,9 @@
             p.row-description-subheading {
               margin-top: 4px;
               color: $acm-tint;
+              a#acm-discord-invite-cta{
+                color: inherit;
+              }
             }
             #studio { color: $studio-raspberry; }
             #icpc { color: $icpc-tangerine; }
