@@ -7,16 +7,16 @@ const FALL_GM_2020_START_TIME = new Date('2020-10-05T18:30:00-0700'); //October 
 
 export default function FallGM() {
 	const renderCountdownOrNow = ({ days, hours, minutes, seconds, completed }) => {
-		if (completed) return <GM_NOW/>;
+		if (completed){ return <GM_NOW/> }
 		else {
 			let dayString = "Day";
 			let hourString = "Hour";
 			let minuteString = "Minute";
 			let secondString = "Second";
-			if(days !== 1) dayString += "s";
-			if(hours !== 1) hourString += "s";
-			if(minutes !== 1) minuteString += "s";
-			if(seconds !== 1) secondString += "s";
+			if(days !== 1){ dayString += "s" }
+			if(hours !== 1){ hourString += "s" }
+			if(minutes !== 1){ minuteString += "s" }
+			if(seconds !== 1){ secondString += "s" }
 
 			return <GM_COUNTDOWN days={days} hours={hours} minutes={minutes} seconds={seconds}
 			dayString={dayString} hourString={hourString} minuteString={minuteString} secondString={secondString}/>
