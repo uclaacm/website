@@ -66,7 +66,7 @@ function GMLiveProgram() {
 			},
 			{
 				id: "teach",
-				displayName: "ACM TeachLA",
+				displayName: "ACM Teach LA",
 				speakers: "Matt Wang",
 				logo: "/images/committees/logo-teachla.svg",
 			},
