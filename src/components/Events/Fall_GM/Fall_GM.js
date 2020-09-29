@@ -90,8 +90,15 @@ function GMLiveProgram() {
 			},
 		]
 		return committeeData.map((committee) => {
+			const {id, logo, displayName, speakers} = committee;
 			return (
-			<p><span id={committee.id}><img src={process.env.PUBLIC_URL + committee.logo} alt={"Logo for " + committee.displayName} className="committee-logos"/>{committee.displayName}</span>: {committee.speakers}</p>
+				<p>
+					<span id={id}>
+						<img src={process.env.PUBLIC_URL + logo} alt={"Logo for " + displayName} className="committee-logos"/>
+						{displayName}
+					</span>
+					: {speakers}
+				</p>
 			);
 		})
 	}
