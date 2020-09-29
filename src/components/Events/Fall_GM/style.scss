@@ -163,9 +163,11 @@
       .row-description-wrapper { margin-left: 15px !important;}
       #join-links-wrapper{
         flex-direction: column;
+        align-items: center;
         width: 100%;
         .click-to-join {
           min-width: 200px;
+          max-width: 300px;
           #zoom-join-link-wrapper {margin-right: 5px;}
           #discord-join-link-wrapper {margin-left: 5px;}
         }
