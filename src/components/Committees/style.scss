@@ -1,46 +1,49 @@
 .page-content {
 	width: 100%;
 	max-width: 1000px;
-	padding: 0px 20px 0px 20px;
-	position: relative;
-	margin: auto;
+	padding: 0px 30px 0px;
 	box-sizing: border-box;
+	text-align: center;
+	margin: auto;
 
 	h1 {
 		color: $font-primary-color;
 		font-family: $font-header;
-		padding: 20px;
 		font-size: 2em;
-		margin: 0;
-		text-align: center;
+		margin: 10px;
 	}
 
 	h2 {
 		color: $font-primary-color;
 		font-family: $font-header;
-		padding: 20px;
+		margin: 30px 0 20px 0;
 		font-size: 1.2em;
-		margin: 0;
 	}
 
 	h3 {
-		margin: 0px 0px 20px 0px;
+		margin: 20px;
+		font-size: 1.2em;
 	}
 
 	p {
 		font-family: $font-body;
 		font-size: 1em;
 		line-height: 150%;
-		margin: 0px 10px 10px;
-
 		&.subheading {
 			font-size: 1em;
+		}
+		strong {
+			font-weight: bold;
 		}
 	}
 
 	img {
-		border-radius: 20px;
+		border-radius: 10px;
+		box-shadow: 0 0 0 1pt;
 		width: 100%;
 	}
 
+	@media (min-width: 688px) {
+		padding: 0px 60px 0px;
+	}
 }

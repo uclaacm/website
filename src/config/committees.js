@@ -3,7 +3,7 @@ export default [
 		name: 'Studio',
 		class: 'studio',
 		tagline: 'Creative Expression through Games and VR',
-		image: '/images/committees/logo-studio.svg',
+		image: '/images/committees/studio/logo-studio.svg',
 		links: [
 			{
 				platform: 'facebook',
@@ -44,14 +44,14 @@ export default [
 				desc: 'These tutorials cater to students more interested in the artistic side of gamedev, focusing on how to incorporate skills besides coding into a game project workflow.'
 			}
 		],
-		introImage: '/images/committees/studio_motif_applied.png',
+		introImage: '/images/committees/studio/studio_motif_applied.png',
 		mission: 'Our mission is to teach skills revolving around video game development such as computer science, game design and art in order to help usher students into the game development industry.',
 	},
 	{
 		name: 'ICPC',
 		class: 'icpc',
 		tagline: 'Mastering Algorithms and Competitive Programming',
-		image: '/images/committees/logo-icpc.svg',
+		image: '/images/committees/icpc/logo-icpc.svg',
 		links: [
 			{
 				platform: 'website',
@@ -60,10 +60,6 @@ export default [
 			{
 				platform: 'facebook',
 				link: 'https://www.facebook.com/groups/ucla.icpc/'
-			},
-			{
-				platform: 'email',
-				link: 'uclaicpc@gmail.com'
 			}
 		],
 		infoCards: [
@@ -100,14 +96,14 @@ export default [
 				desc: 'All you need is a passion for problem-solving! Whether you are completely new to competitive programming (or even CS!), or a veteran coder we have a learning opportunity for you this Fall. Introducing Project A*, our weekly algorithm academy! Our Intro to Competitive Programming track will cover all the essentials from the bottom up to get you started in competitive programming. The Advanced Training track will delve deeper into more complicated data structures and algorithms to help you compete at the highest level.'
 			}
 		],
-		introImage: '/images/committees/icpc_motif_applied.png',
+		introImage: '/images/committees/icpc/icpc_motif_applied.png',
 		mission: 'To promote algorithmic thinking and help build proficient problem solvers.',
 	},
 	{
 		name: 'Design',
 		class: 'design',
 		tagline: 'Form Follows Function',
-		image: '/images/committees/logo-design.svg',
+		image: '/images/committees/design/logo-design.svg',
 		links: [
 			{
 				platform: 'website',
@@ -152,14 +148,14 @@ export default [
 				desc: 'Teach those interested in a UI/UX Design or Product related job how to create a portfolio that best showcases your skills and your breadth of knowledge.'
 			}
 		],
-		introImage: '/images/committees/design_motif_applied.png',
+		introImage: '/images/committees/design/design_motif_applied.png',
 		mission: 'Our mission is to design, manage, and support the visual identity of ACM at UCLA. We create the club\'s branding, event banners, and more elements, while also doing workshops to teach UI/UX to the UCLA community.',
 	},
 	{
 		name: 'Cyber',
 		class: 'cyber',
 		tagline: 'Cybersecurity Made Simple',
-		image: '/images/committees/logo-cyber.svg',
+		image: '/images/committees/cyber/logo-cyber.svg',
 		links: [
 			{
 				platform: 'website',
@@ -168,10 +164,6 @@ export default [
 			{
 				platform: 'facebook',
 				link: 'https://www.facebook.com/groups/320869398280511',
-			},
-			{
-				platform: 'email',
-				link: 'uclacyber@gmail.com',
 			}
 		],
 		infoCards: [
@@ -186,28 +178,28 @@ export default [
 			{
 				title: 'Cyber x Hack x ICPC presents Bruin Quest',
 				image: {
-					src: '',
-					alt: ''
+					src: '/images/committees/cyber/bruin_quest.png',
+					alt: 'Bruin Quest'
 				},
 				desc: 'Explore a virtual UCLA campus and complete fun challenges to compete for points, prizes, and the glory of being Bruin Quest champion.'
 			},
 			{
 				title: 'CTF After Dark',
 				image: {
-					src: '',
-					alt: ''
+					src: '/images/committees/cyber/ctf_after_dark.png',
+					alt: 'Capture the flag after dark'
 				},
 				desc: 'Compete with others and challenge yourself using your knowledge from Cyber Academy with our mini CTF for prizes and glory.'
 			}
 		],
-		introImage: '/images/committees/cyber_motif_applied.png',
+		introImage: '/images/committees/cyber/cyber_motif_applied.png',
 		mission: 'Our mission is to create a community in which both experts and beginners alike can grow in the field of cybersecurity skills and knowledge. We want to make cybersecurity simple and accessible for everyone. To that end, we hold workshops and special events designed for beginners with no experience or just beginning in cybersecurity.',
 	},
 	{
 		name: 'Teach LA',
 		class: 'teachla',
 		tagline: 'Learn It, Teach It',
-		image: '/images/committees/logo-teachla.svg',
+		image: '/images/committees/teachLA/logo-teachla.svg',
 		links: [
 			{
 				platform: 'website',
@@ -260,14 +252,14 @@ export default [
 				desc: 'Whether you’re a complete beginner in web development or a seasoned pro, our dev team meetings are a blend of training & development (where we cover both intro and intermediate web dev topics), and a chance to work on projects with a diverse team.',
 			},
 		],
-		introImage: '/images/committees/teachLA_motif_applied.png',
+		introImage: '/images/committees/teachLA/teachLA_motif_applied.png',
 		mission: 'Our mission is to provide equal access to K-12 CS education in the Los Angeles area. We do this by teaching classes, running workshops and events, and writing software!',
 	},
 	{
 		name: 'W',
 		class: 'w',
 		tagline: 'Starting Conversations about Diversity in Tech',
-		image: '/images/committees/logo-w.svg',
+		image: '/images/committees/w/logo-w.svg',
 		links: [
 			{
 				platform: 'facebook',
@@ -308,14 +300,14 @@ export default [
 				desc: 'Potential collab with Human Capital'
 			}
 		],
-		introImage: '/images/committees/w_motif_applied.png',
+		introImage: '/images/committees/w/w_motif_applied.png',
 		mission: 'Our goal is to promote diversity in tech through mentorship, networking, and professional development opportunities. We’re a safe space for everyone interested in computer science. :)',
 	},
 	{
 		name: 'AI',
 		class: 'ai',
 		tagline: 'Learning Machine Learning',
-		image: '/images/committees/logo-ai.svg',
+		image: '/images/committees/ai/logo-ai.svg',
 		links: [
 			{
 				platform: 'website',
@@ -380,14 +372,14 @@ export default [
 				desc: 'UCLA is one of the world’s leading AI research producing institutions. ACM AI will be hosting a panel of world-class AI researchers from UCLA in a discussion on their ongoing work at UCLA, the greater AI research landscape, and how undergraduates can get involved.'
 			}
 		],
-		introImage: '/images/committees/ai_motif_applied.png',
+		introImage: '/images/committees/ai/ai_motif_applied.png',
 		mission: 'ACM AI’s mission is to grow and develop a community of students interested in Artificial Intelligence (AI) at UCLA, Los Angeles, and beyond. Our initiatives aim to serve everyone who has an interest in AI regardless of background, including people with no prior experience or knowledge in AI and non-CS majors.',
 	},
 	{
 		name: 'Hack',
 		class: 'hack',
 		tagline: 'Move Fast, Build Things',
-		image: '/images/committees/logo-hack.svg',
+		image: '/images/committees/hack/logo-hack.svg',
 		links: [
 			{
 				platform: 'website',
@@ -406,24 +398,24 @@ export default [
 			{
 				title: 'Tooling series',
 				image: {
-					src: '',
-					alt: ''
+					src: '/images/committees/hack/tooling_series.png',
+					alt: 'Image of Tooling Series Flyer'
 				},
 				desc: 'Weekly workshop series teaching widely applicable software tools like bash, git, regex and vim. https://github.com/uclaacm/hack-tooling-series',
 			},
 			{
 				title: 'Hack on the Hill',
 				image: {
-					src: '',
-					alt: ''
+					src: '/images/committees/hack/hack_on_the_hill.png',
+					alt: 'Image of Hack on the Hill flyer'
 				},
 				desc: 'Our 12-hour hackathon encourages students from all backgrounds to come experience with us, the joy of building amazing projects with the opportunity to learn from various workshops and industry mentors. https://hoth.splashthat.com'
 			},
 			{
 				title: 'Passion Talks',
 				image: {
-					src: '',
-					alt: ''
+					src: '/images/committees/hack/passion_talks.png',
+					alt: 'Image of Passion Talks flyer'
 				},
 				desc: 'Our goal with Passion Talks is to inspire and empower individuals by showing them a variety of computer science applications in different fields through a series of talks on topics such as EdTech, Space Tech and Product management.'
 			},
@@ -438,8 +430,8 @@ export default [
 			{
 				title: 'Cyber x Hack x ICPC presents Bruin Quest',
 				image: {
-					src: '',
-					alt: ''
+					src: '/images/committees/hack/bruin_quest.png',
+					alt: 'Image of Bruin Quest flyer'
 				},
 				desc: 'Explore a virtual UCLA campus and complete fun challenges to compete for points, prizes, and the glory of being Bruin Quest champion'
 			}
@@ -447,13 +439,13 @@ export default [
 			{
 				title: 'Hack Fam',
 				image: {
-					src: '',
-					alt: ''
+					src: '/images/committees/hack/hack_fam.png',
+					alt: 'Image of Hack Fam flyer'
 				},
 				desc: 'Join one of our families to meet new people and find a close support group to hang out with, study with, and form long lasting friendships for life with.'
 			}
 		],
-		introImage: '/images/committees/hack_motif_applie.png',
+		introImage: '/images/committees/hack/hack_motif_applied.png',
 		mission: 'To empower the community by providing the means to build amazing things and explore what is possible through code!',
 	}
 ]

@@ -1,7 +1,7 @@
 import React from 'react';
 import Config from '../../config';
-import CommitteeLogos from './CommitteeLogos/CommitteeLogos'
-import CommitteeSections from './CommitteeSection/CommitteeSections'
+import CommitteeLogos from './TableOfContents/CommitteeLogos'
+import CommitteeSections from './CommitteeSections/CommitteeSections'
 import Banner from '../Banner/Banner';
 
 export default class Sponsors extends React.Component {
@@ -14,7 +14,7 @@ export default class Sponsors extends React.Component {
 				</div>
 				<Banner decorative /> */}
 				<div className="page-content">
-					<CommitteeSections committees={Config.committees} />
+					<CommitteeSections committees={Config.committees}/>
 				</div>
 			</div>
 		);
