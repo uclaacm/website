@@ -36,8 +36,8 @@ export default class Navbar extends React.Component {
 					</NavLink>
 					<div className="nav-section right" id="desktop-nav">
 						<ul className="nav-items">
-							<NavLink to="/committees"><li>Committees</li></NavLink>
 							<NavLink to="/about"><li>About</li></NavLink>
+							<NavLink to="/committees"><li>Committees</li></NavLink>
 							<NavLink to="/fall-gm"><li>Fall gm</li></NavLink>
 							<NavLink to="/events"><li>Events</li></NavLink>
 							<NavLink to="/sponsors"><li>Sponsors</li></NavLink>
@@ -55,8 +55,8 @@ export default class Navbar extends React.Component {
 						<input type="checkbox" id="menu-toggle" />
 						<div id="hamburger-menu">
 							<ul className="nav-items">
-								<NavLink to="/committees"><li>Committees</li></NavLink>
 								<NavLink to="/about"><li>About</li></NavLink>
+								<NavLink to="/committees"><li>Committees</li></NavLink>
 								<NavLink to="/fall-gm"><li>Fall gm</li></NavLink>
 								<NavLink to="/events"><li>Events</li></NavLink>
 								<NavLink to="/sponsors"><li>Sponsors</li></NavLink>

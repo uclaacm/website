@@ -11,8 +11,8 @@ export default class Sponsors extends React.Component {
 				<Banner decorative />
 				{/* <div className="content-section center">
 						<CommitteeLogos committees={Config.committees} />
-				</div>
-				<Banner decorative /> */}
+				</div> */}
+				{/* <Banner decorative /> */}
 				<div className="page-content">
 					<CommitteeSections committees={Config.committees}/>
 				</div>

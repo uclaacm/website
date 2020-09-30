@@ -170,8 +170,8 @@ export default [
 			{
 				title: 'Cyber Academy: Forensics',
 				image: {
-					src: '',
-					alt: ''
+					src: '/images/committees/cyber/forensics.png',
+					alt: 'Image of forensics event flyer'
 				},
 				desc: 'Choose to attend weekly workshops on Forensics where we go over topics such as File Analysis, Packet Captures, and Memory Forensics with in-depth demos and challenges.',
 			},
@@ -222,7 +222,7 @@ export default [
 			{
 				title: 'Speaker Series & Events',
 				image: {
-					src: '',
+					src: '/images/committees/teachLA/classes.jpg',
 					alt: ''
 				},
 				desc: 'help run one-off virtual events like Day of Code (with ACM-W), “What CS in College is Like”, “Diversity in CS”, “Bias in AI & ML”, or “Hacking for Good!”! Here, we especially value diverse experiences, including CS backgrounds and majors.'
@@ -230,8 +230,8 @@ export default [
 			{
 				title: 'Dev Team',
 				image: {
-					src: '',
-					alt: ''
+					src: '/images/committees/teachLA/editor.png',
+					alt: 'Image of Editor Project'
 				},
 				desc: 'write educational software to make teaching easier, either by developing interactive web applications called “Learning Labs” (ex: Passworks), maintain our free online code editor, or bust out your design skills on our website. No prior dev experience required!'
 			},
