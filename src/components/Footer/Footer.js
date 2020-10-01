@@ -24,7 +24,7 @@ function Footer(){
 				</div>
 				<div id="netlify-badge">
 					<a href="https://www.netlify.com" target="_BLANK" rel="noopener noreferrer">
-						<img src="https://www.netlify.com/img/global/badges/netlify-color-bg.svg" alt="Deploys by Netlify" />
+						<img src="https://www.netlify.com/img/global/badges/netlify-light.svg" alt="Deploys by Netlify" />
 					</a>
 				</div>
 				<div id="footer-bottom">
