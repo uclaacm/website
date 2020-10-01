@@ -20,7 +20,7 @@ function Sponsors() {
 						<img className="sponsor" src={process.env.PUBLIC_URL + "/images/sponsors/reslife.svg"} alt="UCLA ResLife Logo" />
 					</a>
 				</div>
-				<p className="subheading">A special thanks to all of the UCLA Computer Science industry affiliates for supporting us:</p>
+				<p className="subheading">A special thanks to all of our UCLA Computer Science industry affiliates for their support:</p>
 				<div className="sponsor-container">
 					{Config.sponsors.map(sponsor =>
 						<a href={sponsor.link} target="_blank" rel="noreferrer noopener">
