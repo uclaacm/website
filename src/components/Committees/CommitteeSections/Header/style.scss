@@ -1,0 +1,123 @@
+
+// .committee-header {
+
+
+
+
+// 	&.hack    .info h2 { color: $hack-purple; }
+// 	&.ai      .info h2 { color: $ai-arctic; }
+// 	&.w       .info h2 { color: $w-teal; }
+// 	&.cyber   .info h2 { color: $cyber-amber; }
+// 	&.studio  .info h2 { color: $studio-raspberry; }
+// 	&.icpc    .info h2 { color: $icpc-tangerine; }
+// 	&.design  .info h2 { color: $design-orange; }
+// 	&.teachla .info h2 { color: $teachla-green; }
+	
+// 	@media (max-width: 650px) {
+// 		img {
+// 			display: none;
+// 		}
+// 	}
+// 	@media (max-width: 500px) {
+// 		img {
+// 			display: none;
+// 		}
+// 		.info {
+// 			h2 {
+// 				font-size: 2.8em;
+// 			}
+// 		}
+// 	}
+// }
+
+
+.committee-header {
+
+	img {
+		display: none;
+	}
+	
+	.info {
+		vertical-align: top;
+
+		h1 {
+			font-weight: 100;
+			font-size: 2.75em;
+			margin-top: -20px;
+			margin-bottom: 20px;
+
+			span {
+				font-weight: 700;
+				color: $font-primary-color;
+			}
+		}
+	}
+
+	@media (min-width: 688px) {
+		text-align: left;
+		img {
+			margin: -5px 10px 0px;
+			height: 70px;
+			width: 70px;
+			display: inline-block;
+			box-shadow: none;
+		}
+
+		.info {
+			display: inline-block;
+			vertical-align: top;
+
+			h1 {
+				padding: 0px;
+				font-weight: 100;
+				font-size: 4em;
+				font-family: $font-display;
+
+
+				span {
+					font-weight: 700;
+					color: $font-primary-color;
+				}
+			}
+		}
+	}
+
+	@media (min-width: 992px) {
+		text-align: left;
+		img {
+			margin: -5px 10px 0;
+			height: 120px;
+			width: 120px;
+			display: inline-block;
+			box-shadow: none;
+		}
+
+		.info {
+			display: inline-block;
+			vertical-align: top;
+
+			h1 {
+				padding: 0px;
+				font-weight: 100;
+				font-size: 6em;
+				font-family: $font-display;
+
+
+				span {
+					font-weight: 700;
+					color: $font-primary-color;
+				}
+			}
+		}
+	}
+
+	&.hack    .info h1 { color: $hack-purple; }
+	&.ai      .info h1 { color: $ai-arctic; }
+	&.w       .info h1 { color: $w-teal; }
+	&.cyber   .info h1 { color: $cyber-amber; }
+	&.studio  .info h1 { color: $studio-raspberry; }
+	&.icpc    .info h1 { color: $icpc-tangerine; }
+	&.design  .info h1 { color: $design-orange; }
+	&.teachla .info h1 { color: $teachla-green; }
+	
+}

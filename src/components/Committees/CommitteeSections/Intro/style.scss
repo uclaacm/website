@@ -1,0 +1,82 @@
+.right-col {
+    display: none;
+}
+
+.learn-more {
+    margin: 30px 0 30px 0;
+    color: $font-secondary-color;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: .8em;
+}
+
+.learn-more .sm-icon {
+    height: 40px;
+    width: 40px;
+    border-radius: 2px;
+    margin: 0 10px 0;
+    display: inline-block;
+
+    &#website { background-image: url(/images/social_media/website.svg); }
+    &#facebook { background-image: url(/images/social_media/facebookDark.svg); }
+    &#twitter { background-image: url(/images/social_media/twitterDark.svg); }
+    &#github { background-image: url(/images/social_media/githubDark.svg); }
+    &#medium { background-image: url(/images/social_media/mediumDark.svg); }
+    &#instagram { background-image: url(/images/social_media/instagramDark.svg); }
+    &#discord { background-image: url(/images/social_media/discordDark.svg); }
+    &#youtube { background-image: url(/images/social_media/youtubeDark.svg); }
+
+    &:hover {
+        transform: scale(1.02);
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 688px) {
+
+    .left-col {
+        float: left;
+        text-align: left;
+        width: 40%;
+    }
+
+    .right-col {
+        float: right;
+        width: 55%;
+        display: block;
+        margin-top: 30px;
+
+        img {
+            box-shadow: 0 0 1pt 0;
+        }
+    }
+
+    .show-mobile {
+        display: none;
+    }
+        
+    .learn-more {
+        font-size: 1em;
+
+        h3 {
+            margin: 0 0 20px 0;
+        }
+        .sm-icon {
+            margin: 0 10px 0 0;
+        }
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+
+    .intro-row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}

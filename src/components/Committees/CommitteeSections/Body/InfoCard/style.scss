@@ -1,0 +1,23 @@
+.info-card-container {
+    flex: 0 0 100%;
+    flex-direction: column;
+    margin: 0rem 1% 2rem 1%;
+    text-align: left;
+
+    h2 {
+        margin: 20px 10px 20px 10px;
+    }
+
+    p {
+        margin: 0 10px 0 10px;
+    }
+
+    @media (min-width: 688px) {
+        flex: 0 0 48%;
+    }
+
+    @media (min-width: 992px) {
+        flex: 0 0 31%;
+    }
+
+}
