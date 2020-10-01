@@ -22,6 +22,11 @@ function Footer(){
 						</a>
 					</div>
 				</div>
+				<div id="netlify-badge">
+					<a href="https://www.netlify.com" target="_BLANK" rel="noopener noreferrer">
+						<img src="https://www.netlify.com/img/global/badges/netlify-color-bg.svg" alt="Deploys by Netlify" />
+					</a>
+				</div>
 				<div id="footer-bottom">
 					<span>&copy; ACM at UCLA 2020.</span>
 				</div>
