@@ -1,6 +1,8 @@
 # The ACM Website
 
 ![Node.js CI](https://github.com/uclaacm/website/workflows/Node.js%20CI/badge.svg)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0089cafa-e447-4791-9837-dd8f45f61229/deploy-status)](https://app.netlify.com/sites/jovial-pasteur-581b4a/deploys)
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](code_of_conduct.md)
 
 Hey there! This repo contains all of the code for ACM @ UCLA's front-facing website, which you can view at [uclaacm.com](https://uclaacm.com) or at [acm.cs.ucla.edu](https://acm.cs.ucla.edu). You can find out more about our organization, the events we hold, and all the different committees within ACM!
 
