@@ -11,16 +11,16 @@ function Sponsors() {
 			<Banner decorative />
 			<div className="content-section center">
 				<h2>Our Sponsors</h2>
-				<p className="subheading">We would like to thank the <b>UCLA Computer Science department</b> for their continuous support of ACM. Thanks to <b>UCLA ResLife</b> for logistical and organizational help with our events, as well as for providing great venues to host them.</p>
+				<p className="subheading">A big thank-you to the <b>UCLA Computer Science Department</b> for their continuous partnership with and support of ACM at UCLA. Shout-out to <b>UCLA ResLife</b> for providing logistical assistance and stellar venues for our events.</p>
 				<div className="sponsor-container">
-					<a href="https://cs.ucla.edu" target="_blank" rel="noreferrer noopener">
-						<img className="sponsor sponsor-big" src={process.env.PUBLIC_URL + "/images/sponsors/ucla_cs_dept.png"} alt="UCLA CS Dept Logo" />
+					<a href="https://www.cs.ucla.edu" target="_blank" rel="noreferrer noopener">
+						<img className="sponsor" src={process.env.PUBLIC_URL + "/images/sponsors/ucla_cs_dept.png"} alt="UCLA CS Dept Logo" />
 					</a>
 					<a href="https://reslife.ucla.edu" target="_blank" rel="noreferrer noopener">
-						<img className="sponsor sponsor-big" src={process.env.PUBLIC_URL + "/images/sponsors/reslife.svg"} alt="UCLA ResLife Logo" />
+						<img className="sponsor" src={process.env.PUBLIC_URL + "/images/sponsors/reslife.svg"} alt="UCLA ResLife Logo" />
 					</a>
 				</div>
-				<p className="subheading">A special thanks to all of the UCLA Computer Science sponsors for helping support our programs:</p>
+				<p className="subheading">A special thanks to all of the UCLA Computer Science industry affiliates for supporting us:</p>
 				<div className="sponsor-container">
 					{Config.sponsors.map(sponsor =>
 						<a href={sponsor.link} target="_blank" rel="noreferrer noopener">

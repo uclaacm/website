@@ -1,23 +1,18 @@
 export default [
 	{
-		'name': 'American Express',
-		'image': '/images/sponsors/amex.svg',
-		'link': 'https://www.americanexpress.com/',
-	},
-	{
-		'name': 'Blizzard',
+		'name': 'Blizzard Entertainment',
 		'image': '/images/sponsors/blizzard.png',
 		'link': 'https://www.blizzard.com/en-us/',
 	},
 	{
-		'name': 'Bloomberg',
-		'image': '/images/sponsors/bloomberg.svg',
-		'link': 'https://www.bloomberg.com/',
+		'name': 'Citadel',
+		'image': '/images/sponsors/citadel.svg',
+		'link': 'https://www.citadel.com',
 	},
 	{
 		'name': 'Facebook',
-		'image': '/images/sponsors/facebook.svg',
-		'link': 'https://www.facebook.com/',
+		'image': '/images/sponsors/facebook.png',
+		'link': 'https://about.fb.com/',
 	},
 	{
 		'name': 'Google',
@@ -25,9 +20,19 @@ export default [
 		'link': 'https://www.google.com/',
 	},
 	{
-		'name': 'KPMG',
-		'image': '/images/sponsors/kpmg.png',
-		'link': 'https://home.kpmg/us/en/home.html',
+		'name': 'Green Hills Software',
+		'image': '/images/sponsors/ghs.png',
+		'link': 'https://ghs.com/',
+	},
+	{
+		'name': 'Honey',
+		'image': '/images/sponsors/honey.png',
+		'link': 'https://www.joinhoney.com/',
+	},
+	{
+		'name': 'Human Capital',
+		'image': '/images/sponsors/humancapital.jpg',
+		'link': 'https://human.capital/',
 	},
 	{
 		'name': 'Northrop Grumman',
@@ -35,37 +40,22 @@ export default [
 		'link': 'https://www.northropgrumman.com/',
 	},
 	{
-		'name': 'Qualcomm',
-		'image': '/images/sponsors/qualcomm.svg',
-		'link': 'https://www.qualcomm.com/',
+		'name': 'Samsung',
+		'image': '/images/sponsors/samsung.svg',
+		'link': 'https://www.samsung.com/us/',
 	},
 	{
 		'name': 'Sandia National Laboratories',
-		'image': '/images/sponsors/snl.png',
+		'image': '/images/sponsors/sandia.png',
 		'link': 'https://www.sandia.gov/',
-	},
-	{
-		'name': 'Strategic Global Advisors',
-		'image': '/images/sponsors/sgallc.jpg',
-		'link': 'https://sgadvisors.com/',
 	},
 	{
 		'name': 'Symantec',
 		'image': '/images/sponsors/symantec.jpg',
-		'link': 'https://www.broadcom.com/',
+		'link': 'https://www.symantec.com/',
 	},
 	{
-		'name': 'Teradata',
-		'image': '/images/sponsors/teradata.png',
-		'link': 'https://www.teradata.com/',
-	},
-	{
-		'name': 'Uber',
-		'image': '/images/sponsors/uber.png',
-		'link': 'https://www.uber.com/',
-	},
-	{
-		'name': 'ViaSat',
+		'name': 'Viasat',
 		'image': '/images/sponsors/viasat.png',
 		'link': 'https://www.viasat.com/',
 	},
