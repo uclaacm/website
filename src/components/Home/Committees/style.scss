@@ -1,13 +1,13 @@
 .committees {
 	width: 100%;
-	max-width: 900px;
+	max-width: 1000px;
 	padding: 0px 20px;
 	box-sizing: border-box;
 	margin: auto;
 	text-align: center;
 
 	.committee {
-		width: 320px;
+		width: 300px;
 		height: 120px;
 		display: inline-block;
 		color: $font-primary-color;
@@ -23,7 +23,6 @@
 		img {
 			margin: 25px 10px;
 			height: 55px;
-			//width: 70px;
 			display: block;
 		}
 
@@ -55,7 +54,7 @@
 				font-size: 0.8em;
 				vertical-align: top;
 				position: absolute;
-				left: 78px;
+				left: 80px;
 				top: 75px;
 			}
 		}
