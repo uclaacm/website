@@ -6,8 +6,13 @@ export default [
 	},
 	{
 		'name': 'Citadel',
-		'image': '/images/sponsors/citadel.svg',
+		'image': '/images/sponsors/citadel.png',
 		'link': 'https://www.citadel.com',
+	},
+	{
+		'name': 'Deloitte',
+		'image': '/images/sponsors/deloitte.svg',
+		'link': 'https://www.deloitte.com',
 	},
 	{
 		'name': 'Facebook',
