@@ -17,7 +17,7 @@ export default [
 					src: '',
 					alt: ''
 				},
-				desc: 'Each year, Studio splits into several teams of students who each work throughout winter and spring quarter to put together a fully-fledged game, usually coding in C# with the Unity engine. You can see a collection of many past projects at https://uclaacmstudio.itch.io.',
+				desc: 'Each year, Studio splits into several teams of students who each work throughout winter and spring quarter to put together a fully-fledged game, usually coding in C# with the Unity engine. You can see a collection of many past projects at uclaacmstudio.itch.io.',
 			},
 			{
 				title: 'Beginner Unity track',
@@ -118,8 +118,8 @@ export default [
 			{
 				title: 'ACM Rebranding',
 				image: {
-					src: '',
-					alt: ''
+					src: '/images/committees/design/team_photo.jpg',
+					alt: 'Team photo'
 				},
 				desc: 'Our main project is currently a complete rebranding of ACM at UCLA including the logos, wordmarks, motifs, banners, and complete visual identities of each committee. The rebranding project started to correct the pain points of our previous branding, and position ACM at UCLA to appeal to a larger audience.',
 			},
@@ -129,7 +129,7 @@ export default [
 					src: '',
 					alt: ''
 				},
-				desc: 'The design styleguide needs to be recreated to contain the new branding and reflect it itself. It will feature all design assets necessary for all committees, and some do\'s and don\'ts with abiding by the new brand image.'
+				desc: 'The design styleguide needs to be recreated to contain the new branding and reflect it itself. It will feature all design assets necessary for all committees, and some do\'s and don\'ts with abiding by the new brand image. URL: design.uclaacm.com\nGitHub: github.com/uclaacm/Styleguide',
 			},
 			{
 				title: 'How to Design Your Resume Workshop',
@@ -160,10 +160,6 @@ export default [
 			{
 				platform: 'website',
 				link: 'https://acmcyber.com/',
-			},
-			{
-				platform: 'facebook',
-				link: 'https://www.facebook.com/groups/320869398280511',
 			}
 		],
 		infoCards: [
@@ -173,7 +169,15 @@ export default [
 					src: '/images/committees/cyber/forensics.png',
 					alt: 'Image of forensics event flyer'
 				},
-				desc: 'Choose to attend weekly workshops on Forensics where we go over topics such as File Analysis, Packet Captures, and Memory Forensics with in-depth demos and challenges.',
+				desc: 'Attend our weekly workshops on Forensics where we go over topics such as File Analysis, Packet Captures, and Memory Forensics with in-depth demos and challenges. Our workshops are designed for beginners with no experience or just beginning in cybersecurity, and are self-encapsulated so feel free to attend even if you had to miss one!',
+			},
+			{
+				title: 'What Makes a Hacker?” by Defcon Speaker',
+				image: {
+					src: '',
+					alt: ''
+				},
+				desc: 'Is cyber the right career for you? Do you want to get paid to (legally) hack stuff? Does "penetration tester" sound like a job you want? If you answered yes to any of these questions, come to a talk by Sanjana Sarda, former President of Cyber and DEFCON 28 speaker. Sanjana will talk about cybersecurity fields and specializations - from the gritty details of cryptography algorithms, to adversarial machine learning, to hacking your neighbor\'s wifi to get better ping in CS:GO (please don\'t do that) -  as well as job opportunities within cybersecurity.',
 			},
 			{
 				title: 'Cyber x Hack x ICPC presents Bruin Quest',
@@ -214,31 +218,31 @@ export default [
 			{
 				title: 'Synchronous and Asynchronous Classes',
 				image: {
-					src: '',
-					alt: ''
+					src: '/images/committees/teachLA/brockton-original.jpg',
+					alt: 'Teach LA member teaching two primary schoolers.'
 				},
-				desc: 'teach remote classes on Scratch, Python, Web Development, App Development (w/ React Native), and AI/ML (w/ ACM AI Outreach)! No prior CS experience required, and we like all majors!',
+				desc: 'Teach remote classes on Scratch, Python, Web Development, App Development (w/ React Native), and AI/ML (w/ ACM AI Outreach)! No prior CS experience required, and we like all majors!',
 			},
 			{
 				title: 'Speaker Series & Events',
 				image: {
-					src: '/images/committees/teachLA/classes.jpg',
+					src: '/images/committees/teachLA/speaker-events.jpg',
 					alt: ''
 				},
-				desc: 'help run one-off virtual events like Day of Code (with ACM-W), “What CS in College is Like”, “Diversity in CS”, “Bias in AI & ML”, or “Hacking for Good!”! Here, we especially value diverse experiences, including CS backgrounds and majors.'
+				desc: 'Help run one-off virtual events like Day of Code (with ACM-W), “What CS in College is Like”, “Diversity in CS”, “Bias in AI & ML”, or “Hacking for Good!”! Here, we especially value diverse experiences, including CS backgrounds and majors.'
 			},
 			{
 				title: 'Dev Team',
 				image: {
-					src: '/images/committees/teachLA/editor.png',
-					alt: 'Image of Editor Project'
+					src: '/images/committees/teachLA/passworks.png',
+					alt: 'Screenshot of Teach LA\'s passworks project'
 				},
-				desc: 'write educational software to make teaching easier, either by developing interactive web applications called “Learning Labs” (ex: Passworks), maintain our free online code editor, or bust out your design skills on our website. No prior dev experience required!'
+				desc: 'Write educational software to make teaching easier, either by developing interactive web applications called “Learning Labs” (e.g. passworks.uclaacm.com), maintain our free online code editor (editor.uclaacm.com), or bust out your design skills on our website (teachla.uclaacm.com). No prior dev experience required!'
 			},
 			{
 				title: 'Weekly Curriculum Meetings',
 				image: {
-					src: '',
+					src: '/images/committees/teachLA/day-of-code-original.jpg',
 					alt: ''
 				},
 				desc: 'Prepare for classes and speaker series, and find your favourite way to teach kids! And, in the process, learn more about the wonderful and mystical topics of computer science!',
@@ -246,8 +250,8 @@ export default [
 			{
 				title: 'Weekly Dev Team Meetings ',
 				image: {
-					src: '',
-					alt: ''
+					src: '/images/committees/teachLA/editor.png',
+					alt: 'Image of Teach LA\'s Editor Project'
 				},
 				desc: 'Whether you’re a complete beginner in web development or a seasoned pro, our dev team meetings are a blend of training & development (where we cover both intro and intermediate web dev topics), and a chance to work on projects with a diverse team.',
 			},
@@ -268,36 +272,44 @@ export default [
 		],
 		infoCards: [
 			{
-				title: 'Day of Code, WESP, QWER Hacks',
+				title: 'Student Panel Series',
 				image: {
-					src: '',
-					alt: ''
+					src: '/images/committees/w/startup-panel.png',
+					alt: 'A large garthering of WESP participants outside B-Plate the cafeteria.'
 				},
-				desc: 'We co-host a variety of one-off events with other branches of ACM + external UCLA student orgs centered around making computer science as accessible and open as possible!',
+				desc: 'We invite current and past students to share the wisdom they’ve gained from a variety of experiences, including entrepreneurship and the Grace Hopper Conference!',
+			},
+			{
+				title: 'WESP',
+				image: {
+					src: '/images/committees/w/wesp.png',
+					alt: 'A large garthering of WESP participants outside B-Plate the cafeteria.'
+				},
+				desc: 'The Women in Engineering Stayover Program is our annual event (pre-coronavirus) put on with WATT and SWE to showcase what UCLA Engineering (and UCLA Dining) has to offer to prospective students!',
 			},
 			{
 				title: 'Mentorship Program',
 				image: {
-					src: '',
-					alt: ''
+					src: '/images/committees/w/mentorship.jpg',
+					alt: 'ACM W members hanging out at UCLA.'
 				},
 				desc: 'Our year-long mentorship program pairs underclassmen/those new to CS with upperclassmen who can offer advice on everything from internships to favorite spots in LA (pre-COVID, at least).'
 			},
 			{
-				title: 'Grace Hopper Conference Student Panel',
+				title: 'Socials',
 				image: {
-					src: '',
-					alt: ''
+					src: '/images/committees/w/zoom-heart.png',
+					alt: 'Eight ACM W members on Zoom conference call forming a collective heart with their arms.'
 				},
-				desc: 'Collab with UPE'
+				desc: ''
 			},
 			{
-				title: 'Tech Talk Series',
+				title: 'Collaborations with other committees/organizations',
 				image: {
 					src: '',
 					alt: ''
 				},
-				desc: 'Potential collab with Human Capital'
+				desc: 'We co-host a variety of one-off events with other branches of ACM + external UCLA student orgs centered around making computer science as accessible and open as possible (e.g. Day of Code, WESP, QWER Hacks)!'
 			}
 		],
 		introImage: '/images/committees/w/w_motif_applied.png',
@@ -345,7 +357,15 @@ export default [
 					src: '',
 					alt: ''
 				},
-				desc: 'You Belong in AI! s a podcast on diversity in the field of Artificial Intelligence. We feature industry and academic leaders in AI from a diverse range of backgrounds to come and talk about their work and the importance of diversity and inclusion in AI. You Belong in AI! Is available on all major podcast streaming platforms here: https://anchor.fm/ucla-acm-ai'
+				desc: 'You Belong in AI! s a podcast on diversity in the field of Artificial Intelligence. We feature industry and academic leaders in AI from a diverse range of backgrounds to come and talk about their work and the importance of diversity and inclusion in AI. You Belong in AI! Is available on all major podcast streaming platforms here: anchor.fm/ucla-acm-ai'
+			},
+			{
+				title: 'AI Course for High School Students (Collaboration with ACM Teach LA)',
+				image: {
+					src: '',
+					alt: ''
+				},
+				desc: 'ACM AI’s Outreach team collaborates with ACM TeachLA to teach an introductory AI course to local high school students in Los Angeles. An overview of this course content can be found here: teachla.uclaacm.com/classes/ml'
 			},
 			{
 				title: 'AI/ML Workshops',
@@ -386,10 +406,6 @@ export default [
 				link: 'https://hack.uclaacm.com'
 			},
 			{
-				platform: 'facebook',
-				link: 'https://www.facebook.com/groups/acmhack'
-			},
-			{
 				platform: 'instagram',
 				link: 'https://www.instagram.com/uclahack'
 			}
@@ -401,7 +417,7 @@ export default [
 					src: '/images/committees/hack/tooling_series.png',
 					alt: 'Image of Tooling Series Flyer'
 				},
-				desc: 'Weekly workshop series teaching widely applicable software tools like bash, git, regex and vim. https://github.com/uclaacm/hack-tooling-series',
+				desc: 'Weekly workshop series teaching widely applicable software tools like bash, git, regex and vim. github.com/uclaacm/hack-tooling-series',
 			},
 			{
 				title: 'Hack on the Hill',
@@ -409,7 +425,7 @@ export default [
 					src: '/images/committees/hack/hack_on_the_hill.png',
 					alt: 'Image of Hack on the Hill flyer'
 				},
-				desc: 'Our 12-hour hackathon encourages students from all backgrounds to come experience with us, the joy of building amazing projects with the opportunity to learn from various workshops and industry mentors. https://hoth.splashthat.com'
+				desc: 'Our 12-hour hackathon encourages students from all backgrounds to come experience with us, the joy of building amazing projects with the opportunity to learn from various workshops and industry mentors. hoth.splashthat.com'
 			},
 			{
 				title: 'Passion Talks',

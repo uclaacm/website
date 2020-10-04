@@ -1,0 +1,60 @@
+.committee-banner-container {
+	margin-bottom: 50px;
+	h1 {
+		margin: 20px 0 ;
+		font-size: 2.5em;
+	}
+
+	img {
+		box-shadow: none;
+	}
+
+    @media (min-width: 688px) {
+		min-height: 600px;
+		height: 50vh;
+
+		.banner-main-content {
+				position: relative;
+				top: 50%;
+				transform: perspective(1px) translateY(-50%);
+		}
+
+		h1 {
+			font-size: 4em;
+		}
+		p {
+			font-size: 1.2em;
+		}
+	}
+	// 	margin: 0px;
+	// 	height: 40vh;
+	// 	display: flex;
+	// 	.banner-left-col {
+	// 		img {
+	// 			position: relative;
+	// 			top: 50%;
+	// 			transform: perspective(1px) translateY(-50%);
+	// 		}
+	// 		width: 60%;
+	// 		margin-right: 10px;
+	// 	}
+	// 	.banner-right-col {
+	// 		width: 40%;
+	// 		margin-left: 30px;
+
+	// 		.info {
+	// 			position: relative;
+	// 			top: 50%;
+	// 			transform: perspective(1px) translateY(-50%);
+	// 		}
+	// 		h1 {
+	// 			font-size: 2em;
+	// 			margin: 10px;
+	// 		}
+	// 		p {
+	// 			margin: 0;
+	// 		}
+	// 	}
+	// }
+
+}
