@@ -32,7 +32,7 @@ export default function FallGM() {
 	return (
 		<div id="fall-gm-page">
 			<Banner decorative />
-			<Countdown date={FALL_GM_2020_START_TIME} renderer={renderCountdownOrNow} />
+			<GMLiveProgram/>
 		</div>
 	);
 }
