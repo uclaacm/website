@@ -200,7 +200,8 @@ function GM_COUNTDOWN(props) {
 					<div className="countdown-labels">{props.secondString}</div>
 				</div>
 			</div>
-			<h3 id="fall-gm-zoom-release">Zoom and (other links) will be provided on Monday, October 5th, 2020 at 6:30 p.m. PDT</h3>
+			<h3 id="fall-gm-zoom-release">Zoom link, slides, and other resources will be provided on Monday, October 5th, 2020 at 6:30 p.m. PDT</h3>
+			<p id="posted-to-youtube">The Zoom portion of Fall General Meeting 2020 will be recorded and posted to our <a href="https://www.youtube.com/channel/UCwTqwgA4thysNbB2kNYsCIw">youtube channel</a></p>
 			<p id="cant-wait">Can't wait to join in on the fun? Jump in right now with our <a href="https://linktr.ee/acmucla">Linktree</a> or hop into the official <a href="https://bit.ly/ACMdiscord">Discord</a> and say hello!</p>
 			<img id="fall-gm-2020-graphic" src={process.env.PUBLIC_URL + "/images/Fall_GM_2020_graphic.png"} alt="Fall General Meeting 2020 graphic" />
 		</div>
