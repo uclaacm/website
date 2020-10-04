@@ -45,7 +45,7 @@
       width: 75%;
       text-align: center;
     }
-    p#cant-wait {
+    p#cant-wait, p#posted-to-youtube {
       text-align: center;
       margin-left: auto;
       margin-right: auto;
@@ -58,7 +58,7 @@
       display: block;
       margin-left: auto;
       margin-right: auto;
-      margin-top: 100px;
+      margin-top: 50px;
       width: 85vw;
     }
 
@@ -81,10 +81,10 @@
         justify-content: space-around;
         padding-bottom: 50px;
         margin-bottom: 25px;
-        border-bottom: 1px dotted $acm-black;
         .click-to-join{
+          width: 350px;
           .join-links{
-            border-radius: 10px;
+            border-radius: 15px;
             .join-links-img{
               display: block;
               margin: auto;
@@ -108,15 +108,27 @@
             }
           }
         }
-        .click-to-join:hover{
+        .should-dim:hover{
           opacity: 0.75;
           cursor: pointer;
         }
+        .should-dim a {
+          color: $font-primary-color;
+          text-decoration: none;
+        }
         p.join-us {
+          text-align: center;
+          margin-bottom: 0px;
+        }
+        p.join-us-descriptor {
+          color: $font-secondary-color;
+          font-size: 10pt;
+          margin-top: 5px;
           text-align: center;
         }
       }
       #gm-program-wrapper {
+        border-top: 1px dotted $acm-black;
         .row {
           display: flex;
           margin-top: 25px;
