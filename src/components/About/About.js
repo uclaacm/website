@@ -24,7 +24,7 @@ function About() {
 			</div>
 			<div className="content-section right">
 				<div className="ornament image-ornament image-ornament-left">
-					<img src={process.env.PUBLIC_URL + "/images/acm_committees.svg"} alt="the logos of all ACM committees" />
+					<img src={process.env.PUBLIC_URL + "/images/acm_committees.png"} alt="the logos of all ACM committees" />
 				</div>
 				<div className="text-section">
 					<h1>What are ACM committees?</h1>

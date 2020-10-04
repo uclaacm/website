@@ -1,0 +1,13 @@
+<svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="60" cy="200" r="19" stroke="#CCCCCC" stroke-width="2"/>
+<circle cx="100" cy="200" r="19" stroke="#CCCCCC" stroke-width="2"/>
+<circle cx="140" cy="200" r="19" stroke="#CCCCCC" stroke-width="2"/>
+<circle cx="180" cy="200" r="19" stroke="#CCCCCC" stroke-width="2"/>
+<circle cx="180" cy="200" r="19" stroke="#CCCCCC" stroke-width="2"/>
+<circle cx="200" cy="200" r="39" stroke="#CCCCCC" stroke-width="2"/>
+<circle cx="200" cy="113" r="79" stroke="#CCCCCC" stroke-width="2"/>
+<circle cx="200" cy="200" r="79" stroke="#CCCCCC" stroke-width="2"/>
+<circle cx="200" cy="200" r="119" stroke="#CCCCCC" stroke-width="2"/>
+<rect x="200" width="282.843" height="282.843" rx="80" transform="rotate(45 200 0)" fill="#00D4CA"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M118.896 158.165C128.228 154.006 139.165 158.199 143.325 167.531L162.406 212.34L183.674 170.44C186.889 164.41 193.166 160.643 200 160.643C206.834 160.643 213.111 164.41 216.325 170.44L237.593 212.34L256.675 167.531C260.834 158.199 271.772 154.006 281.104 158.165C290.436 162.325 294.629 173.262 290.469 182.594L255.974 259.984C253.096 266.44 246.792 270.692 239.728 270.941C232.664 271.19 226.076 267.392 222.751 261.155L200 218.472L177.248 261.155C173.924 267.392 167.335 271.19 160.272 270.941C153.208 270.692 146.903 266.44 144.025 259.984L109.53 182.594C105.37 173.262 109.564 162.325 118.896 158.165Z" fill="white"/>
+</svg>
