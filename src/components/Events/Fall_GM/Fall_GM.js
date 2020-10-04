@@ -108,20 +108,26 @@ function GMLiveProgram() {
 			<div id="gm-main-content">
 				<div id="join-links-wrapper">
 					<div className="click-to-join">
-						<a href="https://ucla.zoom.us/j/94679465455" target="_blank" rel="noopener noreferrer">
-							<div id="zoom-join-link-wrapper" className="join-links">
-								<img src={process.env.PUBLIC_URL + "/images/ZoomLogo.png"} alt="Zoom logo" className="join-links-img"/>
-							</div>
-						</a>
-						<p className="join-us">Join us from 6:30 to 7:10 p.m. PDT in Zoom</p>
+						<div className="should-dim">
+							<a href="https://ucla.zoom.us/j/94679465455" target="_blank" rel="noopener noreferrer">
+								<div id="zoom-join-link-wrapper" className="join-links">
+									<img src={process.env.PUBLIC_URL + "/images/ZoomLogo.png"} alt="Zoom logo" className="join-links-img"/>
+								</div>
+							</a>
+							<p className="join-us">Join us from 6:30 to 7:10 p.m. PDT in Zoom</p>
+						</div>
+						<p className="join-us-descriptor">Follow along during the presentation with <a href="" target="_blank" rel="noopener noreferrer">our slides</a></p>
 					</div>
 					<div className="click-to-join">
-						<a href="https://bit.ly/ACMdiscord" target="_blank" rel="noopener noreferrer">
-							<div id="discord-join-link-wrapper" className="join-links">
-								<img src={process.env.PUBLIC_URL + "/images/DiscordLogoWordmark.png"} alt="Discord logo" className="join-links-img"/>
-							</div>
-						</a>
-						<p className="join-us">Join us from 7:10 p.m. PDT onwards in Discord</p>
+						<div className="should-dim">
+							<a href="https://bit.ly/ACMdiscord" target="_blank" rel="noopener noreferrer">
+								<div id="discord-join-link-wrapper" className="join-links">
+									<img src={process.env.PUBLIC_URL + "/images/DiscordLogoWordmark.png"} alt="Discord logo" className="join-links-img"/>
+								</div>
+							</a>
+							<p className="join-us">Join us from 7:10 p.m. PDT onwards in Discord</p>
+						</div>
+						<p className="join-us-descriptor">Chat with officers and learn what makes ACM special</p>
 					</div>
 				</div>
 				<div id="gm-program-wrapper">
