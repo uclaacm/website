@@ -112,6 +112,10 @@
           opacity: 0.75;
           cursor: pointer;
         }
+        .should-dim a {
+          color: $font-primary-color;
+          text-decoration: none;
+        }
         p.join-us {
           text-align: center;
           margin-bottom: 0px;

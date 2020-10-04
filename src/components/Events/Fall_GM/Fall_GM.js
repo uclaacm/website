@@ -113,8 +113,8 @@ function GMLiveProgram() {
 								<div id="zoom-join-link-wrapper" className="join-links">
 									<img src={process.env.PUBLIC_URL + "/images/ZoomLogo.png"} alt="Zoom logo" className="join-links-img"/>
 								</div>
+								<p className="join-us">Join us from 6:30 to 7:10 p.m. PDT in Zoom</p>
 							</a>
-							<p className="join-us">Join us from 6:30 to 7:10 p.m. PDT in Zoom</p>
 						</div>
 						<p className="join-us-descriptor">Follow along during the presentation with <a href="" target="_blank" rel="noopener noreferrer">our slides</a></p>
 					</div>
@@ -124,8 +124,8 @@ function GMLiveProgram() {
 								<div id="discord-join-link-wrapper" className="join-links">
 									<img src={process.env.PUBLIC_URL + "/images/DiscordLogoWordmark.png"} alt="Discord logo" className="join-links-img"/>
 								</div>
+								<p className="join-us">Join us from 7:10 p.m. PDT onwards in Discord</p>
 							</a>
-							<p className="join-us">Join us from 7:10 p.m. PDT onwards in Discord</p>
 						</div>
 						<p className="join-us-descriptor">Chat with officers and learn what makes ACM special</p>
 					</div>
