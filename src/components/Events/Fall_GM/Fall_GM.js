@@ -154,10 +154,11 @@ function GMLiveProgram() {
 					<div className="row-description-wrapper">
 						<h3 className="row-description-heading">Lightning Round: Joining ACM / ACM Board</h3>
 						<p className="row-description-subheading">How to become even more involved with ACM beyond attending workshops and events</p>
+						<p><span className="board"><img src={process.env.PUBLIC_URL + '/images/logo.png'} alt="Logo for ACM" className="committee-logos"/>External</span>: Katherine Chong</p>
 						<p><span className="board"><img src={process.env.PUBLIC_URL + '/images/logo.png'} alt="Logo for ACM" className="committee-logos"/>Internal</span>: William Chern</p>
 						<p><span className="board"><img src={process.env.PUBLIC_URL + '/images/logo.png'} alt="Logo for ACM" className="committee-logos"/>Dev Team</span>: Austin Keil, Nhi Van</p>
+						<p><span className="board"><img src={process.env.PUBLIC_URL + '/images/logo.png'} alt="Logo for ACM" className="committee-logos"/>Moonshots</span>: Sharvani Jha, Megha Ilango</p>
 						<p><span className="board"><img src={process.env.PUBLIC_URL + '/images/logo.png'} alt="Logo for ACM" className="committee-logos"/>Internship Program</span>: Gloria Yang, Sahen Rai</p>
-						<p><span className="board"><img src={process.env.PUBLIC_URL + '/images/logo.png'} alt="Logo for ACM" className="committee-logos"/>External</span>: Katherine Chong</p>
 					</div>
 				</div>
 				<div className="row">
