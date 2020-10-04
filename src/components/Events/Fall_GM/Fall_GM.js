@@ -116,7 +116,7 @@ function GMLiveProgram() {
 								<p className="join-us">Join us from 6:30 to 7:10 p.m. PDT in Zoom</p>
 							</a>
 						</div>
-						<p className="join-us-descriptor">Follow along during the presentation with <a href="" target="_blank" rel="noopener noreferrer">our slides</a></p>
+						<p className="join-us-descriptor">Follow along during the presentation with <a href="https://docs.google.com/presentation/d/1sg6aZef8vKw11WAlOihZJr0rW_t8BEoZ1ffJMFLvNtc/edit?usp=sharing" target="_blank" rel="noopener noreferrer">our slides</a></p>
 					</div>
 					<div className="click-to-join">
 						<div className="should-dim">
