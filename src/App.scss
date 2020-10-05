@@ -70,10 +70,10 @@ body {
 @import 'components/Committees/style';
 @import 'components/Committees/CommitteesBanner/style';
 @import 'components/Committees/CommitteeSections/style';
-@import 'components/Committees/CommitteeSections/Header/style';
-@import 'components/Committees/CommitteeSections/Intro/style';
-@import 'components/Committees/CommitteeSections/Body/style';
-@import 'components/Committees/CommitteeSections/Body/InfoCard/style.scss';
+@import 'components/Committees/CommitteeSections/CommitteeSectionHeader/style';
+@import 'components/Committees/CommitteeSections/CommitteeSectionIntro/style';
+@import 'components/Committees/CommitteeSections/CommitteeSectionBody/style';
+@import 'components/Committees/CommitteeSections/CommitteeSectionBody/CommitteeEventCard/style.scss';
 @import 'components/Button/style';
 @import 'components/Banner/style';
 @import 'components/Home/style';

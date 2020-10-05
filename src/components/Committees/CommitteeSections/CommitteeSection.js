@@ -1,16 +1,16 @@
 import React from 'react';
-import Header from './Header/Header';
-import Intro from './Intro/Intro';
-import Body from './Body/Body';
+import Header from './CommitteeSectionHeader/CommitteeSectionHeader';
+import Intro from './CommitteeSectionIntro/CommitteeSectionIntro';
+import Body from './CommitteeSectionBody/CommitteeSectionBody';
 
-export default class CommitteeSection extends React.Component {
-	render() {
-		return (
-			<div className='committee-section'>
-				<Header committee={this.props.committee}/>
-				<Intro committee={this.props.committee}/>
-				<Body committee={this.props.committee}/>			
-            </div>
-		);
-	}
+function CommitteeSection(props) {
+	return (
+		<div className='committee-section'>
+			<Header committee={props.committee}/>
+			<Intro committee={props.committee}/>
+			<Body committee={props.committee}/>			
+		</div>
+	);
 }
+
+export default CommitteeSection;
