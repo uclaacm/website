@@ -23,8 +23,11 @@
     mask-size: cover;  
 
     &#website {
-        -webkit-mask: url(/images/social_media/websiteDark.svg);
-        mask: url(/images/social_media/websiteDark.svg);
+        background-color: transparent;
+        background-size: cover;
+        height: 50px;
+        width: 50px;
+        margin: 0 10px -5px;
     }
     &#facebook {
         -webkit-mask: url(/images/social_media/facebookDark.svg);
@@ -55,14 +58,38 @@
          mask: url(/images/social_media/youtubeDark.svg); 
         }
 
-    &.hack    { background-color: $hack-purple; }
-	&.ai      { background-color: $ai-arctic; }
-	&.w       { background-color: $w-teal; }
-	&.cyber   { background-color: $cyber-amber; }
-	&.studio  { background-color: $studio-raspberry; }
-	&.icpc    { background-color: $icpc-tangerine; }
-	&.design  { background-color: $design-orange; }
-    &.teachla { background-color: $teachla-green; }
+    &.hack    { 
+        background-color: $hack-purple;
+        background-image: url(/images/diamonds/hack_diamond.svg);
+        }        
+	&.ai      { 
+        background-color: $ai-arctic;
+        background-image: url(/images/diamonds/ai_diamond.svg);
+        }
+	&.w       { 
+        background-color: $w-teal;
+        background-image: url(/images/diamonds/w_diamond.svg);
+        }
+	&.cyber   { 
+        background-color: $cyber-amber;
+        background-image: url(/images/diamonds/cyber_diamond.svg);
+        }
+	&.studio  { 
+        background-color: $studio-raspberry;
+        background-image: url(/images/diamonds/studio_diamond.svg);
+        }
+	&.icpc    { 
+        background-color: $icpc-tangerine;
+        background-image: url(/images/diamonds/icpc_diamond.svg);
+        }
+    &.design  { 
+        background-color: $design-orange; 
+        background-image: url(/images/diamonds/design_diamond.svg);
+        }
+    &.teachla { 
+        background-color: $teachla-green;         
+        background-image: url(/images/diamonds/teachLA_diamond.svg);
+        }
     
     &:hover {
         transform: scale(1.05);
