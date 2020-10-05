@@ -19,7 +19,7 @@ export default [
 					src: '',
 					alt: ''
 				},
-				desc: 'Each year, Studio splits into several teams of students who each work throughout winter and spring quarter to put together a fully-fledged game, usually coding in C# with the Unity engine. You can see a collection of many past projects at uclaacmstudio.itch.io.',
+				desc: 'Each year, Studio splits into several teams of students who each work throughout winter and spring quarter to put together a fully-fledged game, usually coding in C# with the Unity engine. You can see a collection of many past projects uclaacmstudio.itch.io.',
 			},
 			{
 				title: 'Beginner Unity track',
@@ -132,7 +132,7 @@ export default [
 					src: '',
 					alt: ''
 				},
-				desc: 'The design styleguide needs to be recreated to contain the new branding and reflect it itself. It will feature all design assets necessary for all committees, and some do\'s and don\'ts with abiding by the new brand image. URL: design.uclaacm.com\nGitHub: github.com/uclaacm/Styleguide',
+				desc: 'The design styleguide needs to be recreated to contain the new branding and reflect it itself. It will feature all design assets necessary for all committees, and some do\'s and don\'ts with abiding by the new brand image. Check it out design.uclaacm.com and the Github github.com/uclaacm/Styleguide',
 			},
 			{
 				title: 'How to Design Your Resume Workshop',
@@ -244,7 +244,7 @@ export default [
 					src: '/images/committees/teachLA/passworks.png',
 					alt: 'Screenshot of Teach LA\'s passworks project'
 				},
-				desc: 'Write educational software to make teaching easier, either by developing interactive web applications called “Learning Labs” (e.g. passworks.uclaacm.com), maintain our free online code editor (editor.uclaacm.com), or bust out your design skills on our website (teachla.uclaacm.com). No prior dev experience required!'
+				desc: 'Write educational software to make teaching easier, either by developing interactive web applications called “Learning Labs” (e.g. Passworks Lesson passworks.uclaacm.com), maintain our free online code editor (editor.uclaacm.com), or bust out your design skills on our website teachla.uclaacm.com. No prior dev experience required!'
 			},
 			{
 				title: 'Weekly Curriculum Meetings',
@@ -368,7 +368,7 @@ export default [
 					src: '',
 					alt: ''
 				},
-				desc: 'You Belong in AI! s a podcast on diversity in the field of Artificial Intelligence. We feature industry and academic leaders in AI from a diverse range of backgrounds to come and talk about their work and the importance of diversity and inclusion in AI. You Belong in AI! Is available on all major podcast streaming platforms here: anchor.fm/ucla-acm-ai'
+				desc: 'You Belong in AI! s a podcast on diversity in the field of Artificial Intelligence. We feature industry and academic leaders in AI from a diverse range of backgrounds to come and talk about their work and the importance of diversity and inclusion in AI. You Belong in AI! Is available on all major podcast streaming platforms anchor.fm/ucla-acm-ai'
 			},
 			{
 				title: 'AI Course for High School Students (Collaboration with ACM Teach LA)',
@@ -376,7 +376,7 @@ export default [
 					src: '',
 					alt: ''
 				},
-				desc: 'ACM AI’s Outreach team collaborates with ACM TeachLA to teach an introductory AI course to local high school students in Los Angeles. An overview of this course content can be found here: teachla.uclaacm.com/classes/ml'
+				desc: 'ACM AI’s Outreach team collaborates with ACM TeachLA to teach an introductory AI course to local high school students in Los Angeles. An overview of this course content can be found teachla.uclaacm.com/classes/ml'
 			},
 			{
 				title: 'AI/ML Workshops',
@@ -434,7 +434,7 @@ export default [
 					src: '/images/committees/hack/tooling_series.png',
 					alt: 'Image of Tooling Series Flyer'
 				},
-				desc: 'Weekly workshop series teaching widely applicable software tools like bash, git, regex and vim. github.com/uclaacm/hack-tooling-series',
+				desc: 'Weekly workshop series teaching widely applicable software tools like bash, git, regex and vim. Available on Github github.com/uclaacm/hack-tooling-series.',
 			},
 			{
 				title: 'Hack on the Hill',
@@ -442,7 +442,7 @@ export default [
 					src: '/images/committees/hack/hack_on_the_hill.png',
 					alt: 'Image of Hack on the Hill flyer'
 				},
-				desc: 'Our 12-hour hackathon encourages students from all backgrounds to come experience with us, the joy of building amazing projects with the opportunity to learn from various workshops and industry mentors. hoth.splashthat.com'
+				desc: 'Our 12-hour hackathon encourages students from all backgrounds to come experience with us, the joy of building amazing projects with the opportunity to learn from various workshops and industry mentors. Check it out hoth.splashthat.com'
 			},
 			{
 				title: 'Passion Talks',
