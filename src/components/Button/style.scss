@@ -6,9 +6,8 @@ button {
 	font-family: $font-body;
 	color: white;
 	border: none;
-	border-radius: 4px;
+	border-radius: 11.2px;
 	line-height: 40px;
-	box-shadow: 0px 2px 0px $acm-black;
 	background-color: $acm-cobalt;
 	display: inline-block;
 	transition: 0.2s;
@@ -17,13 +16,11 @@ button {
 		cursor: pointer;
 		background-color: $acm-black;
 		// margin-top: 1px;
-		box-shadow: 0px 2px 0px $acm-black;
 	}
 
 	&:active {
 		margin-top: 2px;
 		background-color: $acm-black;
-		box-shadow: 0px 0px 0px $acm-black;
 	}
 }
 
@@ -36,7 +33,6 @@ button.fade-light {
 	&:active {
 		background: white;
 		color: $acm-black;
-		box-shadow: 0px 0px 0px white;
 	}
 }
 
@@ -45,12 +41,10 @@ button.dark {
 
 	&:hover {
 		background: $acm-tint;
-		box-shadow: 0px 1px 0px $acm-tint;
 	}
 
 	&:active {
 		background: white;
 		color: $acm-black;
-		box-shadow: 0px 0px 0px white;
 	}
 }

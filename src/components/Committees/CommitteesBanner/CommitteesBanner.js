@@ -6,7 +6,7 @@ export default class CommitteesBanner extends React.Component {
 			<div className="committee-banner-container">
 				<div className="banner-main-content">
 					<div className="banner-left-col">
-						<img src={process.env.PUBLIC_URL + "/images/acm_committees.svg"} alt="the logos of all ACM committees" />
+						<img src={process.env.PUBLIC_URL + "/images/acm_committees.png"} alt="the logos of all ACM committees" />
 					</div>
 					<div className="banner-right-col">
 						<div className="info">

@@ -3,7 +3,9 @@ export default [
 		name: 'Studio',
 		class: 'studio',
 		tagline: 'Creative Expression through Games and VR',
-		image: '/images/committees/studio/logo-studio.svg',
+		image: '/images/committees/studio_wordmark.svg',
+		diamond: '/images/diamonds/studio_diamond.svg',
+		link: 'https://www.facebook.com/groups/uclaacmstudio',
 		links: [
 			{
 				platform: 'facebook',
@@ -51,7 +53,6 @@ export default [
 		name: 'ICPC',
 		class: 'icpc',
 		tagline: 'Mastering Algorithms and Competitive Programming',
-		image: '/images/committees/icpc/logo-icpc.svg',
 		links: [
 			{
 				platform: 'website',
@@ -74,8 +75,8 @@ export default [
 			{
 				title: 'Cyber x Hack x ICPC presents Bruin Quest',
 				image: {
-					src: '',
-					alt: ''
+					src: '/images/committees/hack/bruin_quest.png',
+					alt: 'Flyer for Bruin Quest'
 				},
 				desc: 'Explore a virtual UCLA campus and complete fun challenges to compete for points, prizes, and the glory of being Bruin Quest champion.'
 			},
@@ -97,13 +98,15 @@ export default [
 			}
 		],
 		introImage: '/images/committees/icpc/icpc_motif_applied.png',
-		mission: 'To promote algorithmic thinking and help build proficient problem solvers.',
+		mission: 'Our mission is to promote algorithmic thinking and help build proficient problem solvers.',
+		image: '/images/committees/icpc_wordmark.svg',
+		diamond: '/images/diamonds/icpc_diamond.svg',
+		link: 'https://www.facebook.com/groups/ucla.icpc',
 	},
 	{
 		name: 'Design',
 		class: 'design',
 		tagline: 'Form Follows Function',
-		image: '/images/committees/design/logo-design.svg',
 		links: [
 			{
 				platform: 'website',
@@ -150,12 +153,14 @@ export default [
 		],
 		introImage: '/images/committees/design/design_motif_applied.png',
 		mission: 'Our mission is to design, manage, and support the visual identity of ACM at UCLA. We create the club\'s branding, event banners, and more elements, while also doing workshops to teach UI/UX to the UCLA community.',
+		image: '/images/committees/design_wordmark.svg',
+		diamond: '/images/diamonds/design_diamond.svg',
+		link: 'https://www.facebook.com/groups/acmdesign/'
 	},
 	{
 		name: 'Cyber',
 		class: 'cyber',
 		tagline: 'Cybersecurity Made Simple',
-		image: '/images/committees/cyber/logo-cyber.svg',
 		links: [
 			{
 				platform: 'website',
@@ -198,12 +203,14 @@ export default [
 		],
 		introImage: '/images/committees/cyber/cyber_motif_applied.png',
 		mission: 'Our mission is to create a community in which both experts and beginners alike can grow in the field of cybersecurity skills and knowledge. We want to make cybersecurity simple and accessible for everyone. To that end, we hold workshops and special events designed for beginners with no experience or just beginning in cybersecurity.',
+		image: '/images/committees/cyber_wordmark.svg',
+		diamond: '/images/diamonds/cyber_diamond.svg',
+		link: 'https://acmcyber.com/',
 	},
 	{
 		name: 'Teach LA',
 		class: 'teachla',
 		tagline: 'Learn It, Teach It',
-		image: '/images/committees/teachLA/logo-teachla.svg',
 		links: [
 			{
 				platform: 'website',
@@ -258,12 +265,14 @@ export default [
 		],
 		introImage: '/images/committees/teachLA/teachLA_motif_applied.png',
 		mission: 'Our mission is to provide equal access to K-12 CS education in the Los Angeles area. We do this by teaching classes, running workshops and events, and writing software!',
+		image: '/images/committees/teachLA_wordmark.svg',
+		diamond: '/images/diamonds/teachLA_diamond.svg',
+		link: 'https://teachla.uclaacm.com'
 	},
 	{
 		name: 'W',
 		class: 'w',
 		tagline: 'Starting Conversations about Diversity in Tech',
-		image: '/images/committees/w/logo-w.svg',
 		links: [
 			{
 				platform: 'facebook',
@@ -314,12 +323,14 @@ export default [
 		],
 		introImage: '/images/committees/w/w_motif_applied.png',
 		mission: 'Our goal is to promote diversity in tech through mentorship, networking, and professional development opportunities. We’re a safe space for everyone interested in computer science. :)',
+		image: '/images/committees/w_wordmark.svg',
+		diamond: '/images/diamonds/w_diamond.svg',
+		link: 'https://www.facebook.com/groups/uclaacmw',
 	},
 	{
 		name: 'AI',
 		class: 'ai',
 		tagline: 'Learning Machine Learning',
-		image: '/images/committees/ai/logo-ai.svg',
 		links: [
 			{
 				platform: 'website',
@@ -393,13 +404,15 @@ export default [
 			}
 		],
 		introImage: '/images/committees/ai/ai_motif_applied.png',
-		mission: 'ACM AI’s mission is to grow and develop a community of students interested in Artificial Intelligence (AI) at UCLA, Los Angeles, and beyond. Our initiatives aim to serve everyone who has an interest in AI regardless of background, including people with no prior experience or knowledge in AI and non-CS majors.',
+		mission: 'Our mission is to grow and develop a community of students interested in Artificial Intelligence (AI) at UCLA, Los Angeles, and beyond. Our initiatives aim to serve everyone who has an interest in AI regardless of background, including people with no prior experience or knowledge in AI and non-CS majors.',
+		image: '/images/committees/ai_wordmark.svg',
+		diamond: '/images/diamonds/ai_diamond.svg',
+		link: 'https://uclaacmai.github.io/',
 	},
 	{
 		name: 'Hack',
 		class: 'hack',
 		tagline: 'Move Fast, Build Things',
-		image: '/images/committees/hack/logo-hack.svg',
 		links: [
 			{
 				platform: 'website',
@@ -442,8 +455,8 @@ export default [
 			{
 				title: 'CLxACM Hack presents Bloom',
 				image: {
-					src: '',
-					alt: ''
+					src: '/images/committees/hack/bloom.jpg',
+					alt: 'Flyer for Bloom! Intro to design and development.'
 				},
 				desc: 'Choose to attend weekly workshops on Web Development (Hackschool series) or Design (Creative Labs workshops) and get partnered in a developer + designer team to create a fun project!'
 			},
@@ -466,6 +479,9 @@ export default [
 			}
 		],
 		introImage: '/images/committees/hack/hack_motif_applied.png',
-		mission: 'To empower the community by providing the means to build amazing things and explore what is possible through code!',
+		mission: 'Our mission is to empower the community by providing the means to build amazing things and explore what is possible through code!',
+		image: '/images/committees/hack_wordmark.svg',
+		diamond: '/images/diamonds/hack_diamond.svg',
+		link: 'https://hack.uclaacm.com',
 	}
 ]

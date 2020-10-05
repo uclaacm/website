@@ -1,18 +1,19 @@
 .committees {
 	width: 100%;
-	max-width: 900px;
+	max-width: 1000px;
 	padding: 0px 20px;
 	box-sizing: border-box;
 	margin: auto;
 	text-align: center;
 
 	.committee {
-		width: 280px;
+		width: 300px;
 		height: 120px;
 		display: inline-block;
 		color: $font-primary-color;
 		text-align: left;
 		transition: transform 0.1s;
+		position: relative;
 
 		&:hover {
 			cursor: pointer;
@@ -21,9 +22,8 @@
 
 		img {
 			margin: 25px 10px;
-			height: 70px;
-			width: 70px;
-			display: inline-block;
+			height: 50px;
+			display: block;
 		}
 
 		.info {
@@ -51,8 +51,11 @@
 				font-family: $font-body;
 				margin: 0px 0px;
 				margin-top: -5px;
-				font-size: 0.7em;
+				font-size: 0.8em;
 				vertical-align: top;
+				position: absolute;
+				left: 72px;
+				top: 75px;
 			}
 		}
 
