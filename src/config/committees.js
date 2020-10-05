@@ -408,6 +408,10 @@ export default [
 			{
 				platform: 'instagram',
 				link: 'https://www.instagram.com/uclahack'
+			},
+			{
+				platform: 'facebook',
+				link: 'https://www.facebook.com/groups/acmhack'
 			}
 		],
 		infoCards: [
