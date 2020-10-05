@@ -1,5 +1,5 @@
 import React from 'react';
-import { Anchorme, LinkComponentProps } from 'react-anchorme'
+import { Anchorme} from 'react-anchorme'
 
 function CommitteeEventCard(props){
 
