@@ -13,7 +13,7 @@ export default [
 		tagline: 'Mastering Algorithms and Competitive Programming',
 		image: '/images/committees/icpc_wordmark.svg',
 		diamond: '/images/diamonds/icpc_diamond.svg',
-		link: 'https://www.facebook.com/groups/ucla.icpc',
+		link: 'https://icpc.uclaacm.com/',
 	},
 	{
 		name: 'Design',
