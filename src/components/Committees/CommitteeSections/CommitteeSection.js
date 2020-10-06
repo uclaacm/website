@@ -5,10 +5,10 @@ import Body from './CommitteeSectionBody/CommitteeSectionBody';
 
 function CommitteeSection(props) {
 	return (
-		<div className='committee-section'>
+		<div id={props.committee.class} className='committee-section'>
 			<Header committee={props.committee}/>
 			<Intro committee={props.committee}/>
-			<Body committee={props.committee}/>			
+			<Body committee={props.committee}/>
 		</div>
 	);
 }

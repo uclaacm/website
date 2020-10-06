@@ -56,7 +56,7 @@ export default [
 		links: [
 			{
 				platform: 'website',
-				link: 'https://icpc.uclaacm.com/#/'
+				link: 'https://icpc.uclaacm.com/'
 			},
 			{
 				platform: 'facebook',
@@ -101,7 +101,7 @@ export default [
 		mission: 'Our mission is to promote algorithmic thinking and help build proficient problem solvers.',
 		image: '/images/committees/icpc_wordmark.svg',
 		diamond: '/images/diamonds/icpc_diamond.svg',
-		link: 'https://www.facebook.com/groups/ucla.icpc',
+		link: 'https://icpc.uclaacm.com',
 	},
 	{
 		name: 'Design',
@@ -347,7 +347,7 @@ export default [
 			{
 				platform: 'twitter',
 				link: 'https://twitter.com/acm_ai_ucla'
-			},			
+			},
 			{
 				platform: 'github',
 				link: 'https://github.com/uclaacmai'
