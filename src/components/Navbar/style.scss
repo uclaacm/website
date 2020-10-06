@@ -178,6 +178,13 @@
 			color: #999999;
 			cursor: pointer;
 		}
+
+		@media (max-width: 688px) {
+			ul.nav-items li {
+				display: block;
+				margin: 20px auto;
+			}
+		}
 	}
 
 	#menu-toggle:checked + #hamburger-menu {
