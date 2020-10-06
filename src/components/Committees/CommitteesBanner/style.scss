@@ -1,7 +1,7 @@
 .committee-banner-container {
-	margin-bottom: 50px;
+
 	h1 {
-		margin: 20px 0 ;
+		margin: 10px 0 ;
 		font-size: 2.5em;
 	}
 
@@ -10,14 +10,11 @@
 	}
 
     @media (min-width: 688px) {
-		min-height: 650px;
-		margin-top: 30px;
-
-		h1 {
-			font-size: 4em;
-		}
+		margin-top: -20px;
+		min-height: 500px;
+		
 		p {
-			font-size: 1.2em;
+			font-size: 1em;
 		}
 	}
 }
