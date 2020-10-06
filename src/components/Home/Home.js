@@ -15,7 +15,7 @@ function Home (props) {
 			<Banner />
 			<div className="content-section center">
 				<h2>The largest Computer Science community at UCLA</h2>
-				<p className="subheading">As the largest Computer Science student organization at UCLA and in Southern California, <b>ACM at UCLA</b> welcomes students of all backgrounds, interests, and skill levels to join our community and share in our passion for CS. ACM comprises eight committees — each serves a unique topic and mission. Regardless of major or experience, our events are open to everyone!</p>
+				<p className="subheading">ACM at UCLA is the largest computer science student organization in Southern California. We welcome students of all backgrounds, interests, and skill levels to join our community and share our love for technology. ACM is comprised of eight committees — each serving a different topic and mission. Our events are open to everyone, regardless of major or experience!</p>
 				<SocialMedia />
 			</div>
 			<br />
@@ -29,7 +29,7 @@ function Home (props) {
 				<h2>In the News</h2>
 				<News news={Config.news} />
 			</div>
-			
+
 			<br /><br /><br />
 
 			<div className="full-width blue">

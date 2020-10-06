@@ -7,7 +7,7 @@
 .square-ornament {
 	height: 200px;
 	width: 200px;
-	border-radius: 20px;
+	border-radius: 40px;
 	background: $acm-tint;
 	transform: rotate(45deg);
 }
@@ -39,7 +39,7 @@
 	width: 250px;
 	left: 30px;
 	top: -65px;
-	border-radius: 25px;
+	border-radius: 50px;
 	background-image: url(/images/about1.png);
 	background-size: cover;
 	background-color: $acm-cobalt;
@@ -51,7 +51,7 @@
 	width: 50px;
 	right: -110px;
 	top: 0px;
-	border-radius: 5px;
+	border-radius: 10px;
 	background-color: $acm-cobalt;
 }
 
@@ -61,7 +61,7 @@
 	width: 18px;
 	right: -105px;
 	top: -25px;
-	border-radius: 2px;
+	border-radius: 4px; //Roudning up from 3.6px
 	background-color: $acm-cobalt;
 }
 

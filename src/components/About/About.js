@@ -17,9 +17,8 @@ function About() {
 				</div>
 				<div className="text-section">
 					<h1>What is ACM?</h1>
-					<p className="half-size">As a student chapter of the international <a href="https://www.acm.org" target="_blank" rel="noreferrer noopener">Association for Computing Machinery,</a> ACM at UCLA is the largest Computer Science student organization at UCLA and in Southern California. We welcome students of all different backgrounds and skill levels to join our community and share in our passion for CS!</p>
-					<p className="half-size">With events such as infosessions, workshops, speaker panels, hackathons, and competitions, we cover a variety of topics including artificial intelligence, virtual reality, cybersecurity, app development, diversity initiatives, community outreach, and much more.</p>
-					<p className="half-size">At ACM, we aim to develop students’ technical and professional skills while cultivating an inclusive and supportive community for everyone interested in computer science, regardless of major or experience.</p>
+					<p className="half-size">As a student chapter of the international <a href="https://www.acm.org" target="_blank" rel="noreferrer noopener">Association for Computing Machinery,</a> ACM at UCLA is the largest Computer Science student organization at UCLA and in Southern California. We welcome students of all backgrounds and skill levels to join our community and share our love for technology!</p>
+					<p className="half-size">With events such as infosessions, workshops, speaker panels, hackathons, and competitions, we cover a variety of topics including artificial intelligence, virtual reality, cybersecurity, mobile and web development, diversity initiatives, community outreach, and much more. Our events are <strong>open to everyone</strong>, regardless of major or experience!</p>
 				</div>
 			</div>
 			<div className="content-section right">
@@ -28,7 +27,7 @@ function About() {
 				</div>
 				<div className="text-section">
 					<h1>What are ACM committees?</h1>
-					<p className="half-size">ACM comprises eight committees, each serving a unique topic and mission. All of our events are open to everyone. We strive to cover all of our members’ interests and encourage members to explore new topics and events, too!</p>
+					<p className="half-size">ACM is comprised of eight committees — each serving a different topic and mission. We strive to cover a plethora of interests and encourage members to explore new topics, too!</p>
 				</div>
 			</div>
 			<div className="content-section left">
@@ -37,11 +36,11 @@ function About() {
 				</div>
 				<div className="text-section">
 					<h1>How do I get involved?</h1>
-					<p className="half-size">No matter what your background or major is, we welcome you to participate in all of our events and activities!</p>
-					<p className="half-size">To become a member and keep up with upcoming events, you should join <a href="https://members.uclaacm.com" target="_blank" rel="noreferrer noopener">our membership portal</a>, follow <a href="https://www.facebook.com/groups/uclaacm" target="_blank" rel="noreferrer noopener">our Facebook group</a>, and sign up for <a href="http://eepurl.com/c5pE6P" target="_blank" rel="noreferrer noopener">our weekly newsletter</a>. Signing up will keep you up to date with everything ACM, and earning points on the portal might even earn you a prize!</p>
+					<p className="half-size">No matter what your background or major is, we would love to have you at our events and activities!</p>
+					<p className="half-size">To keep up with what's happening, we recommend joining <a href="https://members.uclaacm.com" target="_blank" rel="noreferrer noopener">our membership portal</a>, <a href="https://www.facebook.com/groups/uclaacm" target="_blank" rel="noreferrer noopener">our Facebook group</a>, and <a href="http://eepurl.com/c5pE6P" target="_blank" rel="noreferrer noopener">our weekly newsletter</a>. We will keep you up to date with everything ACM, and earning points on the portal might even earn you a prize!</p>
 					<p>Here's our social media, where you can see what we're up to:</p>
-					<div style={{display: 'flex', justifyContent: 'center'}} >	
-						<SocialMedia/>				
+					<div style={{display: 'flex', justifyContent: 'center'}} >
+						<SocialMedia/>
 					</div>
 				</div>
 			</div>
