@@ -13,6 +13,10 @@
 		text-decoration: none;
 		text-align: center;
 
+		&:hover {
+			transform: scale(1.02);
+		}
+
 
 		img {
 			height: 200px;

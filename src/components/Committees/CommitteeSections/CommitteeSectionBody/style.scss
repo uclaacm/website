@@ -1,0 +1,21 @@
+.body-wrapper {
+    margin: 50px 0 40px 0;
+    
+    h1 {
+        font-size: 1.5em;
+        margin: 40px 0 30px 0;
+    }
+
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    @media (min-width: 688px) {
+        h1 {
+            font-size: 2em;
+            margin: 0 0 30px 0;
+        }
+	}
+}
+

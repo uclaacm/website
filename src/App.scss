@@ -66,8 +66,14 @@ body {
 /*************************************
  * Import CSS styles for components  *
  ************************************/
-
 @import 'components/Navbar/style';
+@import 'components/Committees/style';
+@import 'components/Committees/CommitteesBanner/style';
+@import 'components/Committees/CommitteeSections/style';
+@import 'components/Committees/CommitteeSections/CommitteeSectionHeader/style';
+@import 'components/Committees/CommitteeSections/CommitteeSectionIntro/style';
+@import 'components/Committees/CommitteeSections/CommitteeSectionBody/style';
+@import 'components/Committees/CommitteeSections/CommitteeSectionBody/CommitteeEventCard/style.scss';
 @import 'components/Button/style';
 @import 'components/Banner/style';
 @import 'components/Home/style';
