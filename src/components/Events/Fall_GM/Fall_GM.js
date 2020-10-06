@@ -109,7 +109,7 @@ function GMLiveProgram() {
 				<div id="join-links-wrapper">
 					<div className="click-to-join">
 						<div className="should-dim">
-							<a href="https://ucla.zoom.us/j/94679465455" target="_blank" rel="noopener noreferrer">
+							<a href="https://ucla.zoom.us/j/94679465455?pwd=dWpDc1J6bTQ1MXd4R2RlaTJ6TURJZz09" target="_blank" rel="noopener noreferrer">
 								<div id="zoom-join-link-wrapper" className="join-links">
 									<img src={process.env.PUBLIC_URL + "/images/ZoomLogo.png"} alt="Zoom logo" className="join-links-img"/>
 								</div>
