@@ -55,11 +55,6 @@ export default [
 		'link': 'https://www.sandia.gov/',
 	},
 	{
-		'name': 'Symantec',
-		'image': '/images/sponsors/symantec.jpg',
-		'link': 'https://www.symantec.com/',
-	},
-	{
 		'name': 'Viasat',
 		'image': '/images/sponsors/viasat.png',
 		'link': 'https://www.viasat.com/',
