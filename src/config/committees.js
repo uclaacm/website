@@ -24,24 +24,24 @@ export default [
 			{
 				title: 'Beginner Unity track',
 				image: {
-					src: '',
-					alt: ''
+					src: '/images/committees/studio/beginner.jpg',
+					alt: 'Beginner Workshops flyer'
 				},
 				desc: 'No prior knowledge required! We walk new students through navigating the Unity editor and build a working knowledge of the tools starting from the ground up.'
 			},
 			{
 				title: 'Advanced Unity track',
 				image: {
-					src: '',
-					alt: ''
+					src: '/images/committees/studio/advanced.jpg',
+					alt: 'Advanced Workshops flyer'
 				},
 				desc: 'For students already confident in the fundamentals of Unity, we examine a different advanced topic each week.'
 			},
 			{
 				title: 'Artists track',
 				image: {
-					src: '',
-					alt: ''
+					src: '/images/committees/studio/art.jpg',
+					alt: 'Art workshops flyer'
 				},
 				desc: 'These tutorials cater to students more interested in the artistic side of gamedev, focusing on how to incorporate skills besides coding into a game project workflow.'
 			}
@@ -65,12 +65,28 @@ export default [
 		],
 		infoCards: [
 			{
+				title: 'Intro to Competitive Programming',
+				image: {
+					src: '/images/committees/icpc/intro.png',
+					alt: 'Rubik\'s Cube'
+				},
+				desc: 'From climbing coding leaderboards to competing in ICPC regionals to constructing clever algorithms with clever friends, the Competitive Programming journey starts here. Write your first contest solution and learn what it takes to start solving challenging and often beautiful problems!',
+			},
+			{
+				title: 'Advanced Training',
+				image: {
+					src: '/images/committees/icpc/advanced.png',
+					alt: 'Graph diagram'
+				},
+				desc: 'An advanced workshop to help learn and practice advanced algorithms, data structures, and problem solving skills. Focus of the workshop will be preparing for the ICPC competition, but the workshop is open to anyone interested!'
+			},
+			{
 				title: 'CodeSprintLA',
 				image: {
-					src: '',
-					alt: ''
+					src: '/images/committees/icpc/codesprint.png',
+					alt: 'Codesprint Flyer'
 				},
-				desc: 'CodeSprintLA is our annual beginner friendly coding competition, with original problems curated by ICPC officers. This year’s offering (Spring 2020) leveraged the online format and featured 225+ participants from 41 universities across 7 countries. CodeSprintLA 2020',
+				desc: 'CodeSprintLA is UCLA\'s own Competitive Programming Competition organized by ACM ICPC. Competitive Programming is the activity (some call it a sport!) of writing programs to solve computational problems. You must be clever with your algorithm to solve the program in a given time limit. Individual or teams compete to solve the most problems!',
 			},
 			{
 				title: 'Cyber x Hack x ICPC presents Bruin Quest',
@@ -83,18 +99,10 @@ export default [
 			{
 				title: 'Interview Prep Bootcamp',
 				image: {
-					src: '',
-					alt: ''
+					src: '/images/committees/icpc/interview.png',
+					alt: 'Interview Prep Bootcamp Flyer'
 				},
 				desc: 'Ace this recruiting season with focused interview prep from ACM ICPC. In our weekly series, we will cover all the essentials from stacks and queues to string manipulation and dynamic programming.'
-			},
-			{
-				title: 'Project A*: Competitive Programming Workshops',
-				image: {
-					src: '',
-					alt: ''
-				},
-				desc: 'All you need is a passion for problem-solving! Whether you are completely new to competitive programming (or even CS!), or a veteran coder we have a learning opportunity for you this Fall. Introducing Project A*, our weekly algorithm academy! Our Intro to Competitive Programming track will cover all the essentials from the bottom up to get you started in competitive programming. The Advanced Training track will delve deeper into more complicated data structures and algorithms to help you compete at the highest level.'
 			}
 		],
 		introImage: '/images/committees/icpc/icpc_motif_applied.png',
@@ -381,8 +389,8 @@ export default [
 			{
 				title: 'AI/ML Workshops',
 				image: {
-					src: '',
-					alt: ''
+					src: '/images/committees/ai/workshops.jpg',
+					alt: 'Learning Machine Learning Flyer'
 				},
 				desc: 'This fall ACM AI is offering three workshop series: Beginner Track, Advanced Track, and Applied ML. Beginner Track is an introductory course that teaches fundamentals of machine learning and assumes no prior background in AI. Advanced Track is a more advanced machine learning course that covers more advanced deep learning topics and is designed for students who have already previously taken Beginner Track or have prior knowledge of machine learning fundamentals. Our Applied ML workshops series covers practical skills needed to apply machine learning theory to real world problems and is designed for students who already have knowledge of machine learning fundamentals.'
 			},
