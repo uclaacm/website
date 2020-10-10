@@ -23,24 +23,24 @@ export default [
 			{
 				title: 'Beginner Unity track',
 				image: {
-					src: '/images/committees/studio/beginner.jpg',
-					alt: 'Beginner Workshops flyer'
+					src: '',
+					alt: ''
 				},
 				desc: 'No prior knowledge required! We walk new students through navigating the Unity editor and build a working knowledge of the tools starting from the ground up.'
 			},
 			{
 				title: 'Advanced Unity track',
 				image: {
-					src: '/images/committees/studio/advanced.jpg',
-					alt: 'Advanced Workshops flyer'
+					src: '',
+					alt: ''
 				},
 				desc: 'For students already confident in the fundamentals of Unity, we examine a different advanced topic each week.'
 			},
 			{
 				title: 'Artists track',
 				image: {
-					src: '/images/committees/studio/art.jpg',
-					alt: 'Art workshops flyer'
+					src: '',
+					alt: ''
 				},
 				desc: 'These tutorials cater to students more interested in the artistic side of gamedev, focusing on how to incorporate skills besides coding into a game project workflow.'
 			}
