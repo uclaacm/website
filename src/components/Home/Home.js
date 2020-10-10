@@ -22,7 +22,7 @@ function Home (props) {
 			<Committees committees={Config.committees} />
 			<div className="button-section center">
 				{ /** CHANGE THIS LINK TO ABOUT PAGE LATER */ }
-				<a href="https://www.facebook.com/uclaacm" target="_blank" rel="noreferrer noopener"><Button text="Learn More" /></a>
+				<a href="/committees"><Button text="Learn More About Our Committees" /></a>
 			</div><br /><br />
 
 			<div className="content-section center">

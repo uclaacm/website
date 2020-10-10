@@ -5,7 +5,6 @@ export default [
 		tagline: 'Creative Expression through Games and VR',
 		image: '/images/committees/studio_wordmark.svg',
 		diamond: '/images/diamonds/studio_diamond.svg',
-		link: 'https://www.facebook.com/groups/uclaacmstudio',
 		links: [
 			{
 				platform: 'facebook',
@@ -65,12 +64,28 @@ export default [
 		],
 		infoCards: [
 			{
+				title: 'Intro to Competitive Programming',
+				image: {
+					src: '/images/committees/icpc/intro.png',
+					alt: 'Rubik\'s Cube'
+				},
+				desc: 'From climbing coding leaderboards to competing in ICPC regionals to constructing clever algorithms with clever friends, the Competitive Programming journey starts here. Write your first contest solution and learn what it takes to start solving challenging and often beautiful problems!',
+			},
+			{
+				title: 'Advanced Training',
+				image: {
+					src: '/images/committees/icpc/advanced.png',
+					alt: 'Graph diagram'
+				},
+				desc: 'An advanced workshop to help learn and practice advanced algorithms, data structures, and problem solving skills. Focus of the workshop will be preparing for the ICPC competition, but the workshop is open to anyone interested!'
+			},
+			{
 				title: 'CodeSprintLA',
 				image: {
-					src: '',
-					alt: ''
+					src: '/images/committees/icpc/codesprint.png',
+					alt: 'Codesprint Flyer'
 				},
-				desc: 'CodeSprintLA is our annual beginner friendly coding competition, with original problems curated by ICPC officers. This year’s offering (Spring 2020) leveraged the online format and featured 225+ participants from 41 universities across 7 countries. CodeSprintLA 2020',
+				desc: 'CodeSprintLA is UCLA\'s own Competitive Programming Competition organized by ACM ICPC. Competitive Programming is the activity (some call it a sport!) of writing programs to solve computational problems. You must be clever with your algorithm to solve the program in a given time limit. Individual or teams compete to solve the most problems!',
 			},
 			{
 				title: 'Cyber x Hack x ICPC presents Bruin Quest',
@@ -83,25 +98,16 @@ export default [
 			{
 				title: 'Interview Prep Bootcamp',
 				image: {
-					src: '',
-					alt: ''
+					src: '/images/committees/icpc/interview.png',
+					alt: 'Interview Prep Bootcamp Flyer'
 				},
 				desc: 'Ace this recruiting season with focused interview prep from ACM ICPC. In our weekly series, we will cover all the essentials from stacks and queues to string manipulation and dynamic programming.'
-			},
-			{
-				title: 'Project A*: Competitive Programming Workshops',
-				image: {
-					src: '',
-					alt: ''
-				},
-				desc: 'All you need is a passion for problem-solving! Whether you are completely new to competitive programming (or even CS!), or a veteran coder we have a learning opportunity for you this Fall. Introducing Project A*, our weekly algorithm academy! Our Intro to Competitive Programming track will cover all the essentials from the bottom up to get you started in competitive programming. The Advanced Training track will delve deeper into more complicated data structures and algorithms to help you compete at the highest level.'
 			}
 		],
 		introImage: '/images/committees/icpc/icpc_motif_applied.png',
 		mission: 'Our mission is to promote algorithmic thinking and help build proficient problem solvers.',
 		image: '/images/committees/icpc_wordmark.svg',
 		diamond: '/images/diamonds/icpc_diamond.svg',
-		link: 'https://icpc.uclaacm.com',
 	},
 	{
 		name: 'Design',
@@ -155,7 +161,6 @@ export default [
 		mission: 'Our mission is to design, manage, and support the visual identity of ACM at UCLA. We create the club\'s branding, event banners, and more elements, while also doing workshops to teach UI/UX to the UCLA community.',
 		image: '/images/committees/design_wordmark.svg',
 		diamond: '/images/diamonds/design_diamond.svg',
-		link: 'https://www.facebook.com/groups/acmdesign/'
 	},
 	{
 		name: 'Cyber',
@@ -205,7 +210,6 @@ export default [
 		mission: 'Our mission is to create a community in which both experts and beginners alike can grow in the field of cybersecurity skills and knowledge. We want to make cybersecurity simple and accessible for everyone. To that end, we hold workshops and special events designed for beginners with no experience or just beginning in cybersecurity.',
 		image: '/images/committees/cyber_wordmark.svg',
 		diamond: '/images/diamonds/cyber_diamond.svg',
-		link: 'https://acmcyber.com/',
 	},
 	{
 		name: 'Teach LA',
@@ -267,7 +271,6 @@ export default [
 		mission: 'Our mission is to provide equal access to K-12 CS education in the Los Angeles area. We do this by teaching classes, running workshops and events, and writing software!',
 		image: '/images/committees/teachLA_wordmark.svg',
 		diamond: '/images/diamonds/teachLA_diamond.svg',
-		link: 'https://teachla.uclaacm.com'
 	},
 	{
 		name: 'W',
@@ -325,7 +328,6 @@ export default [
 		mission: 'Our goal is to promote diversity in tech through mentorship, networking, and professional development opportunities. We’re a safe space for everyone interested in computer science. :)',
 		image: '/images/committees/w_wordmark.svg',
 		diamond: '/images/diamonds/w_diamond.svg',
-		link: 'https://www.facebook.com/groups/uclaacmw',
 	},
 	{
 		name: 'AI',
@@ -407,7 +409,6 @@ export default [
 		mission: 'Our mission is to grow and develop a community of students interested in Artificial Intelligence (AI) at UCLA, Los Angeles, and beyond. Our initiatives aim to serve everyone who has an interest in AI regardless of background, including people with no prior experience or knowledge in AI and non-CS majors.',
 		image: '/images/committees/ai_wordmark.svg',
 		diamond: '/images/diamonds/ai_diamond.svg',
-		link: 'https://uclaacmai.github.io/',
 	},
 	{
 		name: 'Hack',
@@ -482,6 +483,5 @@ export default [
 		mission: 'Our mission is to empower the community by providing the means to build amazing things and explore what is possible through code!',
 		image: '/images/committees/hack_wordmark.svg',
 		diamond: '/images/diamonds/hack_diamond.svg',
-		link: 'https://hack.uclaacm.com',
 	}
 ]
