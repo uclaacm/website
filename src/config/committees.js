@@ -383,8 +383,8 @@ export default [
 			{
 				title: 'AI/ML Workshops',
 				image: {
-					src: '/images/committees/ai/workshops.jpg',
-					alt: 'Learning Machine Learning Flyer'
+					src: '',
+					alt: ''
 				},
 				desc: 'This fall ACM AI is offering three workshop series: Beginner Track, Advanced Track, and Applied ML. Beginner Track is an introductory course that teaches fundamentals of machine learning and assumes no prior background in AI. Advanced Track is a more advanced machine learning course that covers more advanced deep learning topics and is designed for students who have already previously taken Beginner Track or have prior knowledge of machine learning fundamentals. Our Applied ML workshops series covers practical skills needed to apply machine learning theory to real world problems and is designed for students who already have knowledge of machine learning fundamentals.'
 			},
