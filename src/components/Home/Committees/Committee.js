@@ -2,10 +2,9 @@ import React from 'react';
 
 function Committee(props){
 	return (
-		<a 
+		<a
 			className={`committee ${props.committee.class}`}
-			target="_blank" rel="noreferrer noopener" 
-			href={props.committee.link} 
+			href={`/committees#${props.committee.class}`}
 		>
 			<img src={process.env.PUBLIC_URL + props.committee.image} alt={`Logo and Wordmark for ACM ${props.committee.name}`} />
 			<div className="info">
