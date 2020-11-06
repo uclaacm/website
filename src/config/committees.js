@@ -278,6 +278,10 @@ export default [
 		tagline: 'Starting Conversations about Diversity in Tech',
 		links: [
 			{
+				platform: 'website',
+				link: 'https://w.uclaacm.com'
+			},			
+			{
 				platform: 'facebook',
 				link: 'https://www.facebook.com/groups/uclaacmw'
 			},
