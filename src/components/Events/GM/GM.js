@@ -109,13 +109,16 @@ function GMLiveProgram() {
 				<div id="join-links-wrapper">
 					<div className="click-to-join">
 						<div className="should-dim">
-							<a href="https://docs.google.com/presentation/d/1sg6aZef8vKw11WAlOihZJr0rW_t8BEoZ1ffJMFLvNtc/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
+							<a href="TODO" target="_blank" rel="noopener noreferrer">
 								<div id="zoom-join-link-wrapper" className="join-links">
-									<img src={process.env.PUBLIC_URL + "/images/slides.png"} alt="Zoom logo" className="join-links-img"/>
+									<img src={process.env.PUBLIC_URL + "/images/ZoomLogo.png"} alt="Zoom logo" className="join-links-img"/>
 								</div>
-								<p className="join-us">View the slides we used during GM</p>
+								<p className="join-us">Join us from 6:30 to 7:10 p.m. PST in Zoom</p>
 							</a>
 						</div>
+						<p className="join-us-descriptor">Follow along during the presentation with&nbsp;
+							<a href="https://docs.google.com/presentation/d/1eF2d6VmHo1Pq-2MfXg0ezLSnnPz2bUWXHdyVjYb7WDE/edit?usp=sharing" target="_blank" rel="noopener noreferrer">our slides</a>
+						</p>
 					</div>
 					<div className="click-to-join">
 						<div className="should-dim">
@@ -123,53 +126,43 @@ function GMLiveProgram() {
 								<div id="discord-join-link-wrapper" className="join-links">
 									<img src={process.env.PUBLIC_URL + "/images/DiscordLogoWordmark.png"} alt="Discord logo" className="join-links-img"/>
 								</div>
-								<p className="join-us">Missed GM? Join us in our Discord!</p>
+								<p className="join-us">Join us from 7:10 p.m. PST onwards in Discord</p>
 							</a>
 						</div>
+						<p className="join-us-descriptor">Chat with officers and see what ACM has planed for the winter</p>
 					</div>
 				</div>
-				<div id="video-wrapper">
+				{/* <div id="video-wrapper">
 					<iframe title="ACM Fall GM 2020 recording" src="https://www.youtube.com/embed/_HJA0QQP80I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				</div>
+				</div> */}
 				<div id="gm-program-wrapper">
 					<h2>Program</h2>
 					<div className="row">
-						<p className="timestamps">6:35 p.m. PDT</p>
+						<p className="timestamps">6:35 p.m. PST</p>
 						<div className="row-description-wrapper">
 							<h3 className="row-description-heading">Rucha Patki: Welcome</h3>
 						</div>
 					</div>
 					<div className="row">
-						<p className="timestamps">6:38 p.m. PDT</p>
-						<div className="row-description-wrapper">
-							<h3 className="row-description-heading">Alumni: Why ACM?</h3>
-							<p className="row-description-subheading">Hear perspectives of alumni on what their experience with ACM at UCLA meant to them</p>
-							<p>Elena Escalas (class of 2020)</p>
-							<p>Kevin Tan (class of 2020)</p>
-						</div>
-					</div>
-					<div className="row">
-						<p className="timestamps">6:40 p.m. PDT</p>
+						<p className="timestamps">6:40 p.m. PST</p>
 						<div className="row-description-wrapper">
 							<h3 className="row-description-heading">Committee Presentations</h3>
-							<p className="row-description-subheading">Learn more about each of ACM's eight committees: what they have to offer, and why you should join them</p>
+							<p className="row-description-subheading">Learn what each of ACM's eight committees has in store for winter quarter</p>
 							{renderCommitteeSpeakers()}
 						</div>
 					</div>
 					<div className="row">
-						<p className="timestamps">7:05 p.m. PDT</p>
+						<p className="timestamps">7:05 p.m. PST</p>
 						<div className="row-description-wrapper">
-							<h3 className="row-description-heading">Lightning Round: Joining ACM / ACM Board</h3>
-							<p className="row-description-subheading">How to become even more involved with ACM beyond attending workshops and events</p>
-							<p><span className="board"><img src={process.env.PUBLIC_URL + '/images/logo.png'} alt="Logo for ACM" className="committee-logos"/>External</span>: Katherine Chong</p>
-							<p><span className="board"><img src={process.env.PUBLIC_URL + '/images/logo.png'} alt="Logo for ACM" className="committee-logos"/>Internal</span>: William Chern</p>
-							<p><span className="board"><img src={process.env.PUBLIC_URL + '/images/logo.png'} alt="Logo for ACM" className="committee-logos"/>Dev Team</span>: Austin Keil, Nhi Van</p>
+							<h3 className="row-description-heading">ACM Board</h3>
+							<p className="row-description-subheading">See what ACM wide event ACM Board has planned.</p>
+							<p><span className="board"><img src={process.env.PUBLIC_URL + '/images/logo.png'} alt="Logo for ACM" className="committee-logos"/>CS Town Hall</span>: Katherine Chong</p>
 							<p><span className="board"><img src={process.env.PUBLIC_URL + '/images/logo.png'} alt="Logo for ACM" className="committee-logos"/>Moonshots</span>: Sharvani Jha, Megha Ilango</p>
-							<p><span className="board"><img src={process.env.PUBLIC_URL + '/images/logo.png'} alt="Logo for ACM" className="committee-logos"/>Internship Program</span>: Gloria Yang, Sahen Rai</p>
+							<p><span className="board"><img src={process.env.PUBLIC_URL + '/images/logo.png'} alt="Logo for ACM" className="committee-logos"/>Tech Gala</span>: Daniel Jaffe, Evan Zhong</p>
 						</div>
 					</div>
 					<div className="row">
-						<p className="timestamps">7:10 p.m. PDT</p>
+						<p className="timestamps">7:10 p.m. PST</p>
 						<div className="row-description-wrapper">
 							<h3 className="row-description-heading">Tabling and Social</h3>
 							<p className="row-description-subheading">Join us in our official <a href="https://bit.ly/ACMdiscord"  target="_blank" rel="noopener noreferrer" id="acm-discord-invite-cta">ACM Discord</a> for Committee tabling and socials</p>

@@ -92,11 +92,11 @@
             }
           }
           #zoom-join-link-wrapper {
-            background-color: gainsboro;
-            padding-top: 15px;
-            padding-bottom: 15px;
+            background-color: #2D8CFF;
+            padding-top: 20px;
+            padding-bottom: 20px;
             .join-links-img {
-              width: 200px;
+              width: 150px;
             }
           }
           #discord-join-link-wrapper {
@@ -172,6 +172,7 @@
             #hack { color: $hack-purple; }
             .committee-logos {
               margin-right: 5px;
+              margin-bottom: 2px;
               height: 20px;
               width: 20px;
               vertical-align: text-bottom;
