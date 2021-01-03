@@ -104,7 +104,7 @@ function GMLiveProgram() {
 	}
 	return (
 		<div id="gm-now-wrapper">
-			<h1 id="time-to-gm-headline-now">Thanks for attending Fall General Meeting 2020!</h1>
+			<h1 id="time-to-gm-headline-now">Winter GM 2021 is happening right now!</h1>
 			<div id="gm-main-content">
 				<div id="join-links-wrapper">
 					<div className="click-to-join">
@@ -185,7 +185,7 @@ function GMLiveProgram() {
 function GM_COUNTDOWN(props) {
 	return (
 		<div id="time-to-gm-wrapper">
-			<h1 id="time-to-gm-headline">Fall General Meeting 2020 begins in</h1>
+			<h1 id="time-to-gm-headline">Winter General Meeting 2021 begins in</h1>
 			<div id="countdown-wrapper">
 				<div className="countdown-cards">
 					<div className="square-background"/>
@@ -208,10 +208,10 @@ function GM_COUNTDOWN(props) {
 					<div className="countdown-labels">{props.secondString}</div>
 				</div>
 			</div>
-			<h3 id="gm-zoom-release">Zoom link, slides, and other resources will be provided on Monday, October 5th, 2020 at 6:30 p.m. PDT</h3>
-			<p id="posted-to-youtube">The Zoom portion of Fall General Meeting 2020 will be recorded and posted to our <a href="https://www.youtube.com/channel/UCwTqwgA4thysNbB2kNYsCIw">youtube channel</a></p>
+			<h3 id="gm-zoom-release">Zoom link, slides, and other resources will be provided on Thursday, January 7th, 2021 at 6:30 p.m. PST</h3>
+			<p id="posted-to-youtube">The Zoom portion of Winter General Meeting 2021 will be recorded and posted to our <a href="https://www.youtube.com/channel/UCwTqwgA4thysNbB2kNYsCIw">youtube channel</a></p>
 			<p id="cant-wait">Can't wait to join in on the fun? Jump in right now with our <a href="https://linktr.ee/acmucla">Linktree</a> or hop into the official <a href="https://bit.ly/ACMdiscord">Discord</a> and say hello!</p>
-			<img id="gm-graphic" src={process.env.PUBLIC_URL + "/images/Fall_GM_2020_graphic.png"} alt="Fall General Meeting 2020 graphic" />
+			<img id="gm-graphic" src={process.env.PUBLIC_URL + "/images/Winter_GM_2021_graphic.png"} alt="Winter General Meeting 2021 graphic" />
 		</div>
 	);
 }
