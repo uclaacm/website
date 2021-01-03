@@ -3,9 +3,9 @@ import React from 'react';
 import Banner from '../../Banner/Banner'
 import Countdown from 'react-countdown';
 
-const FALL_GM_2020_START_TIME = new Date('2021-01-07T18:30:00-08:00'); //January 7th 2021 at 6:30 PST
+const GM_START_TIME = new Date('2021-01-07T18:30:00-08:00'); //January 7th 2021 at 6:30 PST
 
-export default function FallGM() {
+export default function GM() {
 	const calculateTimeStrings = ({days, hours, minutes, seconds}) => {
 		let dayString = "Day";
 		let hourString = "Hour";
@@ -30,9 +30,9 @@ export default function FallGM() {
 	};
 	
 	return (
-		<div id="fall-gm-page">
+		<div id="gm-page">
 			<Banner decorative />
-			<Countdown date={FALL_GM_2020_START_TIME} renderer={renderCountdownOrNow} />
+			<Countdown date={GM_START_TIME} renderer={renderCountdownOrNow} />
 		</div>
 	);
 }
@@ -208,10 +208,10 @@ function GM_COUNTDOWN(props) {
 					<div className="countdown-labels">{props.secondString}</div>
 				</div>
 			</div>
-			<h3 id="fall-gm-zoom-release">Zoom link, slides, and other resources will be provided on Monday, October 5th, 2020 at 6:30 p.m. PDT</h3>
+			<h3 id="gm-zoom-release">Zoom link, slides, and other resources will be provided on Monday, October 5th, 2020 at 6:30 p.m. PDT</h3>
 			<p id="posted-to-youtube">The Zoom portion of Fall General Meeting 2020 will be recorded and posted to our <a href="https://www.youtube.com/channel/UCwTqwgA4thysNbB2kNYsCIw">youtube channel</a></p>
 			<p id="cant-wait">Can't wait to join in on the fun? Jump in right now with our <a href="https://linktr.ee/acmucla">Linktree</a> or hop into the official <a href="https://bit.ly/ACMdiscord">Discord</a> and say hello!</p>
-			<img id="fall-gm-2020-graphic" src={process.env.PUBLIC_URL + "/images/Fall_GM_2020_graphic.png"} alt="Fall General Meeting 2020 graphic" />
+			<img id="gm-graphic" src={process.env.PUBLIC_URL + "/images/Fall_GM_2020_graphic.png"} alt="Fall General Meeting 2020 graphic" />
 		</div>
 	);
 }

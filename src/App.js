@@ -11,7 +11,7 @@ import About from './components/About/About';
 import Sponsors from './components/Sponsors/Sponsor';
 import Events from './components/Events/Event';
 import Committees from './components/Committees/Committees';
-import Fall_GM from './components/Events/Fall_GM/Fall_GM';
+import GM from './components/Events/GM/GM';
 
 function App() {
   return (
@@ -25,7 +25,7 @@ function App() {
             <Route exact path="/events" component={Events}/>
             <Route exact path="/sponsors" component={Sponsors}/>
             <Route exact path="/committees" component={Committees}/>
-            <Route exact path="/fall-gm" component={Fall_GM}/>
+            <Route exact path="/gm" component={GM}/>
             <Redirect to="/"/>
           </Switch>
         </div>
