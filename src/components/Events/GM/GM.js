@@ -28,7 +28,7 @@ export default function GM() {
 			dayString={dayString} hourString={hourString} minuteString={minuteString} secondString={secondString}/>);
 		}
 	};
-	
+
 	return (
 		<div id="gm-page">
 			<Banner decorative />
@@ -202,8 +202,8 @@ function GM_COUNTDOWN(props) {
 				</div>
 			</div>
 			<h3 id="gm-zoom-release">Zoom link, slides, and other resources will be provided on Thursday, January 7th, 2021 at 6:30 p.m. PST</h3>
-			<p id="posted-to-youtube">The Zoom portion of Winter General Meeting 2021 will be recorded and posted to our <a href="https://www.youtube.com/channel/UCwTqwgA4thysNbB2kNYsCIw">youtube channel</a></p>
-			<p id="cant-wait">Can't wait to join in on the fun? Jump in right now with our <a href="https://linktr.ee/acmucla">Linktree</a> or hop into the official <a href="https://bit.ly/ACMdiscord">Discord</a> and say hello!</p>
+			<p id="posted-to-youtube">The Zoom portion of Winter General Meeting 2021 will be recorded and posted to our <a href="https://www.youtube.com/c/acmucla" target="_blank" rel="noopener noreferrer">YouTube channel</a>.</p>
+			<p id="cant-wait">Can't wait to join in on the fun? Jump in right now with our <a href="https://linktr.ee/acmucla" target="_blank" rel="noopener noreferrer">Linktree</a> or hop into the official <a href="https://bit.ly/ACMdiscord" target="_blank" rel="noopener noreferrer">Discord</a> and say hello!</p>
 			<img id="gm-graphic" src={process.env.PUBLIC_URL + "/images/Winter_GM_2021_graphic.png"} alt="Winter General Meeting 2021 graphic" />
 		</div>
 	);
