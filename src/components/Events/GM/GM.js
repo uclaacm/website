@@ -157,7 +157,7 @@ function GMLiveProgram() {
 							<h3 className="row-description-heading">ACM Board</h3>
 							<p className="row-description-subheading">See what ACM wide event ACM Board has planned.</p>
 							<p><span className="board"><img src={process.env.PUBLIC_URL + '/images/logo.png'} alt="Logo for ACM" className="committee-logos"/>CS Town Hall</span>: Katherine Chong</p>
-							<p><span className="board"><img src={process.env.PUBLIC_URL + '/images/logo.png'} alt="Logo for ACM" className="committee-logos"/>Moonshots</span>: Sharvani Jha, Megha Ilango</p>
+							<p><span className="board"><img src={process.env.PUBLIC_URL + '/images/logo.png'} alt="Logo for ACM" className="committee-logos"/>Moonshots</span>: Sharvani Jha</p>
 							<p><span className="board"><img src={process.env.PUBLIC_URL + '/images/logo.png'} alt="Logo for ACM" className="committee-logos"/>Tech Gala</span>: Daniel Jaffe, Evan Zhong</p>
 						</div>
 					</div>
