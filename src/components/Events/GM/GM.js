@@ -109,7 +109,7 @@ function GMLiveProgram() {
 				<div id="join-links-wrapper">
 					<div className="click-to-join">
 						<div className="should-dim">
-							<a href="TODO" target="_blank" rel="noopener noreferrer">
+							<a href="https://ucla.zoom.us/j/97757997114?pwd=T0hZeUVZZ1E1WDRsUysvU21VOW9BQT09" target="_blank" rel="noopener noreferrer">
 								<div id="zoom-join-link-wrapper" className="join-links">
 									<img src={process.env.PUBLIC_URL + "/images/ZoomLogo.png"} alt="Zoom logo" className="join-links-img"/>
 								</div>
@@ -157,7 +157,7 @@ function GMLiveProgram() {
 							<h3 className="row-description-heading">ACM Board</h3>
 							<p className="row-description-subheading">See what ACM wide event ACM Board has planned.</p>
 							<p><span className="board"><img src={process.env.PUBLIC_URL + '/images/logo.png'} alt="Logo for ACM" className="committee-logos"/>CS Town Hall</span>: Katherine Chong</p>
-							<p><span className="board"><img src={process.env.PUBLIC_URL + '/images/logo.png'} alt="Logo for ACM" className="committee-logos"/>Moonshots</span>: Sharvani Jha, Megha Ilango</p>
+							<p><span className="board"><img src={process.env.PUBLIC_URL + '/images/logo.png'} alt="Logo for ACM" className="committee-logos"/>Moonshots</span>: Sharvani Jha</p>
 							<p><span className="board"><img src={process.env.PUBLIC_URL + '/images/logo.png'} alt="Logo for ACM" className="committee-logos"/>Tech Gala</span>: Daniel Jaffe, Evan Zhong</p>
 						</div>
 					</div>
