@@ -1,38 +1,39 @@
 import React from 'react';
 
 import Banner from '../../Banner/Banner'
-import Countdown from 'react-countdown';
+// import Countdown from 'react-countdown';
 
-const GM_START_TIME = new Date('2021-01-07T18:30:00-08:00'); //January 7th 2021 at 6:30 PST
+// const GM_START_TIME = new Date('2021-01-07T18:30:00-08:00'); //January 7th 2021 at 6:30 PST
 
 export default function GM() {
-	const calculateTimeStrings = ({days, hours, minutes, seconds}) => {
-		let dayString = "Day";
-		let hourString = "Hour";
-		let minuteString = "Minute";
-		let secondString = "Second";
-		if(days !== 1){ dayString += "s" }
-		if(hours !== 1){ hourString += "s" }
-		if(minutes !== 1){ minuteString += "s" }
-		if(seconds !== 1){ secondString += "s" }
+	// const calculateTimeStrings = ({days, hours, minutes, seconds}) => {
+	// 	let dayString = "Day";
+	// 	let hourString = "Hour";
+	// 	let minuteString = "Minute";
+	// 	let secondString = "Second";
+	// 	if(days !== 1){ dayString += "s" }
+	// 	if(hours !== 1){ hourString += "s" }
+	// 	if(minutes !== 1){ minuteString += "s" }
+	// 	if(seconds !== 1){ secondString += "s" }
 
-		return {dayString, hourString, minuteString, secondString};
-	}
+	// 	return {dayString, hourString, minuteString, secondString};
+	// }
 
-	const renderCountdownOrNow = ({ days, hours, minutes, seconds, completed }) => {
-		if (completed){ return <GMLiveProgram/> }
-		else {
-			const {dayString, hourString, minuteString, secondString} = calculateTimeStrings({days, hours, minutes, seconds});
+	// const renderCountdownOrNow = ({ days, hours, minutes, seconds, completed }) => {
+	// 	if (completed){ return <GMLiveProgram/> }
+	// 	else {
+	// 		const {dayString, hourString, minuteString, secondString} = calculateTimeStrings({days, hours, minutes, seconds});
 
-			return (<GM_COUNTDOWN days={days} hours={hours} minutes={minutes} seconds={seconds}
-			dayString={dayString} hourString={hourString} minuteString={minuteString} secondString={secondString}/>);
-		}
-	};
+	// 		return (<GM_COUNTDOWN days={days} hours={hours} minutes={minutes} seconds={seconds}
+	// 		dayString={dayString} hourString={hourString} minuteString={minuteString} secondString={secondString}/>);
+	// 	}
+	// };
 
 	return (
 		<div id="gm-page">
 			<Banner decorative />
-			<Countdown date={GM_START_TIME} renderer={renderCountdownOrNow} />
+			{/* <Countdown date={GM_START_TIME} renderer={renderCountdownOrNow} /> */}
+			<GMLiveProgram/>
 		</div>
 	);
 }
@@ -175,36 +176,36 @@ function GMLiveProgram() {
 	)
 }
 
-function GM_COUNTDOWN(props) {
-	return (
-		<div id="time-to-gm-wrapper">
-			<h1 id="time-to-gm-headline">Winter General Meeting 2021 begins in</h1>
-			<div id="countdown-wrapper">
-				<div className="countdown-cards">
-					<div className="square-background"/>
-					<div className="countdown-numbers">{props.days}</div>
-					<div className="countdown-labels">{props.dayString}</div>
-				</div>
-				<div className="countdown-cards">
-					<div className="square-background"/>
-					<div className="countdown-numbers">{props.hours}</div>
-					<div className="countdown-labels">{props.hourString}</div>
-				</div>
-				<div className="countdown-cards">
-					<div className="square-background"/>
-					<div className="countdown-numbers">{props.minutes}</div>
-					<div className="countdown-labels">{props.minuteString}</div>
-				</div>
-				<div className="countdown-cards">
-					<div className="square-background"/>
-					<div className="countdown-numbers">{props.seconds}</div>
-					<div className="countdown-labels">{props.secondString}</div>
-				</div>
-			</div>
-			<h3 id="gm-zoom-release">Zoom link, slides, and other resources will be provided on Thursday, January 7th, 2021 at 6:30 p.m. PST</h3>
-			<p id="posted-to-youtube">The Zoom portion of Winter General Meeting 2021 will be recorded and posted to our <a href="https://www.youtube.com/c/acmucla" target="_blank" rel="noopener noreferrer">YouTube channel</a>.</p>
-			<p id="cant-wait">Can't wait to join in on the fun? Jump in right now with our <a href="https://linktr.ee/acmucla" target="_blank" rel="noopener noreferrer">Linktree</a> or hop into the official <a href="https://bit.ly/ACMdiscord" target="_blank" rel="noopener noreferrer">Discord</a> and say hello!</p>
-			<img id="gm-graphic" src={process.env.PUBLIC_URL + "/images/Winter_GM_2021_graphic.png"} alt="Winter General Meeting 2021 graphic" />
-		</div>
-	);
-}
+// function GM_COUNTDOWN(props) {
+// 	return (
+// 		<div id="time-to-gm-wrapper">
+// 			<h1 id="time-to-gm-headline">Winter General Meeting 2021 begins in</h1>
+// 			<div id="countdown-wrapper">
+// 				<div className="countdown-cards">
+// 					<div className="square-background"/>
+// 					<div className="countdown-numbers">{props.days}</div>
+// 					<div className="countdown-labels">{props.dayString}</div>
+// 				</div>
+// 				<div className="countdown-cards">
+// 					<div className="square-background"/>
+// 					<div className="countdown-numbers">{props.hours}</div>
+// 					<div className="countdown-labels">{props.hourString}</div>
+// 				</div>
+// 				<div className="countdown-cards">
+// 					<div className="square-background"/>
+// 					<div className="countdown-numbers">{props.minutes}</div>
+// 					<div className="countdown-labels">{props.minuteString}</div>
+// 				</div>
+// 				<div className="countdown-cards">
+// 					<div className="square-background"/>
+// 					<div className="countdown-numbers">{props.seconds}</div>
+// 					<div className="countdown-labels">{props.secondString}</div>
+// 				</div>
+// 			</div>
+// 			<h3 id="gm-zoom-release">Zoom link, slides, and other resources will be provided on Thursday, January 7th, 2021 at 6:30 p.m. PST</h3>
+// 			<p id="posted-to-youtube">The Zoom portion of Winter General Meeting 2021 will be recorded and posted to our <a href="https://www.youtube.com/c/acmucla" target="_blank" rel="noopener noreferrer">YouTube channel</a>.</p>
+// 			<p id="cant-wait">Can't wait to join in on the fun? Jump in right now with our <a href="https://linktr.ee/acmucla" target="_blank" rel="noopener noreferrer">Linktree</a> or hop into the official <a href="https://bit.ly/ACMdiscord" target="_blank" rel="noopener noreferrer">Discord</a> and say hello!</p>
+// 			<img id="gm-graphic" src={process.env.PUBLIC_URL + "/images/Winter_GM_2021_graphic.png"} alt="Winter General Meeting 2021 graphic" />
+// 		</div>
+// 	);
+// }
