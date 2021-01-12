@@ -104,21 +104,18 @@ function GMLiveProgram() {
 	}
 	return (
 		<div id="gm-now-wrapper">
-			<h1 id="time-to-gm-headline-now">Winter GM 2021 is happening right now!</h1>
+			<h1 id="time-to-gm-headline-now">Thanks for attending Winter GM 2021!</h1>
 			<div id="gm-main-content">
 				<div id="join-links-wrapper">
 					<div className="click-to-join">
 						<div className="should-dim">
-							<a href="https://ucla.zoom.us/j/97757997114?pwd=T0hZeUVZZ1E1WDRsUysvU21VOW9BQT09" target="_blank" rel="noopener noreferrer">
+							<a href="https://docs.google.com/presentation/d/1eF2d6VmHo1Pq-2MfXg0ezLSnnPz2bUWXHdyVjYb7WDE/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
 								<div id="zoom-join-link-wrapper" className="join-links">
-									<img src={process.env.PUBLIC_URL + "/images/ZoomLogo.png"} alt="Zoom logo" className="join-links-img"/>
+									<img src={process.env.PUBLIC_URL + "/images/slides.png"} alt="Google Slides logo" className="join-links-img"/>
 								</div>
-								<p className="join-us">Join us from 6:30 to 7:10 p.m. PST in Zoom</p>
+								<p className="join-us">View the slides we used during GM</p>
 							</a>
 						</div>
-						<p className="join-us-descriptor">Follow along during the presentation with&nbsp;
-							<a href="https://docs.google.com/presentation/d/1eF2d6VmHo1Pq-2MfXg0ezLSnnPz2bUWXHdyVjYb7WDE/edit?usp=sharing" target="_blank" rel="noopener noreferrer">our slides</a>
-						</p>
 					</div>
 					<div className="click-to-join">
 						<div className="should-dim">
@@ -126,15 +123,14 @@ function GMLiveProgram() {
 								<div id="discord-join-link-wrapper" className="join-links">
 									<img src={process.env.PUBLIC_URL + "/images/DiscordLogoWordmark.png"} alt="Discord logo" className="join-links-img"/>
 								</div>
-								<p className="join-us">Join us from 7:10 p.m. PST onwards in Discord</p>
+								<p className="join-us">Missed GM? Join us in our Discord!</p>
 							</a>
 						</div>
-						<p className="join-us-descriptor">Chat with officers and see what ACM has planed for the winter</p>
 					</div>
 				</div>
-				{/* <div id="video-wrapper">
-					<iframe title="ACM Fall GM 2020 recording" src="https://www.youtube.com/embed/_HJA0QQP80I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				</div> */}
+				<div id="video-wrapper">
+					<iframe title="ACM Winter GM 2021 recording" src="https://www.youtube.com/embed/cleSPlz2U1Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
 				<div id="gm-program-wrapper">
 					<h2>Program</h2>
 					<div className="row">
