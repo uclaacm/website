@@ -111,7 +111,7 @@ function GMLiveProgram() {
 						<div className="should-dim">
 							<a href="https://docs.google.com/presentation/d/1eF2d6VmHo1Pq-2MfXg0ezLSnnPz2bUWXHdyVjYb7WDE/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
 								<div id="zoom-join-link-wrapper" className="join-links">
-									<img src={process.env.PUBLIC_URL + "/images/slides.png"} alt="Zoom logo" className="join-links-img"/>
+									<img src={process.env.PUBLIC_URL + "/images/slides.png"} alt="Google Slides logo" className="join-links-img"/>
 								</div>
 								<p className="join-us">View the slides we used during GM</p>
 							</a>
