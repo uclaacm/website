@@ -129,7 +129,7 @@ function GMLiveProgram() {
 					</div>
 				</div>
 				<div id="video-wrapper">
-					<iframe title="ACM Fall GM 2020 recording" src="https://www.youtube.com/embed/cleSPlz2U1Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<iframe title="ACM Winter GM 2021 recording" src="https://www.youtube.com/embed/cleSPlz2U1Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</div>
 				<div id="gm-program-wrapper">
 					<h2>Program</h2>
