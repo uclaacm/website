@@ -28,7 +28,7 @@ function Footer(){
 					</a>
 				</div>
 				<div id="footer-bottom">
-					<span>&copy; ACM at UCLA 2020.</span>
+					<span>&copy; ACM at UCLA 2021.</span>
 				</div>
 			</div>
 		</div>
