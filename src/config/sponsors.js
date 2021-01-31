@@ -30,11 +30,6 @@ export default [
 		'link': 'https://ghs.com/',
 	},
 	{
-		'name': 'Honey',
-		'image': '/images/sponsors/honey.png',
-		'link': 'https://www.joinhoney.com/',
-	},
-	{
 		'name': 'Human Capital',
 		'image': '/images/sponsors/humancapital.jpg',
 		'link': 'https://human.capital/',
