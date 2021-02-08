@@ -1,7 +1,7 @@
 export default [
     {
         date: '01/27/21',
-        headline: '"You Belong in AI": the ACM AI podcast aims to make computer science more diverse and inclusive',
+        headline: '"You Belong in AI": the ACM AI podcast aims to make computer science more diverse, accessible',
         image: '/images/ybAI_podcast.png',
         alt: 'Podcast Cover for "You belong in AI"!',
         link:'https://dailybruin.com/2021/01/27/student-run-tech-podcast-aims-to-make-computer-science-more-diverse-accessible',
