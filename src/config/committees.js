@@ -125,10 +125,6 @@ export default [
 			{
 				platform: 'facebook',
 				link: 'https://www.facebook.com/groups/acmdesign'
-			},
-			{
-				platform: 'styleguide',
-				link: 'https://design.uclaacm.com'
 			}
 		],
 		infoCards: [
@@ -136,7 +132,7 @@ export default [
 				title: 'ACM Rebranding',
 				image: {
 					src: '/images/committees/design/rebranding_update.png',
-					alt: 'Team photo'
+					alt: 'ACM Winter General Meeting'
 				},
 				desc: 'We are finishing up our main project of rebranding ACM at UCLA including the logos, wordmarks, motifs, banners, and complete visual identities of each committee. The rebranding project started to correct the pain points of our previous branding, and position ACM at UCLA to appeal to a larger audience.'
 			},
@@ -219,10 +215,6 @@ export default [
 			{
 				platform: 'facebook',
 				link: 'https://www.facebook.com/groups/320869398280511',
-			},
-			{
-				platform: 'email',
-				link: 'uclacyber@gmail.com',
 			}
 		],
 		infoCards: [
