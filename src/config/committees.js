@@ -9,6 +9,10 @@ export default [
 			{
 				platform: 'facebook',
 				link: 'https://www.facebook.com/groups/uclaacmstudio'
+			},
+			{
+				platform: 'discord',
+				link: 'https://discord.gg/9jDH6rN'
 			}
 		],
 		infoCards: [
@@ -127,35 +131,68 @@ export default [
 			{
 				title: 'ACM Rebranding',
 				image: {
-					src: '/images/committees/design/team_photo.jpg',
-					alt: 'Team photo'
+					src: '/images/committees/design/rebranding_update.png',
+					alt: 'ACM Winter General Meeting'
 				},
-				desc: 'Our main project is currently a complete rebranding of ACM at UCLA including the logos, wordmarks, motifs, banners, and complete visual identities of each committee. The rebranding project started to correct the pain points of our previous branding, and position ACM at UCLA to appeal to a larger audience.',
+				desc: 'We are finishing up our main project of rebranding ACM at UCLA including the logos, wordmarks, motifs, banners, and complete visual identities of each committee. The rebranding project started to correct the pain points of our previous branding, and position ACM at UCLA to appeal to a larger audience.'
 			},
 			{
 				title: 'Styleguide Update',
 				image: {
-					src: '',
+					src: '/images/committees/design/styleguide.png',
 					alt: ''
 				},
-				desc: 'The design styleguide needs to be recreated to contain the new branding and reflect it itself. It will feature all design assets necessary for all committees, and some do\'s and don\'ts with abiding by the new brand image. Check it out design.uclaacm.com and the Github github.com/uclaacm/Styleguide',
+				desc: 'We are finishing the design styleguide which contains the new branding design assets necessary for all committees, and some do\'s and don\'ts with abiding by the new brand image. We are also extracting the styles used in the styleguide into a CSS framework that can be used by all ACM committees to create their sites in the ACM style. Check it out design.uclaacm.com and the Github github.com/uclaacm/Styleguide'
 			},
 			{
-				title: 'How to Design Your Resume Workshop',
+				title: 'UXLA 01: Intro to UI/UX (Thursday January 28)',
 				image: {
-					src: '',
+					src: '/images/committees/design/uxla_1.png',
 					alt: ''
 				},
-				desc: 'Teach design fundamentals such as first reads, information hierarchy, and typography, that you can use to create a resume that recruiters want to read.'
+				desc: 'Come join ACM Design\'s second workshop series of the quarter, UXLA! UXLA will cover core aspects of the UI/UX process. Come join us for our first of four workshops, Intro to UI/UX 💡 This week, we will cover the higher level goals of UI/UX, define terms like "user research" and "wireframes", and analyze companies that use good UI/UX practices!'
 			},
 			{
-				title: 'How to Design your Portfolio Workshop',
+				title: 'UXLA 02: UX Research (Thursday February 4)',
 				image: {
-					src: '',
+					src: '/images/committees/design/uxla_2.png',
 					alt: ''
 				},
-				desc: 'Teach those interested in a UI/UX Design or Product related job how to create a portfolio that best showcases your skills and your breadth of knowledge.'
+				desc: 'Come join ACM Design for our second UIUX workshop: User Experience Research 💡 Learn about building a user flow map 🗺, user testing 📝, user personas 👤, and much more! Although this is the second workshop in our series, we encourage you to come out even if you missed the first one!'
+			},
+			{
+				title: 'UXLA 03: Solution Ideation (Thursday February 18)',
+				image: {
+					src: '/images/committees/design/uxla_3.png',
+					alt: ''
+				},
+				desc: ''
+			},
+			{
+				title: 'UXLA 04: Visual Design (Thursday February 25)',
+				image: {
+					src: '/images/committees/design/uxla_1.png',
+					alt: ''
+				},
+				desc: ''
+			},
+			{
+				title: 'Design Tapas: 3D Modeling',
+				image: {
+					src: '/images/committees/design/design_tapas_3D_modeling.png',
+					alt: ''
+				},
+				desc: '🍢 Design Tapas 🍢   is ACM Design’s first workshop series this quarter. Come join us this week to sample a 3D modeling tool called Blender! Blender is a free yet powerful 3D modeling tool that has seen an explosion in popularity recently among enthusiasts and professionals alike 💻 We’re going to talk about the very basics of Blender, and we are going to make a cool vending machine at the end of this workshop! This is an introductory workshop to Blender, so no previous experience is required 🤩 Feel free to download the software at: https://www.blender.org/download/'
+			},
+			{
+				title: 'Design Tapas: WebGL',
+				image: {
+					src: '/images/committees/design/design_tapas_webGL.png',
+					alt: ''
+				},
+				desc: 'Design Tapas is ACM Design’s first workshop series this quarter. Come join us this week to sample WebGL, which allows you to add impressive graphical effects to your website! WebGL allows developers to create anything from video games to data visualization, all running in a regular web browser. In this workshop, we will use a library called three.js, which allows you to easily leverage WebGL and create various 3D scenes. Beginners are welcome, thought basic experience in JavaScript is highly recommended. Otherwise, all you need is a computer with a web browser and a text editing tool (e.g. VS Code, Notepad, etc.)'
 			}
+
 		],
 		introImage: '/images/committees/design/design_motif_applied.png',
 		mission: 'Our mission is to design, manage, and support the visual identity of ACM at UCLA. We create the club\'s branding, event banners, and more elements, while also doing workshops to teach UI/UX to the UCLA community.',
@@ -170,44 +207,36 @@ export default [
 			{
 				platform: 'website',
 				link: 'https://acmcyber.com/',
+			},
+			{
+				platform: 'discord',
+				link: 'https://discord.gg/j9dgf2q',
+			},
+			{
+				platform: 'facebook',
+				link: 'https://www.facebook.com/groups/320869398280511',
 			}
 		],
 		infoCards: [
 			{
-				title: 'Cyber Academy: Forensics',
+				title: 'Cyber Academy: Webhacking',
 				image: {
-					src: '/images/committees/cyber/forensics.png',
+					src: '/images/committees/cyber/cyber_academy_webhacking.png',
 					alt: 'Image of forensics event flyer'
 				},
-				desc: 'Attend our weekly workshops on Forensics where we go over topics such as File Analysis, Packet Captures, and Memory Forensics with in-depth demos and challenges. Our workshops are designed for beginners with no experience or just beginning in cybersecurity, and are self-encapsulated so feel free to attend even if you had to miss one!',
-			},
-			{
-				title: 'What Makes a Hacker?” by Defcon Speaker',
-				image: {
-					src: '',
-					alt: ''
-				},
-				desc: 'Is cyber the right career for you? Do you want to get paid to (legally) hack stuff? Does "penetration tester" sound like a job you want? If you answered yes to any of these questions, come to a talk by Sanjana Sarda, former President of Cyber and DEFCON 28 speaker. Sanjana will talk about cybersecurity fields and specializations - from the gritty details of cryptography algorithms, to adversarial machine learning, to hacking your neighbor\'s wifi to get better ping in CS:GO (please don\'t do that) -  as well as job opportunities within cybersecurity.',
-			},
-			{
-				title: 'Cyber x Hack x ICPC presents Bruin Quest',
-				image: {
-					src: '/images/committees/cyber/bruin_quest.png',
-					alt: 'Bruin Quest'
-				},
-				desc: 'Explore a virtual UCLA campus and complete fun challenges to compete for points, prizes, and the glory of being Bruin Quest champion.'
+				desc: 'Attend our weekly workshops on Webhacking where we go over topics such as XSS+CSRF, SQL+noSQL Injection, and PHP’s many problems with in-depth demos and challenges. Our workshops are designed for beginners with no experience or just beginning in cybersecurity, and are self-encapsulated so feel free to attend even if you had to miss one!'
 			},
 			{
 				title: 'CTF After Dark',
 				image: {
-					src: '/images/committees/cyber/ctf_after_dark.png',
+					src: '/images/committees/cyber/cft_after_dark.png',
 					alt: 'Capture the flag after dark'
 				},
-				desc: 'Compete with others and challenge yourself using your knowledge from Cyber Academy with our mini CTF for prizes and glory.'
+				desc: 'Collaborate with your friends in our beginner friendly Capture The Flag (CTF) competition. Challenges will be targeted at the skills that you’ve learned from our Winter workshops. Top teams get bragging rights as well as prizes.'
 			}
 		],
 		introImage: '/images/committees/cyber/cyber_motif_applied.png',
-		mission: 'Our mission is to create a community in which both experts and beginners alike can grow in the field of cybersecurity skills and knowledge. We want to make cybersecurity simple and accessible for everyone. To that end, we hold workshops and special events designed for beginners with no experience or just beginning in cybersecurity.',
+		mission: 'Our mission is to create a community in which both experts and beginners alike can grow in the field of cybersecurity skills and knowledge. We want to make cybersecurity simple and accessible for everyone.',
 		image: '/images/committees/cyber_wordmark.svg',
 		diamond: '/images/diamonds/cyber_diamond.svg',
 	},
