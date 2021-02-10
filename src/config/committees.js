@@ -171,7 +171,7 @@ export default [
 			{
 				title: 'UXLA 04: Visual Design (Thursday February 25)',
 				image: {
-					src: '/images/committees/design/uxla_1.png',
+					src: '/images/committees/design/uxla_4.png',
 					alt: ''
 				},
 				desc: ''
@@ -463,46 +463,21 @@ export default [
 		],
 		infoCards: [
 			{
-				title: 'Tooling series',
+				title: 'Hack Sprint',
 				image: {
-					src: '/images/committees/hack/tooling_series.png',
-					alt: 'Image of Tooling Series Flyer'
+					src: '/images/committees/hack/hack_sprint.png',
+					alt: 'Image of Hack Sprint Flyer'
 				},
-				desc: 'Weekly workshop series teaching widely applicable software tools like bash, git, regex and vim. Available on Github github.com/uclaacm/hack-tooling-series.',
+				desc: 'Hack Sprint is our beginner-friendly workshop series on mobile development with React Native. Through React Native, you\'ll be able to build apps for both Android and iOS devices at the same time! You’ll also get to build and present your very own app in our final showcase. No previous mobile development experience is needed!',
 			},
 			{
-				title: 'Hack on the Hill',
+				title: 'Hack off the Hill',
 				image: {
-					src: '/images/committees/hack/hack_on_the_hill.png',
-					alt: 'Image of Hack on the Hill flyer'
+					src: '/images/committees/hack/hack_off_the_hill.png',
+					alt: 'Image of Hack off the Hill flyer'
 				},
-				desc: 'Our 12-hour hackathon encourages students from all backgrounds to come experience with us, the joy of building amazing projects with the opportunity to learn from various workshops and industry mentors. Check it out hoth.splashthat.com'
+				desc: 'Hack off the Hill (HOTH 8) is the virtual edition of our annual hackathon. This 2-day long beginner-friendly hackathon is designed to give you a glimpse of a real hackathon. There will be workshops, mentors, and fun prizes for the best hacks!'
 			},
-			{
-				title: 'Passion Talks',
-				image: {
-					src: '/images/committees/hack/passion_talks.png',
-					alt: 'Image of Passion Talks flyer'
-				},
-				desc: 'Our goal with Passion Talks is to inspire and empower individuals by showing them a variety of computer science applications in different fields through a series of talks on topics such as EdTech, Space Tech and Product management.'
-			},
-			{
-				title: 'CLxACM Hack presents Bloom',
-				image: {
-					src: '/images/committees/hack/bloom.jpg',
-					alt: 'Flyer for Bloom! Intro to design and development.'
-				},
-				desc: 'Choose to attend weekly workshops on Web Development (Hackschool series) or Design (Creative Labs workshops) and get partnered in a developer + designer team to create a fun project!'
-			},
-			{
-				title: 'Cyber x Hack x ICPC presents Bruin Quest',
-				image: {
-					src: '/images/committees/hack/bruin_quest.png',
-					alt: 'Image of Bruin Quest flyer'
-				},
-				desc: 'Explore a virtual UCLA campus and complete fun challenges to compete for points, prizes, and the glory of being Bruin Quest champion'
-			}
-			,
 			{
 				title: 'Hack Fam',
 				image: {
@@ -513,7 +488,7 @@ export default [
 			}
 		],
 		introImage: '/images/committees/hack/hack_motif_applied.png',
-		mission: 'Our mission is to empower the community by providing the means to build amazing things and explore what is possible through code!',
+		mission: 'To empower the community by providing the means to build amazing things and explore what is possible through code!',
 		image: '/images/committees/hack_wordmark.svg',
 		diamond: '/images/diamonds/hack_diamond.svg',
 	}
