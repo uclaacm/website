@@ -7,11 +7,11 @@ import Projects from './Projects/Projects'
 function TechGala(props) {
 	return (
         <div className='content'>
-            <Banner decorative/>
-		    <div className="page-content">
+        	<Banner decorative/>
+		<div className="page-content">
 			<TechGalaBanner />
-            <Projects projects={Config.tgprojects}/>
-		    </div>
+           	 	<Projects projects={Config.tgprojects}/>
+		</div>
         </div>
 	);
 }
