@@ -4,6 +4,7 @@ import Sponsors from './sponsors';
 import Officers from './officers';
 import Events from './events';
 import News from './news';
+import TGProjects from './tgprojects'
 
 export default {
 	committees: Committees,
@@ -11,5 +12,6 @@ export default {
 	sponsors: Sponsors,
 	officers: Officers,
 	events: Events,
-	news: News
+	news: News,
+	tgprojects: TGProjects
 };
