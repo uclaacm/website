@@ -4,7 +4,7 @@ export default [
         names: 'Arek Der-Sarkissian, Daniel Dai, Muthu Palaniappan, Will O\'Brien, Hritik Arya, Catherine Hu, Daniel Lee, Michael Shi',
 		summary: 'We\'re helping teams build better bonds with virtual icebreakers.',
         category: 'Games & Graphics',
-		// image: 'none',
+		image: '/images/techgala/projects/covalent.png',
         winner: 'Winner!'
 	},
     {
@@ -20,13 +20,13 @@ export default [
         names: 'Ellie Cheng, Eric Wang, Bill Liu, Lucas Xia',
 		summary: 'We created a graphic generator using a probabilistic factor graph model and a modification of Metropolis-Hasting sampling to automate the process of creating simple yet aesthetically pleasing graphics that can produce graphics for desktop backgrounds, T-shirts, mugs, posters etc. where details are not as integral, and randomness is welcome.',
         category: 'Design',
-		// image: 'none',
+		image: '/images/techgala/projects/probabilistic.png',
         winner: 'Winner!'
 	},
     {
 		title: 'Am I Busy?',
         names: 'Grace Ma, Jonathan Lam',
-		summary: 'Incomplete Summary!!',
+		// summary: 'Incomplete Summary!!',
         category: 'Home Improvement',
 		image: '/images/techgala/projects/amibusy.png',
 	},
@@ -79,7 +79,7 @@ export default [
         category: 'Freelancing/Retail',
 		image: '/images/techgala/projects/spur.png',
 	},
-    {
+    { // missing ethan?
 		title: 'Wechews',
         names: 'Hubert Chen, Kevin Tang, Francis Feng, Justin He, Hanna Co, Isha Gonuguntu',
 		summary: 'A Tinder-like app to help friends and family decide on a place to eat, overcoming our indecisiveness in a fun and easy way.',
