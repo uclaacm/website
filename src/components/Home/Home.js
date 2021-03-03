@@ -8,11 +8,12 @@ import Banner from '../Banner/Banner';
 import Carousel from './Carousel/Carousel';
 import Committees from './Committees/Committees';
 import News from './News/News'
-
+import TGBanner from '../TechGala/ViewBanner/ViewBanner'
 function Home (props) {
 	return (
 		<div className="home-page">
 			<Banner />
+			<TGBanner />
 			<div className="content-section center">
 				<h2>The largest Computer Science community at UCLA</h2>
 				<p className="subheading">ACM at UCLA is the largest computer science student organization in Southern California. We welcome students of all backgrounds, interests, and skill levels to join our community and share our love for technology. ACM is comprised of eight committees — each serving a different topic and mission. Our events are open to everyone, regardless of major or experience!</p>
