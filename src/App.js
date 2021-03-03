@@ -12,6 +12,7 @@ import Sponsors from './components/Sponsors/Sponsor';
 import Events from './components/Events/Event';
 import Committees from './components/Committees/Committees';
 import GM from './components/Events/GM/GM';
+import TechGala from './components/TechGala/TechGala'
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
             <Route exact path="/sponsors" component={Sponsors}/>
             <Route exact path="/committees" component={Committees}/>
             <Route exact path="/gm" component={GM}/>
+            <Route exact path="/techgala" component={TechGala}/>
             <Redirect to="/"/>
           </Switch>
         </div>
