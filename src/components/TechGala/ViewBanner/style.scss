@@ -1,43 +1,28 @@
-.tgbanner {
-    display: inline-block;
-    background-color: $acm-cobalt;
-    width: 100%;
-    height: 80px;
+.banner-section {
+	max-width: 800px;
+	padding: 0px 20px;
+	position: relative;
+	margin: auto;
 
-    h1, h2 {
-        color: white;
-        padding: 8px 0px;
-        line-height: 135%;
-        font-size: 1.4em;
-    }
+	h2 {
+		color: white;
+		font-family: $font-header;
+		padding: 20px;
+		font-size: 1.6em;
+		margin: 0;
+	}
 }
 
-.left-section {
+#banner-right {
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    width: 100%;
-    margin-left: -100px;
-    margin-top: -2px;
 }
 
-.right-section {
-    float: right;
-    width: auto;
+#banner-left {
+    display: flex;
     align-items: center;
-    margin-top: -60px;
-    margin-right: 560px;
-}
-
-h2 {
-    font-size: 2em;
-
-    .white {
-        color: white;
-    }
-}
-
-p {
-    font-size: 1.2em;
+    justify-content: center;
+    text-align: center;
 }

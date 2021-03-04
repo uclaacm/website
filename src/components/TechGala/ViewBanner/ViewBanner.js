@@ -3,16 +3,18 @@ import Button from '../../Button/Button'
 
 function TGBanner(props) {
     return (
-        <div className="tgbanner">
-            <div className='left-section'>
-                <h2 className='white'>Check Out The Projects From Winter 2021's Tech Gala!</h2>
-            </div>
-            <div className='right-section'>
-                <a href="/techgala">
-                    <Button className="tight dark" text="View Projects" styleClass="tight dark" />
-			    </a>
-            </div>
-        </div>
+        <div className="full-width blue">
+            <div id="sign-up-section" className="banner-section">
+                <div id="banner-left" className="half-width">
+                    <h2>Check out the projects from Tech Gala Winter '21!</h2>
+                </div>
+                <div id="banner-right" className="half-width">
+                    <a href="/techgala">
+                        <Button className="tight dark" text="View Projects" styleClass="tight dark" />
+                    </a>
+                </div>
+			</div>
+		</div>
     );
 }
 
