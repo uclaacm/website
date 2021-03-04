@@ -9,7 +9,7 @@ function ProjectCard(props) {
             </div>
             <div className="left-col">
                 <h2>{props.project.title}</h2>
-                <a className='winner'>{props.project.winner}</a>
+                <div className='winner'>{props.project.winner}</div>
                 <p>{props.project.summary}</p>
                 <p>Created By: {props.project.names}</p>
                 <Tag name={props.project.category}/>

@@ -3,7 +3,6 @@ import Config from '../../config';
 import Banner from '../Banner/Banner';
 import TechGalaBanner from './TechGalaBanner/TechGalaBanner'
 import Projects from './Projects/Projects'
-import TGBanner from './ViewBanner/ViewBanner'
 
 function TechGala(props) {
 	return (
