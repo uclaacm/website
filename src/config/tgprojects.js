@@ -21,7 +21,7 @@ export default [
 		summary: 'We created a graphic generator using a probabilistic factor graph model and a modification of Metropolis-Hasting sampling to automate the process of creating simple yet aesthetically pleasing graphics that can produce graphics for desktop backgrounds, T-shirts, mugs, posters etc. where details are not as integral, and randomness is welcome.',
         category: 'Design',
 		image: '/images/techgala/projects/probabilistic.png',
-        winner: 'Winner!'
+        winner: 'Best in Show'
 	},
     {
 		title: 'Am I Busy?',
