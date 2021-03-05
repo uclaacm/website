@@ -13,7 +13,7 @@ export default [
 		summary: 'Hotseat is an all-in-one course discovery website for UCLA students. With Hotseat, you can track courses and receive real-time notifications when seats open up, see grade distributions of previous sections, and see historical enrollment data in order to know which sections to use your first pass units on, among many other features.',
         category: 'Education',
 		image: '/images/techgala/projects/hotseat.png',
-        winner: 'Winner!'
+        winner: 'Best Small Team'
 	},
     {
 		title: 'Probabilistic Graphic Generator 2020',
