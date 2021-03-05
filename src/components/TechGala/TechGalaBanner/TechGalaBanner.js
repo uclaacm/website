@@ -3,7 +3,7 @@ import React from 'react';
 function TechGalaBanner(props) {
 	return (
         <div>
-            <img src={process.env.PUBLIC_URL + "/images/techgala/techgala-banner-light.jpg"} alt="2021 tech gala banner" />
+            <img src={process.env.PUBLIC_URL + "/images/techgala/techgala-banner-dark.jpg"} alt="2021 tech gala banner" />
             <div className='banner-info'>
                 <h1>Tech Gala</h1>
                 <p>Here are the wonderful projects showcased at our Winter 2021 Tech Gala from students of UCLA!</p>
