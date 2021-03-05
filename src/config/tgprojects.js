@@ -5,7 +5,7 @@ export default [
 		summary: 'We\'re helping teams build better bonds with virtual icebreakers.',
         category: 'Games & Graphics',
 		image: '/images/techgala/projects/covalent.png',
-        winner: 'Winner!'
+        winner: 'Best Large Team'
 	},
     {
 		title: 'Hotseat',
