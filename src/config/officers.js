@@ -1,43 +1,48 @@
 export default [
 	{
-		name: "Rucha Patki",
+		name: "Matthew Wang",
 		title: "President",
-		image: "/images/officers/RuchaPatki.jpg"
+		image: "/images/officers/MattWang.jpg"
 	},
 	{
-		name: "Katherine Chong",
+		name: "Tina Huang",
 		title: "External Vice President",
-		image: "/images/officers/KatherineChong.jpg"
+		image: "/images/officers/TinaHuang.jpg"
 	},
 	{
-		name: "William Chern",
+		name: "Evan Zhong",
 		title: "Internal Vice President",
-		image: "/images/officers/WilliamChern.jpg"
+		image: "/images/officers/EvanZhong.jpg"
 	},
 	{
-		name: "Raji Jadhav",
-		title: "President, Hack",
-		image: "/images/officers/RajiJadhav.jpg"
+		name: "Asha Kar",
+		title: "Co-President, Hack",
+		image: "/images/officers/AshaKar.jpg"
 	},
 	{
-		name: "Julia Baylon",
+		name: "Eugene Lo",
+		title: "Co-President, Hack",
+		image: "/images/officers/EugeneLo.jpg"
+	},
+	{
+		name: "Cindy Zhang",
 		title: "President, ACM-W",
-		image: "/images/officers/JuliaBaylon.jpg"
+		image: "/images/officers/CindyZhang.jpg"
 	},
 	{
-		name: "John Dang",
+		name: "Justin Yi",
 		title: "President, AI",
-		image: "/images/officers/JohnDang.jpg"
+		image: "/images/officers/JustinYi.jpg"
 	},
 	{
-		name: "Kade Adams",
+		name: "Christian Loanzon",
 		title: "Co-President, Game Studio",
-		image: "/images/officers/KadeAdams.jpg"
+		image: "/images/officers/ChristianLoanzon.jpg"
 	},
 	{
-		name: "Evan Charfauros",
+		name: "Peter Sutarjo",
 		title: "Co-President, Game Studio",
-		image: "/images/officers/EvanCharfauros.jpg"
+		image: "/images/officers/PeterSutarjo.jpg"
 	},
 	{
 		name: "Nikil Selvam",
@@ -45,28 +50,23 @@ export default [
 		image: "/images/officers/NikilSelvam.jpg"
 	},
 	{
-			name: "Disha Zambani",
-			title: "Co-President, Cyber",
-			image: "/images/officers/DishaZambani.jpg"
+		name: "Disha Zambani",
+		title: "Co-President, Cyber",
+		image: "/images/officers/DishaZambani.jpg"
 	},
 	{
-			name: "Ellie Cheng",
-			title: "Co-President, Cyber",
-			image: "/images/officers/EllieCheng.jpg"
+		name: "Ellie Cheng",
+		title: "Co-President, Cyber",
+		image: "/images/officers/EllieCheng.jpg"
 	},
 	{
-		name: "Matt Wang",
+		name: "Sophie Schoenmeyer",
 		title: "President, Teach LA",
-		image: "/images/officers/MattWang.jpg"
+		image: "/images/officers/SophieSchoenmeyer.jpg"
 	},
 	{
-		name: "Haki Alpay",
-		title: "Co-President, Design",
-		image: "/images/officers/HakiAlpay.jpg"
-	},
-	{
-		name: "Tomoki Fukazawa",
-		title: "Co-President, Design",
-		image: "/images/officers/TomokiFukazawa.jpg"
+		name: "Crystal Huynh",
+		title: "President, Design",
+		image: "/images/officers/CrystalHuynh.jpg"
 	}
 ];
