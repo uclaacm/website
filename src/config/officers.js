@@ -1,86 +1,72 @@
 export default [
 	{
-		name: "Rucha Patki",
+		name: "Matthew Wang",
 		title: "President",
-		email: "ruchapatki@gmail.com",
-		image: "/images/officers/RuchaPatki.jpg"
+		image: "/images/officers/MattWang.jpg"
 	},
 	{
-		name: "Katherine Chong",
+		name: "Tina Huang",
 		title: "External Vice President",
-		email: "kchong612@gmail.com",
-		image: "/images/officers/KatherineChong.jpg"
+		image: "/images/officers/TinaHuang.jpg"
 	},
 	{
-		name: "William Chern",
+		name: "Evan Zhong",
 		title: "Internal Vice President",
-		email: "chern@ucla.edu",
-		image: "/images/officers/WilliamChern.jpg"
+		image: "/images/officers/EvanZhong.jpg"
 	},
 	{
-		name: "Raji Jadhav",
-		title: "President, Hack",
-		email: "rajeshwari.jadhav6@gmail.com",
-		image: "/images/officers/RajiJadhav.jpg"
+		name: "Asha Kar",
+		title: "Co-President, Hack",
+		image: "/images/officers/AshaKar.jpg"
 	},
 	{
-		name: "Julia Baylon",
+		name: "Eugene Lo",
+		title: "Co-President, Hack",
+		image: "/images/officers/EugeneLo.jpg"
+	},
+	{
+		name: "Cindy Zhang",
 		title: "President, ACM-W",
-		email: "juliabaylon01@gmail.com",
-		image: "/images/officers/JuliaBaylon.jpg"
+		image: "/images/officers/CindyZhang.jpg"
 	},
 	{
-		name: "John Dang",
+		name: "Justin Yi",
 		title: "President, AI",
-		email: "jamqd@ucla.edu",
-		image: "/images/officers/JohnDang.jpg"
+		image: "/images/officers/JustinYi.jpg"
 	},
 	{
-		name: "Kade Adams",
+		name: "Christian Loanzon",
 		title: "Co-President, Game Studio",
-		email: "kadebadams@gmail.com",
-		image: "/images/officers/KadeAdams.jpg"
+		image: "/images/officers/ChristianLoanzon.jpg"
 	},
 	{
-		name: "Evan Charfauros",
+		name: "Peter Sutarjo",
 		title: "Co-President, Game Studio",
-		email: "evancharfauros@gmail.com",
-		image: "/images/officers/EvanCharfauros.jpg"
+		image: "/images/officers/PeterSutarjo.jpg"
 	},
 	{
 		name: "Nikil Selvam",
 		title: "President, ICPC",
-		email: "nikilrselvam@gmail.com ",
 		image: "/images/officers/NikilSelvam.jpg"
 	},
-    {
-        name: "Disha Zambani",
-        title: "Co-President, Cyber",
-        email: "dmzambani@gmail.com",
-        image: "/images/officers/DishaZambani.jpg"
-    },
-    {
-        name: "Ellie Cheng",
-        title: "Co-President, Cyber",
-        email: "ellieyhc@gmail.com",
-        image: "/images/officers/EllieCheng.jpg"
-    },
 	{
-		name: "Matt Wang",
+		name: "Disha Zambani",
+		title: "Co-President, Cyber",
+		image: "/images/officers/DishaZambani.jpg"
+	},
+	{
+		name: "Ellie Cheng",
+		title: "Co-President, Cyber",
+		image: "/images/officers/EllieCheng.jpg"
+	},
+	{
+		name: "Sophie Schoenmeyer",
 		title: "President, Teach LA",
-		email: "matt@matthewwang.me",
-		image: "/images/officers/MattWang.jpg"
+		image: "/images/officers/SophieSchoenmeyer.jpg"
 	},
 	{
-		name: "Haki Alpay",
-		title: "Co-President, Design",
-		email: "hak7alp@gmail.com",
-		image: "/images/officers/HakiAlpay.jpg"
-	},
-	{
-		name: "Tomoki Fukazawa",
-		title: "Co-President, Design",
-		email: "tomoki@fukazawa.dev",
-		image: "/images/officers/TomokiFukazawa.jpg"
+		name: "Crystal Huynh",
+		title: "President, Design",
+		image: "/images/officers/CrystalHuynh.jpg"
 	}
 ];
