@@ -3,6 +3,7 @@ import Config from '../../config';
 import CommitteeBanner from './CommitteesBanner/CommitteesBanner'
 import CommitteeSections from './CommitteeSections/CommitteeSections'
 import Banner from '../Banner/Banner';
+import CommitteesSidebar from './CommitteesSidebar/CommitteesSidebar';
 
 function Sponsors(props) {
 	return (
@@ -10,6 +11,7 @@ function Sponsors(props) {
 			<Banner decorative />
 			<div className="page-content">
 			<CommitteeBanner />
+			<CommitteesSidebar committees={Config.committees} />
 			<CommitteeSections committees={Config.committees}/>
 			</div>
 		</div>
