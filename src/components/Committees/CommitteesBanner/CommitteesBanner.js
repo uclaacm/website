@@ -1,6 +1,6 @@
 import React from 'react';
 
-function CommitteesBanner(props) {
+function CommitteesBanner() {
 	return (
 		<div className="committee-banner-container">
 			<div className="banner-main-content">
