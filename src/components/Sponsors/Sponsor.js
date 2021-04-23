@@ -23,8 +23,8 @@ function Sponsors() {
 				<p className="subheading">A special thanks to all of our UCLA Computer Science industry affiliates for their support:</p>
 				<div className="sponsor-container">
 					{Config.sponsors.map(sponsor =>
-						<a href={sponsor.link} target="_blank" rel="noreferrer noopener">
-						<img className="sponsor" alt={sponsor.name} key={sponsor.name} src={process.env.PUBLIC_URL + sponsor.image} />
+						<a href={sponsor.link} target="_blank" rel="noreferrer noopener" key={sponsor.name}>
+						<img className="sponsor" alt={sponsor.name} src={process.env.PUBLIC_URL + sponsor.image} />
 						</a>
 					)}
 				</div>

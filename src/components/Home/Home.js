@@ -9,7 +9,7 @@ import Carousel from './Carousel/Carousel';
 import Committees from './Committees/Committees';
 import News from './News/News'
 
-function Home (props) {
+function Home () {
 	return (
 		<div className="home-page">
 			<Banner />
@@ -35,7 +35,7 @@ function Home (props) {
 			<div className="full-width blue">
 				<div id="sign-up-section" className="content-section">
 					<div id="sign-up-left" className="half-width">
-						<h2>Want to stay updated on what's going on?</h2>
+						<h2>Want to stay updated on what&rsquo;s going on?</h2>
 					</div>
 					<div id="sign-up-right" className="half-width">
 						<a href="http://eepurl.com/c5pE6P" target="_blank" rel="noreferrer noopener">

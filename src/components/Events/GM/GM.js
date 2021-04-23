@@ -92,7 +92,7 @@ function GMLiveProgram() {
 		return committeeData.map((committee) => {
 			const {id, logo, displayName, speakers} = committee;
 			return (
-				<p>
+				<p key={id}>
 					<span id={id}>
 						<img src={process.env.PUBLIC_URL + logo} alt={"Logo for " + displayName} className="committee-logos"/>
 						{displayName}
@@ -129,7 +129,7 @@ function GMLiveProgram() {
 					</div>
 				</div>
 				<div id="video-wrapper">
-					<iframe title="ACM Winter GM 2021 recording" src="https://www.youtube.com/embed/cleSPlz2U1Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<iframe title="ACM Winter GM 2021 recording" src="https://www.youtube.com/embed/cleSPlz2U1Q" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 				</div>
 				<div id="gm-program-wrapper">
 					<h2>Program</h2>
@@ -143,7 +143,7 @@ function GMLiveProgram() {
 						<p className="timestamps">6:40 p.m. PST</p>
 						<div className="row-description-wrapper">
 							<h3 className="row-description-heading">Committee Presentations</h3>
-							<p className="row-description-subheading">Learn what each of ACM's eight committees has in store for winter quarter</p>
+							<p className="row-description-subheading">Learn what each of ACM&rsquo;s eight committees has in store for winter quarter</p>
 							{renderCommitteeSpeakers()}
 						</div>
 					</div>
@@ -199,7 +199,7 @@ function GM_COUNTDOWN(props) {
 			</div>
 			<h3 id="gm-zoom-release">Zoom link, slides, and other resources will be provided on Thursday, January 7th, 2021 at 6:30 p.m. PST</h3>
 			<p id="posted-to-youtube">The Zoom portion of Winter General Meeting 2021 will be recorded and posted to our <a href="https://www.youtube.com/c/acmucla" target="_blank" rel="noopener noreferrer">YouTube channel</a>.</p>
-			<p id="cant-wait">Can't wait to join in on the fun? Jump in right now with our <a href="https://linktr.ee/acmucla" target="_blank" rel="noopener noreferrer">Linktree</a> or hop into the official <a href="https://bit.ly/ACMdiscord" target="_blank" rel="noopener noreferrer">Discord</a> and say hello!</p>
+			<p id="cant-wait">Can&rsquo;t wait to join in on the fun? Jump in right now with our <a href="https://linktr.ee/acmucla" target="_blank" rel="noopener noreferrer">Linktree</a> or hop into the official <a href="https://bit.ly/ACMdiscord" target="_blank" rel="noopener noreferrer">Discord</a> and say hello!</p>
 			<img id="gm-graphic" src={process.env.PUBLIC_URL + "/images/Winter_GM_2021_graphic.png"} alt="Winter General Meeting 2021 graphic" />
 		</div>
 	);
