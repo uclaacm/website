@@ -68,28 +68,20 @@ export default [
 		],
 		infoCards: [
 			{
-				title: 'Intro to Competitive Programming',
-				image: {
-					src: '/images/committees/icpc/intro.png',
-					alt: 'Rubik\'s Cube'
-				},
-				desc: 'From climbing coding leaderboards to competing in ICPC regionals to constructing clever algorithms with clever friends, the Competitive Programming journey starts here. Write your first contest solution and learn what it takes to start solving challenging and often beautiful problems!',
-			},
-			{
-				title: 'Advanced Training',
-				image: {
-					src: '/images/committees/icpc/advanced.png',
-					alt: 'Graph diagram'
-				},
-				desc: 'An advanced workshop to help learn and practice advanced algorithms, data structures, and problem solving skills. Focus of the workshop will be preparing for the ICPC competition, but the workshop is open to anyone interested!'
-			},
-			{
 				title: 'CodeSprintLA',
 				image: {
 					src: '/images/committees/icpc/codesprint.png',
 					alt: 'Codesprint Flyer'
 				},
 				desc: 'CodeSprintLA is UCLA\'s own Competitive Programming Competition organized by ACM ICPC. Competitive Programming is the activity (some call it a sport!) of writing programs to solve computational problems. You must be clever with your algorithm to solve the program in a given time limit. Individual or teams compete to solve the most problems!',
+			},
+			{
+				title: 'Estimathon',
+				image: {
+					src: '/images/committees/icpc/estimathon.png',
+					alt: ''
+				},
+				desc: 'Want to win COOL prizes for flexing your estimation skills? Come out to ACM ICPC’s Estimathon! You’ll compete in teams to come up with the best ~*confidence intervals*~ (fancy word for “estimates”) to difficult maths and science questions like, what\'s the volume of the earth\'s oceans in cubic km; or, how many social security numbers are prime? It is a mind-bending mixture of math, trivia, and pure unadulterated fun.',
 			},
 			{
 				title: 'Cyber x Hack x ICPC presents Bruin Quest',
@@ -100,10 +92,18 @@ export default [
 				desc: 'Explore a virtual UCLA campus and complete fun challenges to compete for points, prizes, and the glory of being Bruin Quest champion.'
 			},
 			{
-				title: 'Interview Prep Bootcamp',
+				title: 'Project A*: Competitive Programming Workshops',
 				image: {
-					src: '/images/committees/icpc/interview.png',
-					alt: 'Interview Prep Bootcamp Flyer'
+					src: '/images/committees/icpc/A.png',
+					alt: ''
+				},
+				desc: 'All you need is a passion for problem-solving! Whether you are completely new to competitive programming (or even CS!), or a veteran coder we have a learning opportunity for you this Fall. Introducing Project A*, our weekly algorithm academy! Our Intro to Competitive Programming track will cover all the essentials from the bottom up to get you started in competitive programming. The Advanced Training track will delve deeper into more complicated data structures and algorithms to help you compete at the highest level.'
+			},
+			{
+				title: 'Advanced Interview Prep',
+				image: {
+					src: '/images/committees/icpc/interview_advanced.png',
+					alt: ''
 				},
 				desc: 'Are you ready to bring your coding interview skills to the next level? Are you worried about the upcoming fall recruiting season? Do your CS 32 algorithm skills feel rusty? 🤔 💭 Don’t worry, we’ve got you covered! ACM ICPC is hosting an ⚙️  Advanced ⚙️  Interview Prep workshop that’ll let you in on all of the secrets to acing your next technical interview. In this workshop, we will be going over advanced algorithms and data structures asked in even the most difficult phone and onsite interviews! 🖥️ '
 			},
@@ -113,7 +113,7 @@ export default [
 					src: '/images/committees/icpc/gymnasium.png',
 					alt: ''
 				},
-				desc: 'Welcome to ACM ICPC Competitive Programming Gymnasium! 💪 Perhaps you attended our workshops the last two quarters and found problem-solving fun, perhaps you want to hone your algorithmic thinking and prepare for CS 180, or perhaps you just want to hang out, meet people, and have some fun! If any of that’s the case, then you’ve come to the right place! ✨This Spring, we will solve some problems together every Thursday at 7 - 9 p.m. PST, starting in Week 3. We will be there to answer any and all questions you may have so, whether you are a competitive programming novice or a seasoned veteran, it’s a great opportunity to get the practice you need to be the best you can be. Come on out and have some fun! 🙂'
+				desc: 'Welcome to ACM ICPC Competitive Programming Gymnasium! 💪 Perhaps you attended our workshops the last two quarters and found problem-solving fun, perhaps you want to hone your algorithmic thinking and prepare for CS 180, or perhaps you just want to hang out, meet people, and have some fun! If any of that’s the case, then you’ve come to the right place!'
 			}
 		],
 		introImage: '/images/committees/icpc/icpc_motif_applied.png',
@@ -480,7 +480,7 @@ export default [
 					src: '/images/committees/hack/learn_py.png',
 					alt: 'Image of Hack Sprint Flyer'
 				},
-				desc: 'This is our weekly Python workshop series on Wednesdays @ 6-8 PM PDT, dedicated to giving you an accessible introduction to Python. Our goal is to teach you the essentials of the programming language itself, as well as some of its practical and cool applications, such as task automation and web development! No prior Python experience is required, but basic programming knowledge is recommended (CS30/CS31/PIC10A or equivalent)'
+				desc: 'This is our weekly Python workshop series on Wednesdays @ 6-8 PM PDT, dedicated to giving you an accessible introduction to Python. Our goal is to teach you the essentials of the programming language itself, as well as some of its practical and cool applications, such as task automation and web development! No prior Python experience is required, but basic programming knowledge is recommended.'
 			},
 			{
 				title: 'Hack Kitchen',
