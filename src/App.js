@@ -10,6 +10,7 @@ import Home from './components/Home/Home';
 import About from './components/About/About';
 import Sponsors from './components/Sponsors/Sponsor';
 import Events from './components/Events/Event';
+import WorkshopArchive from './components/Events/EventArchive/WorkshopArchive';
 import Committees from './components/Committees/Committees';
 import GM from './components/Events/GM/GM';
 
@@ -23,6 +24,7 @@ function App() {
             <Route exact path="/" component={Home}/>
             <Route exact path="/about" component={About}/>
             <Route exact path="/events" component={Events}/>
+            <Route exact path="/events/archive" component={WorkshopArchive}/>
             <Route exact path="/sponsors" component={Sponsors}/>
             <Route exact path="/committees" component={Committees}/>
             <Route exact path="/gm" component={GM}/>

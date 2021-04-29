@@ -1,0 +1,18 @@
+.wa-container {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.ce-container {
+  width: 100%;
+  border-radius: 20px;
+  background: #eeeeee;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
