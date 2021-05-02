@@ -22,7 +22,8 @@ export default function GM() {
 	const renderCountdownOrNow = ({ days, hours, minutes, seconds, completed }) => {
 		if (completed){ return <GMLiveProgram/>; }
 		else {
-			const {dayString, hourString, minuteString, secondString} = calculateTimeStrings({days, hours, minutes, seconds});
+			const {dayString, hourString, minuteString, secondString} =
+				calculateTimeStrings({days, hours, minutes, seconds});
 
 			return (<GM_COUNTDOWN days={days} hours={hours} minutes={minutes} seconds={seconds}
 			dayString={dayString} hourString={hourString} minuteString={minuteString} secondString={secondString}/>);
