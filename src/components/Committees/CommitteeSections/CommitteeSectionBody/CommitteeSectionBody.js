@@ -1,6 +1,6 @@
 import React from 'react';
 
-import CommitteeEventCard from './CommitteeEventCard/CommitteeEventCard'
+import CommitteeEventCard from './CommitteeEventCard/CommitteeEventCard';
 
 function CommitteeSectionBody(props){
     return (

@@ -44,7 +44,7 @@ export default class Carousel extends React.Component {
 						section.left = (this.state.sections.length - 1) * this.sectionWidth - 1;
 					}
 					return section;
-				})
+				}),
 			});
 		}, 30);
 	}
@@ -61,7 +61,7 @@ export default class Carousel extends React.Component {
 					{this.state.sections.map((section, i) =>
 						<div className="carousel-sect" style={{ left: section.left + 'px', width: section.width + 'px' }} key={i}>
 							{ section.items }
-						</div>
+						</div>,
 					)}
 				</div>
 			</div>

@@ -16,7 +16,7 @@ function Footer(){
 						<a href="mailto: acm@ucla.edu" className="email"><span>acm@ucla.edu</span></a>
 					</div>
 					{/* the paddingTop is a magic number that replaces a previous empty <h3> tag previously used for spacing. should be replaced later. */}
-					<div className="footer-item" style={{paddingTop: "28px"}}>
+					<div className="footer-item" style={{paddingTop: '28px'}}>
 						<a href="http://eepurl.com/c5pE6P" target="_blank" rel="noreferrer noopener">
 							<Button text="Join our Mailing List" styleClass="tight" />
 						</a>
