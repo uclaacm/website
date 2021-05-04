@@ -1,3 +1,5 @@
+import React from 'react';
+
 export default [
 	{
 		name: 'Studio',
@@ -22,7 +24,22 @@ export default [
 					src: '',
 					alt: ''
 				},
-				desc: 'Each year, Studio splits into several teams of students who each work throughout winter and spring quarter to put together a fully-fledged game, usually coding in C# with the Unity engine. You can see a collection of many past projects uclaacmstudio.itch.io.',
+				desc: (
+					<p>
+						Each year, Studio splits into several teams of students who each
+						work throughout winter and spring quarter to put together a
+						fully-fledged game, usually coding in C# with the Unity engine. You
+						can see a collection of many past projects at{" "}
+						<a
+							href="https://uclaacmstudio.itch.io"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							uclaacmstudio.itch.io
+						</a>
+						.
+					</p>
+				),
 			},
 			{
 				title: 'Beginner Unity track',
@@ -142,7 +159,32 @@ export default [
 					src: '/images/committees/design/styleguide.png',
 					alt: ''
 				},
-				desc: 'We are finishing the design styleguide which contains the new branding design assets necessary for all committees, and some do\'s and don\'ts with abiding by the new brand image. We are also extracting the styles used in the styleguide into a CSS framework that can be used by all ACM committees to create their sites in the ACM style. Check it out design.uclaacm.com and the Github github.com/uclaacm/Styleguide'
+				desc: (
+					<p>
+						We are finishing the design styleguide which contains the new
+						branding design assets necessary for all committees, and some
+						do&apos;s and don&apos;ts with abiding by the new brand image. We
+						are also extracting the styles used in the styleguide into a CSS
+						framework that can be used by all ACM committees to create their
+						sites in the ACM style. Check it out at{" "}
+						<a
+							href="https://design.uclaacm.com"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							design.uclaacm.com
+						</a>{" "}
+						and the{" "}
+						<a
+							href="github.com/uclaacm/Styleguide"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							Github page
+						</a>
+						.
+					</p>
+				),
 			},
 			{
 				title: 'UXLA 01: Intro to UI/UX (Thursday January 28)',
@@ -182,7 +224,40 @@ export default [
 					src: '/images/committees/design/design_tapas_3D_modeling.png',
 					alt: ''
 				},
-				desc: '🍢 Design Tapas 🍢   is ACM Design’s first workshop series this quarter. Come join us this week to sample a 3D modeling tool called Blender! Blender is a free yet powerful 3D modeling tool that has seen an explosion in popularity recently among enthusiasts and professionals alike 💻 We’re going to talk about the very basics of Blender, and we are going to make a cool vending machine at the end of this workshop! This is an introductory workshop to Blender, so no previous experience is required 🤩 Feel free to download the software at: https://www.blender.org/download/'
+				desc: (
+					<p>
+						<span role="img" aria-label="rocket emoji">
+							🍢
+						</span>{" "}
+						Design Tapas{" "}
+						<span role="img" aria-label="rocket emoji">
+							🍢
+						</span>{" "}
+						is ACM Design’s first workshop series this quarter. Come join us
+						this week to sample a 3D modeling tool called Blender! Blender is a
+						free yet powerful 3D modeling tool that has seen an explosion in
+						popularity recently among enthusiasts and professionals alike{" "}
+						<span role="img" aria-label="computer emoji">
+							💻
+						</span>
+						. We’re going to talk about the very basics of Blender, and we are
+						going to make a cool vending machine at the end of this workshop!
+						This is an introductory workshop to Blender, so no previous
+						experience is required{" "}
+						<span role="img" aria-label="star-struck emoji ">
+							🤩
+						</span>{" "}
+						Feel free to download the software at{" "}
+						<a
+							href="https://www.blender.org/download/"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							www.blender.org/download/
+						</a>
+						.
+					</p>
+				),
 			},
 			{
 				title: 'Design Tapas: WebGL',
@@ -277,7 +352,36 @@ export default [
 					src: '/images/committees/teachLA/passworks.png',
 					alt: 'Screenshot of Teach LA\'s passworks project'
 				},
-				desc: 'Write educational software to make teaching easier, either by developing interactive web applications called “Learning Labs” (e.g. Passworks Lesson passworks.uclaacm.com), maintain our free online code editor (editor.uclaacm.com), or bust out your design skills on our website teachla.uclaacm.com. No prior dev experience required!'
+				desc: (
+					<p>
+						Write educational software to make teaching easier, either by
+						developing interactive web applications called “Learning Labs” (e.g.{" "}
+						<a
+							href="https://passworks.uclaacm.com"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							Passworks Lesson
+						</a>
+						), maintain our{" "}
+						<a
+							href="https://editor.uclaacm.com"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							free online code editor
+						</a>
+						, or bust out your design skills on{" "}
+						<a
+							href="https://teachla.uclaacm.com"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							our website
+						</a>
+						. No prior dev experience required!
+					</p>
+				),
 			},
 			{
 				title: 'Weekly Curriculum Meetings',
@@ -403,7 +507,29 @@ export default [
 					src: '',
 					alt: ''
 				},
-				desc: 'You Belong in AI! s a podcast on diversity in the field of Artificial Intelligence. We feature industry and academic leaders in AI from a diverse range of backgrounds to come and talk about their work and the importance of diversity and inclusion in AI. You Belong in AI! Is available on all major podcast streaming platforms anchor.fm/ucla-acm-ai'
+				desc: (
+					<p>
+						<a
+							href="https://anchor.fm/ucla-acm-ai"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							You Belong in AI!
+						</a>{" "}
+						is a podcast on diversity in the field of Artificial Intelligence.
+						We feature industry and academic leaders in AI from a diverse range
+						of backgrounds to come and talk about their work and the importance
+						of diversity and inclusion in AI.{" "}
+						<a
+							href="https://anchor.fm/ucla-acm-ai"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							You Belong in AI!
+						</a>{" "}
+						is available on all major podcast streaming platforms.
+					</p>
+				),
 			},
 			{
 				title: 'AI Course for High School Students (Collaboration with ACM Teach LA)',
@@ -411,7 +537,21 @@ export default [
 					src: '',
 					alt: ''
 				},
-				desc: 'ACM AI’s Outreach team collaborates with ACM TeachLA to teach an introductory AI course to local high school students in Los Angeles. An overview of this course content can be found teachla.uclaacm.com/classes/ml'
+				desc: (
+					<p>
+						ACM AI’s Outreach team collaborates with ACM TeachLA to teach an
+						introductory AI course to local high school students in Los Angeles.
+						An overview of this course content can be found at{" "}
+						<a
+							href="https://teachla.uclaacm.com/classes/ml"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							teachla.uclaacm.com/ classes/ml
+						</a>
+						.
+					</p>
+				),
 			},
 			{
 				title: 'AI/ML Workshops',
