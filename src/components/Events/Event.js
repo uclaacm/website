@@ -10,7 +10,6 @@ export default class Events extends React.Component {
         return (
             <div className='events-container'>
                <Banner decorative />
-               <TGBanner />
                <h2>Our Events</h2>
                <p>Our events are open to everyone, regardless of major, background, or experience! Come find us on <a href={Config.events.youtube_url} target="_blank" rel="noreferrer noopener"><div className="events-sm" id="youtube"/></a> </p>
                <br/><br/>
