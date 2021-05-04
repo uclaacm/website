@@ -579,7 +579,7 @@ export default [
               target="_blank"
               rel="noopener noreferrer"
             >
-              teachla.uclaacm.com/classes/ml
+              teachla.uclaacm.com/ classes/ml
             </a>
             .
           </p>
