@@ -1,12 +1,12 @@
 import React from 'react';
 import Button from '../../Button/Button'
 
-function TGBanner(props) {
+function TGBanner() {
     return (
         <div className="full-width blue">
             <div id="sign-up-section" className="banner-section">
                 <div id="banner-left" className="half-width">
-                    <h2>Check out the projects from Tech Gala Winter '21!</h2>
+                    <h2>Check out the projects from Tech Gala Winter &apos;21!</h2>
                 </div>
                 <div id="banner-right" className="half-width">
                     <a href="/techgala">

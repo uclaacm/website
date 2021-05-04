@@ -1,6 +1,6 @@
 import React from 'react';
 
-function TechGalaBanner(props) {
+function TechGalaBanner() {
 	return (
         <div>
             <img src={process.env.PUBLIC_URL + "/images/techgala/techgala-banner-dark.jpg"} alt="2021 tech gala banner" />

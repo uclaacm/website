@@ -4,7 +4,7 @@ import Banner from '../Banner/Banner';
 import TechGalaBanner from './TechGalaBanner/TechGalaBanner'
 import Projects from './Projects/Projects'
 
-function TechGala(props) {
+function TechGala() {
 	return (
         <div className='content'>
             <Banner decorative/>
