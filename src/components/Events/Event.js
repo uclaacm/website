@@ -3,7 +3,6 @@ import Config from '../../config';
 
 import Banner from '../Banner/Banner';
 import Calendar from './Calendar/Calendar';
-import TGBanner from '../TechGala/ViewBanner/ViewBanner'
 
 export default class Events extends React.Component {
     render() {
