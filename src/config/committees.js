@@ -187,11 +187,11 @@ export default [
             </a>{" "}
             and the{" "}
             <a
-              href="github.com/uclaacm/Styleguide"
+              href="https://github.com/uclaacm/Styleguide"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Github page
+              Github respository
             </a>
             .
           </p>
