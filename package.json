@@ -18,11 +18,17 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint-js": "eslint \"**/*.js\"",
+    "lint-js-fix": "eslint --fix \"**/*.js\""
   },
   "eslintConfig": {
     "extends": "react-app"
   },
+  "ignorePatterns": [
+    "eslintrc.js",
+    "App.test.js"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/uclaacm/website.git"
@@ -44,5 +50,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint": "^6.6.0",
+    "eslint-plugin-jest": "^24.3.5"
   }
 }
