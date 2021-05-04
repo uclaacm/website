@@ -5,7 +5,8 @@ export default [
 		summary: 'We\'re helping teams build better bonds with virtual icebreakers.',
         category: 'Games & Graphics',
 		image: '/images/techgala/projects/covalent.png',
-        winner: 'Best Large Team'
+        winner: 'Best Large Team',
+		url: 'https://covalent.app',
 	},
     {
 		title: 'Hotseat',
@@ -13,7 +14,8 @@ export default [
 		summary: 'Hotseat is an all-in-one course discovery website for UCLA students. With Hotseat, you can track courses and receive real-time notifications when seats open up, see grade distributions of previous sections, and see historical enrollment data in order to know which sections to use your first pass units on, among many other features.',
         category: 'Education',
 		image: '/images/techgala/projects/hotseat.png',
-        winner: 'Best Small Team'
+        winner: 'Best Small Team',
+		url: 'https://hotseat.io',
 	},
     {
 		title: 'Probabilistic Graphic Generator 2020',
@@ -21,7 +23,8 @@ export default [
 		summary: 'We created a graphic generator using a probabilistic factor graph model and a modification of Metropolis-Hasting sampling to automate the process of creating simple yet aesthetically pleasing graphics that can produce graphics for desktop backgrounds, T-shirts, mugs, posters etc. where details are not as integral, and randomness is welcome.',
         category: 'Design',
 		image: '/images/techgala/projects/probabilistic.png',
-        winner: 'Best in Show'
+        winner: 'Best in Show',
+		url: 'https://github.com/ericzxwang/CS267AProject',
 	},
     {
 		title: 'Am I Busy?',
@@ -29,6 +32,7 @@ export default [
 		// summary: 'Incomplete Summary!!',
         category: 'Home Improvement',
 		image: '/images/techgala/projects/amibusy.png',
+		url: 'https://devpost.com/software/am-i-busy',
 	},
 	{
 		title: 'Bruin Score Check',
@@ -36,6 +40,7 @@ export default [
 		summary: 'Ever thought you were fine in a class until you actually calculated your grade and realized you\'re not? MyUCLA\'s gradebook doesn\'t give you a total score, so it\'s often hard to tell where you stand in the class. Bruin Score Check adds up all the scores in the "Grades" column to give you an unweighted, unofficial final grade.',
         category: 'Education',
 		image: '/images/techgala/projects/bruinscorecheck.png',
+		url: 'https://chrome.google.com/webstore/detail/bruin-score-check/oiaaakgmkokimooplkmekiancodahaok?hl=en https://github.com/hcsong213/BruinScoreCheck',
 	},
     {
 		title: 'Compined',
@@ -43,6 +48,7 @@ export default [
 		summary: 'Compined is an online chatting tool that is both safe and easy to use. To promote a better chatting experience, Compined enables users to create and join chat rooms without signing-up, and all rooms created using this method are deleted after 24 hours for user protection.',
         category: 'Social Media',
 		image: '/images/techgala/projects/compined.png',
+		url: 'http://compined.com',
 	},
     {
 		title: 'food4YOU',
@@ -50,6 +56,7 @@ export default [
 		summary: 'food4YOU fills the gaps of current food shopping platforms by allowing a personalized shopping experience on a platform that is well-versed with every unique diet and allows its users to shop with ease. It also offers the ability to learn and truly understand the diets and variety of ingredients available.',
         category: 'Health & Wellbeing',
 		image: '/images/techgala/projects/food4you.png',
+		url: 'https://www.shreya-neogi.com/food4you',
 	},
     {
 		title: 'The Pal Hour',
@@ -57,6 +64,7 @@ export default [
 		summary: 'We help organizations host more engaging, more authentic, and more meaningful group socials by pairing attendees based on personalities and common interests.',
         category: 'Social',
 		image: '/images/techgala/projects/thepalhour.png',
+		url: 'https://thepalhour.app/',
 	},
     {
 		title: 'Palgorithms',
@@ -64,6 +72,7 @@ export default [
 		summary: 'A personality-based friendship matching web application.',
         category: 'Social',
 		image: '/images/techgala/projects/palgorithms.png',
+		url: 'https://palgorithmstest.bubbleapps.io/',
 	},
     {
 		title: 'The Space in Between',
@@ -71,6 +80,7 @@ export default [
 		summary: 'A visual novel video game about Asian American identity, love, mental health, and stargazing. In our game, the core gameplay loop is the player can connect stars in the sky to form custom constellations, which influence the story.',
         category: 'Gaming & Graphics',
 		image: '/images/techgala/projects/thespaceinbetween.png',
+		url: 'https://store.steampowered.com/app/1430240/The_Space_in_Between/',
 	},
     {
 		title: 'Spur',
@@ -78,6 +88,7 @@ export default [
 		summary: 'Spur is a student marketplace mobile app for students to get paid for what they know and get affordable help from the students around them for what they don\'t. Using the platform, students could save money by ordering services from other college students and make money by providing those services.',
         category: 'Freelancing/Retail',
 		image: '/images/techgala/projects/spur.png',
+		url: 'http://www.spur-app.com/',
 	},
     { // missing ethan?
 		title: 'Wechews',
@@ -85,5 +96,6 @@ export default [
 		summary: 'A Tinder-like app to help friends and family decide on a place to eat, overcoming our indecisiveness in a fun and easy way.',
         category: 'Gaming & Graphics',
 		image: '/images/techgala/projects/wechews.png',
+		url: 'https://drive.google.com/file/d/1Sbl4-ISki41I_C7t3FXyLVZbscU4LnTK/view?usp=sharing',
 	},
 ];

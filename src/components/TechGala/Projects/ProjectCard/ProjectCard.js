@@ -12,6 +12,8 @@ function ProjectCard(props) {
                 <div className='winner'>{props.project.winner}</div>
                 <p>{props.project.summary}</p>
                 <p>Created By: {props.project.names}</p>
+                <a href={props.project.url} className="link">Learn More</a>
+                <br/><br/>
                 <Tag name={props.project.category}/>
             </div>
             <div className="right-col">
