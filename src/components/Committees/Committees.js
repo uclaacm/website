@@ -4,7 +4,7 @@ import CommitteeBanner from './CommitteesBanner/CommitteesBanner'
 import CommitteeSections from './CommitteeSections/CommitteeSections'
 import Banner from '../Banner/Banner';
 
-function Sponsors(props) {
+function Sponsors() {
 	return (
 		<div>
 			<Banner decorative />

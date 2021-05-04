@@ -37,8 +37,8 @@ function About() {
 				<div className="text-section">
 					<h1>How do I get involved?</h1>
 					<p className="half-size">No matter what your background or major is, we would love to have you at our events and activities!</p>
-					<p className="half-size">To keep up with what's happening, we recommend joining <a href="https://members.uclaacm.com" target="_blank" rel="noreferrer noopener">our membership portal</a>, <a href="https://www.facebook.com/groups/uclaacm" target="_blank" rel="noreferrer noopener">our Facebook group</a>, and <a href="http://eepurl.com/c5pE6P" target="_blank" rel="noreferrer noopener">our weekly newsletter</a>. We will keep you up to date with everything ACM, and earning points on the portal might even earn you a prize!</p>
-					<p>Here's our social media, where you can see what we're up to:</p>
+					<p className="half-size">To keep up with what&rsquo;s happening, we recommend joining <a href="https://members.uclaacm.com" target="_blank" rel="noreferrer noopener">our membership portal</a>, <a href="https://www.facebook.com/groups/uclaacm" target="_blank" rel="noreferrer noopener">our Facebook group</a>, and <a href="http://eepurl.com/c5pE6P" target="_blank" rel="noreferrer noopener">our weekly newsletter</a>. We will keep you up to date with everything ACM, and earning points on the portal might even earn you a prize!</p>
+					<p>Here&rsquo;s our social media, where you can see what we&rsquo;re up to:</p>
 					<div style={{display: 'flex', justifyContent: 'center'}} >
 						<SocialMedia/>
 					</div>
