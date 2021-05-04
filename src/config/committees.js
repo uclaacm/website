@@ -239,15 +239,28 @@ export default [
         },
         desc: (
           <p>
-            🍢 Design Tapas 🍢 is ACM Design’s first workshop series this
-            quarter. Come join us this week to sample a 3D modeling tool called
-            Blender! Blender is a free yet powerful 3D modeling tool that has
-            seen an explosion in popularity recently among enthusiasts and
-            professionals alike 💻 . We’re going to talk about the very basics
-            of Blender, and we are going to make a cool vending machine at the
-            end of this workshop! This is an introductory workshop to Blender,
-            so no previous experience is required 🤩 Feel free to download the
-            software at{" "}
+            <span role="img" aria-label="rocket emoji">
+              🍢
+            </span>{" "}
+            Design Tapas{" "}
+            <span role="img" aria-label="rocket emoji">
+              🍢
+            </span>{" "}
+            is ACM Design’s first workshop series this quarter. Come join us
+            this week to sample a 3D modeling tool called Blender! Blender is a
+            free yet powerful 3D modeling tool that has seen an explosion in
+            popularity recently among enthusiasts and professionals alike{" "}
+            <span role="img" aria-label="computer emoji">
+              💻
+            </span>
+            . We’re going to talk about the very basics of Blender, and we are
+            going to make a cool vending machine at the end of this workshop!
+            This is an introductory workshop to Blender, so no previous
+            experience is required{" "}
+            <span role="img" aria-label="star-struck emoji ">
+              🤩
+            </span>{" "}
+            Feel free to download the software at{" "}
             <a
               href="https://www.blender.org/download/"
               target="_blank"
