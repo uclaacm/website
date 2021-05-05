@@ -1,6 +1,6 @@
-.committeessidebar {
+/*.sidebar {
 	position: fixed;
-    background: none !important;
+    background: none;
     left: 0;
     top: 52%;
     transition: opacity 3s ease;
@@ -9,7 +9,6 @@
     transform: translateY(-50%);
     display: flex;
     flex-flow: column nowrap;
-    //justify-content: space-around;
 
 	.committee {
 		width: 200px;
@@ -28,15 +27,16 @@
 		img {
 			margin: 25px 10px;
 			height: 50px;
-			display: block;
+			display: inline-block;
 		}
 	}
+}*/
+.committee-choices {
+	position: fixed;
+	width: 50px;
+	color: red;
 }
-/*
-width: 100%;
-	max-width: 1000px;
-	padding: 0px 20px;
-	box-sizing: border-box;
-	margin: auto;
-    text-align: center;
-    */
+
+.dropdown {
+	width: 50px
+}
