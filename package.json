@@ -53,6 +53,6 @@
   },
   "devDependencies": {
     "eslint": "^6.6.0",
-    "eslint-plugin-jest": "^24.3.5"
+    "eslint-plugin-jest": "^24.3.6"
   }
 }
