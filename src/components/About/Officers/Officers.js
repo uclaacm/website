@@ -6,7 +6,7 @@ function Officers(props){
 		<div id="officers-container">
 			{
 				props.officers.map(
-					officer => <Officer officer={officer} key={officer.email} />
+					officer => <Officer officer={officer} key={officer.email} />,
 				)
 			}
 		</div>

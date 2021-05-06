@@ -40,5 +40,5 @@ export default {
 		'/images/carousel/38.jpg',
 		'/images/carousel/39.jpg',
 		'/images/carousel/40.jpg',
-	]
-}
+	],
+};
