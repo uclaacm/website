@@ -7,7 +7,7 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "node-sass": "^4.14.1",
-    "react": "^16.13.1",
+    "react": "^16.14.0",
     "react-anchorme": "^2.1.0",
     "react-countdown": "^2.2.1",
     "react-dom": "^16.13.1",
@@ -54,6 +54,6 @@
   "devDependencies": {
     "eslint": "^6.6.0",
     "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jest": "^24.3.5"
+    "eslint-plugin-jest": "^24.3.6"
   }
 }
