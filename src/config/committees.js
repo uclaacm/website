@@ -68,28 +68,20 @@ export default [
 		],
 		infoCards: [
 			{
-				title: 'Intro to Competitive Programming',
-				image: {
-					src: '/images/committees/icpc/intro.png',
-					alt: 'Rubik\'s Cube'
-				},
-				desc: 'From climbing coding leaderboards to competing in ICPC regionals to constructing clever algorithms with clever friends, the Competitive Programming journey starts here. Write your first contest solution and learn what it takes to start solving challenging and often beautiful problems!',
-			},
-			{
-				title: 'Advanced Training',
-				image: {
-					src: '/images/committees/icpc/advanced.png',
-					alt: 'Graph diagram'
-				},
-				desc: 'An advanced workshop to help learn and practice advanced algorithms, data structures, and problem solving skills. Focus of the workshop will be preparing for the ICPC competition, but the workshop is open to anyone interested!'
-			},
-			{
 				title: 'CodeSprintLA',
 				image: {
 					src: '/images/committees/icpc/codesprint.png',
 					alt: 'Codesprint Flyer'
 				},
 				desc: 'CodeSprintLA is UCLA\'s own Competitive Programming Competition organized by ACM ICPC. Competitive Programming is the activity (some call it a sport!) of writing programs to solve computational problems. You must be clever with your algorithm to solve the program in a given time limit. Individual or teams compete to solve the most problems!',
+			},
+			{
+				title: 'Estimathon',
+				image: {
+					src: '/images/committees/icpc/estimathon.png',
+					alt: ''
+				},
+				desc: 'Want to win COOL prizes for flexing your estimation skills? Come out to ACM ICPC’s Estimathon! You’ll compete in teams to come up with the best ~*confidence intervals*~ (fancy word for “estimates”) to difficult maths and science questions like, what\'s the volume of the earth\'s oceans in cubic km; or, how many social security numbers are prime? It is a mind-bending mixture of math, trivia, and pure unadulterated fun.',
 			},
 			{
 				title: 'Cyber x Hack x ICPC presents Bruin Quest',
@@ -100,12 +92,28 @@ export default [
 				desc: 'Explore a virtual UCLA campus and complete fun challenges to compete for points, prizes, and the glory of being Bruin Quest champion.'
 			},
 			{
-				title: 'Interview Prep Bootcamp',
+				title: 'Project A*: Competitive Programming Workshops',
 				image: {
-					src: '/images/committees/icpc/interview.png',
-					alt: 'Interview Prep Bootcamp Flyer'
+					src: '/images/committees/icpc/A.png',
+					alt: ''
 				},
-				desc: 'Ace this recruiting season with focused interview prep from ACM ICPC. In our weekly series, we will cover all the essentials from stacks and queues to string manipulation and dynamic programming.'
+				desc: 'All you need is a passion for problem-solving! Whether you are completely new to competitive programming (or even CS!), or a veteran coder we have a learning opportunity for you this Fall. Introducing Project A*, our weekly algorithm academy! Our Intro to Competitive Programming track will cover all the essentials from the bottom up to get you started in competitive programming. The Advanced Training track will delve deeper into more complicated data structures and algorithms to help you compete at the highest level.'
+			},
+			{
+				title: 'Advanced Interview Prep',
+				image: {
+					src: '/images/committees/icpc/interview_advanced.png',
+					alt: ''
+				},
+				desc: 'Are you ready to bring your coding interview skills to the next level? Are you worried about the upcoming fall recruiting season? Do your CS 32 algorithm skills feel rusty? 🤔 💭 Don’t worry, we’ve got you covered! ACM ICPC is hosting an ⚙️  Advanced ⚙️  Interview Prep workshop that’ll let you in on all of the secrets to acing your next technical interview. In this workshop, we will be going over advanced algorithms and data structures asked in even the most difficult phone and onsite interviews! 🖥️ '
+			},
+			{
+				title: 'CP gym',
+				image: {
+					src: '/images/committees/icpc/gymnasium.png',
+					alt: ''
+				},
+				desc: 'Welcome to ACM ICPC Competitive Programming Gymnasium! 💪 Perhaps you attended our workshops the last two quarters and found problem-solving fun, perhaps you want to hone your algorithmic thinking and prepare for CS 180, or perhaps you just want to hang out, meet people, and have some fun! If any of that’s the case, then you’ve come to the right place!'
 			}
 		],
 		introImage: '/images/committees/icpc/icpc_motif_applied.png',
@@ -145,7 +153,7 @@ export default [
 				desc: 'We are finishing the design styleguide which contains the new branding design assets necessary for all committees, and some do\'s and don\'ts with abiding by the new brand image. We are also extracting the styles used in the styleguide into a CSS framework that can be used by all ACM committees to create their sites in the ACM style. Check it out design.uclaacm.com and the Github github.com/uclaacm/Styleguide'
 			},
 			{
-				title: 'UXLA 01: Intro to UI/UX (Thursday January 28)',
+				title: 'UXLA: UI/UX Workshop Series',
 				image: {
 					src: '/images/committees/design/uxla_1.png',
 					alt: ''
@@ -153,44 +161,28 @@ export default [
 				desc: 'Come join ACM Design\'s second workshop series of the quarter, UXLA! UXLA will cover core aspects of the UI/UX process. Come join us for our first of four workshops, Intro to UI/UX 💡 This week, we will cover the higher level goals of UI/UX, define terms like "user research" and "wireframes", and analyze companies that use good UI/UX practices!'
 			},
 			{
-				title: 'UXLA 02: UX Research (Thursday February 4)',
-				image: {
-					src: '/images/committees/design/uxla_2.png',
-					alt: ''
-				},
-				desc: 'Come join ACM Design for our second UIUX workshop: User Experience Research 💡 Learn about building a user flow map 🗺, user testing 📝, user personas 👤, and much more! Although this is the second workshop in our series, we encourage you to come out even if you missed the first one!'
-			},
-			{
-				title: 'UXLA 03: Solution Ideation (Thursday February 18)',
-				image: {
-					src: '/images/committees/design/uxla_3.png',
-					alt: ''
-				},
-				desc: ''
-			},
-			{
-				title: 'UXLA 04: Visual Design (Thursday February 25)',
-				image: {
-					src: '/images/committees/design/uxla_4.png',
-					alt: ''
-				},
-				desc: ''
-			},
-			{
-				title: 'Design Tapas: 3D Modeling',
+				title: 'Design Tapas: HTML/CSS',
 				image: {
 					src: '/images/committees/design/design_tapas_3D_modeling.png',
 					alt: ''
 				},
-				desc: '🍢 Design Tapas 🍢   is ACM Design’s first workshop series this quarter. Come join us this week to sample a 3D modeling tool called Blender! Blender is a free yet powerful 3D modeling tool that has seen an explosion in popularity recently among enthusiasts and professionals alike 💻 We’re going to talk about the very basics of Blender, and we are going to make a cool vending machine at the end of this workshop! This is an introductory workshop to Blender, so no previous experience is required 🤩 Feel free to download the software at: https://www.blender.org/download/'
+				desc: 'We are continuing 🍢 Design Tapas 🍢 this quarter - Come join us this week for a fresh dive into HTML/CSS for beginners! This technology is all over the way we interact with Internet and is essential to know for any web development - a couple of our officers will be demystifying this secret to constructing websites and making them look awesome through code!'
 			},
 			{
-				title: 'Design Tapas: WebGL',
+				title: 'Design Tapas: Intro to Vector Art',
 				image: {
 					src: '/images/committees/design/design_tapas_webGL.png',
 					alt: ''
 				},
-				desc: 'Design Tapas is ACM Design’s first workshop series this quarter. Come join us this week to sample WebGL, which allows you to add impressive graphical effects to your website! WebGL allows developers to create anything from video games to data visualization, all running in a regular web browser. In this workshop, we will use a library called three.js, which allows you to easily leverage WebGL and create various 3D scenes. Beginners are welcome, thought basic experience in JavaScript is highly recommended. Otherwise, all you need is a computer with a web browser and a text editing tool (e.g. VS Code, Notepad, etc.)'
+				desc: 'For this week’s Design Tapas, we’ve prepared a plate that’ll introduce you to the world of vector art. The secret to the clean and beautiful digital graphics you see all over the internet, we’ll teach you how to use vector art tools like Illustrator to make shapes work for your vision - including how they all come together to create a cohesive graphic!'
+			},
+			{
+				title: 'Live Design Sessions (April 15  & May 20)',
+				image: {
+					src: '/images/committees/design/live_session.png',
+					alt: ''
+				},
+				desc: 'ACM Design will be having a ✨LIVE DESIGN✨ workshop - if you want to improve your graphic design skills or are just interested in the topic, come watch one of our crazy talented ACM Design officers design live on Figma 🙌 He will be going through his process on how to design from scratch and how to use composition, colors and other elements to elevate your designs 🔥'
 			}
 
 		],
@@ -219,12 +211,12 @@ export default [
 		],
 		infoCards: [
 			{
-				title: 'Cyber Academy: Webhacking',
+				title: 'Cyber Academy: Cryptography and Reverse Engineering',
 				image: {
-					src: '/images/committees/cyber/cyber_academy_webhacking.png',
+					src: '/images/committees/cyber/cryp_reverse.png',
 					alt: 'Image of forensics event flyer'
 				},
-				desc: 'Attend our weekly workshops on Webhacking where we go over topics such as XSS+CSRF, SQL+noSQL Injection, and PHP’s many problems with in-depth demos and challenges. Our workshops are designed for beginners with no experience or just beginning in cybersecurity, and are self-encapsulated so feel free to attend even if you had to miss one!'
+				desc: 'Attend our weekly workshops on awesome topics such as classical ciphers, modern cryptography, cryptographic attacks, and advanced reverse engineering where we provide with in-depth demos and challenges. Our workshops are designed for beginners with no experience or just beginning in cybersecurity, and are self-encapsulated so feel free to attend even if you had to miss one!'
 			},
 			{
 				title: 'CTF After Dark',
@@ -232,7 +224,15 @@ export default [
 					src: '/images/committees/cyber/cft_after_dark.png',
 					alt: 'Capture the flag after dark'
 				},
-				desc: 'Collaborate with your friends in our beginner friendly Capture The Flag (CTF) competition. Challenges will be targeted at the skills that you’ve learned from our Winter workshops. Top teams get bragging rights as well as prizes.'
+				desc: 'Collaborate with your friends in our beginner friendly Capture The Flag (CTF) competition. Challenges will be targeted at the skills that you’ve learned from our Spring workshops. Top teams get bragging rights as well as prizes.'
+			},
+			{
+				title: 'Cyber x Studio: Video Game Hacking',
+				image: {
+					src: '',
+					alt: ''
+				},
+				desc: 'Ever wanted to know how that guy snapped to your head in a shooter game right as you peeked or somehow knew what your next move was in a strategy game? If you want to learn how to make your own aimbot or learn more about how hackers can exploit multiplayer games through packet spoofing, then our Video Game Hacking workshop is for you! No prior experience necessary!'
 			}
 		],
 		introImage: '/images/committees/cyber/cyber_motif_applied.png',
@@ -252,6 +252,10 @@ export default [
 			{
 				platform: 'facebook',
 				link: 'https://www.facebook.com/teachlaucla/'
+			},
+			{
+				platform: 'instagram',
+				link: 'https://www.instagram.com/acm.teachla/'
 			}
 		],
 		infoCards: [
@@ -295,6 +299,14 @@ export default [
 				},
 				desc: 'Whether you’re a complete beginner in web development or a seasoned pro, our dev team meetings are a blend of training & development (where we cover both intro and intermediate web dev topics), and a chance to work on projects with a diverse team.',
 			},
+			{
+				title: 'Day of Code',
+				image: {
+					src: '',
+					alt: ''
+				},
+				desc: 'April 24 @ 9 AM - 12 PM PT: an event in collaboration with ACM W to introduce middle school students to Computer Science. We will be holding non-technical, intermediate, and technical activities over the course of the event, including an AI Ethics discussion and an activity that allows students to build their own website.',
+			}
 		],
 		introImage: '/images/committees/teachLA/teachLA_motif_applied.png',
 		mission: 'Our mission is to provide equal access to K-12 CS education in the Los Angeles area. We do this by teaching classes, running workshops and events, and writing software!',
@@ -341,15 +353,15 @@ export default [
 				desc: 'Our year-long mentorship program pairs underclassmen/those new to CS with upperclassmen who can offer advice on everything from internships to favorite spots in LA (pre-COVID, at least).'
 			},
 			{
-				title: 'Socials',
+				title: 'ACM-W Conscience',
 				image: {
 					src: '/images/committees/w/zoom-heart.png',
-					alt: 'Eight ACM W members on Zoom conference call forming a collective heart with their arms.'
+					alt: ''
 				},
-				desc: ''
+				desc: 'Conscience, reminiscent of an abbreviated pronounced version of Com(puter)Science, is a weekly informal book club ACM-W holds to make sure the next generation of tech personnel is more informed than the last about social issues. Proverbially with the aim of “giving Silicon Valley a conscience”, we choose one audiobook each quarter to listen to together and openly discuss.'
 			},
 			{
-				title: 'Collaborations with other committees/organizations',
+				title: 'Collaborations with other committees/orgs',
 				image: {
 					src: '',
 					alt: ''
@@ -463,28 +475,28 @@ export default [
 		],
 		infoCards: [
 			{
-				title: 'Hack Sprint',
+				title: 'learn.py',
 				image: {
-					src: '/images/committees/hack/hack_sprint.png',
+					src: '/images/committees/hack/learn_py.png',
 					alt: 'Image of Hack Sprint Flyer'
 				},
-				desc: 'Hack Sprint is our beginner-friendly workshop series on mobile development with React Native. Through React Native, you\'ll be able to build apps for both Android and iOS devices at the same time! You’ll also get to build and present your very own app in our final showcase. No previous mobile development experience is needed!',
+				desc: 'This is our weekly Python workshop series on Wednesdays @ 6-8 PM PDT, dedicated to giving you an accessible introduction to Python. Our goal is to teach you the essentials of the programming language itself, as well as some of its practical and cool applications, such as task automation and web development! No prior Python experience is required, but basic programming knowledge is recommended.'
 			},
 			{
-				title: 'Hack off the Hill',
+				title: 'Hack Kitchen',
 				image: {
-					src: '/images/committees/hack/hack_off_the_hill.png',
+					src: '/images/committees/hack/hack_kitchen.png',
 					alt: 'Image of Hack off the Hill flyer'
 				},
-				desc: 'Hack off the Hill (HOTH 8) is the virtual edition of our annual hackathon. This 2-day long beginner-friendly hackathon is designed to give you a glimpse of a real hackathon. There will be workshops, mentors, and fun prizes for the best hacks!'
+				desc: 'Hack Kitchen is a virtual coding puzzle competition that encourages creativity in technology. Coders will participate in a 8 hour MasterChef style tournament, where each round will consist of a wacky coding puzzle and some for your favorite Gordon Ramsay references. To accommodate for time zones, we will be offering 2 sessions of Hack Kitchen.'
 			},
 			{
-				title: 'Hack Fam',
+				title: 'Javascript Chats',
 				image: {
 					src: '/images/committees/hack/hack_fam.png',
 					alt: 'Image of Hack Fam flyer'
 				},
-				desc: 'Join one of our families to meet new people and find a close support group to hang out with, study with, and form long lasting friendships for life with.'
+				desc: 'JavaScript is one of the most popular languages that people use outside of academic settings at UCLA. Come out to JavaScript Chats with ACM Hack, a weekly discussion on intermediate/advanced JavaScript. This series aims to deepen your understanding of the language’s features and designs. We also plan to cover frameworks and related topics.'
 			}
 		],
 		introImage: '/images/committees/hack/hack_motif_applied.png',
