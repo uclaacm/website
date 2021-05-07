@@ -1,9 +1,9 @@
-import getQuarter from './utils';
+import { getQuarter, committees } from './utils';
 
 class CommitteeEvent {
   constructor(options = {}) {
     this.eventName        = options.eventName         || '';                        // string
-    this.committee        = options.committee         || '';                        // string (enum?)
+    this.committee        = options.committee         || committees.ACM;            // string (enum?); multiple committees?
     this.date             = options.date              || new Date();                // Date type, default current date
     this.quarter          = options.quarter           || getQuarter(this.date);     // object: {'season': 'Fall'/'Winter'/'Spring', 'year': YYYY}, default current quarter
     this.isTrack          = options.isTrack           || false;                     // default false

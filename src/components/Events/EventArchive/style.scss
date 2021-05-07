@@ -10,8 +10,6 @@
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
 
 .ce-container {
@@ -20,7 +18,7 @@
   background: #eeeeee;
   margin-top: 10px;
   margin-bottom: 10px;
-  padding: 15px;
+  padding: 20px;
 }
 
 .ce-container:first-of-type {
@@ -41,6 +39,12 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
+}
+
+.ce-committee-name {
+  border-radius: 7px;
+  margin: 5px;
+  padding: 3px;
 }
 
 .tag-container {

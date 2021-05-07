@@ -1,6 +1,12 @@
 import React from 'react';
-import EventTag from './EventTag';
 import './style.scss';
+
+function EventTag(props) {
+  let tag = props.tag;
+  return (
+    <span className='event-tag'>{tag}</span>
+  );
+}
 
 function EventTags(props) {
   let tags = props.tags;

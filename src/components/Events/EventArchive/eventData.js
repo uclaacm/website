@@ -1,9 +1,10 @@
 import CommitteeEvent from './CommitteeEvent';
+import { committees } from './utils.js';
 
 let eventData = [
   new CommitteeEvent({
       eventName: 'Cool ACM Committee Event',
-      committee: 'Internal Board',
+      committee: committees.acm,
       date: new Date(2021, 4, 26),
       isTrack: true,
       sessionNumber: 2,
@@ -16,7 +17,7 @@ let eventData = [
       teachers: ['John Smith', 'Bob Jones']}),
       new CommitteeEvent({
         eventName: 'Cool ACM Committee Event',
-        committee: 'Internal Board',
+        committee: committees.w,
         date: new Date(2021, 4, 26),
         isTrack: true,
         sessionNumber: 2,
@@ -29,7 +30,7 @@ let eventData = [
         teachers: ['John Smith', 'Bob Jones']}),
         new CommitteeEvent({
           eventName: 'Cool ACM Committee Event',
-          committee: 'Internal Board',
+          committee: committees.cyber,
           date: new Date(2021, 4, 26),
           isTrack: true,
           sessionNumber: 2,
@@ -42,7 +43,7 @@ let eventData = [
           teachers: ['John Smith', 'Bob Jones']}),
           new CommitteeEvent({
             eventName: 'Cool ACM Committee Event',
-            committee: 'Internal Board',
+            committee: committees.icpc,
             date: new Date(2021, 4, 26),
             isTrack: true,
             sessionNumber: 2,
@@ -55,7 +56,7 @@ let eventData = [
             teachers: ['John Smith', 'Bob Jones']}),
             new CommitteeEvent({
               eventName: 'Cool ACM Committee Event',
-              committee: 'Internal Board',
+              committee: committees.hack,
               date: new Date(2021, 4, 26),
               isTrack: true,
               sessionNumber: 2,

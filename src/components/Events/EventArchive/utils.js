@@ -1,4 +1,4 @@
-let quarterBoundaries = [
+const quarterBoundaries = [
   {'start': new Date(2014, 9, 29),  'end': new Date(2014, 12, 19),  'quarter': {'season': 'Fall',   'year': 2014}},
   {'start': new Date(2015, 1, 5),   'end': new Date(2015, 3, 20),   'quarter': {'season': 'Winter', 'year': 2015}},
   {'start': new Date(2015, 3, 25),  'end': new Date(2015, 6, 12),   'quarter': {'season': 'Spring', 'year': 2015}},
@@ -61,4 +61,16 @@ function getQuarter(date) {
   return {};
 }
 
-export default getQuarter;
+const committees = {
+  'w':        {'name': 'W',         'color': '#1BC3A9'},
+  'hack':     {'name': 'Hack',      'color': '#C960FF'},
+  'icpc':     {'name': 'ICPC',      'color': '#FF8383'},
+  'ai':       {'name': 'AI',        'color': '#28B2FF'},
+  'studio':   {'name': 'Studio',    'color': '#FB4469'},
+  'cyber':    {'name': 'Cyber',     'color': '#FFBA44'},
+  'design':   {'name': 'Design',    'color': '#FE8D3C'},
+  'teachla':  {'name': 'Teach LA',  'color': '#5EDA12'},
+  'acm':      {'name': 'ACM',       'color': '#1E6CFF'}
+};
+
+export { getQuarter, committees };

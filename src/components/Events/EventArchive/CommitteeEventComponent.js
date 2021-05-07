@@ -6,10 +6,10 @@ function CommitteeEventComponent(props) {
   let ce = props.committeeEvent;
   return (
     <div className='ce-container'>
-      <h1 className='ce-title'>{ce.eventName}</h1>
+      <h2 className='ce-title'>{ce.eventName}</h2>
       <EventTags tags={ce.tags}/>
       <div className='ce-header'>
-        <h3><i>Hosted by {ce.committee}</i></h3>
+        <h3 className='ce-committee'><i>Hosted by </i><span className='ce-committee-name' style={{backgroundColor: ce.committee.color, color: 'white'}}>{ce.committee.name}</span></h3>
         <h3>{ce.date.toLocaleDateString()}</h3>
         <h3>{ce.quarter.season} {ce.quarter.year}</h3>
       </div>
