@@ -1,3 +1,8 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
 .wa-container {
   width: 60%;
   margin: auto;
@@ -15,4 +20,46 @@
   background: #eeeeee;
   margin-top: 10px;
   margin-bottom: 10px;
+  padding: 15px;
+}
+
+.ce-container:first-of-type {
+  margin-top: 20px;
+}
+
+.ce-container:last-of-type {
+  margin-bottom: 20px;
+}
+
+.ce-header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.ce-event-type {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.tag-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.event-tag {
+  background-color: #dddddd;
+  border-radius: 7px;
+  margin: 5px;
+  padding: 3px;
+}
+
+.event-tag:first-of-type {
+  margin-left: 0px;
+}
+
+.event-tag:last-of-type {
+  margin-right: 0px;
 }
