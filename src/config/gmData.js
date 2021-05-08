@@ -3,12 +3,14 @@ export default {
     //date of GM
     date: {
         year: '2021',
-        quarter: 'Winter',
+        quarter: 'Quarter',
 
         //enter two digit month or day
+        //make sure you enter two digits or the date will not work!!
         month: '01',
         day: '07',
         
+        //enter in 24 hour time
         startTime: '18:30',
         endTime: '20:00',
     },
