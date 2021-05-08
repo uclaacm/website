@@ -9,7 +9,7 @@ export default {
         //make sure you enter two digits or the date will not work!!
         month: '01',
         day: '07',
-        
+
         //enter in 24 hour time
         startTime: '18:30',
         endTime: '20:00',
@@ -23,22 +23,22 @@ export default {
         youTube: 'https://www.youtube.com/c/acmucla',
         discord: 'https://bit.ly/ACMdiscord',
         linktree: 'https://linktr.ee/acmucla',
-        recording: 'https://www.youtube.com/embed/cleSPlz2U1Q',    
-        slides:'https://docs.google.com/presentation/d/1eF2d6VmHo1Pq-2MfXg0ezLSnnPz2bUWXHdyVjYb7WDE/edit?usp=sharing', 
+        recording: 'https://www.youtube.com/embed/cleSPlz2U1Q',
+        slides: 'https://docs.google.com/presentation/d/1eF2d6VmHo1Pq-2MfXg0ezLSnnPz2bUWXHdyVjYb7WDE/edit?usp=sharing',
     },
 
     //speaker for welcome event
     welcomeSpeaker: 'ACM President',
 
     //times for individual events - refer to as gmData.times.name
-    times :{
+    times: {
         welcome: 'Time 1',
         committees: 'Time 2',
         board: 'Time 3',
         social: 'Time 4',
         timezone: 'PST',
     },
-}
+};
 
 //speakers for individual committee presentations
 export const committeeData = [
@@ -90,11 +90,11 @@ export const committeeData = [
         speakers: 'Hack Speakers',
         logo: '/images/diamonds/hack_diamond.svg',
     },
-]
+];
 
 //speakers and data for board events
 export const boardEvents = [
-    {   
+    {
         logo: '/images/logo.png',
         displayName: 'ACM',
         eventName: 'Event 1',
@@ -106,4 +106,4 @@ export const boardEvents = [
         eventName: 'Event 2',
         speakers: 'Speakers',
     },
-]
+];
