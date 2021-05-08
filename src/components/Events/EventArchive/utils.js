@@ -1,4 +1,8 @@
 const quarterBoundaries = [
+  {'start': new Date(2013, 9, 23),  'end': new Date(2013, 12, 13),  'quarter': {'season': 'Fall',   'year': 2013}},
+  {'start': new Date(2014, 1, 2),   'end': new Date(2014, 3, 21),   'quarter': {'season': 'Winter', 'year': 2014}},
+  {'start': new Date(2014, 3, 26),  'end': new Date(2014, 6, 13),   'quarter': {'season': 'Spring', 'year': 2014}},
+
   {'start': new Date(2014, 9, 29),  'end': new Date(2014, 12, 19),  'quarter': {'season': 'Fall',   'year': 2014}},
   {'start': new Date(2015, 1, 5),   'end': new Date(2015, 3, 20),   'quarter': {'season': 'Winter', 'year': 2015}},
   {'start': new Date(2015, 3, 25),  'end': new Date(2015, 6, 12),   'quarter': {'season': 'Spring', 'year': 2015}},
@@ -73,4 +77,10 @@ const committees = {
   'acm':      {'name': 'ACM',       'color': '#1E6CFF'}
 };
 
-export { getQuarter, committees };
+const attendanceTypes = {
+  'virtual':  'Virtual',
+  'inperson': 'In-person',
+  'hybrid':   'Hybrid'
+};
+
+export { getQuarter, committees, attendanceTypes };

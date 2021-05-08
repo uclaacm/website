@@ -12,6 +12,19 @@ function WorkshopArchive(props) {
   }
   return (
     <div className='wa-container'>
+      {/*<h1>Search</h1>
+      <br/>
+      <div>
+        <input type='text' placeholder='🔍'></input>
+        <select id='' name=''>
+          <option value=''></option>
+          <option value=''></option>
+          <option value=''></option>
+          <option value=''></option>
+          <option value=''></option>
+          <option value=''></option>
+        </select>
+      </div>*/}
       {createEventBoxes(eventData)}
     </div>
   );

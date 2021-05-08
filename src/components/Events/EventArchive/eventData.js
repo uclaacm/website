@@ -1,5 +1,5 @@
 import CommitteeEvent from './CommitteeEvent';
-import { committees } from './utils.js';
+import { committees, attendanceTypes } from './utils.js';
 
 let eventData = [
   new CommitteeEvent({
@@ -8,7 +8,7 @@ let eventData = [
       date: new Date(2021, 4, 26),
       isTrack: true,
       sessionNumber: 2,
-      attendanceType: 'hybrid',
+      attendanceType: attendanceTypes.hybrid,
       physicalLocation: 'Boelter Hall',
       virtualLocation: 'https://www.uclaacm.com',
       eventLinks: [{'link': 'https://www.facebook.com', 'title': 'Facebook'}, {'link': 'https://calendar.google.com', 'title': 'Google Calendar'}],
@@ -18,10 +18,10 @@ let eventData = [
       new CommitteeEvent({
         eventName: 'Cool ACM Committee Event',
         committee: committees.w,
-        date: new Date(2021, 4, 26),
+        date: new Date(2017, 12, 5),
         isTrack: true,
         sessionNumber: 2,
-        attendanceType: 'hybrid',
+        attendanceType: attendanceTypes.hybrid,
         physicalLocation: 'Boelter Hall',
         virtualLocation: 'https://www.uclaacm.com',
         eventLinks: [{'link': 'https://www.facebook.com', 'title': 'Facebook'}, {'link': 'https://calendar.google.com', 'title': 'Google Calendar'}],
@@ -31,10 +31,10 @@ let eventData = [
         new CommitteeEvent({
           eventName: 'Cool ACM Committee Event',
           committee: committees.cyber,
-          date: new Date(2021, 4, 26),
+          date: new Date(2018, 2, 4),
           isTrack: true,
           sessionNumber: 2,
-          attendanceType: 'hybrid',
+          attendanceType: attendanceTypes.hybrid,
           physicalLocation: 'Boelter Hall',
           virtualLocation: 'https://www.uclaacm.com',
           eventLinks: [{'link': 'https://www.facebook.com', 'title': 'Facebook'}, {'link': 'https://calendar.google.com', 'title': 'Google Calendar'}],
@@ -45,9 +45,9 @@ let eventData = [
             eventName: 'Cool ACM Committee Event',
             committee: committees.icpc,
             date: new Date(2021, 4, 26),
-            isTrack: true,
+            isTrack: false,
             sessionNumber: 2,
-            attendanceType: 'hybrid',
+            attendanceType: attendanceTypes.hybrid,
             physicalLocation: 'Boelter Hall',
             virtualLocation: 'https://www.uclaacm.com',
             eventLinks: [{'link': 'https://www.facebook.com', 'title': 'Facebook'}, {'link': 'https://calendar.google.com', 'title': 'Google Calendar'}],
@@ -58,9 +58,9 @@ let eventData = [
               eventName: 'Cool ACM Committee Event',
               committee: committees.hack,
               date: new Date(2021, 4, 26),
-              isTrack: true,
+              isTrack: false,
               sessionNumber: 2,
-              attendanceType: 'hybrid',
+              attendanceType: attendanceTypes.hybrid,
               physicalLocation: 'Boelter Hall',
               virtualLocation: 'https://www.uclaacm.com',
               eventLinks: [{'link': 'https://www.facebook.com', 'title': 'Facebook'}, {'link': 'https://calendar.google.com', 'title': 'Google Calendar'}],

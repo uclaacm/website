@@ -3,6 +3,19 @@
   padding: 0px;
 }
 
+a {
+  color: #1E6CFF;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #1E6CFF;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
 .wa-container {
   width: 60%;
   margin: auto;
@@ -29,22 +42,31 @@
   margin-bottom: 20px;
 }
 
+.ce-title-container {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .ce-header {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-}
-
-.ce-event-type {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
+  margin-top: 5px;
 }
 
 .ce-committee-name {
   border-radius: 7px;
-  margin: 5px;
+  margin-left: 5px;
   padding: 3px;
+  font-family: 'Poppins';
+}
+
+.ce-more-info-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
 }
 
 .tag-container {
@@ -56,7 +78,7 @@
 .event-tag {
   background-color: #dddddd;
   border-radius: 7px;
-  margin: 5px;
+  margin: 10px 5px 10px 5px;
   padding: 3px;
 }
 
@@ -65,5 +87,26 @@
 }
 
 .event-tag:last-of-type {
+  margin-right: 0px;
+}
+
+.links-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.custom-link {
+  background-color: #dddddd;
+  border-radius: 7px;
+  margin: 5px;
+  padding: 3px;
+}
+
+.custom-link:first-of-type {
+  margin-left: 0px;
+}
+
+.custom-link:last-of-type {
   margin-right: 0px;
 }
