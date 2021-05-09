@@ -1,6 +1,7 @@
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
 }
 
 a {
@@ -76,7 +77,9 @@ a:hover {
 }
 
 .ce-title-header-hr {
-  margin-bottom: 10px;
+  margin: 0px 0px 10px 0px;
+  color: black;
+  border-style: solid;
 }
 
 .ce-committee-name {
@@ -84,12 +87,24 @@ a:hover {
   margin-right: 10px;
   padding: 3px;
   font-family: 'Poppins';
+  color: white;
 }
 
 .ce-more-info-container {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
+}
+
+.ce-content-links-container span {
+  margin-bottom: 0px;
+}
+
+.ce-date, .ce-quarter, .ce-event-type, .ce-teachers {
+  background-color: #dddddd;
+  border-radius: 7px;
+  padding: 3px;
+  margin-bottom: 10px;
 }
 
 .tags-container {

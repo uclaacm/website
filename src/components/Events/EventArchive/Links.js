@@ -19,7 +19,7 @@ function Links(props) {
   }
 
   return (
-    <div className='links-container'>
+    <div className={(props.class) ? 'links-container ' + props.class : 'links-container'}>
       {createLinks(links)}
     </div>
   );
