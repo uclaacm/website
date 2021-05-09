@@ -24,6 +24,7 @@
 
 .search-container {
   width: 100%;
+  margin-top: 20px;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -161,6 +162,15 @@
 
 .custom-link:last-of-type {
   margin-right: 0px;
+}
+
+#event-name-filter {
+  width: 35%;
+  height: 20px;
+  border-radius: 7px;
+  border-width: 1px;
+  border-color: black;
+  font-family: 'Poppins'
 }
 
 @media (max-width: 600px) {

@@ -18,4 +18,6 @@ class CommitteeEvent {
   }
 }
 
+// need to consider multiple quarters, dropdowns, tracks as first-class, duplicated tags
+
 export default CommitteeEvent;
