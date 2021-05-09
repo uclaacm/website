@@ -1,59 +1,59 @@
 const quarterBoundaries = [
-  {'start': new Date(2013, 9, 23),  'end': new Date(2013, 12, 13),  'quarter': {'season': 'Fall',   'year': 2013}},
-  {'start': new Date(2014, 1, 2),   'end': new Date(2014, 3, 21),   'quarter': {'season': 'Winter', 'year': 2014}},
-  {'start': new Date(2014, 3, 26),  'end': new Date(2014, 6, 13),   'quarter': {'season': 'Spring', 'year': 2014}},
+  {'start': new Date(2013, 8, 23),  'end': new Date(2013, 11, 13),  'quarter': {'season': 'Fall',   'year': 2013}},
+  {'start': new Date(2014, 0, 2),   'end': new Date(2014, 2, 21),   'quarter': {'season': 'Winter', 'year': 2014}},
+  {'start': new Date(2014, 2, 26),  'end': new Date(2014, 5, 13),   'quarter': {'season': 'Spring', 'year': 2014}},
 
-  {'start': new Date(2014, 9, 29),  'end': new Date(2014, 12, 19),  'quarter': {'season': 'Fall',   'year': 2014}},
-  {'start': new Date(2015, 1, 5),   'end': new Date(2015, 3, 20),   'quarter': {'season': 'Winter', 'year': 2015}},
-  {'start': new Date(2015, 3, 25),  'end': new Date(2015, 6, 12),   'quarter': {'season': 'Spring', 'year': 2015}},
+  {'start': new Date(2014, 8, 29),  'end': new Date(2014, 11, 19),  'quarter': {'season': 'Fall',   'year': 2014}},
+  {'start': new Date(2015, 0, 5),   'end': new Date(2015, 2, 20),   'quarter': {'season': 'Winter', 'year': 2015}},
+  {'start': new Date(2015, 2, 25),  'end': new Date(2015, 5, 12),   'quarter': {'season': 'Spring', 'year': 2015}},
 
-  {'start': new Date(2015, 9, 21),  'end': new Date(2015, 12, 11),  'quarter': {'season': 'Fall',   'year': 2015}},
-  {'start': new Date(2016, 1, 4),   'end': new Date(2016, 3, 18),   'quarter': {'season': 'Winter', 'year': 2016}},
-  {'start': new Date(2016, 3, 23),  'end': new Date(2016, 6, 10),   'quarter': {'season': 'Spring', 'year': 2016}},
+  {'start': new Date(2015, 8, 21),  'end': new Date(2015, 11, 11),  'quarter': {'season': 'Fall',   'year': 2015}},
+  {'start': new Date(2016, 0, 4),   'end': new Date(2016, 2, 18),   'quarter': {'season': 'Winter', 'year': 2016}},
+  {'start': new Date(2016, 2, 23),  'end': new Date(2016, 5, 10),   'quarter': {'season': 'Spring', 'year': 2016}},
 
-  {'start': new Date(2016, 9, 19),  'end': new Date(2016, 12, 9),   'quarter': {'season': 'Fall',   'year': 2016}},
-  {'start': new Date(2017, 1, 4),   'end': new Date(2017, 3, 24),   'quarter': {'season': 'Winter', 'year': 2017}},
-  {'start': new Date(2017, 3, 29),  'end': new Date(2017, 6, 16),   'quarter': {'season': 'Spring', 'year': 2017}},
+  {'start': new Date(2016, 8, 19),  'end': new Date(2016, 11, 9),   'quarter': {'season': 'Fall',   'year': 2016}},
+  {'start': new Date(2017, 0, 4),   'end': new Date(2017, 2, 24),   'quarter': {'season': 'Winter', 'year': 2017}},
+  {'start': new Date(2017, 2, 29),  'end': new Date(2017, 5, 16),   'quarter': {'season': 'Spring', 'year': 2017}},
 
-  {'start': new Date(2017, 9, 25),  'end': new Date(2017, 12, 15),  'quarter': {'season': 'Fall',   'year': 2017}},
-  {'start': new Date(2018, 1, 3),   'end': new Date(2018, 3, 23),   'quarter': {'season': 'Winter', 'year': 2018}},
-  {'start': new Date(2018, 3, 28),  'end': new Date(2018, 6, 15),   'quarter': {'season': 'Spring', 'year': 2018}},
+  {'start': new Date(2017, 8, 25),  'end': new Date(2017, 11, 15),  'quarter': {'season': 'Fall',   'year': 2017}},
+  {'start': new Date(2018, 0, 3),   'end': new Date(2018, 2, 23),   'quarter': {'season': 'Winter', 'year': 2018}},
+  {'start': new Date(2018, 2, 28),  'end': new Date(2018, 5, 15),   'quarter': {'season': 'Spring', 'year': 2018}},
 
-  {'start': new Date(2018, 9, 24),  'end': new Date(2018, 12, 14),  'quarter': {'season': 'Fall',   'year': 2018}},
-  {'start': new Date(2019, 1, 2),   'end': new Date(2019, 3, 22),   'quarter': {'season': 'Winter', 'year': 2019}},
-  {'start': new Date(2019, 3, 27),  'end': new Date(2019, 6, 14),   'quarter': {'season': 'Spring', 'year': 2019}},
+  {'start': new Date(2018, 8, 24),  'end': new Date(2018, 11, 14),  'quarter': {'season': 'Fall',   'year': 2018}},
+  {'start': new Date(2019, 0, 2),   'end': new Date(2019, 2, 22),   'quarter': {'season': 'Winter', 'year': 2019}},
+  {'start': new Date(2019, 2, 27),  'end': new Date(2019, 5, 14),   'quarter': {'season': 'Spring', 'year': 2019}},
 
-  {'start': new Date(2019, 9, 23),  'end': new Date(2019, 12, 13),  'quarter': {'season': 'Fall',   'year': 2019}},
-  {'start': new Date(2020, 1, 2),   'end': new Date(2020, 3, 20),   'quarter': {'season': 'Winter', 'year': 2020}},
-  {'start': new Date(2020, 3, 25),  'end': new Date(2020, 6, 12),   'quarter': {'season': 'Spring', 'year': 2020}},
+  {'start': new Date(2019, 8, 23),  'end': new Date(2019, 11, 13),  'quarter': {'season': 'Fall',   'year': 2019}},
+  {'start': new Date(2020, 0, 2),   'end': new Date(2020, 2, 20),   'quarter': {'season': 'Winter', 'year': 2020}},
+  {'start': new Date(2020, 2, 25),  'end': new Date(2020, 5, 12),   'quarter': {'season': 'Spring', 'year': 2020}},
 
-  {'start': new Date(2020, 9, 28),  'end': new Date(2020, 12, 18),  'quarter': {'season': 'Fall',   'year': 2020}},
-  {'start': new Date(2021, 1, 4),   'end': new Date(2021, 3, 19),   'quarter': {'season': 'Winter', 'year': 2021}},
-  {'start': new Date(2021, 3, 24),  'end': new Date(2021, 6, 11),   'quarter': {'season': 'Spring', 'year': 2021}},
+  {'start': new Date(2020, 8, 28),  'end': new Date(2020, 11, 18),  'quarter': {'season': 'Fall',   'year': 2020}},
+  {'start': new Date(2021, 0, 4),   'end': new Date(2021, 2, 19),   'quarter': {'season': 'Winter', 'year': 2021}},
+  {'start': new Date(2021, 2, 24),  'end': new Date(2021, 5, 11),   'quarter': {'season': 'Spring', 'year': 2021}},
 
-  {'start': new Date(2021, 9, 20),  'end': new Date(2021, 12, 10),  'quarter': {'season': 'Fall',   'year': 2021}},
-  {'start': new Date(2022, 1, 3),   'end': new Date(2022, 3, 18),   'quarter': {'season': 'Winter', 'year': 2022}},
-  {'start': new Date(2022, 3, 23),  'end': new Date(2022, 6, 10),   'quarter': {'season': 'Spring', 'year': 2022}},
+  {'start': new Date(2021, 8, 20),  'end': new Date(2021, 11, 10),  'quarter': {'season': 'Fall',   'year': 2021}},
+  {'start': new Date(2022, 0, 3),   'end': new Date(2022, 2, 18),   'quarter': {'season': 'Winter', 'year': 2022}},
+  {'start': new Date(2022, 2, 23),  'end': new Date(2022, 5, 10),   'quarter': {'season': 'Spring', 'year': 2022}},
 
-  {'start': new Date(2022, 9, 19),  'end': new Date(2022, 12, 9),   'quarter': {'season': 'Fall',   'year': 2022}},
-  {'start': new Date(2023, 1, 4),   'end': new Date(2023, 3, 24),   'quarter': {'season': 'Winter', 'year': 2023}},
-  {'start': new Date(2023, 3, 29),  'end': new Date(2023, 6, 16),   'quarter': {'season': 'Spring', 'year': 2023}},
+  {'start': new Date(2022, 8, 19),  'end': new Date(2022, 11, 9),   'quarter': {'season': 'Fall',   'year': 2022}},
+  {'start': new Date(2023, 0, 4),   'end': new Date(2023, 2, 24),   'quarter': {'season': 'Winter', 'year': 2023}},
+  {'start': new Date(2023, 2, 29),  'end': new Date(2023, 5, 16),   'quarter': {'season': 'Spring', 'year': 2023}},
 
-  {'start': new Date(2023, 9, 25),  'end': new Date(2023, 12, 15),  'quarter': {'season': 'Fall',   'year': 2023}},
-  {'start': new Date(2024, 1, 3),   'end': new Date(2024, 3, 22),   'quarter': {'season': 'Winter', 'year': 2024}},
-  {'start': new Date(2024, 3, 27),  'end': new Date(2024, 6, 14),   'quarter': {'season': 'Spring', 'year': 2024}},
+  {'start': new Date(2023, 8, 25),  'end': new Date(2023, 11, 15),  'quarter': {'season': 'Fall',   'year': 2023}},
+  {'start': new Date(2024, 0, 3),   'end': new Date(2024, 2, 22),   'quarter': {'season': 'Winter', 'year': 2024}},
+  {'start': new Date(2024, 2, 27),  'end': new Date(2024, 5, 14),   'quarter': {'season': 'Spring', 'year': 2024}},
 
-  {'start': new Date(2024, 9, 23),  'end': new Date(2024, 12, 13),  'quarter': {'season': 'Fall',   'year': 2024}},
-  {'start': new Date(2025, 1, 2),   'end': new Date(2025, 3, 21),   'quarter': {'season': 'Winter', 'year': 2025}},
-  {'start': new Date(2025, 3, 26),  'end': new Date(2025, 6, 13),   'quarter': {'season': 'Spring', 'year': 2025}},
+  {'start': new Date(2024, 8, 23),  'end': new Date(2024, 11, 13),  'quarter': {'season': 'Fall',   'year': 2024}},
+  {'start': new Date(2025, 0, 2),   'end': new Date(2025, 2, 21),   'quarter': {'season': 'Winter', 'year': 2025}},
+  {'start': new Date(2025, 2, 26),  'end': new Date(2025, 5, 13),   'quarter': {'season': 'Spring', 'year': 2025}},
 
-  {'start': new Date(2025, 9, 22),  'end': new Date(2025, 12, 12),  'quarter': {'season': 'Fall',   'year': 2025}},
-  {'start': new Date(2026, 1, 2),   'end': new Date(2026, 3, 20),   'quarter': {'season': 'Winter', 'year': 2026}},
-  {'start': new Date(2026, 3, 27),  'end': new Date(2026, 6, 12),   'quarter': {'season': 'Spring', 'year': 2026}},
+  {'start': new Date(2025, 8, 22),  'end': new Date(2025, 11, 12),  'quarter': {'season': 'Fall',   'year': 2025}},
+  {'start': new Date(2026, 0, 2),   'end': new Date(2026, 2, 20),   'quarter': {'season': 'Winter', 'year': 2026}},
+  {'start': new Date(2026, 2, 27),  'end': new Date(2026, 5, 12),   'quarter': {'season': 'Spring', 'year': 2026}},
 
-  {'start': new Date(2026, 9, 21),  'end': new Date(2026, 12, 11),  'quarter': {'season': 'Fall',   'year': 2026}},
-  {'start': new Date(2027, 1, 4),   'end': new Date(2027, 3, 19),   'quarter': {'season': 'Winter', 'year': 2027}},
-  {'start': new Date(2027, 3, 24),  'end': new Date(2027, 6, 11),   'quarter': {'season': 'Spring', 'year': 2027}}
+  {'start': new Date(2026, 8, 21),  'end': new Date(2026, 11, 11),  'quarter': {'season': 'Fall',   'year': 2026}},
+  {'start': new Date(2027, 0, 4),   'end': new Date(2027, 2, 19),   'quarter': {'season': 'Winter', 'year': 2027}},
+  {'start': new Date(2027, 2, 24),  'end': new Date(2027, 5, 11),   'quarter': {'season': 'Spring', 'year': 2027}}
 ];
 
 function getQuarter(date) {

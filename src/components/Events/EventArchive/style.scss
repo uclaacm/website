@@ -1,25 +1,37 @@
-* {
+.wa-container * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
 }
 
-a {
+.wa-container {
+  width: 50%;
+  margin: auto;
+}
+
+.wa-container a {
   color: #1E6CFF;
   text-decoration: none;
 }
 
-a:visited {
+.wa-container a:visited {
   color: #1E6CFF;
 }
 
-a:hover {
+.wa-container a:hover {
   opacity: 0.7;
 }
 
-.wa-container {
-  width: 60%;
-  margin: auto;
+.search-container {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#wa-ce-parent {
+  width: 100%;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -43,18 +55,6 @@ a:hover {
   margin-bottom: 20px;
 }
 
-.ce-title {
-  margin-right: 5px;
-  font-family: 'Poppins';
-}
-
-.ce-session {
-  border-radius: 7px;
-  margin-right: 5px;
-  padding: 3px;
-  background-color: #dddddd;
-}
-
 .ce-title-container {
   display: flex;
   flex-flow: row wrap;
@@ -70,16 +70,16 @@ a:hover {
   margin-bottom: 10px;
 }
 
-.ce-header {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
+.ce-title {
+  margin-right: 5px;
+  font-family: 'Poppins';
 }
 
-.ce-title-header-hr {
-  margin: 0px 0px 10px 0px;
-  color: black;
-  border-style: solid;
+.ce-session {
+  border-radius: 7px;
+  margin-right: 5px;
+  padding: 3px;
+  background-color: #dddddd;
 }
 
 .ce-committee-name {
@@ -90,6 +90,26 @@ a:hover {
   color: white;
 }
 
+.ce-title-header-hr {
+  margin: 0px 0px 10px 0px;
+  color: black;
+  background-color: black;
+  border-style: solid;
+}
+
+.ce-header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.ce-date, .ce-quarter, .ce-event-type, .ce-teachers {
+  background-color: #dddddd;
+  border-radius: 7px;
+  padding: 3px;
+  margin-bottom: 10px;
+}
+
 .ce-more-info-container {
   display: flex;
   flex-flow: row wrap;
@@ -98,13 +118,6 @@ a:hover {
 
 .ce-content-links-container span {
   margin-bottom: 0px;
-}
-
-.ce-date, .ce-quarter, .ce-event-type, .ce-teachers {
-  background-color: #dddddd;
-  border-radius: 7px;
-  padding: 3px;
-  margin-bottom: 10px;
 }
 
 .tags-container {
@@ -138,7 +151,7 @@ a:hover {
 .custom-link {
   background-color: #dddddd;
   border-radius: 7px;
-  margin: 5px;
+  margin: 5px 2.5px 5px 2.5px;
   padding: 3px;
 }
 
@@ -148,4 +161,10 @@ a:hover {
 
 .custom-link:last-of-type {
   margin-right: 0px;
+}
+
+@media (max-width: 600px) {
+	.wa-container {
+		width: 100%;
+	}
 }
