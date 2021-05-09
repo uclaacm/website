@@ -42,6 +42,18 @@ a:hover {
   margin-bottom: 20px;
 }
 
+.ce-title {
+  margin-right: 5px;
+  font-family: 'Poppins';
+}
+
+.ce-session {
+  border-radius: 7px;
+  margin-right: 5px;
+  padding: 3px;
+  background-color: #dddddd;
+}
+
 .ce-title-container {
   display: flex;
   flex-flow: row wrap;
@@ -49,16 +61,27 @@ a:hover {
   justify-content: space-between;
 }
 
+.ce-title-container-first {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+
 .ce-header {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  margin-top: 5px;
+}
+
+.ce-title-header-hr {
+  margin-bottom: 10px;
 }
 
 .ce-committee-name {
   border-radius: 7px;
-  margin-left: 5px;
+  margin-right: 10px;
   padding: 3px;
   font-family: 'Poppins';
 }
@@ -69,16 +92,17 @@ a:hover {
   justify-content: space-between;
 }
 
-.tag-container {
+.tags-container {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
+  margin-bottom: 10px;
 }
 
 .event-tag {
   background-color: #dddddd;
   border-radius: 7px;
-  margin: 10px 5px 10px 5px;
+  margin: 0px 2.5px 0px 2.5px;
   padding: 3px;
 }
 
