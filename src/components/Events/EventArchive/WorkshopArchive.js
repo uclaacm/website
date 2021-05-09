@@ -1,19 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import CommitteeEventComponent from './CommitteeEventComponent';
 import eventData from './eventData.js';
 import './style.scss';
 
 function WorkshopArchive(props) {
+  const [events, setEvents] = useState(eventData);
+
   function createEventBox (event) {
     return <CommitteeEventComponent committeeEvent={event}/>;
   }
 
-  function createEventBoxes() {
-    return eventData.map(createEventBox);
+  function createEventBoxes(events) {
+    return events.map(createEventBox);
   }
 
   function filterEventName() {
-    return eventData.filter(event => event.eventName.includes(document.getElementById('event-name-filter').value)).map(createEventBox);
+    setEvents(eventData.filter(event => event.eventName.includes(document.getElementById('event-name-filter').value)));
   }
 
   return (
@@ -38,7 +40,7 @@ function WorkshopArchive(props) {
         </select>
       </div>
       <div id='wa-ce-parent'>
-        {createEventBoxes()}
+        {createEventBoxes(events)}
       </div>
     </div>
   );
