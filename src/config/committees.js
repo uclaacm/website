@@ -29,7 +29,7 @@ export default [
 						Each year, Studio splits into several teams of students who each
 						work throughout winter and spring quarter to put together a
 						fully-fledged game, usually coding in C# with the Unity engine. You
-						can see a collection of many past projects at{" "}
+						can see a collection of many past projects at{' '}
 						<a
 							href="https://uclaacmstudio.itch.io"
 							target="_blank"
@@ -174,15 +174,15 @@ export default [
 						do&apos;s and don&apos;ts with abiding by the new brand image. We
 						are also extracting the styles used in the styleguide into a CSS
 						framework that can be used by all ACM committees to create their
-						sites in the ACM style. Check it out at{" "}
+						sites in the ACM style. Check it out at{' '}
 						<a
 							href="https://design.uclaacm.com"
 							target="_blank"
 							rel="noopener noreferrer"
 						>
 							design.uclaacm.com
-						</a>{" "}
-						and the{" "}
+						</a>{' '}
+						and the{' '}
 						<a
 							href="github.com/uclaacm/Styleguide"
 							target="_blank"
@@ -228,26 +228,26 @@ export default [
 					<p>
 						<span role="img" aria-label="rocket emoji">
 							🍢
-						</span>{" "}
-						Design Tapas{" "}
+						</span>{' '}
+						Design Tapas{' '}
 						<span role="img" aria-label="rocket emoji">
 							🍢
-						</span>{" "}
+						</span>{' '}
 						is ACM Design’s first workshop series this quarter. Come join us
 						this week to sample a 3D modeling tool called Blender! Blender is a
 						free yet powerful 3D modeling tool that has seen an explosion in
-						popularity recently among enthusiasts and professionals alike{" "}
+						popularity recently among enthusiasts and professionals alike{' '}
 						<span role="img" aria-label="computer emoji">
 							💻
 						</span>
 						. We’re going to talk about the very basics of Blender, and we are
 						going to make a cool vending machine at the end of this workshop!
 						This is an introductory workshop to Blender, so no previous
-						experience is required{" "}
+						experience is required{' '}
 						<span role="img" aria-label="star-struck emoji ">
 							🤩
-						</span>{" "}
-						Feel free to download the software at{" "}
+						</span>{' '}
+						Feel free to download the software at{' '}
 						<a
 							href="https://www.blender.org/download/"
 							target="_blank"
@@ -359,7 +359,7 @@ export default [
 				desc: (
 					<p>
 						Write educational software to make teaching easier, either by
-						developing interactive web applications called “Learning Labs” (e.g.{" "}
+						developing interactive web applications called “Learning Labs” (e.g.{' '}
 						<a
 							href="https://passworks.uclaacm.com"
 							target="_blank"
@@ -367,7 +367,7 @@ export default [
 						>
 							Passworks Lesson
 						</a>
-						), maintain our{" "}
+						), maintain our{' '}
 						<a
 							href="https://editor.uclaacm.com"
 							target="_blank"
@@ -375,7 +375,7 @@ export default [
 						>
 							free online code editor
 						</a>
-						, or bust out your design skills on{" "}
+						, or bust out your design skills on{' '}
 						<a
 							href="https://teachla.uclaacm.com"
 							target="_blank"
@@ -527,18 +527,18 @@ export default [
 							rel="noopener noreferrer"
 						>
 							You Belong in AI!
-						</a>{" "}
+						</a>{' '}
 						is a podcast on diversity in the field of Artificial Intelligence.
 						We feature industry and academic leaders in AI from a diverse range
 						of backgrounds to come and talk about their work and the importance
-						of diversity and inclusion in AI.{" "}
+						of diversity and inclusion in AI.{' '}
 						<a
 							href="https://anchor.fm/ucla-acm-ai"
 							target="_blank"
 							rel="noopener noreferrer"
 						>
 							You Belong in AI!
-						</a>{" "}
+						</a>{' '}
 						is available on all major podcast streaming platforms.
 					</p>
 				),
@@ -553,7 +553,7 @@ export default [
 					<p>
 						ACM AI’s Outreach team collaborates with ACM TeachLA to teach an
 						introductory AI course to local high school students in Los Angeles.
-						An overview of this course content can be found at{" "}
+						An overview of this course content can be found at{' '}
 						<a
 							href="https://teachla.uclaacm.com/classes/ml"
 							target="_blank"
