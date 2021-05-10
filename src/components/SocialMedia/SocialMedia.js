@@ -1,7 +1,7 @@
 import React from 'react';
 
 function SocialMedia(props){
-    const iconType = props.type ? props.type : "";
+    const iconType = props.type ? props.type : '';
 	return (
 		<React.Fragment>
             <a href="https://www.facebook.com/uclaacm" target="_blank" rel="noreferrer noopener"><div className={'sm-icon ' + iconType} id="facebook" /></a>

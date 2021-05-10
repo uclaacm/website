@@ -7,7 +7,7 @@ function Committees(props){
 	return (
 		<div className="committees">
 			{props.committees.map(
-				committee => <Committee key={committee.name} committee={committee} />
+				committee => <Committee key={committee.name} committee={committee} />,
 			)}
 		</div>
 	);
