@@ -8,7 +8,6 @@
     "@testing-library/user-event": "^7.1.2",
     "node-sass": "^4.14.1",
     "react": "^16.14.0",
-    "react-anchorme": "^2.1.0",
     "react-countdown": "^2.2.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
