@@ -224,40 +224,7 @@ export default [
 					src: '/images/committees/design/live_session.png',
 					alt: '',
 				},
-				desc: (
-					<p>
-						<span role="img" aria-label="rocket emoji">
-							🍢
-						</span>{' '}
-						Design Tapas{' '}
-						<span role="img" aria-label="rocket emoji">
-							🍢
-						</span>{' '}
-						is ACM Design’s first workshop series this quarter. Come join us
-						this week to sample a 3D modeling tool called Blender! Blender is a
-						free yet powerful 3D modeling tool that has seen an explosion in
-						popularity recently among enthusiasts and professionals alike{' '}
-						<span role="img" aria-label="computer emoji">
-							💻
-						</span>
-						. We’re going to talk about the very basics of Blender, and we are
-						going to make a cool vending machine at the end of this workshop!
-						This is an introductory workshop to Blender, so no previous
-						experience is required{' '}
-						<span role="img" aria-label="star-struck emoji ">
-							🤩
-						</span>{' '}
-						Feel free to download the software at{' '}
-						<a
-							href="https://www.blender.org/download/"
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							www.blender.org/download/
-						</a>
-						.
-					</p>
-				),
+				desc: 'ACM Design will be having a ✨LIVE DESIGN✨ workshop - if you want to improve your graphic design skills or are just interested in the topic, come watch one of our crazy talented ACM Design officers design live on Figma 🙌 He will be going through his process on how to design from scratch and how to use composition, colors and other elements to elevate your designs 🔥',
 			},
 
 		],
