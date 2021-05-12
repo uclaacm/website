@@ -13,7 +13,7 @@ function Footer(){
 					</div>
 					<div className="footer-item">
 						<h3>Reach us at</h3>
-						<a href="mailto: acm@ucla.edu" className="email"><span>acm@ucla.edu</span></a>
+						<a href="mailto: acm@ucla.edu" className="email"><span className="footer-text">acm@ucla.edu</span></a>
 					</div>
 					{/* the paddingTop is a magic number that replaces a
 						previous empty <h3> tag previously used for spacing. should be replaced later.
@@ -30,7 +30,7 @@ function Footer(){
 					</a>
 				</div>
 				<div id="footer-bottom">
-					<span>&copy; ACM at UCLA 2021.</span>
+					<span className="footer-text">&copy; ACM at UCLA 2021.</span>
 				</div>
 			</div>
 		</div>
