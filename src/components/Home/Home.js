@@ -5,10 +5,10 @@ import Config from '../../config';
 import Banner from '../Banner/Banner';
 import Button from '../Button/Button';
 import SocialMedia from '../SocialMedia/SocialMedia';
+import TGBanner from '../TechGala/ViewBanner/ViewBanner';
 import Carousel from './Carousel/Carousel';
 import Committees from './Committees/Committees';
-import News from './News/News'
-import TGBanner from '../TechGala/ViewBanner/ViewBanner'
+import News from './News/News';
 
 function Home () {
 	return (

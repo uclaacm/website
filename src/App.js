@@ -11,7 +11,7 @@ import Footer from './components/Footer/Footer';
 import Home from './components/Home/Home';
 import Navbar from './components/Navbar/Navbar';
 import Sponsors from './components/Sponsors/Sponsor';
-import TechGala from './components/TechGala/TechGala'
+import TechGala from './components/TechGala/TechGala';
 
 function App() {
   return (

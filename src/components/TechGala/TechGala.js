@@ -1,8 +1,8 @@
 import React from 'react';
 import Config from '../../config';
 import Banner from '../Banner/Banner';
-import TechGalaBanner from './TechGalaBanner/TechGalaBanner'
-import Projects from './Projects/Projects'
+import Projects from './Projects/Projects';
+import TechGalaBanner from './TechGalaBanner/TechGalaBanner';
 
 function TechGala() {
 	return (
