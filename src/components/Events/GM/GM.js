@@ -1,10 +1,18 @@
 import React from 'react';
 
 import Countdown from 'react-countdown';
-import gmData, { boardEvents, committeeData } from '../../../config/gmData';
+import { generalInfo, boardEvents, committeeData } from '../../../config/gmData';
 import Banner from '../../Banner/Banner';
 
-const GM_START_TIME = new Date(gmData.date.year+'-'+gmData.date.month+'-'+gmData.date.day+'T'+gmData.date.startTime+'-'+gmData.date.endTime);
+const { graphicRoute, welcomeSpeaker} = generalInfo;
+const { year , quarter , month , day, startTime, endTime}= generalInfo.date;
+const { youTube, discord, linktree, recording, slides  } = generalInfo.links;
+const { welcome, committees, board, social, timezone } = generalInfo.times;
+
+const GM_START_TIME = new Date(`${year}-${month}-${day}T${startTime}-${endTime}`);
+
+//used to display the long form of date
+const longDate = (GM_START_TIME.toLocaleString('en-US', {weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }));
 
 export default function GM() {
 	const calculateTimeStrings = ({days, hours, minutes, seconds}) => {
@@ -70,12 +78,12 @@ function GMLiveProgram() {
 	}
 	return (
 		<div id="gm-now-wrapper">
-			<h1 id="time-to-gm-headline-now">Thanks for attending {gmData.date.quarter} GM {gmData.date.year}!</h1>
+			<h1 id="time-to-gm-headline-now">Thanks for attending {quarter} GM {year}!</h1>
 			<div id="gm-main-content">
 				<div id="join-links-wrapper">
 					<div className="click-to-join">
 						<div className="should-dim">
-							<a href={gmData.links.slides} target="_blank" rel="noopener noreferrer">
+							<a href={slides} target="_blank" rel="noopener noreferrer">
 								<div id="zoom-join-link-wrapper" className="join-links">
 									<img src={process.env.PUBLIC_URL + '/images/slides.png'} alt="Google Slides logo" className="join-links-img"/>
 								</div>
@@ -85,7 +93,7 @@ function GMLiveProgram() {
 					</div>
 					<div className="click-to-join">
 						<div className="should-dim">
-							<a href={gmData.links.discord} target="_blank" rel="noopener noreferrer">
+							<a href={discord} target="_blank" rel="noopener noreferrer">
 								<div id="discord-join-link-wrapper" className="join-links">
 									<img src={process.env.PUBLIC_URL + '/images/DiscordLogoWordmark.png'} alt="Discord logo" className="join-links-img"/>
 								</div>
@@ -95,26 +103,26 @@ function GMLiveProgram() {
 					</div>
 				</div>
 				<div id="video-wrapper">
-					<iframe title={'ACM ' + gmData.date.quarter + ' GM ' + gmData.date.year +' recording'} src={gmData.links.recording} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+					<iframe title={`ACM ${quarter} GM ${year} recording`} src={recording} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 				</div>
 				<div id="gm-program-wrapper">
 					<h2>Program</h2>
 					<div className="row">
-						<p className="timestamps"> {gmData.times.welcome + ' ' + gmData.times.timezone} </p>
+						<p className="timestamps"> {welcome + ' ' + timezone} </p>
 						<div className="row-description-wrapper">
-							<h3 className="row-description-heading">{gmData.welcomeSpeaker}: Welcome</h3>
+							<h3 className="row-description-heading">{welcomeSpeaker}: Welcome</h3>
 						</div>
 					</div>
 					<div className="row">
-						<p className="timestamps">{gmData.times.committees + ' ' + gmData.times.timezone}</p>
+						<p className="timestamps">{committees + ' ' + timezone}</p>
 						<div className="row-description-wrapper">
 							<h3 className="row-description-heading">Committee Presentations</h3>
-							<p className="row-description-subheading">Learn what each of ACM&rsquo;s eight committees has in store for {gmData.quarter} quarter</p>
+							<p className="row-description-subheading">Learn what each of ACM&rsquo;s eight committees has in store for {quarter} quarter</p>
 							{renderCommitteeSpeakers()}
 						</div>
 					</div>
 					<div className="row">
-						<p className="timestamps">{gmData.times.board + ' ' + gmData.times.timezone}</p>
+						<p className="timestamps">{board + ' ' + timezone}</p>
 						<div className="row-description-wrapper">
 							<h3 className="row-description-heading">ACM Board</h3>
 							<p className="row-description-subheading">See what ACM wide events ACM Board has planned.</p>
@@ -122,11 +130,10 @@ function GMLiveProgram() {
 						</div>
 					</div>
 					<div className="row">
-						<p className="timestamps">{gmData.times.social + ' ' + gmData.times.timezone}</p>
+						<p className="timestamps">{social + ' ' + timezone}</p>
 						<div className="row-description-wrapper">
 							<h3 className="row-description-heading">Tabling and Social</h3>
-							<p className="row-description-subheading">Join us in our official <a href={gmData.links.discord}  target="_blank" rel="noopener noreferrer" id="acm-discord-invite-cta">ACM Discord</a> for Committee tabling and socials</p>
-							{/* <p>Daniel Jaffe, Evan Zhong</p> */}
+							<p className="row-description-subheading">Join us in our official <a href={discord}  target="_blank" rel="noopener noreferrer" id="acm-discord-invite-cta">ACM Discord</a> for Committee tabling and socials</p>
 						</div>
 					</div>
 				</div>
@@ -138,7 +145,7 @@ function GMLiveProgram() {
 function GM_COUNTDOWN(props) {
 	return (
 		<div id="time-to-gm-wrapper">
-			<h1 id="time-to-gm-headline">{gmData.date.quarter} General Meeting {gmData.date.year} begins in</h1>
+			<h1 id="time-to-gm-headline">{quarter} General Meeting {year} begins in</h1>
 			<div id="countdown-wrapper">
 				<div className="countdown-cards">
 					<div className="square-background"/>
@@ -161,10 +168,10 @@ function GM_COUNTDOWN(props) {
 					<div className="countdown-labels">{props.secondString}</div>
 				</div>
 			</div>
-			<h3 id="gm-zoom-release">Zoom link, slides, and other resources will be provided on {GM_START_TIME.toLocaleString('en-US', {weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })} at {gmData.startTime} {gmData.times.timezone}</h3>
-			<p id="posted-to-youtube">The Zoom portion of {gmData.date.quarter} General Meeting {gmData.date.year} will be recorded and posted to our <a href={gmData.links.youTube} target="_blank" rel="noopener noreferrer">YouTube channel</a>.</p>
-			<p id="cant-wait">Can&rsquo;t wait to join in on the fun? Jump in right now with our <a href={gmData.links.linktree} target="_blank" rel="noopener noreferrer">Linktree</a> or hop into the official <a href={gmData.links.discord} target="_blank" rel="noopener noreferrer">Discord</a> and say hello!</p>
-			<img id="gm-graphic" src={process.env.PUBLIC_URL + gmData.graphicRoute} alt={gmData.date.quarter + ' General Meeting ' + gmData.date.year +' graphic'} />
+			<h3 id="gm-zoom-release">Zoom link, slides, and other resources will be provided on {longDate} at {startTime} {timezone}</h3>
+			<p id="posted-to-youtube">The Zoom portion of {quarter} General Meeting {year} will be recorded and posted to our <a href={youTube} target="_blank" rel="noopener noreferrer">YouTube channel</a>.</p>
+			<p id="cant-wait">Can&rsquo;t wait to join in on the fun? Jump in right now with our <a href={linktree} target="_blank" rel="noopener noreferrer">Linktree</a> or hop into the official <a href={discord} target="_blank" rel="noopener noreferrer">Discord</a> and say hello!</p>
+			<img id="gm-graphic" src={process.env.PUBLIC_URL + graphicRoute} alt={quarter + ' General Meeting ' + year +' graphic'} />
 		</div>
 	);
 }
