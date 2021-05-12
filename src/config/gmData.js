@@ -1,5 +1,5 @@
 // hold general information about the GM such as the date of the event, the graphic for the GM, times and links.
-const generalInfo = 
+const generalInfo =
     {
         //date of GM
         date: {
@@ -114,4 +114,4 @@ export {
     generalInfo,
     boardEvents,
     committeeData,
-}
+};
