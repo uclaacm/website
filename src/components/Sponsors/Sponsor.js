@@ -2,8 +2,8 @@ import React from 'react';
 
 import Config from '../../config';
 
-import Button from '../Button/Button';
 import Banner from '../Banner/Banner';
+import Button from '../Button/Button';
 
 function Sponsors() {
 	return (
@@ -14,10 +14,10 @@ function Sponsors() {
 				<p className="subheading">A big thank-you to the <b>UCLA Computer Science Department</b> for their continuous partnership with and support of ACM at UCLA. Shout-out to <b>UCLA ResLife</b> for providing logistical assistance and stellar venues for our events.</p>
 				<div className="sponsor-container">
 					<a href="https://www.cs.ucla.edu" target="_blank" rel="noreferrer noopener">
-						<img className="sponsor" src={process.env.PUBLIC_URL + "/images/sponsors/ucla_cs_dept.png"} alt="UCLA CS Dept Logo" />
+						<img className="sponsor" src={process.env.PUBLIC_URL + '/images/sponsors/ucla_cs_dept.png'} alt="UCLA CS Dept Logo" />
 					</a>
 					<a href="https://reslife.ucla.edu" target="_blank" rel="noreferrer noopener">
-						<img className="sponsor" src={process.env.PUBLIC_URL + "/images/sponsors/reslife.svg"} alt="UCLA ResLife Logo" />
+						<img className="sponsor" src={process.env.PUBLIC_URL + '/images/sponsors/reslife.svg'} alt="UCLA ResLife Logo" />
 					</a>
 				</div>
 				<p className="subheading">A special thanks to all of our UCLA Computer Science industry affiliates for their support:</p>
@@ -25,7 +25,7 @@ function Sponsors() {
 					{Config.sponsors.map(sponsor =>
 						<a href={sponsor.link} target="_blank" rel="noreferrer noopener" key={sponsor.name}>
 						<img className="sponsor" alt={sponsor.name} src={process.env.PUBLIC_URL + sponsor.image} />
-						</a>
+						</a>,
 					)}
 				</div>
 				<h3>Interesting in becoming a sponsor?</h3>

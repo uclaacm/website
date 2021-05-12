@@ -1,28 +1,29 @@
 import React from 'react';
 
-import Banner from '../../Banner/Banner'
 import Countdown from 'react-countdown';
+import Banner from '../../Banner/Banner';
 
 const GM_START_TIME = new Date('2021-01-07T18:30:00-08:00'); //January 7th 2021 at 6:30 PST
 
 export default function GM() {
 	const calculateTimeStrings = ({days, hours, minutes, seconds}) => {
-		let dayString = "Day";
-		let hourString = "Hour";
-		let minuteString = "Minute";
-		let secondString = "Second";
-		if(days !== 1){ dayString += "s" }
-		if(hours !== 1){ hourString += "s" }
-		if(minutes !== 1){ minuteString += "s" }
-		if(seconds !== 1){ secondString += "s" }
+		let dayString = 'Day';
+		let hourString = 'Hour';
+		let minuteString = 'Minute';
+		let secondString = 'Second';
+		if(days !== 1){ dayString += 's'; }
+		if(hours !== 1){ hourString += 's'; }
+		if(minutes !== 1){ minuteString += 's'; }
+		if(seconds !== 1){ secondString += 's'; }
 
 		return {dayString, hourString, minuteString, secondString};
-	}
+	};
 
 	const renderCountdownOrNow = ({ days, hours, minutes, seconds, completed }) => {
-		if (completed){ return <GMLiveProgram/> }
+		if (completed){ return <GMLiveProgram/>; }
 		else {
-			const {dayString, hourString, minuteString, secondString} = calculateTimeStrings({days, hours, minutes, seconds});
+			const {dayString, hourString, minuteString, secondString} =
+				calculateTimeStrings({days, hours, minutes, seconds});
 
 			return (<GM_COUNTDOWN days={days} hours={hours} minutes={minutes} seconds={seconds}
 			dayString={dayString} hourString={hourString} minuteString={minuteString} secondString={secondString}/>);
@@ -41,66 +42,66 @@ function GMLiveProgram() {
 	function renderCommitteeSpeakers() {
 		const committeeData = [
 			{
-				id: "studio",
-				displayName: "ACM Studio",
-				speakers: "Kade Adams, Evan Charfauros",
-				logo: "/images/diamonds/studio_diamond.svg",
+				id: 'studio',
+				displayName: 'ACM Studio',
+				speakers: 'Kade Adams, Evan Charfauros',
+				logo: '/images/diamonds/studio_diamond.svg',
 			},
 			{
-				id: "icpc",
-				displayName: "ACM ICPC",
-				speakers: "Nikil Selvam",
-				logo: "/images/diamonds/icpc_diamond.svg",
+				id: 'icpc',
+				displayName: 'ACM ICPC',
+				speakers: 'Nikil Selvam',
+				logo: '/images/diamonds/icpc_diamond.svg',
 			},
 			{
-				id: "design",
-				displayName: "ACM Design",
-				speakers: "Haki Alpay, Tomoki Fukazawa",
-				logo: "/images/diamonds/design_diamond.svg",
+				id: 'design',
+				displayName: 'ACM Design',
+				speakers: 'Haki Alpay, Tomoki Fukazawa',
+				logo: '/images/diamonds/design_diamond.svg',
 			},
 			{
-				id: "cyber",
-				displayName: "ACM Cyber",
-				speakers: "Disha Zambani, Ellie Cheng",
-				logo: "/images/diamonds/cyber_diamond.svg",
+				id: 'cyber',
+				displayName: 'ACM Cyber',
+				speakers: 'Disha Zambani, Ellie Cheng',
+				logo: '/images/diamonds/cyber_diamond.svg',
 			},
 			{
-				id: "teach",
-				displayName: "ACM Teach LA",
-				speakers: "Matt Wang",
-				logo: "/images/diamonds/teachla_diamond.svg",
+				id: 'teach',
+				displayName: 'ACM Teach LA',
+				speakers: 'Matt Wang',
+				logo: '/images/diamonds/teachla_diamond.svg',
 			},
 			{
-				id: "w",
-				displayName: "ACM W",
-				speakers: "Julia Baylon",
-				logo: "/images/diamonds/w_diamond.svg",
+				id: 'w',
+				displayName: 'ACM W',
+				speakers: 'Julia Baylon',
+				logo: '/images/diamonds/w_diamond.svg',
 			},
 			{
-				id: "ai",
-				displayName: "ACM AI",
-				speakers: "John Dang",
-				logo: "/images/diamonds/ai_diamond.svg",
+				id: 'ai',
+				displayName: 'ACM AI',
+				speakers: 'John Dang',
+				logo: '/images/diamonds/ai_diamond.svg',
 			},
 			{
-				id: "hack",
-				displayName: "ACM Hack",
-				speakers: "Raji Jadhav",
-				logo: "/images/diamonds/hack_diamond.svg",
+				id: 'hack',
+				displayName: 'ACM Hack',
+				speakers: 'Raji Jadhav',
+				logo: '/images/diamonds/hack_diamond.svg',
 			},
-		]
+		];
 		return committeeData.map((committee) => {
 			const {id, logo, displayName, speakers} = committee;
 			return (
 				<p key={id}>
 					<span id={id}>
-						<img src={process.env.PUBLIC_URL + logo} alt={"Logo for " + displayName} className="committee-logos"/>
+						<img src={process.env.PUBLIC_URL + logo} alt={'Logo for ' + displayName} className="committee-logos"/>
 						{displayName}
 					</span>
 					: {speakers}
 				</p>
 			);
-		})
+		});
 	}
 	return (
 		<div id="gm-now-wrapper">
@@ -111,7 +112,7 @@ function GMLiveProgram() {
 						<div className="should-dim">
 							<a href="https://docs.google.com/presentation/d/1eF2d6VmHo1Pq-2MfXg0ezLSnnPz2bUWXHdyVjYb7WDE/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
 								<div id="zoom-join-link-wrapper" className="join-links">
-									<img src={process.env.PUBLIC_URL + "/images/slides.png"} alt="Google Slides logo" className="join-links-img"/>
+									<img src={process.env.PUBLIC_URL + '/images/slides.png'} alt="Google Slides logo" className="join-links-img"/>
 								</div>
 								<p className="join-us">View the slides we used during GM</p>
 							</a>
@@ -121,7 +122,7 @@ function GMLiveProgram() {
 						<div className="should-dim">
 							<a href="https://bit.ly/ACMdiscord" target="_blank" rel="noopener noreferrer">
 								<div id="discord-join-link-wrapper" className="join-links">
-									<img src={process.env.PUBLIC_URL + "/images/DiscordLogoWordmark.png"} alt="Discord logo" className="join-links-img"/>
+									<img src={process.env.PUBLIC_URL + '/images/DiscordLogoWordmark.png'} alt="Discord logo" className="join-links-img"/>
 								</div>
 								<p className="join-us">Missed GM? Join us in our Discord!</p>
 							</a>
@@ -168,7 +169,7 @@ function GMLiveProgram() {
 				</div>
 			</div>
 		</div>
-	)
+	);
 }
 
 function GM_COUNTDOWN(props) {
@@ -200,7 +201,7 @@ function GM_COUNTDOWN(props) {
 			<h3 id="gm-zoom-release">Zoom link, slides, and other resources will be provided on Thursday, January 7th, 2021 at 6:30 p.m. PST</h3>
 			<p id="posted-to-youtube">The Zoom portion of Winter General Meeting 2021 will be recorded and posted to our <a href="https://www.youtube.com/c/acmucla" target="_blank" rel="noopener noreferrer">YouTube channel</a>.</p>
 			<p id="cant-wait">Can&rsquo;t wait to join in on the fun? Jump in right now with our <a href="https://linktr.ee/acmucla" target="_blank" rel="noopener noreferrer">Linktree</a> or hop into the official <a href="https://bit.ly/ACMdiscord" target="_blank" rel="noopener noreferrer">Discord</a> and say hello!</p>
-			<img id="gm-graphic" src={process.env.PUBLIC_URL + "/images/Winter_GM_2021_graphic.png"} alt="Winter General Meeting 2021 graphic" />
+			<img id="gm-graphic" src={process.env.PUBLIC_URL + '/images/Winter_GM_2021_graphic.png'} alt="Winter General Meeting 2021 graphic" />
 		</div>
 	);
 }

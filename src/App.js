@@ -3,15 +3,14 @@ import './App.scss';
 
 import { Route, Switch, Redirect, BrowserRouter } from 'react-router-dom';
 
-import Footer from './components/Footer/Footer';
-import Navbar from './components/Navbar/Navbar';
-
-import Home from './components/Home/Home';
 import About from './components/About/About';
-import Sponsors from './components/Sponsors/Sponsor';
-import Events from './components/Events/Event';
 import Committees from './components/Committees/Committees';
+import Events from './components/Events/Event';
 import GM from './components/Events/GM/GM';
+import Footer from './components/Footer/Footer';
+import Home from './components/Home/Home';
+import Navbar from './components/Navbar/Navbar';
+import Sponsors from './components/Sponsors/Sponsor';
 import TechGala from './components/TechGala/TechGala'
 
 function App() {

@@ -1,8 +1,8 @@
 import React from 'react';
 import Config from '../../config';
 
-import SocialMedia from '../SocialMedia/SocialMedia';
 import Banner from '../Banner/Banner';
+import SocialMedia from '../SocialMedia/SocialMedia';
 import Officers from './Officers/Officers';
 
 function About() {
@@ -23,7 +23,7 @@ function About() {
 			</div>
 			<div className="content-section right">
 				<div className="ornament image-ornament image-ornament-left">
-					<img src={process.env.PUBLIC_URL + "/images/acm_committees.png"} alt="the logos of all ACM committees" />
+					<img src={process.env.PUBLIC_URL + '/images/acm_committees.png'} alt="the logos of all ACM committees" />
 				</div>
 				<div className="text-section">
 					<h1>What are ACM committees?</h1>
@@ -32,7 +32,7 @@ function About() {
 			</div>
 			<div className="content-section left">
 				<div className="ornament image-ornament image-ornament-right">
-					<img src={process.env.PUBLIC_URL + "/images/how-to-join.png"} alt="photos of acm events" />
+					<img src={process.env.PUBLIC_URL + '/images/how-to-join.png'} alt="photos of acm events" />
 				</div>
 				<div className="text-section">
 					<h1>How do I get involved?</h1>
