@@ -22,6 +22,7 @@ module.exports = {
     },
   },
   rules: {
+    'eol-last': ['error', 'always'],
     'react/prop-types': 'off',
 
     // many of these rules are taken from our friends at Creative Labs;
