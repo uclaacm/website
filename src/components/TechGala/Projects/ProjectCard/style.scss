@@ -1,0 +1,57 @@
+.intro-row {
+    margin-bottom: 24px;
+}
+
+.right-col {
+    display: none;
+}
+
+@media (min-width: 688px) {
+
+    .left-col {
+        float: left;
+        text-align: left;
+        width: 45%;
+    }
+
+    .right-col {
+        float: right;
+        width: 50%;
+        display: block;
+        margin-top: 30px;
+
+        img {
+            box-shadow: 0 0 1pt 0;
+            max-height: auto;
+        }
+    }
+
+    .show-mobile {
+        display: none;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+
+    .intro-row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .link {
+        color: #1E6CFF;
+    }
+}
+
+.winner {
+	font-family: $font-header;
+    font-weight: bold;
+	font-size: 1.1em;
+    color: #1E6CFF;
+}
