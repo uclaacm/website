@@ -1,4 +1,5 @@
 import React from 'react';
+import AboutSplashImage from '../../assets/about1.png';
 import Config from '../../config';
 
 import Banner from '../Banner/Banner';
@@ -11,7 +12,7 @@ function About() {
 			<Banner decorative />
 			<div className="content-section">
 				<div className="ornament square-ornament">
-					<div className="square-splash" />
+					<img className="square-splash" src={AboutSplashImage} alt="a picture of acm students at our annual CS BBQ!" />
 					<div className="square-small" />
 					<div className="square-tiny" />
 				</div>

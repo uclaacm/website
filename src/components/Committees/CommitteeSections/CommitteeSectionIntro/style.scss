@@ -13,87 +13,34 @@
     letter-spacing: .8em;
 }
 
-.learn-more .icon {
-    height: 40px;
-    width: 40px;
-    border-radius: 11.2px;
-    margin: 0 10px 0;
-    display: inline-block;
-    -webkit-mask-size: cover;
-    mask-size: cover;  
-
-    &#website {
-        background-color: transparent;
-        background-size: cover;
-        height: 50px;
-        width: 50px;
-        margin: 0 10px -5px;
+.learn-more .icon-link {
+    font-size: 2.5rem;
+    :hover {
+        color: black;
     }
-    &#facebook {
-        -webkit-mask: url(/images/social_media/facebookDark.svg);
-        mask: url(/images/social_media/facebookDark.svg);
+    &.hack {
+        color: $hack-purple;
     }
-    &#twitter {
-         -webkit-mask: url(/images/social_media/twitterDark.svg);
-         mask: url(/images/social_media/twitterDark.svg); 
-        }
-    &#github {
-         -webkit-mask: url(/images/social_media/githubDark.svg);
-         mask: url(/images/social_media/githubDark.svg); 
-        }
-    &#medium {
-         -webkit-mask: url(/images/social_media/mediumDark.svg);
-         mask: url(/images/social_media/mediumDark.svg); 
-        }
-    &#instagram {
-         -webkit-mask: url(/images/social_media/instagramDark.svg);
-         mask: url(/images/social_media/instagramDark.svg); 
-        }
-    &#discord {
-         -webkit-mask: url(/images/social_media/discordDark.svg);
-         mask: url(/images/social_media/discordDark.svg); 
-        }
-    &#youtube {
-         -webkit-mask: url(/images/social_media/youtubeDark.svg);
-         mask: url(/images/social_media/youtubeDark.svg); 
-        }
-
-    &.hack    { 
-        background-color: $hack-purple;
-        background-image: url(/images/diamonds/hack_diamond.svg);
-        }        
-	&.ai      { 
-        background-color: $ai-arctic;
-        background-image: url(/images/diamonds/ai_diamond.svg);
-        }
-	&.w       { 
-        background-color: $w-teal;
-        background-image: url(/images/diamonds/w_diamond.svg);
-        }
-	&.cyber   { 
-        background-color: $cyber-amber;
-        background-image: url(/images/diamonds/cyber_diamond.svg);
-        }
-	&.studio  { 
-        background-color: $studio-raspberry;
-        background-image: url(/images/diamonds/studio_diamond.svg);
-        }
-	&.icpc    { 
-        background-color: $icpc-tangerine;
-        background-image: url(/images/diamonds/icpc_diamond.svg);
-        }
-    &.design  { 
-        background-color: $design-orange; 
-        background-image: url(/images/diamonds/design_diamond.svg);
-        }
-    &.teachla { 
-        background-color: $teachla-green;         
-        background-image: url(/images/diamonds/teachLA_diamond.svg);
-        }
-    
-    &:hover {
-        transform: scale(1.05);
-        cursor: pointer;
+	&.ai {
+        color: $ai-arctic;
+    }
+	&.w {
+        color: $w-teal;
+    }
+	&.cyber {
+        color: $cyber-amber;
+    }
+	&.studio {
+        color: $studio-raspberry;
+    }
+	&.icpc {
+        color: $icpc-tangerine;
+    }
+    &.design {
+        color: $design-orange;
+    }
+    &.teachla {
+        color: $teachla-green;
     }
 }
 
@@ -119,15 +66,12 @@
     .show-mobile {
         display: none;
     }
-        
+
     .learn-more {
         font-size: .9em;
 
         h3 {
             margin: 0 0 20px 0;
-        }
-        .icon {
-            margin: 0 10px 0 0;
         }
     }
 

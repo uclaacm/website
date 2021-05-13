@@ -3,15 +3,19 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-brands-svg-icons": "^5.15.3",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@fortawesome/react-fontawesome": "^0.1.14",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
-    "node-sass": "^4.14.1",
+    "node-sass": "^6.0.0",
     "react": "^16.14.0",
     "react-countdown": "^2.2.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "^3.4.3"
+    "react-scripts": "^4.0.3"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -51,7 +55,7 @@
     ]
   },
   "devDependencies": {
-    "eslint": "^6.6.0",
+    "eslint": "^7.26.0",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jest": "^24.3.6"
   }
