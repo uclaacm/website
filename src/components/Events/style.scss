@@ -7,10 +7,8 @@
     width: 35px;
     border-radius: 2px;
     margin: 0px 3px;
-     display: inline-block;
-    vertical-align: middle; 
-
-    &#youtube { background-image: url(/images/social_media/youtubeDark.svg); }
+    display: inline-block;
+    vertical-align: middle;
 
     &:hover {
         transform: scale(1.03);
