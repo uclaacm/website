@@ -50,9 +50,9 @@ export default [
 		image: '/images/officers/NikilSelvam.jpg',
 	},
 	{
-		name: 'Disha Zambani',
+		name: 'Henry Chang',
 		title: 'Co-President, Cyber',
-		image: '/images/officers/DishaZambani.jpg',
+		image: '/images/officers/HenryChang.jpg',
 	},
 	{
 		name: 'Joshua Lee',
