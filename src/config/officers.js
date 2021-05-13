@@ -55,9 +55,9 @@ export default [
 		image: '/images/officers/DishaZambani.jpg',
 	},
 	{
-		name: 'Ellie Cheng',
+		name: 'Joshua Lee',
 		title: 'Co-President, Cyber',
-		image: '/images/officers/EllieCheng.jpg',
+		image: '/images/officers/JoshLee.jpg',
 	},
 	{
 		name: 'Sophie Schoenmeyer',
