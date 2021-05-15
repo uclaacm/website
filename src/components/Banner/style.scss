@@ -33,9 +33,9 @@
 		margin-bottom: 6px;
 		border-radius: 14px;
 		transition: background 2.5s ease-in-out;
+		background-color: $acm-cobalt;
 	}
 
-	.square       { background-color: $acm-cobalt; }
 	.square.dark  { background-color: $acm-black; }
 	.square.light { background-color: $acm-tint; }
 	.square.white { background-color: white !important; }

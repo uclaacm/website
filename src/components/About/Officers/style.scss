@@ -15,11 +15,6 @@
 		transition: transform 0.1s;
 		// border: 1px solid red;
 
-		&:hover {
-			// cursor: pointer;
-			// transform: scale(1.08);
-		}
-
 		img {
 			margin: 25px 10px 0px 10px;
 			height: 70px;
@@ -52,7 +47,7 @@
 			p {
 				display: inline-block;
 				font-family: $font-body;
-				font-color: $font-primary-color;
+				color: $font-primary-color;
 				margin: 0px 0px;
 				margin-top: -5px;
 				font-size: 0.7em;
