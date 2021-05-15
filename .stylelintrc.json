@@ -9,6 +9,9 @@
       "selector-max-id": null,
       "selector-no-qualifying-type": null,
       "property-no-vendor-prefix": null, 
+      
+      "max-nesting-depth": null,
+      "selector-max-compound-selectors": null,
 
       "color-hex-case": "upper"
     }

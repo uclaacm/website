@@ -1,32 +1,32 @@
 #carousel {
-	height: 480px;
-	min-width: 100%;
-	background: #FAFAFA;
-	overflow: hidden;
-	position: relative;
+  background: #FAFAFA;
+  height: 480px;
+  min-width: 100%;
+  overflow: hidden;
+  position: relative;
 
-	#carousel-inner {
-		width: 1600px;
-	}
+  #carousel-inner {
+    width: 1600px;
+  }
 
-	.carousel-sect {
-		position: absolute;
-		background: linear-gradient(rgba($acm-black, 0.8), rgba($acm-black, 1.0));
-		width: 1600px;
-		top: 0;
+  .carousel-sect {
+    background: linear-gradient(rgba($acm-black, 0.8), rgba($acm-black, 1));
+    position: absolute;
+    top: 0;
+    width: 1600px;
 
-		div {
-			width: 360px;
-			height: 240px;
-			opacity: 0.9;
-			background-size: cover;
-			display: inline-block;
-			vertical-align: top;
-			margin: 0;
-			padding: 0;
-			transition: 0.35s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+    div {
+      background-size: cover;
+      display: inline-block;
+      height: 240px;
+      margin: 0;
+      opacity: 0.9;
+      padding: 0;
+      transition: 0.35s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+      vertical-align: top;
+      width: 360px;
 
-			&:hover { opacity: 0.6; }
-		}
-	}
+      &:hover { opacity: 0.6; }
+    }
+  }
 }

@@ -1,18 +1,20 @@
-.icon-link{
-    color: $acm-cobalt;
+.icon-link {
+  color: $acm-cobalt;
 
-    &:hover {
-        cursor: pointer;
-        color: $acm-black;
-    }
+  &:hover {
+    color: $acm-black;
+    cursor: pointer;
+  }
 }
 
 .social-media-icon-container {
-    font-size: 2.5rem;
-    &.light > .icon-link {
-        color: white;
-        :hover {
-            color: $acm-cobalt;
-        }
+  font-size: 2.5rem;
+
+  &.light > .icon-link {
+    color: white;
+
+    :hover {
+      color: $acm-cobalt;
     }
+  }
 }

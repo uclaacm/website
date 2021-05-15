@@ -1,28 +1,28 @@
 .banner-section {
-	max-width: 800px;
-	padding: 0px 20px;
-	position: relative;
-	margin: auto;
+  margin: auto;
+  max-width: 800px;
+  padding: 0 20px;
+  position: relative;
 
-	h2 {
-		color: white;
-		font-family: $font-header;
-		padding: 20px;
-		font-size: 1.6em;
-		margin: 0;
-	}
+  h2 {
+    color: white;
+    font-family: $font-header;
+    font-size: 1.6em;
+    margin: 0;
+    padding: 20px;
+  }
 }
 
 #banner-right {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
 #banner-left {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }

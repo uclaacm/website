@@ -1,57 +1,56 @@
 .intro-row {
-    margin-bottom: 24px;
+  margin-bottom: 24px;
 }
 
 .right-col {
-    display: none;
+  display: none;
 }
 
 @media (min-width: 688px) {
+  .left-col {
+    float: left;
+    text-align: left;
+    width: 45%;
+  }
 
-    .left-col {
-        float: left;
-        text-align: left;
-        width: 45%;
+  .right-col {
+    display: block;
+    float: right;
+    margin-top: 30px;
+    width: 50%;
+
+    img {
+      box-shadow: 0 0 1pt 0;
+      max-height: auto;
     }
+  }
 
-    .right-col {
-        float: right;
-        width: 50%;
-        display: block;
-        margin-top: 30px;
+  .show-mobile {
+    display: none;
+  }
 
-        img {
-            box-shadow: 0 0 1pt 0;
-            max-height: auto;
-        }
-    }
+  h2 {
+    font-size: 2em;
+  }
 
-    .show-mobile {
-        display: none;
-    }
+  p {
+    font-size: 1.2em;
+  }
 
-    h2 {
-        font-size: 2em;
-    }
+  .intro-row::after {
+    clear: both;
+    content: '';
+    display: table;
+  }
 
-    p {
-        font-size: 1.2em;
-    }
-
-    .intro-row:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-
-    .link {
-        color: #1E6CFF;
-    }
+  .link {
+    color: #1E6CFF;
+  }
 }
 
 .winner {
-	font-family: $font-header;
-    font-weight: bold;
-	font-size: 1.1em;
-    color: #1E6CFF;
+  color: #1E6CFF;
+  font-family: $font-header;
+  font-size: 1.1em;
+  font-weight: bold;
 }

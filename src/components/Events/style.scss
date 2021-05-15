@@ -1,22 +1,22 @@
 .events-container {
-    text-align: center;
+  text-align: center;
 }
 
 .events-sm {
-    height: 30px;
-    width: 35px;
-    border-radius: 2px;
-    margin: 0px 3px;
-    display: inline-block;
-    vertical-align: middle;
+  border-radius: 2px;
+  display: inline-block;
+  height: 30px;
+  margin: 0 3px;
+  vertical-align: middle;
+  width: 35px;
 
-    &:hover {
-        transform: scale(1.03);
-        cursor: pointer;
-    }
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+  }
 }
 
 
 h2 {
-    font-family: $font-display;
+  font-family: $font-display;
 }

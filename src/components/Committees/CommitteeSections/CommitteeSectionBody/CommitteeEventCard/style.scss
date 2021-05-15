@@ -1,28 +1,29 @@
 
 .info-card-container {
-    flex: 0 0 100%;
-    flex-direction: column;
-    margin: 0rem 1% 2rem 1%;
-    text-align: left;
+  flex: 0 0 100%;
+  flex-direction: column;
+  margin: 0 1% 2rem;
+  text-align: left;
     
-    img {
-        height: 160px;
-        object-fit: cover;
-    }
-    h2 {
-        margin: 20px 10px 20px 0px;
-    }
+  img {
+    height: 160px;
+    object-fit: cover;
+  }
 
-    p {
-        margin: 0 10px 0 10px;
-    }
+  h2 {
+    margin: 20px 10px 20px 0;
+  }
 
-    @media (min-width: 688px) {
-        flex: 0 0 48%;
-    }
+  p {
+    margin: 0 10px;
+  }
 
-    @media (min-width: 900px) {
-        flex: 0 0 31%;
-    }
+  @media (min-width: 688px) {
+    flex: 0 0 48%;
+  }
+
+  @media (min-width: 900px) {
+    flex: 0 0 31%;
+  }
 
 }
