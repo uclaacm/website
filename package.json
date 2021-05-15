@@ -25,7 +25,9 @@
     "lint-js": "eslint \"**/*.js\"",
     "lint-js-fix": "eslint --fix \"**/*.js\"",
     "lint-css": "stylelint \"**/*.css\" \"**/*.scss\"",
-    "lint-css-fix": "stylelint --fix \"**/*.css\" \"**/*.scss\""
+    "lint-css-fix": "stylelint --fix \"**/*.css\" \"**/*.scss\"",
+    "lint": "eslint \"**/*.js\" && stylelint \"**/*.css\" \"**/*.scss\"",
+    "lint-fix": "eslint --fix \"**/*.js\" && stylelint --fix \"**/*.css\" \"**/*.scss\""
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -61,7 +63,7 @@
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jest": "^24.3.6",
     "stylelint": "^13.13.1",
-    "stylelint-config-standard": "^22.0.0",
+    "stylelint-config-recommended": "^5.0.0",
     "stylelint-scss": "^3.19.0"
   }
 }
