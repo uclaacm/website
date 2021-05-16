@@ -1,95 +1,96 @@
 .content-section {
-	max-width: 800px;
-	padding: 0px 20px;
-	position: relative;
-	margin: auto;
+  margin: auto;
+  max-width: 800px;
+  padding: 0 20px;
+  position: relative;
 
-	h1 {
-		color: $font-primary-color;
-		font-family: $font-header;
-		padding: 20px;
-		font-size: 2em;
-		margin: 0;
-	}
+  h1 {
+    color: $font-primary-color;
+    font-family: $font-header;
+    font-size: 2em;
+    margin: 0;
+    padding: 20px;
+  }
 
-	h2 {
-		color: $font-primary-color;
-		font-family: $font-header;
-		padding: 20px;
-		font-size: 1.5em;
-		margin: 0;
-	}
+  h2 {
+    color: $font-primary-color;
+    font-family: $font-header;
+    font-size: 1.5em;
+    margin: 0;
+    padding: 20px;
+  }
 
-	p {
-		font-family: $font-body;
-		font-size: 0.8em;
-		line-height: 150%;
-		margin: 0 22px 14px 22px;
+  p {
+    font-family: $font-body;
+    font-size: 0.8em;
+    line-height: 150%;
+    margin: 0 22px 14px;
 
-		&.subheading {
-			font-size: 1em;
-		}
-	}
+    &.subheading {
+      font-size: 1em;
+    }
+  }
 
-	.button-section {
-		width: 100%;
-		text-align: center;
-		margin: 20px 0px;
-	}
+  .button-section {
+    margin: 20px 0;
+    text-align: center;
+    width: 100%;
+  }
 }
 
 .center {
-	text-align: center;
+  text-align: center;
 }
 
 .right {
-	text-align: right;
+  text-align: right;
 }
 
 .inline {
-	display: inline-block;
+  display: inline-block;
 }
 
 .full-width {
-	width: 100%;
+  width: 100%;
 }
 
 .half-width {
-	width: 50%;
-	text-align: center;
+  text-align: center;
+  width: 50%;
 }
 
 .blue {
-	background-color: $acm-cobalt;
+  background-color: $acm-cobalt;
 
-	h1, h2 {
-		color: white;
-		padding: 20px 0px;
-		line-height: 135%;
-		font-size: 2em;
-	}
+  h1,
+  h2 {
+    color: white;
+    font-size: 2em;
+    line-height: 135%;
+    padding: 20px 0;
+  }
 }
 
 #sign-up-section {
-	display: flex;
-	flex-direction: row;
+  display: flex;
+  flex-direction: row;
 
-	#sign-up-right {
-		display: flex;
-		align-items: center;
-  	justify-content: center;
-		text-align: center;
-	}
+  #sign-up-right {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
 }
 
 @media (max-width: 600px) {
-	.half-width {
-		width: 100%;
-	}
+  .half-width {
+    width: 100%;
+  }
 
-	#sign-up-section {
-		text-align: center;
-		flex-direction: column;
-		padding-bottom: 40px;
-	}
+  #sign-up-section {
+    flex-direction: column;
+    padding-bottom: 40px;
+    text-align: center;
+  }
 }

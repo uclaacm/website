@@ -1,103 +1,103 @@
 .banner {
-	width: 100%;
-	overflow: hidden;
-	height: 360px;
-	position: relative;
+  height: 360px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
 
-	&.decorative {
-		height: 150px;
-		margin-top: -20px;
-	}
+  &.decorative {
+    height: 150px;
+    margin-top: -20px;
+  }
 
-	.square-col-container {
-		width: 150%;
-		height: 100%;
-		margin-left: -25%;
-		overflow: hidden;
-		display: flex;
-		justify-content: center;
-		flex-direction: row;
-	}
+  .square-col-container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    justify-content: center;
+    margin-left: -25%;
+    overflow: hidden;
+    width: 150%;
+  }
 
-	.square-col {
-		height: 100%;
-		width: 50px;
-		margin: -20px 10px;
-		padding: 0px 5px;
-		transform: rotate(45deg);
-	}
+  .square-col {
+    height: 100%;
+    margin: -20px 10px;
+    padding: 0 5px;
+    transform: rotate(45deg);
+    width: 50px;
+  }
 
-	.square {
-		height: 50px;
-		width: 50px;
-		margin-bottom: 6px;
-		border-radius: 14px;
-		transition: background 2.5s ease-in-out;
-	}
+  .square {
+    background-color: $acm-cobalt;
+    border-radius: 14px;
+    height: 50px;
+    margin-bottom: 6px;
+    transition: background 2.5s ease-in-out;
+    width: 50px;
+  }
 
-	.square       { background-color: $acm-cobalt; }
-	.square.dark  { background-color: $acm-black; }
-	.square.light { background-color: $acm-tint; }
-	.square.white { background-color: white !important; }
+  .square.dark { background-color: $acm-black; }
+  .square.light { background-color: $acm-tint; }
+  .square.white { background-color: white !important; }
 
-	&.hack .square       { background-color: $hack-purple; }
-	&.hack .square.dark  { background-color: $hack-black; }
-	&.hack .square.light { background-color: $hack-tint; }
+  &.hack .square { background-color: $hack-purple; }
+  &.hack .square.dark { background-color: $hack-black; }
+  &.hack .square.light { background-color: $hack-tint; }
 
-	&.ai .square       { background-color: $ai-arctic; }
-	&.ai .square.dark  { background-color: $ai-black; }
-	&.ai .square.light { background-color: $ai-tint; }
+  &.ai .square { background-color: $ai-arctic; }
+  &.ai .square.dark { background-color: $ai-black; }
+  &.ai .square.light { background-color: $ai-tint; }
 
-	&.w .square       { background-color: $w-teal; }
-	&.w .square.dark  { background-color: $w-black; }
-	&.w .square.light { background-color: $w-tint; }
+  &.w .square { background-color: $w-teal; }
+  &.w .square.dark { background-color: $w-black; }
+  &.w .square.light { background-color: $w-tint; }
 
-	&.cyber .square       { background-color: $cyber-amber; }
-	&.cyber .square.dark  { background-color: $cyber-black; }
-	&.cyber .square.light { background-color: $cyber-tint; }
+  &.cyber .square { background-color: $cyber-amber; }
+  &.cyber .square.dark { background-color: $cyber-black; }
+  &.cyber .square.light { background-color: $cyber-tint; }
 
-	&.studio .square       { background-color: $studio-raspberry; }
-	&.studio .square.dark  { background-color: $studio-black; }
-	&.studio .square.light { background-color: $studio-tint; }
+  &.studio .square { background-color: $studio-raspberry; }
+  &.studio .square.dark { background-color: $studio-black; }
+  &.studio .square.light { background-color: $studio-tint; }
 
-	&.icpc .square       { background-color: $icpc-tangerine; }
-	&.icpc .square.dark  { background-color: $icpc-black; }
-	&.icpc .square.light { background-color: $icpc-tint; }
+  &.icpc .square { background-color: $icpc-tangerine; }
+  &.icpc .square.dark { background-color: $icpc-black; }
+  &.icpc .square.light { background-color: $icpc-tint; }
 
-	&.design .square       { background-color: $design-orange; }
-	&.design .square.dark  { background-color: $design-black; }
-	&.design .square.light { background-color: $design-tint; }
+  &.design .square { background-color: $design-orange; }
+  &.design .square.dark { background-color: $design-black; }
+  &.design .square.light { background-color: $design-tint; }
 
-	&.teachla .square       { background-color: $teachla-green; }
-	&.teachla .square.dark  { background-color: $teachla-black; }
-	&.teachla .square.light { background-color: $teachla-tint; }
+  &.teachla .square { background-color: $teachla-green; }
+  &.teachla .square.dark { background-color: $teachla-black; }
+  &.teachla .square.light { background-color: $teachla-tint; }
 
-	.title {
-		position: absolute;
-		top: 30px;
-		left: 0;
-		height: 280px;
-		width: 100%;
-		line-height: 280px;
-		text-align: center;
+  .title {
+    height: 280px;
+    left: 0;
+    line-height: 280px;
+    position: absolute;
+    text-align: center;
+    top: 30px;
+    width: 100%;
 
-		h1 {
-			font-family: $font-display;
-			font-weight: bold;
-			color: $acm-cobalt;
-			margin: 0;
-			padding: 0;
-			font-size: 2.3em;
-			transition: color 2.5s ease-in-out;
-		}
-	}
+    h1 {
+      color: $acm-cobalt;
+      font-family: $font-display;
+      font-size: 2.3em;
+      font-weight: bold;
+      margin: 0;
+      padding: 0;
+      transition: color 2.5s ease-in-out;
+    }
+  }
 
-	&.hack    .title h1 { color: $hack-purple; }
-	&.ai      .title h1 { color: $ai-arctic; }
-	&.w       .title h1 { color: $w-teal; }
-	&.cyber   .title h1 { color: $cyber-amber; }
-	&.studio  .title h1 { color: $studio-raspberry; }
-	&.icpc    .title h1 { color: $icpc-tangerine; }
-	&.design  .title h1 { color: $design-orange; }
-	&.teachla .title h1 { color: $teachla-green; }
+  &.hack    .title h1 { color: $hack-purple; }
+  &.ai      .title h1 { color: $ai-arctic; }
+  &.w       .title h1 { color: $w-teal; }
+  &.cyber   .title h1 { color: $cyber-amber; }
+  &.studio  .title h1 { color: $studio-raspberry; }
+  &.icpc    .title h1 { color: $icpc-tangerine; }
+  &.design  .title h1 { color: $design-orange; }
+  &.teachla .title h1 { color: $teachla-green; }
 }

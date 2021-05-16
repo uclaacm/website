@@ -1,9 +1,10 @@
-#gm-page{
-  #time-to-gm-wrapper{
+#gm-page {
+  #time-to-gm-wrapper {
     #time-to-gm-headline {
       font-size: 3em;
       text-align: center;
     }
+
     #countdown-wrapper {
       display: flex;
       flex-wrap: wrap;
@@ -16,25 +17,28 @@
       .countdown-cards {
         color: white;
         margin: 40px;
+
         .square-background {
+          background-color: $acm-cobalt;
+          border-radius: 42px;
+          height: 150px;
           position: relative;
           top: 140px;
-          z-index: -1;
-          height: 150px;
-          width: 150px;
-          border-radius: 42px;
           transform: rotate(45deg);
-          background-color: $acm-cobalt;
+          width: 150px;
+          z-index: -1;
         }
+
         .countdown-numbers {
-          z-index: 3;
           font-size: 3.75em;
           font-weight: bold;
           text-align: center;
+          z-index: 3;
         }
+
         .countdown-labels {
-          text-align: center;
           font-size: 1.5em;
+          text-align: center;
         }
       }
     }
@@ -42,15 +46,17 @@
     h3#gm-zoom-release {
       margin: auto;
       margin-top: 25px;
+      text-align: center;
       width: 75%;
-      text-align: center;
     }
-    p#cant-wait, p#posted-to-youtube {
-      text-align: center;
+
+    p#cant-wait,
+    p#posted-to-youtube {
+      margin-bottom: 50px;
       margin-left: auto;
       margin-right: auto;
       margin-top: 25px;
-      margin-bottom: 50px;
+      text-align: center;
       width: 90%;
     }
 
@@ -73,22 +79,27 @@
       font-size: 3em;
       text-align: center;
     }
-    #gm-main-content{
+
+    #gm-main-content {
       margin: auto;
       width: 75%;
+
       #join-links-wrapper {
         display: flex;
         justify-content: space-around;
-        padding-bottom: 50px;
         margin-bottom: 25px;
-        .click-to-join{
+        padding-bottom: 50px;
+
+        .click-to-join {
           width: 350px;
-          .join-links{
+
+          .join-links {
             border-radius: 15px;
-            .join-links-img{
+
+            .join-links-img {
               display: block;
-              margin: auto;
               height: auto;
+              margin: auto;
             }
           }
           // #zoom-join-link-wrapper {
@@ -101,33 +112,40 @@
           // }
           #zoom-join-link-wrapper {
             background-color: gainsboro;
-            padding-top: 15px;
             padding-bottom: 15px;
+            padding-top: 15px;
+
             .join-links-img {
               width: 200px;
             }
           }
+
           #discord-join-link-wrapper {
             background-color: #7289DA;
-            padding-top: 5px;
             padding-bottom: 1px;
+            padding-top: 5px;
+
             .join-links-img {
               width: 200px;
             }
           }
         }
-        .should-dim:hover{
-          opacity: 0.75;
+
+        .should-dim:hover {
           cursor: pointer;
+          opacity: 0.75;
         }
+
         .should-dim a {
           color: $font-primary-color;
           text-decoration: none;
         }
+
         p.join-us {
+          margin-bottom: 0;
           text-align: center;
-          margin-bottom: 0px;
         }
+
         p.join-us-descriptor {
           color: $font-secondary-color;
           font-size: 10pt;
@@ -135,37 +153,46 @@
           text-align: center;
         }
       }
+
       #video-wrapper {
         margin-bottom: 20px;
+
         iframe {
           display: block;
-          width: 100%;
           height: 500px;
           margin: auto;
+          width: 100%;
         }
       }
+
       #gm-program-wrapper {
         border-top: 1px dotted $acm-black;
+
         .row {
           display: flex;
-          margin-top: 25px;
           margin-bottom: 25px;
-          .timestamps{
-            margin: 0px;
-            padding-top: 3px;
+          margin-top: 25px;
+
+          .timestamps {
+            margin: 0;
             min-width: 125px;
+            padding-top: 3px;
             white-space: nowrap;
           }
-          .row-description-wrapper{
+
+          .row-description-wrapper {
             margin-left: 350px;
+
             h3.row-description-heading {
-              margin: 0px;
               color: $acm-cobalt;
+              margin: 0;
             }
+
             p.row-description-subheading {
-              margin-top: 4px;
               color: $acm-tint;
-              a#acm-discord-invite-cta{
+              margin-top: 4px;
+
+              a#acm-discord-invite-cta {
                 color: inherit;
               }
             }
@@ -173,17 +200,18 @@
             #studio { color: $studio-raspberry; }
             #icpc { color: $icpc-tangerine; }
             #design { color: $design-orange; }
-            #cyber{ color: $cyber-amber; }
+            #cyber { color: $cyber-amber; }
             #teach { color: $teachla-green; }
             #w { color: $w-teal; }
             #ai { color: $ai-arctic; }
             #hack { color: $hack-purple; }
+
             .committee-logos {
-              margin-right: 5px;
-              margin-bottom: 2px;
               height: 20px;
-              width: 20px;
+              margin-bottom: 2px;
+              margin-right: 5px;
               vertical-align: text-bottom;
+              width: 20px;
             }
           }
         }
@@ -191,13 +219,15 @@
     }
     @media (max-width: 915px) {
       .row-description-wrapper { margin-left: 15px !important;}
-      #join-links-wrapper{
-        flex-direction: column;
+
+      #join-links-wrapper {
         align-items: center;
+        flex-direction: column;
         width: 100%;
+
         .click-to-join {
-          min-width: 200px;
           max-width: 300px;
+          min-width: 200px;
           #zoom-join-link-wrapper {margin-right: 5px;}
           #discord-join-link-wrapper {margin-left: 5px;}
         }

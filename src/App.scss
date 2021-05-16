@@ -1,79 +1,14 @@
 /*************************************
- * Base styles and variables         *
- ************************************/
-
-$acm-cobalt: #1E6CFF;
-$acm-black: #181818;
-$acm-tint: #3DA2FF;
-
-$hack-purple: #C960FF;
-$hack-black: #262938;
-$hack-tint: #C137D8;
-
-$w-teal: #1BC3A9;
-$w-black: #233431;
-$w-tint: #56E4B1;
-
-$icpc-tangerine: #FF8383;
-$icpc-black: #3A2B2B;
-$icpc-tint: #F38F70;
-
-$ai-arctic: #28B2FF;
-$ai-black: #233339;
-$ai-tint: #35DDF3;
-
-$studio-raspberry: #FB4469;
-$studio-black: #39272B;
-$studio-tint: #FF8C93;
-
-$cyber-amber: #FFCB44;
-$cyber-black: #3A3327;
-$cyber-tint: #FFE81A;
-
-$design-orange: #FE8D3C;
-$design-black: #372B25;
-$design-tint: #FFAC30;
-
-$teachla-green: #5EDA12;
-$teachla-black: #2C3022;
-$teachla-tint: #B0EE00;
-
-$font-display: 'Poppins', 'Helvetica Neue', 'Helvetica', sans-serif;
-$font-header: 'Poppins', sans-serif;
-$font-body: 'Open Sans', sans-serif;
-
-$font-primary-color: #333333;
-$font-secondary-color: #777777;
-
-body {
-	margin: 0;
-	padding: 0;
-	font-family: $font-body;
-	color: $font-primary-color;
-}
-
-.app-container{
-	display: flex;
-	min-height: 100vh;
-	flex-direction: column;
-}
-
-.main-container {
-	margin-top: 70px; //To account for height of Navbar, which uses fixed positioning
-	flex: 1 0 auto;
-}
-
-/*************************************
  * Import CSS styles for components  *
  ************************************/
+@import 'Base';
 @import 'components/Navbar/style';
 @import 'components/Committees/style';
 @import 'components/Committees/CommitteesBanner/style';
-@import 'components/Committees/CommitteeSections/style';
 @import 'components/Committees/CommitteeSections/CommitteeSectionHeader/style';
 @import 'components/Committees/CommitteeSections/CommitteeSectionIntro/style';
 @import 'components/Committees/CommitteeSections/CommitteeSectionBody/style';
-@import 'components/Committees/CommitteeSections/CommitteeSectionBody/CommitteeEventCard/style.scss';
+@import 'components/Committees/CommitteeSections/CommitteeSectionBody/CommitteeEventCard/style';
 @import 'components/Button/style';
 @import 'components/Banner/style';
 @import 'components/Home/style';
@@ -87,7 +22,7 @@ body {
 @import 'components/Events/style';
 @import 'components/Events/Calendar/style';
 @import 'components/Events/GM/style';
-@import 'components/SocialMedia/style.scss';
+@import 'components/SocialMedia/style';
 @import 'components/TechGala/style';
 @import 'components/TechGala/Projects/ProjectCard/style';
 @import 'components/TechGala/ViewBanner/style';

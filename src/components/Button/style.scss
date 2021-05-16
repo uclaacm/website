@@ -1,50 +1,50 @@
 button {
-	height: 40px;
-	min-width: 240px;
-	padding: 0px 20px;
-	font-size: 0.85em;
-	font-family: $font-body;
-	color: white;
-	border: none;
-	border-radius: 11.2px;
-	line-height: 40px;
-	background-color: $acm-cobalt;
-	display: inline-block;
-	transition: 0.2s;
+  background-color: $acm-cobalt;
+  border: 0;
+  border-radius: 11.2px;
+  color: white;
+  display: inline-block;
+  font-family: $font-body;
+  font-size: 0.85em;
+  height: 40px;
+  line-height: 40px;
+  min-width: 240px;
+  padding: 0 20px;
+  transition: 0.2s;
 
-	&:hover {
-		cursor: pointer;
-		background-color: $acm-black;
-		// margin-top: 1px;
-	}
+  &:hover {
+    background-color: $acm-black;
+    cursor: pointer;
+    // margin-top: 1px;
+  }
 
-	&:active {
-		margin-top: 2px;
-		background-color: $acm-black;
-	}
+  &:active {
+    background-color: $acm-black;
+    margin-top: 2px;
+  }
 }
 
 button.tight {
-	min-width: 0px;
-	width: auto;
+  min-width: 0;
+  width: auto;
 }
 
 button.fade-light {
-	&:active {
-		background: white;
-		color: $acm-black;
-	}
+  &:active {
+    background: white;
+    color: $acm-black;
+  }
 }
 
 button.dark {
-	background-color: $acm-black;
+  background-color: $acm-black;
 
-	&:hover {
-		background: $acm-tint;
-	}
+  &:hover {
+    background: $acm-tint;
+  }
 
-	&:active {
-		background: white;
-		color: $acm-black;
-	}
+  &:active {
+    background: white;
+    color: $acm-black;
+  }
 }
