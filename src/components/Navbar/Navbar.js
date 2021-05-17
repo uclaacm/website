@@ -1,5 +1,6 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom';
+import MobileNavItem from '../Committees/SidebarItem/MobileNavItem';
 
 export default class Navbar extends React.Component {
 	constructor(props) {
@@ -56,7 +57,10 @@ export default class Navbar extends React.Component {
 						<div id="hamburger-menu">
 							<ul className="nav-items">
 								<NavLink to="/about"><li>About</li></NavLink>
-								<NavLink to="/committees"><li>Committees</li></NavLink>
+								<div>
+									<NavLink to="/committees"><li>Committees</li></NavLink>
+									<MobileNavItem/>
+								</div>
 								<NavLink to="/gm"><li>Winter gm</li></NavLink>
 								<NavLink to="/events"><li>Events</li></NavLink>
 								<NavLink to="/sponsors"><li>Sponsors</li></NavLink>

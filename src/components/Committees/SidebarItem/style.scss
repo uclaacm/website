@@ -1,0 +1,55 @@
+.sidebar-item {
+	position: fixed;
+	background: none;
+    left: 0;
+    top: 52%;
+    transition: opacity 3s ease;
+    z-index: 1000;
+	padding: 1rem;
+	margin-top: 40px;
+    transform: translateY(-50%);
+    display: inline-flex;
+    flex-flow: column nowrap;
+
+	.committee {
+		width: 200px;
+		height: 63px;
+		display: inline-block;
+		color: $font-primary-color;
+		text-align: left;
+		align-items: center;
+		transition: transform 0.1s;
+		position: relative;
+
+		&:hover {
+			cursor: pointer;
+			transform: scale(1.08);
+		}
+
+		img {
+			margin: 25px 10px;
+			height: 2.5vw;
+			width: vw;
+			display: inline-block;
+		}
+	}
+}
+
+*:target {
+	padding-top: 70px;
+	margin-top: -70px;
+}
+
+.committee-mobile-nav {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	height: 100px;
+}
+
+@media screen and (max-width: 1160px) {
+	.sidebar-item{
+		display: none;
+	}
+  }
+
