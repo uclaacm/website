@@ -1,0 +1,208 @@
+[
+  {
+    "isTrack": false,
+    "committees": ["acm"],
+    "events":
+    [
+      {
+        "eventName": "Karaoke Competition",
+        "eventPicture": "",
+        "description": "We don't know much about this event, but we're sure it's great!",
+        "date": 1616742000,
+        "sessionNumber": 1,
+        "attendanceType": 2,
+        "physicalLocation": "Boelter Hall dungeons",
+        "virtualLocation": "https://www.uclaacm.com",
+        "eventLinks": [{"link": "https://www.facebook.com", "title": "Facebook"}, {"link": "https://calendar.google.com", "title": "Google Calendar"}],
+        "contentLinks": [{"link": "https://slides.google.com", "title": "Google Slides"}, {"link": "https://www.youtube.com", "title": "YouTube"}],
+        "tags": ["music", "general", "social"],
+        "teachers": ["Lauv", "Ari Leff"]
+      }
+    ]
+  },
+  {
+    "isTrack": false,
+    "committees": ["cyber"],
+    "events":
+    [
+      {
+        "eventName": "Make Any Sys Admin Spill the Beans With This One Weird Trick",
+        "description": "We don't know much about this event, but we're sure it's great!",
+        "date": 1604300400,
+        "sessionNumber": 1,
+        "attendanceType": 1,
+        "virtualLocation": "https://www.uclaacm.com",
+        "eventLinks": [{"link": "https://www.facebook.com", "title": "Facebook"}, {"link": "https://calendar.google.com", "title": "Google Calendar"}],
+        "contentLinks": [{"link": "https://slides.google.com", "title": "Google Slides"}, {"link": "https://www.youtube.com", "title": "YouTube"}],
+        "tags": ["sus", "sql", "beans"],
+        "teachers": ["Alice", "Bob"]
+      }
+    ]
+  },
+  {
+    "isTrack": false,
+    "description": "this shouldn't matter",
+    "committees": ["hack", "w"],
+    "events":
+    [
+      {
+        "eventName": "Build Webpages, Get Dubs",
+        "eventPicture": "",
+        "description": "We don't know much about this event, but we're sure it's great!",
+        "date": 1569999600,
+        "sessionNumber": 1,
+        "attendanceType": 0,
+        "physicalLocation": "Covel Commons roof",
+        "eventLinks": [{"link": "https://www.facebook.com", "title": "Facebook"}, {"link": "https://calendar.google.com", "title": "Google Calendar"}],
+        "contentLinks": [{"link": "https://slides.google.com", "title": "Google Slides"}, {"link": "https://www.youtube.com", "title": "YouTube"}],
+        "tags": ["react", "angular", "angularjs"],
+        "teachers": ["Jett Diff", "Greg", "王振威"]
+      }
+    ]
+  },
+  {
+    "isTrack": true,
+    "trackName": "Defense Against the Dark Arts",
+    "description": "Critical survival skills for wizards and witches.",
+    "trackPicture": "",
+    "trackID": 1234,
+    "committees": ["studio", "teachla"],
+    "events":
+    [
+      {
+        "eventName": "Sectumsempra et al.",
+        "date": 1580886000,
+        "eventPicture": "",
+        "description": "We don't know much about this event, but we're sure it's great!",
+        "trackID": 1234,
+        "sessionNumber": 1,
+        "attendanceType": 0,
+        "physicalLocation": "Boelter Hall",
+        "eventLinks": [{"link": "https://www.facebook.com", "title": "Facebook"}, {"link": "https://calendar.google.com", "title": "Google Calendar"}],
+        "contentLinks": [{"link": "https://slides.google.com", "title": "Google Slides"}, {"link": "https://www.youtube.com", "title": "YouTube"}],
+        "tags": ["cut", "slice", "javascript", "js"],
+        "teachers": ["Adam Savage", "Jamie Hyneman"]
+      },
+      {
+        "eventName": "Ethics of the Killing Curse",
+        "date": 1581490800,
+        "eventPicture": "",
+        "description": "We don't know much about this event, but we're sure it's great!",
+        "trackID": 1234,
+        "sessionNumber": 2,
+        "attendanceType": 0,
+        "physicalLocation": "Boelter Hall",
+        "eventLinks": [{"link": "https://www.facebook.com", "title": "Facebook"}, {"link": "https://calendar.google.com", "title": "Google Calendar"}],
+        "contentLinks": [{"link": "https://slides.google.com", "title": "Google Slides"}, {"link": "https://www.youtube.com", "title": "YouTube"}],
+        "tags": ["java", "unicorns", "oof"],
+        "teachers": ["Severus Snape", "Tom Riddle"]
+      },
+      {
+        "eventName": "Guns?!",
+        "date": 1582095600,
+        "trackID": 1234,
+        "eventPicture": "",
+        "description": "We don't know much about this event, but we're sure it's great!",
+        "sessionNumber": 3,
+        "attendanceType": 0,
+        "physicalLocation": "Boelter Hall",
+        "eventLinks": [{"link": "https://www.facebook.com", "title": "Facebook"}, {"link": "https://calendar.google.com", "title": "Google Calendar"}],
+        "contentLinks": [{"link": "https://slides.google.com", "title": "Google Slides"}, {"link": "https://www.youtube.com", "title": "YouTube"}],
+        "tags": ["shoot", "steel", "oof"],
+        "teachers": ["Grant Imahara", "Kari Byron", "Tory Belleci"]
+      },
+      {
+        "eventName": "Brazilian Jiu Jitsu: A Primer",
+        "date": 1582700400,
+        "trackID": 1234,
+        "eventPicture": "",
+        "description": "We don't know much about this event, but we're sure it's great!",
+        "sessionNumber": 4,
+        "attendanceType": 0,
+        "physicalLocation": "Boelter Hall",
+        "eventLinks": [{"link": "https://www.facebook.com", "title": "Facebook"}, {"link": "https://calendar.google.com", "title": "Google Calendar"}],
+        "contentLinks": [{"link": "https://slides.google.com", "title": "Google Slides"}, {"link": "https://www.youtube.com", "title": "YouTube"}],
+        "tags": ["kick", "flip", "roll"]
+      },
+      {
+        "eventName": "Refuting the Evan's Gambit in Wizard's Chess",
+        "date": 1585810800,
+        "trackID": 1234,
+        "eventPicture": "",
+        "description": "We don't know much about this event, but we're sure it's great!",
+        "sessionNumber": 5,
+        "attendanceType": 0,
+        "physicalLocation": "Boelter Hall",
+        "eventLinks": [{"link": "https://www.facebook.com", "title": "Facebook"}, {"link": "https://calendar.google.com", "title": "Google Calendar"}],
+        "contentLinks": [{"link": "https://slides.google.com", "title": "Google Slides"}, {"link": "https://www.youtube.com", "title": "YouTube"}],
+        "tags": ["b4", "gambit", "dubious"],
+        "teachers": ["Ben Finegold", "Antonio Radić"]
+      },
+      {
+        "eventName": "Learing to Survive in the Wild with Bear Grylls",
+        "date": 1586415600,
+        "trackID": 1234,
+        "eventPicture": "",
+        "description": "We don't know much about this event, but we're sure it's great!",
+        "sessionNumber": 6,
+        "attendanceType": 1,
+        "virtualLocation": "https://www.uclaacm.com",
+        "eventLinks": [{"link": "https://www.facebook.com", "title": "Facebook"}, {"link": "https://calendar.google.com", "title": "Google Calendar"}],
+        "contentLinks": [{"link": "https://slides.google.com", "title": "Google Slides"}, {"link": "https://www.youtube.com", "title": "YouTube"}],
+        "tags": ["trees", "python", "scripted"],
+        "teachers": ["Bear Grylls", "Kevin Durant"]
+      },
+      {
+        "eventName": "Patronus Shenanigans",
+        "date": 1587020400,
+        "trackID": 1234,
+        "eventPicture": "",
+        "description": "We don't know much about this event, but we're sure it's great!",
+        "sessionNumber": 7,
+        "attendanceType": 1,
+        "virtualLocation": "https://www.uclaacm.com",
+        "eventLinks": [{"link": "https://www.facebook.com", "title": "Facebook"}, {"link": "https://calendar.google.com", "title": "Google Calendar"}],
+        "contentLinks": [{"link": "https://slides.google.com", "title": "Google Slides"}, {"link": "https://www.youtube.com", "title": "YouTube"}],
+        "tags": ["deer", "emergency", "react"],
+        "teachers": ["James Potter", "Lily Evans"]
+      },
+      {
+        "eventName": "Sportsmanship and Fortnite Dancing",
+        "date": 1587625200,
+        "trackID": 1234,
+        "eventPicture": "",
+        "description": "We don't know much about this event, but we're sure it's great!",
+        "sessionNumber": 8,
+        "attendanceType": 1,
+        "virtualLocation": "https://www.uclaacm.com",
+        "contentLinks": [{"link": "https://slides.google.com", "title": "Google Slides"}, {"link": "https://www.youtube.com", "title": "YouTube"}],
+        "tags": ["sus", "social", "fun"],
+        "teachers": ["Ninja", "Shroud"]
+      },
+      {
+        "eventName": "Electricity Go Brrrrrrrr",
+        "date": 1588230000,
+        "trackID": 1234,
+        "description": "We don't know much about this event, but we're sure it's great!",
+        "sessionNumber": 9,
+        "attendanceType": 1,
+        "virtualLocation": "https://www.uclaacm.com",
+        "eventLinks": [{"link": "https://www.facebook.com", "title": "Facebook"}, {"link": "https://calendar.google.com", "title": "Google Calendar"}],
+        "tags": ["zap", "ow", "ubuntu"],
+        "teachers": ["Thomas Edison", "Nikola Tesla"]
+      },
+      {
+        "eventName": "DADA Social",
+        "date": 1588402800,
+        "trackID": 1234,
+        "eventPicture": "",
+        "sessionNumber": 10,
+        "attendanceType": 1,
+        "virtualLocation": "https://www.uclaacm.com",
+        "eventLinks": [{"link": "https://www.facebook.com", "title": "Facebook"}, {"link": "https://calendar.google.com", "title": "Google Calendar"}],
+        "tags": ["general", "social", "music"],
+        "teachers": ["Thomas Edison", "Nikola Tesla"]
+      }
+    ]
+  }
+]
