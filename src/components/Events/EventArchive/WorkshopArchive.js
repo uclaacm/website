@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import CommitteeEventComponent from './CommitteeEventComponent';
-import eventData from './eventData.js';
 import './style.scss';
 
+const eventData = require('./eventData.json');
+
 function WorkshopArchive(props) {
-  const [events, setEvents] = useState(eventData.sort((a, b) => b.date.getTime() - a.date.getTime()));
+  const [events, setEvents] = useState(eventData.sort((a, b) => b.events.date - a.events.date));
 
   function createEventBox (event) {
     return <CommitteeEventComponent committeeEvent={event}/>;
@@ -14,9 +15,29 @@ function WorkshopArchive(props) {
     return events.map(createEventBox);
   }
 
+
   function filterEventName() {
     setEvents(eventData.filter(event => event.eventName.includes(document.getElementById('event-name-filter').value)));
   }
+
+  /*window.onload = (e) => {
+    document.getElementById('event-order-button').addEventListener('click', function(event){
+      event.preventDefault();*/
+
+  function eventOrder() {
+    if (document.getElementById('event-order-button').value === 'Sort by old') {
+      document.getElementById('event-order-button').value = 'Sort by new';
+      setEvents(eventData.sort((a, b) => a.date.getTime() - b.date.getTime()));
+      console.log('a');
+      console.log(events);
+    } else {
+      document.getElementById('event-order-button').value = 'Sort by old';
+      setEvents(eventData.sort((a, b) => b.date.getTime() - a.date.getTime()));
+      console.log('b');
+      console.log(events);
+    }
+    //});
+  }//;
 
   return (
     <div className='wa-container'>
@@ -38,7 +59,7 @@ function WorkshopArchive(props) {
           <option value=''></option>
           <option value=''></option>
         </select>
-        <input type='button' value='Sort by old' style={{width: '15%', height: '20px', borderRadius: '7px', borderWidth: '1px', borderColor: 'black', fontFamily: 'Poppins', backgroundColor: '#dddddd'}}></input>
+        <input id='event-order-button' type='button' value='Sort by old' onClick={() => eventOrder()} style={{width: '15%', height: '20px', borderRadius: '7px', borderWidth: '1px', borderColor: 'black', fontFamily: 'Poppins', backgroundColor: '#dddddd'}}></input>
       </div>
       <div id='wa-ce-parent'>
         {createEventBoxes(events)}

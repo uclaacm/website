@@ -78,9 +78,9 @@ const committees = {
 };
 
 const attendanceTypes = {
-  'virtual':  'Virtual',
-  'inperson': 'In-person',
-  'hybrid':   'Hybrid'
+  'inperson': 0,
+  'virtual':  1,
+  'hybrid':   2
 };
 
 export { getQuarter, committees, attendanceTypes };

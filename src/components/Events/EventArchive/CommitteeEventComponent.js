@@ -1,7 +1,7 @@
 import React from 'react';
 import EventTags from './EventTags';
 import Links from './Links';
-import { attendanceTypes } from './utils.js';
+import { attendanceTypes } from './ArchiveUtils';
 import './style.scss';
 
 function CommitteeEventComponent(props) {
