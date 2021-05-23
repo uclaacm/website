@@ -12,8 +12,14 @@ Each event or track object can have the following properties:
 | `trackPicture`     | `string`   | *optional* |
 | `description`      | `string`   | *optional* |
 
+`committee`:
+- like a tag, is a filterable attribute
+
 `trackPicture`:
 - file location
+
+`description`:
+- track description unused if not a track
 
 The events array contains 1 or more objects
 Each event in the array can have the following properties:
@@ -24,7 +30,6 @@ Each event in the array can have the following properties:
 | `trackID`          | `number`   | *optional* |
 | `description`      | `string`   | *optional* |
 | `date`             | `number`   | *required* |
-| `quarter`          | `object`   | *optional* |
 | `sessionNumber`    | `number`   | *required* |
 | `attendanceType`   | `number`   | *required* |
 | `physicalLocation` | `string`   | *optional* |
@@ -40,12 +45,6 @@ Each event in the array can have the following properties:
 
 `date`:
 - Unix epoch (seconds since 1/1/1970)
-
-`quarter`:
-- can be computed based on date (currently have quarter data as far back as 13-14 school year; could get older years, when did ACM @ UCLA start/how far back are we archiving?)
-- optional meaning it need never be specified since date is required
-- supports tracks that continue for multiple quarters
-- a single event can only occur in one quarter; multiple quarters --> multiple events
 
 `sessionNumber`:
 - needed for tracks, default 1 for one-off events
@@ -65,6 +64,12 @@ Each event in the array can have the following properties:
 
 `tags`:
 - plan on keeping a list of duplicate tags (disallowed list vs allowed list)
+
+Note on quarters:
+- can be computed based on date (currently have quarter data as far back as 13-14 school year; could get older years, when did ACM @ UCLA start/how far back are we archiving?)
+- it need never be specified since date is required
+- supports tracks that continue for multiple quarters
+- a single event can only occur in one quarter; multiple quarters --> multiple events
 
 Based on this data structure, one-off events and tracks can be differentially rendered easily by checking the isTrack property.
 
