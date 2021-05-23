@@ -35,19 +35,28 @@
 	}
 }
 
+.committee-mobile-nav li {
+
+	font-size: 12px !important;
+	background: blue !important;
+	display: flex !important;
+	flex-direction: column !important;
+
+}
+
 *:target {
 	padding-top: 70px;
 	margin-top: -70px;
 }
 
 .committee-mobile-nav {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	height: 100px;
+	display: flex !important;
+	flex-direction: column !important;
+	flex-wrap: wrap !important;
+	height: 100px !important;
 }
 
-@media screen and (max-width: 1160px) {
+@media screen and (max-width: $navbar-breakpoint) {
 	.sidebar-item{
 		display: none;
 	}

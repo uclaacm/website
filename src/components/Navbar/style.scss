@@ -52,6 +52,15 @@
 		display: inline-block;
 	}
 
+	#subcommittee-links {
+		display: flex !important;
+		flex-direction: column !important;
+		flex-wrap: wrap !important;
+		text-transform: lowercase;
+		font-family: $font-header;
+		font-weight: bold;
+	}
+
 	ul.nav-items li {
 		display: inline-block;
 		text-transform: lowercase;
@@ -214,7 +223,7 @@
 		color: $acm-cobalt !important;
 	}
 
-	@media (max-width: 925px) {
+	@media (max-width: $navbar-breakpoint) {
 		#desktop-nav { display: none; }
 		#mobile-nav { display: inline-block; }
 	}

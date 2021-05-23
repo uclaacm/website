@@ -59,7 +59,7 @@ export default class Navbar extends React.Component {
 								<NavLink to="/about"><li>About</li></NavLink>
 								<div>
 									<NavLink to="/committees"><li>Committees</li></NavLink>
-									<MobileNavItem/>
+									<div id="subcommittee-links"><MobileNavItem/></div>
 								</div>
 								<NavLink to="/gm"><li>Winter gm</li></NavLink>
 								<NavLink to="/events"><li>Events</li></NavLink>
