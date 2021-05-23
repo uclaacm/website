@@ -1,0 +1,55 @@
+.content {
+  padding-bottom: 40px;
+}
+
+.page-content {
+  box-sizing: border-box;
+  margin: auto;
+  max-width: 900px;
+  padding: 0 30px;
+  text-align: center;
+  width: 100%;
+
+  h1 {
+    color: $font-primary-color;
+    font-family: $font-header;
+    font-size: 2.5em;
+    margin: 10px;
+  }
+
+  h2 {
+    color: $font-primary-color;
+    font-family: $font-header;
+    font-size: 1.4em;
+    margin: 30px 0 0;
+  }
+
+  h3 {
+    font-size: 1.2em;
+    margin: 20px;
+  }
+
+  p {
+    font-family: $font-body;
+    font-size: 1em;
+    line-height: 150%;
+
+    &.subheading {
+      font-size: 1em;
+    }
+
+    strong {
+      font-weight: bold;
+    }
+  }
+
+  img {
+    border-radius: 10px;
+    box-shadow: 0 0 1pt 0;
+    width: 100%;
+  }
+
+  @media (min-width: 688px) {
+    padding: 0 60px;
+  }
+}

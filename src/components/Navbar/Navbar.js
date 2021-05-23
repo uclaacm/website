@@ -1,6 +1,11 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom';
 import MobileNavItem from '../Committees/SidebarItem/MobileNavItem';
+// import gmData from '../../config/gmData';
+
+//to allow GM page to be visible on the navbar and accessible
+//uncomment the above import line "import gmData from '../../config/gmData';" to get quarter from the gmData page
+//uncomment the two lines saying  "/* <NavLink to="/gm"><li>{gmData.date.quarter} gm</li></NavLink> */"
 
 export default class Navbar extends React.Component {
 	constructor(props) {
@@ -32,14 +37,14 @@ export default class Navbar extends React.Component {
 				<div id="navbar-inner">
 					<NavLink to="/">
 						<div id="nav-title" className="nav-section left">
-							<img src={process.env.PUBLIC_URL + "/images/acm_wordmark&logo.svg"} id="acm-logo" alt="acm logo"></img>
+							<img src={process.env.PUBLIC_URL + '/images/acm_wordmark&logo.svg'} id="acm-logo" alt="acm logo"></img>
 						</div>
 					</NavLink>
 					<div className="nav-section right" id="desktop-nav">
 						<ul className="nav-items">
 							<NavLink to="/about"><li>About</li></NavLink>
 							<NavLink to="/committees"><li>Committees</li></NavLink>
-							<NavLink to="/gm"><li>Winter gm</li></NavLink>
+							{/* <NavLink to="/gm"><li>{gmData.date.quarter} gm</li></NavLink> */}
 							<NavLink to="/events"><li>Events</li></NavLink>
 							<NavLink to="/sponsors"><li>Sponsors</li></NavLink>
 							<a href="https://members.uclaacm.com"><li className="button">Member Login</li></a>
@@ -61,7 +66,7 @@ export default class Navbar extends React.Component {
 									<NavLink to="/committees"><li>Committees</li></NavLink>
 									<div id="subcommittee-links"><MobileNavItem/></div>
 								</div>
-								<NavLink to="/gm"><li>Winter gm</li></NavLink>
+								{/* <NavLink to="/gm"><li>{gmData.date.quarter} gm</li></NavLink> */}
 								<NavLink to="/events"><li>Events</li></NavLink>
 								<NavLink to="/sponsors"><li>Sponsors</li></NavLink>
 								<a href="https://members.uclaacm.com"><li className="button">Member Login</li></a>

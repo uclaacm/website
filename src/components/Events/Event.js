@@ -10,12 +10,14 @@ export default class Events extends React.Component {
             <div className='events-container'>
                <Banner decorative />
                <h2>Our Events</h2>
-               <p>Our events are open to everyone, regardless of major, background, or experience! Come find us on <a href={Config.events.youtube_url} target="_blank" rel="noreferrer noopener"><div className="events-sm" id="youtube"/></a> </p>
-               
+                <p>
+                    Our events are open to everyone, regardless of major, background, or experience! Come find us on <a href="https://www.youtube.com/c/acmucla" target="_blank" rel="noreferrer noopener">YouTube!</a>
+                </p>
+
                <br/><br/>
                <Calendar url={Config.events.calendar_url}/>
                <br/><br/><br/>
             </div>
-        )
+        );
     }
 }

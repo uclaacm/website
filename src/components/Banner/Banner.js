@@ -14,7 +14,7 @@ const generateCols = (n, m, classPattern=['']) => {
 			{mapUpToSum(m,(j => {
 				const classNames = ['square'];
 				const name = classPattern[j % classPattern.length];
-				if (name !== "") {
+				if (name !== '') {
 					classNames.push(classPattern[j % classPattern.length]);
 				} else {
 					const r = Math.random();
@@ -23,11 +23,11 @@ const generateCols = (n, m, classPattern=['']) => {
 					else if (r < 0.40)
 						classNames.push('light');
 				}
-				return <div className={classNames.join(" ")} key={j} />
+				return <div className={classNames.join(' ')} key={j} />;
 			}))}
 		</div>
 	));
-}
+};
 
 export default class Banner extends React.Component {
 	constructor(props) {
@@ -46,7 +46,7 @@ export default class Banner extends React.Component {
 			this.color = (this.color + 1) % committees.length;
 			el.classList.add(committees[this.color]);
 			this.forceUpdate();
-		}, 4000)
+		}, 4000);
 	}
 
 	componentWillUnmount() {

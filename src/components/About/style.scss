@@ -1,111 +1,109 @@
 .ornament {
-	position: absolute;
-	right: 30px;
-	top: 70px;
+  position: absolute;
+  right: 30px;
+  top: 70px;
 }
 
 .square-ornament {
-	height: 200px;
-	width: 200px;
-	border-radius: 40px;
-	background: $acm-tint;
-	transform: rotate(45deg);
+  background: $acm-tint;
+  border-radius: 40px;
+  height: 200px;
+  transform: rotate(45deg);
+  width: 200px;
 }
 
 .image-ornament {
-	width: 100%;
-	top: 40px;
-	max-width: 270px;
-	img {
-		width: 100%;
-	}
+  max-width: 270px;
+  top: 40px;
+  width: 100%;
+
+  img {
+    width: 100%;
+  }
 }
 
 .ornament-left {
-	left: -70px;
+  left: -70px;
 }
 
 .image-ornament-left {
-	left: 60px;
+  left: 60px;
 }
 
 .image-ornament-right {
-	right: 20px;
+  right: 20px;
 }
 
 .square-splash {
-	position: absolute;
-	height: 250px;
-	width: 250px;
-	left: 30px;
-	top: -65px;
-	border-radius: 50px;
-	background-image: url(/images/about1.png);
-	background-size: cover;
-	background-color: $acm-cobalt;
+  border-radius: 50px;
+  height: 250px;
+  left: 30px;
+  position: absolute;
+  top: -65px;
+  width: 250px;
 }
 
 .square-small {
-	position: absolute;
-	height: 50px;
-	width: 50px;
-	right: -110px;
-	top: 0px;
-	border-radius: 10px;
-	background-color: $acm-cobalt;
+  background-color: $acm-cobalt;
+  border-radius: 10px;
+  height: 50px;
+  position: absolute;
+  right: -110px;
+  top: 0;
+  width: 50px;
 }
 
 .square-tiny {
-	position: absolute;
-	height: 18px;
-	width: 18px;
-	right: -105px;
-	top: -25px;
-	border-radius: 4px; //Roudning up from 3.6px
-	background-color: $acm-cobalt;
+  background-color: $acm-cobalt;
+  border-radius: 4px; //Roudning up from 3.6px
+  height: 18px;
+  position: absolute;
+  right: -105px;
+  top: -25px;
+  width: 18px;
 }
 
 .about-page .content-section {
-	margin: 20px auto 40px auto;
+  margin: 20px auto 40px;
 
-	.text-section {
-		display: inline-block;
-		text-align: left;
-		max-width: 56%;
-	}
+  .text-section {
+    display: inline-block;
+    max-width: 56%;
+    text-align: left;
+  }
 
-	h1 {
-		text-align: left;
-		line-height: 110%;
-	}
+  h1 {
+    line-height: 110%;
+    text-align: left;
+  }
 }
 
 @media (max-width: 600px) {
-	.square-ornament {
-		position: relative;
-		display: block;
-		margin: 0px auto 150px auto;
+  .square-ornament {
+    display: block;
 
-		left: -70px;
-		right: 0px;
-	}
+    left: -70px;
+    margin: 0 auto 150px;
+    position: relative;
+    right: 0;
+  }
 
-	.image-ornament {
-		position: relative;
-		display: block;
-		margin: 0px auto 80px auto;
-		left: 0px;
-	}
+  .image-ornament {
+    display: block;
+    left: 0;
+    margin: 0 auto 80px;
+    position: relative;
+  }
 
-	.about-page .content-section {
-		.text-section {
-			display: inline-block;
-			text-align: left;
-			max-width: 100%;
-		}
+  .about-page .content-section {
+    .text-section {
+      display: inline-block;
+      max-width: 100%;
+      text-align: left;
+    }
 
-		h1 {
-			text-align: center;
-		}
-	}
+    h1 {
+      text-align: center;
+    }
+  }
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import CommitteeEventCard from './CommitteeEventCard/CommitteeEventCard'
+import CommitteeEventCard from './CommitteeEventCard/CommitteeEventCard';
 
 function CommitteeSectionBody(props){
     return (
@@ -9,7 +9,13 @@ function CommitteeSectionBody(props){
             <div className="card-container">
                 { props.committee.infoCards.map(card => {
                         const {image, title, desc} = card;
-                        return <CommitteeEventCard committee={props.committee.class} image={image} title={title} desc={desc} key={title}/>;
+                        return <CommitteeEventCard
+                            committee={props.committee.class}
+                            image={image}
+                            title={title}
+                            desc={desc}
+                            key={title}
+                        />;
                     })
                 }
             </div>

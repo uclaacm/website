@@ -1,9 +1,10 @@
-import Committees from './committees';
 import Carousel from './carousel';
-import Sponsors from './sponsors';
-import Officers from './officers';
+import Committees from './committees';
 import Events from './events';
 import News from './news';
+import Officers from './officers';
+import Sponsors from './sponsors';
+import TGProjects from './tgprojects';
 
 export default {
 	committees: Committees,
@@ -11,5 +12,6 @@ export default {
 	sponsors: Sponsors,
 	officers: Officers,
 	events: Events,
-	news: News
+	news: News,
+	tgprojects: TGProjects,
 };

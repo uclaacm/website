@@ -1,64 +1,64 @@
 .sidebar-item {
-	position: fixed;
-	background: none;
-    left: 0;
-    top: 52%;
-    transition: opacity 3s ease;
-    z-index: 1000;
-	padding: 1rem;
-	margin-top: 40px;
-    transform: translateY(-50%);
-    display: inline-flex;
-    flex-flow: column nowrap;
+  background: none;
+  display: inline-flex;
+  flex-flow: column nowrap;
+  left: 0;
+  margin-top: 40px;
+  padding: 1rem;
+  position: fixed;
+  top: 52%;
+  transform: translateY(-50%);
+  transition: opacity 3s ease;
+  z-index: 1000;
 
-	.committee {
-		width: 200px;
-		height: 63px;
-		display: inline-block;
-		color: $font-primary-color;
-		text-align: left;
-		align-items: center;
-		transition: transform 0.1s;
-		position: relative;
+  .committee {
+    align-items: center;
+    color: $font-primary-color;
+    display: inline-block;
+    height: 63px;
+    position: relative;
+    text-align: left;
+    transition: transform 0.1s;
+    width: 200px;
 
-		&:hover {
-			cursor: pointer;
-			transform: scale(1.08);
-		}
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.08);
+    }
 
-		img {
-			margin: 25px 10px;
-			height: 2.5vw;
-			width: vw;
-			display: inline-block;
-		}
-	}
+    img {
+      display: inline-block;
+      height: 2.5vw;
+      margin: 25px 10px;
+      width: vw;
+    }
+  }
 }
 
 .committee-mobile-nav li {
+  background: blue !important;
+  display: flex !important;
+  flex-direction: column !important;
 
-	font-size: 12px !important;
-	background: blue !important;
-	display: flex !important;
-	flex-direction: column !important;
+  font-size: 12px !important;
 
 }
 
 *:target {
-	padding-top: 70px;
-	margin-top: -70px;
+  margin-top: -70px;
+  padding-top: 70px;
 }
 
 .committee-mobile-nav {
-	display: flex !important;
-	flex-direction: column !important;
-	flex-wrap: wrap !important;
-	height: 100px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  flex-wrap: wrap !important;
+  height: 100px !important;
 }
 
 @media screen and (max-width: $navbar-breakpoint) {
-	.sidebar-item{
-		display: none;
-	}
+  .sidebar-item {
+    display: none;
   }
+}
 

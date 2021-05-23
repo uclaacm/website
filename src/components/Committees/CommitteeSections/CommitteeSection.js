@@ -1,7 +1,7 @@
 import React from 'react';
+import Body from './CommitteeSectionBody/CommitteeSectionBody';
 import Header from './CommitteeSectionHeader/CommitteeSectionHeader';
 import Intro from './CommitteeSectionIntro/CommitteeSectionIntro';
-import Body from './CommitteeSectionBody/CommitteeSectionBody';
 
 function CommitteeSection(props) {
 	return (
