@@ -1,75 +1,42 @@
-.sidebar-item {
-  background: none;
-  display: inline-flex;
-  flex-flow: column nowrap;
-  left: 0;
-  margin-top: 40px;
-  padding: 1rem;
-  position: fixed;
-  top: 52%;
-  transform: translateY(-50%);
-  transition: opacity 3s ease;
-  z-index: 1000;
+/*.sidebar {
+	position: fixed;
+    background: none;
+    left: 0;
+    top: 52%;
+    transition: opacity 3s ease;
+    z-index: 1000;
+    padding: 1rem;
+    transform: translateY(-50%);
+    display: flex;
+    flex-flow: column nowrap;
 
-  .committee {
-    align-items: center;
-    color: $font-primary-color;
-    display: inline-block;
-    height: 63px;
-    position: relative;
-    text-align: left;
-    transition: transform 0.1s;
-    width: 200px;
+	.committee {
+		width: 200px;
+		height: 63px;
+		display: inline-block;
+		color: $font-primary-color;
+		text-align: left;
+		transition: transform 0.1s;
+		position: relative;
 
-    &:hover {
-      cursor: pointer;
-      transform: scale(1.08);
-    }
+		&:hover {
+			cursor: pointer;
+			transform: scale(1.08);
+		}
 
-    img {
-      display: inline-block;
-      height: 2.5vw;
-      margin: 25px 10px;
-      width: vw;
-    }
-  }
+		img {
+			margin: 25px 10px;
+			height: 50px;
+			display: inline-block;
+		}
+	}
+}*/
+.committee-choices {
+	position: fixed;
+	width: 50px;
+	color: red;
 }
 
-
-.committee-mobile-nav li {
-  background:yellow;
-  flex-direction: column !important;
-
-  font-size: 16px !important;
-  display: flex !important;
-  flex-direction: column !important;
-  flex-wrap: wrap !important;
-  font-family: $font-header;
-  font-weight: bold;
-  text-transform: lowercase;
-  &:hover {
-    color: #999;
-  }
+.dropdown {
+	width: 50px
 }
-
-
-*:target {
-  margin-top: -70px;
-  padding-top: 70px;
-}
-
-
-.committee-mobile-nav {
-  // background: blue !important;
-  display: flex !important;
-  flex-direction: column !important;
-  flex-wrap: wrap !important;
-  height: 100px !important;
-}
-
-@media screen and (max-width: $navbar-breakpoint) {
-  .sidebar-item {
-    display: none;
-  }
-}
-
