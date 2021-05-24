@@ -37,51 +37,29 @@
 
 
 .committee-mobile-nav li {
-  background:yellow;
-  flex-direction: column !important;
-
-  font-size: 16px !important;
-  flex-direction: column !important;
-  flex-wrap: wrap !important;
+  display: inline-block;
   font-family: $font-header;
+  font-size: 16px !important;
   font-weight: bold;
+  margin-bottom: 0 !important;
+  margin-top: 0 !important;
   text-transform: lowercase;
-  // float:left;
-  height: 10px;
-  line-height: 5px;
-
-  //trying two columns
-  line-height:1.5em;
-  float:left;
-  display:inline-block;
 
   &:hover {
     color: #999;
   }
 }
 
-.committee-mobile-nav li:after {
-  content: "\A";
+.committee-mobile-nav li::after {
+  content: '\A';
   white-space: pre;
-}
-
-*:target {
-  margin-top: -70px;
-  padding-top: 70px;
 }
 
 
 .committee-mobile-nav {
-  // background: blue !important;
-  display: flex !important;
-  flex-direction: column !important;
-  flex-wrap: wrap !important;
-  // height: 50px !important;
-
-    //trying two columns
-    margin-bottom:20px;
-    // overflow:hidden;
-
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0;
 
 }
 

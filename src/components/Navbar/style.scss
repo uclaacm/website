@@ -51,17 +51,6 @@
     padding: 0;
   }
 
-  
-  #subcommittee-links {
-    display: flex !important;
-    flex-direction: column !important;
-    flex-wrap: wrap !important;
-    font-family: $font-header;
-    font-weight: bold;
-    text-transform: lowercase;
-  }
-  
-
   ul.nav-items li {
     display: inline-block;
     font-size: 0.95em;
@@ -198,8 +187,8 @@
     }
 
     ul.nav-items li:hover {
-        color: #999;
-        cursor: pointer;
+      color: #999;
+      cursor: pointer;
 
 
     }
