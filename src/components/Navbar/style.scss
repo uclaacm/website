@@ -45,13 +45,13 @@
   }
 
   ul.nav-items {
-    display: inline-block;
     height: 100%;
     list-style: none;
     margin: 0;
     padding: 0;
   }
 
+  
   #subcommittee-links {
     display: flex !important;
     flex-direction: column !important;
@@ -60,6 +60,7 @@
     font-weight: bold;
     text-transform: lowercase;
   }
+  
 
   ul.nav-items li {
     display: inline-block;

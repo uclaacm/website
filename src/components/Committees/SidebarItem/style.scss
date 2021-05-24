@@ -35,21 +35,32 @@
   }
 }
 
+
 .committee-mobile-nav li {
-  background: blue !important;
-  display: flex !important;
+  background:yellow;
   flex-direction: column !important;
 
-  font-size: 12px !important;
-
+  font-size: 16px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  flex-wrap: wrap !important;
+  font-family: $font-header;
+  font-weight: bold;
+  text-transform: lowercase;
+  &:hover {
+    color: #999;
+  }
 }
+
 
 *:target {
   margin-top: -70px;
   padding-top: 70px;
 }
 
+
 .committee-mobile-nav {
+  // background: blue !important;
   display: flex !important;
   flex-direction: column !important;
   flex-wrap: wrap !important;

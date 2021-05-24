@@ -4,14 +4,16 @@ import {NavHashLink} from 'react-router-hash-link';
 function MobileNavItem() {
     return (
         <div className="committee-mobile-nav">
-            <NavHashLink to={'/committees#studio'}>Studio</NavHashLink>
-            <NavHashLink to={'/committees#icpc'}>ICPC</NavHashLink>
-            <NavHashLink to={'/committees#design'}>Design</NavHashLink>
-            <NavHashLink to={'/committees#cyber'}>Cyber</NavHashLink>
-            <NavHashLink to={'/committees#teachla'}>Teach LA</NavHashLink>
-            <NavHashLink to={'/committees#w'}>W</NavHashLink>
-            <NavHashLink to={'/committees#ai'}>AI</NavHashLink>
-            <NavHashLink to={'/committees#hack'}>Hack</NavHashLink>
+            <ul>
+            <NavHashLink to={'/committees#studio'}><li>Studio</li></NavHashLink>
+            <NavHashLink to={'/committees#icpc'}><li>ICPC</li></NavHashLink>
+            <NavHashLink to={'/committees#design'}><li>Design</li></NavHashLink>
+            <NavHashLink to={'/committees#cyber'}><li>Cyber</li></NavHashLink>
+            <NavHashLink to={'/committees#teachla'}><li>Teach LA</li></NavHashLink>
+            <NavHashLink to={'/committees#w'}><li>W</li></NavHashLink>
+            <NavHashLink to={'/committees#ai'}><li>AI</li></NavHashLink>
+            <NavHashLink to={'/committees#hack'}><li>Hack</li></NavHashLink>
+            </ul>
             {/*<a href={"/committees" + `#studio`}>Studio</a>
             <a href={"/committees" + `#icpc`}> ICPC</a>
             <a href={"/committees" + `#design`}> Design</a>
