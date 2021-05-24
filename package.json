@@ -61,7 +61,7 @@
     ]
   },
   "devDependencies": {
-    "eslint": "^7.26.0",
+    "eslint": "^7.27.0",
     "eslint-plugin-import": "^2.23.2",
     "eslint-plugin-jest": "^24.3.6",
     "stylelint": "^13.13.1",
