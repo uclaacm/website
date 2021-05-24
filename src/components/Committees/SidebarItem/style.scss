@@ -41,17 +41,29 @@
   flex-direction: column !important;
 
   font-size: 16px !important;
-  display: flex !important;
   flex-direction: column !important;
   flex-wrap: wrap !important;
   font-family: $font-header;
   font-weight: bold;
   text-transform: lowercase;
+  // float:left;
+  height: 10px;
+  line-height: 5px;
+
+  //trying two columns
+  line-height:1.5em;
+  float:left;
+  display:inline-block;
+
   &:hover {
     color: #999;
   }
 }
 
+.committee-mobile-nav li:after {
+  content: "\A";
+  white-space: pre;
+}
 
 *:target {
   margin-top: -70px;
@@ -64,7 +76,13 @@
   display: flex !important;
   flex-direction: column !important;
   flex-wrap: wrap !important;
-  height: 100px !important;
+  // height: 50px !important;
+
+    //trying two columns
+    margin-bottom:20px;
+    // overflow:hidden;
+
+
 }
 
 @media screen and (max-width: $navbar-breakpoint) {
