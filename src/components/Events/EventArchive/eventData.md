@@ -78,3 +78,5 @@ To filter/search events, I plan on generating a second data structure which is j
 The trackPicture and/or eventPicture will be used as a background in a card display.
 
 In general, we want a compact display; dropdowns can be used to see more information.
+
+What will initial card display look like? Certainly organized chronologically, but with tracks grouped together or everything as individual events? (Leaning towards grouping tracks)
