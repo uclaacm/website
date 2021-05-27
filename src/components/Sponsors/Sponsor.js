@@ -28,7 +28,7 @@ function Sponsors() {
 						</a>,
 					)}
 				</div>
-				<h3>Interesting in becoming a sponsor?</h3>
+				<h3>Interested in becoming a sponsor?</h3>
 				<div className="button-section center">
 					<a href="mailto:acm@ucla.edu"><Button text="Contact Us" /></a>
 				</div><br /><br />
