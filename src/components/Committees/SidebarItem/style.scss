@@ -1,0 +1,71 @@
+.sidebar-item {
+  background: none;
+  display: inline-flex;
+  flex-flow: column nowrap;
+  left: 0;
+  margin-top: 40px;
+  padding: 1rem;
+  position: fixed;
+  top: 52%;
+  transform: translateY(-50%);
+  transition: opacity 3s ease;
+  z-index: 1000;
+
+  .committee {
+    align-items: center;
+    color: $font-primary-color;
+    display: inline-block;
+    height: 63px;
+    position: relative;
+    text-align: left;
+    transition: transform 0.1s;
+    width: 200px;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.08);
+    }
+
+    img {
+      display: inline-block;
+      height: 2.5vw;
+      margin: 25px 10px;
+      width: vw;
+    }
+  }
+}
+
+
+.committee-mobile-nav li {
+  display: inline-block;
+  font-family: $font-header;
+  font-size: 16px !important;
+  font-weight: bold;
+  margin-bottom: 0 !important;
+  margin-top: 0 !important;
+  text-transform: lowercase;
+
+  &:hover {
+    color: #999;
+  }
+}
+
+.committee-mobile-nav li::after {
+  content: '\A';
+  white-space: pre;
+}
+
+
+.committee-mobile-nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0;
+
+}
+
+@media screen and (max-width: $navbar-breakpoint) {
+  .sidebar-item {
+    display: none;
+  }
+}
+
