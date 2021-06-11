@@ -77,10 +77,10 @@ const committees = {
   'acm':      {'name': 'ACM',       'color': '#1E6CFF'}
 };
 
-const attendanceTypes = {
+const attendance = {
   'inperson': 0,
   'virtual':  1,
   'hybrid':   2
 };
 
-export { getQuarter, committees, attendanceTypes };
+export { getQuarter, committees, attendance };

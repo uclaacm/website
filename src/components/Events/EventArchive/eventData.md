@@ -10,7 +10,7 @@ Each event or track object can have the following properties:
 | `trackName`        | `string`   | *optional* |
 | `trackID`          | `number`   | *optional* |
 | `trackPicture`     | `string`   | *optional* |
-| `description`      | `string`   | *optional* |
+| `desc`             | `string`   | *optional* |
 
 `committee`:
 - like a tag, is a filterable attribute
@@ -18,7 +18,7 @@ Each event or track object can have the following properties:
 `trackPicture`:
 - file location
 
-`description`:
+`desc`:
 - track description unused if not a track
 
 The events array contains 1 or more objects
@@ -28,7 +28,7 @@ Each event in the array can have the following properties:
 | `eventName`        | `string`   | *required* |
 | `eventPicture`     | `string`   | *optional* |
 | `trackID`          | `number`   | *optional* |
-| `description`      | `string`   | *optional* |
+| `desc`             | `string`   | *optional* |
 | `date`             | `number`   | *required* |
 | `sessionNumber`    | `number`   | *required* |
 | `attendanceType`   | `number`   | *required* |
