@@ -12,6 +12,7 @@ function SidebarLink(props){
 }
 
 function Sidebar(props){
+	// TODO: this is a side effect, it needs to be done with useEffect and should be cleaned up
 
 	// Check if user has scrolled to the bottom of the page
 	const [bottom, setBottom] = useState(false);

@@ -18,7 +18,7 @@ function CommitteesBanner() {
 	);
 }
 
-function Sponsors() {
+function CommitteesPage() {
 	const committees = Config.committees;
 	return (
 		<div>
@@ -34,4 +34,4 @@ function Sponsors() {
 	);
 }
 
-export default Sponsors;
+export default CommitteesPage;
