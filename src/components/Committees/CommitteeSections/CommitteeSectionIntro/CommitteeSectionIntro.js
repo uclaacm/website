@@ -25,6 +25,7 @@ function CommitteeIconLink({committee, link}) {
     );
 }
 
+// TODO: down the line, this can be refactored into a utility!
 function CommitteeIcon({platform}) {
     // see https://fontawesome.com/how-to-use/on-the-web/other-topics/accessibility#web-fonts-semantic
     // for more on accessibility
@@ -45,10 +46,12 @@ function CommitteeIcon({platform}) {
     }
 }
 
+// TODO: props destructuring
 function CommitteeSectionIntro(props) {
     return (
         <div className="intro-row">
             <div className="show-mobile">
+                {/* TODO: this should have an alt tag */}
                 <img src={props.committee.introImage} alt=""/>
                 <p>{props.committee.introImageDesc}</p>
             </div>
@@ -62,6 +65,7 @@ function CommitteeSectionIntro(props) {
                     )}
                 </div>
             </div>
+            {/* TODO: we can easily refactor this with the above .show-mobile to reduce code dupe */}
             <div className="right-col">
                 <img src={props.committee.introImage} alt=""/>
                 <p>{props.committee.introImageDesc}</p>

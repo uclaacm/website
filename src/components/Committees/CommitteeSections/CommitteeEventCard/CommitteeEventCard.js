@@ -8,7 +8,7 @@ function CommitteeEventCard(props) {
                 ? <img src={props.image.src} alt={props.image.alt} />
                 : <img src={`/images/committees/${props.committee}/${props.committee}_motif_base.png`} alt={props.image.alt} />
             }
-            <h2>{props.title}</h2>
+            <h4 className="font-header text-bold">{props.title}</h4>
             {props.desc}
         </div>
     );

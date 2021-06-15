@@ -1,11 +1,27 @@
 import React from 'react';
-import {NavLink} from 'react-router-dom';
-import MobileNavItem from '../Committees/SidebarItem/MobileNavItem';
+import { NavLink } from 'react-router-dom';
+import { NavHashLink } from 'react-router-hash-link';
 // import gmData from '../../config/gmData';
 
 //to allow GM page to be visible on the navbar and accessible
 //uncomment the above import line "import gmData from '../../config/gmData';" to get quarter from the gmData page
 //uncomment the two lines saying  "/* <NavLink to="/gm"><li>{gmData.date.quarter} gm</li></NavLink> */"
+
+function MobileNavItem() {
+	return (
+			<ul className="committee-mobile-nav">
+					<li><NavHashLink to={'/committees#studio'}>Studio</NavHashLink></li>
+					<li><NavHashLink to={'/committees#icpc'}>ICPC</NavHashLink></li>
+					<li><NavHashLink to={'/committees#design'}>Design</NavHashLink></li>
+					<li><NavHashLink to={'/committees#cyber'}>Cyber</NavHashLink></li>
+					<li><NavHashLink to={'/committees#teachla'}>Teach LA</NavHashLink></li>
+					<li><NavHashLink to={'/committees#w'}>W</NavHashLink></li>
+					<li><NavHashLink to={'/committees#ai'}>AI</NavHashLink></li>
+					<li><NavHashLink to={'/committees#hack'}>Hack</NavHashLink></li>
+			</ul>
+	);
+}
+
 
 export default class Navbar extends React.Component {
 	constructor(props) {
