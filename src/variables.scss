@@ -1,6 +1,5 @@
-/*************************************
- * Base styles and variables         *
- ************************************/
+/* Global Variables */
+/* Refer to: https://design.uclaacm.com/ */
 
 $acm-cobalt: #1E6CFF;
 $acm-black: #181818;
@@ -46,33 +45,3 @@ $font-primary-color: #333;
 $font-secondary-color: #777;
 
 $navbar-breakpoint: 1160px;
-
-body {
-  color: $font-primary-color;
-  font-family: $font-body;
-  margin: 0;
-  padding: 0;
-}
-
-.app-container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-.main-container {
-  flex: 1 0 auto;
-  margin-top: 70px; //To account for height of Navbar, which uses fixed positioning
-}
-
-.font-header {
-  font-family: $font-header;
-}
-
-.text-bold {
-  font-weight: bold;
-}
-
-.text-25x {
-  font-size: 2.5em !important;
-}

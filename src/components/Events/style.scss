@@ -1,22 +1,5 @@
+// TODO: completely remove this CSS file (pending another PR)
+
 .events-container {
   text-align: center;
-}
-
-.events-sm {
-  border-radius: 2px;
-  display: inline-block;
-  height: 30px;
-  margin: 0 3px;
-  vertical-align: middle;
-  width: 35px;
-
-  &:hover {
-    cursor: pointer;
-    transform: scale(1.03);
-  }
-}
-
-
-h2 {
-  font-family: $font-display;
 }

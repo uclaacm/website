@@ -12,29 +12,29 @@ import News from './News/News';
 
 function Home () {
 	return (
-		<div className="home-page">
+		<div className="home-page text-center">
 			<TGBanner />
 			<Banner />
-			<div className="content-section center">
+			<div className="content-section">
 				<h2>The largest Computer Science community at UCLA</h2>
 				<p className="subheading">ACM at UCLA is the largest computer science student organization in Southern California. We welcome students of all backgrounds, interests, and skill levels to join our community and share our love for technology. ACM is comprised of eight committees — each serving a different topic and mission. Our events are open to everyone, regardless of major or experience!</p>
 				<SocialMedia />
 			</div>
 			<br />
 			<Committees committees={Config.committees} />
-			<div className="button-section center">
+			<div className="button-section">
 				{ /** CHANGE THIS LINK TO ABOUT PAGE LATER */ }
 				<a href="/committees"><Button text="Learn More About Our Committees" /></a>
 			</div><br /><br />
 
-			<div className="content-section center">
+			<div className="content-section">
 				<h2>In the News</h2>
 				<News news={Config.news} />
 			</div>
 
 			<br /><br /><br />
 
-			<div className="full-width blue">
+			<div className="blue">
 				<div id="sign-up-section" className="content-section">
 					<div id="sign-up-left" className="half-width">
 						<h2>Want to stay updated on what&rsquo;s going on?</h2>

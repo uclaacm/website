@@ -4,7 +4,7 @@ import SocialMedia from '../SocialMedia/SocialMedia';
 
 function Footer(){
 	return (
-		<div id="footer">
+		<footer id="footer">
 			<div id="footer-inner">
 				<div id="footer-items">
 					<div className="footer-item">
@@ -33,7 +33,7 @@ function Footer(){
 					<span className="footer-text">&copy; ACM at UCLA 2021.</span>
 				</div>
 			</div>
-		</div>
+		</footer>
 	);
 }
 
