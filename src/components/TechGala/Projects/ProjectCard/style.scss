@@ -6,6 +6,10 @@
   display: none;
 }
 
+.link {
+  color: $acm-cobalt;
+}
+
 @media (min-width: 688px) {
   .left-col {
     float: left;
@@ -42,15 +46,19 @@
     content: '';
     display: table;
   }
-
-  .link {
-    color: #1E6CFF;
-  }
 }
 
 .winner {
-  color: #1E6CFF;
+  color: $acm-cobalt;
   font-family: $font-header;
   font-size: 1.1em;
   font-weight: bold;
+}
+
+.tg-tag {
+  border: 1px solid $acm-cobalt;
+  border-radius: 8px;
+  color: $acm-cobalt;
+  font-size: 0.8em;
+  padding: 2px 10px;
 }
