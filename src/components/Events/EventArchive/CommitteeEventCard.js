@@ -73,6 +73,7 @@ function CommitteeEventCard(props) {
     <div className='ce-container' style={{ width: '18rem', height: '18rem', border: '1px solid red'}}>
       <img src={topImage} style={{width: '100%', height: '9rem', objectFit: 'cover'}}/>
 
+      <div style={{height: '9rem', overflow: 'hidden'}}>
       <div className='ce-title-container'>
         <div className='ce-title-container-first'>
           <h4 className='ce-title'>{ce.eventName}</h4>
@@ -98,6 +99,7 @@ function CommitteeEventCard(props) {
       </div>
 
       {ceLinks()}
+      </div>
     </div>
   );
 }
