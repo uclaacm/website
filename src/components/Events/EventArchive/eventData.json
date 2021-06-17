@@ -6,9 +6,9 @@
     [
       {
         "eventName": "Karaoke Competition",
-        "eventPicture": "/images/committees/icpc/intro.png",
+        "eventPicture": "/images/acm_committees.png",
         "desc": "We don't know much about this event, but we're sure it's great!",
-        "date": 1616742000,
+        "date": 1616742000000,
         "sessionNumber": 1,
         "attendanceType": 2,
         "physicalLocation": "Boelter Hall dungeons",
@@ -28,7 +28,7 @@
       {
         "eventName": "Make Any Sys Admin Spill the Beans With This One Weird Trick",
         "desc": "We don't know much about this event, but we're sure it's great!",
-        "date": 1604300400,
+        "date": 1604300400000,
         "sessionNumber": 1,
         "attendanceType": 1,
         "virtualLocation": "https://www.uclaacm.com",
@@ -47,9 +47,9 @@
     [
       {
         "eventName": "Build Webpages, Get Dubs",
-        "eventPicture": "/images/committees/icpc/intro.png",
+        "eventPicture": "/images/acm_committees.png",
         "desc": "We don't know much about this event, but we're sure it's great!",
-        "date": 1569999600,
+        "date": 1569999600000,
         "sessionNumber": 1,
         "attendanceType": 0,
         "physicalLocation": "Covel Commons roof",
@@ -71,8 +71,8 @@
     [
       {
         "eventName": "Sectumsempra et al.",
-        "date": 1580886000,
-        "eventPicture": "/images/committees/icpc/intro.png",
+        "date": 1580886000000,
+        "eventPicture": "/images/acm_committees.png",
         "desc": "We don't know much about this event, but we're sure it's great!",
         "trackID": 1234,
         "sessionNumber": 1,
@@ -85,8 +85,8 @@
       },
       {
         "eventName": "Ethics of the Killing Curse",
-        "date": 1581490800,
-        "eventPicture": "/images/committees/icpc/intro.png",
+        "date": 1581490800000,
+        "eventPicture": "/images/acm_committees.png",
         "desc": "We don't know much about this event, but we're sure it's great!",
         "trackID": 1234,
         "sessionNumber": 2,
@@ -99,9 +99,9 @@
       },
       {
         "eventName": "Guns?!",
-        "date": 1582095600,
+        "date": 1582095600000,
         "trackID": 1234,
-        "eventPicture": "",
+        "eventPicture": "/images/acm_committees.png",
         "desc": "We don't know much about this event, but we're sure it's great!",
         "sessionNumber": 3,
         "attendanceType": 0,
@@ -113,9 +113,9 @@
       },
       {
         "eventName": "Brazilian Jiu Jitsu: A Primer",
-        "date": 1582700400,
+        "date": 1582700400000,
         "trackID": 1234,
-        "eventPicture": "/images/committees/icpc/intro.png",
+        "eventPicture": "/images/acm_committees.png",
         "desc": "We don't know much about this event, but we're sure it's great!",
         "sessionNumber": 4,
         "attendanceType": 0,
@@ -126,9 +126,9 @@
       },
       {
         "eventName": "Refuting the Evan's Gambit in Wizard's Chess",
-        "date": 1585810800,
+        "date": 1585810800000,
         "trackID": 1234,
-        "eventPicture": "",
+        "eventPicture": "/images/acm_committees.png",
         "desc": "We don't know much about this event, but we're sure it's great!",
         "sessionNumber": 5,
         "attendanceType": 0,
@@ -140,9 +140,9 @@
       },
       {
         "eventName": "Learing to Survive in the Wild with Bear Grylls",
-        "date": 1586415600,
+        "date": 1586415600000,
         "trackID": 1234,
-        "eventPicture": "/images/committees/icpc/intro.png",
+        "eventPicture": "/images/acm_committees.png",
         "desc": "We don't know much about this event, but we're sure it's great!",
         "sessionNumber": 6,
         "attendanceType": 1,
@@ -154,9 +154,9 @@
       },
       {
         "eventName": "Patronus Shenanigans",
-        "date": 1587020400,
+        "date": 1587020400000,
         "trackID": 1234,
-        "eventPicture": "",
+        "eventPicture": "/images/acm_committees.png",
         "desc": "We don't know much about this event, but we're sure it's great!",
         "sessionNumber": 7,
         "attendanceType": 1,
@@ -168,9 +168,9 @@
       },
       {
         "eventName": "Sportsmanship and Fortnite Dancing",
-        "date": 1587625200,
+        "date": 1587625200000,
         "trackID": 1234,
-        "eventPicture": "/images/committees/icpc/intro.png",
+        "eventPicture": "/images/acm_committees.png",
         "desc": "We don't know much about this event, but we're sure it's great!",
         "sessionNumber": 8,
         "attendanceType": 1,
@@ -181,7 +181,7 @@
       },
       {
         "eventName": "Electricity Go Brrrrrrrr",
-        "date": 1588230000,
+        "date": 1588230000000,
         "trackID": 1234,
         "desc": "We don't know much about this event, but we're sure it's great!",
         "sessionNumber": 9,
@@ -193,9 +193,9 @@
       },
       {
         "eventName": "DADA Social",
-        "date": 1588402800,
+        "date": 1588402800000,
         "trackID": 1234,
-        "eventPicture": "/images/committees/icpc/intro.png",
+        "eventPicture": "/images/acm_committees.png",
         "sessionNumber": 10,
         "attendanceType": 1,
         "virtualLocation": "https://www.uclaacm.com",

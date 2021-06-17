@@ -32,22 +32,24 @@
 }
 
 #wa-ce-parent {
-  width: 100%;
+  //width: 100%;
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .ce-container {
-  width: 100%;
-  border-radius: 20px;
-  background: #eeeeee;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding: 20px;
+  //width: 100%;
+  //border-radius: 20px;
+  //background: #eeeeee;
+  margin: 10px;
+  //padding: 20px;
 }
 
+/*
 .ce-container:first-of-type {
   margin-top: 20px;
 }
@@ -55,6 +57,7 @@
 .ce-container:last-of-type {
   margin-bottom: 20px;
 }
+*/
 
 .ce-title-container {
   display: flex;
@@ -81,6 +84,7 @@
   margin-right: 5px;
   padding: 3px;
   background-color: #dddddd;
+  font-size: 75%;
 }
 
 .ce-committee-name {

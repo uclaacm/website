@@ -1,11 +1,15 @@
 import React, { useState } from 'react';
-import CommitteeEventComponent from './CommitteeEventComponent';
+import CommitteeEventCard from './CommitteeEventCard';
 import './style.scss';
 
 function getOnlyEvents(data) {
   let events = [];
   for (let i = 0; i < data.length; i++) {
-    events = events.concat(data[i].events);
+    let temp = data[i].events;
+    for (let j = 0; j < temp.length; j++) {
+      temp[j].committees = data[i].committees;
+    }
+    events = events.concat(temp);
   }
   return events;
 }
@@ -20,7 +24,7 @@ function WorkshopArchive(props) {
   const [events, setEvents] = useState(onlyEvents.sort((a, b) => b.date - a.date));
 
   function createEventBox (event) {
-    return <CommitteeEventComponent committeeEvent={event}/>;
+    return <CommitteeEventCard committeeEvent={event}/>;
   }
 
   function createEventBoxes(events) {
@@ -83,4 +87,5 @@ get filtering, sorting working
 show tracks first with dropdown that shows events
 show events or tracks
 clickable tags to filter
+committee tag and color
 */

@@ -12,8 +12,8 @@ Each event or track object can have the following properties:
 | `trackPicture`     | `string`   | *optional* |
 | `desc`             | `string`   | *optional* |
 
-`committee`:
-- like a tag, is a filterable attribute
+`committees`:
+- like tags, is a filterable attribute
 
 `trackPicture`:
 - file location
@@ -44,7 +44,7 @@ Each event in the array can have the following properties:
 - default to track picture if applicable, otherwise use a default committee picture
 
 `date`:
-- Unix epoch (seconds since 1/1/1970)
+- Unix epoch (milliseconds since 1/1/1970)
 
 `sessionNumber`:
 - needed for tracks, default 1 for one-off events
