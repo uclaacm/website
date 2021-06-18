@@ -124,10 +124,10 @@
       transition: 0.35s cubic-bezier(0.05, 1.04, 0.72, 0.98);
       width: 50%;
     }
-	
+
     &:hover {
       cursor: pointer;
-  
+
       .bar {
         background-color: $font-primary-color;
         margin: 3px 0;
@@ -155,7 +155,6 @@
     z-index: -20;
 
     ul.nav-items {
-      display: block;
       display: flex;
       flex-direction: column;
       float: none;

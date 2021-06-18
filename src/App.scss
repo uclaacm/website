@@ -1,7 +1,8 @@
 /*************************************
  * Import CSS styles for components  *
  ************************************/
-@import 'Base';
+@import 'variables';
+@import 'globals';
 @import 'components/Navbar/style';
 @import 'components/Committees/style';
 @import 'components/Committees/Sidebar/style';

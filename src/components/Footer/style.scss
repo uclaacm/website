@@ -63,30 +63,7 @@
     line-height: 30px;
   }
 
-  form {
-    input[type=text] {
-      background: #676F98;
-      border: 0;
-      border-radius: 4px;
-      color: white;
-      font-family: $font-body;
-      font-size: 1em;
-      font-weight: 300;
-      height: 30px;
-      max-width: 200px;
-      outline: none;
-      padding: 0 10px;
-      text-align: center;
-      width: 70%;
-    }
-
-    input[type=text]:focus {
-      background: #F0F1F5;
-      color: $acm-black;
-    }
-  }
-
-  @media (max-width: 700px) {
+  @media (max-width: $navbar-breakpoint) {
     #footer-items {
       flex-direction: column;
       height: auto;

@@ -7,10 +7,10 @@ import Button from '../Button/Button';
 
 function Sponsors() {
 	return (
-		<div className="about-page">
+		<div className="text-center">
 			<Banner decorative />
-			<div className="content-section center">
-				<h2>Our Sponsors</h2>
+			<div className="content-section">
+				<h1>Our Sponsors</h1>
 				<p className="subheading">A big thank-you to the <b>UCLA Computer Science Department</b> for their continuous partnership with and support of ACM at UCLA. Shout-out to <b>UCLA ResLife</b> for providing logistical assistance and stellar venues for our events.</p>
 				<div className="sponsor-container">
 					<a href="https://www.cs.ucla.edu" target="_blank" rel="noreferrer noopener">
@@ -28,8 +28,8 @@ function Sponsors() {
 						</a>,
 					)}
 				</div>
-				<h3>Interested in becoming a sponsor?</h3>
-				<div className="button-section center">
+				<h2>Interested in becoming a sponsor?</h2>
+				<div className="button-section">
 					<a href="mailto:acm@ucla.edu"><Button text="Contact Us" /></a>
 				</div><br /><br />
 			</div>
