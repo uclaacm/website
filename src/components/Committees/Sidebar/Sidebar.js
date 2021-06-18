@@ -27,7 +27,7 @@ function Sidebar(props){
 		return () => {
 			window.removeEventListener('scroll', scrollBottomListener);
 		};
-	});
+	}, []);
 
 
 	// Don't display sidebar if user has scrolled to the bottom of the screen
