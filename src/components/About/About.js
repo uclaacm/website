@@ -23,7 +23,7 @@ function About() {
 				</div>
 			</div>
 			<div className="content-section right">
-				<div className="ornament image-ornament image-ornament-left">
+				<div className="ornament image-ornament image-ornament-right">
 					<img src={process.env.PUBLIC_URL + '/images/acm_committees.png'} alt="the logos of all ACM committees" />
 				</div>
 				<div className="text-section">
