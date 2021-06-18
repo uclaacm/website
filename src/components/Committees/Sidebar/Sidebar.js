@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 function SidebarLink(props){
 	return (
@@ -12,15 +12,22 @@ function SidebarLink(props){
 }
 
 function Sidebar(props){
-	// TODO: this is a side effect, it needs to be done with useEffect and should be cleaned up
-
 	// Check if user has scrolled to the bottom of the page
 	const [bottom, setBottom] = useState(false);
-	window.onscroll = function() {
+	const scrollBottomListener = () => {
 		const difference = document.documentElement.scrollHeight - window.innerHeight;
 		const scrollposition = document.documentElement.scrollTop;
 		setBottom(difference - scrollposition <= 180);
 	};
+
+	useEffect(() => {
+		window.addEventListener('scroll', scrollBottomListener);
+
+		// cleanup
+		return () => {
+			window.removeEventListener('scroll', scrollBottomListener);
+		};
+	});
 
 
 	// Don't display sidebar if user has scrolled to the bottom of the screen
