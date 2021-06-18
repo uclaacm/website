@@ -21,3 +21,12 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# next.js
+/.next/
+/out/
+*.pem
+# debug
+# local env files
+# vercel
+.vercel
