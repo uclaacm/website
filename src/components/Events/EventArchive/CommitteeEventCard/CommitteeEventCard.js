@@ -148,7 +148,7 @@ function CommitteeEventCard(props) {
       </div>
 
       <div className='ce-container'>
-        <img src={topImage} className='ce-image'/>
+        <img src={topImage} className='ce-image' onClick={() => setModalOpen(true)}/>
 
         <div className='ce-below-image'>
           <div className='ce-title-container'>

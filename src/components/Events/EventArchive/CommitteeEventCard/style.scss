@@ -65,6 +65,11 @@
   object-fit: cover;
 }
 
+.ce-image:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
 .ce-time {
   display: flex;
   flex-flow: row wrap;
