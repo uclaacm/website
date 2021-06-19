@@ -17,10 +17,10 @@ function CommitteeEventCard(props) {
   const date = new Date(ce.date);
   const quarter = getQuarter(date);
 
-  function ceCommittee(c) {
+  function ceCommittee(comm) {
     return (
       <h4 className='ce-committee'>
-        <span className='ce-committee-name' style={{backgroundColor: committees[c].color}}>{committees[c].name}</span>
+        <span className='ce-committee-name' style={{backgroundColor: committees[comm].color}}>{committees[comm].name}</span>
       </h4>
     );
   }
