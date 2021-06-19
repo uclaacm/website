@@ -8,6 +8,9 @@ function getOnlyEvents(data) {
     let temp = data[i].events;
     for (let j = 0; j < temp.length; j++) {
       temp[j].committees = data[i].committees;
+      if (data[i].hasOwnProperty('trackName')) {
+        temp[j].trackName = data[i].trackName;
+      }
     }
     events = events.concat(temp);
   }
@@ -91,3 +94,4 @@ committee tag and color
 */
 
 // forget the css dropdowns for tracks! I have been inspired
+// modal are buggy rn

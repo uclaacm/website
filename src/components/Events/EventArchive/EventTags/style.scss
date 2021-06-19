@@ -2,14 +2,16 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
-  margin-bottom: 10px;
 }
 
 .ce-event-tag {
   background-color: #dddddd;
   border-radius: 7px;
-  margin: 0px 2.5px 0px 2.5px;
+  margin: 5px;
+  margin-top: 0px;
+  margin-right: 0px;
   padding: 3px;
+  font-size: 80%;
 }
 
 .ce-event-tag:hover {
@@ -17,10 +19,10 @@
   cursor: pointer;
 }
 
-.ce-event-tag:first-of-type {
+/*.ce-event-tag:first-of-type {
   margin-left: 0px;
 }
 
 .ce-event-tag:last-of-type {
   margin-right: 0px;
-}
+}*/

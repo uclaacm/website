@@ -66,7 +66,34 @@ function CommitteeEventCard(props) {
 
   function ceSessionTag() {
     if (ce.hasOwnProperty('trackID')) {
-      return <h4 className='ce-session'>{'Session ' + ce.sessionNumber}</h4>;
+      return <h4 className='ce-session-container'><span className='ce-session'>{'Session ' + ce.sessionNumber}</span></h4>;
+    }
+    return null;
+  }
+
+  function ceCommitteeModal(comm) {
+    // todo: sass classes instead
+    return (
+      <h4 className='ce-committee-modal'>
+        <span className='ce-committee-name-modal' style={{backgroundColor: committees[comm].color}}>{committees[comm].name}</span>
+      </h4>
+    );
+  }
+
+  function ceCommitteesModal() {
+    return (<div className='ce-committee-container'>{ce.committees.map(ceCommitteeModal)}</div>);
+  }
+
+  function ceTrackTagModal() {
+    if (ce.hasOwnProperty('trackName')) {
+      return <h4 className='ce-track-container-modal'><span className='ce-track-modal'>{ce.trackName}</span></h4>;
+    }
+    return null;
+  }
+
+  function ceSessionTagModal() {
+    if (ce.hasOwnProperty('trackID')) {
+      return <h4 className='ce-session-container-modal'><span className='ce-session-modal'>{'Session ' + ce.sessionNumber}</span></h4>;
     }
     return null;
   }
@@ -79,28 +106,28 @@ function CommitteeEventCard(props) {
   }
 
   // I'm sure there's a way to simplify this lol
-  function ceLinks() {
+  function ceLinksModal() {
     if (ce.hasOwnProperty('eventLinks') && ce.hasOwnProperty('contentLinks')) {
       return (
-        <div className='ce-links'>
-          <h4 className='ce-links-first-title'>Event Links</h4>
+        <div className='ce-links-modal'>
+          <h4>Event Links</h4>
           <Links links={ce.eventLinks}/>
           <h4>Content Links</h4>
-          <Links links={ce.contentLinks} class='ce-bottom-links-container'/>
+          <Links links={ce.contentLinks}/>
         </div>
       );
     } else if (ce.hasOwnProperty('eventLinks')) {
       return (
-        <div className='ce-links'>
-          <h4 className='ce-links-first-title'>Event Links</h4>
-          <Links links={ce.eventLinks} class='ce-bottom-links-container'/>
+        <div className='ce-links-modal'>
+          <h4>Event Links</h4>
+          <Links links={ce.eventLinks}/>
         </div>
       );
     } else if (ce.hasOwnProperty('contentLinks')) {
       return (
-        <div className='ce-links'>
-          <h4 className='ce-links-first-title'>Content Links</h4>
-          <Links links={ce.contentLinks} class='ce-bottom-links-container'/>
+        <div className='ce-links-modal'>
+          <h4>Content Links</h4>
+          <Links links={ce.contentLinks}/>
         </div>
       );
     }
@@ -121,16 +148,24 @@ function CommitteeEventCard(props) {
   return (
     <>
       <div className='ce-modal' style={{display: (modalOpen) ? 'block' : 'none'}}>
-        <div className='ce-'>
-          <h4 className='ce-'>{ce.eventName}</h4>
-          <p className='ce-desc'>{ce.desc}</p>
-          {ceCommittees()}
-          {ceSessionTag()}
-        </div>
+        <div className='ce-title-container-modal'>
+          <h1 className='ce-title-modal'>{ce.eventName}</h1>
+          <br/>
+          <div className='ce-header-line-modal'>
+            {ceCommitteesModal()}
 
-        <div className='ce-time-modal'>
-          <h4>{(date).toLocaleDateString()}</h4>
-          <h4>{quarter.season} {quarter.year}</h4>
+            <div className='ce-track-session-modal-container'>
+              {ceTrackTagModal()}
+              {ceSessionTagModal()}
+            </div>
+          </div>
+          <div className='ce-time-modal'>
+            <h4 className='ce-date-quarter-tag-container-modal'><span className='ce-date-modal'>{(date).toLocaleDateString('en-US', {month: 'long', day: 'numeric', year: 'numeric'})}</span></h4>
+            <h4 className='ce-date-quarter-tag-container-modal'><span className='ce-quarter-modal'>{quarter.season} {quarter.year}</span></h4>
+          </div>
+          <br/>
+
+          <p className='ce-desc-modal'>{ce.desc}</p>
         </div>
 
         <div className='ce-more-info-container'>
@@ -144,7 +179,7 @@ function CommitteeEventCard(props) {
           {ceTeachersModal()}
         </div>
 
-        {ceLinks()}
+        {ceLinksModal()}
       </div>
 
       <div className='ce-container'>
@@ -158,8 +193,8 @@ function CommitteeEventCard(props) {
           </div>
 
           <div className='ce-time'>
-            <h4 className='ce-date'>{(date).toLocaleDateString()}</h4>
-            <h4 className='ce-quarter'>{quarter.season} {quarter.year}</h4>
+            <h4 className='ce-date-quarter-tag-container'><span className='ce-date'>{(date).toLocaleDateString('en-US', {month: 'long', day: 'numeric', year: 'numeric'})}</span></h4>
+            <h4 className='ce-date-quarter-tag-container'><span className='ce-quarter'>{quarter.season} {quarter.year}</span></h4>
           </div>
 
           <EventTags tags={ce.tags}/>

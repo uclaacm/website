@@ -6,18 +6,12 @@
   border-radius: 10px;
 }
 
-// still not ideal lol
-.ce-container h4 {
-  margin: 0px;
-  padding: 0px;
-}
-
 .ce-title-container {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 /*.ce-title-first {
@@ -31,6 +25,7 @@
 .ce-title {
   width: 100%;
   font-family: 'Poppins';
+  margin: 5px;
 }
 
 .ce-title:hover {
@@ -40,10 +35,15 @@
 
 .ce-session {
   border-radius: 7px;
-  margin-right: 5px;
   padding: 3px;
   background-color: #dddddd;
   font-size: 75%;
+}
+
+.ce-session-container {
+  margin: 5px;
+  margin-top: 0px;
+  margin-left: 0px;
 }
 
 .ce-committee-container {
@@ -51,17 +51,23 @@
   flex-flow: row wrap;
 }
 
+.ce-committee {
+  margin: 5px;
+  margin-top: 0px;
+  margin-right: 0px;
+}
+
 .ce-committee-name {
   border-radius: 7px;
-  margin-right: 10px;
   padding: 3px;
   font-family: 'Poppins';
   color: white;
+  font-size: 75%;
 }
 
 .ce-image {
   width: 100%;
-  height: 9rem;
+  height: 8rem;
   object-fit: cover;
 }
 
@@ -77,15 +83,33 @@
 }
 
 .ce-below-image {
-  height: 9rem;
-  overflow: hidden;
   border-top: 1px solid black;
 }
-.ce-date, .ce-quarter/*, .ce-event-type, .ce-teachers*/ {
+
+.ce-date-quarter-tag-container {
+  margin: 5px;
+  margin-top: 0px;
+}
+
+.ce-date-quarter-tag-container-modal {
+  margin: 5px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.ce-date, .ce-quarter, .ce-date-modal, .ce-quarter-modal/*, .ce-event-type, .ce-teachers*/ {
   background-color: #dddddd;
   border-radius: 7px;
   padding: 3px;
-  margin-bottom: 10px;
+}
+
+.ce-date, .ce-quarter {
+  font-size: 75%;
+}
+
+.ce-committee:hover, .ce-session:hover, .ce-quarter:hover {
+  opacity: 0.7;
+  cursor: pointer;
 }
 
 .ce-more-info-container {
@@ -94,24 +118,72 @@
   justify-content: space-between;
 }
 
-.ce-bottom-links-container span {
-  margin-bottom: 0px;
-}
-
-.ce-links-first-title {
-  margin-top: -5px;
-}
-
 .ce-modal {
   width: 50%;
-  height: 36rem;
+  height: 24rem;
   position: fixed;
   border: 2px solid black;
   border-radius: 20px;
-  z-index: 1;
+  z-index: 9999;
   overflow: auto;
   left: 25%;
   top: 50%;
-  margin-top: -18rem;
+  margin-top: -12rem;
   background-color: white;
+  padding: 10px;
+}
+
+.ce-committee-modal {
+  margin: 0px;
+  margin-right: 5px;
+}
+
+.ce-committee-name-modal {
+  border-radius: 7px;
+  padding: 3px;
+  font-family: 'Poppins';
+  color: white;
+}
+
+.ce-title-modal {
+  margin: 0px;
+}
+
+.ce-desc-modal {
+  margin: 0px;
+}
+
+.ce-session-container-modal, .ce-track-container-modal {
+  margin: 5px;
+  margin-top: 0px;
+  margin-right: 0px;
+}
+
+.ce-session-modal, .ce-track-modal {
+  border-radius: 7px;
+  padding: 3px;
+  background-color: #dddddd;
+}
+
+.ce-track-session-modal-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.ce-header-line-modal {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.ce-time-modal {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.ce-links-modal h4 {
+  margin: 0px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
