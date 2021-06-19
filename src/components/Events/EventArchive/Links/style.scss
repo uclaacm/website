@@ -1,0 +1,20 @@
+.links-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.custom-link {
+  background-color: #dddddd;
+  border-radius: 7px;
+  margin: 5px 2.5px 5px 2.5px;
+  padding: 3px;
+}
+
+.custom-link:first-of-type {
+  margin-left: 0px;
+}
+
+.custom-link:last-of-type {
+  margin-right: 0px;
+}

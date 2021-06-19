@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import CommitteeEventCard from './CommitteeEventCard';
+import CommitteeEventCard from './CommitteeEventCard/CommitteeEventCard';
 import './style.scss';
 
 function getOnlyEvents(data) {
@@ -32,17 +32,17 @@ function WorkshopArchive(props) {
   }
 
   function filterEventName() {
-    setEvents(onlyEvents.filter(event => event.eventName.includes(document.getElementById('event-name-filter').value)));
+    setEvents(onlyEvents.filter(event => event.eventName.includes(document.getElementById('ea-event-name-filter').value)));
   }
 
   function eventOrder() {
-    if (document.getElementById('event-order-button').value === 'Sort by old') {
-      document.getElementById('event-order-button').value = 'Sort by new';
+    if (document.getElementById('ea-event-order-button').value === 'Sort by old') {
+      document.getElementById('ea-event-order-button').value = 'Sort by new';
       setEvents(onlyEvents.sort((a, b) => a.date.getTime() - b.date.getTime()));
       console.log('a');
       console.log(events);
     } else {
-      document.getElementById('event-order-button').value = 'Sort by old';
+      document.getElementById('ea-event-order-button').value = 'Sort by old';
       setEvents(onlyEvents.sort((a, b) => b.date.getTime() - a.date.getTime()));
       console.log('b');
       console.log(events);
@@ -50,8 +50,8 @@ function WorkshopArchive(props) {
   }
 
   return (
-    <div className='wa-container'>
-      {/*<div className='search-container'>
+    <div className='ea-content-container'>
+      {/*<div className='ea-search-container'>
         <input type='text' id='event-name-filter' placeholder='Search by event name' onChange={filterEventName}></input>
         <select id='' name='' style={{width: '25%', height: '20px', borderRadius: '7px', borderWidth: '1px', borderColor: 'black'}}>
           <option value=''></option>
@@ -71,7 +71,7 @@ function WorkshopArchive(props) {
         </select>
         <input id='event-order-button' type='button' value='Sort by old' onClick={() => eventOrder()} style={{width: '15%', height: '20px', borderRadius: '7px', borderWidth: '1px', borderColor: 'black', fontFamily: 'Poppins', backgroundColor: '#dddddd'}}></input>
       </div>*/}
-      <div id='wa-ce-parent'>
+      <div id='ea-ce-parent'>
         {createEventBoxes(events)/*createEventBox(events[0])*/}
       </div>
     </div>

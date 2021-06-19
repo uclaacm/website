@@ -1,0 +1,83 @@
+.ce-container {
+  //width: 100%;
+  //border-radius: 20px;
+  //background: #eeeeee;
+  margin: 10px;
+  //padding: 20px;
+}
+
+/*
+.ce-container:first-of-type {
+  margin-top: 20px;
+}
+
+.ce-container:last-of-type {
+  margin-bottom: 20px;
+}
+*/
+
+.ce-title-container {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ce-title-container-first {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+
+.ce-title {
+  margin-right: 5px;
+  font-family: 'Poppins';
+}
+
+.ce-session {
+  border-radius: 7px;
+  margin-right: 5px;
+  padding: 3px;
+  background-color: #dddddd;
+  font-size: 75%;
+}
+
+.ce-committee-name {
+  border-radius: 7px;
+  margin-right: 10px;
+  padding: 3px;
+  font-family: 'Poppins';
+  color: white;
+}
+
+.ce-title-header-hr {
+  margin: 0px 0px 10px 0px;
+  color: black;
+  background-color: black;
+  border-style: solid;
+}
+
+.ce-header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.ce-date, .ce-quarter, .ce-event-type, .ce-teachers {
+  background-color: #dddddd;
+  border-radius: 7px;
+  padding: 3px;
+  margin-bottom: 10px;
+}
+
+.ce-more-info-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.ce-content-links-container span {
+  margin-bottom: 0px;
+}
