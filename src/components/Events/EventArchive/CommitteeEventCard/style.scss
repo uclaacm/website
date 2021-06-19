@@ -76,7 +76,7 @@
   overflow: hidden;
   border-top: 1px solid black;
 }
-.ce-date, .ce-quarter, .ce-event-type, .ce-teachers {
+.ce-date, .ce-quarter/*, .ce-event-type, .ce-teachers*/ {
   background-color: #dddddd;
   border-radius: 7px;
   padding: 3px;
@@ -98,5 +98,15 @@
 }
 
 .ce-modal {
-  display: none;
+  width: 50%;
+  height: 36rem;
+  position: fixed;
+  border: 2px solid black;
+  border-radius: 20px;
+  z-index: 1;
+  overflow: auto;
+  left: 25%;
+  top: 50%;
+  margin-top: -18rem;
+  background-color: white;
 }
