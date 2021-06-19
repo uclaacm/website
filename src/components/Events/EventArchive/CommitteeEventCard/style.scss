@@ -1,39 +1,41 @@
 .ce-container {
-  //width: 100%;
-  //border-radius: 20px;
-  //background: #eeeeee;
+  width: 18rem;
+  height: 18rem;
   margin: 10px;
-  //padding: 20px;
+  border: 2px solid black; // ugly?
+  border-radius: 10px;
 }
 
-/*
-.ce-container:first-of-type {
-  margin-top: 20px;
+// still not ideal lol
+.ce-container h4 {
+  margin: 0px;
+  padding: 0px;
 }
-
-.ce-container:last-of-type {
-  margin-bottom: 20px;
-}
-*/
 
 .ce-title-container {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
   justify-content: space-between;
-}
-
-.ce-title-container-first {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  justify-content: flex-start;
   margin-bottom: 10px;
 }
 
+/*.ce-title-first {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}*/
+
 .ce-title {
-  margin-right: 5px;
+  width: 100%;
   font-family: 'Poppins';
+}
+
+.ce-title:hover {
+  opacity: 0.7;
+  cursor: pointer;
 }
 
 .ce-session {
@@ -44,6 +46,11 @@
   font-size: 75%;
 }
 
+.ce-committee-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
 .ce-committee-name {
   border-radius: 7px;
   margin-right: 10px;
@@ -52,19 +59,23 @@
   color: white;
 }
 
-.ce-title-header-hr {
-  margin: 0px 0px 10px 0px;
-  color: black;
-  background-color: black;
-  border-style: solid;
+.ce-image {
+  width: 100%;
+  height: 9rem;
+  object-fit: cover;
 }
 
-.ce-header {
+.ce-time {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
 }
 
+.ce-below-image {
+  height: 9rem;
+  overflow: hidden;
+  border-top: 1px solid black;
+}
 .ce-date, .ce-quarter, .ce-event-type, .ce-teachers {
   background-color: #dddddd;
   border-radius: 7px;
@@ -78,6 +89,14 @@
   justify-content: space-between;
 }
 
-.ce-content-links-container span {
+.ce-bottom-links-container span {
   margin-bottom: 0px;
+}
+
+.ce-links-first-title {
+  margin-top: -5px;
+}
+
+.ce-modal {
+  display: none;
 }

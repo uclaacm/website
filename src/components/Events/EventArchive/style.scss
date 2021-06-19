@@ -1,8 +1,15 @@
 .ea-content-container * {
+  // no longer a good idea considering separating CSS by component means... this CSS overrides
+  //margin: 0px;
+  //padding: 0px;
+  box-sizing: border-box;
+}
+
+/*.ea-content-container h4 {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-}
+}*/
 
 .ea-content-container {
   width: 75%;

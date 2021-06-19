@@ -3,7 +3,7 @@ import './style.scss';
 
 function Link(props) {
   return (
-    <span className='custom-link'><a href={props.link.link}>{props.link.title}</a></span>
+    <span className='ce-custom-link'><a href={props.link.link}>{props.link.title}</a></span>
   );
 }
 
@@ -19,7 +19,7 @@ function Links(props) {
   }
 
   return (
-    <div className={(props.class) ? 'links-container ' + props.class : 'links-container'}>
+    <div className={(props.class) ? 'ce-links-container ' + props.class : 'ce-links-container'}>
       {createLinks(links)}
     </div>
   );

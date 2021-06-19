@@ -4,7 +4,7 @@ import './style.scss';
 function EventTag(props) {
   let tag = props.tag;
   return (
-    <span className='event-tag'>{tag}</span>
+    <span className='ce-event-tag'>{tag}</span>
   );
 }
 
@@ -20,7 +20,7 @@ function EventTags(props) {
   }
 
   return (
-    <div className='tags-container'>
+    <div className='ce-tags-container'>
       {createEventTags(tags)}
     </div>
   );

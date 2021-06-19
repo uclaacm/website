@@ -89,3 +89,5 @@ show events or tracks
 clickable tags to filter
 committee tag and color
 */
+
+// forget the css dropdowns for tracks! I have been inspired

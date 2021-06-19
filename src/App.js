@@ -10,7 +10,7 @@ import Home from './components/Home/Home';
 import About from './components/About/About';
 import Sponsors from './components/Sponsors/Sponsor';
 import Events from './components/Events/Event';
-import WorkshopArchive from './components/Events/EventArchive/WorkshopArchive';
+import WorkshopArchive from './components/Events/EventArchive/EventArchive';
 import Committees from './components/Committees/Committees';
 import GM from './components/Events/GM/GM';
 

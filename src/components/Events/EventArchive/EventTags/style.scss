@@ -1,21 +1,26 @@
-.tags-container {
+.ce-tags-container {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
   margin-bottom: 10px;
 }
 
-.event-tag {
+.ce-event-tag {
   background-color: #dddddd;
   border-radius: 7px;
   margin: 0px 2.5px 0px 2.5px;
   padding: 3px;
 }
 
-.event-tag:first-of-type {
+.ce-event-tag:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.ce-event-tag:first-of-type {
   margin-left: 0px;
 }
 
-.event-tag:last-of-type {
+.ce-event-tag:last-of-type {
   margin-right: 0px;
 }

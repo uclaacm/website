@@ -83,4 +83,6 @@ const attendance = {
   'hybrid':   2
 };
 
-export { getQuarter, committees, attendance };
+const attendanceStrings = ['In-person', 'Virtual', 'Hybrid'];
+
+export { getQuarter, committees, attendance, attendanceStrings };
