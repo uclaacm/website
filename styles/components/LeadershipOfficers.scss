@@ -1,3 +1,40 @@
+.officer-grid-row {
+  display: flex;
+  height: 100%;
+  justify-content: flex-start;
+  margin-bottom: 1em;
+  padding: 0.5em;
+  width: 100%;
+}
+
+.officer-grid-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.officer-image {
+  border: 2px solid #EAEAEA;
+  border-radius: 50%;
+  display: inline-block;
+  height: 70px;
+  margin: 25px 10px 0;
+  width: 70px;
+}
+
+.officer-info {
+  padding-left: 1em;
+
+  p {
+    margin: 0 !important; // this is to override .content-section p
+  }
+
+  .officer-title {
+    font-weight: 600;
+    margin: 0;
+  }
+}
+
 #officers-container {
   box-sizing: border-box;
   margin: auto;

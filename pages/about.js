@@ -53,9 +53,9 @@ function About() {
 				</div>
 			</div>
 			<div className="content-section center" style={{marginBottom: '0'}}>
-				<h2>Officers</h2>
+				<h2>Leadership</h2>
+				<Officers officers={officers} />
 			</div>
-			<Officers officers={officers} /><br /><br />
 		</div>
 		</Layout>
 	);

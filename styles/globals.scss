@@ -35,6 +35,13 @@ h3 {
   font-family: $font-header;
 }
 
+@media (min-width: $navbar-breakpoint) {
+  .grid-desktop-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
 .text-bold {
   font-weight: bold;
 }
