@@ -63,7 +63,7 @@ export default class Navbar extends React.Component {
 								width="180px"
 								height="60px"
 								alt="ACM at UCLA logo"
-								preload={true}
+								priority={true}
 							/>
 						</a>
 					</Link>

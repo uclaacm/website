@@ -53,7 +53,7 @@ function CommitteeSectionIntro(props) {
         <div className="intro-row">
             <div className="show-mobile">
                 {/* TODO: this should have an alt tag */}
-                <Image src={props.committee.introImage} alt="" layout="fill"/>
+                <Image src={props.committee.introImage} alt="" width={390} height={195}/>
                 <p>{props.committee.introImageDesc}</p>
             </div>
             <div className="left-col">
@@ -68,7 +68,7 @@ function CommitteeSectionIntro(props) {
             </div>
             {/* TODO: we can easily refactor this with the above .show-mobile to reduce code dupe */}
             <div className="right-col">
-                <Image src={props.committee.introImage} alt="" layout="fill"/>
+                <Image src={props.committee.introImage} alt="" width={390} height={195}/>
                 <p>{props.committee.introImageDesc}</p>
             </div>
         </div>
