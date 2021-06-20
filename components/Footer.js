@@ -1,6 +1,6 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
-import Button from './Button';
 import SocialMedia from './SocialMedia';
 
 function Footer(){
@@ -20,9 +20,11 @@ function Footer(){
 						previous empty <h3> tag previously used for spacing. should be replaced later.
 					*/}
 					<div className="footer-item" style={{paddingTop: '28px'}}>
-						<a href="http://eepurl.com/c5pE6P" target="_blank" rel="noreferrer noopener">
-							<Button text="Join our Mailing List" styleClass="tight" />
-						</a>
+						<Link href="http://eepurl.com/c5pE6P">
+							<a className="button tight" target="_blank" rel="noreferrer noopener">
+								Join our Mailing List
+							</a>
+						</Link>
 					</div>
 				</div>
 				<div id="netlify-badge">

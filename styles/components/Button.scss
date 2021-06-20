@@ -1,4 +1,4 @@
-button {
+.button {
   background-color: $acm-cobalt;
   border: 0;
   border-radius: 11.2px;
@@ -10,6 +10,7 @@ button {
   line-height: 40px;
   min-width: 240px;
   padding: 0 20px;
+  text-decoration: none;
   transition: 0.2s;
 
   &:hover {
@@ -24,19 +25,19 @@ button {
   }
 }
 
-button.tight {
+.button.tight {
   min-width: 0;
   width: auto;
 }
 
-button.fade-light {
+.button.fade-light {
   &:active {
     background: white;
     color: $acm-black;
   }
 }
 
-button.dark {
+.button.dark {
   background-color: $acm-black;
 
   &:hover {

@@ -2,7 +2,6 @@ import Link from 'next/link';
 import React from 'react';
 
 import Banner from '../components/Banner';
-import Button from '../components/Button';
 import Carousel from '../components/Carousel';
 import Committees from '../components/CommitteeSpread';
 import Layout from '../components/Layout';
@@ -27,7 +26,7 @@ function Home () {
 				<Committees committees={committees} />
 				<div className="button-section">
 					{ /** CHANGE THIS LINK TO ABOUT PAGE LATER */ }
-					<Link href="/committees"><Button text="Learn More About Our Committees" /></Link>
+					<Link href="/committees"><a className="button">Learn More About Our Committees</a></Link>
 				</div><br /><br />
 
 				<div className="content-section">
@@ -47,9 +46,11 @@ function Home () {
 							<h2>Want to stay updated on what&rsquo;s going on?</h2>
 						</div>
 						<div id="sign-up-right" className="half-width">
-							<a href="http://eepurl.com/c5pE6P" target="_blank" rel="noreferrer noopener">
-								<Button className="tight dark" text="Join our Mailing List" styleClass="tight dark" />
-							</a>
+							<Link href="http://eepurl.com/c5pE6P">
+								<a className="button tight dark" target="_blank" rel="noreferrer noopener">
+									Join our Mailing List
+								</a>
+							</Link>
 						</div>
 					</div>
 				</div>

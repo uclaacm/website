@@ -1,8 +1,8 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 import Banner from '../components/Banner';
-import Button from '../components/Button';
 import Layout from '../components/Layout';
 import data from '../data';
 
@@ -44,7 +44,11 @@ function Sponsors() {
 				</div>
 				<h2>Interested in becoming a sponsor?</h2>
 				<div className="button-section">
-					<a href="mailto:acm@ucla.edu"><Button text="Contact Us" /></a>
+					<Link href="mailto:acm@ucla.edu">
+						<a className="button">
+							Contact Us at acm@ucla.edu
+						</a>
+					</Link>
 				</div>
 			</div>
 		</Layout>

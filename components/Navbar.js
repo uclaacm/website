@@ -55,7 +55,8 @@ export default class Navbar extends React.Component {
 			<div id="navbar">
 				<div id="navbar-inner">
 					<Link href="/">
-						<div id="nav-title" className="nav-section left">
+						<a id="nav-title" className="nav-section left">
+							{/* TODO: this image's alignment is off */}
 							<Image
 								id="acm-logo"
 								src={process.env.PUBLIC_URL + '/images/acm_wordmark&logo.svg'}
@@ -63,7 +64,7 @@ export default class Navbar extends React.Component {
 								height="60px"
 								alt="ACM at UCLA logo"
 							/>
-						</div>
+						</a>
 					</Link>
 					<div className="nav-section right" id="desktop-nav">
 						<ul className="nav-items">

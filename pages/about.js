@@ -7,6 +7,10 @@ import Officers from '../components/LeadershipOfficers';
 import SocialMedia from '../components/SocialMedia';
 import data from '../data';
 
+import acmAbout1 from '../public/images/about1.png';
+import acmCommittees from '../public/images/acm_committees.png';
+import acmHowToJoin from '../public/images/how-to-join.png';
+
 function About() {
 	const { officers } = data;
 	return (
@@ -15,8 +19,7 @@ function About() {
 			<Banner decorative />
 			<div className="content-section">
 				<div className="ornament square-ornament">
-
-					<Image className="square-splash" src="/images/about1.png" alt="a picture of acm students at our annual CS BBQ!" />
+					<Image className="square-splash" src={acmAbout1} alt="a picture of acm students at our annual CS BBQ!" />
 					<div className="square-small" />
 					<div className="square-tiny" />
 				</div>
@@ -28,7 +31,7 @@ function About() {
 			</div>
 			<div className="content-section right">
 				<div className="ornament image-ornament image-ornament-right">
-					<Image src={process.env.PUBLIC_URL + '/images/acm_committees.png'} alt="the logos of all ACM committees" />
+					<Image src={acmCommittees} alt="the logos of all ACM committees" />
 				</div>
 				<div className="text-section">
 					<h1>What are ACM committees?</h1>
@@ -37,7 +40,7 @@ function About() {
 			</div>
 			<div className="content-section left">
 				<div className="ornament image-ornament image-ornament-right">
-					<Image src={process.env.PUBLIC_URL + '/images/how-to-join.png'} alt="photos of acm events" />
+					<Image src={acmHowToJoin} alt="photos of acm events" />
 				</div>
 				<div className="text-section">
 					<h1>How do I get involved?</h1>
