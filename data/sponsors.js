@@ -1,57 +1,69 @@
+import blizzard from '../public/images/sponsors/blizzard.png';
+import citadel from '../public/images/sponsors/citadel.png';
+import deloitte from '../public/images/sponsors/deloitte.svg';
+import facebook from '../public/images/sponsors/facebook.png';
+import ghs from '../public/images/sponsors/ghs.png';
+import google from '../public/images/sponsors/google.svg';
+import humancapital from '../public/images/sponsors/human-capital.png';
+import northrop from '../public/images/sponsors/northrop-grumman.svg';
+import samsung from '../public/images/sponsors/samsung.svg';
+import sandia from '../public/images/sponsors/sandia.png';
+import viasat from '../public/images/sponsors/viasat.png';
+
 export default [
 	{
 		name: 'Blizzard Entertainment',
-		image: '/images/sponsors/blizzard.png',
+		image: blizzard,
 		link: 'https://www.blizzard.com/en-us/',
 	},
 	{
 		name: 'Citadel',
-		image: '/images/sponsors/citadel.png',
+		image: citadel,
 		link: 'https://www.citadel.com',
 	},
 	{
 		name: 'Deloitte',
-		image: '/images/sponsors/deloitte.svg',
+		image: deloitte,
 		link: 'https://www.deloitte.com',
 	},
 	{
 		name: 'Facebook',
-		image: '/images/sponsors/facebook.png',
+		image: facebook,
 		link: 'https://about.fb.com/',
 	},
 	{
 		name: 'Google',
-		image: '/images/sponsors/google.svg',
+		image: google,
 		link: 'https://www.google.com/',
 	},
 	{
 		name: 'Green Hills Software',
-		image: '/images/sponsors/ghs.png',
+		image: ghs,
 		link: 'https://ghs.com/',
 	},
 	{
 		name: 'Human Capital',
-		image: '/images/sponsors/humancapital.jpg',
+		image: humancapital,
 		link: 'https://human.capital/',
 	},
 	{
 		name: 'Northrop Grumman',
-		image: '/images/sponsors/northrop-grumman.svg',
+		image: northrop,
 		link: 'https://www.northropgrumman.com/',
 	},
 	{
 		name: 'Samsung',
-		image: '/images/sponsors/samsung.svg',
+		image: samsung,
 		link: 'https://www.samsung.com/us/',
 	},
 	{
 		name: 'Sandia National Laboratories',
-		image: '/images/sponsors/sandia.png',
+		image: sandia,
 		link: 'https://www.sandia.gov/',
 	},
 	{
 		name: 'Viasat',
-		image: '/images/sponsors/viasat.png',
+		image: viasat,
 		link: 'https://www.viasat.com/',
 	},
 ];
