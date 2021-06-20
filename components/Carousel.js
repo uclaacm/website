@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 // width of each img in px
 // needs to be updated if style.scss changes
@@ -22,10 +23,7 @@ export default class Carousel extends React.Component {
 						href={item} target="_blank"
 						rel="noreferrer noopener"
 						key={i}>
-							{/* TODO: this should really be an image */}
-							<div
-							style={{backgroundImage: 'url('+ process.env.PUBLIC_URL + item + ')'}}>
-							</div>
+							<Image src={process.env.PUBLIC_URL+item} width={IMAGE_WIDTH} height={IMAGE_WIDTH}/>
 					</a>),
 			});
 		}
