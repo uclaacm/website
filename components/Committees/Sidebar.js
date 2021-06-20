@@ -7,7 +7,12 @@ function SidebarLink(props){
 			className={`committee ${props.committee.class}`}
 			href={`#${props.committee.class}`}
 		>
-			<Image src={process.env.PUBLIC_URL + props.committee.image} alt={`Logo and Wordmark for ACM ${props.committee.name}`} />
+			<Image
+				src={process.env.PUBLIC_URL + props.committee.image}
+				alt={`Logo and Wordmark for ACM ${props.committee.name}`}
+				width={200}
+				height={63}
+			/>
 		</a>
 	);
 }

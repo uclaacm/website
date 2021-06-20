@@ -34,7 +34,7 @@ function CommitteeSection(props) {
       {/* Header image */}
 			{/* TODO: this could probably be a bit more accessible */}
       <div className={`committee-header ${committee.class}`}>
-        <Image src={committee.image} alt="committee logo" />
+        <Image src={committee.image} alt="committee logo" layout="fill"/>
       </div>
       {/* Committee Intro */}
       <Intro committee={committee} />

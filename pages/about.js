@@ -19,6 +19,7 @@ function About() {
 			<Banner decorative />
 			<div className="content-section">
 				<div className="ornament square-ornament">
+					{/* TODO: this is broken */}
 					<Image className="square-splash" src={acmAbout1} alt="a picture of acm students at our annual CS BBQ!" />
 					<div className="square-small" />
 					<div className="square-tiny" />
