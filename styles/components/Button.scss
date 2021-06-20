@@ -8,7 +8,6 @@
   font-size: 0.85em;
   height: 40px;
   line-height: 40px;
-  min-width: 240px;
   padding: 0 20px;
   text-decoration: none;
   transition: 0.2s;
@@ -48,4 +47,25 @@
     background: white;
     color: $acm-black;
   }
+}
+
+.button.button-transparent {
+  background: white;
+  border: 2px solid $acm-cobalt;
+  border-radius: 11.2px;
+  color: $acm-cobalt !important;
+
+  &:hover {
+    background: $acm-cobalt;
+    color: white !important;
+  }
+
+  &:active {
+    background-color: $acm-black;
+    border: 2px solid $acm-black;
+  }
+}
+
+.button.button-lg {
+  font-size: 0.95em;
 }

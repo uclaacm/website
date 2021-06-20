@@ -10,14 +10,14 @@ import React from 'react';
 function MobileNavItem() {
 	return (
 			<ul className="committee-mobile-nav">
-					<li><Link href={'/committees#studio'}>Studio</Link></li>
-					<li><Link href={'/committees#icpc'}>ICPC</Link></li>
-					<li><Link href={'/committees#design'}>Design</Link></li>
-					<li><Link href={'/committees#cyber'}>Cyber</Link></li>
-					<li><Link href={'/committees#teachla'}>Teach LA</Link></li>
-					<li><Link href={'/committees#w'}>W</Link></li>
-					<li><Link href={'/committees#ai'}>AI</Link></li>
-					<li><Link href={'/committees#hack'}>Hack</Link></li>
+				<li><Link href={'/committees#studio'}><a>Studio</a></Link></li>
+				<li><Link href={'/committees#icpc'}><a>ICPC</a></Link></li>
+				<li><Link href={'/committees#design'}><a>Design</a></Link></li>
+				<li><Link href={'/committees#cyber'}><a>Cyber</a></Link></li>
+				<li><Link href={'/committees#teachla'}><a>Teach LA</a></Link></li>
+				<li><Link href={'/committees#w'}><a>W</a></Link></li>
+				<li><Link href={'/committees#ai'}><a>AI</a></Link></li>
+				<li><Link href={'/committees#hack'}><a>Hack</a></Link></li>
 			</ul>
 	);
 }
@@ -69,12 +69,13 @@ export default class Navbar extends React.Component {
 					</Link>
 					<div className="nav-section right" id="desktop-nav">
 						<ul className="nav-items">
-							<Link href="/about"><li>About</li></Link>
-							<Link href="/committees"><li>Committees</li></Link>
-							{/* <Link href="/gm"><li>{gmData.date.quarter} gm</li></Link> */}
-							<Link href="/events"><li>Events</li></Link>
-							<Link href="/sponsors"><li>Sponsors</li></Link>
-							<a href="https://members.uclaacm.com"><li className="button">Member Login</li></a>
+							<li><Link href="/about"><a>About</a></Link></li>
+							<li><Link href="/committees"><a>Committees</a></Link></li>
+							{/* <li><Link href="/gm"><a>{gmData.date.quarter} GM</a></Link></li> */}
+							<li><Link href="/events"><a>Events</a></Link></li>
+							<li><Link href="/sponsors"><a>Sponsors</a></Link></li>
+							<li><Link href="https://members.uclaacm.com"><a className="button button-transparent button-lg font-header">Member Login</a></Link>
+							</li>
 						</ul>
 					</div>
 					<div className="nav-section right" id="mobile-nav">
@@ -96,7 +97,7 @@ export default class Navbar extends React.Component {
 								{/* <Link href="/gm"><li>{gmData.date.quarter} gm</li></Link> */}
 								<Link href="/events"><li>Events</li></Link>
 								<Link href="/sponsors"><li>Sponsors</li></Link>
-								<a href="https://members.uclaacm.com"><li className="button">Member Login</li></a>
+								<a href="https://members.uclaacm.com"><li className="button button-transparent button-lg font-header">Member Login</li></a>
 							</ul>
 						</div>
 					</div>

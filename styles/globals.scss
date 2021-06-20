@@ -32,7 +32,7 @@ h3 {
 }
 
 .font-header {
-  font-family: $font-header;
+  font-family: $font-header !important;
 }
 
 @media (min-width: $navbar-breakpoint) {

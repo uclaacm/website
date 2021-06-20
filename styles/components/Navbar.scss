@@ -61,24 +61,6 @@
     padding: 0 20px;
     text-transform: lowercase;
     transition: 0.2s;
-
-    &.button {
-      background: white;
-      border: 2px solid $acm-cobalt;
-      border-radius: 11.2px;
-      color: $acm-cobalt;
-      margin-left: 15px;
-    }
-
-    &.button:hover {
-      background: $acm-cobalt;
-      color: white;
-    }
-
-    &.button:active {
-      background-color: $acm-black;
-      border: 2px solid $acm-black;
-    }
   }
 
   a.active li {
@@ -175,14 +157,6 @@
       text-transform: lowercase;
       transform: translate3d(0, -50%, 0);
       transition: all 1.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
-
-      &.button {
-        padding: 10px 20px;
-      }
-
-      &.button:hover {
-        color: white;
-      }
     }
 
     ul.nav-items li:hover {
