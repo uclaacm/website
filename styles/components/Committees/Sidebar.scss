@@ -50,6 +50,12 @@
   }
 }
 
+.committee-sidebar-image {
+  height:35px;
+  position:relative;
+  margin-left: 10px;
+}
+
 .committee-mobile-nav li::after {
   content: '\A';
   white-space: pre;
