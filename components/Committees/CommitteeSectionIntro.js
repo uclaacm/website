@@ -50,13 +50,12 @@ function CommitteeIcon({platform}) {
 // TODO: props destructuring
 function CommitteeSectionIntro(props) {
     return (
-        <div className="intro-row">
-            <div className="show-mobile">
-                {/* TODO: this should have an alt tag */}
-                <Image src={props.committee.introImage} alt="" width={390} height={195}/>
-                <p>{props.committee.introImageDesc}</p>
+        <div className="grid-tablet-2">
+            <div className="grid-tablet-2-reverse">
+                {/* TODO: we may want to make this image layout="fill"? it seems like pre-next, the proportion of the image changes, which is very tricky to deal with */}
+                <Image src={props.committee.introImage} alt={`large motif image for ${props.committee.name}`} width={390} height={195}/>
             </div>
-            <div className="left-col">
+            <div className="pr-tablet-2">
                 <h2>{props.committee.tagline}</h2>
                 <p>{props.committee.mission}</p>
                 <div className="learn-more">
@@ -65,11 +64,6 @@ function CommitteeSectionIntro(props) {
                         <CommitteeIconLink committee={props.committee} link={link} key={link.platform} />,
                     )}
                 </div>
-            </div>
-            {/* TODO: we can easily refactor this with the above .show-mobile to reduce code dupe */}
-            <div className="right-col">
-                <Image src={props.committee.introImage} alt="" width={390} height={195}/>
-                <p>{props.committee.introImageDesc}</p>
             </div>
         </div>
     );

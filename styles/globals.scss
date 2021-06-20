@@ -42,6 +42,24 @@ h3 {
   }
 }
 
+@media (min-width: $tablet-breakpoint) {
+  .grid-tablet-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .grid-tablet-2-reverse {
+    grid-column: 2;
+    grid-row: 1;
+  }
+}
+
+@media (min-width: $tablet-breakpoint) {
+  .pr-tablet-2 {
+    padding-right: 2em;
+  }
+}
+
 .text-bold {
   font-weight: bold;
 }

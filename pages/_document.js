@@ -6,8 +6,6 @@ class AppDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <meta charSet="utf-8" />
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link href={'/images/logo.png'} rel="icon" type="image/png" />
           <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
           <meta name="theme-color" content="#1E6CFF" />

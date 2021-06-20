@@ -28,7 +28,7 @@ function CommitteesPage() {
 		<Layout>
 			<Banner decorative />
 			<Navigation committees={committees} />
-			<div className="page-content">
+			<div className="committees-page-content">
 				<CommitteesBanner />
 				<div className='committee-sections-container'>
 					{committees.map(committee => <CommitteeSection key={committee.name} committee={committee} />) }
