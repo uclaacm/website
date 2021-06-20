@@ -25,9 +25,9 @@ export default [
 					alt: '',
 				},
 				desc: (
-					<p>
+					<>
 						Each year, Studio splits into several teams of students who each work throughout winter and spring quarter to put together a fully-fledged game, usually coding in C# with the Unity engine. You can see a collection of many past projects at <a href="https://uclaacmstudio.itch.io" target="_blank" rel="noopener noreferrer" >uclaacmstudio.itch.io</a>.
-					</p>
+					</>
 				),
 			},
 			{
@@ -157,9 +157,9 @@ export default [
 					alt: '',
 				},
 				desc: (
-					<p>
+					<>
 						We are finishing the design styleguide which contains the new branding design assets necessary for all committees, and some do&apos;s and don&apos;ts with abiding by the new brand image. We are also extracting the styles used in the styleguide into a CSS framework that can be used by all ACM committees to create their sites in the ACM style. Check it out at <a href="https://design.uclaacm.com" target="_blank" rel="noopener noreferrer">design.uclaacm.com</a> and the <a href="github.com/uclaacm/Styleguide" target="_blank" rel="noopener noreferrer" >Github page</a>.
-					</p>
+					</>
 				),
 			},
 			{
@@ -292,9 +292,9 @@ export default [
 					alt: 'Screenshot of Teach LA\'s passworks project',
 				},
 				desc: (
-					<p>
+					<>
 						Write educational software to make teaching easier, either by developing interactive web applications called “Learning Labs” (e.g. <a href="https://passworks.uclaacm.com" target="_blank" rel="noopener noreferrer">Passworks Lesson</a>), maintain our <a href="https://editor.uclaacm.com" target="_blank" rel="noopener noreferrer">free online code editor</a>, or bust out your design skills on <a href="https://teachla.uclaacm.com" target="_blank" rel="noopener noreferrer">our website</a>. No prior dev experience required!
-					</p>
+					</>
 				),
 			},
 			{
@@ -430,9 +430,9 @@ export default [
 					alt: '',
 				},
 				desc: (
-					<p>
+					<>
 						<a href="https://anchor.fm/ucla-acm-ai" target="_blank" rel="noopener noreferrer">You Belong in AI!</a> is a podcast on diversity in the field of Artificial Intelligence. We feature industry and academic leaders in AI from a diverse range of backgrounds to come and talk about their work and the importance of diversity and inclusion in AI. <a href="https://anchor.fm/ucla-acm-ai" target="_blank" rel="noopener noreferrer">You Belong in AI!</a> is available on all major podcast streaming platforms.
-					</p>
+					</>
 				),
 			},
 			{
@@ -442,9 +442,9 @@ export default [
 					alt: '',
 				},
 				desc: (
-					<p>
+					<>
 						ACM AI’s Outreach team collaborates with ACM TeachLA to teach an introductory AI course to local high school students in Los Angeles. An overview of this course content can be found at <a href="https://teachla.uclaacm.com/classes/ml" target="_blank" rel="noopener noreferrer">teachla.uclaacm.com/ classes/ml</a>.
-					</p>
+					</>
 				),
 			},
 			{
