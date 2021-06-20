@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 function Committee(props){
 	return (
@@ -7,7 +8,12 @@ function Committee(props){
 			href={`/committees#${props.committee.class}`}
 		>
 			{/* TODO: can we make this use next/image? */}
-			<img src={process.env.PUBLIC_URL + props.committee.image} layout='fill' alt={`Logo and Wordmark for ACM ${props.committee.name}`} />
+			<div style={{height:'54px', position:'relative'}}>
+				<Image src={process.env.PUBLIC_URL + props.committee.image} 
+					layout="fill"
+					alt={`Logo and Wordmark for ACM ${props.committee.name}`} />
+			</div>
+			{/* <img src={process.env.PUBLIC_URL + props.committee.image} layout='fill' alt={`Logo and Wordmark for ACM ${props.committee.name}`} /> */}
 			<div className="info">
 				<p>{props.committee.tagline}</p>
 			</div>
