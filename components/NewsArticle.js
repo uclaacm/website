@@ -1,4 +1,4 @@
-// import Image from 'next/image';
+import Image from 'next/image';
 import React from 'react';
 
 function Article(props) {
@@ -8,8 +8,12 @@ function Article(props) {
 			href={props.article.link}
 		>
 			<div className="achievement">
-				{/* TODO: can we make this use next/image? */}
-				<img src={process.env.PUBLIC_URL + props.article.image} layout='fill' alt={props.article.alt} />
+				<Image
+					src={process.env.PUBLIC_URL + props.article.image} 
+					width={360}
+					height={200}
+					alt={props.article.alt}	
+				/>
 				<h3>{props.article.headline}</h3>
 			</div>
 		</a>
