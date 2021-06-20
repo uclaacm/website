@@ -54,7 +54,7 @@
 // 			return (
 // 				<p key={id}>
 // 					<span id={id}>
-// 						<img src={process.env.PUBLIC_URL + logo} alt={'Logo for ' + displayName} className="committee-logos"/>
+// 						<img src={logo} alt={'Logo for ' + displayName} className="committee-logos"/>
 // 						{displayName}
 // 					</span>
 // 					: {speakers}
@@ -68,7 +68,7 @@
 // 			return (
 // 				<p key={eventName}>
 // 					<span className="board">
-// 						<img src={process.env.PUBLIC_URL + logo} alt={'Logo for ' + displayName} className="committee-logos"/>
+// 						<img src={logo} alt={'Logo for ' + displayName} className="committee-logos"/>
 // 						{eventName}
 // 					</span>
 // 					: {speakers}
@@ -85,7 +85,7 @@
 // 						<div className="should-dim">
 // 							<a href={slides} target="_blank" rel="noopener noreferrer">
 // 								<div id="zoom-join-link-wrapper" className="join-links">
-// 									<img src={process.env.PUBLIC_URL + '/images/slides.png'} alt="Google Slides logo" className="join-links-img"/>
+// 									<img src={'/images/slides.png'} alt="Google Slides logo" className="join-links-img"/>
 // 								</div>
 // 								<p className="join-us">View the slides we used during GM</p>
 // 							</a>
@@ -95,7 +95,7 @@
 // 						<div className="should-dim">
 // 							<a href={discord} target="_blank" rel="noopener noreferrer">
 // 								<div id="discord-join-link-wrapper" className="join-links">
-// 									<img src={process.env.PUBLIC_URL + '/images/DiscordLogoWordmark.png'} alt="Discord logo" className="join-links-img"/>
+// 									<img src={'/images/DiscordLogoWordmark.png'} alt="Discord logo" className="join-links-img"/>
 // 								</div>
 // 								<p className="join-us">Missed GM? Join us in our Discord!</p>
 // 							</a>
@@ -171,7 +171,7 @@
 // 			<h3 id="gm-zoom-release">Zoom link, slides, and other resources will be provided on {longDate} at {startTime} {timezone}</h3>
 // 			<p id="posted-to-youtube">The Zoom portion of {quarter} General Meeting {year} will be recorded and posted to our <a href={youTube} target="_blank" rel="noopener noreferrer">YouTube channel</a>.</p>
 // 			<p id="cant-wait">Can&rsquo;t wait to join in on the fun? Jump in right now with our <a href={linktree} target="_blank" rel="noopener noreferrer">Linktree</a> or hop into the official <a href={discord} target="_blank" rel="noopener noreferrer">Discord</a> and say hello!</p>
-// 			<img id="gm-graphic" src={process.env.PUBLIC_URL + graphicRoute} alt={quarter + ' General Meeting ' + year +' graphic'} />
+// 			<img id="gm-graphic" src={graphicRoute} alt={quarter + ' General Meeting ' + year +' graphic'} />
 // 		</div>
 // 	);
 // }

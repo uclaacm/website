@@ -9,7 +9,7 @@ function Article(props) {
 		>
 			<div className="achievement">
 				<Image
-					src={process.env.PUBLIC_URL + props.article.image}
+					src={props.article.image}
 					width={360}
 					height={200}
 					alt={props.article.alt}

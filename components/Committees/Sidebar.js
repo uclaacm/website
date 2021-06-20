@@ -8,7 +8,7 @@ function SidebarLink(props){
 			href={`#${props.committee.class}`}
 		>
 			<div className="committee-sidebar-image">
-				<Image src={process.env.PUBLIC_URL + props.committee.image}
+				<Image src={props.committee.image}
 					layout="fill"
 					objectFit="contain"
 					objectPosition="left"

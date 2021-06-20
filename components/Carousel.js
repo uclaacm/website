@@ -23,7 +23,7 @@ export default class Carousel extends React.Component {
 						href={item} target="_blank"
 						rel="noreferrer noopener"
 						key={i}>
-							<Image src={process.env.PUBLIC_URL+item} width={IMAGE_WIDTH} height={IMAGE_WIDTH}/>
+							<Image src={item} width={IMAGE_WIDTH} height={IMAGE_WIDTH}/>
 					</a>),
 			});
 		}
