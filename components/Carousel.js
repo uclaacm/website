@@ -1,5 +1,5 @@
-import React from 'react';
 import Image from 'next/image';
+import React from 'react';
 
 // width of each img in px
 // needs to be updated if style.scss changes
