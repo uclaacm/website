@@ -7,13 +7,13 @@ function Committee(props){
 			className={`committee ${props.committee.class}`}
 			href={`/committees#${props.committee.class}`}
 		>
-			{/* TODO: can we make this use next/image? */}
-			<div style={{height:'54px', position:'relative'}}>
+			<div className="committee-image">
 				<Image src={process.env.PUBLIC_URL + props.committee.image} 
 					layout="fill"
+					objectFit="contain"
+					objectPosition="0% 100%"
 					alt={`Logo and Wordmark for ACM ${props.committee.name}`} />
 			</div>
-			{/* <img src={process.env.PUBLIC_URL + props.committee.image} layout='fill' alt={`Logo and Wordmark for ACM ${props.committee.name}`} /> */}
 			<div className="info">
 				<p>{props.committee.tagline}</p>
 			</div>

@@ -59,6 +59,11 @@
       }
     }
 
+    .committee-image{
+      height:50px;
+      position:relative;
+    }
+
     &.hack    .info h2 { color: $hack-purple; }
     &.ai      .info h2 { color: $ai-arctic; }
     &.w       .info h2 { color: $w-teal; }
