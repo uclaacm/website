@@ -22,6 +22,7 @@ export default class Carousel extends React.Component {
 						href={item} target="_blank"
 						rel="noreferrer noopener"
 						key={i}>
+							{/* TODO: this should really be an image */}
 							<div
 							style={{backgroundImage: 'url('+ process.env.PUBLIC_URL + item + ')'}}>
 							</div>
