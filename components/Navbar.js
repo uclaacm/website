@@ -58,7 +58,6 @@ export default class Navbar extends React.Component {
 						<a id="nav-title" className="nav-section left">
 							{/* TODO: this image's alignment is off */}
 							<Image
-								id="acm-logo"
 								src={process.env.PUBLIC_URL + '/images/acm_wordmark&logo.svg'}
 								width="180px"
 								height="60px"
@@ -89,15 +88,14 @@ export default class Navbar extends React.Component {
 						<input type="checkbox" id="menu-toggle" />
 						<div id="hamburger-menu">
 							<ul className="nav-items">
-								<Link href="/about"><li>About</li></Link>
-								<div>
-									<Link href="/committees"><li>Committees</li></Link>
-									<MobileNavItem/>
-								</div>
-								{/* <Link href="/gm"><li>{gmData.date.quarter} gm</li></Link> */}
-								<Link href="/events"><li>Events</li></Link>
-								<Link href="/sponsors"><li>Sponsors</li></Link>
-								<a href="https://members.uclaacm.com"><li className="button button-transparent button-lg font-header">Member Login</li></a>
+								<li><Link href="/about"><a>About</a></Link></li>
+								<li><Link href="/committees"><a>Committees</a></Link></li>
+								{/* <li><Link href="/gm"><a>{gmData.date.quarter} GM</a></Link></li> */}
+								<MobileNavItem/>
+								<li><Link href="/events"><a>Events</a></Link></li>
+								<li><Link href="/sponsors"><a>Sponsors</a></Link></li>
+								<li><Link href="https://members.uclaacm.com"><a className="button button-transparent button-lg font-header">Member Login</a></Link>
+								</li>
 							</ul>
 						</div>
 					</div>
