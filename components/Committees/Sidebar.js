@@ -1,4 +1,4 @@
-import Image from 'next/image';
+// import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
 
 function SidebarLink(props){
@@ -8,11 +8,13 @@ function SidebarLink(props){
 			href={`#${props.committee.class}`}
 		>
 			<div className="committee-sidebar-image">
+				<img src={props.committee.image} alt={`Logo and Wordmark for ACM ${props.committee.name}`} />
+				{/* TODO: use next image without breaking deploy
 				<Image src={props.committee.image}
 					layout="fill"
 					objectFit="contain"
 					objectPosition="left"
-					alt={`Logo and Wordmark for ACM ${props.committee.name}`} />
+					alt={`Logo and Wordmark for ACM ${props.committee.name}`} /> */}
 			</div>
 		</a>
 	);

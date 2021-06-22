@@ -52,17 +52,17 @@
         font-size: 0.8em;
         left: 72px;
         margin: 0;
-        margin-top: -25px;
+        margin-top: -5px;
         position: absolute;
         top: 75px;
         vertical-align: top;
       }
     }
 
-    .committee-image {
-      height: 50px;
-      position: relative;
-    }
+    // .committee-image {
+    //   height: 50px;
+    //   position: relative;
+    // }
 
     &.hack    .info h2 { color: $hack-purple; }
     &.ai      .info h2 { color: $ai-arctic; }

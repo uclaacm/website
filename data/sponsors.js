@@ -1,12 +1,12 @@
 import blizzard from '../public/images/sponsors/blizzard.png';
 import citadel from '../public/images/sponsors/citadel.png';
-import deloitte from '../public/images/sponsors/deloitte.svg';
+import deloitte from '../public/images/sponsors/deloitte.png';
 import facebook from '../public/images/sponsors/facebook.png';
 import ghs from '../public/images/sponsors/ghs.png';
-import google from '../public/images/sponsors/google.svg';
+import google from '../public/images/sponsors/google.png';
 import humancapital from '../public/images/sponsors/human-capital.png';
-import northrop from '../public/images/sponsors/northrop-grumman.svg';
-import samsung from '../public/images/sponsors/samsung.svg';
+import northrop from '../public/images/sponsors/northrop-grumman.png';
+import samsung from '../public/images/sponsors/samsung.png';
 import sandia from '../public/images/sponsors/sandia.png';
 import viasat from '../public/images/sponsors/viasat.png';
 

@@ -6,7 +6,7 @@ import Banner from '../components/Banner';
 import Layout from '../components/Layout';
 import data from '../data';
 
-import reslifeLogo from '../public/images/sponsors/reslife.svg';
+import reslifeLogo from '../public/images/sponsors/reslife.png';
 import uclaCsDeptLogo from '../public/images/sponsors/ucla_cs_dept.png';
 
 function Sponsors() {

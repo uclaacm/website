@@ -1,4 +1,4 @@
-import Image from 'next/image';
+// import Image from 'next/image';
 import React from 'react';
 import CommitteeEventCard from './CommitteeEventCard';
 import Intro from './CommitteeSectionIntro';
@@ -34,7 +34,8 @@ function CommitteeSection(props) {
       {/* Header image */}
 			{/* TODO: this could probably be a bit more accessible */}
       <div className={`committee-header ${committee.class}`}>
-        <Image src={committee.image} alt="committee logo" width={780} height={164}/>
+		<img src={committee.image} alt="committee logo" />
+        {/* <Image src={committee.image} alt="committee logo" width={780} height={164}/> */}
       </div>
       {/* Committee Intro */}
       <Intro committee={committee} />

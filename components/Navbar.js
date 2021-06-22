@@ -1,4 +1,4 @@
-import Image from 'next/image';
+// import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 // import gmData from '../../config/gmData';
@@ -56,14 +56,15 @@ export default class Navbar extends React.Component {
 				<div id="navbar-inner">
 					<Link href="/">
 						<a id="nav-title" className="nav-section left">
-							{/* TODO: this image's alignment is off */}
-							<Image
+							<img src={'/images/acm_wordmark&logo.svg'} id="acm-logo" alt="Acm at UCLA Logo"></img>
+							{/* TODO: use next image without breaking deploy
+							  <Image
 								src={'/images/acm_wordmark&logo.svg'}
 								width="180px"
 								height="60px"
-								alt="ACM at UCLA logo"
+								alt="AcM at UCLA logo"
 								priority={true}
-							/>
+							/>  */}
 						</a>
 					</Link>
 					<div className="nav-section right" id="desktop-nav">

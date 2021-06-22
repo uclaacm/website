@@ -7,7 +7,7 @@ import Officers from '../components/LeadershipOfficers';
 import SocialMedia from '../components/SocialMedia';
 import data from '../data';
 
-import acmAbout1 from '../public/images/about1.png';
+// import acmAbout1 from '../public/images/about1.png';
 import acmCommittees from '../public/images/acm_committees.png';
 import acmHowToJoin from '../public/images/how-to-join.png';
 
@@ -19,8 +19,11 @@ function About() {
 			<Banner decorative />
 			<div className="content-section">
 				<div className="ornament square-ornament">
-					{/* TODO: this is broken */}
-					<Image className="square-splash" src={acmAbout1} alt="a picture of acm students at our annual CS BBQ!" />
+					<img className="square-splash" src='/images/about1.png' alt="a picture of acm students at our annual CS BBQ!"/>
+					{/* TODO: figure out timeout issue with next image
+					<div className="square-splash" >
+						 <Image src={acmAbout1} alt="a picture of acm students at our annual CS BBQ!" className="square-splash" />
+					</div> */}
 					<div className="square-small" />
 					<div className="square-tiny" />
 				</div>
