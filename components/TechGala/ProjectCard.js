@@ -6,7 +6,7 @@ function ProjectCard(props) {
     return (
         <div className="intro-row">
             <div className="show-mobile">
-                <Image src={image} alt={`showcase image for ${title}`}/>
+                <Image src={image} alt={`showcase image for ${title}`} height={280} width={370} />
             </div>
             <div className="left-col">
                 <h2>{title}</h2>
@@ -19,7 +19,7 @@ function ProjectCard(props) {
                 </p>
             </div>
             <div className="right-col">
-                <Image src={image} alt={`showcase image for ${title}`}/>
+                <Image src={image} alt={`showcase image for ${title}`} height={280} width={370} />
             </div>
         </div>
     );
