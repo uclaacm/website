@@ -53,7 +53,9 @@ function CommitteeSectionIntro(props) {
         <div className="grid-tablet-2">
             <div className="grid-tablet-2-reverse">
                 {/* TODO: we may want to make this image layout="fill"? it seems like pre-next, the proportion of the image changes, which is very tricky to deal with */}
-                <Image src={props.committee.introImage} alt={`large motif image for ${props.committee.name}`} width={390} height={195}/>
+                <div className="image-wrapper">
+                    <Image src={props.committee.introImage} alt={`large motif image for ${props.committee.name}`} width={390} height={195}/>
+                </div>
             </div>
             <div className="pr-tablet-2">
                 <h2>{props.committee.tagline}</h2>

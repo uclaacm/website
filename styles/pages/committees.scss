@@ -49,6 +49,23 @@
   }
 }
 
+.image-wrapper {
+  border-radius: 10px;
+  box-shadow: 0 0 1pt 0;
+
+  // this is kind of gnarly, but the !important override is needed to overwrite the CSS built into /next/image
+  // the div is to change display from inline-block to block so there's no weird spacing between border and image
+  // the img is to overwrite the default image shadow from committees.scss to prevent double borders
+  // img should be removable once fully converting to /next/image - the one in committees.scss needs to stay for the non next imgs for now
+  div {
+    display: block !important;
+  }
+
+  img {
+    box-shadow: none !important;
+  }  
+}
+
 .committee-banner-container {
   @media (min-width: 688px) {
     margin-top: -20px;
