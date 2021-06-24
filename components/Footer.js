@@ -29,7 +29,8 @@ function Footer(){
 				</div>
 				<div id="netlify-badge">
 					<a href="https://www.netlify.com" target="_BLANK" rel="noopener noreferrer">
-						<Image src="https://www.netlify.com/img/global/badges/netlify-light.svg" alt="Deploys by Netlify" width="300px" height="160px" />
+						{/* TODO: resolve 404 with <Image /> component */}
+						<img src="https://www.netlify.com/img/global/badges/netlify-light.svg" alt="Deploys by Netlify" />
 					</a>
 				</div>
 				<div id="footer-bottom">
