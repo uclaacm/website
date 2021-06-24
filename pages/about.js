@@ -35,7 +35,7 @@ function About() {
 			</div>
 			<div className="content-section right">
 				<div className="ornament image-ornament image-ornament-right">
-					<Image src={acmCommittees} alt="the logos of all ACM committees" />
+					<Image src={acmCommittees} alt="the logos of all ACM committees" priority={true} />
 				</div>
 				<div className="text-section">
 					<h1>What are ACM committees?</h1>

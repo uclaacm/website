@@ -20,12 +20,12 @@ function Sponsors() {
 				<div className="sponsor-container">
 					<div className="sponsor">
 						<a href="https://www.cs.ucla.edu" target="_blank" rel="noreferrer noopener">
-							<Image src={uclaCsDeptLogo} alt="UCLA CS Dept Logo" />
+							<Image src={uclaCsDeptLogo} alt="UCLA CS Dept Logo" priority={true} />
 						</a>
 					</div>
 					<div className="sponsor">
 						<a href="https://reslife.ucla.edu" target="_blank" rel="noreferrer noopener">
-							<Image src={reslifeLogo} alt="UCLA ResLife Logo" />
+							<Image src={reslifeLogo} alt="UCLA ResLife Logo" priority={true} />
 						</a>
 					</div>
 				</div>
