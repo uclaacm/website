@@ -20,10 +20,7 @@ function About() {
 			<div className="content-section">
 				<div className="ornament square-ornament">
 					<img className="square-splash" src='/images/about1.png' alt="a picture of acm students at our annual CS BBQ!"/>
-					{/* TODO: figure out timeout issue with next image
-					<div className="square-splash" >
-						 <Image src={acmAbout1} alt="a picture of acm students at our annual CS BBQ!" className="square-splash" />
-					</div> */}
+					{/* TODO: use next image without breaking deploy */}
 					<div className="square-small" />
 					<div className="square-tiny" />
 				</div>
@@ -51,11 +48,13 @@ function About() {
 					<p className="half-size">No matter what your background or major is, we would love to have you at our events and activities!</p>
 					<p className="half-size">To keep up with what&rsquo;s happening, we recommend joining <a href="https://members.uclaacm.com" target="_blank" rel="noreferrer noopener">our membership portal</a>, <a href="https://www.facebook.com/groups/uclaacm" target="_blank" rel="noreferrer noopener">our Facebook group</a>, and <a href="http://eepurl.com/c5pE6P" target="_blank" rel="noreferrer noopener">our weekly newsletter</a>. We will keep you up to date with everything ACM, and earning points on the portal might even earn you a prize!</p>
 					<p>Here&rsquo;s our social media, where you can see what we&rsquo;re up to:</p>
+					{/* TODO: can we un-inline this? */}
 					<div style={{display: 'flex', justifyContent: 'center'}} >
 						<SocialMedia/>
 					</div>
 				</div>
 			</div>
+			{/* TODO: can we un-inline this? */}
 			<div className="content-section center" style={{marginBottom: '0'}}>
 				<h2>Leadership</h2>
 				<Officers officers={officers} />

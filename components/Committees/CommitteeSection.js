@@ -32,10 +32,9 @@ function CommitteeSection(props) {
   return (
     <div id={committee.class} className="committee-section">
       {/* Header image */}
-			{/* TODO: this could probably be a bit more accessible */}
+			{/* TODO: use next image without breaking deploy */}
       <div className={`committee-header ${committee.class}`}>
-		<img src={committee.image} alt="committee logo" />
-        {/* <Image src={committee.image} alt="committee logo" width={780} height={164}/> */}
+				<img src={committee.image} alt={`${committee.name}'s logo`} />
       </div>
       {/* Committee Intro */}
       <Intro committee={committee} />

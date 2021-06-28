@@ -32,14 +32,12 @@ function Sponsors() {
 				<p className="subheading">A special thanks to all of our UCLA Computer Science industry affiliates for their support:</p>
 				<div className="sponsor-container">
 					{sponsors.map(sponsor =>
-						// <div className="sponsor sponsor-sm" key={sponsor.name}>
-							<a className="block-centered sponsor" href={sponsor.link} target="_blank" rel="noreferrer noopener" key={sponsor.name}>
-								<Image
-									alt={sponsor.name}
-									src={sponsor.image}
-								/>
-							</a>,
-						// </div>,
+						<a className="block-centered sponsor" href={sponsor.link} target="_blank" rel="noreferrer noopener" key={sponsor.name}>
+							<Image
+								alt={sponsor.name}
+								src={sponsor.image}
+							/>
+						</a>,
 					)}
 				</div>
 				<h2>Interested in becoming a sponsor?</h2>

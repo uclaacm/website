@@ -9,12 +9,7 @@ function SidebarLink(props){
 		>
 			<div className="committee-sidebar-image">
 				<img src={props.committee.image} alt={`Logo and Wordmark for ACM ${props.committee.name}`} />
-				{/* TODO: use next image without breaking deploy
-				<Image src={props.committee.image}
-					layout="fill"
-					objectFit="contain"
-					objectPosition="left"
-					alt={`Logo and Wordmark for ACM ${props.committee.name}`} /> */}
+				{/* TODO: use next image without breaking deploy */}
 			</div>
 		</a>
 	);

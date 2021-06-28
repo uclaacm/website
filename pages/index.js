@@ -25,7 +25,6 @@ function Home () {
 				<br />
 				<Committees committees={committees} />
 				<div className="button-section">
-					{ /** CHANGE THIS LINK TO ABOUT PAGE LATER */ }
 					<Link href="/committees"><a className="button">Learn More About Our Committees</a></Link>
 				</div><br /><br />
 

@@ -30,6 +30,7 @@ export default class Navbar extends React.Component {
 	}
 
 	clickMobileNav() {
+		// TODO: remove direct DOM manipulation, make this stateful
 		document.getElementById('menu-toggle').checked = false;
 	}
 
@@ -37,6 +38,7 @@ export default class Navbar extends React.Component {
 	// this listener entirely
 
 	componentDidMount() {
+		// TODO: remove direct DOM manipulation, make this stateful
 		const items = document.querySelectorAll('#mobile-nav .nav-items li');
 		for (const item of items) {
 			item.addEventListener('click', this.clickMobileNav);
@@ -44,6 +46,7 @@ export default class Navbar extends React.Component {
 	}
 
 	componentWillUnmount() {
+		// TODO: remove direct DOM manipulation, make this stateful
 		const items = document.querySelectorAll('#mobile-nav .nav-items li');
 		for (const item of items) {
 			item.removeEventListener('click', this.clickMobileNav);
@@ -56,15 +59,8 @@ export default class Navbar extends React.Component {
 				<div id="navbar-inner">
 					<Link href="/">
 						<a id="nav-title" className="nav-section left">
-							<img src={'/images/acm_wordmark&logo.svg'} id="acm-logo" alt="Acm at UCLA Logo"></img>
-							{/* TODO: use next image without breaking deploy
-							  <Image
-								src={'/images/acm_wordmark&logo.svg'}
-								width="180px"
-								height="60px"
-								alt="AcM at UCLA logo"
-								priority={true}
-							/>  */}
+							<img src={'/images/acm_wordmark&logo.svg'} id="acm-logo" alt="ACM at UCLA Logo"></img>
+							{/* TODO: use next image without breaking deploy */}
 						</a>
 					</Link>
 					<div className="nav-section right" id="desktop-nav">
