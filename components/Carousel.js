@@ -24,7 +24,7 @@ export default class Carousel extends React.Component {
 						rel="noreferrer noopener"
 						key={i}>
 							{/* TODO: somehow encode alt tags here! */}
-							<Image src={item} width={IMAGE_WIDTH} height={IMAGE_WIDTH}/>
+							<Image src={item} width={IMAGE_WIDTH} height={IMAGE_WIDTH} alt="decorative carousel image" />
 					</a>),
 			});
 		}
