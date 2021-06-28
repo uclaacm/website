@@ -1,12 +1,13 @@
 # The ACM Website
 
 ![Node.js CI](https://github.com/uclaacm/website/workflows/Node.js%20CI/badge.svg)
+[![Lint](https://github.com/uclaacm/website/actions/workflows/lint.yml/badge.svg)](https://github.com/uclaacm/website/actions/workflows/lint.yml)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/0089cafa-e447-4791-9837-dd8f45f61229/deploy-status)](https://app.netlify.com/sites/jovial-pasteur-581b4a/deploys)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](code_of_conduct.md)
 
 Hey there! This repo contains all of the code for ACM @ UCLA's front-facing website, which you can view at [uclaacm.com](https://uclaacm.com) or at [acm.cs.ucla.edu](https://acm.cs.ucla.edu). You can find out more about our organization, the events we hold, and all the different committees within ACM!
 
-Our website is built with [React](https://reactjs.org), with a style and design internally developed by our dev team and ACM Design. 
+Our website is built with [Next.js](https://nextjs.org/) on top of [React](https://reactjs.org), with a style and [design system](https://design.uclaacm.com) internally developed by our dev team and [ACM Design](https://design.uclaacm.com). The site is deployed on [Netlify](https://www.netlify.com/); we're grateful for their support in the open-source program.
 
 ## Development Setup
 
@@ -21,22 +22,22 @@ $ cd website
 $ npm install
 ```
 
-As our app is bootstrapped with [Create React App](https://create-react-app.dev/), we can just run `npm start` to serve our app:
+Our app's development and build cycle is managed by [Next.js](https://nextjs.org/); so, we can just run `npm start` to serve our app:
 
 ```sh
 $ npm start
-Compiled successfully!
 
-You can now view acm-website in the browser.
+> acm-website@0.1.0 start /Users/matt/code/acm-website
+> next dev
 
-  Local:            http://localhost:3000
-  On Your Network:  http://192.168.1.5:3000
+ready - started server on 0.0.0.0:3000, url: http://localhost:3000
 
-Note that the development build is not optimized.
-To create a production build, use npm run build.
+event - compiled successfully
 ```
 
-This should automatically open up a window in your browser with our website! Note that Hot Module Reloading is on, so every time you modify a file, the app will automatically recompile and reload!
+This should automatically open up a window in your browser with our website; if it doesn't, visit [http://localhost:3000](http://localhost:3000).
+
+Note that `next dev` ships with Hot Module Reloading, so every time you modify a file, the app will automatically recompile and reload!
 
 ### Contribution Workflow
 
@@ -48,15 +49,17 @@ Want to make a change to the website? Great! Here are the steps:
 4. **Before you push**, make sure your app builds with `npm build`. If there are any errors, our CI/CD service will **reject your build**.
 5. Once you're ready, stage and commit your changes!
 6. Make a [pull request](https://github.com/uclaacm/website/pulls) with your changes, and let someone on the dev team know.
-7. If your code passes code review, we'll merge it into `master`. Congratulations! If you'd like, it's now safe to delete your branch/fork.
+7. If your code passes code review, we'll merge it into `main`. Congratulations! If you'd like, it's now safe to delete your branch/fork.
 
 ### Production Deploy
 
-CRA has an automatic build script that manages creating a deploy-ready bundle, which can be triggered by `npm run build`. It runs a strict ESLint config, and then webpacks (and tree-shakes) the relevant modules to create a minified bundle.
-
-TODO: CI/CD.
+TODO
 
 ### Notes on Previous Iterations
 
-Previously, this website had a more involved build system, still using React but also managing our webpack configuration, ESLint, containerization with Docker, and deploying on Heroku. In 2020, we moved away from this model to simplify the development workflow and look to use static-site deployers.
+From (some time) to 2019, this website had a more involved build system, still using React but also managing our webpack configuration, ESLint, containerization with Docker, and deploying on Heroku.
 
+In mid-2020, we made two larger changes:
+
+* we followed [ACM Design's](https://design.uclaacm.com) new **Branding 3.0** design system, reworking the visual language of the site
+* we moved away from a custom webpack configuration and containerization deployed on Heroku to using [Create React App](https://create-react-app.dev/) deployed on Netlify, with the main goal of reducing development burden and taking advantage of static-site deployers

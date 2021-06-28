@@ -1,0 +1,73 @@
+/*************************************
+ * Base styles                       *
+ ************************************/
+
+
+/* miniresets */
+
+body {
+  color: $font-primary-color;
+  font-family: $font-body;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: $font-header;
+}
+
+/* global classes */
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-container {
+  flex: 1 0 auto;
+  margin-top: 70px; //To account for height of Navbar, which uses fixed positioning
+}
+
+.font-header {
+  font-family: $font-header !important;
+}
+
+@media (min-width: $navbar-breakpoint) {
+  .grid-desktop-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: $tablet-breakpoint) {
+  .grid-tablet-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .grid-tablet-2-reverse {
+    grid-column: 2;
+    grid-row: 1;
+  }
+}
+
+@media (min-width: $tablet-breakpoint) {
+  .pr-tablet-2 {
+    padding-right: 2em;
+  }
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-25x {
+  font-size: 2.5em !important;
+}

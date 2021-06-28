@@ -7,7 +7,7 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'plugin:react/recommended',
-    'plugin:jest/recommended',
+    'plugin:@next/next/recommended',
   ],
   parserOptions: {
     ecmaFeatures: {
@@ -15,7 +15,7 @@ module.exports = {
     },
     sourceType: 'module',
   },
-  plugins: ['jest', 'react', 'import'],
+  plugins: ['react', 'import'],
   settings: {
     react: {
       version: 'detect',

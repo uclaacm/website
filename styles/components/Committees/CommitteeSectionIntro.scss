@@ -1,0 +1,69 @@
+.learn-more {
+  color: $font-secondary-color;
+  font-weight: 700;
+  letter-spacing: 0.8em;
+  margin: 30px 0 0;
+  text-transform: uppercase;
+}
+
+.grid-tablet-2 {
+  margin-top: 30px;
+}
+
+.learn-more .icon-link {
+  font-size: 2.5rem;
+
+  :hover {
+    color: black;
+  }
+
+  &.hack {
+    color: $hack-purple;
+  }
+
+  &.ai {
+    color: $ai-arctic;
+  }
+
+  &.w {
+    color: $w-teal;
+  }
+
+  &.cyber {
+    color: $cyber-amber;
+  }
+
+  &.studio {
+    color: $studio-raspberry;
+  }
+
+  &.icpc {
+    color: $icpc-tangerine;
+  }
+
+  &.design {
+    color: $design-orange;
+  }
+
+  &.teachla {
+    color: $teachla-green;
+  }
+}
+
+@media (min-width: $tablet-breakpoint) {
+  .learn-more {
+    font-size: 0.9em;
+
+    h3 {
+      margin: 0 0 20px;
+    }
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  p {
+    font-size: 1.2em;
+  }
+}

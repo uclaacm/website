@@ -1,0 +1,32 @@
+/*************************************
+ * Import CSS styles for components  *
+ ************************************/
+
+/* globals */
+@import 'variables';
+@import 'globals';
+
+/* components */
+@import 'components/Button';
+@import 'components/Banner';
+@import 'components/Carousel';
+@import 'components/Committees/Sidebar';
+@import 'components/Committees/CommitteeSectionIntro';
+@import 'components/Committees/CommitteeEventCard';
+@import 'components/CommitteeSpread';
+@import 'components/Footer';
+@import 'components/GM';
+@import 'components/LeadershipOfficers';
+@import 'components/Navbar';
+@import 'components/News';
+@import 'components/SocialMedia';
+@import 'components/TechGala/ProjectCard';
+@import 'components/TechGala/ViewBanner';
+
+/* pages */
+@import 'pages/index';
+@import 'pages/about';
+@import 'pages/committees';
+@import 'pages/events';
+@import 'pages/sponsors';
+@import 'pages/techgala';
