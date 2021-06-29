@@ -15,7 +15,7 @@ module.exports = {
     },
     sourceType: 'module',
   },
-  ignorePatterns: ['/build/**/**/*.js'],
+  ignorePatterns: ['/build/*'],
   plugins: ['react', 'import'],
   settings: {
     react: {
