@@ -1,5 +1,12 @@
 export default [
     {
+        date: '06/22/21',
+        headline: '2020–21 Student Chapter Excellence Award',
+        image: '/images/2021-acm-excellence-award.png',
+        alt: '2020-2021 Student Chapter Excellence Award',
+        link: 'https://www.cs.ucla.edu/acm-at-ucla-receives-2020-chapter-excellence-award-from-worlds-largest-scientific-computing-society/',
+    },
+    {
         date: '01/27/21',
         headline: '"You Belong in AI": the ACM AI podcast aims to make computer science more diverse, accessible',
         image: '/images/ybAI_podcast.png',
