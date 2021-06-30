@@ -1,0 +1,15 @@
+.logos-line {
+  display: flex;
+  margin: auto;
+  margin-top: 50px;
+  width: 80vw;
+
+  .logo-diamond {
+    flex: 10%;
+    padding: 5px;
+
+    img {
+      width: 100px;
+    }
+  }
+}  
