@@ -43,7 +43,7 @@ Note that `next dev` ships with Hot Module Reloading, so every time you modify a
 
 Want to make a change to the website? Great! Here are the steps:
 
-1. Either make a new branch or a fork of this repository. `master` is a protected branch, **so you cannot push to it**.
+1. Either make a new branch or a fork of this repository. `main` is a protected branch, **so you cannot push to it**.
 2. Follow the instructions in "Development Setup" above. If you're on a fork, replace the URL with the fork's URL; if you're on a different branch, check it out using `git checkout`.
 3. Make your changes!
 4. **Before you push**, make sure your app builds with `npm build`. If there are any errors, our CI/CD service will **reject your build**.
