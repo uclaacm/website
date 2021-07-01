@@ -24,16 +24,30 @@ function InternshipPage(){
                     <img src={'/images/logo.png'} id="acm-logo" alt="ACM at UCLA Logo"></img>
                 </div>
             </div>
-            {/* <div className="content-section">
-                <h2>What do we do?</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus nulla at volutpat diam ut. Elementum nisi quis eleifend quam adipiscing vitae. Volutpat commodo sed egestas egestas fringilla phasellus faucibus. Felis imperdiet proin fermentum leo. Donec et odio pellentesque diam. Id semper risus in hendrerit gravida.
-                </p>
-                <h2>Time Commitment</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus nulla at volutpat diam ut. Elementum nisi quis eleifend quam adipiscing vitae. Volutpat commodo sed egestas egestas fringilla phasellus faucibus. Felis imperdiet proin fermentum leo. Donec et odio pellentesque diam. Id semper risus in hendrerit gravida.
-                </p>
-            </div> */}
+            <div className="committee-internship-info">
+                <div className="pointer"></div>
+                <div className="bubble">
+                    <img src="" alt="committee logo"/>
+                    <h2>What do we do?</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Lectus nulla at volutpat diam ut. Elementum nisi quis eleifend quam adipiscing vitae.
+                    </p>
+                    <h2>Time Commitment</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Lectus nulla at volutpat diam ut. Elementum nisi quis eleifend quam adipiscing vitae.
+                    </p>
+                    <h2>Post Internship</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Lectus nulla at volutpat diam ut. Elementum nisi quis eleifend quam adipiscing vitae.
+                    </p>
+                </div>
+            </div>
 
         </Layout>
     );

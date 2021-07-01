@@ -1,15 +1,52 @@
 .logos-line {
   display: flex;
+  justify-content: space-between;
   margin: auto;
   margin-top: 50px;
   width: 80vw;
 
   .logo-diamond {
-    flex: 10%;
     padding: 5px;
 
     img {
       width: 100px;
+
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.08);
+      }
     }
   }
 }  
+
+.committee-internship-info {
+  margin: auto;
+  margin-bottom: 100px;
+  position: relative;
+  width: 80vw;
+}
+
+.bubble {
+  border-radius: 20px;
+  box-shadow: 0 0 2px 2px gray;
+  margin: 0;
+  padding: 20px;
+  padding-top: 10px;
+  position: relative;
+}
+
+.pointer {
+  background-color: red;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: -2px -2px 2px gray;
+  height: 40px;
+  // left: -36.5vw; // add 8.9 each time
+  left: -45.7%; // add 11.425 each time
+  margin: 0 auto;
+  margin-bottom: -20.9px;
+  position: relative;
+  transform: rotate(45deg);
+  width: 40px;
+  z-index: 1;
+}
