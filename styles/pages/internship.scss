@@ -20,33 +20,28 @@
 }  
 
 .committee-internship-info {
+  background-color: #FFF;
+  border-radius: 1rem;
+  box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.3), 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.2);
+  font-size: 1.25em;
   margin: auto;
   margin-bottom: 100px;
+  margin-top: 20px;
+  padding: 1.125em 1.5em;
   position: relative;
   width: 80vw;
 }
 
-.bubble {
-  border-radius: 20px;
-  box-shadow: 0 0 2px 2px gray;
-  margin: 0;
-  padding: 20px;
-  padding-top: 10px;
-  position: relative;
+.committee-internship-info::before {
+  border: 1.25rem solid transparent;
+  border-bottom-color: #FFF;
+  border-top: 0;
+  bottom: 100%;
+  content: '';
+  filter: drop-shadow(0 -0.0625rem 0.0625rem rgba(0, 0, 0, 0.1));
+  height: 0;
+  left: 3.25em; //5.5 increase for each icon - doesnt apply to different screen sizes: todo make responsive
+  position: absolute;
+  width: 0;
 }
 
-.pointer {
-  background-color: red;
-  background-color: white;
-  border-radius: 5px;
-  box-shadow: -2px -2px 2px gray;
-  height: 40px;
-  // left: -36.5vw; // add 8.9 each time
-  left: -45.7%; // add 11.425 each time
-  margin: 0 auto;
-  margin-bottom: -20.9px;
-  position: relative;
-  transform: rotate(45deg);
-  width: 40px;
-  z-index: 1;
-}

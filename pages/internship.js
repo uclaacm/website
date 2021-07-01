@@ -25,28 +25,28 @@ function InternshipPage(){
                 </div>
             </div>
             <div className="committee-internship-info">
-                <div className="pointer"></div>
-                <div className="bubble">
-                    <img src="" alt="committee logo"/>
-                    <h2>What do we do?</h2>
+            <img src="" alt="committee logo"/>
+                    <h3>What do we do?</h3>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         Lectus nulla at volutpat diam ut. Elementum nisi quis eleifend quam adipiscing vitae.
                     </p>
-                    <h2>Time Commitment</h2>
+                    <h3>Time Commitment</h3>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         Lectus nulla at volutpat diam ut. Elementum nisi quis eleifend quam adipiscing vitae.
                     </p>
-                    <h2>Post Internship</h2>
+                    <h3>Post Internship</h3>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         Lectus nulla at volutpat diam ut. Elementum nisi quis eleifend quam adipiscing vitae.
                     </p>
-                </div>
+            </div>
+            <div className="content-section text-center">
+                <h1>Applications</h1>
             </div>
 
         </Layout>
