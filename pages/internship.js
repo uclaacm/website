@@ -48,6 +48,17 @@ function InternshipPage(){
             <div className="content-section text-center">
                 <h1>Applications</h1>
             </div>
+            <div className="content-section text-center">
+                <h1>Next steps</h1>
+            </div>
+            <div className="content-section text-center">
+                <h1>Past Intern Testimonials</h1>
+            </div>
+            <div className="content-section text-center">
+                <h1>FAQ</h1>
+            </div>
+
+
 
         </Layout>
     );
