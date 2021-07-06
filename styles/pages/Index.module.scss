@@ -1,4 +1,8 @@
-.content-section {
+@import '../variables.scss';
+@import '../components/Button.module.scss';
+@import '../components/News.scss';
+
+.contentSection {
   margin: auto;
   max-width: 800px;
   padding: 0 20px;
@@ -26,14 +30,14 @@
     }
   }
 
-  .button-section {
+  .buttonSection {
     margin: 20px 0;
     text-align: center;
     width: 100%;
   }
 }
 
-.half-width {
+.halfWidth {
   width: 50%;
 }
 
@@ -49,23 +53,27 @@
   }
 }
 
-#sign-up-section {
+#signUpSection {
   display: flex;
   flex-direction: row;
 
-  #sign-up-right {
+  #signUpRight {
     align-items: center;
     display: flex;
     justify-content: center;
   }
 }
 
+.textCenter {
+  text-align: center;
+}
+
 @media (max-width: 600px) {
-  .half-width {
+  .halfWidth {
     width: 100%;
   }
 
-  #sign-up-section {
+  #signUpSection {
     flex-direction: column;
     padding-bottom: 40px;
     text-align: center;

@@ -6,6 +6,8 @@ import React from 'react';
 const IMAGE_WIDTH = 360;
 const ITEMS_PER_SECTION = 4;
 
+import styles from '../styles/components/Carousel.module.scss';
+
 export default class Carousel extends React.Component {
 	constructor(props) {
 		super(props);
@@ -56,15 +58,15 @@ export default class Carousel extends React.Component {
 
 	render() {
 		return (
-			<div id="carousel">
-				<div id="carousel-inner">
+			<div id={styles.carousel}>
+				<div id={styles.carouselInner}>
 					{this.state.sections.map((section, i) => {
 						const carouselStyle = {
 							left: section.left + 'px',
 							width: section.width + 'px',
 						};
 						return (
-						<div className="carousel-sect" style={carouselStyle} key={i}>
+						<div className={styles.carouselSect} style={carouselStyle} key={i}>
 							{ section.items }
 						</div>);
 						},

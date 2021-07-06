@@ -1,3 +1,5 @@
+@import '../variables.scss';
+
 #carousel {
   background: #FAFAFA;
   height: 480px;
@@ -5,11 +7,11 @@
   overflow: hidden;
   position: relative;
 
-  #carousel-inner {
+  #carouselInner {
     width: 1600px;
   }
 
-  .carousel-sect {
+  .carouselSect {
     background: linear-gradient(rgba($acm-black, 0.8), rgba($acm-black, 1));
     position: absolute;
     top: 0;
