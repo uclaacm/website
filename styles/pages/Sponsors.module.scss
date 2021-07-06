@@ -1,0 +1,53 @@
+@import '../variables.scss';
+@import '../components/button.scss';
+
+.sponsorContainer {
+  margin: 30px auto;
+
+  .sponsor {
+    display: inline-block;
+    max-height: 80px;
+    max-width: 200px;
+    padding: 30px;
+    vertical-align: middle;
+  }
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.contentSection {
+  margin: auto;
+  max-width: 800px;
+  padding: 0 20px;
+  position: relative;
+
+  h1 {
+    font-size: 2em;
+    margin: 0;
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 1.5em;
+    margin: 0;
+    padding: 20px;
+  }
+
+  p {
+    font-size: 0.8em;
+    line-height: 150%;
+    margin: 0 22px 14px;
+
+    &.subheading {
+      font-size: 1em;
+    }
+  }
+
+  .buttonSection {
+    margin: 20px 0;
+    text-align: center;
+    width: 100%;
+  }
+}
