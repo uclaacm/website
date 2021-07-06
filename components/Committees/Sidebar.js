@@ -1,13 +1,15 @@
 // import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
 
+import styles from "../../styles/components/Committees/Sidebar.module.scss";
+
 function SidebarLink(props){
 	return (
 		<a
-			className={`committee ${props.committee.class}`}
+			className={styles.committee}
 			href={`#${props.committee.class}`}
 		>
-			<div className="committee-sidebar-image">
+			<div className={styles.committeeSidebarImage}>
 				<img src={props.committee.image} alt={`Logo and Wordmark for ACM ${props.committee.name}`} />
 				{/* TODO: use next image without breaking deploy */}
 			</div>
@@ -40,7 +42,7 @@ function Sidebar(props){
 	}
 
 	return (
-		<div className="sidebar-item">
+		<div className={styles.sidebarItem}>
 			{props.committees.map(
 				committee => <SidebarLink key={committee.name} committee={committee} />,
 			)}

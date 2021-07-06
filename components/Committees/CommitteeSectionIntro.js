@@ -10,12 +10,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Image from 'next/image';
 import React from 'react';
 
+import styles from "../../styles/components/Committees/CommitteeSectionIntro.module.scss";
+
 function CommitteeIconLink({committee, link}) {
     const committeeStr = `acm ${committee.name}`;
     const iconStr = link.platform === 'website' ? `${committeeStr}'s website` : `${committeeStr} on ${link.platform}`;
     return (
         <a
-            className={`icon-link ${committee.class}`}
+            className= {`${styles.iconLink} ${styles[committee.class]}`}
             href={link.link}
             target="_blank"
             rel="noreferrer noopener"
@@ -50,17 +52,17 @@ function CommitteeIcon({platform}) {
 // TODO: props destructuring
 function CommitteeSectionIntro(props) {
     return (
-        <div className="grid-tablet-2">
-            <div className="grid-tablet-2-reverse">
+        <div className={styles.gridTablet2}>
+            <div className={styles.gridTablet2Reverse}>
                 {/* TODO: we may want to make this image layout="fill"? it seems like pre-next, the proportion of the image changes, which is very tricky to deal with */}
-                <div className="image-wrapper">
+                <div className={styles.imageWrapper}>
                     <Image src={props.committee.introImage} alt={`large motif image for ${props.committee.name}`} width={390} height={195}/>
                 </div>
             </div>
-            <div className="pr-tablet-2">
+            <div className={styles.prTablet2}>
                 <h2>{props.committee.tagline}</h2>
                 <p>{props.committee.mission}</p>
-                <div className="learn-more">
+                <div className={styles.learnMore}>
                     <h3>Learn More</h3>
                     {props.committee.links.map(link =>
                         <CommitteeIconLink committee={props.committee} link={link} key={link.platform} />,

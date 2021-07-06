@@ -1,4 +1,6 @@
-.sidebar-item {
+@import "../../variables.scss";
+
+.sidebarItem {
   background: none;
   display: inline-flex;
   flex-flow: column nowrap;
@@ -11,7 +13,7 @@
   transition: opacity 3s ease;
   z-index: 1000;
 
-  .committee {
+  .committee{
     align-items: center;
     color: $font-primary-color;
     display: inline-block;
@@ -36,7 +38,7 @@
 }
 
 
-.committee-mobile-nav li {
+.committeeMobileNav li {
   display: inline-block;
   font-family: $font-header;
   font-size: 16px !important;
@@ -50,19 +52,19 @@
   }
 }
 
-.committee-sidebar-image {
+.committeeSidebarImage {
   height: 35px;
   margin-left: 10px;
   position: relative;
 }
 
-.committee-mobile-nav li::after {
+.committeeMobileNav li::after {
   content: '\A';
   white-space: pre;
 }
 
 
-.committee-mobile-nav {
+.committeeMobileNav {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 0;
@@ -70,7 +72,7 @@
 }
 
 @media screen and (max-width: $navbar-breakpoint) {
-  .sidebar-item {
+  .sidebarItem {
     display: none;
   }
 }

@@ -1,3 +1,5 @@
+@import "../../variables.scss";
+
 .learn-more {
   color: $font-secondary-color;
   font-weight: 700;
@@ -6,11 +8,11 @@
   text-transform: uppercase;
 }
 
-.grid-tablet-2 {
+.gridTablet2 {
   margin-top: 30px;
 }
 
-.learn-more .icon-link {
+.learnMore .iconLink {
   font-size: 2.5rem;
 
   :hover {
@@ -51,7 +53,7 @@
 }
 
 @media (min-width: $tablet-breakpoint) {
-  .learn-more {
+  .learnMore {
     font-size: 0.9em;
 
     h3 {
@@ -59,11 +61,25 @@
     }
   }
 
-  h2 {
-    font-size: 2em;
+  .gridTablet2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
-  p {
-    font-size: 1.2em;
+  .gridTablet2Reverse {
+    grid-column: 2;
+    grid-row: 1;
   }
+
+  .prTablet2 {
+    padding-right: 2em;
+  }
+
+  // h2 {
+  //   font-size: 2em;
+  // }
+
+  // p {
+  //   font-size: 1.2em;
+  // }
 }

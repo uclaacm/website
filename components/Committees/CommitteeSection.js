@@ -3,11 +3,13 @@ import React from 'react';
 import CommitteeEventCard from './CommitteeEventCard';
 import Intro from './CommitteeSectionIntro';
 
+import styles from '../../styles/pages/Committees.module.scss'
+
 function CommitteeProjects({committee}) {
 	return (
-		<div className="body-wrapper">
-			<h3 className="font-header text-bold text-25x">Events and Projects</h3>
-			<div className="card-container">
+		<div className={styles.bodyWrapper}>
+			<h3 className={`${styles.fontHeader} ${styles.textBold} ${styles.text25x}`}>Events and Projects</h3>
+			<div className={styles.cardContainer}>
 				{committee.infoCards.map((card) => {
 					// TODO: destructure class after renaming it
 					const { image, title, desc } = card;
@@ -33,7 +35,7 @@ function CommitteeSection(props) {
     <div id={committee.class} className="committee-section">
       {/* Header image */}
 			{/* TODO: use next image without breaking deploy */}
-      <div className={`committee-header ${committee.class}`}>
+      <div>
 				<img src={committee.image} alt={`${committee.name}'s logo`} />
       </div>
       {/* Committee Intro */}
