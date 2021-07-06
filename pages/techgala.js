@@ -6,13 +6,15 @@ import Projects from '../components/TechGala/Projects';
 import TechGalaBanner from '../components/TechGala/TechGalaBanner';
 import data from '../data';
 
+import styles from '../styles/pages/TechGala.module.scss';
+
 function TechGala() {
 	const { tgprojects } = data;
 	return (
 		<Layout>
-			<div className='content'>
+			<div className={styles.content}>
 				<Banner decorative/>
-				<div className="page-content">
+				<div className={styles.pageContent}>
 					<TechGalaBanner />
 					<Projects projects={tgprojects}/>
 				</div>

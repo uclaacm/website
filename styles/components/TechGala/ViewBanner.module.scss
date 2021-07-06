@@ -1,0 +1,69 @@
+@import '../../variables.scss';
+@import '../../components/Button.scss';
+
+.bannerSection {
+  margin: auto;
+  max-width: 800px;
+  padding: 0 20px;
+  position: relative;
+
+  h2 {
+    color: white;
+    font-size: 1.6em;
+    margin: 0;
+    padding: 20px;
+  }
+}
+
+#bannerRight {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+#bannerLeft {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.blue {
+  background-color: $acm-cobalt;
+
+  h1,
+  h2 {
+    color: white;
+    font-size: 2em;
+    line-height: 135%;
+    padding: 20px 0;
+  }
+}
+
+#signUpSection {
+  display: flex;
+  flex-direction: row;
+
+  #signUpRight {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .halfWidth {
+    width: 100%;
+  }
+
+  #signUpSection {
+    flex-direction: column;
+    padding-bottom: 40px;
+    text-align: center;
+  }
+}
+
+.halfWidth {
+  width: 50%;
+}

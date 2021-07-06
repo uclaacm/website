@@ -1,8 +1,10 @@
-.intro-row {
+@import '../../variables.scss';
+
+.introRow {
   margin-bottom: 24px;
 }
 
-.right-col {
+.rightCol {
   display: none;
 }
 
@@ -11,13 +13,13 @@
 }
 
 @media (min-width: 688px) {
-  .left-col {
+  .leftCol {
     float: left;
     text-align: left;
     width: 45%;
   }
 
-  .right-col {
+  .rightCol {
     display: block;
     float: right;
     margin-top: 30px;
@@ -29,19 +31,21 @@
     }
   }
 
-  .show-mobile {
+  .introRow{
+    h2 {
+      font-size: 2em;
+    }
+  
+    p {
+      font-size: 1.2em;
+    }
+  }
+  
+  .showMobile {
     display: none;
   }
 
-  h2 {
-    font-size: 2em;
-  }
-
-  p {
-    font-size: 1.2em;
-  }
-
-  .intro-row::after {
+  .introRow::after {
     clear: both;
     content: '';
     display: table;
@@ -55,7 +59,7 @@
   font-weight: bold;
 }
 
-.tg-tag {
+.tgTag {
   border: 1px solid $acm-cobalt;
   border-radius: 8px;
   color: $acm-cobalt;
