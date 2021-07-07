@@ -1,7 +1,7 @@
 // import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
 
-import styles from "../../styles/components/Committees/Sidebar.module.scss";
+import styles from '../../styles/components/Committees/Sidebar.module.scss';
 
 function SidebarLink(props){
 	return (

@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 
-import styles from "../../styles/components/Committees/CommitteeEventCard.module.scss";
+import styles from '../../styles/components/Committees/CommitteeEventCard.module.scss';
 
 function CommitteeEventCard(props) {
     const hasImage = props.image.src;

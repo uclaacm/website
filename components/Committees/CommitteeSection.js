@@ -1,9 +1,9 @@
 // import Image from 'next/image';
 import React from 'react';
+import styles from '../../styles/pages/Committees.module.scss';
 import CommitteeEventCard from './CommitteeEventCard';
 import Intro from './CommitteeSectionIntro';
 
-import styles from '../../styles/pages/Committees.module.scss'
 
 function CommitteeProjects({committee}) {
 	return (

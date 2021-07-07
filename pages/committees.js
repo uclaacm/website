@@ -6,9 +6,9 @@ import Navigation from '../components/Committees/Sidebar';
 import Layout from '../components/Layout';
 import data from '../data';
 
-import styles from '../styles/pages/Committees.module.scss'
-
 import acmCommittees from '../public/images/acm_committees.png';
+import styles from '../styles/pages/Committees.module.scss';
+
 
 function CommitteesBanner() {
 	return (
@@ -18,7 +18,11 @@ function CommitteesBanner() {
 			</div>
 			<div>
 				<h1>Committees</h1>
-				<p>ACM comprises eight committees, each serving a unique topic and mission. All of our events are open to everyone. We strive to cover all of our members’ interests and encourage members to explore new topics and events, too!</p>
+				<p>
+					ACM comprises eight committees, each serving a unique topic and mission.
+					All of our events are open to everyone. We strive to cover all of our members’
+					interests and encourage members to explore new topics and events, too!
+				</p>
 			</div>
 		</div>
 	);

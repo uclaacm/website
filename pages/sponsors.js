@@ -9,7 +9,7 @@ import data from '../data';
 import reslifeLogo from '../public/images/sponsors/reslife.png';
 import uclaCsDeptLogo from '../public/images/sponsors/ucla_cs_dept.png';
 
-import styles from "../styles/pages/Sponsors.module.scss";
+import styles from '../styles/pages/Sponsors.module.scss';
 
 function Sponsors() {
 	const { sponsors } = data;
@@ -31,7 +31,9 @@ function Sponsors() {
 						</a>
 					</div>
 				</div>
-				<p className={styles.subheading}>A special thanks to all of our UCLA Computer Science industry affiliates for their support:</p>
+				<p className={styles.subheading}>
+					A special thanks to all of our UCLA Computer Science industry affiliates for their support:
+				</p>
 				<div className={styles.sponsorContainer}>
 					{sponsors.map(sponsor =>
 						<a className={`${styles.blockCentered} ${styles.sponsor}`} href={sponsor.link} target="_blank" rel="noreferrer noopener" key={sponsor.name}>

@@ -1,10 +1,10 @@
 import React from 'react';
-import data from '../data/events';
 
 import Banner from '../components/Banner';
 import Layout from '../components/Layout';
+// import data from '../data/events';
 
-import styles from "../styles/pages/Events.module.scss";
+import styles from '../styles/pages/Events.module.scss';
 
 function Events() {
 	return (

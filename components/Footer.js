@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import React from 'react';
+import styles from'../styles/components/Footer.module.scss';
 import SocialMedia from './SocialMedia';
 
-import styles from'../styles/components/Footer.module.scss';
 
 function Footer(){
 	return (

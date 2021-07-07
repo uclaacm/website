@@ -10,7 +10,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Image from 'next/image';
 import React from 'react';
 
-import styles from "../../styles/components/Committees/CommitteeSectionIntro.module.scss";
+import styles from '../../styles/components/Committees/CommitteeSectionIntro.module.scss';
 
 function CommitteeIconLink({committee, link}) {
     const committeeStr = `acm ${committee.name}`;
