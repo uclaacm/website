@@ -27,7 +27,7 @@ function Home () {
 				<br />
 				<Committees committees={committees} />
 				<div className={styles.buttonSection}>
-					<Link href="/committees"><a className={styles.button}>Learn More About Our Committees</a></Link>
+					<Link href="/committees"><a className="button">Learn More About Our Committees</a></Link>
 				</div><br /><br />
 
 				<div className={styles.contentSection}>
@@ -48,7 +48,7 @@ function Home () {
 						</div>
 						<div id={styles.signUpRight} className={styles.halfWidth}>
 							<Link href="http://eepurl.com/c5pE6P">
-								<a className={`${styles.button} ${styles.tight} ${styles.dark}`} target="_blank" rel="noreferrer noopener">
+								<a className="button tight dark" target="_blank" rel="noreferrer noopener">
 									Join our Mailing List
 								</a>
 							</Link>

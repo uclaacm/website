@@ -49,7 +49,7 @@ export default class Navbar extends React.Component {
 
 	componentWillUnmount() {
 		// TODO: remove direct DOM manipulation, make this stateful
-		const items = document.querySelectorAll('#mobileNav .navItems li');
+		const items = document.querySelectorAll('#mobileNav .navtems li');
 		for (const item of items) {
 			item.removeEventListener('click', this.clickMobileNav);
 		}
@@ -73,7 +73,7 @@ export default class Navbar extends React.Component {
 							<li><Link href="/events"><a>Events</a></Link></li>
 							<li><Link href="/sponsors"><a>Sponsors</a></Link></li>
 							<li><Link href="https://members.uclaacm.com">
-								<a className={`${styles.button} ${styles.buttonTransparent} ${styles.buttonLg} ${styles.fontHeader} `}>
+								<a className={`button button-transparent button-lg ${styles.fontHeader} `}>
 									Member Login
 								</a></Link>
 							</li>
@@ -97,7 +97,7 @@ export default class Navbar extends React.Component {
 								<li><Link href="/events"><a>Events</a></Link></li>
 								<li><Link href="/sponsors"><a>Sponsors</a></Link></li>
 								<li><Link href="https://members.uclaacm.com">
-									<a className={`${styles.button} ${styles.buttonTransparent} ${styles.buttonLg} ${styles.fontHeader} `}>
+									<a className={`button button-transparent button-lg ${styles.fontHeader} `}>
 										Member Login
 									</a></Link>
 								</li>

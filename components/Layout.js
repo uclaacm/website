@@ -2,6 +2,8 @@ import React from 'react';
 import Footer from './Footer';
 import Navbar from './Navbar';
 
+//import styles from '../styles/Layout.module.scss';
+
 function Layout(props) {
   return (
     <>

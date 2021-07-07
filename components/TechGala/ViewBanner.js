@@ -12,7 +12,7 @@ function TGBanner() {
                 </div>
                 <div id={styles.bannerRight} className={styles.halfWidth}>
                     <Link href="/techgala">
-                        <a className={`${styles.button} ${styles.tight} ${styles.dark}`}>
+                        <a className="button tight dark">
                             View Projects
                         </a>
                     </Link>

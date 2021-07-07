@@ -22,7 +22,7 @@ function Footer(){
 					*/}
 					<div className={styles.footerItem} style={{paddingTop: '28px'}}>
 						<Link href="http://eepurl.com/c5pE6P">
-							<a className={`${styles.button} ${styles.tight}`} target="_blank" rel="noreferrer noopener">
+							<a className="button tight" target="_blank" rel="noreferrer noopener">
 								Join our Mailing List
 							</a>
 						</Link>
