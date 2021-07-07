@@ -12,15 +12,27 @@ Our website is built with [Next.js](https://nextjs.org/) on top of [React](https
 ## Quick Table of Contents
 
 * [Notes for Developers](#notes-for-developers)
+  * [Design Guidelines](#design-guidelines)
   * [Development Setup](#development-setup)
   * [Contribution Workflow](#contribution-workflow)
-  * [File Structure and Components](#file-structure-and-components)
-  * [Some Notes on Next](#some-notes-on-next)
   * [Production Deploy](#production-deploy)
 * [Notes on Previous Iterations](#notes-on-previous-iterations)
 * [Licensing and Attribution](#licensing-and-attribution)
 
 ## Notes for Developers
+
+### Design Guidelines
+
+*Doc coming soon!*
+
+Have questions about the overarching project of this website, like:
+
+* what technologies do we use?
+* what are our code writing styles?
+* where should I add ___ file?
+* what method would I do to make a ___?
+
+Check out our project design doc for more information!
 
 ### Development Setup
 
@@ -63,14 +75,6 @@ Want to make a change to the website? Great! Here are the steps:
 5. Once you're ready, stage and commit your changes!
 6. Make a [pull request](https://github.com/uclaacm/website/pulls) with your changes, and let someone on the dev team know.
 7. If your code passes code review, we'll merge it into `main`. Congratulations! If you'd like, it's now safe to delete your branch/fork.
-
-### File Structure and Components
-
-TODO
-
-### Some Notes on Next
-
-TODO
 
 ### Production Deploy
 
