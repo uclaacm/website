@@ -1,5 +1,5 @@
 {
-    "extends": [ "stylelint-config-recommended", "stylelint-config-sass-guidelines" ],
+    "extends": [ "stylelint-config-recommended", "stylelint-config-sass-guidelines", "stylelint-config-css-modules" ],
     "plugins": [
       "stylelint-scss"
     ],
