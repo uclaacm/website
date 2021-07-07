@@ -28,7 +28,7 @@
   width: auto;
 }
 
-.button.fade-light {
+.button.fadeLight {
   &:active {
     background: white;
     color: $acm-black;
@@ -48,7 +48,7 @@
   }
 }
 
-.button.button-transparent {
+.button.buttonTransparent {
   background: white;
   border: 2px solid $acm-cobalt;
   border-radius: 11.2px;
@@ -65,6 +65,6 @@
   }
 }
 
-.button.button-lg {
+.button.buttonLg {
   font-size: 0.95em;
 }

@@ -1,11 +1,13 @@
-#gm-page {
-  #time-to-gm-wrapper {
-    #time-to-gm-headline {
+@import '../variables.scss';
+
+#gmPage {
+  #timeToGmWrapper {
+    #timeToGmHeadline {
       font-size: 3em;
       text-align: center;
     }
 
-    #countdown-wrapper {
+    #countdownWrapper {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
@@ -14,11 +16,11 @@
       margin-top: -125px;
       width: 75%;
 
-      .countdown-cards {
+      .countdownCards {
         color: white;
         margin: 40px;
 
-        .square-background {
+        .squareBackground {
           background-color: $acm-cobalt;
           border-radius: 42px;
           height: 150px;
@@ -29,29 +31,29 @@
           z-index: -1;
         }
 
-        .countdown-numbers {
+        .countdownNumbers {
           font-size: 3.75em;
           font-weight: bold;
           text-align: center;
           z-index: 3;
         }
 
-        .countdown-labels {
+        .countdownLabels {
           font-size: 1.5em;
           text-align: center;
         }
       }
     }
 
-    h3#gm-zoom-release {
+    h3#gmZoomRelease {
       margin: auto;
       margin-top: 25px;
       text-align: center;
       width: 75%;
     }
 
-    p#cant-wait,
-    p#posted-to-youtube {
+    p#cantWait,
+    p#postedToYoutube {
       margin-bottom: 50px;
       margin-left: auto;
       margin-right: auto;
@@ -60,7 +62,7 @@
       width: 90%;
     }
 
-    #gm-graphic {
+    #gmGraphic {
       display: block;
       margin-left: auto;
       margin-right: auto;
@@ -69,77 +71,77 @@
     }
 
     @media (max-width: 915px) {
-      .countdown-cards { height: 175px; }
-      #countdown-wrapper { margin-bottom: 125px;}
+      .countdownCards { height: 175px; }
+      #countdownWrapper { margin-bottom: 125px;}
     }
   }
 
-  #gm-now-wrapper {
-    #time-to-gm-headline-now {
+  #gmNowWrapper {
+    #timeToGmHeadlineNow {
       font-size: 3em;
       text-align: center;
     }
 
-    #gm-main-content {
+    #gmMainContent {
       margin: auto;
       width: 75%;
 
-      #join-links-wrapper {
+      #joinLinksWrapper {
         display: flex;
         justify-content: space-around;
         margin-bottom: 25px;
         padding-bottom: 50px;
 
-        .click-to-join {
+        .clickToJoin {
           width: 350px;
 
-          .join-links {
+          .joinLinks {
             border-radius: 15px;
 
-            .join-links-img {
+            .joinLinksImg {
               display: block;
               height: auto;
               margin: auto;
             }
           }
 
-          #zoom-join-link-wrapper {
+          #zoomJoinLinkWrapper {
             background-color: gainsboro;
             padding-bottom: 15px;
             padding-top: 15px;
 
-            .join-links-img {
+            .joinLinksImg {
               width: 200px;
             }
           }
 
-          #discord-join-link-wrapper {
+          #discordJoinLinkWrapper {
             background-color: #7289DA;
             padding-bottom: 1px;
             padding-top: 5px;
 
-            .join-links-img {
+            .joinLinksImg {
               width: 200px;
             }
           }
         }
 
-        .should-dim:hover {
+        .shouldDim:hover {
           cursor: pointer;
           opacity: 0.75;
         }
 
-        .should-dim a {
+        .shouldDim a {
           color: $font-primary-color;
           text-decoration: none;
         }
 
-        p.join-us {
+        p.joinUs {
           margin-bottom: 0;
           text-align: center;
         }
 
-        p.join-us-descriptor {
+        p.joinUsDescriptor {
           color: $font-secondary-color;
           font-size: 10pt;
           margin-top: 5px;
@@ -147,7 +149,7 @@
         }
       }
 
-      #video-wrapper {
+      #videoWrapper {
         margin-bottom: 20px;
 
         iframe {
@@ -158,7 +160,7 @@
         }
       }
 
-      #gm-program-wrapper {
+      #gmProgramWrapper {
         border-top: 1px dotted $acm-black;
 
         .row {
@@ -173,19 +175,19 @@
             white-space: nowrap;
           }
 
-          .row-description-wrapper {
+          .rowDescriptionWrapper {
             margin-left: 350px;
 
-            h3.row-description-heading {
+            h3.rowDescriptionHeading {
               color: $acm-cobalt;
               margin: 0;
             }
 
-            p.row-description-subheading {
+            p.rowDescriptionSubheading {
               color: $acm-tint;
               margin-top: 4px;
 
-              a#acm-discord-invite-cta {
+              a#acmDiscordInviteCta {
                 color: inherit;
               }
             }
@@ -199,7 +201,7 @@
             #ai { color: $ai-arctic; }
             #hack { color: $hack-purple; }
 
-            .committee-logos {
+            .committeeLogos {
               height: 20px;
               margin-bottom: 2px;
               margin-right: 5px;
@@ -211,18 +213,18 @@
       }
     }
     @media (max-width: 915px) {
-      .row-description-wrapper { margin-left: 15px !important;}
+      .rowDescriptionWrapper { margin-left: 15px !important;}
 
-      #join-links-wrapper {
+      #joinLinksWrapper {
         align-items: center;
         flex-direction: column;
         width: 100%;
 
-        .click-to-join {
+        .clickToJoin {
           max-width: 300px;
           min-width: 200px;
-          #zoom-join-link-wrapper {margin-right: 5px;}
-          #discord-join-link-wrapper {margin-left: 5px;}
+          #zoomJoinLinkWrapper {margin-right: 5px;}
+          #discordJoinLinkWrapper {margin-left: 5px;}
         }
       }
     }

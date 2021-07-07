@@ -1,13 +1,15 @@
 import Image from 'next/image';
 import React from 'react';
 
+import styles from '../styles/components/News.module.scss';
+
 function Article(props) {
 	return (
 		<a
 			target="_blank" rel="noreferrer noopener"
 			href={props.article.link}
 		>
-			<div className="achievement">
+			<div className={styles.achievement}>
 				<Image
 					src={props.article.image}
 					width={360}

@@ -1,4 +1,6 @@
-.icon-link {
+@import'../variables.scss';
+
+.iconLink {
   color: $acm-cobalt;
 
   &:hover {
@@ -7,10 +9,10 @@
   }
 }
 
-.social-media-icon-container {
+.socialMediaIconContainer {
   font-size: 2.5rem;
 
-  &.light > .icon-link {
+  &.light > .iconLink {
     color: white;
 
     :hover {

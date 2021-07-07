@@ -1,0 +1,46 @@
+@import '../variables.scss';
+
+.achievementsContainer {
+  margin: auto;
+  text-align: center;
+  width: 100%;
+}
+
+.achievement {
+  display: inline-block;
+  margin: 20px;
+  max-width: 100%;
+  min-height: 200px;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: top;
+  width: 350px;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+
+
+  img {
+    border: 2px solid #EAEAEA;
+    border-radius: 15px;
+    height: 200px;
+    max-width: 350px;
+    max-width: 100%;
+  }
+
+  h3 {
+    color: $font-primary-color;
+    font-family: $font-body;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+}
+
+@media (max-width: 600px) {
+  .achievement {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

@@ -20,7 +20,7 @@ function Footer(){
 					{/* the paddingTop is a magic number that replaces a
 						previous empty <h3> tag previously used for spacing. should be replaced later.
 					*/}
-					<div className={styles.footerTtem} style={{paddingTop: '28px'}}>
+					<div className={styles.footerItem} style={{paddingTop: '28px'}}>
 						<Link href="http://eepurl.com/c5pE6P">
 							<a className={`${styles.button} ${styles.tight}`} target="_blank" rel="noreferrer noopener">
 								Join our Mailing List

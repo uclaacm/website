@@ -4,6 +4,8 @@
 // import { generalInfo, boardEvents, committeeData } from '../../../config/gmData';
 // import Banner from '../../Banner/Banner';
 
+// import styles from '../styles/components/GM.module.scss';
+
 // const { graphicRoute, welcomeSpeaker} = generalInfo;
 // const { year , quarter , month , day, startTime, endTime}= generalInfo.date;
 // const { youTube, discord, linktree, recording, slides  } = generalInfo.links;
@@ -40,7 +42,7 @@
 // 	};
 
 // 	return (
-// 		<div id="gm-page">
+// 		<div id={styles.gmPage}>
 // 			<Banner decorative />
 // 			<Countdown date={GM_START_TIME} renderer={renderCountdownOrNow} />
 // 		</div>
@@ -53,8 +55,8 @@
 // 			const {id, logo, displayName, speakers} = committee;
 // 			return (
 // 				<p key={id}>
-// 					<span id={id}>
-// 						<img src={logo} alt={'Logo for ' + displayName} className="committee-logos"/>
+// 					<span id={styles.id}>
+// 						<img src={logo} alt={'Logo for ' + displayName} className={styles.committeeLogos}/>
 // 						{displayName}
 // 					</span>
 // 					: {speakers}
@@ -67,8 +69,8 @@
 // 			const {eventName, logo, displayName, speakers} = events;
 // 			return (
 // 				<p key={eventName}>
-// 					<span className="board">
-// 						<img src={logo} alt={'Logo for ' + displayName} className="committee-logos"/>
+// 					<span className={styles.board}>
+// 						<img src={logo} alt={'Logo for ' + displayName} className={styles.committeeLogos}/>
 // 						{eventName}
 // 					</span>
 // 					: {speakers}
@@ -77,63 +79,63 @@
 // 		});
 // 	}
 // 	return (
-// 		<div id="gm-now-wrapper">
-// 			<h1 id="time-to-gm-headline-now">Thanks for attending {quarter} GM {year}!</h1>
-// 			<div id="gm-main-content">
-// 				<div id="join-links-wrapper">
-// 					<div className="click-to-join">
-// 						<div className="should-dim">
+// 		<div id={styles.gmNowWrapper}>
+// 			<h1 id={styles.timeToGmHeadlineNow}>Thanks for attending {quarter} GM {year}!</h1>
+// 			<div id={styles.gmMainContent}>
+// 				<div id={styles.joinLinksWrapper}>
+// 					<div className={styles.clickToJoin}>
+// 						<div className={styles.shouldDim}>
 // 							<a href={slides} target="_blank" rel="noopener noreferrer">
-// 								<div id="zoom-join-link-wrapper" className="join-links">
-// 									<img src={'/images/slides.png'} alt="Google Slides logo" className="join-links-img"/>
+// 								<div id={styles.zoomJoinLinkWrapper} className={styles.joinLinks}>
+// 									<img src={'/images/slides.png'} alt="Google Slides logo" className={styles.joinLinksImg}/>
 // 								</div>
-// 								<p className="join-us">View the slides we used during GM</p>
+// 								<p className={styles.joinUs}>View the slides we used during GM</p>
 // 							</a>
 // 						</div>
 // 					</div>
-// 					<div className="click-to-join">
-// 						<div className="should-dim">
+// 					<div className={styles.clickToJoin}>
+// 						<div className={styles.shouldDim}>
 // 							<a href={discord} target="_blank" rel="noopener noreferrer">
-// 								<div id="discord-join-link-wrapper" className="join-links">
-// 									<img src={'/images/DiscordLogoWordmark.png'} alt="Discord logo" className="join-links-img"/>
+// 								<div id={styles.discordJoinLinkWrapper} className={styles.joinLinks}>
+// 									<img src={'/images/DiscordLogoWordmark.png'} alt="Discord logo" className={styles.joinLinksImg}/>
 // 								</div>
-// 								<p className="join-us">Missed GM? Join us in our Discord!</p>
+// 								<p className={styles.joinUs}>Missed GM? Join us in our Discord!</p>
 // 							</a>
 // 						</div>
 // 					</div>
 // 				</div>
-// 				<div id="video-wrapper">
+// 				<div id={styles.videoWrapper}>
 // 					<iframe title={`ACM ${quarter} GM ${year} recording`} src={recording} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 // 				</div>
-// 				<div id="gm-program-wrapper">
+// 				<div id={styles.gmProgramWrapper}>
 // 					<h2>Program</h2>
-// 					<div className="row">
-// 						<p className="timestamps"> {welcome + ' ' + timezone} </p>
-// 						<div className="row-description-wrapper">
-// 							<h3 className="row-description-heading">{welcomeSpeaker}: Welcome</h3>
+// 					<div className={styles.row}>
+// 						<p className={styles.timestamps}> {welcome + ' ' + timezone} </p>
+// 						<div className={styles.rowDescriptionWrapper}>
+// 							<h3 className={styles.rowDescriptionHeading}>{welcomeSpeaker}: Welcome</h3>
 // 						</div>
 // 					</div>
-// 					<div className="row">
-// 						<p className="timestamps">{committees + ' ' + timezone}</p>
-// 						<div className="row-description-wrapper">
-// 							<h3 className="row-description-heading">Committee Presentations</h3>
-// 							<p className="row-description-subheading">Learn what each of ACM&rsquo;s eight committees has in store for {quarter} quarter</p>
+// 					<div className={styles.row}>
+// 						<p className={styles.timestamps}>{committees + ' ' + timezone}</p>
+// 						<div className={styles.rowDescriptionWrapper}>
+// 							<h3 className={styles.rowDescriptionHeading}>Committee Presentations</h3>
+// 							<p className={styles.rowDescriptionSubheading}>Learn what each of ACM&rsquo;s eight committees has in store for {quarter} quarter</p>
 // 							{renderCommitteeSpeakers()}
 // 						</div>
 // 					</div>
-// 					<div className="row">
-// 						<p className="timestamps">{board + ' ' + timezone}</p>
-// 						<div className="row-description-wrapper">
-// 							<h3 className="row-description-heading">ACM Board</h3>
-// 							<p className="row-description-subheading">See what ACM wide events ACM Board has planned.</p>
+// 					<div className={styles.row}>
+// 						<p className={styles.timestamps}>{board + ' ' + timezone}</p>
+// 						<div className={styles.rowDescriptionWrapper}>
+// 							<h3 className={styles.rowDescriptionHeading}>ACM Board</h3>
+// 							<p className={styles.rowDescriptionSubheading}>See what ACM wide events ACM Board has planned.</p>
 // 							{renderBoardEvents()}
 // 						</div>
 // 					</div>
-// 					<div className="row">
-// 						<p className="timestamps">{social + ' ' + timezone}</p>
-// 						<div className="row-description-wrapper">
-// 							<h3 className="row-description-heading">Tabling and Social</h3>
-// 							<p className="row-description-subheading">Join us in our official <a href={discord}  target="_blank" rel="noopener noreferrer" id="acm-discord-invite-cta">ACM Discord</a> for Committee tabling and socials</p>
+// 					<div className={styles.row}>
+// 						<p className={styles.timestamps}>{social + ' ' + timezone}</p>
+// 						<div className={styles.rowDescriptionWrapper}>
+// 							<h3 className={styles.rowDescriptionHeading}>Tabling and Social</h3>
+// 							<p className={styles.rowDescriptionSubheading}>Join us in our official <a href={discord}  target="_blank" rel="noopener noreferrer" id={styles.acmDiscordInviteCta}>ACM Discord</a> for Committee tabling and socials</p>
 // 						</div>
 // 					</div>
 // 				</div>
@@ -144,34 +146,34 @@
 
 // function GM_COUNTDOWN(props) {
 // 	return (
-// 		<div id="time-to-gm-wrapper">
-// 			<h1 id="time-to-gm-headline">{quarter} General Meeting {year} begins in</h1>
-// 			<div id="countdown-wrapper">
-// 				<div className="countdown-cards">
-// 					<div className="square-background"/>
-// 					<div className="countdown-numbers">{props.days}</div>
-// 					<div className="countdown-labels">{props.dayString}</div>
+// 		<div id={styles.timeToGmWrapper}>
+// 			<h1 id={styles.timeToGmHeadline}>{quarter} General Meeting {year} begins in</h1>
+// 			<div id={styles.countdownWrapper}>
+// 				<div className={styles.countdownCards}>
+// 					<div className={styles.squareBackground}/>
+// 					<div className={styles.countdownNumbers}>{props.days}</div>
+// 					<div className={styles.countdownLabels}>{props.dayString}</div>
 // 				</div>
-// 				<div className="countdown-cards">
-// 					<div className="square-background"/>
-// 					<div className="countdown-numbers">{props.hours}</div>
-// 					<div className="countdown-labels">{props.hourString}</div>
+// 				<div className={styles.countdownCards}>
+// 					<div className={styles.squareBackground}/>
+// 					<div className={styles.countdownNumbers}>{props.hours}</div>
+// 					<div className={styles.countdownLabels}>{props.hourString}</div>
 // 				</div>
-// 				<div className="countdown-cards">
-// 					<div className="square-background"/>
-// 					<div className="countdown-numbers">{props.minutes}</div>
-// 					<div className="countdown-labels">{props.minuteString}</div>
+// 				<div className={styles.countdownCards}>
+// 					<div className={styles.squareBackground}/>
+// 					<div className={styles.countdownNumbers}>{props.minutes}</div>
+// 					<div className={styles.countdownLabels}>{props.minuteString}</div>
 // 				</div>
-// 				<div className="countdown-cards">
-// 					<div className="square-background"/>
-// 					<div className="countdown-numbers">{props.seconds}</div>
-// 					<div className="countdown-labels">{props.secondString}</div>
+// 				<div className={styles.countdownCards}>
+// 					<div className={styles.squareBackground}/>
+// 					<div className={styles.countdownNumbers}>{props.seconds}</div>
+// 					<div className={styles.countdownLabels}>{props.secondString}</div>
 // 				</div>
 // 			</div>
-// 			<h3 id="gm-zoom-release">Zoom link, slides, and other resources will be provided on {longDate} at {startTime} {timezone}</h3>
-// 			<p id="posted-to-youtube">The Zoom portion of {quarter} General Meeting {year} will be recorded and posted to our <a href={youTube} target="_blank" rel="noopener noreferrer">YouTube channel</a>.</p>
-// 			<p id="cant-wait">Can&rsquo;t wait to join in on the fun? Jump in right now with our <a href={linktree} target="_blank" rel="noopener noreferrer">Linktree</a> or hop into the official <a href={discord} target="_blank" rel="noopener noreferrer">Discord</a> and say hello!</p>
-// 			<img id="gm-graphic" src={graphicRoute} alt={quarter + ' General Meeting ' + year +' graphic'} />
+// 			<h3 id={styles.gmZoomRelease}>Zoom link, slides, and other resources will be provided on {longDate} at {startTime} {timezone}</h3>
+// 			<p id={styles.postedToYoutube}>The Zoom portion of {quarter} General Meeting {year} will be recorded and posted to our <a href={youTube} target="_blank" rel="noopener noreferrer">YouTube channel</a>.</p>
+// 			<p id={styles.cantWait}>Can&rsquo;t wait to join in on the fun? Jump in right now with our <a href={linktree} target="_blank" rel="noopener noreferrer">Linktree</a> or hop into the official <a href={discord} target="_blank" rel="noopener noreferrer">Discord</a> and say hello!</p>
+// 			<img id={styles.gmGraphic} src={graphicRoute} alt={quarter + ' General Meeting ' + year +' graphic'} />
 // 		</div>
 // 	);
 // }

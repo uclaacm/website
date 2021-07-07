@@ -1,3 +1,7 @@
+@import '../variables.scss';
+@import './Committees/Sidebar.module.scss';
+@import './Button.module.scss';
+
 #navbar {
   background: white;
   box-shadow: 0 0 4px #E2E2E2;
@@ -10,42 +14,42 @@
   width: 100%;
   z-index: 10;
 
-  #acm-logo {
+  #acmLogo {
     height: 60px;
     width: 180px;
   }
  
-  #navbar-inner {
+  #navbarInner {
     margin: auto;
     max-width: 1000px;
     width: 100%;
   }
 
-  .nav-section.left {
+  .navSection.left {
     float: left;
     margin-left: 20px;
   }
 
-  .nav-section.right {
+  .navSection.right {
     float: right;
     margin-right: 20px;
     text-align: right;
   }
 
-  #nav-title {
+  #navTitle {
     height: 60px;
     margin-top: 5px;
     width: 180px;
   }
 
-  ul.nav-items {
+  ul.navItems {
     height: 100%;
     list-style: none;
     margin: 0;
     padding: 0;
   }
 
-  ul.nav-items li {
+  ul.navItems li {
     display: inline-block;
     font-size: 0.95em;
     font-weight: 600;
@@ -61,7 +65,7 @@
     color: $acm-cobalt !important;
   }
 
-  ul.nav-items li:hover {
+  ul.navItems li:hover {
     color: #999;
     cursor: pointer;
   }
@@ -70,7 +74,7 @@
     text-decoration: none;
   }
 
-  a.active ul.nav-items li:hover {
+  a.active ul.navItems li:hover {
     color: $acm-cobalt !important;
   }
 
@@ -79,7 +83,7 @@
     color: inherit;
   }
 
-  #mobile-nav {
+  #mobileNav {
     display: none;
 
     .button {
@@ -88,7 +92,7 @@
 
   }
 
-  .hamburger-icon {
+  .hamburgerIcon {
     display: flex;
     flex-direction: column;
     height: 50px;
@@ -116,11 +120,11 @@
     }
   }
 
-  #menu-toggle {
+  #menuToggle {
     display: none;
   }
 
-  #hamburger-menu {
+  #hamburgerMenu {
     background: rgba(255, 255, 255, 0.95);
     bottom: 0;
     display: flex;
@@ -135,7 +139,7 @@
     width: 100%;
     z-index: -20;
 
-    ul.nav-items {
+    ul.navItems {
       display: flex;
       flex-direction: column;
       float: none;
@@ -146,7 +150,7 @@
       text-align: center;
     }
 
-    ul.nav-items li {
+    ul.navItems li {
       display: block;
       font-size: 1.8em;
       font-weight: 600;
@@ -158,7 +162,7 @@
       transition: all 1.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
     }
 
-    ul.nav-items li:hover {
+    ul.navItems li:hover {
       color: #999;
       cursor: pointer;
 
@@ -166,33 +170,37 @@
     }
 
     @media (max-height: 800px) {
-      ul.nav-items li {
+      ul.navItems li {
         margin: 20px auto;
       }
     }
     @media (max-height: 600px) {
-      ul.nav-items li {
+      ul.navItems li {
         margin: 5px auto;
       }
     }
     @media (max-height: 400px) {
-      ul.nav-items li {
+      ul.navItems li {
         margin: 1px auto;
       }
     }
   }
 
-  #menu-toggle:checked + #hamburger-menu {
+  #menuToggle:checked + #hamburgerMenu {
     transform: translate3d(0, 0, 0);
 
-    ul.nav-items li {
+    ul.navItems li {
       opacity: 1;
       transform: translate3d(0, 0, 0);
     }
   }
 
   @media (max-width: $navbar-breakpoint) {
-    #desktop-nav { display: none; }
-    #mobile-nav { display: inline-block; }
+    #desktopNav { display: none; }
+    #mobileNav { display: inline-block; }
   }
+}
+
+.fontHeader {
+  font-family: $font-header !important;
 }

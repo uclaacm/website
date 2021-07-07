@@ -7,9 +7,11 @@ import React from 'react';
 //uncomment the above import line "import gmData from '../../config/gmData';" to get quarter from the gmData page
 //uncomment the two lines saying  "/* <Link href="/gm"><li>{gmData.date.quarter} gm</li></Link> */"
 
+import styles from '../styles/components/Navbar.module.scss';
+
 function MobileNavItem() {
 	return (
-			<ul className="committee-mobile-nav">
+			<ul className={styles.committeeMobileNav}>
 				<li><Link href={'/committees#studio'}><a>Studio</a></Link></li>
 				<li><Link href={'/committees#icpc'}><a>ICPC</a></Link></li>
 				<li><Link href={'/committees#design'}><a>Design</a></Link></li>
@@ -31,7 +33,7 @@ export default class Navbar extends React.Component {
 
 	clickMobileNav() {
 		// TODO: remove direct DOM manipulation, make this stateful
-		document.getElementById('menu-toggle').checked = false;
+		document.getElementById('menuToggle').checked = false;
 	}
 
 	// TODO: can we both refactor this to use useEffect, and/or remove
@@ -39,7 +41,7 @@ export default class Navbar extends React.Component {
 
 	componentDidMount() {
 		// TODO: remove direct DOM manipulation, make this stateful
-		const items = document.querySelectorAll('#mobile-nav .nav-items li');
+		const items = document.querySelectorAll('#mobileNav .navItems li');
 		for (const item of items) {
 			item.addEventListener('click', this.clickMobileNav);
 		}
@@ -47,7 +49,7 @@ export default class Navbar extends React.Component {
 
 	componentWillUnmount() {
 		// TODO: remove direct DOM manipulation, make this stateful
-		const items = document.querySelectorAll('#mobile-nav .nav-items li');
+		const items = document.querySelectorAll('#mobileNav .navItems li');
 		for (const item of items) {
 			item.removeEventListener('click', this.clickMobileNav);
 		}
@@ -55,43 +57,49 @@ export default class Navbar extends React.Component {
 
 	render() {
 		return (
-			<div id="navbar">
-				<div id="navbar-inner">
+			<div id={styles.navbar}>
+				<div id={styles.navbarInner}>
 					<Link href="/">
-						<a id="nav-title" className="nav-section left">
-							<img src={'/images/acm_wordmark&logo.svg'} id="acm-logo" alt="ACM at UCLA Logo"></img>
+						<a id={styles.navTitle} className={` ${styles.navSection} ${styles.left} `}>
+							<img src={'/images/acm_wordmark&logo.svg'} id={styles.acmLogo} alt="ACM at UCLA Logo"></img>
 							{/* TODO: use next image without breaking deploy */}
 						</a>
 					</Link>
-					<div className="nav-section right" id="desktop-nav">
-						<ul className="nav-items">
+					<div className={` ${styles.navSection} ${styles.right} `} id={styles.desktopNav}>
+						<ul className={styles.navItems}>
 							<li><Link href="/about"><a>About</a></Link></li>
 							<li><Link href="/committees"><a>Committees</a></Link></li>
 							{/* <li><Link href="/gm"><a>{gmData.date.quarter} GM</a></Link></li> */}
 							<li><Link href="/events"><a>Events</a></Link></li>
 							<li><Link href="/sponsors"><a>Sponsors</a></Link></li>
-							<li><Link href="https://members.uclaacm.com"><a className="button button-transparent button-lg font-header">Member Login</a></Link>
+							<li><Link href="https://members.uclaacm.com">
+								<a className={`${styles.button} ${styles.buttonTransparent} ${styles.buttonLg} ${styles.fontHeader} `}>
+									Member Login
+								</a></Link>
 							</li>
 						</ul>
 					</div>
-					<div className="nav-section right" id="mobile-nav">
-						<label htmlFor="menu-toggle">
-							<div className="hamburger-icon">
-								<div className="bar" id="top-bar" />
-								<div className="bar" id="middle-bar" />
-								<div className="bar" id="bottom-bar" />
+					<div className={`${styles.navSection} ${styles.right}`} id={styles.mobileNav}>
+						<label htmlFor={styles.menuToggle}>
+							<div className={styles.hamburgerIcon}>
+								<div className={styles.bar}/>
+								<div className={styles.bar}/>
+								<div className={styles.bar}/>
 							</div>
 						</label>
-						<input type="checkbox" id="menu-toggle" />
-						<div id="hamburger-menu">
-							<ul className="nav-items">
+						<input type="checkbox" id={styles.menuToggle} />
+						<div id={styles.hamburgerMenu}>
+							<ul className={styles.navItems}>
 								<li><Link href="/about"><a>About</a></Link></li>
 								<li><Link href="/committees"><a>Committees</a></Link></li>
 								{/* <li><Link href="/gm"><a>{gmData.date.quarter} GM</a></Link></li> */}
 								<MobileNavItem/>
 								<li><Link href="/events"><a>Events</a></Link></li>
 								<li><Link href="/sponsors"><a>Sponsors</a></Link></li>
-								<li><Link href="https://members.uclaacm.com"><a className="button button-transparent button-lg font-header">Member Login</a></Link>
+								<li><Link href="https://members.uclaacm.com">
+									<a className={`${styles.button} ${styles.buttonTransparent} ${styles.buttonLg} ${styles.fontHeader} `}>
+										Member Login
+									</a></Link>
 								</li>
 							</ul>
 						</div>

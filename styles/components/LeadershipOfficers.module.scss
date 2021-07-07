@@ -1,4 +1,6 @@
-.officer-grid-row {
+@import '../variables.scss';
+
+.officerGridRow {
   display: flex;
   height: 100%;
   justify-content: flex-start;
@@ -7,13 +9,13 @@
   width: 100%;
 }
 
-.officer-grid-col {
+.officerGridCol {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.officer-image {
+.officerImage {
   border: 2px solid #EAEAEA;
   border-radius: 50%;
   display: inline-block;
@@ -22,20 +24,20 @@
   width: 70px;
 }
 
-.officer-info {
+.officerInfo {
   padding-left: 1em;
 
   p {
     margin: 0 !important; // this is to override .content-section p
   }
 
-  .officer-title {
+  .officerTitle {
     font-weight: 600;
     margin: 0;
   }
 }
 
-#officers-container {
+#officersContainer {
   box-sizing: border-box;
   margin: auto;
   max-width: 1000px;
@@ -90,5 +92,12 @@
         vertical-align: top;
       }
     }
+  }
+}
+
+@media (min-width: $navbar-breakpoint) {
+  .gridDesktop3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
