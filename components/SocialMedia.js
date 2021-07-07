@@ -16,7 +16,7 @@ function SocialMedia(props){
     // see https://fontawesome.com/how-to-use/on-the-web/other-topics/accessibility#web-fonts-semantic
     // for more on accessibility
 	return (
-		<span className={`${styles.socialMediaIconContainer} ${styles.iconType}`}>
+		<span className={`${styles.socialMediaIconContainer} ${styles[iconType]}`}>
             <a className={styles.iconLink} href="https://www.facebook.com/uclaacm" target="_blank" rel="noreferrer noopener" aria-label="ACM at UCLA on Facebook">
                 <FontAwesomeIcon icon={faFacebook} fixedWidth aria-hidden={true} />
             </a>
