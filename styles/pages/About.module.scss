@@ -1,10 +1,12 @@
+@import "../variables.scss";
+
 .ornament {
   position: absolute;
   right: 30px;
   top: 70px;
 }
 
-.square-ornament {
+.squareOrnament {
   background: $acm-tint;
   border-radius: 40px;
   height: 200px;
@@ -12,7 +14,7 @@
   width: 200px;
 }
 
-.image-ornament {
+.imageOrnament {
   max-width: 270px;
   top: 40px;
   width: 100%;
@@ -22,19 +24,19 @@
   }
 }
 
-.ornament-left {
+.ornamentLeft {
   left: -70px;
 }
 
-.image-ornament-left {
+.imageOrnamentLeft {
   left: 60px;
 }
 
-.image-ornament-right {
+.imageOrnamentRight {
   right: 20px;
 }
 
-.square-splash {
+.squareSplash {
   border-radius: 50px;
   height: 250px;
   left: 30px;
@@ -43,7 +45,7 @@
   width: 250px;
 }
 
-.square-small {
+.squareSmall {
   background-color: $acm-cobalt;
   border-radius: 10px;
   height: 50px;
@@ -53,7 +55,7 @@
   width: 50px;
 }
 
-.square-tiny {
+.squareTiny {
   background-color: $acm-cobalt;
   border-radius: 4px; //Roudning up from 3.6px
   height: 18px;
@@ -63,23 +65,44 @@
   width: 18px;
 }
 
-.about-page .content-section {
+.aboutPage .contentSection {
+  max-width: 800px;
+  padding: 0 20px;
+  position: relative;
   margin: 20px auto 40px;
 
-  .text-section {
+  .textSection {
     display: inline-block;
     max-width: 56%;
     text-align: left;
   }
 
   h1 {
+    font-size: 2em;
+    margin: 0;
+    padding: 20px;
     line-height: 110%;
     text-align: left;
   }
+
+  p {
+    font-size: 0.8em;
+    line-height: 150%;
+    margin: 0 22px 14px;
+  }
+}
+
+.leadership{
+  margin-bottom: 0 !important; //overrides contentSection
+}
+
+.socialMedia{
+  display: flex;
+  justify-content: center; 
 }
 
 @media (max-width: 600px) {
-  .square-ornament {
+  .squareOrnament {
     display: block;
 
     left: -70px;
@@ -88,15 +111,15 @@
     right: 0;
   }
 
-  .image-ornament {
+  .imageOrnament {
     display: block;
     left: 0;
     margin: 0 auto 80px;
     position: relative;
   }
 
-  .about-page .content-section {
-    .text-section {
+  .aboutPage .contentSection {
+    .textSection {
       display: inline-block;
       max-width: 100%;
       text-align: left;
