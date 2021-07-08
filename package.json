@@ -7,7 +7,7 @@
     "@fortawesome/free-brands-svg-icons": "^5.15.3",
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
     "@fortawesome/react-fontawesome": "^0.1.14",
-    "next": "11.0.0",
+    "next": "11.0.1",
     "react": "^17.0.2",
     "react-countdown": "^2.3.2",
     "react-dom": "^17.0.2",
@@ -52,8 +52,8 @@
     ]
   },
   "devDependencies": {
-    "eslint": "^7.29.0",
-    "eslint-config-next": "^11.0.0",
+    "eslint": "^7.30.0",
+    "eslint-config-next": "^11.0.1",
     "eslint-plugin-import": "^2.23.4",
     "eslint-plugin-react": "^7.24.0",
     "postcss": "^8.3.5",
