@@ -17,16 +17,16 @@ function About() {
 	const { officers } = data;
 	return (
 		<Layout>
-		<div className={styles.aboutPage}>
+		<div className={styles['about-page']}>
 			<Banner decorative />
-			<div className={styles.contentSection}>
-				<div className={`${styles.ornament} ${styles.squareOrnament}`}>
-					<img className={styles.squareSplash} src='/images/about1.png' alt="a picture of acm students at our annual CS BBQ!"/>
+			<div className={styles['content-section']}>
+				<div className={`${styles['ornament']} ${styles['square-ornament']}`}>
+					<img className={styles['square-splash']} src='/images/about1.png' alt="a picture of acm students at our annual CS BBQ!"/>
 					{/* TODO: use next image without breaking deploy */}
-					<div className={styles.squareSmall} />
-					<div className={styles.squareTiny} />
+					<div className={styles['square-small']} />
+					<div className={styles['square-tiny']} />
 				</div>
-				<div className={styles.textSection}>
+				<div className={styles['text-section']}>
 					<h1>What is ACM?</h1>
 					<p>As a student chapter of the international <a href="https://www.acm.org" target="_blank" rel="noreferrer noopener">Association for Computing Machinery,</a> ACM at UCLA is the largest Computer Science student organization at UCLA and in Southern California. We welcome students of all backgrounds and skill levels to join our community and share our love for technology!</p>
 					<p>
@@ -37,11 +37,11 @@ function About() {
 					</p>
 				</div>
 			</div>
-			<div className={styles.contentSection}>
-				<div className={`${styles.ornament} ${styles.imageOrnament} ${styles.imageOrnamentRight}`}>
+			<div className={styles['content-section']}>
+				<div className={`${styles['ornament']} ${styles['image-ornament']} ${styles['image-ornament-right']}`}>
 					<Image src={acmCommittees} alt="the logos of all ACM committees" priority={true} />
 				</div>
-				<div className={styles.textSection}>
+				<div className={styles['text-section']}>
 					<h1>What are ACM committees?</h1>
 					<p>
 						ACM is comprised of eight committees — each serving a different topic and mission.
@@ -49,37 +49,37 @@ function About() {
 					</p>
 				</div>
 			</div>
-			<div className={styles.contentSection}>
-				<div className={`${styles.ornament} ${styles.imageOrnament} ${styles.imageOrnamentRight}`}>
+			<div className={styles['content-section']}>
+				<div className={`${styles['ornament']} ${styles['image-ornament']} ${styles['image-ornament-right']}`}>
 					<Image src={acmHowToJoin} alt="photos of acm events" />
 				</div>
-				<div className={styles.textSection}>
+				<div className={styles['text-section']}>
 					<h1>How do I get involved?</h1>
 					<p>
 						No matter what your background or major is,
 						we would love to have you at our events and activities!
 					</p>
 					<p>
-						To keep up with what&rsquo;s happening, we recommend joining
+						To keep up with what&rsquo;s happening, we recommend joining&nbsp;
 						<a href="https://members.uclaacm.com" target="_blank" rel="noreferrer noopener">
 							our membership portal
-						</a>,
+						</a>,&nbsp;
 						<a href="https://www.facebook.com/groups/uclaacm" target="_blank" rel="noreferrer noopener">
 							our Facebook group
-						</a>, and
+						</a>, and&nbsp;
 						<a href="http://eepurl.com/c5pE6P" target="_blank" rel="noreferrer noopener">
 							our weekly newsletter
-						</a>.
+						</a>.&nbsp;
 						We will keep you up to date with everything ACM, and earning points on the portal
 						might even earn you a prize!
 					</p>
 					<p>Here&rsquo;s our social media, where you can see what we&rsquo;re up to:</p>
-					<div className={styles.socialMedia}>
+					<div className={styles['social-media']}>
 						<SocialMedia/>
 					</div>
 				</div>
 			</div>
-			<div className={`${styles.contentSection} ${styles.leadership}`}>
+			<div className={`${styles['content-section']} ${styles['leadership']}`}>
 				<h2>Leadership</h2>
 				<Officers officers={officers} />
 			</div>

@@ -1,4 +1,4 @@
-@import "../variables.scss";
+@import '../variables.scss';
 
 .ornament {
   position: absolute;
@@ -6,7 +6,7 @@
   top: 70px;
 }
 
-.squareOrnament {
+.square-ornament {
   background: $acm-tint;
   border-radius: 40px;
   height: 200px;
@@ -14,7 +14,7 @@
   width: 200px;
 }
 
-.imageOrnament {
+.image-ornament {
   max-width: 270px;
   top: 40px;
   width: 100%;
@@ -24,19 +24,19 @@
   }
 }
 
-.ornamentLeft {
+.ornament-left {
   left: -70px;
 }
 
-.imageOrnamentLeft {
+.image-ornament-left {
   left: 60px;
 }
 
-.imageOrnamentRight {
+.image-ornament-right {
   right: 20px;
 }
 
-.squareSplash {
+.square-splash {
   border-radius: 50px;
   height: 250px;
   left: 30px;
@@ -45,7 +45,7 @@
   width: 250px;
 }
 
-.squareSmall {
+.square-small {
   background-color: $acm-cobalt;
   border-radius: 10px;
   height: 50px;
@@ -55,7 +55,7 @@
   width: 50px;
 }
 
-.squareTiny {
+.square-tiny {
   background-color: $acm-cobalt;
   border-radius: 4px; //Roudning up from 3.6px
   height: 18px;
@@ -65,13 +65,13 @@
   width: 18px;
 }
 
-.aboutPage .contentSection {
+.about-page .content-section {
+  margin: 20px auto 40px;
   max-width: 800px;
   padding: 0 20px;
   position: relative;
-  margin: 20px auto 40px;
 
-  .textSection {
+  .text-section {
     display: inline-block;
     max-width: 56%;
     text-align: left;
@@ -79,9 +79,9 @@
 
   h1 {
     font-size: 2em;
+    line-height: 110%;
     margin: 0;
     padding: 20px;
-    line-height: 110%;
     text-align: left;
   }
 
@@ -92,17 +92,17 @@
   }
 }
 
-.leadership{
-  margin-bottom: 0 !important; //overrides contentSection
+.leadership {
+  margin-bottom: 0 !important; //overrides content-section
 }
 
-.socialMedia{
+.social-media {
   display: flex;
   justify-content: center; 
 }
 
 @media (max-width: 600px) {
-  .squareOrnament {
+  .square-ornament {
     display: block;
 
     left: -70px;
@@ -111,15 +111,15 @@
     right: 0;
   }
 
-  .imageOrnament {
+  .image-ornament {
     display: block;
     left: 0;
     margin: 0 auto 80px;
     position: relative;
   }
 
-  .aboutPage .contentSection {
-    .textSection {
+  .about-page .content-section {
+    .text-section {
       display: inline-block;
       max-width: 100%;
       text-align: left;
