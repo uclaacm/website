@@ -10,7 +10,7 @@ function Events() {
 	return (
 		<Layout>
 			<Banner decorative />
-			<div className={styles.eventsContainer}>
+			<div className={styles['events-container']}>
 				<h2>Our Events</h2>
 				<p>
 					We&apos;re taking the most of the summer off to
@@ -26,9 +26,9 @@ function Events() {
 				</p>
 
 				<br/><br/>
-				<div className={styles.calendarContainer}>
+				<div className={styles['calendar-container']}>
 				<iframe src={data.calendar_url}
-					className={styles.calendarMain}
+					className={styles['calendar-main']}
 					frameBorder="0"
 					scrolling="0"
 					title="calendar"
