@@ -20,7 +20,7 @@ function About() {
 		<div className={styles['about-page']}>
 			<Banner decorative />
 			<div className={styles['content-section']}>
-				<div className={`${styles['ornament']} ${styles['square-ornament']}`}>
+				<div className={`${styles.ornament} ${styles['square-ornament']}`}>
 					<img className={styles['square-splash']} src='/images/about1.png' alt="a picture of acm students at our annual CS BBQ!"/>
 					{/* TODO: use next image without breaking deploy */}
 					<div className={styles['square-small']} />
@@ -38,7 +38,7 @@ function About() {
 				</div>
 			</div>
 			<div className={styles['content-section']}>
-				<div className={`${styles['ornament']} ${styles['image-ornament']} ${styles['image-ornament-right']}`}>
+				<div className={`${styles.ornament} ${styles['image-ornament']} ${styles['image-ornament-right']}`}>
 					<Image src={acmCommittees} alt="the logos of all ACM committees" priority={true} />
 				</div>
 				<div className={styles['text-section']}>
@@ -50,7 +50,7 @@ function About() {
 				</div>
 			</div>
 			<div className={styles['content-section']}>
-				<div className={`${styles['ornament']} ${styles['image-ornament']} ${styles['image-ornament-right']}`}>
+				<div className={`${styles.ornament} ${styles['image-ornament']} ${styles['image-ornament-right']}`}>
 					<Image src={acmHowToJoin} alt="photos of acm events" />
 				</div>
 				<div className={styles['text-section']}>
@@ -79,7 +79,7 @@ function About() {
 					</div>
 				</div>
 			</div>
-			<div className={`${styles['content-section']} ${styles['leadership']}`}>
+			<div className={`${styles['content-section']} ${styles.leadership}`}>
 				<h2>Leadership</h2>
 				<Officers officers={officers} />
 			</div>

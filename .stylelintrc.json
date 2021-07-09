@@ -17,6 +17,8 @@
       "max-nesting-depth": null,
       "selector-max-compound-selectors": null,
 
-      "color-hex-case": "upper"
+      "color-hex-case": "upper",
+
+      "scss/at-import-partial-extension-blacklist":"never"
     }
   }
