@@ -1,14 +1,16 @@
 import React from 'react';
-// import Config from '../../config';
+// import data from '../data/events';
 
 import Banner from '../components/Banner';
 import Layout from '../components/Layout';
+
+import styles from '../styles/pages/Events.module.scss';
 
 function Events() {
 	return (
 		<Layout>
 			<Banner decorative />
-			<div className='events-container'>
+			<div className={styles['events-container']}>
 				<h2>Our Events</h2>
 				<p>
 					We&apos;re taking the most of the summer off to
@@ -24,9 +26,9 @@ function Events() {
 				</p>
 
 				<br/><br/>
-				<div className="calendar-container">
-				<iframe src={Config.events.calendar_url}
-					className="calendar-main"
+				<div className={styles['calendar-container']}>
+				<iframe src={data.calendar_url}
+					className={styles['calendar-main']}
 					frameBorder="0"
 					scrolling="0"
 					title="calendar"
