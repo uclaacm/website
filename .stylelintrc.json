@@ -1,8 +1,7 @@
 {
     "extends": [ 
       "stylelint-config-recommended", 
-      "stylelint-config-sass-guidelines", 
-      "stylelint-config-css-modules" 
+      "stylelint-config-sass-guidelines"
     ],
     "plugins": [
       "stylelint-scss"
