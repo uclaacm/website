@@ -1,5 +1,8 @@
 {
-    "extends": [ "stylelint-config-recommended", "stylelint-config-sass-guidelines" ],
+    "extends": [ 
+      "stylelint-config-recommended", 
+      "stylelint-config-sass-guidelines"
+    ],
     "plugins": [
       "stylelint-scss"
     ],
@@ -13,6 +16,8 @@
       "max-nesting-depth": null,
       "selector-max-compound-selectors": null,
 
-      "color-hex-case": "upper"
+      "color-hex-case": "upper",
+
+      "scss/at-import-partial-extension-blacklist":"never"
     }
   }

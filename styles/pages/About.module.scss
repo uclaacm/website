@@ -1,3 +1,5 @@
+@import '../variables.scss';
+
 .ornament {
   position: absolute;
   right: 30px;
@@ -65,6 +67,9 @@
 
 .about-page .content-section {
   margin: 20px auto 40px;
+  max-width: 800px;
+  padding: 0 20px;
+  position: relative;
 
   .text-section {
     display: inline-block;
@@ -73,9 +78,27 @@
   }
 
   h1 {
+    font-size: 2em;
     line-height: 110%;
+    margin: 0;
+    padding: 20px;
     text-align: left;
   }
+
+  p {
+    font-size: 0.8em;
+    line-height: 150%;
+    margin: 0 22px 14px;
+  }
+}
+
+.leadership {
+  margin-bottom: 0 !important; //overrides content-section
+}
+
+.social-media {
+  display: flex;
+  justify-content: center; 
 }
 
 @media (max-width: 600px) {
