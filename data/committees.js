@@ -140,6 +140,11 @@ export default [
 				platform: 'facebook',
 				link: 'https://www.facebook.com/groups/acmdesign',
 			},
+			{
+				platform: 'instagram',
+				link: 'https://www.instagram.com/acmdesign.ucla',
+			},
+
 		],
 		infoCards: [
 			{
