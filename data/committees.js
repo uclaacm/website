@@ -144,7 +144,6 @@ export default [
 				platform: 'instagram',
 				link: 'https://www.instagram.com/acmdesign.ucla',
 			},
-
 		],
 		infoCards: [
 			{
