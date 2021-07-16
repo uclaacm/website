@@ -49,6 +49,7 @@
   margin: 50px 60px;
   height: 4px;
   background-color: #ccc;
+  margin-bottom: 100px;
 }
 
 .timeline-progress {
@@ -114,4 +115,9 @@
 
 .timeline-item.active .timeline-content::before {
 	background-color: $acm-cobalt;
+}
+
+.application-information{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }

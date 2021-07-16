@@ -16,6 +16,7 @@ const Timeline = (props) => {
 				{items.map((item, i) => (
 					<div key={i} className={"timeline-item" + (item.active ? ' active' : '')}>
 						<div className="timeline-content">
+                            {item.date} <br/>
 							{item.name}
 						</div>
 					</div>
@@ -30,23 +31,33 @@ function InternshipPage(){
     const { committees } = data;
     const items = [
         {
-            name: 'Step 1',
+            date: '00/00',
+            name: 'apps open',
+            info: 'information about the event',
             active: true,
         },
         {
-            name: 'Step 2',
+            date: '00/00',
+            name: 'apps due',
+            info: 'information about the event',
             active: false,
         },
         {
-            name: 'Step 3',
+            date: '00/00',
+            name: 'interviews',
+            info: 'information about the event',
             active: false,
         },
         {
-            name: 'Step 4',
+            date: '00/00',
+            name: 'hear back',
+            info: 'information about the event',
             active: false,
         },
         {
-            name: 'Step 5',
+            date: '00/00',
+            name: 'onboarding',
+            info: 'information about the event',
             active: false,
         },
     ]
@@ -93,6 +104,20 @@ function InternshipPage(){
             <div className="content-section text-center">
                 <h1>Applications</h1>
                 <Timeline items={items}/>
+                <div className="application-information">
+                    <div>
+                        {items.map((item, i) => (
+                        <div key={i}>
+                            {item.date}
+                            {item.name} <br/>
+                            {item.info}
+                        </div>
+                        ))}
+                    </div>
+                    <div>
+                        Internship applications reopen Fall 2021
+                    </div>
+                </div>
             </div>
             <div className="content-section text-center">
                 <h1>Next steps</h1>
