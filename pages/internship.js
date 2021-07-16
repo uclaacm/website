@@ -1,19 +1,55 @@
 import React from 'react';
-import { Chrono } from 'react-chrono';
 import Banner from '../components/Banner';
 import Layout from '../components/Layout';
 import data from '../data';
+
+const Timeline = (props) => {
+	const { items } = props;
+	const totalItems = items.length;
+	const numberOfActiveItems = items.filter(item => item.active).length;
+	const progressBarWidth = totalItems > 1 ? (numberOfActiveItems - 1) / (totalItems - 1) * 100 : 0;
+	
+	return (
+		<div className="timeline">
+			<div className="timeline-progress" style={{ width: `${progressBarWidth}%`}}></div>
+			<div className="timeline-items">
+				{items.map((item, i) => (
+					<div key={i} className={"timeline-item" + (item.active ? ' active' : '')}>
+						<div className="timeline-content">
+							{item.name}
+						</div>
+					</div>
+				))}
+			</div>
+		</div>
+	)
+}
 
 
 function InternshipPage(){
     const { committees } = data;
     const items = [
-        {title: '00/00 Apps open'},
-        {title: '00/00 Apps due'},
-        {title: '00/00 Interviews'},
-        {title: '00/00 Hear back'},
-        {title: '00/00 Onboarding'},
-    ];
+        {
+            name: 'Step 1',
+            active: true,
+        },
+        {
+            name: 'Step 2',
+            active: false,
+        },
+        {
+            name: 'Step 3',
+            active: false,
+        },
+        {
+            name: 'Step 4',
+            active: false,
+        },
+        {
+            name: 'Step 5',
+            active: false,
+        },
+    ]
     return(
         <Layout>
             <Banner decorative />
@@ -56,14 +92,7 @@ function InternshipPage(){
             </div>
             <div className="content-section text-center">
                 <h1>Applications</h1>
-                <div style={{ width: '100%', height: '400px' }}>
-                    <Chrono
-                        items={items}
-                        hideControls
-                        itemWidth={150}
-                        theme={{primary: '#1E6CFF', secondary: '#181818'}}
-                        />
-                </div>
+                <Timeline items={items}/>
             </div>
             <div className="content-section text-center">
                 <h1>Next steps</h1>
