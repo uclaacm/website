@@ -158,3 +158,22 @@ p {
   width: 100%;
   text-align: center;  
 }
+
+.testimonial-section{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 20px;
+}
+
+.testimonial-item{
+  margin: 3px;
+  box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.3), 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.2);
+  padding: 5px;
+  img{
+    float: left;
+  }
+}
+
+.testimonial-giver{
+  text-align: right;
+}

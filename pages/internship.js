@@ -62,6 +62,50 @@ function InternshipPage(){
             active: false,
         },
     ]
+    const testimonials = [
+        {
+            name: 'Jane Doe',
+            quote: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+            image: '',
+            committee: 'Cyber',
+            year: '2018',
+        },        
+        {
+            name: 'Joe Bruin',
+            quote: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+            image: '',
+            committee: 'Studio',
+            year: '2019',
+        },
+        {
+            name: 'Josie Bruin',
+            quote: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+            image: '',
+            committee: 'Hack',
+            year: '2020',
+        },
+        {
+            name: 'Jane Doe',
+            quote: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+            image: '',
+            committee: 'AI',
+            year: '2018',
+        },        
+        {
+            name: 'Joe Bruin',
+            quote: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+            image: '',
+            committee: 'Board',
+            year: '2019',
+        },
+        {
+            name: 'Josie Bruin',
+            quote: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+            image: '',
+            committee: 'Hack',
+            year: '2020',
+        },
+    ]
     return(
         <Layout>
             <Banner decorative />
@@ -133,6 +177,15 @@ function InternshipPage(){
             </div>
             <div className="content-section text-center">
                 <h1>Past Intern Testimonials</h1>
+                <div className="testimonial-section">
+                    {testimonials.map((testimonial, i) => (
+                            <div key={i} className="testimonial-item">
+                                <img src={testimonial.image} alt={`${testimonial.name}'s image`} />
+                                <p>{testimonial.quote}</p>
+                                <p className='testimonial-giver'>- {testimonial.name}, {testimonial.committee} intern, {testimonial.year}</p>
+                            </div>
+                    ))}
+                </div>
             </div>
             <div className="content-section text-center">
                 <h1>FAQ</h1>
