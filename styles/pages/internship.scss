@@ -19,6 +19,16 @@
   }
 }  
 
+p {
+  font-size: 0.8em;
+  line-height: 150%;
+  margin: 0 22px 14px;
+
+  &.subheading {
+    font-size: 1em;
+  }
+}
+
 .committee-internship-info {
   background-color: #FFF;
   border-radius: 1rem;
@@ -120,4 +130,31 @@
 .application-information{
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+
+.application-item{
+  margin-top: 10px;
+  margin-bottom: 15px;
+  text-align: left;
+  p{
+    margin-left: 15%;
+    margin-top: 5px;
+  }
+}
+
+.application-info-card{
+  background-color: #FFF;
+  border-radius: 1rem;
+  box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.3), 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.2);
+  font-size: 1.3em;
+  margin: auto;
+  padding: 20px;
+  padding-top: 0px;
+  max-width: 250px;
+  text-align: left;
+}
+
+.application-button{
+  width: 100%;
+  text-align: center;  
 }

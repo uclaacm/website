@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 import Banner from '../components/Banner';
 import Layout from '../components/Layout';
@@ -70,7 +71,7 @@ function InternshipPage(){
                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tristique sollicitudin
                 nibh sit amet commodo nulla. Amet facilisis magna etiam tempor.
             </div>
-            <div className="logos-line">
+            <div className="content section logos-line">
                 {committees.map(committee =>
                     <div className="logo-diamond" key={committee.name}>
                         <img src={committee.diamond} alt={`${committee.name}'s logo`} />
@@ -81,20 +82,20 @@ function InternshipPage(){
                 </div>
             </div>
             <div className="committee-internship-info">
-            <img src="" alt="committee logo"/>
-                    <h3>What do we do?</h3>
+                    <img src="" alt="committee logo"/>
+                    <h4>What do we do?</h4>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         Lectus nulla at volutpat diam ut. Elementum nisi quis eleifend quam adipiscing vitae.
                     </p>
-                    <h3>Time Commitment</h3>
+                    <h4>Time Commitment</h4>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         Lectus nulla at volutpat diam ut. Elementum nisi quis eleifend quam adipiscing vitae.
                     </p>
-                    <h3>Post Internship</h3>
+                    <h4>Post Internship</h4>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -107,15 +108,23 @@ function InternshipPage(){
                 <div className="application-information">
                     <div>
                         {items.map((item, i) => (
-                        <div key={i}>
-                            {item.date}
-                            {item.name} <br/>
-                            {item.info}
+                        <div key={i} className='application-item'>
+                            {item.date} &nbsp;
+                            {item.name}
+                            <p>{item.info}</p>
                         </div>
                         ))}
+                        -- more dates will be added throughout the quarter --
                     </div>
-                    <div>
-                        Internship applications reopen Fall 2021
+                    <div className='application-info-card'>
+                        <h3>Internship Applications Reopen Fall 2021</h3>
+                        <div className='application-button'>
+                            <Link href="">
+                                <a className="button" target="_blank" rel="noreferrer noopener">
+                                    Apply Now
+                                </a>
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </div>
