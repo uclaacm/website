@@ -85,7 +85,7 @@ export default [
 				title: 'Estimathon',
 				image: {
 					src: '/images/committees/icpc/estimathon.png',
-					alt: '',
+					alt: 'Estimathon Flyer',
 				},
 				desc: 'Want to win COOL prizes for flexing your estimation skills? Come out to ACM ICPC’s Estimathon! You’ll compete in teams to come up with the best ~*confidence intervals*~ (fancy word for “estimates”) to difficult maths and science questions like, what\'s the volume of the earth\'s oceans in cubic km; or, how many social security numbers are prime? It is a mind-bending mixture of math, trivia, and pure unadulterated fun.',
 			},
@@ -101,7 +101,7 @@ export default [
 				title: 'Project A*: Competitive Programming Workshops',
 				image: {
 					src: '/images/committees/icpc/A.png',
-					alt: '',
+					alt: 'ICPC Project A* Flyer',
 				},
 				desc: 'All you need is a passion for problem-solving! Whether you are completely new to competitive programming (or even CS!), or a veteran coder we have a learning opportunity for you this Fall. Introducing Project A*, our weekly algorithm academy! Our Intro to Competitive Programming track will cover all the essentials from the bottom up to get you started in competitive programming. The Advanced Training track will delve deeper into more complicated data structures and algorithms to help you compete at the highest level.',
 			},
@@ -109,7 +109,7 @@ export default [
 				title: 'Advanced Interview Prep',
 				image: {
 					src: '/images/committees/icpc/interview_advanced.png',
-					alt: '',
+					alt: 'Advanced Interview Prep Flyer',
 				},
 				desc: 'Are you ready to bring your coding interview skills to the next level? Are you worried about the upcoming fall recruiting season? Do your CS 32 algorithm skills feel rusty? 🤔 💭 Don’t worry, we’ve got you covered! ACM ICPC is hosting an ⚙️  Advanced ⚙️  Interview Prep workshop that’ll let you in on all of the secrets to acing your next technical interview. In this workshop, we will be going over advanced algorithms and data structures asked in even the most difficult phone and onsite interviews! 🖥️ ',
 			},
@@ -117,7 +117,7 @@ export default [
 				title: 'CP gym',
 				image: {
 					src: '/images/committees/icpc/gymnasium.png',
-					alt: '',
+					alt: 'Competitive Programming Gymnasium Flyer',
 				},
 				desc: 'Welcome to ACM ICPC Competitive Programming Gymnasium! 💪 Perhaps you attended our workshops the last two quarters and found problem-solving fun, perhaps you want to hone your algorithmic thinking and prepare for CS 180, or perhaps you just want to hang out, meet people, and have some fun! If any of that’s the case, then you’ve come to the right place!',
 			},
@@ -158,7 +158,7 @@ export default [
 				title: 'Styleguide Update',
 				image: {
 					src: '/images/committees/design/styleguide.png',
-					alt: '',
+					alt: 'Styleguide Screenshot',
 				},
 				desc: (
 					<>
@@ -170,7 +170,7 @@ export default [
 				title: 'UXLA: UI/UX Workshop Series',
 				image: {
 					src: '/images/committees/design/uxla_1.png',
-					alt: '',
+					alt: 'UI/UX Workshop Series Flyer',
 				},
 				desc: 'Come join ACM Design\'s second workshop series of the quarter, UXLA! UXLA will cover core aspects of the UI/UX process. Come join us for our first of four workshops, Intro to UI/UX 💡 This week, we will cover the higher level goals of UI/UX, define terms like "user research" and "wireframes", and analyze companies that use good UI/UX practices!',
 			},
@@ -178,7 +178,7 @@ export default [
 				title: 'Design Tapas: HTML/CSS',
 				image: {
 					src: '/images/committees/design/design_tapas_3D_modeling.png',
-					alt: '',
+					alt: 'Design Tapas Flyer',
 				},
 				desc: 'We are continuing 🍢 Design Tapas 🍢 this quarter - Come join us this week for a fresh dive into HTML/CSS for beginners! This technology is all over the way we interact with Internet and is essential to know for any web development - a couple of our officers will be demystifying this secret to constructing websites and making them look awesome through code!',
 			},
@@ -186,7 +186,7 @@ export default [
 				title: 'Design Tapas: Intro to Vector Art',
 				image: {
 					src: '/images/committees/design/design_tapas_webGL.png',
-					alt: '',
+					alt: 'Design Tapas Flyer',
 				},
 				desc: 'For this week’s Design Tapas, we’ve prepared a plate that’ll introduce you to the world of vector art. The secret to the clean and beautiful digital graphics you see all over the internet, we’ll teach you how to use vector art tools like Illustrator to make shapes work for your vision - including how they all come together to create a cohesive graphic!',
 			},
@@ -194,7 +194,7 @@ export default [
 				title: 'Live Design Sessions (April 15  & May 20)',
 				image: {
 					src: '/images/committees/design/live_session.png',
-					alt: '',
+					alt: 'Live Design Sessions Flyer',
 				},
 				desc: 'ACM Design will be having a ✨LIVE DESIGN✨ workshop - if you want to improve your graphic design skills or are just interested in the topic, come watch one of our crazy talented ACM Design officers design live on Figma 🙌 He will be going through his process on how to design from scratch and how to use composition, colors and other elements to elevate your designs 🔥',
 			},
@@ -277,7 +277,7 @@ export default [
 				title: 'Synchronous and Asynchronous Classes',
 				image: {
 					src: '/images/committees/teachLA/brockton-original.jpg',
-					alt: 'Teach LA member teaching two primary schoolers.',
+					alt: 'Teach LA members with a class they are teaching.',
 				},
 				desc: 'Teach remote classes on Scratch, Python, Web Development, App Development (w/ React Native), and AI/ML (w/ ACM AI Outreach)! No prior CS experience required, and we like all majors!',
 			},
@@ -285,7 +285,7 @@ export default [
 				title: 'Speaker Series & Events',
 				image: {
 					src: '/images/committees/teachLA/speaker-events.jpg',
-					alt: '',
+					alt: 'Students and instructors from an event',
 				},
 				desc: 'Help run one-off virtual events like Day of Code (with ACM-W), “What CS in College is Like”, “Diversity in CS”, “Bias in AI & ML”, or “Hacking for Good!”! Here, we especially value diverse experiences, including CS backgrounds and majors.',
 			},
@@ -305,7 +305,7 @@ export default [
 				title: 'Weekly Curriculum Meetings',
 				image: {
 					src: '/images/committees/teachLA/day-of-code-original.jpg',
-					alt: '',
+					alt: 'Teach LA member teaching two primary schoolers',
 				},
 				desc: 'Prepare for classes and speaker series, and find your favourite way to teach kids! And, in the process, learn more about the wonderful and mystical topics of computer science!',
 			},
@@ -374,7 +374,7 @@ export default [
 				title: 'ACM-W Conscience',
 				image: {
 					src: '/images/committees/w/zoom-heart.png',
-					alt: '',
+					alt: 'Screenshot from a weekly meeting of Conscience',
 				},
 				desc: 'Conscience, reminiscent of an abbreviated pronounced version of Com(puter)Science, is a weekly informal book club ACM-W holds to make sure the next generation of tech personnel is more informed than the last about social issues. Proverbially with the aim of “giving Silicon Valley a conscience”, we choose one audiobook each quarter to listen to together and openly discuss.',
 			},

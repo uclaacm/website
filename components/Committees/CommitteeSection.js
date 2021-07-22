@@ -13,6 +13,7 @@ function CommitteeProjects({committee}) {
 					const { image, title, desc } = card;
 					return (
 						<CommitteeEventCard
+							name={committee.name}
 							committee={committee.class}
 							image={image}
 							title={title}
