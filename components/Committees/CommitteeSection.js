@@ -6,7 +6,7 @@ import Intro from './CommitteeSectionIntro';
 function CommitteeProjects({committee}) {
 	return (
 		<div className="body-wrapper">
-			<h3 className="font-header text-bold text-25x">Events and Projects</h3>
+			<h3 className="font-header text-bold text-25x"> Past Events and Projects</h3>
 			<div className="card-container">
 				{committee.infoCards.map((card) => {
 					// TODO: destructure class after renaming it
