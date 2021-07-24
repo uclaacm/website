@@ -226,10 +226,14 @@ function InternshipPage(){
                     responsive={responsive}
                     infinite={true}
                 >
-                    <div>Item 1</div>
-                    <div>Item 2</div>
-                    <div>Item 3</div>
-                    <div>Item 4</div>                
+                    {committees.map(committee =>
+                    <div key={committee.name} className='committee-card'>
+                        <img src={committee.card} alt={`${committee.name}'s card motif`} />
+                    </div>,
+                    )}
+                    <div className='committee-card'>
+                        <img src={'/images/cards/board_card.svg'} alt="ACM at UCLA card motif"></img>
+                    </div>
                 </Carousel>
             </div>
             <div className="content-section text-center">

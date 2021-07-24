@@ -7,6 +7,7 @@ export default [
 		tagline: 'Creative Expression through Games and VR',
 		image: '/images/committees/studio_wordmark.svg',
 		diamond: '/images/diamonds/studio_diamond.svg',
+		card: '/images/cards/studio_card.svg',
 		links: [
 			{
 				platform: 'facebook',
@@ -126,6 +127,7 @@ export default [
 		mission: 'Our mission is to promote algorithmic thinking and help build proficient problem solvers.',
 		image: '/images/committees/icpc_wordmark.svg',
 		diamond: '/images/diamonds/icpc_diamond.svg',
+		card: '/images/cards/icpc_card.svg',
 	},
 	{
 		name: 'Design',
@@ -200,6 +202,7 @@ export default [
 		mission: 'Our mission is to design, manage, and support the visual identity of ACM at UCLA. We create the club\'s branding, event banners, and more elements, while also doing workshops to teach UI/UX to the UCLA community.',
 		image: '/images/committees/design_wordmark.svg',
 		diamond: '/images/diamonds/design_diamond.svg',
+		card: '/images/cards/design_card.svg',
 	},
 	{
 		name: 'Cyber',
@@ -249,6 +252,7 @@ export default [
 		mission: 'Our mission is to create a community in which both experts and beginners alike can grow in the field of cybersecurity skills and knowledge. We want to make cybersecurity simple and accessible for everyone.',
 		image: '/images/committees/cyber_wordmark.svg',
 		diamond: '/images/diamonds/cyber_diamond.svg',
+		card: '/images/cards/cyber_card.svg',
 	},
 	{
 		name: 'Teach LA',
@@ -326,6 +330,7 @@ export default [
 		mission: 'Our mission is to provide equal access to K-12 CS education in the Los Angeles area. We do this by teaching classes, running workshops and events, and writing software!',
 		image: '/images/committees/teachLA_wordmark.svg',
 		diamond: '/images/diamonds/teachLA_diamond.svg',
+		card: '/images/cards/teachLA_card.svg',
 	},
 	{
 		name: 'W',
@@ -387,6 +392,7 @@ export default [
 		mission: 'Our goal is to promote diversity in tech through mentorship, networking, and professional development opportunities. We’re a safe space for everyone interested in computer science. :)',
 		image: '/images/committees/w_wordmark.svg',
 		diamond: '/images/diamonds/w_diamond.svg',
+		card: '/images/cards/w_card.svg',
 	},
 	{
 		name: 'AI',
@@ -476,6 +482,7 @@ export default [
 		mission: 'Our mission is to grow and develop a community of students interested in Artificial Intelligence (AI) at UCLA, Los Angeles, and beyond. Our initiatives aim to serve everyone who has an interest in AI regardless of background, including people with no prior experience or knowledge in AI and non-CS majors.',
 		image: '/images/committees/ai_wordmark.svg',
 		diamond: '/images/diamonds/ai_diamond.svg',
+		card: '/images/cards/ai_card.svg',
 	},
 	{
 		name: 'Hack',
@@ -525,5 +532,6 @@ export default [
 		mission: 'To empower the community by providing the means to build amazing things and explore what is possible through code!',
 		image: '/images/committees/hack_wordmark.svg',
 		diamond: '/images/diamonds/hack_diamond.svg',
+		card: '/images/cards/hack_card.svg',
 	},
 ];

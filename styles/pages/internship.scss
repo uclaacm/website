@@ -185,3 +185,19 @@ p {
     }
   }
 }
+
+.committee-card{
+  background-color: #FFF;
+  border-radius: 1rem;
+  box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.3), 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.2);
+  // width: 200px;
+  margin: 10px;
+  padding: 0;
+
+  img{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    border-radius: 1rem;
+  }
+}
