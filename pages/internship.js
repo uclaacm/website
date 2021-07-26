@@ -1,24 +1,24 @@
 import Link from 'next/link';
 import React from 'react';
+import Faq from 'react-faq-component';
+import Carousel from 'react-multi-carousel';
 import Banner from '../components/Banner';
 import Layout from '../components/Layout';
 import data from '../data';
-import Faq from "react-faq-component";
-import Carousel from 'react-multi-carousel';
-import "react-multi-carousel/lib/styles.css";
+import 'react-multi-carousel/lib/styles.css';
 
 const Timeline = (props) => {
 	const { items } = props;
 	const totalItems = items.length;
 	const numberOfActiveItems = items.filter(item => item.active).length;
 	const progressBarWidth = totalItems > 1 ? (numberOfActiveItems - 1) / (totalItems - 1) * 100 : 0;
-	
+
 	return (
 		<div className="timeline">
 			<div className="timeline-progress" style={{ width: `${progressBarWidth}%`}}></div>
 			<div className="timeline-items">
 				{items.map((item, i) => (
-					<div key={i} className={"timeline-item" + (item.active ? ' active' : '')}>
+					<div key={i} className={'timeline-item' + (item.active ? ' active' : '')}>
 						<div className="timeline-content">
                             {item.date} <br/>
 							{item.name}
@@ -27,8 +27,8 @@ const Timeline = (props) => {
 				))}
 			</div>
 		</div>
-	)
-}
+	);
+};
 
 function InternshipPage(){
     const { committees } = data;
@@ -63,7 +63,7 @@ function InternshipPage(){
             info: 'information about the event',
             active: false,
         },
-    ]
+    ];
     const testimonials = [
         {
             name: 'Jane Doe',
@@ -71,7 +71,7 @@ function InternshipPage(){
             image: '',
             committee: 'Cyber',
             year: '2018',
-        },        
+        },
         {
             name: 'Joe Bruin',
             quote: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
@@ -92,7 +92,7 @@ function InternshipPage(){
             image: '',
             committee: 'AI',
             year: '2018',
-        },        
+        },
         {
             name: 'Joe Bruin',
             quote: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
@@ -107,23 +107,23 @@ function InternshipPage(){
             committee: 'Hack',
             year: '2020',
         },
-    ]
+    ];
     const QA = {
         rows: [
             {
-                title: "Lorem ipsum dolor sit amet,",
+                title: 'Lorem ipsum dolor sit amet,',
                 content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed tempor sem. Aenean vel turpis feugiat,
                 ultricies metus at, consequat velit. Curabitur est nibh, varius in tellus nec, mattis pulvinar metus.
                 In maximus cursus lorem, nec laoreet velit eleifend vel. Ut aliquet mauris tortor, sed egestas libero interdum vitae.
                 Fusce sed commodo purus, at tempus turpis.`,
             },
             {
-                title: "Nunc maximus, magna at ultricies elementum",
+                title: 'Nunc maximus, magna at ultricies elementum',
                 content:
-                    "Nunc maximus, magna at ultricies elementum, risus turpis vulputate quam, vitae convallis ex tortor sed dolor.",
+                    'Nunc maximus, magna at ultricies elementum, risus turpis vulputate quam, vitae convallis ex tortor sed dolor.',
             },
             {
-                title: "Curabitur laoreet, mauris vel blandit fringilla",
+                title: 'Curabitur laoreet, mauris vel blandit fringilla',
                 content: `Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc, ac sagittis leo elit vel lorem.
                 Fusce tempor lacus ut libero posuere viverra. Nunc velit dolor, tincidunt at varius vel, laoreet vel quam.
                 Sed dolor urna, lobortis in arcu auctor, tincidunt mattis ante. Vivamus venenatis ultricies nibh in volutpat.
@@ -140,20 +140,20 @@ function InternshipPage(){
         desktop: {
           breakpoint: { max: 3000, min: 1024 },
           items: 3,
-          slidesToSlide: 3 // optional, default to 1.
+          slidesToSlide: 3, // optional, default to 1.
         },
         tablet: {
           breakpoint: { max: 1024, min: 464 },
           items: 2,
-          slidesToSlide: 2 // optional, default to 1.
+          slidesToSlide: 2, // optional, default to 1.
         },
         mobile: {
           breakpoint: { max: 464, min: 0 },
           items: 1,
-          slidesToSlide: 1 // optional, default to 1.
-        }
+          slidesToSlide: 1, // optional, default to 1.
+        },
       };
-      
+
     return(
         <Layout>
             <Banner decorative />
@@ -222,7 +222,7 @@ function InternshipPage(){
             </div>
             <div className="content-section text-center">
                 <h1>Next steps</h1>
-                <Carousel 
+                <Carousel
                     responsive={responsive}
                     infinite={true}
                 >
@@ -252,7 +252,7 @@ function InternshipPage(){
                 <h1>FAQ</h1>
                 <div className="faq">
                     <Faq
-                    data={QA} 
+                    data={QA}
                     styles={FAQStyles}
                     />
                 </div>

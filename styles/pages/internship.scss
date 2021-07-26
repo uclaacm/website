@@ -1,3 +1,29 @@
+.testimonial-item {
+  box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.3), 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.2);
+  margin: 3px;
+  padding: 5px;
+
+  img {
+    float: left;
+  }
+}
+
+.committee-card {
+  background-color: #FFF;
+  border-radius: 1rem;
+  box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.3), 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.2);
+  // width: 200px;
+  margin: 10px;
+  padding: 0;
+
+  img {
+    border-radius: 1rem;
+    height: 100%;
+    margin: 0;
+    width: 100%;
+  }
+}
+
 .logos-line {
   display: flex;
   justify-content: space-between;
@@ -56,148 +82,124 @@ p {
 }
 
 .timeline {
-  margin: 50px 60px;
+  background-color: #CCC;
   height: 4px;
-  background-color: #ccc;
+  margin: 50px 60px;
   margin-bottom: 100px;
 }
 
 .timeline-progress {
-	width: 0;
-	height: 100%;
-	background-color: $acm-cobalt;
+  background-color: $acm-cobalt;
+  height: 100%;
+  width: 0;
 }
 
 .timeline-items {
-	margin-left: -10px;
-	margin-right: -10px;
-	margin-top: -12px;
-	display: flex;
-	justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-top: -12px;
 }
 
 .timeline-item {
-	position: relative;
+  position: relative;
 }
 
 .timeline-item::before {
-	content: '';
-	width: 20px;
-	height: 20px;
-	background-color: #ccc;
-	display: block;
-	border-radius: 100%;
+  background-color: #CCC;
+  border-radius: 100%;
+  content: '';
+  display: block;
+  height: 20px;
+  width: 20px;
 }
 
 .timeline-content {
-	position: absolute;
-	top: 30px;
-	left: 50%;
-	transform: translateX(-50%);
-	background-color: #ddd;
-	width: 100px;
-	padding: 5px 10px;
-	border-radius: 5px;
-	text-align: center;
+  background-color: #DDD;
+  border-radius: 5px;
+  left: 50%;
+  padding: 5px 10px;
+  position: absolute;
+  text-align: center;
+  top: 30px;
+  transform: translateX(-50%);
+  width: 100px;
 }
 
 .timeline-content::before {
-	content: '';
-	width: 10px;
-	height: 10px;
-	background-color: #ddd;
-	display: block;
-	position: absolute;
-	top: -8px;
-	margin-left: -2px;
-	left: 50%;
-	transform: rotate(-45deg) translateX(-50%);
+  background-color: #DDD;
+  content: '';
+  display: block;
+  height: 10px;
+  left: 50%;
+  margin-left: -2px;
+  position: absolute;
+  top: -8px;
+  transform: rotate(-45deg) translateX(-50%);
+  width: 10px;
 }
 
 .timeline-item.active::before {
-	background-color: $acm-cobalt;
+  background-color: $acm-cobalt;
 }
 
 .timeline-item.active .timeline-content {
-	color: #fff;
-	background-color: $acm-cobalt;
+  background-color: $acm-cobalt;
+  color: #FFF;
 }
 
 .timeline-item.active .timeline-content::before {
-	background-color: $acm-cobalt;
+  background-color: $acm-cobalt;
 }
 
-.application-information{
+.application-information {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
-.application-item{
-  margin-top: 10px;
+.application-item {
   margin-bottom: 15px;
+  margin-top: 10px;
   text-align: left;
-  p{
+
+  p {
     margin-left: 15%;
     margin-top: 5px;
   }
 }
 
-.application-info-card{
+.application-info-card {
   background-color: #FFF;
   border-radius: 1rem;
   box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.3), 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.2);
   font-size: 1.3em;
   margin: auto;
-  padding: 20px;
-  padding-top: 0px;
   max-width: 250px;
+  padding: 20px;
+  padding-top: 0;
   text-align: left;
 }
 
-.application-button{
-  width: 100%;
-  text-align: center;  
+.application-button {
+  text-align: center;
+  width: 100%;  
 }
 
-.testimonial-section{
+.testimonial-section {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin-top: 20px;
 }
 
-.testimonial-item{
-  margin: 3px;
-  box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.3), 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.2);
-  padding: 5px;
-  img{
-    float: left;
-  }
-}
-
-.testimonial-giver{
+.testimonial-giver {
   text-align: right;
 }
 
-.faq{
+.faq {
   .faq-row-wrapper {
     .faq-body {
       text-align: left;
     }
-  }
-}
-
-.committee-card{
-  background-color: #FFF;
-  border-radius: 1rem;
-  box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.3), 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.2);
-  // width: 200px;
-  margin: 10px;
-  padding: 0;
-
-  img{
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    border-radius: 1rem;
   }
 }
