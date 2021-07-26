@@ -133,7 +133,7 @@ export default [
 			{
 				title: 'Design Tapas: HTML/CSS',
 				image: {
-					src: '/images/committees/design/design_tapas_3D_modeling.png',
+					src: '/images/committees/design/design_tapas_html_css.jpeg',
 					alt: 'Design Tapas Flyer',
 				},
 				desc: 'We are continuing 🍢 Design Tapas 🍢 this quarter - Come join us this week for a fresh dive into HTML/CSS for beginners! This technology is all over the way we interact with Internet and is essential to know for any web development - a couple of our officers will be demystifying this secret to constructing websites and making them look awesome through code!',
@@ -390,7 +390,7 @@ export default [
 			{
 				title: 'Javascript Chats',
 				image: {
-					src: '/images/committees/hack/hack_fam.png',
+					src: '/images/committees/hack/js_chats.png',
 					alt: 'Image of Hack Fam flyer',
 				},
 				desc: 'JavaScript is one of the most popular languages that people use outside of academic settings at UCLA. Come out to JavaScript Chats with ACM Hack, a weekly discussion on intermediate/advanced JavaScript. This series aims to deepen your understanding of the language’s features and designs. We also plan to cover frameworks and related topics.',
