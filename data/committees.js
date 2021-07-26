@@ -265,7 +265,7 @@ export default [
 				title: 'Student Panel Series',
 				image: {
 					src: '/images/committees/w/startup-panel.png',
-					alt: 'A large garthering of WESP participants outside B-Plate the cafeteria.',
+					alt: 'Flyer for student panel with title "From Idea to Prototype to Business" and the speakers\' names ',
 				},
 				desc: 'We invite current and past students to share the wisdom they’ve gained from a variety of experiences, including entrepreneurship and the Grace Hopper Conference!',
 			},
@@ -273,7 +273,7 @@ export default [
 				title: 'WESP',
 				image: {
 					src: '/images/committees/w/wesp.png',
-					alt: 'A large garthering of WESP participants outside B-Plate the cafeteria.',
+					alt: 'A large gathering of WESP participants outside B-Plate the cafeteria.',
 				},
 				desc: 'The Women in Engineering Stayover Program is our annual event (pre-coronavirus) put on with WATT and SWE to showcase what UCLA Engineering (and UCLA Dining) has to offer to prospective students!',
 			},
