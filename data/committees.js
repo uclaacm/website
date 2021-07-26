@@ -390,7 +390,7 @@ export default [
 			{
 				title: 'Javascript Chats',
 				image: {
-					src: '/images/committees/hack/hack_fam.png',
+					src: '/images/committees/hack/js_chats.png',
 					alt: 'Image of Hack Fam flyer',
 				},
 				desc: 'JavaScript is one of the most popular languages that people use outside of academic settings at UCLA. Come out to JavaScript Chats with ACM Hack, a weekly discussion on intermediate/advanced JavaScript. This series aims to deepen your understanding of the language’s features and designs. We also plan to cover frameworks and related topics.',
