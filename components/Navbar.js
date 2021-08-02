@@ -59,6 +59,8 @@ export default class Navbar extends React.Component {
 				<div id="navbar-inner">
 					<Link href="/">
 						<a id="nav-title" className="nav-section left">
+							{/* TODO: resolve next/image issue */}
+							{/* eslint-disable-next-line @next/next/no-img-element */}
 							<img src={'/images/acm_wordmark&logo.svg'} id="acm-logo" alt="ACM at UCLA Logo"></img>
 							{/* TODO: use next image without breaking deploy */}
 						</a>

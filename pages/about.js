@@ -21,6 +21,8 @@ function About() {
 			<Banner decorative />
 			<div className={styles['content-section']}>
 				<div className={`${styles.ornament} ${styles['square-ornament']}`}>
+					{/* TODO: resolve next/image issue */}
+					{/* eslint-disable-next-line @next/next/no-img-element */}
 					<img className={styles['square-splash']} src='/images/about1.png' alt="a picture of acm students at our annual CS BBQ!"/>
 					{/* TODO: use next image without breaking deploy */}
 					<div className={styles['square-small']} />
