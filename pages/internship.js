@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import React from 'react';
+import React, {useState} from 'react';
 import Faq from 'react-faq-component';
 import Carousel from 'react-multi-carousel';
 import Banner from '../components/Banner';
@@ -28,6 +28,25 @@ const Timeline = (props) => {
 			</div>
 		</div>
 	);
+};
+
+const NextSteps = (props) => {
+    const { image, name } = props;
+    const [isFlipped,setFlipped] = useState(false);
+    return (
+        <div key={name} className='committee-card' onClick={() => setFlipped(!isFlipped)}>
+            {!isFlipped ? ( 
+                    <div className='next-steps-card-front'>
+                        <img src={image} alt={`${name}'s card motif`} /> 
+                    </div>
+    
+                ) : (
+                    <div className='next-steps-card-back'>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </div>
+            )}
+        </div>
+    )
 };
 
 function InternshipPage(){
@@ -227,13 +246,15 @@ function InternshipPage(){
                     infinite={true}
                 >
                     {committees.map(committee =>
-                    <div key={committee.name} className='committee-card'>
-                        <img src={committee.card} alt={`${committee.name}'s card motif`} />
-                    </div>,
+                        <NextSteps 
+                            image={committee.card}
+                            name={committee.name}
+                        />
                     )}
-                    <div className='committee-card'>
-                        <img src={'/images/cards/board_card.svg'} alt="ACM at UCLA card motif"></img>
-                    </div>
+                    <NextSteps 
+                        image={'/images/cards/board_card.svg'}
+                        name={'ACM AT UCLA'}
+                    />
                 </Carousel>
             </div>
             <div className="content-section text-center">

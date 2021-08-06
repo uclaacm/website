@@ -58,6 +58,9 @@ export default [
 		],
 		introImage: '/images/committees/studio/studio_motif_applied.png',
 		mission: 'Our mission is to teach skills revolving around video game development such as computer science, game design and art in order to help usher students into the game development industry.',
+		whatWeDo: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus nulla at volutpat diam ut. Elementum nisi quis eleifend quam adipiscing vitae.',
+		timeCommitment: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus nulla at volutpat diam ut. Elementum nisi quis eleifend quam adipiscing vitae.',
+		postInternship: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus nulla at volutpat diam ut. Elementum nisi quis eleifend quam adipiscing vitae.',
 	},
 	{
 		name: 'ICPC',
@@ -128,6 +131,9 @@ export default [
 		image: '/images/committees/icpc_wordmark.svg',
 		diamond: '/images/diamonds/icpc_diamond.svg',
 		card: '/images/cards/icpc_card.svg',
+		whatWeDo: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus nulla at volutpat diam ut. Elementum nisi quis eleifend quam adipiscing vitae.',
+		timeCommitment: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus nulla at volutpat diam ut. Elementum nisi quis eleifend quam adipiscing vitae.',
+		postInternship: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus nulla at volutpat diam ut. Elementum nisi quis eleifend quam adipiscing vitae.',
 	},
 	{
 		name: 'Design',
@@ -203,6 +209,9 @@ export default [
 		image: '/images/committees/design_wordmark.svg',
 		diamond: '/images/diamonds/design_diamond.svg',
 		card: '/images/cards/design_card.svg',
+		whatWeDo: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus nulla at volutpat diam ut. Elementum nisi quis eleifend quam adipiscing vitae.',
+		timeCommitment: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus nulla at volutpat diam ut. Elementum nisi quis eleifend quam adipiscing vitae.',
+		postInternship: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus nulla at volutpat diam ut. Elementum nisi quis eleifend quam adipiscing vitae.',
 	},
 	{
 		name: 'Cyber',
@@ -253,6 +262,9 @@ export default [
 		image: '/images/committees/cyber_wordmark.svg',
 		diamond: '/images/diamonds/cyber_diamond.svg',
 		card: '/images/cards/cyber_card.svg',
+		whatWeDo: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus nulla at volutpat diam ut. Elementum nisi quis eleifend quam adipiscing vitae.',
+		timeCommitment: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus nulla at volutpat diam ut. Elementum nisi quis eleifend quam adipiscing vitae.',
+		postInternship: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus nulla at volutpat diam ut. Elementum nisi quis eleifend quam adipiscing vitae.',
 	},
 	{
 		name: 'Teach LA',
@@ -331,6 +343,9 @@ export default [
 		image: '/images/committees/teachLA_wordmark.svg',
 		diamond: '/images/diamonds/teachLA_diamond.svg',
 		card: '/images/cards/teachLA_card.svg',
+		whatWeDo: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus nulla at volutpat diam ut. Elementum nisi quis eleifend quam adipiscing vitae.',
+		timeCommitment: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus nulla at volutpat diam ut. Elementum nisi quis eleifend quam adipiscing vitae.',
+		postInternship: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus nulla at volutpat diam ut. Elementum nisi quis eleifend quam adipiscing vitae.',
 	},
 	{
 		name: 'W',
@@ -393,6 +408,9 @@ export default [
 		image: '/images/committees/w_wordmark.svg',
 		diamond: '/images/diamonds/w_diamond.svg',
 		card: '/images/cards/w_card.svg',
+		whatWeDo: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus nulla at volutpat diam ut. Elementum nisi quis eleifend quam adipiscing vitae.',
+		timeCommitment: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus nulla at volutpat diam ut. Elementum nisi quis eleifend quam adipiscing vitae.',
+		postInternship: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus nulla at volutpat diam ut. Elementum nisi quis eleifend quam adipiscing vitae.',
 	},
 	{
 		name: 'AI',
@@ -483,6 +501,9 @@ export default [
 		image: '/images/committees/ai_wordmark.svg',
 		diamond: '/images/diamonds/ai_diamond.svg',
 		card: '/images/cards/ai_card.svg',
+		whatWeDo: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus nulla at volutpat diam ut. Elementum nisi quis eleifend quam adipiscing vitae.',
+		timeCommitment: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus nulla at volutpat diam ut. Elementum nisi quis eleifend quam adipiscing vitae.',
+		postInternship: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus nulla at volutpat diam ut. Elementum nisi quis eleifend quam adipiscing vitae.',
 	},
 	{
 		name: 'Hack',
@@ -533,5 +554,8 @@ export default [
 		image: '/images/committees/hack_wordmark.svg',
 		diamond: '/images/diamonds/hack_diamond.svg',
 		card: '/images/cards/hack_card.svg',
+		whatWeDo: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus nulla at volutpat diam ut. Elementum nisi quis eleifend quam adipiscing vitae.',
+		timeCommitment: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus nulla at volutpat diam ut. Elementum nisi quis eleifend quam adipiscing vitae.',
+		postInternship: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus nulla at volutpat diam ut. Elementum nisi quis eleifend quam adipiscing vitae.',
 	},
 ];
