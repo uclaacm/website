@@ -1,0 +1,8 @@
+@import '../variables.scss';
+
+.container {
+  //two below css properties were added when putting the "we're on pause', should be removed when adding calendar again
+  margin: 0 auto;
+  max-width: 50rem;
+  text-align: center;
+}
