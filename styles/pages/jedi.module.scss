@@ -1,0 +1,51 @@
+@import '../variables.scss';
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px;
+}
+
+.hero-row,
+.tri-grid,
+.allyship-row {
+  padding: 1em;
+}
+
+.jedi-profile-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 250px;
+}
+
+.jedi-card-body {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 240px;
+}
+
+@media (min-width: $tablet-breakpoint) {
+  .hero-row {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .allyship-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .tri-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.nav-links {
+  font-family: $font-header;
+  font-size: 1.5rem;
+  list-style: none;
+  padding-left: 0;
+}
