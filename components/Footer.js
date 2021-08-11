@@ -15,14 +15,14 @@ const footerACMLinks = [
 
 // Do we want to prepend ACM here?
 const footerCommitteeLinks = [
-	{ title: 'AI', path: 'https://uclaacmai.github.io/', ext: true },
-	{ title: 'Cyber', path: 'https://acmcyber.com', ext: true },
-	{ title: 'Design', path: '/committees#design' },
-	{ title: 'Hack', path: 'https://hack.uclaacm.com', ext: true },
-	{ title: 'ICPC', path: 'https://icpc.uclaacm.com', ext: true },
-	{ title: 'Studio', path: '/committees#studio' },
-	{ title: 'Teach LA', path: 'https://teachla.uclaacm.com', ext: true },
-	{ title: 'W', path: '/committees#w' },
+	{ title: 'ACM AI', path: 'https://uclaacmai.github.io/', ext: true },
+	{ title: 'ACM Cyber', path: 'https://acmcyber.com', ext: true },
+	{ title: 'ACM Design', path: '/committees#design' },
+	{ title: 'ACM Hack', path: 'https://hack.uclaacm.com', ext: true },
+	{ title: 'ACM ICPC', path: 'https://icpc.uclaacm.com', ext: true },
+	{ title: 'ACM Studio', path: '/committees#studio' },
+	{ title: 'ACM Teach LA', path: 'https://teachla.uclaacm.com', ext: true },
+	{ title: 'ACM W', path: '/committees#w' },
 ];
 
 function FooterLinkElement({ title, path, ext }){
@@ -44,7 +44,7 @@ function Footer(){
 					<div>
 						<h3 className={styles['footer-header']}>Find us on social media</h3>
 						<SocialMedia type="light"/>
-						<div>
+						<div className="mt-1">
 							<Link href="http://eepurl.com/c5pE6P">
 								<a className="button tight" target="_blank" rel="noreferrer noopener">
 									Join our Mailing List
@@ -72,7 +72,7 @@ function Footer(){
 						</ul>
 					</div>
 				</div>
-				<div>
+				<div className="mt-1">
 					<a href="https://www.netlify.com" target="_BLANK" rel="noopener noreferrer">
 						{/* TODO: resolve 404 with <Image /> component */}
 						{/* eslint-disable-next-line @next/next/no-img-element */}

@@ -60,6 +60,10 @@ h3 {
   }
 }
 
+.mt-1 {
+  margin-top: 1em;
+}
+
 .text-bold {
   font-weight: bold;
 }
@@ -74,5 +78,6 @@ h3 {
 
 .list-unstyled {
   list-style: none;
-  padding-left: 0;
+  margin: 0;
+  padding: 0;
 }
