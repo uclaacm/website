@@ -20,7 +20,7 @@ const footerCommitteeLinks = [
 	{ title: 'Design', path: '/committees#design' },
 	{ title: 'Hack', path: 'https://hack.uclaacm.com', ext: true },
 	{ title: 'ICPC', path: 'https://icpc.uclaacm.com', ext: true },
-	{ title: 'Studio', path: 'http://localhost:3000/committees#studio' },
+	{ title: 'Studio', path: '/committees#studio' },
 	{ title: 'Teach LA', path: 'https://teachla.uclaacm.com', ext: true },
 	{ title: 'W', path: '/committees#w' },
 ];
