@@ -1,0 +1,34 @@
+@import '../variables.scss';
+
+.footer {
+  background-color: $acm-black;
+  color: white;
+  min-height: 120px;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.footer-inner {
+  margin: auto;
+  max-width: 1000px;
+  padding: 20px;
+}
+
+.footer-header {
+  font-family: $font-body;
+  font-size: 0.65em;
+  text-transform: uppercase;
+}
+
+.footer-text-thin {
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+.link-footer {
+  color: white;
+  font-weight: 300;
+  text-decoration-color: $acm-tint;
+}
