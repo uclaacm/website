@@ -29,7 +29,7 @@ function FooterLinkElement({ title, path, ext }){
 	return (
 		<li>
 			<Link href={path}>
-				<a className={styles['link-footer']} target={ext ? 'target': ''} rel={ext ? 'noopener noreferrer' : ''}>{title}</a>
+				<a className={styles['link-footer']} target={ext ? '_blank': ''} rel={ext ? 'noopener noreferrer' : ''}>{title}</a>
 			</Link>
 		</li>
 	);
