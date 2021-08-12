@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 import Banner from '../components/Banner';
@@ -98,6 +99,36 @@ function PersonCard({name, pronouns, position, major, year, img, alt}){
 	);
 }
 
+// TODO: move this into its own component
+function BlogCard({title, author, date, length, img, href, authorImg, authorAlt}) {
+	// stylelint's CSS-in-JS is giving me an error here
+	/* stylelint-disable */
+	const backgroundStyle = { backgroundImage: `url("${img}")`};
+	/* stylelint-enable */
+	return (
+		// TODO: not sure how, but we need to semantically
+		// insert a description of the image for screenreaders;
+		// not natively supported by background-image
+		<Link href={href}>
+			<a className={styles['blog-card']} style={backgroundStyle}>
+				<div className={styles['blog-card-content']}>
+					<h4 className={styles['blog-title']}>{title}</h4>
+					<p className={styles['blog-info']}>
+						{/* eslint-disable-next-line @next/next/no-img-element */}
+						<img className={styles['blog-author-img']} src={authorImg} alt={authorAlt} />
+						<div>
+							{author}
+							<br />
+							{/* TODO: moment for date? */}
+							{date} • {length}
+						</div>
+					</p>
+				</div>
+			</a>
+		</Link>
+	);
+}
+
 function Impact() {
 	return (
 		<Layout>
@@ -119,6 +150,16 @@ function Impact() {
 					{initiatives.map((initiative) => <WorkshopCard {...initiative} key={initiative.title} />)}
 				</div>
 				<h3 className="text-uppercase">Blog</h3>
+				<BlogCard
+					title={'Digital Tech for a Greener Future'}
+					author={'Jason Jewik'}
+					date={'Apr 3'}
+					length={'11 min read'}
+					img={'https://miro.medium.com/max/1400/0*CtF08rCYE9G4Xqk7.jpg'}
+					href={'https://medium.com/acm-at-ucla/digital-tech-for-a-greener-future-7bc7f2e00bda'}
+					authorImg={'https://miro.medium.com/fit/c/96/96/1*HdS_CXUnr6GGVUfMR66_4g.jpeg'}
+					authorAlt={'a photo of Jason smiling'}
+				/>
 				<h3 className="text-uppercase">Past Events</h3>
 				<div className="grid-desktop-3">
 					{pastEvents.map((event) => <WorkshopCard {...event} key={event.title} />)}
