@@ -68,6 +68,16 @@ h3 {
   text-align: center;
 }
 
+.text-uppercase {
+  text-transform: uppercase;
+}
+
 .text-25x {
   font-size: 2.5em !important;
+}
+
+.list-unstyled {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }

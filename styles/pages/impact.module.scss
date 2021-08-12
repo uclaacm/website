@@ -1,8 +1,18 @@
 @import '../variables.scss';
 
 .container {
-  //two below css properties were added when putting the "we're on pause', should be removed when adding calendar again
   margin: 0 auto;
   max-width: 50rem;
-  text-align: center;
+}
+
+.workshop-card {
+  padding: 0 1em;
+}
+
+.workshop-image-container {
+  // TODO: let's deal with this later :)
+  // border: 1px solid gray;
+  // border-radius: 10px;
+  // filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  max-width: 300px;
 }
