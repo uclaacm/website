@@ -12,7 +12,7 @@ function JEDIAbout () {
 		<Layout>
       <div className={styles.container}>
         <div className="text-center">
-          <h1>ACM | JEDI</h1>
+          <h1 className={styles['hero-title']}>ACM | JEDI</h1>
           <p>justice, equity, diversity, inclusion</p>
         </div>
         <div className={styles['hero-row']}>
@@ -29,7 +29,7 @@ function JEDIAbout () {
               {/* eslint-disable-next-line max-len */}
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
-            <h2>how can I get involved?</h2>
+            <h2 className={styles['mt-2']}>how can I get involved?</h2>
             <p>
               {/* eslint-disable-next-line max-len */}
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -68,7 +68,7 @@ function JEDIAbout () {
         <div className="text-right">
           <h2>don&apos;t be a stranger!</h2>
           <p>
-            say hi at ...
+            say hi to our JEDI director helia at <a className={styles['jedi-link']} href="mailto:helia.woo@ucla.edu">helia.woo@ucla.edu</a>
           </p>
         </div>
       </div>

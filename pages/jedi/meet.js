@@ -41,13 +41,13 @@ const jedis = tempJedis;
 // TODO: move this into its own component!
 function JediCard({ name, pronouns, bio, pic, alt }) {
   return (
-    <div>
+    <div className={styles['mb-2']}>
       {/* TODO: better CSS styling */}
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img className={styles['jedi-profile-img']} src={pic} alt={alt} />
       <div className={styles['jedi-card-body']}>
-        <h2>{name} <small>{pronouns}</small></h2>
-        <p>
+        <h2 className={styles['my-tight']}>{name} <span className={styles.pronouns}>{pronouns}</span></h2>
+        <p className={styles['my-tight']}>
           {bio}
         </p>
       </div>

@@ -6,6 +6,10 @@
   max-width: 1000px;
 }
 
+.hero-title {
+  font-size: 3rem;
+}
+
 .hero-row,
 .tri-grid,
 .allyship-row {
@@ -41,11 +45,41 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
+
+  .desktop-half-width-right {
+    margin-left: auto;
+    margin-right: 0;
+    width: 50%;
+  }
 }
 
 .nav-links {
   font-family: $font-header;
   font-size: 1.5rem;
+  line-height: 2;
   list-style: none;
   padding-left: 0;
+}
+
+.nav-links a,
+.jedi-link {
+  color: black;
+  text-decoration-color: $acm-cobalt;
+}
+
+.mt-2 {
+  margin-top: 2em;
+}
+
+.mb-2 {
+  margin-bottom: 2em;
+}
+
+.my-tight {
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.pronouns {
+  font-size: 1rem;
 }

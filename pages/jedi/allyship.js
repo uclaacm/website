@@ -39,9 +39,9 @@ function AllyshipSpaceCard({ title, date, location, description, pic, alt, rsvp,
       {/* TODO: better CSS styling */}
       <Image src={pic} alt={alt} />
       <div>
-        <h3>{title}</h3>
-        <p>{date} | { location }</p>
-        <p>
+        <h3 className={styles['my-tight']}>{title}</h3>
+        <p className={styles['my-tight']}>{date} | { location }</p>
+        <p className={styles['my-tight']}>
           {description}
         </p>
         {/* TODO: icon fonts? */}
@@ -59,7 +59,7 @@ function Allyship() {
 		<Layout>
       <div className={styles.container}>
         <h1 className="text-right">allyship spaces</h1>
-        <p>
+        <p className={`text-right ${styles['desktop-half-width-right']}`}>
           {/* eslint-disable-next-line max-len */}
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
