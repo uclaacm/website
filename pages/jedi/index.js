@@ -6,12 +6,16 @@ import Layout from '../../components/Layout';
 
 import { blogLink, contactEmail } from '../../data/jedi';
 import tempJediCard from '../../public/images/jedi/allyship-space-temp.png';
+import tempJediBanner from '../../public/images/jedi/banner-temp.png';
 import styles from '../../styles/pages/jedi.module.scss';
 
 function JEDIAbout () {
   return (
 		<Layout>
       <div className={styles.container}>
+        <div className="text-center">
+          <Image src={tempJediBanner} alt="a temporary banner image with a diverse group of people experiencing technology" />
+        </div>
         <div className="text-center">
           <h1 className={styles['hero-title']}>ACM | JEDI</h1>
           <p>justice, equity, diversity, inclusion</p>
