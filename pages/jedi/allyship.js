@@ -1,6 +1,7 @@
 import React from 'react';
 
 import AllyshipSpaceCard from '../../components/JEDI/AllyshipSpaceCard';
+import JEDINav from '../../components/JEDI/JEDINav';
 import Layout from '../../components/Layout';
 
 import { allyshipSpaces as spaces } from '../../data/jedi';
@@ -11,6 +12,7 @@ function Allyship() {
 	return (
 		<Layout>
       <div className={styles.container}>
+        <JEDINav />
         <h1 className="text-right">allyship spaces</h1>
         <p className={`text-right ${styles['desktop-half-width-right']}`}>
           {/* eslint-disable-next-line max-len */}

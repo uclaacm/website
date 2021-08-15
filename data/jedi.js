@@ -53,4 +53,6 @@ const jedis = [
   },
 ];
 
-export { allyshipSpaces, jedis };
+const blogLink = 'https://medium.com/acm-at-ucla/may-the-force-be-with-acm-at-ucla-49e9258d71e1';
+
+export { allyshipSpaces, blogLink, jedis };

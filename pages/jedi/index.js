@@ -4,6 +4,7 @@ import React from 'react';
 
 import Layout from '../../components/Layout';
 
+import { blogLink } from '../../data/jedi';
 import tempJediCard from '../../public/images/jedi/allyship-space-temp.png';
 import styles from '../../styles/pages/jedi.module.scss';
 
@@ -20,7 +21,7 @@ function JEDIAbout () {
             <ul className={styles['nav-links']}>
               <li><Link href="/jedi/meet"><a>meet the JEDIs</a></Link></li>
               <li><Link href="/jedi/allyship"><a>allyship spaces</a></Link></li>
-              <li><Link href="https://medium.com/acm-at-ucla/may-the-force-be-with-acm-at-ucla-49e9258d71e1"><a>blog</a></Link></li>
+              <li><Link href={blogLink}><a>blog</a></Link></li>
             </ul>
           </nav>
           <div>

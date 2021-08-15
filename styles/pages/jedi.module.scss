@@ -83,3 +83,17 @@
 .pronouns {
   font-size: 1rem;
 }
+
+.jedi-horz-nav {
+  list-style: none;
+  padding-left: 0;
+
+  @media (min-width: $tablet-breakpoint) {
+    text-align: right;
+  }
+
+  li {
+    display: inline-block;
+    margin: 0 1rem;
+  }
+}
