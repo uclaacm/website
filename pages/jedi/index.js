@@ -4,7 +4,7 @@ import React from 'react';
 
 import Layout from '../../components/Layout';
 
-import { blogLink } from '../../data/jedi';
+import { blogLink, contactEmail } from '../../data/jedi';
 import tempJediCard from '../../public/images/jedi/allyship-space-temp.png';
 import styles from '../../styles/pages/jedi.module.scss';
 
@@ -69,7 +69,7 @@ function JEDIAbout () {
         <div className="text-right">
           <h2>don&apos;t be a stranger!</h2>
           <p>
-            say hi to our JEDI director helia at <a className={styles['jedi-link']} href="mailto:helia.woo@ucla.edu">helia.woo@ucla.edu</a>
+            say hi to our JEDI director helia at <a className={styles['jedi-link']} href={`mailto:${contactEmail}`}>{contactEmail}</a>
           </p>
         </div>
       </div>
