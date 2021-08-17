@@ -249,11 +249,13 @@ function InternshipPage(){
                         <NextSteps 
                             image={committee.card}
                             name={committee.name}
+                            key={committee.name}
                         />
                     )}
                     <NextSteps 
                         image={'/images/cards/board_card.svg'}
                         name={'ACM AT UCLA'}
+                        key={'ACM AT UCLA'}
                     />
                 </Carousel>
             </div>
