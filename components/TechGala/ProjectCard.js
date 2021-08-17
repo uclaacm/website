@@ -18,7 +18,7 @@ function ProjectCard(props) {
                     <span className="tg-tag">{category}</span>
                 </p>
             </div>
-            <div className="right-col">
+            <div className="right-col image-wrapper">
                 <Image src={image} alt={`showcase image for ${title}`} height={280} width={370} />
             </div>
         </div>

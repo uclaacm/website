@@ -48,3 +48,14 @@
     padding: 0 60px;
   }
 }
+
+.image-wrapper {
+  border-radius: 10px;
+  box-shadow: 0 0 1pt 0;
+  div {
+    display: block !important;
+  }
+  img {
+    box-shadow: none !important;
+  }  
+}
