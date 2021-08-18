@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
+import committees from '../data/committees';
 import styles from '../styles/components/Footer.module.scss';
 import SocialMedia from './SocialMedia';
 
@@ -13,18 +14,6 @@ const footerACMLinks = [
 	{ title: 'Membership Portal', path: 'https://members.uclaacm.com', ext: true },
 ];
 
-// Do we want to prepend ACM here?
-const footerCommitteeLinks = [
-	{ title: 'ACM AI', path: 'https://uclaacmai.github.io/', ext: true },
-	{ title: 'ACM Cyber', path: 'https://acmcyber.com', ext: true },
-	{ title: 'ACM Design', path: '/committees#design' },
-	{ title: 'ACM Hack', path: 'https://hack.uclaacm.com', ext: true },
-	{ title: 'ACM ICPC', path: 'https://icpc.uclaacm.com', ext: true },
-	{ title: 'ACM Studio', path: '/committees#studio' },
-	{ title: 'ACM Teach LA', path: 'https://teachla.uclaacm.com', ext: true },
-	{ title: 'ACM W', path: '/committees#w' },
-];
-
 function FooterLinkElement({ title, path, ext }){
 	return (
 		<li>
@@ -34,7 +23,6 @@ function FooterLinkElement({ title, path, ext }){
 		</li>
 	);
 }
-
 
 function Footer(){
 	return (
@@ -67,7 +55,17 @@ function Footer(){
 						<h3 className={styles['footer-header']}>Committees</h3>
 						<ul className='list-unstyled'>
 							{
-								footerCommitteeLinks.map((link) => <FooterLinkElement key={link.path} {...link} />)
+								committees.map(({name, slug, external_link}) => {
+									const path = external_link ? external_link : `/committees#${slug}`;
+									return (
+										<FooterLinkElement
+											key={slug}
+											path={path}
+											title={`ACM ${name}`}
+											ext={external_link}
+										/>
+									);
+								})
 							}
 						</ul>
 					</div>

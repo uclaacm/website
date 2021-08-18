@@ -4,6 +4,7 @@ export default [
 	{
 		name: 'Studio',
 		class: 'studio',
+		slug: 'studio',
 		tagline: 'Creative Expression through Games and VR',
 		image: '/images/committees/studio_wordmark.svg',
 		diamond: '/images/diamonds/studio_diamond.svg',
@@ -53,7 +54,9 @@ export default [
 	{
 		name: 'ICPC',
 		class: 'icpc',
+		slug: 'icpc',
 		tagline: 'Mastering Algorithms and Competitive Programming',
+		external_link: 'https://icpc.uclaacm.com/',
 		links: [
 			{
 				platform: 'website',
@@ -98,6 +101,7 @@ export default [
 	{
 		name: 'Design',
 		class: 'design',
+		slug: 'design',
 		tagline: 'Form Follows Function',
 		links: [
 			{
@@ -147,7 +151,9 @@ export default [
 	{
 		name: 'Cyber',
 		class: 'cyber',
+		slug: 'cyber',
 		tagline: 'Cybersecurity Made Simple',
+		external_link: 'https://acmcyber.com/',
 		links: [
 			{
 				platform: 'website',
@@ -196,7 +202,9 @@ export default [
 	{
 		name: 'Teach LA',
 		class: 'teachla',
+		slug: 'teachla',
 		tagline: 'Learn It, Teach It',
+		external_link: 'https://teachla.uclaacm.com',
 		links: [
 			{
 				platform: 'website',
@@ -249,6 +257,7 @@ export default [
 	{
 		name: 'W',
 		class: 'w',
+		slug: 'w',
 		tagline: 'Starting Conversations about Diversity in Tech',
 		links: [
 			{
@@ -294,7 +303,9 @@ export default [
 	{
 		name: 'AI',
 		class: 'ai',
+		slug: 'ai',
 		tagline: 'Learning Machine Learning',
+		external_link: 'https://uclaacmai.github.io/',
 		links: [
 			{
 				platform: 'website',
@@ -355,7 +366,9 @@ export default [
 	{
 		name: 'Hack',
 		class: 'hack',
+		slug: 'hack',
 		tagline: 'Move Fast, Build Things',
+		external_link: 'https://hack.uclaacm.com',
 		links: [
 			{
 				platform: 'website',
