@@ -77,6 +77,8 @@ export default class Navbar extends React.Component {
 						</ul>
 					</div>
 					<div className="nav-section right" id="mobile-nav">
+						{/* TODO: resolve this by refactoring the navbar */}
+						{/* eslint-disable-next-line jsx-a11y/label-has-for */}
 						<label htmlFor="menu-toggle">
 							<div className="hamburger-icon">
 								<div className="bar" id="top-bar" />
