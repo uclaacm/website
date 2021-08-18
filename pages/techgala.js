@@ -17,7 +17,7 @@ function TechGala() {
 				openGraph={{
 					images: [
 						{
-							url: 'https://www.uclaacm.com/images/techgala/techgala-banner-dark.png',
+							url: 'https://www.uclaacm.com/images/techgala/techgala-banner-dark.jpg',
 							width: 1920,
 							height: 1005,
 							alt: 'The Tech Gala banner; features an isometric view of a lightbulb and stage props. Reads: "Thursday, February 11th 2021 at 6:30 PM PST on the ACM Discord"',
