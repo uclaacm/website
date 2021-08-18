@@ -36,7 +36,7 @@ const CommitteeInternshipInfo = (props) => {
                 </div> :  null,
             )}
             {committeeName == 'Board' ? <div className="committee-internship-info board">
-                <img src={'/images/logo.png'} alt="ACM at UCLA Logo"></img>
+                <img src={'/images/committees/board_wordmark.svg'} alt="ACM at UCLA Logo"></img>
                 <h4>What do we do?</h4>
                 <p> board whatWeDo </p>
                 <h4>Time Commitment</h4>
