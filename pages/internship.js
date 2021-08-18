@@ -26,7 +26,7 @@ const CommitteeInternshipInfo = (props) => {
             </div>
             {committees.map(committee =>
                 committeeName == committee.name ?
-                <div className="committee-internship-info" key={committee.name}>
+                <div className={"committee-internship-info " + committee.class}key={committee.name}>
                     <img src={committee.image} alt="committee logo"/>
                     <h4>What do we do?</h4>
                     <p> {committee.whatWeDo} </p>
@@ -36,7 +36,7 @@ const CommitteeInternshipInfo = (props) => {
                     <p> {committee.postInternship} </p>
                 </div> :  null
             )}
-            {committeeName == 'Board' ? <div className="committee-internship-info">
+            {committeeName == 'Board' ? <div className="committee-internship-info board">
                 <img src={'/images/logo.png'} alt="ACM at UCLA Logo"></img>
                 <h4>What do we do?</h4>
                 <p> board whatWeDo </p>
