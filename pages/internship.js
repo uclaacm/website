@@ -7,6 +7,49 @@ import Layout from '../components/Layout';
 import data from '../data';
 import 'react-multi-carousel/lib/styles.css';
 
+
+const CommitteeInternshipInfo = (props) => {
+    const committees = props.committees;
+    const [committeeName, setCommitteeName] = useState('Studio');
+    {console.log(committeeName)}
+    return(
+        <div>
+            <div className="content section logos-line">
+                {committees.map(committee =>
+                    <div className="logo-diamond" key={committee.name} onClick={()=>setCommitteeName(committee.name)}>
+                        <img src={committee.diamond} alt={`${committee.name}'s logo`} />
+                    </div>,
+                )}
+                <div className="logo-diamond" onClick={()=>setCommitteeName('Board')}>
+                    <img src={'/images/logo.png'} id="acm-logo" alt="ACM at UCLA Logo" ></img>
+                </div>
+            </div>
+            {committees.map(committee =>
+                committeeName == committee.name ?
+                <div className="committee-internship-info" key={committee.name}>
+                    <img src={committee.image} alt="committee logo"/>
+                    <h4>What do we do?</h4>
+                    <p> {committee.whatWeDo} </p>
+                    <h4>Time Commitment</h4>
+                    <p> {committee.timeCommitment} </p>
+                    <h4>Post Internship</h4>
+                    <p> {committee.postInternship} </p>
+                </div> :  null
+            )}
+            {committeeName == 'Board' ? <div className="committee-internship-info">
+                <img src={'/images/logo.png'} alt="ACM at UCLA Logo"></img>
+                <h4>What do we do?</h4>
+                <p> board whatWeDo </p>
+                <h4>Time Commitment</h4>
+                <p> board timeCommitment </p>
+                <h4>Post Internship</h4>
+                <p> board postInternship </p>
+            </div> : null}
+
+        </div>
+    )
+}
+
 const Timeline = (props) => {
 	const { items } = props;
 	const totalItems = items.length;
@@ -182,37 +225,9 @@ function InternshipPage(){
                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tristique sollicitudin
                 nibh sit amet commodo nulla. Amet facilisis magna etiam tempor.
             </div>
-            <div className="content section logos-line">
-                {committees.map(committee =>
-                    <div className="logo-diamond" key={committee.name}>
-                        <img src={committee.diamond} alt={`${committee.name}'s logo`} />
-                    </div>,
-                )}
-                <div className="logo-diamond">
-                    <img src={'/images/logo.png'} id="acm-logo" alt="ACM at UCLA Logo"></img>
-                </div>
-            </div>
-            <div className="committee-internship-info">
-                    <img src="" alt="committee logo"/>
-                    <h4>What do we do?</h4>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Lectus nulla at volutpat diam ut. Elementum nisi quis eleifend quam adipiscing vitae.
-                    </p>
-                    <h4>Time Commitment</h4>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Lectus nulla at volutpat diam ut. Elementum nisi quis eleifend quam adipiscing vitae.
-                    </p>
-                    <h4>Post Internship</h4>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Lectus nulla at volutpat diam ut. Elementum nisi quis eleifend quam adipiscing vitae.
-                    </p>
-            </div>
+            <CommitteeInternshipInfo
+                committees={committees}
+            />
             <div className="content-section text-center">
                 <h1>Applications</h1>
                 <Timeline items={items}/>

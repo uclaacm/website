@@ -30,6 +30,7 @@
   margin: auto;
   margin-top: 50px;
   width: 80vw;
+  padding-bottom: 10px;
 
   .logo-diamond {
     padding: 5px;
@@ -62,24 +63,26 @@ p {
   font-size: 1.25em;
   margin: auto;
   margin-bottom: 100px;
-  margin-top: 20px;
   padding: 1.125em 1.5em;
   position: relative;
   width: 80vw;
+  img{
+    height: 60px;
+  }
 }
 
-.committee-internship-info::before {
-  border: 1.25rem solid transparent;
-  border-bottom-color: #FFF;
-  border-top: 0;
-  bottom: 100%;
-  content: '';
-  filter: drop-shadow(0 -0.0625rem 0.0625rem rgba(0, 0, 0, 0.1));
-  height: 0;
-  left: 3.25em; //5.5 increase for each icon - doesnt apply to different screen sizes: todo make responsive
-  position: absolute;
-  width: 0;
-}
+// .committee-internship-info::before {
+//   border: 1.25rem solid transparent;
+//   border-bottom-color: #FFF;
+//   border-top: 0;
+//   bottom: 100%;
+//   content: '';
+//   filter: drop-shadow(0 -0.0625rem 0.0625rem rgba(0, 0, 0, 0.1));
+//   height: 0;
+//   left: 3.25em; //5.5 increase for each icon - doesnt apply to different screen sizes: todo make responsive
+//   position: absolute;
+//   width: 0;
+// }
 
 .timeline {
   background-color: #CCC;
