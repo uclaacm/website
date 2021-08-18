@@ -25,7 +25,7 @@ const CommitteeInternshipInfo = (props) => {
             </div>
             {committees.map(committee =>
                 committeeName == committee.name ?
-                <div className={"committee-internship-info " + committee.class}key={committee.name}>
+                <div className={'committee-internship-info ' + committee.class}key={committee.name}>
                     <img src={committee.image} alt="committee logo"/>
                     <h4>What do we do?</h4>
                     <p> {committee.whatWeDo} </p>
@@ -33,7 +33,7 @@ const CommitteeInternshipInfo = (props) => {
                     <p> {committee.timeCommitment} </p>
                     <h4>Post Internship</h4>
                     <p> {committee.postInternship} </p>
-                </div> :  null
+                </div> :  null,
             )}
             {committeeName == 'Board' ? <div className="committee-internship-info board">
                 <img src={'/images/logo.png'} alt="ACM at UCLA Logo"></img>
@@ -46,8 +46,8 @@ const CommitteeInternshipInfo = (props) => {
             </div> : null}
 
         </div>
-    )
-}
+    );
+};
 
 const Timeline = (props) => {
 	const { items } = props;
@@ -77,28 +77,29 @@ const NextSteps = (props) => {
     const [isFlipped,setFlipped] = useState(true);
     return (
         <div className="committee-card" onClick={() => setFlipped(!isFlipped)}>
-            <div className={isFlipped ? "next-steps-card-inner" : "next-steps-card-inner is-flipped"}>
+            <div className={isFlipped ? 'next-steps-card-inner' : 'next-steps-card-inner is-flipped'}>
                 <div className='next-steps-card-face'>
-                    <img src={image} alt={`${name}'s card motif`} /> 
+                    <img src={image} alt={`${name}'s card motif`} />
                 </div>
                 <div className='next-steps-card-face back'>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua.
                 </div>
             </div>
-      </div> 
+      </div>
         // <div key={name} className='committee-card' onClick={() => setFlipped(!isFlipped)}>
-        //     {!isFlipped ? ( 
+        //     {!isFlipped ? (
         //             <div className='next-steps-card-front'>
-        //                 <img src={image} alt={`${name}'s card motif`} /> 
+        //                 <img src={image} alt={`${name}'s card motif`} />
         //             </div>
-    
+
         //         ) : (
         //             <div className='next-steps-card-back'>
         //                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         //             </div>
         //     )}
         // </div>
-    )
+    );
 };
 
 function InternshipPage(){
@@ -270,13 +271,13 @@ function InternshipPage(){
                     infinite={true}
                 >
                     {committees.map(committee =>
-                        <NextSteps 
+                        <NextSteps
                             image={committee.card}
                             name={committee.name}
                             key={committee.name}
-                        />
+                        />,
                     )}
-                    <NextSteps 
+                    <NextSteps
                         image={'/images/cards/board_card.svg'}
                         name={'ACM AT UCLA'}
                         key={'ACM AT UCLA'}
