@@ -1,3 +1,4 @@
+import { NextSeo } from 'next-seo';
 import React from 'react';
 
 import Banner from '../components/Banner';
@@ -10,6 +11,21 @@ function TechGala() {
 	const { tgprojects } = data;
 	return (
 		<Layout>
+			<NextSeo
+				title="Tech Gala | ACM at UCLA"
+				description="Tech Gala is ACM's annual showcase of the amazing projects that our student body has worked on. Learn more about the projects developed here, and keep your eyes out for the next Tech Gala!"
+				openGraph={{
+					images: [
+						{
+							url: 'https://www.uclaacm.com/images/techgala/techgala-banner-dark.png',
+							width: 1920,
+							height: 1005,
+							alt: 'The Tech Gala banner; features an isometric view of a lightbulb and stage props. Reads: "Thursday, February 11th 2021 at 6:30 PM PST on the ACM Discord"',
+						},
+					],
+					site_name: 'ACM at UCLA',
+				}}
+			/>
 			<div className='content'>
 				<Banner decorative/>
 				<div className="page-content">
