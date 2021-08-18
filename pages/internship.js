@@ -11,7 +11,6 @@ import 'react-multi-carousel/lib/styles.css';
 const CommitteeInternshipInfo = (props) => {
     const committees = props.committees;
     const [committeeName, setCommitteeName] = useState('Studio');
-    {console.log(committeeName)}
     return(
         <div>
             <div className="content section logos-line">
@@ -75,20 +74,30 @@ const Timeline = (props) => {
 
 const NextSteps = (props) => {
     const { image, name } = props;
-    const [isFlipped,setFlipped] = useState(false);
+    const [isFlipped,setFlipped] = useState(true);
     return (
-        <div key={name} className='committee-card' onClick={() => setFlipped(!isFlipped)}>
-            {!isFlipped ? ( 
-                    <div className='next-steps-card-front'>
-                        <img src={image} alt={`${name}'s card motif`} /> 
-                    </div>
+        <div className="committee-card" onClick={() => setFlipped(!isFlipped)}>
+            <div className={isFlipped ? "next-steps-card-inner" : "next-steps-card-inner is-flipped"}>
+                <div className='next-steps-card-face'>
+                    <img src={image} alt={`${name}'s card motif`} /> 
+                </div>
+                <div className='next-steps-card-face back'>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </div>
+            </div>
+      </div> 
+        // <div key={name} className='committee-card' onClick={() => setFlipped(!isFlipped)}>
+        //     {!isFlipped ? ( 
+        //             <div className='next-steps-card-front'>
+        //                 <img src={image} alt={`${name}'s card motif`} /> 
+        //             </div>
     
-                ) : (
-                    <div className='next-steps-card-back'>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    </div>
-            )}
-        </div>
+        //         ) : (
+        //             <div className='next-steps-card-back'>
+        //                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        //             </div>
+        //     )}
+        // </div>
     )
 };
 
