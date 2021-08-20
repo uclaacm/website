@@ -89,7 +89,8 @@ function PersonCard({name, pronouns, position, major, year, img, alt}){
 				<img src={img} alt={alt} style={{maxWidth: '100%'}} />
 			</div>
 			{/* TODO: align this w/ flexbox like in the mockup */}
-			<h3 className="font-header">{name} | {pronouns}</h3>
+			<h3 className={styles.name}>{name}</h3>
+			<h4 className={styles.pronouns}>{pronouns}</h4>
 			<ul className="list-unstyled">
 				<li>{position}</li>
 				<li>{major}</li>
@@ -168,9 +169,9 @@ function Impact() {
 				<div className="grid-desktop-3">
 					{people.map((person) => <PersonCard {...person} key={person.name} />)}
 				</div>
-				<h2 className="text-center">Stay Connected</h2>
+				<h2 className="text-center">{/*Stay Connected*/}</h2>
 				<p className="text-center">
-					logos go here
+					{/*logos go here*/}
 				</p>
 			</div>
 		</Layout>
