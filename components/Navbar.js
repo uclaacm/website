@@ -55,7 +55,7 @@ export default class Navbar extends React.Component {
 
 	render() {
 		return (
-			<div id="navbar">
+			<div id="navbar" role="banner">
 				<div id="navbar-inner">
 					<Link href="/">
 						<a id="nav-title" className="nav-section left">
@@ -65,7 +65,7 @@ export default class Navbar extends React.Component {
 							{/* TODO: use next image without breaking deploy */}
 						</a>
 					</Link>
-					<div className="nav-section right" id="desktop-nav">
+					<div className="nav-section right" id="desktop-nav" role="navigation">
 						<ul className="nav-items">
 							<li><Link href="/about"><a>About</a></Link></li>
 							<li><Link href="/committees"><a>Committees</a></Link></li>
@@ -80,7 +80,7 @@ export default class Navbar extends React.Component {
 						{/* TODO: resolve this by refactoring the navbar */}
 						{/* eslint-disable-next-line jsx-a11y/label-has-for */}
 						<label htmlFor="menu-toggle">
-							<div className="hamburger-icon">
+							<div className="hamburger-icon" role="button">
 								<div className="bar" id="top-bar" />
 								<div className="bar" id="middle-bar" />
 								<div className="bar" id="bottom-bar" />
@@ -88,7 +88,7 @@ export default class Navbar extends React.Component {
 						</label>
 						<input type="checkbox" id="menu-toggle" />
 						<div id="hamburger-menu">
-							<ul className="nav-items">
+							<ul className="nav-items" role="navigation">
 								<li><Link href="/about"><a>About</a></Link></li>
 								<li><Link href="/committees"><a>Committees</a></Link></li>
 								{/* <li><Link href="/gm"><a>{gmData.date.quarter} GM</a></Link></li> */}
