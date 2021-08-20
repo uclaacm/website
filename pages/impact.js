@@ -111,7 +111,7 @@ function BlogCard({title, author, date, length, img, href, authorImg, authorAlt}
 		// insert a description of the image for screenreaders;
 		// not natively supported by background-image
 		<Link href={href}>
-			<a className={styles['blog-card']} style={backgroundStyle}>
+			<a target="_blank" className={styles['blog-card']} style={backgroundStyle}>
 				<div className={styles['blog-card-content']}>
 					<h4 className={styles['blog-title']}>{title}</h4>
 					<p className={styles['blog-info']}>
