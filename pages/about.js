@@ -20,7 +20,7 @@ function About() {
 		<Layout>
 			<NextSeo
 				title="About | ACM at UCLA"
-				description="As a student chapter of the international Association for Computing Machinery,</a> ACM at UCLA is the largest Computer Science student organization at UCLA and in Southern California. We welcome students of all backgrounds and skill levels to join our community and share our love for technology!"
+				description="As a student chapter of the international Association for Computing Machinery, ACM at UCLA is the largest Computer Science student organization at UCLA and in Southern California. We welcome students of all backgrounds and skill levels to join our community and share our love for technology!"
 				openGraph={{
 					images: [
 						{
