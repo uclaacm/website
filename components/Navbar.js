@@ -9,6 +9,7 @@ import React from 'react';
 
 function MobileNavItem() {
 	return (
+		<li id="committee-mobile-nav-item">
 			<ul className="committee-mobile-nav">
 				<li><Link href={'/committees#studio'}><a>Studio</a></Link></li>
 				<li><Link href={'/committees#icpc'}><a>ICPC</a></Link></li>
@@ -19,6 +20,7 @@ function MobileNavItem() {
 				<li><Link href={'/committees#ai'}><a>AI</a></Link></li>
 				<li><Link href={'/committees#hack'}><a>Hack</a></Link></li>
 			</ul>
+		</li>
 	);
 }
 
@@ -80,15 +82,15 @@ export default class Navbar extends React.Component {
 						{/* TODO: resolve this by refactoring the navbar */}
 						{/* eslint-disable-next-line jsx-a11y/label-has-for */}
 						<label htmlFor="menu-toggle">
-							<div className="hamburger-icon" role="button">
+							<div className="hamburger-icon">
 								<div className="bar" id="top-bar" />
 								<div className="bar" id="middle-bar" />
 								<div className="bar" id="bottom-bar" />
 							</div>
 						</label>
 						<input type="checkbox" id="menu-toggle" />
-						<div id="hamburger-menu">
-							<ul className="nav-items" role="navigation">
+						<div id="hamburger-menu" role="navigation">
+							<ul className="nav-items">
 								<li><Link href="/about"><a>About</a></Link></li>
 								<li><Link href="/committees"><a>Committees</a></Link></li>
 								{/* <li><Link href="/gm"><a>{gmData.date.quarter} GM</a></Link></li> */}
