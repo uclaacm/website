@@ -150,11 +150,10 @@
     }
 
     ul.nav-items li {
-      display: block;
+      display: none;
       font-size: 1.8em;
       font-weight: 600;
       margin: 40px auto;
-      opacity: 0;
       padding: 0;
       text-transform: lowercase;
       transform: translate3d(0, -50%, 0);
@@ -189,7 +188,7 @@
     transform: translate3d(0, 0, 0);
 
     ul.nav-items li {
-      opacity: 1;
+      display: block;
       transform: translate3d(0, 0, 0);
     }
   }
