@@ -29,7 +29,7 @@ export default class Navbar extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			checked: false
+			checked: false,
 		};
 		this.clickMobileNav = this.clickMobileNav.bind(this);
 		this.checkboxChange = this.checkboxChange.bind(this);
@@ -54,7 +54,7 @@ export default class Navbar extends React.Component {
 			menuToggle.checked = menuToggle.checked ? false : true;
 		}
 	}
-	
+
 	// TODO: can we both refactor this to use useEffect, and/or remove
 	// this listener entirely
 
@@ -67,7 +67,7 @@ export default class Navbar extends React.Component {
 			item.addEventListener('click', this.clickMobileNav);
 		}
 
-		hamburger.addEventListener("keyup", this.hamburgerAccessibile);
+		hamburger.addEventListener('keyup', this.hamburgerAccessibile);
 	}
 
 	componentWillUnmount() {
@@ -79,7 +79,7 @@ export default class Navbar extends React.Component {
 			item.removeEventListener('click', this.clickMobileNav);
 		}
 
-		hamburger.removeEventListener("keyup", this.hamburgerAccessibile);
+		hamburger.removeEventListener('keyup', this.hamburgerAccessibile);
 	}
 
 	render() {
@@ -110,8 +110,8 @@ export default class Navbar extends React.Component {
 					<div className="nav-section right" id="mobile-nav">
 						{/* TODO: resolve this by refactoring the navbar */}
 						{/* eslint-disable-next-line jsx-a11y/label-has-for */}
-						<label htmlFor="menu-toggle" id="hamburger" tabIndex="0">
-							<div className="hamburger-icon" role="button" aria-label="navigation menu" aria-expanded={checked}>
+						<label htmlFor="menu-toggle">
+							<div className="hamburger-icon" id="hamburger" role="button" aria-label="navigation menu" aria-expanded={checked} tabIndex="0">
 								<div className="bar" id="top-bar" />
 								<div className="bar" id="middle-bar" />
 								<div className="bar" id="bottom-bar" />
