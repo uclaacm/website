@@ -10,7 +10,7 @@ import React from 'react';
 function MobileNavItem() {
 	return (
 		<li id="committee-mobile-nav-item">
-			<ul className="committee-mobile-nav">
+			<ul className="committee-mobile-nav" role="presentation">
 				<li><Link href={'/committees#studio'}><a>Studio</a></Link></li>
 				<li><Link href={'/committees#icpc'}><a>ICPC</a></Link></li>
 				<li><Link href={'/committees#design'}><a>Design</a></Link></li>
@@ -28,7 +28,12 @@ function MobileNavItem() {
 export default class Navbar extends React.Component {
 	constructor(props) {
 		super(props);
+		this.state = {
+			checked: false
+		};
 		this.clickMobileNav = this.clickMobileNav.bind(this);
+		this.checkboxChange = this.checkboxChange.bind(this);
+		this.hamburgerAccessibile = this.hamburgerAccessibile.bind(this);
 	}
 
 	clickMobileNav() {
@@ -36,31 +41,55 @@ export default class Navbar extends React.Component {
 		document.getElementById('menu-toggle').checked = false;
 	}
 
+	// tracks state of menu checkbox
+	checkboxChange(event) {
+		this.setState({checked: event.target.checked});
+	}
+
+	// toggles menu checkbox with keyboard
+	hamburgerAccessibile(event) {
+		const menuToggle = document.getElementById('menu-toggle');
+
+		if (event.code === 'Enter' || event.code === 'Space') {
+			menuToggle.checked = menuToggle.checked ? false : true;
+		}
+	}
+	
 	// TODO: can we both refactor this to use useEffect, and/or remove
 	// this listener entirely
 
 	componentDidMount() {
 		// TODO: remove direct DOM manipulation, make this stateful
 		const items = document.querySelectorAll('#mobile-nav .nav-items li');
+		const hamburger = document.getElementById('hamburger');
+
 		for (const item of items) {
 			item.addEventListener('click', this.clickMobileNav);
 		}
+
+		hamburger.addEventListener("keyup", this.hamburgerAccessibile);
 	}
 
 	componentWillUnmount() {
 		// TODO: remove direct DOM manipulation, make this stateful
 		const items = document.querySelectorAll('#mobile-nav .nav-items li');
+		const hamburger = document.getElementById('hamburger');
+
 		for (const item of items) {
 			item.removeEventListener('click', this.clickMobileNav);
 		}
+
+		hamburger.removeEventListener("keyup", this.hamburgerAccessibile);
 	}
 
 	render() {
+		const { checkboxChange } = this;
+		const { checked } = this.state;
 		return (
 			<div id="navbar" role="banner">
 				<div id="navbar-inner">
 					<Link href="/">
-						<a id="nav-title" className="nav-section left">
+						<a id="nav-title" className="nav-section left" aria-label="acm home">
 							{/* TODO: resolve next/image issue */}
 							{/* eslint-disable-next-line @next/next/no-img-element */}
 							<img src={'/images/acm_wordmark&logo.svg'} id="acm-logo" alt="ACM at UCLA Logo"></img>
@@ -68,7 +97,7 @@ export default class Navbar extends React.Component {
 						</a>
 					</Link>
 					<div className="nav-section right" id="desktop-nav" role="navigation">
-						<ul className="nav-items">
+						<ul className="nav-items" role="presentation">
 							<li><Link href="/about"><a>About</a></Link></li>
 							<li><Link href="/committees"><a>Committees</a></Link></li>
 							{/* <li><Link href="/gm"><a>{gmData.date.quarter} GM</a></Link></li> */}
@@ -81,24 +110,23 @@ export default class Navbar extends React.Component {
 					<div className="nav-section right" id="mobile-nav">
 						{/* TODO: resolve this by refactoring the navbar */}
 						{/* eslint-disable-next-line jsx-a11y/label-has-for */}
-						<label htmlFor="menu-toggle">
-							<div className="hamburger-icon">
+						<label htmlFor="menu-toggle" id="hamburger" tabIndex="0">
+							<div className="hamburger-icon" role="button" aria-label="navigation menu" aria-expanded={checked}>
 								<div className="bar" id="top-bar" />
 								<div className="bar" id="middle-bar" />
 								<div className="bar" id="bottom-bar" />
 							</div>
 						</label>
-						<input type="checkbox" id="menu-toggle" />
+						<input type="checkbox" id="menu-toggle" onChange={checkboxChange} />
 						<div id="hamburger-menu" role="navigation">
-							<ul className="nav-items">
+							<ul className="nav-items" role="presentation">
 								<li><Link href="/about"><a>About</a></Link></li>
 								<li><Link href="/committees"><a>Committees</a></Link></li>
 								{/* <li><Link href="/gm"><a>{gmData.date.quarter} GM</a></Link></li> */}
 								<MobileNavItem/>
 								<li><Link href="/events"><a>Events</a></Link></li>
 								<li><Link href="/sponsors"><a>Sponsors</a></Link></li>
-								<li><Link href="https://members.uclaacm.com"><a className="button button-transparent button-lg font-header">Member Login</a></Link>
-								</li>
+								<li><Link href="https://members.uclaacm.com"><a className="button button-transparent button-lg font-header">Member Login</a></Link></li>
 							</ul>
 						</div>
 					</div>
