@@ -8,11 +8,11 @@ function Footer(){
 			<div id="footer-inner">
 				<div id="footer-items">
 					<div className="footer-item">
-						<h3>Find us on social media</h3>
+						<h2>Find us on social media</h2>
 						<SocialMedia type="light"/>
 					</div>
 					<div className="footer-item">
-						<h3>Reach us at</h3>
+						<h2>Reach us at</h2>
 						<a href="mailto: acm@ucla.edu" className="email"><span className="footer-text">acm@ucla.edu</span></a>
 					</div>
 					{/* the paddingTop is a magic number that replaces a
