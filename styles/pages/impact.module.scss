@@ -65,3 +65,15 @@
   margin-right: 1em;
   width: 3em;
 }
+
+.carousel-button-prev {
+  display: flex;
+  justify-content: flex-end;
+  float: left;
+}
+
+.carousel-button-next {
+  display: flex;
+  justify-content: flex-end;
+  float: right;
+}
