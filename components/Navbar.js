@@ -9,6 +9,7 @@ import React from 'react';
 
 function MobileNavItem() {
 	return (
+		<li id="committee-mobile-nav-item">
 			<ul className="committee-mobile-nav">
 				<li><Link href={'/committees#studio'}><a>Studio</a></Link></li>
 				<li><Link href={'/committees#icpc'}><a>ICPC</a></Link></li>
@@ -19,6 +20,7 @@ function MobileNavItem() {
 				<li><Link href={'/committees#ai'}><a>AI</a></Link></li>
 				<li><Link href={'/committees#hack'}><a>Hack</a></Link></li>
 			</ul>
+		</li>
 	);
 }
 
@@ -55,7 +57,7 @@ export default class Navbar extends React.Component {
 
 	render() {
 		return (
-			<div id="navbar">
+			<div id="navbar" role="banner">
 				<div id="navbar-inner">
 					<Link href="/">
 						<a id="nav-title" className="nav-section left">
@@ -65,7 +67,7 @@ export default class Navbar extends React.Component {
 							{/* TODO: use next image without breaking deploy */}
 						</a>
 					</Link>
-					<div className="nav-section right" id="desktop-nav">
+					<div className="nav-section right" id="desktop-nav" role="navigation">
 						<ul className="nav-items">
 							<li><Link href="/about"><a>About</a></Link></li>
 							<li><Link href="/committees"><a>Committees</a></Link></li>
@@ -87,7 +89,7 @@ export default class Navbar extends React.Component {
 							</div>
 						</label>
 						<input type="checkbox" id="menu-toggle" />
-						<div id="hamburger-menu">
+						<div id="hamburger-menu" role="navigation">
 							<ul className="nav-items">
 								<li><Link href="/about"><a>About</a></Link></li>
 								<li><Link href="/committees"><a>Committees</a></Link></li>
