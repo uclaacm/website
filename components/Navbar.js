@@ -14,6 +14,7 @@ export default class Navbar extends React.Component {
     // switches mobile menu state
     menuActivate() {
         this.setState({menuActive: this.state.menuActive ? '' : 'active'});
+        console.log(this.state.menuActive);
     }
 
     // allows accessible access to mobile menu
@@ -25,16 +26,29 @@ export default class Navbar extends React.Component {
 
     componentDidMount() {
         const hamburger = document.querySelector('#hamburger');
+        const navItems = document.querySelector('.nav-items');
+        const listItems = navItems.querySelectorAll(':scope > li');
 
         hamburger.addEventListener('click', this.menuActivate);
         hamburger.addEventListener('keyup', this.menuAccessible);
+        // closes menu on link click
+        listItems.forEach((item) => {
+          item.addEventListener('click', this.menuActivate);
+          item.addEventListener('keyup', this.menuAccessible);
+        });
     }
 
     componentWillUnmount() {
         const hamburger = document.querySelector('#hamburger');
+        const navItems = document.querySelector('.nav-items');
+        const listItems = navItems.querySelectorAll(':scope > li');
 
         hamburger.removeEventListener('click', this.menuActivate);
         hamburger.removeEventListener('keyup', this.menuAccessible);
+        listItems.forEach((item) => {
+          item.removeEventListener('click', this.menuActivate);
+          item.removeEventListener('keyup', this.menuAccessible);
+        });
     }
 
     render() {
