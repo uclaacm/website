@@ -86,19 +86,7 @@ const NextSteps = (props) => {
                     labore et dolore magna aliqua.
                 </div>
             </div>
-      </div>
-        // <div key={name} className='committee-card' onClick={() => setFlipped(!isFlipped)}>
-        //     {!isFlipped ? (
-        //             <div className='next-steps-card-front'>
-        //                 <img src={image} alt={`${name}'s card motif`} />
-        //             </div>
-
-        //         ) : (
-        //             <div className='next-steps-card-back'>
-        //                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        //             </div>
-        //     )}
-        // </div>
+        </div>
     );
 };
 

@@ -253,11 +253,14 @@ p {
 //   background-color: #FFF;
 //   height: 250px;
 // }
+
 .committee-card {
-  height: 250px;
-  margin: 10px;
+  height: 201px;
   padding: 0;
   perspective: 1000px;
+  max-width: 197px;
+  margin:auto;
+  margin-bottom: 10px;
 }
 
 .next-steps-card-face {
