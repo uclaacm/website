@@ -14,7 +14,6 @@ export default class Navbar extends React.Component {
     // switches mobile menu state
     menuActivate() {
         this.setState({menuActive: this.state.menuActive ? '' : 'active'});
-        console.log(this.state.menuActive);
     }
 
     // allows accessible access to mobile menu
