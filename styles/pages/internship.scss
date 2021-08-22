@@ -89,8 +89,10 @@
 }
 
 .logos-line {
-  display: flex;
-  justify-content: space-between;
+  display: flex;  
+  flex-direction:row;
+  justify-content:center;
+  text-align:center;
   margin: auto;
   margin-top: 50px;
   padding-bottom: 10px;
@@ -278,6 +280,7 @@ p {
     grid-template-columns: 1fr 1fr 1fr;
     margin: auto;
     align-items: center;
+    justify-content: center;
   }
 }
 
