@@ -1,211 +1,210 @@
 #navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: white;
-    box-shadow: 0 0 4px #E2E2E2;
-    color: $font-primary-color;
-    font-family: $font-display;
-    height: 72px;
-    width: 100%;
-    z-index: 10;
-    margin: 0;
-    padding: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: white;
+  box-shadow: 0 0 4px #E2E2E2;
+  color: $font-primary-color;
+  font-family: $font-display;
+  height: 72px;
+  width: 100%;
+  z-index: 10;
+  margin: 0;
+  padding: 0;
 
-    #nav-container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+  #nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+
+    #nav-title {
+      z-index: 12;
+
+      #acm-logo {
+        height: 60px;
+        width: 180px;
+        margin-top: 5px;
+      }
+    }
+
+    #hamburger {
+      position: relative;
+      display: none; // will become flex at smaller screen size
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 50px;
+      margin: 0 20px;
+      width: 50px;
+      cursor: pointer;
+      border-radius: 50%;
+      border: 3px solid $font-secondary-color;
+      overflow: hidden;
+      transition: all .5s ease-in-out;
+      z-index: 12;
+
+      .bar {
+        position: relative;
+        background-color: $font-secondary-color;
+        border-radius: 4px;
+        height: 3px;
+        width: 50%;
+        transition: all .5s ease-in-out;
+
+        &::before,
+        &::after {
+          content: '';
+          position: absolute;
+          background-color: $font-secondary-color;
+          border-radius: 4px;
+          height: 3px;
+          width: 100%;
+          transition: all .5s ease-in-out;
+        }
+
+        &::before {
+          transform: translateY(8px);
+        }
+
+        &::after {
+          transform: translateY(-8px);
+        }
+      }
+
+      &.active {
+        .bar {
+          transform: translateX(-50px);
+          background-color: transparent;
+        }
+
+        .bar::before {
+          transform: rotate(-45deg) translate(35px, 35px);
+        }
+
+        .bar::after {
+          transform: rotate(45deg) translate(35px, -35px);
+        }
+      }
+
+      &:hover {
+        // which color to keep?
+        // border-color: $font-primary-color;
+        border-color: $acm-cobalt !important;
+
+        .bar,
+        .bar::before,
+        .bar::after {
+          // background-color: $font-primary-color;
+          background-color: $acm-cobalt !important;
+        }
+      }
+    }
+
+    .nav-items {
+      display: flex; // will become none at smaller screen size
+      align-items: center;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        font-size: 0.95em;
+        font-weight: 600;
+        height: 40px;
+        line-height: 40px;
         padding: 0 20px;
+        text-transform: lowercase;
+        transition: 0.2s;
 
-        #nav-title {
-            z-index: 12;
+        a,
+        a:visited {
+          color: inherit;
+          text-decoration: none;
 
-            #acm-logo {
-                height: 60px;
-                width: 180px;
-                margin-top: 5px;
-            }
+          // use routing to decide if active?
+          &.active {
+              color: $acm-cobalt !important;
+          }
+        }
+        
+        &:hover {
+          // which color to keep?
+          // color: #999;
+          color: $acm-cobalt !important;
+          cursor: pointer;
+        }
+      }
+
+      #committee-mobile-nav-item {
+        display: none;
+        height: max-content;
+        width: 60%;
+        text-align: center;
+
+        &:hover {
+          // prevents all committees from highlighting
+          color: $font-primary-color !important;
         }
 
-        #hamburger {
-            position: relative;
-            display: none; // will become flex at smaller screen size
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 50px;
-            margin: 0 20px;
-            width: 50px;
-            cursor: pointer;
-            border-radius: 50%;
-            border: 3px solid $font-secondary-color;
-            overflow: hidden;
-            transition: all .5s ease-in-out;
-            z-index: 12;
-
-            .bar {
-                position: relative;
-                background-color: $font-secondary-color;
-                border-radius: 4px;
-                height: 3px;
-                width: 50%;
-                transition: all .5s ease-in-out;
-
-                &::before,
-                &::after {
-                    content: '';
-                    position: absolute;
-                    background-color: $font-secondary-color;
-                    border-radius: 4px;
-                    height: 3px;
-                    width: 100%;
-                    transition: all .5s ease-in-out;
-                }
-
-                &::before {
-                    transform: translateY(8px);
-                }
-
-                &::after {
-                    transform: translateY(-8px);
-                }
-            }
-
-            &.active {
-                .bar {
-                    transform: translateX(-50px);
-                    background-color: transparent;
-                }
-    
-                .bar::before {
-                    transform: rotate(-45deg) translate(35px, 35px);
-                }
-    
-                .bar::after {
-                    transform: rotate(45deg) translate(35px, -35px);
-                }
-            }
-
-            &:hover {
-                // which color to keep?
-                // border-color: $font-primary-color;
-                border-color: $acm-cobalt !important;
-
-                .bar,
-                .bar::before,
-                .bar::after {
-                    // background-color: $font-primary-color;
-                    background-color: $acm-cobalt !important;
-                }
-            }
+        li {
+          padding: 0;
         }
+      }
+    }
+
+    @media (max-width: $navbar-breakpoint) {
+      #hamburger { 
+        display: flex;
+      }
+
+      #menu-modal {
+        position: absolute;
+        background: rgba(255, 255, 255, 0.95);
+        height: 100vh;
+        width: 100vw;
+        top: 50vh;
+        left: 50vw;
+        transform: translate(-50%, -150%);
+        transition: transform 0.35s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+        z-index: 11;
+        overflow-y: scroll;
 
         .nav-items {
-            display: flex; // will become none at smaller screen size
+          display: none;
+          position: absolute;
+          top: 50vh;
+          left: 50vw;
+          transform: translate(-50%, -50%);
+          margin: 10px 0;
+          font-size: 1.8em;
+          font-weight: 600;
+
+          .button {
+            padding: 10px 20px;
+            white-space: nowrap;
+          }
+
+          li {
+            margin: 5px 0;
+          }
+
+          &.active {
+            display: flex;
+            flex-direction: column;
             align-items: center;
-            list-style: none;
-            margin: 0;
-            padding: 0;
-
-            li {
-                font-size: 0.95em;
-                font-weight: 600;
-                height: 40px;
-                line-height: 40px;
-                padding: 0 20px;
-                text-transform: lowercase;
-                transition: 0.2s;
-
-                a,
-                a:visited {
-                    color: inherit;
-                    text-decoration: none;
-
-                    // use routing to decide if active?
-                    &.active {
-                        color: $acm-cobalt !important;
-                    }
-                }
-                
-                &:hover {
-                    // which color to keep?
-                    // color: #999;
-                    color: $acm-cobalt !important;
-                    cursor: pointer;
-                }
-            }
 
             #committee-mobile-nav-item {
-                display: none;
-                height: max-content;
-                width: 60%;
-                text-align: center;
-
-                &:hover {
-                    // prevents all committees from highlighting
-                    color: $font-primary-color !important;
-                }
-
-                li {
-                    padding: 0;
-                }
+                display: block;
             }
-
+          }
         }
 
-        @media (max-width: $navbar-breakpoint) {
-            #hamburger { 
-                display: flex;
-            }
-
-            #menu-modal {
-                position: absolute;
-                background: rgba(255, 255, 255, 0.95);
-                height: 100vh;
-                width: 100vw;
-                top: 50vh;
-                left: 50vw;
-                transform: translate(-50%, -150%);
-                transition: transform 0.35s cubic-bezier(0.05, 1.04, 0.72, 0.98);
-                z-index: 11;
-                overflow-y: scroll;
-
-                .nav-items {
-                    display: none;
-                    position: absolute;
-                    top: 50vh;
-                    left: 50vw;
-                    transform: translate(-50%, -50%);
-                    margin: 10px 0;
-                    font-size: 1.8em;
-                    font-weight: 600;
-
-                    .button {
-                        padding: 10px 20px;
-                        white-space: nowrap;
-                    }
-
-                    li {
-                        margin: 5px 0;
-                    }
-
-                    &.active {
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-
-                        #committee-mobile-nav-item {
-                            display: block;
-                        }
-                    }
-                }
-
-                &.active {
-                    transform: translate(-50%, -50%);
-                    transition: transform 0.35s cubic-bezier(0.05, 1.04, 0.72, 0.98);
-                }
-            }
+        &.active {
+          transform: translate(-50%, -50%);
+          transition: transform 0.35s cubic-bezier(0.05, 1.04, 0.72, 0.98);
         }
+      }
     }
+  }
 }
