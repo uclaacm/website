@@ -1,20 +1,20 @@
 #navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
   background: white;
   box-shadow: 0 0 4px #E2E2E2;
   color: $font-primary-color;
   font-family: $font-display;
   height: 72px;
-  width: 100%;
-  z-index: 10;
+  left: 0;
   margin: 0;
   padding: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
 
   #nav-container {
-    display: flex;
     align-items: center;
+    display: flex;
     justify-content: space-between;
     padding: 0 20px;
 
@@ -23,44 +23,44 @@
 
       #acm-logo {
         height: 60px;
+        margin-top: 05px;
         width: 180px;
-        margin-top: 5px;
       }
     }
 
     #hamburger {
-      position: relative;
+      align-items: center;
+      border: 03px solid $font-secondary-color;
+      border-radius: 50%;
+      cursor: pointer;
       display: none; // will become flex at smaller screen size
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
       height: 50px;
+      justify-content: center;
       margin: 0 20px;
-      width: 50px;
-      cursor: pointer;
-      border-radius: 50%;
-      border: 3px solid $font-secondary-color;
       overflow: hidden;
-      transition: all .5s ease-in-out;
+      position: relative;
+      transition: all 0.5s ease-in-out;
+      width: 50px;
       z-index: 12;
 
       .bar {
-        position: relative;
         background-color: $font-secondary-color;
-        border-radius: 4px;
-        height: 3px;
+        border-radius: 04px;
+        height: 03px;
+        position: relative;
+        transition: all 0.5s ease-in-out;
         width: 50%;
-        transition: all .5s ease-in-out;
 
         &::before,
         &::after {
-          content: '';
-          position: absolute;
           background-color: $font-secondary-color;
-          border-radius: 4px;
-          height: 3px;
+          border-radius: 04px;
+          content: '';
+          height: 03px;
+          position: absolute;
+          transition: all 0.5s ease-in-out;
           width: 100%;
-          transition: all .5s ease-in-out;
         }
 
         &::before {
@@ -102,8 +102,8 @@
     }
 
     .nav-items {
-      display: flex; // will become none at smaller screen size
       align-items: center;
+      display: flex; // will become none at smaller screen size
       list-style: none;
       margin: 0;
       padding: 0;
@@ -114,8 +114,8 @@
         height: 40px;
         line-height: 40px;
         padding: 0 20px;
-        text-transform: lowercase;
         transition: 0.2s;
+        text-transform: lowercase;
 
         a,
         a:visited {
@@ -139,8 +139,8 @@
       #committee-mobile-nav-item {
         display: none;
         height: max-content;
-        width: 60%;
         text-align: center;
+        width: 60%;
 
         &:hover {
           // prevents all committees from highlighting
@@ -159,26 +159,26 @@
       }
 
       #menu-modal {
-        position: absolute;
         background: rgba(255, 255, 255, 0.95);
         height: 100vh;
-        width: 100vw;
-        top: 50vh;
         left: 50vw;
+        overflow-y: scroll;
+        position: absolute;
+        top: 50vh;
+        width: 100vw;
         transform: translate(-50%, -150%);
         transition: transform 0.35s cubic-bezier(0.05, 1.04, 0.72, 0.98);
         z-index: 11;
-        overflow-y: scroll;
 
         .nav-items {
           display: none;
-          position: absolute;
-          top: 50vh;
-          left: 50vw;
-          transform: translate(-50%, -50%);
-          margin: 10px 0;
           font-size: 1.8em;
           font-weight: 600;
+          left: 50vw;
+          margin: 10px 0;
+          position: absolute;
+          top: 50vh;
+          transform: translate(-50%, -50%);
 
           .button {
             padding: 10px 20px;
@@ -190,12 +190,12 @@
           }
 
           &.active {
+            align-items: center;
             display: flex;
             flex-direction: column;
-            align-items: center;
 
             #committee-mobile-nav-item {
-                display: block;
+              display: block;
             }
           }
         }
