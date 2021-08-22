@@ -74,8 +74,8 @@
 
       &.active {
         .bar {
-          transform: translateX(-50px);
           background-color: transparent;
+          transform: translateX(-50px);
         }
 
         .bar::before {
@@ -114,8 +114,8 @@
         height: 40px;
         line-height: 40px;
         padding: 0 20px;
-        transition: 0.2s;
         text-transform: lowercase;
+        transition: 0.2s;
 
         a,
         a:visited {
@@ -124,7 +124,7 @@
 
           // use routing to decide if active?
           &.active {
-              color: $acm-cobalt !important;
+            color: $acm-cobalt !important;
           }
         }
         
@@ -165,9 +165,9 @@
         overflow-y: scroll;
         position: absolute;
         top: 50vh;
-        width: 100vw;
         transform: translate(-50%, -150%);
         transition: transform 0.35s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+        width: 100vw;
         z-index: 11;
 
         .nav-items {
