@@ -1,200 +1,211 @@
 #navbar {
-  background: white;
-  box-shadow: 0 0 4px #E2E2E2;
-  color: $font-primary-color;
-  font-family: $font-display;
-  height: 70px;
-  left: 0;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 10;
-
-  #acm-logo {
-    height: 60px;
-    width: 180px;
-  }
-
-  #navbar-inner {
-    margin: auto;
-    max-width: 1000px;
-    width: 100%;
-  }
-
-  .nav-section.left {
-    float: left;
-    margin-left: 20px;
-  }
-
-  .nav-section.right {
-    float: right;
-    margin-right: 20px;
-    text-align: right;
-  }
-
-  #nav-title {
-    height: 60px;
-    margin-top: 5px;
-    width: 180px;
-  }
-
-  ul.nav-items {
-    height: 100%;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  ul.nav-items li {
-    display: inline-block;
-    font-size: 0.95em;
-    font-weight: 600;
-    height: 40px;
-    line-height: 40px;
-    margin-top: 13px;
-    padding: 0 20px;
-    text-transform: lowercase;
-    transition: 0.2s;
-  }
-
-  a.active li {
-    color: $acm-cobalt !important;
-  }
-
-  ul.nav-items li:hover {
-    color: #999;
-    cursor: pointer;
-  }
-
-  a {
-    text-decoration: none;
-  }
-
-  a.active ul.nav-items li:hover {
-    color: $acm-cobalt !important;
-  }
-
-  a,
-  a:visited {
-    color: inherit;
-  }
-
-  #mobile-nav {
-    display: none;
-
-    .button {
-      padding: 10px 20px;
-    }
-
-    #committee-mobile-nav-item {
-      height: max-content;
-    }
-  }
-
-  .hamburger-icon {
-    display: flex;
-    flex-direction: column;
-    height: 50px;
-    justify-content: center;
-    margin: 10px 20px;
-    width: 50px;
-
-    .bar {
-      align-self: center;
-      background-color: $font-secondary-color;
-      border-radius: 4px;
-      height: 3px;
-      margin: 2px 0;
-      transition: 0.35s cubic-bezier(0.05, 1.04, 0.72, 0.98);
-      width: 50%;
-    }
-
-    &:hover {
-      cursor: pointer;
-
-      .bar {
-        background-color: $font-primary-color;
-        margin: 3px 0;
-      }
-    }
-  }
-
-  #menu-toggle {
-    display: none;
-  }
-
-  #hamburger-menu {
-    background: rgba(255, 255, 255, 0.95);
-    bottom: 0;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    justify-content: center;
-    left: 0;
     position: fixed;
     top: 0;
-    transform: translate3d(0, -100%, 0);
-    transition: transform 0.35s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+    left: 0;
+    background: white;
+    box-shadow: 0 0 4px #E2E2E2;
+    color: $font-primary-color;
+    font-family: $font-display;
+    height: 72px;
     width: 100%;
-    z-index: -20;
+    z-index: 10;
+    margin: 0;
+    padding: 0;
 
-    ul.nav-items {
-      display: flex;
-      flex-direction: column;
-      float: none;
-      justify-content: center;
-      list-style: none;
-      margin: auto;
-      padding: 0;
-      text-align: center;
+    #nav-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+
+        #nav-title {
+            z-index: 12;
+
+            #acm-logo {
+                height: 60px;
+                width: 180px;
+                margin-top: 5px;
+            }
+        }
+
+        #hamburger {
+            position: relative;
+            display: none; // will become flex at smaller screen size
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            margin: 0 20px;
+            width: 50px;
+            cursor: pointer;
+            border-radius: 50%;
+            border: 3px solid $font-secondary-color;
+            overflow: hidden;
+            transition: all .5s ease-in-out;
+            z-index: 12;
+
+            .bar {
+                position: relative;
+                background-color: $font-secondary-color;
+                border-radius: 4px;
+                height: 3px;
+                width: 50%;
+                transition: all .5s ease-in-out;
+
+                &::before,
+                &::after {
+                    content: '';
+                    position: absolute;
+                    background-color: $font-secondary-color;
+                    border-radius: 4px;
+                    height: 3px;
+                    width: 100%;
+                    transition: all .5s ease-in-out;
+                }
+
+                &::before {
+                    transform: translateY(8px);
+                }
+
+                &::after {
+                    transform: translateY(-8px);
+                }
+            }
+
+            &.active {
+                .bar {
+                    transform: translateX(-50px);
+                    background-color: transparent;
+                }
+    
+                .bar::before {
+                    transform: rotate(-45deg) translate(35px, 35px);
+                }
+    
+                .bar::after {
+                    transform: rotate(45deg) translate(35px, -35px);
+                }
+            }
+
+            &:hover {
+                // which color to keep?
+                // border-color: $font-primary-color;
+                border-color: $acm-cobalt !important;
+
+                .bar,
+                .bar::before,
+                .bar::after {
+                    // background-color: $font-primary-color;
+                    background-color: $acm-cobalt !important;
+                }
+            }
+        }
+
+        .nav-items {
+            display: flex; // will become none at smaller screen size
+            align-items: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                font-size: 0.95em;
+                font-weight: 600;
+                height: 40px;
+                line-height: 40px;
+                padding: 0 20px;
+                text-transform: lowercase;
+                transition: 0.2s;
+
+                a,
+                a:visited {
+                    color: inherit;
+                    text-decoration: none;
+
+                    // use routing to decide if active?
+                    &.active {
+                        color: $acm-cobalt !important;
+                    }
+                }
+                
+                &:hover {
+                    // which color to keep?
+                    // color: #999;
+                    color: $acm-cobalt !important;
+                    cursor: pointer;
+                }
+            }
+
+            #committee-mobile-nav-item {
+                display: none;
+                height: max-content;
+                width: 60%;
+                text-align: center;
+
+                &:hover {
+                    // prevents all committees from highlighting
+                    color: $font-primary-color !important;
+                }
+
+                li {
+                    padding: 0;
+                }
+            }
+
+        }
+
+        @media (max-width: $navbar-breakpoint) {
+            #hamburger { 
+                display: flex;
+            }
+
+            #menu-modal {
+                position: absolute;
+                background: rgba(255, 255, 255, 0.95);
+                height: 100vh;
+                width: 100vw;
+                top: 50vh;
+                left: 50vw;
+                transform: translate(-50%, -150%);
+                transition: transform 0.35s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+                z-index: 11;
+                overflow-y: scroll;
+
+                .nav-items {
+                    display: none;
+                    position: absolute;
+                    top: 50vh;
+                    left: 50vw;
+                    transform: translate(-50%, -50%);
+                    margin: 10px 0;
+                    font-size: 1.8em;
+                    font-weight: 600;
+
+                    .button {
+                        padding: 10px 20px;
+                        white-space: nowrap;
+                    }
+
+                    li {
+                        margin: 5px 0;
+                    }
+
+                    &.active {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+
+                        #committee-mobile-nav-item {
+                            display: block;
+                        }
+                    }
+                }
+
+                &.active {
+                    transform: translate(-50%, -50%);
+                    transition: transform 0.35s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+                }
+            }
+        }
     }
-
-    ul.nav-items li {
-      display: none;
-      font-size: 1.8em;
-      font-weight: 600;
-      margin: 40px auto;
-      padding: 0;
-      text-transform: lowercase;
-      transform: translate3d(0, -50%, 0);
-      transition: all 1.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
-    }
-
-    ul.nav-items li:hover {
-      color: #999;
-      cursor: pointer;
-
-
-    }
-
-    @media (max-height: 800px) {
-      ul.nav-items li {
-        margin: 20px auto;
-      }
-    }
-    @media (max-height: 600px) {
-      ul.nav-items li {
-        margin: 5px auto;
-      }
-    }
-    @media (max-height: 400px) {
-      ul.nav-items li {
-        margin: 1px auto;
-      }
-    }
-  }
-
-  #menu-toggle:checked + #hamburger-menu {
-    transform: translate3d(0, 0, 0);
-
-    ul.nav-items li {
-      display: block;
-      transform: translate3d(0, 0, 0);
-    }
-  }
-
-  @media (max-width: $navbar-breakpoint) {
-    #desktop-nav { display: none; }
-    #mobile-nav { display: inline-block; }
-  }
 }

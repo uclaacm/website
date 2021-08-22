@@ -1,137 +1,85 @@
-// import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-// import gmData from '../../config/gmData';
-
-//to allow GM page to be visible on the navbar and accessible
-//uncomment the above import line "import gmData from '../../config/gmData';" to get quarter from the gmData page
-//uncomment the two lines saying  "/* <Link href="/gm"><li>{gmData.date.quarter} gm</li></Link> */"
-
-function MobileNavItem() {
-	return (
-		<li id="committee-mobile-nav-item">
-			<ul className="committee-mobile-nav" role="presentation">
-				<li><Link href={'/committees#studio'}><a>Studio</a></Link></li>
-				<li><Link href={'/committees#icpc'}><a>ICPC</a></Link></li>
-				<li><Link href={'/committees#design'}><a>Design</a></Link></li>
-				<li><Link href={'/committees#cyber'}><a>Cyber</a></Link></li>
-				<li><Link href={'/committees#teachla'}><a>Teach LA</a></Link></li>
-				<li><Link href={'/committees#w'}><a>W</a></Link></li>
-				<li><Link href={'/committees#ai'}><a>AI</a></Link></li>
-				<li><Link href={'/committees#hack'}><a>Hack</a></Link></li>
-			</ul>
-		</li>
-	);
-}
-
 
 export default class Navbar extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			checked: false,
+			menuActive: '',
 		};
-		this.clickMobileNav = this.clickMobileNav.bind(this);
-		this.checkboxChange = this.checkboxChange.bind(this);
-		this.hamburgerAccessibile = this.hamburgerAccessibile.bind(this);
+        this.menuActivate = this.menuActivate.bind(this);
+        this.menuAccessible = this.menuAccessible.bind(this);
 	}
 
-	clickMobileNav() {
-		// TODO: remove direct DOM manipulation, make this stateful
-		document.getElementById('menu-toggle').checked = false;
-	}
+    // switches mobile menu state
+    menuActivate() {
+        this.setState({menuActive: this.state.menuActive ? '' : 'active'});
+    }
 
-	// tracks state of menu checkbox
-	checkboxChange(event) {
-		this.setState({checked: event.target.checked});
-	}
+    // allows accessible access to mobile menu
+    menuAccessible(event) {
+        if (event.code === 'Enter' || event.code === 'Space') {
+            this.setState({menuActive: this.state.menuActive ? '' : 'active'});
+        }
+    }
 
-	// toggles menu checkbox with keyboard
-	hamburgerAccessibile(event) {
-		const menuToggle = document.getElementById('menu-toggle');
+    componentDidMount() {
+        const hamburger = document.querySelector('#hamburger');
 
-		if (event.code === 'Enter' || event.code === 'Space') {
-			menuToggle.checked = menuToggle.checked ? false : true;
-		}
-	}
+        hamburger.addEventListener('click', this.menuActivate);
+        hamburger.addEventListener('keyup', this.menuAccessible);
+    }
 
-	// TODO: can we both refactor this to use useEffect, and/or remove
-	// this listener entirely
+    componentWillUnmount() {
+        const hamburger = document.querySelector('#hamburger');
 
-	componentDidMount() {
-		// TODO: remove direct DOM manipulation, make this stateful
-		const items = document.querySelectorAll('#mobile-nav .nav-items li');
-		const hamburger = document.getElementById('hamburger');
+        hamburger.removeEventListener('click', this.menuActivate);
+        hamburger.removeEventListener('keyup', this.menuAccessible);
+    }
 
-		for (const item of items) {
-			item.addEventListener('click', this.clickMobileNav);
-		}
-
-		hamburger.addEventListener('keyup', this.hamburgerAccessibile);
-	}
-
-	componentWillUnmount() {
-		// TODO: remove direct DOM manipulation, make this stateful
-		const items = document.querySelectorAll('#mobile-nav .nav-items li');
-		const hamburger = document.getElementById('hamburger');
-
-		for (const item of items) {
-			item.removeEventListener('click', this.clickMobileNav);
-		}
-
-		hamburger.removeEventListener('keyup', this.hamburgerAccessibile);
-	}
-
-	render() {
-		const { checkboxChange } = this;
-		const { checked } = this.state;
-		return (
-			<div id="navbar" role="banner">
-				<div id="navbar-inner">
-					<Link href="/">
-						<a id="nav-title" className="nav-section left" aria-label="acm home">
-							{/* TODO: resolve next/image issue */}
-							{/* eslint-disable-next-line @next/next/no-img-element */}
-							<img src={'/images/acm_wordmark&logo.svg'} id="acm-logo" alt="ACM at UCLA Logo"></img>
-							{/* TODO: use next image without breaking deploy */}
-						</a>
-					</Link>
-					<div className="nav-section right" id="desktop-nav" role="navigation">
-						<ul className="nav-items" role="presentation">
-							<li><Link href="/about"><a>About</a></Link></li>
-							<li><Link href="/committees"><a>Committees</a></Link></li>
-							{/* <li><Link href="/gm"><a>{gmData.date.quarter} GM</a></Link></li> */}
-							<li><Link href="/events"><a>Events</a></Link></li>
-							<li><Link href="/sponsors"><a>Sponsors</a></Link></li>
-							<li><Link href="https://members.uclaacm.com"><a className="button button-transparent button-lg font-header">Member Login</a></Link>
-							</li>
-						</ul>
-					</div>
-					<div className="nav-section right" id="mobile-nav">
-						{/* TODO: resolve this by refactoring the navbar */}
-						{/* eslint-disable-next-line jsx-a11y/label-has-for */}
-						<label htmlFor="menu-toggle">
-							<div className="hamburger-icon" id="hamburger" role="button" aria-label="navigation menu" aria-expanded={checked} tabIndex="0">
-								<div className="bar" id="top-bar" />
-								<div className="bar" id="middle-bar" />
-								<div className="bar" id="bottom-bar" />
-							</div>
-						</label>
-						<input type="checkbox" id="menu-toggle" onChange={checkboxChange} />
-						<div id="hamburger-menu" role="navigation">
-							<ul className="nav-items" role="presentation">
-								<li><Link href="/about"><a>About</a></Link></li>
-								<li><Link href="/committees"><a>Committees</a></Link></li>
-								{/* <li><Link href="/gm"><a>{gmData.date.quarter} GM</a></Link></li> */}
-								<MobileNavItem/>
-								<li><Link href="/events"><a>Events</a></Link></li>
-								<li><Link href="/sponsors"><a>Sponsors</a></Link></li>
-								<li><Link href="https://members.uclaacm.com"><a className="button button-transparent button-lg font-header">Member Login</a></Link></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		);
-	}
+    render() {
+        const { menuActive } = this.state;
+        return(
+            <nav id="navbar">
+                <section id="nav-container">
+                    <Link href="/">
+                        <a id="nav-title" className="nav-section left" aria-label="acm home">
+                            {/* TODO: resolve next/image issue */}
+                            {/* eslint-disable-next-line @next/next/no-img-element */}
+                            <img src={'/images/acm_wordmark&logo.svg'} id="acm-logo" alt="ACM at UCLA Logo"></img>
+                            {/* TODO: use next image without breaking deploy */}
+                        </a>
+                    </Link>
+                    <section id="nav-items-container">
+                        <div className={menuActive} id="hamburger" role="button" aria-label="navigation menu" aria-expanded={menuActive === 'active' ? true : false} tabIndex="0">
+                            <div className="bar" />
+                        </div>
+                        <section className={menuActive} id="menu-modal">
+                        <ul className={`nav-items ${menuActive}`} role="presentation">
+                            <li><Link href="/about"><a>About</a></Link></li>
+                            <li><Link href="/committees"><a>Committees</a></Link></li>
+                            {/* <li><Link href="/gm"><a>{gmData.date.quarter} GM</a></Link></li> */}
+                            <li id="committee-mobile-nav-item">
+                                <ul className="committee-mobile-nav" role="presentation">
+                                    <li><Link href={'/committees#studio'}><a>Studio</a></Link></li>
+                                    <li><Link href={'/committees#icpc'}><a>ICPC</a></Link></li>
+                                    <li><Link href={'/committees#design'}><a>Design</a></Link></li>
+                                    <li><Link href={'/committees#cyber'}><a>Cyber</a></Link></li>
+                                    <li><Link href={'/committees#teachla'}><a>Teach LA</a></Link></li>
+                                    <li><Link href={'/committees#w'}><a>W</a></Link></li>
+                                    <li><Link href={'/committees#ai'}><a>AI</a></Link></li>
+                                    <li><Link href={'/committees#hack'}><a>Hack</a></Link></li>
+                                </ul>
+                            </li>
+                            <li><Link href="/events"><a>Events</a></Link></li>
+                            <li><Link href="/sponsors"><a>Sponsors</a></Link></li>
+                            <li><Link href="https://members.uclaacm.com"><a className="button button-transparent button-lg font-header">Member Login</a></Link>
+                            </li>
+                        </ul>
+                        </section>
+                    </section>
+                </section>
+            </nav>
+        )
+    }
 }
