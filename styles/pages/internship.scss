@@ -271,3 +271,38 @@ p {
     transform: rotateY(180deg);
   }
 }
+
+@media screen and (max-width: 1000px) {
+  .logos-line {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: auto;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .testimonial-section{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .timeline{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .testimonial-section {
+    grid-template-columns: 1fr;
+  }  
+  .application-information {
+    grid-template-columns: 1fr;
+  }  
+  .application-info-card{
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}
+
