@@ -2,10 +2,6 @@
   box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.3), 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.2);
   margin: 3px;
   padding: 5px;
-
-  img {
-    float: left;
-  }
 }
 
 .committee-internship-info {
@@ -18,10 +14,6 @@
   padding: 1.125em 1.5em;
   position: relative;
   width: 80vw;
-
-  img {
-    height: 60px;
-  }
 
   &.studio {
     box-shadow: 0 0.125rem 0.5rem $studio-raspberry, 0 0.0625rem 0.125rem $studio-raspberry;
@@ -102,8 +94,6 @@
     padding: 5px;
 
     img {
-      width: 100px;
-
       &:hover {
         cursor: pointer;
         transform: scale(1.08);
@@ -244,15 +234,6 @@ p {
     }
   }
 }
-
-// .next-steps-card-front{
-//   background-color: #FFF;
-//   height: 250px;
-// }
-// .next-steps-card-back{
-//   background-color: #FFF;
-//   height: 250px;
-// }
 
 .committee-card {
   height: 201px;
