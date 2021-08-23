@@ -58,9 +58,19 @@ export default [
 		],
 		introImage: '/images/committees/studio/studio_motif_applied.png',
 		mission: 'Our mission is to teach skills revolving around video game development such as computer science, game design and art in order to help usher students into the game development industry.',
-		whatWeDo: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus nulla at volutpat diam ut. Elementum nisi quis eleifend quam adipiscing vitae.',
+		whatInternsWillDo:
+		`Studio is mainly looking for interns to be in Unity Tutorial and Marketing/Engagement subcommittees this fall.
+		Marketing/Engagement- Studio hopes to bring interns to focus on community engagement, particularly in the form of leading socials during the year and figuring out strong ways to ensure member retention.
+		ACM Studio does not currently have a point person for socials, but we expect to have one (or two) soon, so interns can expect to work with our point person to assist with socials and other forms of community engagement.
+		Unity tutorial Subcommittees- ACM Studio has valued having helpers and headcount when hosting tutorials to help with various bugfixing issues to keep pace, while we also would like the extra manpower to continue
+		hosting tutorials in the winter quarter (which we haven't done in the past). Interns will not be expected to lead tutorials, but they will be expected to familiarize themselves with the tutorial content by attending the 
+		respective subcommittee meetings, making sure to ask the tutorial host questions before the event to ensure that the intern can help run the tutorial during the event. Prior skills in the Unity engine (which is Studio's
+		primary form of game programming) is heavily valued for this role but not entirely needed, as much of game development is a "learn as you go" type of style. Strong skills in C# (very similar to C++) and teaching 
+		skills are also appreciated, but these are all soft expectations.`,
 		timeCommitment: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus nulla at volutpat diam ut. Elementum nisi quis eleifend quam adipiscing vitae.',
-		postInternship: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus nulla at volutpat diam ut. Elementum nisi quis eleifend quam adipiscing vitae.',
+		nextSteps: `An applicant fills out an officer interest form with various questions regarding skillset/reason for applying, then we schedule a 15-minute interview
+		between the applicant and committee president to further ask questions about their answers as well as to test their situation-resolving skills on the spot, then within two weeks we release the
+		results to all applicants for them to become officers over week 10/finals week of the winter quarter.`,
 	},
 	{
 		name: 'ICPC',
@@ -131,9 +141,9 @@ export default [
 		image: '/images/committees/icpc_wordmark.svg',
 		diamond: '/images/diamonds/icpc_diamond.svg',
 		card: '/images/cards/icpc_card.svg',
-		whatWeDo: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus nulla at volutpat diam ut. Elementum nisi quis eleifend quam adipiscing vitae.',
+		whatInternsWillDo: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus nulla at volutpat diam ut. Elementum nisi quis eleifend quam adipiscing vitae.',
 		timeCommitment: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus nulla at volutpat diam ut. Elementum nisi quis eleifend quam adipiscing vitae.',
-		postInternship: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus nulla at volutpat diam ut. Elementum nisi quis eleifend quam adipiscing vitae.',
+		nextSteps: 'All Interns automatically become officers in the Spring if they choose to stay.',
 	},
 	{
 		name: 'Design',
@@ -209,9 +219,9 @@ export default [
 		image: '/images/committees/design_wordmark.svg',
 		diamond: '/images/diamonds/design_diamond.svg',
 		card: '/images/cards/design_card.svg',
-		whatWeDo: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus nulla at volutpat diam ut. Elementum nisi quis eleifend quam adipiscing vitae.',
+		whatInternsWillDo: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus nulla at volutpat diam ut. Elementum nisi quis eleifend quam adipiscing vitae.',
 		timeCommitment: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus nulla at volutpat diam ut. Elementum nisi quis eleifend quam adipiscing vitae.',
-		postInternship: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus nulla at volutpat diam ut. Elementum nisi quis eleifend quam adipiscing vitae.',
+		nextSteps: 'All Interns automatically become officers in the Spring if they choose to stay.',
 	},
 	{
 		name: 'Cyber',
@@ -262,9 +272,9 @@ export default [
 		image: '/images/committees/cyber_wordmark.svg',
 		diamond: '/images/diamonds/cyber_diamond.svg',
 		card: '/images/cards/cyber_card.svg',
-		whatWeDo: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus nulla at volutpat diam ut. Elementum nisi quis eleifend quam adipiscing vitae.',
+		whatInternsWillDo: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus nulla at volutpat diam ut. Elementum nisi quis eleifend quam adipiscing vitae.',
 		timeCommitment: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus nulla at volutpat diam ut. Elementum nisi quis eleifend quam adipiscing vitae.',
-		postInternship: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus nulla at volutpat diam ut. Elementum nisi quis eleifend quam adipiscing vitae.',
+		nextSteps: 'All interns in good standing (attending workshops/chores/meetings) automatically become officers in the spring!',
 	},
 	{
 		name: 'Teach LA',
@@ -343,9 +353,9 @@ export default [
 		image: '/images/committees/teachLA_wordmark.svg',
 		diamond: '/images/diamonds/teachLA_diamond.svg',
 		card: '/images/cards/teachLA_card.svg',
-		whatWeDo: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus nulla at volutpat diam ut. Elementum nisi quis eleifend quam adipiscing vitae.',
+		whatInternsWillDo: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus nulla at volutpat diam ut. Elementum nisi quis eleifend quam adipiscing vitae.',
 		timeCommitment: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus nulla at volutpat diam ut. Elementum nisi quis eleifend quam adipiscing vitae.',
-		postInternship: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus nulla at volutpat diam ut. Elementum nisi quis eleifend quam adipiscing vitae.',
+		nextSteps: 'All members of Teach LA are instructors and/or developers from the get-go, so interns can technically be officers before, during, and after participating in the internship program. If an intern does not apply for or receive a director offer following the completion of their internship, they automatically revert back to being an instructor or developer if they decide to keep working with Teach LA.',
 	},
 	{
 		name: 'W',
@@ -408,9 +418,9 @@ export default [
 		image: '/images/committees/w_wordmark.svg',
 		diamond: '/images/diamonds/w_diamond.svg',
 		card: '/images/cards/w_card.svg',
-		whatWeDo: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus nulla at volutpat diam ut. Elementum nisi quis eleifend quam adipiscing vitae.',
+		whatInternsWillDo: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus nulla at volutpat diam ut. Elementum nisi quis eleifend quam adipiscing vitae.',
 		timeCommitment: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus nulla at volutpat diam ut. Elementum nisi quis eleifend quam adipiscing vitae.',
-		postInternship: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus nulla at volutpat diam ut. Elementum nisi quis eleifend quam adipiscing vitae.',
+		nextSteps: 'All Interns automatically become officers in the Spring if they choose to stay.',
 	},
 	{
 		name: 'AI',
@@ -501,9 +511,9 @@ export default [
 		image: '/images/committees/ai_wordmark.svg',
 		diamond: '/images/diamonds/ai_diamond.svg',
 		card: '/images/cards/ai_card.svg',
-		whatWeDo: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus nulla at volutpat diam ut. Elementum nisi quis eleifend quam adipiscing vitae.',
+		whatInternsWillDo: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus nulla at volutpat diam ut. Elementum nisi quis eleifend quam adipiscing vitae.',
 		timeCommitment: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus nulla at volutpat diam ut. Elementum nisi quis eleifend quam adipiscing vitae.',
-		postInternship: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus nulla at volutpat diam ut. Elementum nisi quis eleifend quam adipiscing vitae.',
+		nextSteps: 'All Interns automatically become officers in the Spring.',
 	},
 	{
 		name: 'Hack',
@@ -554,8 +564,8 @@ export default [
 		image: '/images/committees/hack_wordmark.svg',
 		diamond: '/images/diamonds/hack_diamond.svg',
 		card: '/images/cards/hack_card.svg',
-		whatWeDo: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus nulla at volutpat diam ut. Elementum nisi quis eleifend quam adipiscing vitae.',
+		whatInternsWillDo: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus nulla at volutpat diam ut. Elementum nisi quis eleifend quam adipiscing vitae.',
 		timeCommitment: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus nulla at volutpat diam ut. Elementum nisi quis eleifend quam adipiscing vitae.',
-		postInternship: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus nulla at volutpat diam ut. Elementum nisi quis eleifend quam adipiscing vitae.',
+		nextSteps: 'All Interns automatically become officers in the Spring if they choose to stay.',
 	},
 ];

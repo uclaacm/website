@@ -37,8 +37,8 @@ function CommitteeInternshipInfo(props) {
                         width="250px"
                     />
                     {/* <img src={committee.image} alt="committee logo"/> */}
-                    <h4>What do we do?</h4>
-                    <p> {committee.whatWeDo} </p>
+                    <h4>What do interns do?</h4>
+                    <p> {committee.whatInternsWillDo} </p>
                     <h4>Time Commitment</h4>
                     <p> {committee.timeCommitment} </p>
                     <h4>Post Internship</h4>
@@ -53,7 +53,7 @@ function CommitteeInternshipInfo(props) {
                     width="250px"
                 />
                 <h4>What do we do?</h4>
-                <p> board whatWeDo </p>
+                <p> board whatInternsWillDo </p>
                 <h4>Time Commitment</h4>
                 <p> board timeCommitment </p>
                 <h4>Post Internship</h4>

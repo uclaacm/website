@@ -2,7 +2,7 @@ import Image from 'next/image';
 import React, {useState} from 'react';
 
 function NextSteps(props) {
-    const { image, name } = props;
+    const { image, name, info } = props;
     const [isFlipped,setFlipped] = useState(true);
     return (
         <div className="committee-card" onClick={() => setFlipped(!isFlipped)}>
@@ -15,8 +15,7 @@ function NextSteps(props) {
                     />
                 </div>
                 <div className='next-steps-card-face back'>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua.
+                    {info}
                 </div>
             </div>
         </div>
