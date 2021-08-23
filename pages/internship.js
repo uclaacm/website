@@ -1,15 +1,14 @@
-import Image from 'next/image'
 import Link from 'next/link';
-import React, {useState} from 'react';
+import React from 'react';
 
 import Faq from 'react-faq-component';
 import Carousel from 'react-multi-carousel';
-import Banner from '../components/Banner';
-import Layout from '../components/Layout';
 
+import Banner from '../components/Banner';
 import CommitteeInternshipInfo from '../components/Internship/CommitteeInternshipInfo';
 import InternshipTimeline from '../components/Internship/InternshipTimeline';
 import NextSteps from '../components/Internship/NextSteps';
+import Layout from '../components/Layout';
 
 import data from '../data';
 import 'react-multi-carousel/lib/styles.css';
@@ -81,8 +80,8 @@ function InternshipPage(){
                     {testimonials.map((testimonial, i) => (
                             <div key={i} className="testimonial-item">
                                 {/* <Image
-                                    src = {testimonial.image} 
-                                    alt = {`${testimonial.name}'s image`} 
+                                    src = {testimonial.image}
+                                    alt = {`${testimonial.name}'s image`}
                                     width = "60px"
                                     height = "60px"
                                 /> */}

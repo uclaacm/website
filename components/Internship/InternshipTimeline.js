@@ -21,6 +21,6 @@ function InternshipTimeline(props) {
 			</div>
 		</div>
 	);
-};
+}
 
 export default InternshipTimeline;

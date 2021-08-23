@@ -103,7 +103,7 @@ export default {
         rowContentPaddingTop: '15px',
         rowContentPaddingBottom: '15px',
     },
-    responsive : {
+    responsive: {
         desktop: {
         breakpoint: { max: 3000, min: 1024 },
         items: 3,

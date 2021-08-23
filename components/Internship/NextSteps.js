@@ -21,6 +21,6 @@ function NextSteps(props) {
             </div>
         </div>
     );
-};
+}
 
 export default NextSteps;

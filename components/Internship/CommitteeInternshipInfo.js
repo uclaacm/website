@@ -62,6 +62,6 @@ function CommitteeInternshipInfo(props) {
 
         </div>
     );
-};
+}
 
 export default CommitteeInternshipInfo;

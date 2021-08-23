@@ -81,13 +81,13 @@
 }
 
 .logos-line {
-  display: flex;  
-  flex-direction:row;
-  justify-content:center;
-  text-align:center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   margin: auto;
   margin-top: 50px;
   padding-bottom: 10px;
+  text-align: center;
   width: 80vw;
 
   .logo-diamond {
@@ -237,11 +237,11 @@ p {
 
 .committee-card {
   height: 201px;
+  margin: auto;
+  margin-bottom: 10px;
+  max-width: 197px;
   padding: 0;
   perspective: 1000px;
-  max-width: 197px;
-  margin:auto;
-  margin-bottom: 10px;
 }
 
 .next-steps-card-face {
@@ -260,22 +260,22 @@ p {
 
 @media screen and (max-width: 1000px) {
   .logos-line {
+    align-items: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin: auto;
-    align-items: center;
     justify-content: center;
+    margin: auto;
   }
 }
 
 @media screen and (max-width: 800px) {
-  .testimonial-section{
+  .testimonial-section {
     grid-template-columns: 1fr 1fr;
   }
 }
 
 @media screen and (max-width: 700px) {
-  .timeline{
+  .timeline {
     display: none;
   }
 }
@@ -284,12 +284,14 @@ p {
   .testimonial-section {
     grid-template-columns: 1fr;
   }  
+
   .application-information {
     grid-template-columns: 1fr;
   }  
-  .application-info-card{
-    margin-top: 50px;
+
+  .application-info-card {
     margin-bottom: 50px;
+    margin-top: 50px;
   }
 }
 
