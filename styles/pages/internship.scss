@@ -4,104 +4,6 @@
   padding: 5px;
 }
 
-.committee-internship-info {
-  background-color: #FFF;
-  border-radius: 1rem;
-  box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.3), 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.2);
-  font-size: 1.25em;
-  margin: auto;
-  margin-bottom: 50px;
-  padding: 1.125em 1.5em;
-  position: relative;
-  width: 80vw;
-
-  &.studio {
-    box-shadow: 0 0.125rem 0.5rem $studio-raspberry, 0 0.0625rem 0.125rem $studio-raspberry;
-  }  
-
-  &.icpc {
-    box-shadow: 0 0.125rem 0.5rem $icpc-tangerine, 0 0.0625rem 0.125rem $icpc-tangerine;
-  }
-
-  &.design {
-    box-shadow: 0 0.125rem 0.5rem $design-orange, 0 0.0625rem 0.125rem $design-orange;
-  }
-
-  &.cyber {
-    box-shadow: 0 0.125rem 0.5rem $cyber-amber, 0 0.0625rem 0.125rem $cyber-amber;
-  }
-
-  &.teachla {
-    box-shadow: 0 0.125rem 0.5rem $teachla-green, 0 0.0625rem 0.125rem $teachla-green;
-  }
-
-  &.w {
-    box-shadow: 0 0.125rem 0.5rem $w-teal, 0 0.0625rem 0.125rem $w-teal;
-  }
-
-  &.ai {
-    box-shadow: 0 0.125rem 0.5rem $ai-arctic, 0 0.0625rem 0.125rem $ai-arctic;
-  }
-
-  &.hack {
-    box-shadow: 0 0.125rem 0.5rem $hack-purple, 0 0.0625rem 0.125rem $hack-purple;
-  }
-
-  &.board {
-    box-shadow: 0 0.125rem 0.5rem $acm-cobalt, 0 0.0625rem 0.125rem $acm-cobalt;
-  }
-}
-
-.next-steps-card-inner {
-  background-color: #FFF;
-  border-radius: 1rem;
-  box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.3), 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-  height: 100%;
-  position: relative;
-  transform-style: preserve-3d;
-
-  transition: transform 1s;
-  width: 100%;
-
-  img {
-    border-radius: 1rem;
-    height: 100%;
-    margin: 0.5px;
-    width: 100%;
-  }
-
-  &.is-flipped {
-    transform: rotateY(180deg);
-
-    img {
-      visibility: hidden;
-    }
-  }
-}
-
-.logos-line {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin: auto;
-  margin-top: 50px;
-  padding-bottom: 10px;
-  text-align: center;
-  width: 80vw;
-
-  .logo-diamond {
-    padding: 5px;
-
-    img {
-      &:hover {
-        cursor: pointer;
-        transform: scale(1.08);
-      }
-    }
-  }
-}  
-
 p {
   font-size: 0.8em;
   line-height: 150%;
@@ -110,78 +12,6 @@ p {
   &.subheading {
     font-size: 1em;
   }
-}
-
-.timeline {
-  background-color: #CCC;
-  height: 4px;
-  margin: 50px 60px;
-  margin-bottom: 100px;
-}
-
-.timeline-progress {
-  background-color: $acm-cobalt;
-  height: 100%;
-  width: 0;
-}
-
-.timeline-items {
-  display: flex;
-  justify-content: space-between;
-  margin-left: -10px;
-  margin-right: -10px;
-  margin-top: -12px;
-}
-
-.timeline-item {
-  position: relative;
-}
-
-.timeline-item::before {
-  background-color: #CCC;
-  border-radius: 100%;
-  content: '';
-  display: block;
-  height: 20px;
-  width: 20px;
-}
-
-.timeline-content {
-  background-color: #DDD;
-  border-radius: 5px;
-  left: 50%;
-  padding: 5px 10px;
-  position: absolute;
-  text-align: center;
-  top: 30px;
-  transform: translateX(-50%);
-  width: 100px;
-}
-
-.timeline-content::before {
-  background-color: #DDD;
-  content: '';
-  display: block;
-  height: 10px;
-  left: 50%;
-  margin-left: -2px;
-  position: absolute;
-  top: -8px;
-  transform: rotate(-45deg) translateX(-50%);
-  width: 10px;
-}
-
-.timeline-item.active::before {
-  background-color: $acm-cobalt;
-}
-
-.timeline-item.active .timeline-content {
-  background-color: $acm-cobalt;
-  color: #FFF;
-}
-
-.timeline-item.active .timeline-content::before {
-  background-color: $acm-cobalt;
 }
 
 .application-information {
@@ -235,48 +65,9 @@ p {
   }
 }
 
-.committee-card {
-  height: 201px;
-  margin: auto;
-  margin-bottom: 10px;
-  max-width: 197px;
-  padding: 0;
-  perspective: 1000px;
-}
-
-.next-steps-card-face {
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  background-color: #FFF;
-  height: 100%;
-  position: absolute;
-  width: 100%;
-
-  &.back {
-    padding: 10px;
-    transform: rotateY(180deg);
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  .logos-line {
-    align-items: center;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: center;
-    margin: auto;
-  }
-}
-
 @media screen and (max-width: 800px) {
   .testimonial-section {
     grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .timeline {
-    display: none;
   }
 }
 

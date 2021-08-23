@@ -1,0 +1,80 @@
+.committee-internship-info {
+    background-color: #FFF;
+    border-radius: 1rem;
+    box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.3), 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.2);
+    font-size: 1.25em;
+    margin: auto;
+    margin-bottom: 50px;
+    padding: 1.125em 1.5em;
+    position: relative;
+    width: 80vw;
+  
+    &.studio {
+      box-shadow: 0 0.125rem 0.5rem $studio-raspberry, 0 0.0625rem 0.125rem $studio-raspberry;
+    }  
+  
+    &.icpc {
+      box-shadow: 0 0.125rem 0.5rem $icpc-tangerine, 0 0.0625rem 0.125rem $icpc-tangerine;
+    }
+  
+    &.design {
+      box-shadow: 0 0.125rem 0.5rem $design-orange, 0 0.0625rem 0.125rem $design-orange;
+    }
+  
+    &.cyber {
+      box-shadow: 0 0.125rem 0.5rem $cyber-amber, 0 0.0625rem 0.125rem $cyber-amber;
+    }
+  
+    &.teachla {
+      box-shadow: 0 0.125rem 0.5rem $teachla-green, 0 0.0625rem 0.125rem $teachla-green;
+    }
+  
+    &.w {
+      box-shadow: 0 0.125rem 0.5rem $w-teal, 0 0.0625rem 0.125rem $w-teal;
+    }
+  
+    &.ai {
+      box-shadow: 0 0.125rem 0.5rem $ai-arctic, 0 0.0625rem 0.125rem $ai-arctic;
+    }
+  
+    &.hack {
+      box-shadow: 0 0.125rem 0.5rem $hack-purple, 0 0.0625rem 0.125rem $hack-purple;
+    }
+  
+    &.board {
+      box-shadow: 0 0.125rem 0.5rem $acm-cobalt, 0 0.0625rem 0.125rem $acm-cobalt;
+    }
+  }
+  
+  .logos-line {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+    margin-top: 50px;
+    padding-bottom: 10px;
+    text-align: center;
+    width: 80vw;
+  
+    .logo-diamond {
+      padding: 5px;
+  
+      img {
+        &:hover {
+          cursor: pointer;
+          transform: scale(1.08);
+        }
+      }
+    }
+  }  
+  
+@media screen and (max-width: 850px) {
+    .logos-line {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    margin: auto;
+    }
+}
+  
