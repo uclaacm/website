@@ -122,7 +122,6 @@
           color: inherit;
           text-decoration: none;
 
-          // use routing to decide if active?
           &.active {
             color: $acm-cobalt !important;
           }
