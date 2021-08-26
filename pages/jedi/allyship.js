@@ -16,7 +16,7 @@ function Allyship() {
         <h1 className="text-right">allyship spaces</h1>
         <p className={`text-right ${styles['desktop-half-width-right']}`}>
           {/* eslint-disable-next-line max-len */}
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          We hold allyship spaces on a bunch of different topics related to EDI; check out our past events below! Anyone can lead and attend an allyship space. If you have a topic you&apos;re interested in, [let us know](/contact)!
         </p>
         {spaces.map((space) => <AllyshipSpaceCard {...space} key={space.title} /> )}
       </div>
