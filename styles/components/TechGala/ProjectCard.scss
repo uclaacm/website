@@ -4,6 +4,15 @@
 
 .right-col {
   display: none;
+
+  img {
+    box-shadow: none !important;
+    max-height: auto;
+  }
+
+  div {
+    display: block !important;
+  }  
 }
 
 .link {
@@ -22,11 +31,6 @@
     float: right;
     margin-top: 30px;
     width: 50%;
-
-    img {
-      box-shadow: 0 0 1pt 0;
-      max-height: auto;
-    }
   }
 
   .show-mobile {

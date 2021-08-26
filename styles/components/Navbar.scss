@@ -14,7 +14,7 @@
     height: 60px;
     width: 180px;
   }
- 
+
   #navbar-inner {
     margin: auto;
     max-width: 1000px;
@@ -86,6 +86,9 @@
       padding: 10px 20px;
     }
 
+    #committee-mobile-nav-item {
+      height: max-content;
+    }
   }
 
   .hamburger-icon {

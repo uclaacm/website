@@ -7,7 +7,7 @@ function Layout(props) {
     <>
       <div className="app-container">
         <Navbar />
-        <div className="main-container">
+        <div className="main-container" role="main">
           {props.children}
         </div>
         <Footer />
