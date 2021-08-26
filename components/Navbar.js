@@ -7,19 +7,29 @@ import React from 'react';
 //uncomment the above import line "import gmData from '../../config/gmData';" to get quarter from the gmData page
 //uncomment the two lines saying  "/* <Link href="/gm"><li>{gmData.date.quarter} gm</li></Link> */"
 
-function MobileNavItem() {
-	return (
+function MobileNavItem(props) {
+	if (props.committees) {
+		return (
+				<ul className="committee-mobile-nav">
+					<li><Link href={'/committees#studio'}><a>Studio</a></Link></li>
+					<li><Link href={'/committees#icpc'}><a>ICPC</a></Link></li>
+					<li><Link href={'/committees#design'}><a>Design</a></Link></li>
+					<li><Link href={'/committees#cyber'}><a>Cyber</a></Link></li>
+					<li><Link href={'/committees#teachla'}><a>Teach LA</a></Link></li>
+					<li><Link href={'/committees#w'}><a>W</a></Link></li>
+					<li><Link href={'/committees#ai'}><a>AI</a></Link></li>
+					<li><Link href={'/committees#hack'}><a>Hack</a></Link></li>
+				</ul>
+		);
+	}
+	else {
+		return (
 			<ul className="committee-mobile-nav">
-				<li><Link href={'/committees#studio'}><a>Studio</a></Link></li>
-				<li><Link href={'/committees#icpc'}><a>ICPC</a></Link></li>
-				<li><Link href={'/committees#design'}><a>Design</a></Link></li>
-				<li><Link href={'/committees#cyber'}><a>Cyber</a></Link></li>
-				<li><Link href={'/committees#teachla'}><a>Teach LA</a></Link></li>
-				<li><Link href={'/committees#w'}><a>W</a></Link></li>
-				<li><Link href={'/committees#ai'}><a>AI</a></Link></li>
-				<li><Link href={'/committees#hack'}><a>Hack</a></Link></li>
+					<li><Link href={'/impact'}><a>Impact</a></Link></li>
+					<li><Link href={''}><a>Jedi</a></Link></li>
 			</ul>
-	);
+		);
+	}
 }
 
 
@@ -71,6 +81,7 @@ export default class Navbar extends React.Component {
 							<li><Link href="/committees"><a>Committees</a></Link></li>
 							{/* <li><Link href="/gm"><a>{gmData.date.quarter} GM</a></Link></li> */}
 							<li><Link href="/events"><a>Events</a></Link></li>
+							<li className="initiatives"><Link href="/impact"><a>Initiatives</a></Link></li>
 							<li><Link href="/sponsors"><a>Sponsors</a></Link></li>
 							<li><Link href="https://members.uclaacm.com"><a className="button button-transparent button-lg font-header">Member Login</a></Link>
 							</li>
@@ -90,8 +101,10 @@ export default class Navbar extends React.Component {
 								<li><Link href="/about"><a>About</a></Link></li>
 								<li><Link href="/committees"><a>Committees</a></Link></li>
 								{/* <li><Link href="/gm"><a>{gmData.date.quarter} GM</a></Link></li> */}
-								<MobileNavItem/>
+								<MobileNavItem committees/>
 								<li><Link href="/events"><a>Events</a></Link></li>
+								<li><Link href="/impact"><a>Initiatives</a></Link></li>
+								<MobileNavItem initiatives/>
 								<li><Link href="/sponsors"><a>Sponsors</a></Link></li>
 								<li><Link href="https://members.uclaacm.com"><a className="button button-transparent button-lg font-header">Member Login</a></Link>
 								</li>
