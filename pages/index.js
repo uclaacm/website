@@ -56,11 +56,11 @@ function Home () {
 				<br /><br /><br />
 
 				<div className="blue">
-					<div id="sign-up-section" className="content-section">
-						<div id="sign-up-left" className="half-width">
+					<div className="sign-up-section content-section">
+						<div className="half-width">
 							<h2>Want to stay updated on what&rsquo;s going on?</h2>
 						</div>
-						<div id="sign-up-right" className="half-width">
+						<div className="sign-up-right half-width">
 							<Link href="http://eepurl.com/c5pE6P">
 								<a className="button tight dark" target="_blank" rel="noreferrer noopener">
 									Join our Mailing List

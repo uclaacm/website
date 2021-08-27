@@ -28,7 +28,7 @@ function Events() {
 			/>
 			<Banner decorative />
 			<div className={styles['events-container']}>
-				<h2>Our Events</h2>
+				<h1>Our Events</h1>
 				<p>
 					We&apos;re taking the most of the summer off to
 					rest, recharge, and prepare for a hybrid fall quarter.
