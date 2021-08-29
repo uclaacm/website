@@ -15,7 +15,7 @@ function AllyshipSpaceCard({ title, date, location, description, pic, alt, rsvp,
       {/* TODO: better CSS styling */}
       <Image src={pic} alt={alt} />
       <div>
-        <h3 className={styles['my-tight']}>{title}</h3>
+        <h2 className={styles['my-tight']}>{title}</h2>
         <p className={styles['my-tight']}>{date} | { location }</p>
         <p className={styles['my-tight']}>
           {description}

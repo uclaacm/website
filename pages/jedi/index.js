@@ -37,7 +37,7 @@ function JEDIAbout () {
           <p>justice, equity, diversity, inclusion</p>
         </div>
         <div className={styles['hero-row']}>
-          <nav>
+          <nav aria-label="JEDI link nav">
             <ul className={styles['nav-links']}>
               <li><Link href="/jedi/meet"><a>meet the JEDIs</a></Link></li>
               <li><Link href="/jedi/allyship"><a>allyship spaces</a></Link></li>
