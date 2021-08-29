@@ -16,11 +16,9 @@ const footerACMLinks = [
 
 function FooterLinkElement({ title, path, ext }){
 	return (
-		<li>
-			<Link href={path}>
-				<a className={styles['link-footer']} target={ext ? '_blank': ''} rel={ext ? 'noopener noreferrer' : ''}>{title}</a>
-			</Link>
-		</li>
+		<Link href={path}>
+			<a className={styles['link-footer']} target={ext ? '_blank': ''} rel={ext ? 'noopener noreferrer' : ''}>{title}</a>
+		</Link>
 	);
 }
 
@@ -47,24 +45,30 @@ function Footer(){
 						<h3 className={styles['footer-header']}>About ACM at UCLA</h3>
 						<ul className='list-unstyled'>
 							{
-								footerACMLinks.map((link) => <FooterLinkElement key={link.path} {...link} />)
+								footerACMLinks.map((link) => <li key={link.path}><FooterLinkElement {...link} /></li>)
 							}
 						</ul>
 						{/* TODO: consider where to put impact/jedi! events & initiatives? */}
 					</div>
 					<div>
 						<h3 className={styles['footer-header']}>Committees</h3>
-						<ul className='list-unstyled'>
+						<ul className={`list-unstyled text-left ${styles['footer-committee-sidebar-container']}`}>
 							{
-								committees.map(({name, slug, external_link}) => {
+								committees.map(({name, slug, external_link, wordmark_dark}) => {
 									const path = external_link ? external_link : `/committees#${slug}`;
 									return (
-										<FooterLinkElement
-											key={slug}
-											path={path}
-											title={`ACM ${name}`}
-											ext={external_link}
-										/>
+										<>
+											<li key={slug} className={styles['display-inline']}>
+												<FooterLinkElement
+													path={path}
+													/* TODO: resolve 404 with <Image /> component */
+													/* eslint-disable-next-line @next/next/no-img-element */
+													title={<img className='committee-sidebar-image' src={wordmark_dark} alt={`ACM ${name}`} />}
+													ext={external_link}
+												/>
+											</li>
+											<br />
+										</>
 									);
 								})
 							}
