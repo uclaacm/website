@@ -27,7 +27,8 @@ function FooterLinkElement({ title, path, ext }){
 function Footer(){
 	return (
 		<footer className={styles.footer}>
-			<div className={styles['footer-inner']}>
+			<nav className={styles['footer-inner']} aria-labelledby="footer-navigation">
+				<h2 className="sr-only" id="footer-navigation">Footer Navigation</h2>
 				<div className="grid-desktop-3">
 					<div>
 						<h3 className={styles['footer-header']}>Find us on social media</h3>
@@ -80,7 +81,7 @@ function Footer(){
 				<div>
 					<span className={styles['footer-text-thin']}>&copy; ACM at UCLA 2021.</span>
 				</div>
-			</div>
+			</nav>
 		</footer>
 	);
 }
