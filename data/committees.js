@@ -133,7 +133,7 @@ export default [
 		diamond: '/images/diamonds/icpc_diamond.svg',
 		card: '/images/cards/icpc_card.svg',
 		whatWeDo: 'ICPC spreads the joy of algorithmic problem solving - and helps you kick-start your career - through workshops, contests, and a top-ranked ICPC team!',
-		whatInternsWillDo: `Interns will help produce and teach workshops in one of our three winter workshop tracks: Beginner Track (great for anyone interested in algorithms), Interview Track (best for people with interview and internship experience  already), and possibly Advanced Track (for people with background in competitive programming).`,
+		whatInternsWillDo: 'Interns will help produce and teach workshops in one of our three winter workshop tracks: Beginner Track (great for anyone interested in algorithms), Interview Track (best for people with interview and internship experience  already), and possibly Advanced Track (for people with background in competitive programming).',
 		nextSteps: 'All Interns automatically become officers in the Spring if they choose to stay.',
 	},
 	{

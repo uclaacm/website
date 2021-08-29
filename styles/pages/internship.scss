@@ -65,7 +65,7 @@ p {
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: $tablet-breakpoint) {
   .testimonial-section {
     grid-template-columns: 1fr 1fr;
   }
@@ -86,6 +86,6 @@ p {
   }
 }
 
-.carousel-container{
+.carousel-container {
   padding-bottom: 20px;
 }

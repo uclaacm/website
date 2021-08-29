@@ -86,13 +86,13 @@ export default {
             },
             {
                 title: 'What experience do you need to be an intern for ACM?',
-                content:`None! We are looking for students that are passionate about computer science and are willing to learn. 
+                content: `None! We are looking for students that are passionate about computer science and are willing to learn. 
                 Although a couple intern positions may state a preference for those with experience, 
-                no experience is required for any Intern position.`            
+                no experience is required for any Intern position.`,
             },
             {
                 title: 'How many committees can I apply for?',
-                content: `You can apply to be an intern for up to 3 committees, but you may only be an intern for one of those committees.`,
+                content: 'You can apply to be an intern for up to 3 committees, but you may only be an intern for one of those committees.',
             },
             {
                 title: 'When we apply to be an intern for a committee, do we apply to a specific intern position or just the committee as a whole?',
@@ -120,20 +120,24 @@ export default {
         rowContentPaddingBottom: '15px',
     },
     responsive: {
-        desktop: {
-        breakpoint: { max: 3000, min: 1024 },
-        items: 3,
-        slidesToSlide: 3, // optional, default to 1.
+        // uses recommended defaults for carousel
+        desktop:
+        {
+            breakpoint: { max: 3000, min: 1024 },
+            items: 3,
+            slidesToSlide: 3,
         },
-        tablet: {
-        breakpoint: { max: 1024, min: 464 },
-        items: 2,
-        slidesToSlide: 2, // optional, default to 1.
+        tablet:
+        {
+            breakpoint: { max: 1024, min: 464 },
+            items: 2,
+            slidesToSlide: 2,
         },
-        mobile: {
-        breakpoint: { max: 464, min: 0 },
-        items: 1,
-        slidesToSlide: 1, // optional, default to 1.
+        mobile:
+        {
+            breakpoint: { max: 464, min: 0 },
+            items: 1,
+            slidesToSlide: 1,
         },
     },
 };

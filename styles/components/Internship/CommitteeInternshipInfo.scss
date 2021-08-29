@@ -68,7 +68,7 @@
   }
 }  
   
-@media screen and (max-width: 850px) {
+@media screen and (max-width: $tablet-breakpoint) {
   .logos-line {
     align-items: center;
     display: grid;

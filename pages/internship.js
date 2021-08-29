@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import React from 'react';
+import React, {useEffect} from 'react';
 
 import Faq from 'react-faq-component';
 import Carousel from 'react-multi-carousel';
@@ -16,6 +16,31 @@ import 'react-multi-carousel/lib/styles.css';
 function InternshipPage(){
     const { committees, internship } = data;
     const { items, testimonials, QA, FAQStyles, responsive } = internship;
+    useEffect(() => {
+        committees.unshift(
+            {
+                name: 'Board',
+                class: 'board',
+                image: '/images/committees/board_wordmark.svg',
+                diamond: '/images/logo.png',
+                card: '/images/cards/board_card.svg',
+                whatWeDo: `With ACM being such a large organization, board serves to hold the club together. We plan club-wide events like ACM’s general meeting in Fall and serve the committees by taking care of club-wide logistics
+                Operations creates ACM-wide events and upkeeps ACM resources.
+                Dev Team upholds projects taken over the course of the year by ACM.
+                Impact focuses on spreading awareness  to the ACM community about the social impact of Technology/Computer Science.
+                External Affairs creates events between company affiliates and the general ACM community.
+                Finance handles finances within ACM at UCLA.
+                Internal Affairs maintains the culture of ACM by hosting events for all officers.`,
+                whatInternsWillDo: `The Operations interns will blahblah.
+                The Dev team interns will train and maintain existing ACM projects (website, discord bot, membership portal), adding features and dealing with issues.
+                The Impact interns will plan Impact events and help out with the blog
+                The External Affairs interns will work with companies and plan out events such as panels, company tours, and info-sessions.
+                The Finance interns will help draft various finance requests to send to the CS department and work with committees to secure funding for events.
+                The Internal Affairs interns will organize fun socials to bring officers across different committees together, collaborate with other committees and help create the weekly newsletters.`,
+                nextSteps: 'Dev Team interns automatically become Dev Team officers in the spring. All other Interns will run for a director position in the Spring or will no longer officially be a member of the board.',
+            },
+        );
+    }, []);
     return(
         <Layout>
             <Banner decorative />
@@ -29,7 +54,7 @@ function InternshipPage(){
                 committees={committees}
             />
             <div className="content-section text-center">
-                <h1>Applications</h1>
+                <h2>Applications</h2>
                 <InternshipTimeline items={items}/>
                 <div className="application-information">
                     <div>
@@ -45,6 +70,7 @@ function InternshipPage(){
                     <div className='application-info-card'>
                         <h3>Internship Applications Reopen Fall 2021</h3>
                         <div className='application-button'>
+                            {/* TODO: add link to internship application */}
                             <Link href="">
                                 <a className="button" target="_blank" rel="noreferrer noopener">
                                     Apply Now
@@ -55,19 +81,13 @@ function InternshipPage(){
                 </div>
             </div>
             <div className="content-section text-center">
-                <h1>Next steps</h1>
+                <h2>Next steps</h2>
                 <Carousel
                     responsive={responsive}
-                    infinite={true}  
+                    infinite={true}
                     transitionDuration={500}
                     containerClass="carousel-container"
                 >
-                    <NextSteps
-                        image={'/images/cards/board_card.svg'}
-                        name={'ACM AT UCLA'}
-                        key={'ACM AT UCLA'}
-                        info='Dev Team interns automatically become Dev Team officers in the spring. All other Interns will run for a director position in the Spring or will no longer officially be a member of the board.'
-                    />
                     {committees.map(committee =>
                         <NextSteps
                             image={committee.card}
@@ -79,7 +99,7 @@ function InternshipPage(){
                 </Carousel>
             </div>
             <div className="content-section text-center">
-                <h1>Past Intern Testimonials</h1>
+                <h2>Past Intern Testimonials</h2>
                 <div className="testimonial-section">
                     {testimonials.map((testimonial, i) => (
                             <div key={i} className="testimonial-item">
@@ -96,7 +116,7 @@ function InternshipPage(){
                 </div>
             </div>
             <div className="content-section text-center">
-                <h1>FAQ</h1>
+                <h2>FAQ</h2>
                 <div className="faq">
                     <Faq
                     data={QA}

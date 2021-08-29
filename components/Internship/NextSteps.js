@@ -3,7 +3,7 @@ import React, {useState} from 'react';
 
 function NextSteps(props) {
     const { image, name, info } = props;
-    const [isFlipped,setFlipped] = useState(true);
+    const [isFlipped, setFlipped] = useState(true);
     return (
         <div className="committee-card" onClick={() => setFlipped(!isFlipped)}>
             <div className={isFlipped ? 'next-steps-card-inner' : 'next-steps-card-inner is-flipped'}>
