@@ -58,20 +58,15 @@ function InternshipPage(){
                 <h1>Next steps</h1>
                 <Carousel
                     responsive={responsive}
-                    infinite={true}
+                    infinite={true}  
+                    transitionDuration={500}
+                    containerClass="carousel-container"
                 >
                     <NextSteps
                         image={'/images/cards/board_card.svg'}
                         name={'ACM AT UCLA'}
                         key={'ACM AT UCLA'}
-                        info='Most Board positions do not have any officers,
-                        besides the Dev Team and the Marketing Team
-                        (not taking any interns this fall). Dev Team interns
-                        automatically become Dev Team officers in the
-                        spring unless they choose to run for a director
-                        position. All other Interns will run for a director
-                        position in the Spring or they will no longer
-                        officially be a member of the board. '
+                        info='Dev Team interns automatically become Dev Team officers in the spring. All other Interns will run for a director position in the Spring or will no longer officially be a member of the board.'
                     />
                     {committees.map(committee =>
                         <NextSteps

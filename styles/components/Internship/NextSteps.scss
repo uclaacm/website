@@ -29,7 +29,7 @@
 .committee-card {
   height: 201px;
   margin: auto;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   max-width: 197px;
   padding: 0;
   perspective: 1000px;
@@ -46,6 +46,8 @@
   &.back {
     padding: 10px;
     transform: rotateY(180deg);
+    text-align: left;
+    border: 1px solid black;
   }
 }
   

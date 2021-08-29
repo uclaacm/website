@@ -58,19 +58,10 @@ export default [
 		],
 		introImage: '/images/committees/studio/studio_motif_applied.png',
 		mission: 'Our mission is to teach skills revolving around video game development such as computer science, game design and art in order to help usher students into the game development industry.',
-		whatInternsWillDo:
-		`Studio is mainly looking for interns to be in Unity Tutorial and Marketing/Engagement subcommittees this fall.
-		Marketing/Engagement- Studio hopes to bring interns to focus on community engagement, particularly in the form of leading socials during the year and figuring out strong ways to ensure member retention.
-		ACM Studio does not currently have a point person for socials, but we expect to have one (or two) soon, so interns can expect to work with our point person to assist with socials and other forms of community engagement.
-		Unity tutorial Subcommittees- ACM Studio has valued having helpers and headcount when hosting tutorials to help with various bugfixing issues to keep pace, while we also would like the extra manpower to continue
-		hosting tutorials in the winter quarter (which we haven't done in the past). Interns will not be expected to lead tutorials, but they will be expected to familiarize themselves with the tutorial content by attending the 
-		respective subcommittee meetings, making sure to ask the tutorial host questions before the event to ensure that the intern can help run the tutorial during the event. Prior skills in the Unity engine (which is Studio's
-		primary form of game programming) is heavily valued for this role but not entirely needed, as much of game development is a "learn as you go" type of style. Strong skills in C# (very similar to C++) and teaching 
-		skills are also appreciated, but these are all soft expectations.`,
-		timeCommitment: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus nulla at volutpat diam ut. Elementum nisi quis eleifend quam adipiscing vitae.',
-		nextSteps: `An applicant fills out an officer interest form with various questions regarding skillset/reason for applying, then we schedule a 15-minute interview
-		between the applicant and committee president to further ask questions about their answers as well as to test their situation-resolving skills on the spot, then within two weeks we release the
-		results to all applicants for them to become officers over week 10/finals week of the winter quarter.`,
+		whatWeDo: 'Studio wants to create a community of game developers, whether you’re interested in gameplay programming, graphics, animation, pixel, music, whatever. We want to help you express yourself through video game development.',
+		whatInternsWillDo: `Marketing interns will focus on community engagement, particularly in the form of leading socials and increasing member retention. 
+		Unity Tutorial Subcommittee interns will help host Unity tutorials and bugfix in winter quarter. Unity experience is heavily valued but not absolutely required, as much of game development is a 'learn as you go' style. C# skills and teaching experience are appreciated but are soft expectations.`,
+		nextSteps: 'All Interns automatically become officers in the Spring if they choose to stay.',
 	},
 	{
 		name: 'ICPC',
@@ -141,8 +132,8 @@ export default [
 		image: '/images/committees/icpc_wordmark.svg',
 		diamond: '/images/diamonds/icpc_diamond.svg',
 		card: '/images/cards/icpc_card.svg',
-		whatInternsWillDo: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus nulla at volutpat diam ut. Elementum nisi quis eleifend quam adipiscing vitae.',
-		timeCommitment: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus nulla at volutpat diam ut. Elementum nisi quis eleifend quam adipiscing vitae.',
+		whatWeDo: 'ICPC spreads the joy of algorithmic problem solving - and helps you kick-start your career - through workshops, contests, and a top-ranked ICPC team!',
+		whatInternsWillDo: `Interns will help produce and teach workshops in one of our three winter workshop tracks: Beginner Track (great for anyone interested in algorithms), Interview Track (best for people with interview and internship experience  already), and possibly Advanced Track (for people with background in competitive programming).`,
 		nextSteps: 'All Interns automatically become officers in the Spring if they choose to stay.',
 	},
 	{
@@ -219,8 +210,10 @@ export default [
 		image: '/images/committees/design_wordmark.svg',
 		diamond: '/images/diamonds/design_diamond.svg',
 		card: '/images/cards/design_card.svg',
-		whatInternsWillDo: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus nulla at volutpat diam ut. Elementum nisi quis eleifend quam adipiscing vitae.',
-		timeCommitment: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus nulla at volutpat diam ut. Elementum nisi quis eleifend quam adipiscing vitae.',
+		whatWeDo: 'Design aims to foster a community passionate about design and user experience through the intersection of creativity and technology. We focus on UX/UI design, graphic design, web development, and more!',
+		whatInternsWillDo: `All interns will learn ACM's branding and style and learn to use Figma. 
+		Graphic design interns will create social media graphics for ACM.
+		UX design interns will design for our various internal projects.`,
 		nextSteps: 'All Interns automatically become officers in the Spring if they choose to stay.',
 	},
 	{
@@ -272,8 +265,10 @@ export default [
 		image: '/images/committees/cyber_wordmark.svg',
 		diamond: '/images/diamonds/cyber_diamond.svg',
 		card: '/images/cards/cyber_card.svg',
-		whatInternsWillDo: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus nulla at volutpat diam ut. Elementum nisi quis eleifend quam adipiscing vitae.',
-		timeCommitment: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus nulla at volutpat diam ut. Elementum nisi quis eleifend quam adipiscing vitae.',
+		whatWeDo: 'Our mission is to create a community in which both experts and beginners alike can grow in the field of cybersecurity skills and knowledge. We want to make cybersecurity simple and accessible for everyone.',
+		whatInternsWillDo: `Creating workshop content (ex. XSS, SQL injections, Reverse engineering)
+			Weekly chores such as submitting newsletter, design requests, and helping with the website
+			Socials events with other officers. Delivering at the minimum 1 workshop per quarter.`,
 		nextSteps: 'All interns in good standing (attending workshops/chores/meetings) automatically become officers in the spring!',
 	},
 	{
@@ -353,9 +348,14 @@ export default [
 		image: '/images/committees/teachLA_wordmark.svg',
 		diamond: '/images/diamonds/teachLA_diamond.svg',
 		card: '/images/cards/teachLA_card.svg',
-		whatInternsWillDo: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus nulla at volutpat diam ut. Elementum nisi quis eleifend quam adipiscing vitae.',
-		timeCommitment: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus nulla at volutpat diam ut. Elementum nisi quis eleifend quam adipiscing vitae.',
-		nextSteps: 'All members of Teach LA are instructors and/or developers from the get-go, so interns can technically be officers before, during, and after participating in the internship program. If an intern does not apply for or receive a director offer following the completion of their internship, they automatically revert back to being an instructor or developer if they decide to keep working with Teach LA.',
+		whatWeDo: 'Teach LA pairs UCLA students with schools in Los Angeles to provide free computer science classes. We have a teaching/curriculum team and a development team depending on what you’re interested in!',
+		whatInternsWillDo: `The Logistics and Outreach intern will reach out to schools and plan teaching schedules while working on instructor recruiting. 
+		The JEDI intern will work with JEDI directors to help plan allyship spaces and train new instructors. 
+		Speaker Series + Events Interns will be in charge of planning and putting on larger-scale events like Day of Code and coordinating smaller one-off events like speaker series.  
+		Teaching Interns will either help School Leads with coordinating teaching with other instructors and reporting feedback, or serve as the point person for a class. 
+		Dev Team PM interns will be trained to become Product/Project managers and oversee the life cycle of a software project (does not involve much coding). 
+		Dev Team Training interns will assist training directors in creating curriculum and training devs. `,
+		nextSteps: 'Interns will have to apply for or receive an officer role post-internship, or will revert back to instructors or devs',
 	},
 	{
 		name: 'W',
@@ -418,8 +418,10 @@ export default [
 		image: '/images/committees/w_wordmark.svg',
 		diamond: '/images/diamonds/w_diamond.svg',
 		card: '/images/cards/w_card.svg',
-		whatInternsWillDo: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus nulla at volutpat diam ut. Elementum nisi quis eleifend quam adipiscing vitae.',
-		timeCommitment: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus nulla at volutpat diam ut. Elementum nisi quis eleifend quam adipiscing vitae.',
+		whatWeDo: 'W is our committee focused on making tech a more diverse space! W does this through mentorship events, hosting career and networking panels, discussion spaces, and outreach events!',
+		whatInternsWillDo: `The Finance intern will manage and monitor the club budget. 
+		The Outreach intern will co-ordinate with other large UCLA clubs to plan large diversity-focused events such as QWERHacks and Day of Code. 
+		The External intern will maintain contact with industry representatives and recruiters to plan for colab events.`,
 		nextSteps: 'All Interns automatically become officers in the Spring if they choose to stay.',
 	},
 	{
@@ -511,9 +513,12 @@ export default [
 		image: '/images/committees/ai_wordmark.svg',
 		diamond: '/images/diamonds/ai_diamond.svg',
 		card: '/images/cards/ai_card.svg',
-		whatInternsWillDo: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus nulla at volutpat diam ut. Elementum nisi quis eleifend quam adipiscing vitae.',
-		timeCommitment: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus nulla at volutpat diam ut. Elementum nisi quis eleifend quam adipiscing vitae.',
-		nextSteps: 'All Interns automatically become officers in the Spring.',
+		whatWeDo: 'AI is about all things artificial intelligence and machine learning! We teach beginner-friendly and advanced workshops, run projects, and teach kids about machine learning :) ',
+		whatInternsWillDo: `The Outreach intern will teach weekly ML classes to high school students. 
+		The Projects intern will guide people through building a deep learning model in PyTorch. 
+		The Events intern will help create content, host and organize one-off or recurring events. 
+		The Workshops interns will teach weekly ML and AI workshops to UCLA students.`,
+		nextSteps: 'All Interns automatically become officers in the Spring',
 	},
 	{
 		name: 'Hack',
@@ -564,8 +569,8 @@ export default [
 		image: '/images/committees/hack_wordmark.svg',
 		diamond: '/images/diamonds/hack_diamond.svg',
 		card: '/images/cards/hack_card.svg',
-		whatInternsWillDo: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus nulla at volutpat diam ut. Elementum nisi quis eleifend quam adipiscing vitae.',
-		timeCommitment: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus nulla at volutpat diam ut. Elementum nisi quis eleifend quam adipiscing vitae.',
+		whatWeDo: 'Hack is all about empowering the community with the means to build amazing things using software. We deal primarily with software development, most commonly web and mobile app development, and host events for these such as workshops and hackathons.',
+		whatInternsWillDo: 'Interns will work closely with the rest of the team to organize events, fulfilling roles (i.e. event  director, curriculum developer, marketing) chosen based on  personal interest prior to each quarter.',
 		nextSteps: 'All Interns automatically become officers in the Spring if they choose to stay.',
 	},
 ];

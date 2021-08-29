@@ -78,23 +78,39 @@ export default {
     QA: {
         rows: [
             {
-                title: 'Lorem ipsum dolor sit amet,',
+                title: 'What is the Internship Program?',
                 content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed tempor sem. Aenean vel turpis feugiat,
                 ultricies metus at, consequat velit. Curabitur est nibh, varius in tellus nec, mattis pulvinar metus.
                 In maximus cursus lorem, nec laoreet velit eleifend vel. Ut aliquet mauris tortor, sed egestas libero interdum vitae.
                 Fusce sed commodo purus, at tempus turpis.`,
             },
             {
-                title: 'Nunc maximus, magna at ultricies elementum',
-                content:
-                    'Nunc maximus, magna at ultricies elementum, risus turpis vulputate quam, vitae convallis ex tortor sed dolor.',
+                title: 'What experience do you need to be an intern for ACM?',
+                content:`None! We are looking for students that are passionate about computer science and are willing to learn. 
+                Although a couple intern positions may state a preference for those with experience, 
+                no experience is required for any Intern position.`            
             },
             {
-                title: 'Curabitur laoreet, mauris vel blandit fringilla',
-                content: `Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc, ac sagittis leo elit vel lorem.
-                Fusce tempor lacus ut libero posuere viverra. Nunc velit dolor, tincidunt at varius vel, laoreet vel quam.
-                Sed dolor urna, lobortis in arcu auctor, tincidunt mattis ante. Vivamus venenatis ultricies nibh in volutpat.
-                Cras eu metus quis leo vestibulum feugiat nec sagittis lacus.Mauris vulputate arcu sed massa euismod dignissim. `,
+                title: 'How many committees can I apply for?',
+                content: `You can apply to be an intern for up to 3 committees, but you may only be an intern for one of those committees.`,
+            },
+            {
+                title: 'When we apply to be an intern for a committee, do we apply to a specific intern position or just the committee as a whole?',
+                content: `It depends on the committee. The application for each committee will ask what intern position you are interested in 
+                if they want their prospective interns to apply to specific positions. But some committees will allow prospective interns to 
+                just apply to the committee as a whole. `,
+            },
+            {
+                title: 'How can I get involved in ACM if I am not an intern?',
+                content: `If you are not an intern, there are plenty of ways to get involved in ACM. You can always attend workshops that different 
+                committees are hosting. Subscribe to our Newsletter if you would like weekly updates on when workshops are. Some committees, like 
+                Teach LA, allow students to be officers/contributing members without participating in the ACM Internship Program. `,
+            },
+            {
+                title: 'I have more questions, how can I get them answered?',
+                content: `If you have any questions about the application process or the Internship program in general email Ava Asmani, 
+                the Internship Director[ava24@g.ucla.edu]. If you have any questions that are specific to committees, there will be an 
+                Internship Program ACM Committee Info Session/QandA sometime in week 3 or 4 of the Fall Quarter.`,
             },
         ],
     },
