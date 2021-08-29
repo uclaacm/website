@@ -49,11 +49,11 @@
   }
 }
 
-#sign-up-section {
+.sign-up-section {
   display: flex;
   flex-direction: row;
 
-  #sign-up-right {
+  .sign-up-right {
     align-items: center;
     display: flex;
     justify-content: center;
@@ -65,7 +65,7 @@
     width: 100%;
   }
 
-  #sign-up-section {
+  .sign-up-section {
     flex-direction: column;
     padding-bottom: 40px;
     text-align: center;
