@@ -1,3 +1,4 @@
+import { NextSeo } from 'next-seo';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
@@ -12,6 +13,21 @@ import styles from '../../styles/pages/jedi.module.scss';
 function JEDIAbout () {
   return (
 		<Layout>
+      <NextSeo
+				title="About JEDI | ACM at UCLA"
+				description="JEDI is an initiative that aims to make ACM's culture and presence on campus more inclusive. We aim to prioritize equity, diversity, and inclusion within our committees by identifying and addressing areas of improvement in terms of inclusion, as well as better including all minoritized and marginalized groups in tech."
+				openGraph={{
+					images: [
+						{
+							url: 'https://www.uclaacm.com/images/jedi/jedi-logo.png',
+							width: 714,
+							height: 395,
+							alt: 'The JEDI Logo',
+						},
+					],
+					site_name: 'ACM at UCLA',
+				}}
+			/>
       <div className={styles.container}>
         <div className="text-center">
           <Image src={tempJediBanner} alt="a temporary banner image with a diverse group of people experiencing technology" />

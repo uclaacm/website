@@ -1,3 +1,4 @@
+import { NextSeo } from 'next-seo';
 import Link from 'next/link';
 import React from 'react';
 
@@ -11,6 +12,21 @@ import styles from '../../styles/pages/jedi.module.scss';
 function Meet() {
 	return (
 		<Layout>
+      <NextSeo
+				title="Meet the JEDIs | ACM at UCLA"
+				description="Meet our wonderful JEDIs that make our program happen!"
+				openGraph={{
+					images: [
+						{
+							url: 'https://www.uclaacm.com/images/jedi/jedi-logo.png',
+							width: 714,
+							height: 395,
+							alt: 'The JEDI Logo',
+						},
+					],
+					site_name: 'ACM at UCLA',
+				}}
+			/>
       <div className={styles.container}>
         <JEDINav />
         <h1 className="text-right">meet the JEDIs</h1>

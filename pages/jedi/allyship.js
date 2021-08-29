@@ -1,3 +1,4 @@
+import { NextSeo } from 'next-seo';
 import React from 'react';
 
 import AllyshipSpaceCard from '../../components/JEDI/AllyshipSpaceCard';
@@ -11,6 +12,21 @@ import styles from '../../styles/pages/jedi.module.scss';
 function Allyship() {
 	return (
 		<Layout>
+      <NextSeo
+				title="JEDI Allyship Spaces | ACM at UCLA"
+				description="JEDI holds allyship spaces on a bunch of different topics related to EDI; check out our past events! Anyone can lead and attend an allyship space. If you have a topic you're interested in, let us know!"
+				openGraph={{
+					images: [
+						{
+							url: 'https://www.uclaacm.com/images/jedi/allyship-banner.png',
+							width: 1920,
+							height: 1005,
+							alt: 'The JEDI Logo',
+						},
+					],
+					site_name: 'ACM at UCLA',
+				}}
+			/>
       <div className={styles.container}>
         <JEDINav />
         <h1 className="text-right">allyship spaces</h1>
