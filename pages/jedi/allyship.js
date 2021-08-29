@@ -1,4 +1,5 @@
 import { NextSeo } from 'next-seo';
+import Link from 'next/link';
 import React from 'react';
 
 import AllyshipSpaceCard from '../../components/JEDI/AllyshipSpaceCard';
@@ -32,7 +33,7 @@ function Allyship() {
         <h1 className="text-right">allyship spaces</h1>
         <p className={`text-right ${styles['desktop-half-width-right']}`}>
           {/* eslint-disable-next-line max-len */}
-          We hold allyship spaces on a bunch of different topics related to EDI; check out our past events below! Anyone can lead and attend an allyship space. If you have a topic you&apos;re interested in, [let us know](/contact)!
+          We hold allyship spaces on a bunch of different topics related to EDI; check out our past events below! Anyone can lead and attend an allyship space. If you have a topic you&apos;re interested in, <Link href="/jedi/meet#contact"><a className={styles['jedi-link']}>let us know</a></Link>!
         </p>
         {spaces.map((space) => <AllyshipSpaceCard {...space} key={space.title} /> )}
       </div>
