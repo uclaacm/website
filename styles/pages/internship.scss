@@ -57,7 +57,7 @@ p {
   text-align: right;
 }
 
-// this CSS modifies the FAQ component. 
+// this CSS modifies the FAQ component (Faq from 'react-faq-component') 
 // Since it's a component being imported, we have to use their structure of classes in order to manually style anything within the FAQ
 .faq {
   .faq-row-wrapper {

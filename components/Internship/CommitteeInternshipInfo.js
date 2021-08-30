@@ -5,7 +5,7 @@ function CommitteeInternshipInfo(props) {
     const {committees} = props;
     const [committeeName, setCommitteeName] = useState('Board');
     return(
-        <div>
+        <>
             <div className="content section logos-line">
                 {committees.map(committee =>
                     <div className="logo-diamond" key={committee.name} onClick={()=>setCommitteeName(committee.name)}>
@@ -33,7 +33,7 @@ function CommitteeInternshipInfo(props) {
                     <p> {committee.whatInternsWillDo} </p>
                 </div> :  null,
             )}
-        </div>
+        </>
     );
 }
 
