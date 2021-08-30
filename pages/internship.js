@@ -21,7 +21,7 @@ committees.unshift(
         image: '/images/committees/board_wordmark.svg',
         diamond: '/images/logo.png',
         internship: {
-            whatWeDo:
+            whatWeDo: (
             <>
                 With ACM being such a large organization, board serves to hold the club together.
                 We plan club-wide events like ACM’s general meeting in Fall and serve the committees
@@ -35,8 +35,8 @@ committees.unshift(
                     <li> Finance handles finances within ACM at UCLA</li>
                     <li> Internal Affairs maintains the culture of ACM by hosting events for all officers </li>
                 </ul>
-            </>,
-            whatInternsWillDo:
+            </> ),
+            whatInternsWillDo: (
             <ul>
                 <li> The Operations interns will TODO GET INFO AND ADD</li>
                 <li> The Dev team interns will train and maintain existing ACM projects
@@ -48,7 +48,7 @@ committees.unshift(
                     and work with committees to secure funding for events</li>
                 <li> The Internal Affairs interns will organize fun socials to bring officers across different
                      committees together, collaborate with other committees and help create the weekly newsletters</li>
-            </ul>,
+            </ul> ),
             card: '/images/cards/board_card.svg',
             nextSteps: 'Dev Team interns automatically become Dev Team officers in the spring. All other Interns will run for a director position in the Spring or will no longer officially be a member of the board.',
         },

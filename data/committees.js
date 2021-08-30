@@ -59,7 +59,7 @@ export default [
 		mission: 'Our mission is to teach skills revolving around video game development such as computer science, game design and art in order to help usher students into the game development industry.',
 		internship: {
 			whatWeDo: 'Studio wants to create a community of game developers, whether you’re interested in gameplay programming, graphics, animation, pixel, music, whatever. We want to help you express yourself through video game development.',
-			whatInternsWillDo:
+			whatInternsWillDo: (
 			<ul>
 				<li> Marketing interns will focus on community engagement,
 					particularly in the form of leading socials and increasing member retention</li>
@@ -67,7 +67,7 @@ export default [
 					Unity experience is heavily valued but not absolutely required, as much of game development is a
 					&apos;learn as you go&apos; style. C# skills and teaching experience are appreciated but are soft
 					expectations.</li>
-			</ul>,
+			</ul> ),
 			card: '/images/cards/studio_card.svg',
 			nextSteps: 'All Interns automatically become officers in the Spring if they choose to stay.',
 		},
@@ -222,12 +222,12 @@ export default [
 		diamond: '/images/diamonds/design_diamond.svg',
 		internship: {
 			whatWeDo: 'Design aims to foster a community passionate about design and user experience through the intersection of creativity and technology. We focus on UX/UI design, graphic design, web development, and more!',
-			whatInternsWillDo:
+			whatInternsWillDo: (
 			<ul>
 				<li> All interns will learn ACM&apos;s branding and style and learn to use Figma</li>
 				<li> Graphic design interns will create social media graphics for ACM</li>
 				<li> UX design interns will design for our various internal projects</li>
-			</ul>,
+			</ul> ),
 			card: '/images/cards/design_card.svg',
 			nextSteps: 'All Interns automatically become officers in the Spring if they choose to stay.',
 		},
@@ -282,12 +282,12 @@ export default [
 		diamond: '/images/diamonds/cyber_diamond.svg',
 		internship: {
 			whatWeDo: 'Our mission is to create a community in which both experts and beginners alike can grow in the field of cybersecurity skills and knowledge. We want to make cybersecurity simple and accessible for everyone.',
-			whatInternsWillDo:
+			whatInternsWillDo: (
 			<ul>
 				<li> Creating workshop content (ex. XSS, SQL injections, Reverse engineering)</li>
 				<li> Weekly chores such as submitting newsletter, design requests, and helping with the website</li>
 				<li> Socials events with other officers. Delivering at the minimum 1 workshop per quarter</li>
-			</ul>,
+			</ul> ),
 			card: '/images/cards/cyber_card.svg',
 			nextSteps: 'All interns in good standing (attending workshops/chores/meetings) automatically become officers in the spring!',
 		},
@@ -370,7 +370,7 @@ export default [
 		diamond: '/images/diamonds/teachLA_diamond.svg',
 		internship: {
 			whatWeDo: 'Teach LA pairs UCLA students with schools in Los Angeles to provide free computer science classes. We have a teaching/curriculum team and a development team depending on what you’re interested in!',
-			whatInternsWillDo:
+			whatInternsWillDo: (
 			<ul>
 				<li> The Logistics and Outreach intern will reach out to schools and plan teaching
 					schedules while working on instructor recruiting</li>
@@ -385,7 +385,7 @@ export default [
 					oversee the life cycle of a software project (does not involve much coding)</li>
 				<li> Dev Team Training interns will assist training directors in creating curriculum
 					and training devs</li>
-			</ul>,
+			</ul> ),
 			card: '/images/cards/teachLA_card.svg',
 			nextSteps: 'Interns will have to apply for or receive an officer role post-internship, or will revert back to instructors or devs',
 		},
@@ -452,14 +452,14 @@ export default [
 		diamond: '/images/diamonds/w_diamond.svg',
 		internship: {
 			whatWeDo: 'W is our committee focused on making tech a more diverse space! W does this through mentorship events, hosting career and networking panels, discussion spaces, and outreach events!',
-			whatInternsWillDo:
+			whatInternsWillDo: (
 			<ul>
 				<li> The Finance intern will manage and monitor the club budget</li>
 				<li> The Outreach intern will co-ordinate with other large UCLA clubs to plan
 					large diversity-focused events such as QWERHacks and Day of Code</li>
 				<li> The External intern will maintain contact with industry representatives
 					and recruiters to plan for colab events</li>
-			</ul> ,
+			</ul> ),
 			card: '/images/cards/w_card.svg',
 			nextSteps: 'All Interns automatically become officers in the Spring if they choose to stay.',
 		},
@@ -554,13 +554,13 @@ export default [
 		diamond: '/images/diamonds/ai_diamond.svg',
 		internship: {
 			whatWeDo: 'AI is about all things artificial intelligence and machine learning! We teach beginner-friendly and advanced workshops, run projects, and teach kids about machine learning :) ',
-			whatInternsWillDo:
+			whatInternsWillDo: (
 			<ul>
 				<li> The Outreach intern will teach weekly ML classes to high school students</li>
 				<li> The Projects intern will guide people through building a deep learning model in PyTorch</li>
 				<li> The Events intern will help create content, host and organize one-off or recurring events</li>
 				<li> The Workshops interns will teach weekly ML and AI workshops to UCLA students</li>
-			</ul>,
+			</ul> ),
 			card: '/images/cards/ai_card.svg',
 			nextSteps: 'All Interns automatically become officers in the Spring',
 		},
