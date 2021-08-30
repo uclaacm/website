@@ -28,9 +28,9 @@ function CommitteeInternshipInfo(props) {
                         width="250px"
                     />
                     <h4>What do we do?</h4>
-                    <p> {committee.whatWeDo} </p>
-                    <h4>What interns will do?</h4>
-                    <p> {committee.whatInternsWillDo} </p>
+                    <p> {committee.internship.whatWeDo} </p>
+                    <h4>What will interns do?</h4>
+                    <p> {committee.internship.whatInternsWillDo} </p>
                 </div> :  null,
             )}
         </>

@@ -7,7 +7,6 @@ export default [
 		tagline: 'Creative Expression through Games and VR',
 		image: '/images/committees/studio_wordmark.svg',
 		diamond: '/images/diamonds/studio_diamond.svg',
-		card: '/images/cards/studio_card.svg',
 		links: [
 			{
 				platform: 'facebook',
@@ -58,10 +57,20 @@ export default [
 		],
 		introImage: '/images/committees/studio/studio_motif_applied.png',
 		mission: 'Our mission is to teach skills revolving around video game development such as computer science, game design and art in order to help usher students into the game development industry.',
-		whatWeDo: 'Studio wants to create a community of game developers, whether you’re interested in gameplay programming, graphics, animation, pixel, music, whatever. We want to help you express yourself through video game development.',
-		whatInternsWillDo: `Marketing interns will focus on community engagement, particularly in the form of leading socials and increasing member retention. 
-		Unity Tutorial Subcommittee interns will help host Unity tutorials and bugfix in winter quarter. Unity experience is heavily valued but not absolutely required, as much of game development is a 'learn as you go' style. C# skills and teaching experience are appreciated but are soft expectations.`,
-		nextSteps: 'All Interns automatically become officers in the Spring if they choose to stay.',
+		internship: {
+			whatWeDo: 'Studio wants to create a community of game developers, whether you’re interested in gameplay programming, graphics, animation, pixel, music, whatever. We want to help you express yourself through video game development.',
+			whatInternsWillDo:
+			<ul>
+				<li> Marketing interns will focus on community engagement,
+					particularly in the form of leading socials and increasing member retention</li>
+				<li> Unity Tutorial Subcommittee interns will help host Unity tutorials and bugfix in winter quarter.
+					Unity experience is heavily valued but not absolutely required, as much of game development is a
+					&apos;learn as you go&apos; style. C# skills and teaching experience are appreciated but are soft
+					expectations.</li>
+			</ul>,
+			card: '/images/cards/studio_card.svg',
+			nextSteps: 'All Interns automatically become officers in the Spring if they choose to stay.',
+		},
 	},
 	{
 		name: 'ICPC',
@@ -131,10 +140,12 @@ export default [
 		mission: 'Our mission is to promote algorithmic thinking and help build proficient problem solvers.',
 		image: '/images/committees/icpc_wordmark.svg',
 		diamond: '/images/diamonds/icpc_diamond.svg',
-		card: '/images/cards/icpc_card.svg',
-		whatWeDo: 'ICPC spreads the joy of algorithmic problem solving - and helps you kick-start your career - through workshops, contests, and a top-ranked ICPC team!',
-		whatInternsWillDo: 'Interns will help produce and teach workshops in one of our three winter workshop tracks: Beginner Track (great for anyone interested in algorithms), Interview Track (best for people with interview and internship experience  already), and possibly Advanced Track (for people with background in competitive programming).',
-		nextSteps: 'All Interns automatically become officers in the Spring if they choose to stay.',
+		internship: {
+			whatWeDo: 'ICPC spreads the joy of algorithmic problem solving - and helps you kick-start your career - through workshops, contests, and a top-ranked ICPC team!',
+			whatInternsWillDo: 'Interns will help produce and teach workshops in one of our three winter workshop tracks: Beginner Track (great for anyone interested in algorithms), Interview Track (best for people with interview and internship experience  already), and possibly Advanced Track (for people with background in competitive programming).',
+			card: '/images/cards/icpc_card.svg',
+			nextSteps: 'All Interns automatically become officers in the Spring if they choose to stay.',
+		},
 	},
 	{
 		name: 'Design',
@@ -209,12 +220,17 @@ export default [
 		mission: 'Our mission is to design, manage, and support the visual identity of ACM at UCLA. We create the club\'s branding, event banners, and more elements, while also doing workshops to teach UI/UX to the UCLA community.',
 		image: '/images/committees/design_wordmark.svg',
 		diamond: '/images/diamonds/design_diamond.svg',
-		card: '/images/cards/design_card.svg',
-		whatWeDo: 'Design aims to foster a community passionate about design and user experience through the intersection of creativity and technology. We focus on UX/UI design, graphic design, web development, and more!',
-		whatInternsWillDo: `All interns will learn ACM's branding and style and learn to use Figma. 
-		Graphic design interns will create social media graphics for ACM.
-		UX design interns will design for our various internal projects.`,
-		nextSteps: 'All Interns automatically become officers in the Spring if they choose to stay.',
+		internship: {
+			whatWeDo: 'Design aims to foster a community passionate about design and user experience through the intersection of creativity and technology. We focus on UX/UI design, graphic design, web development, and more!',
+			whatInternsWillDo:
+			<ul>
+				<li> All interns will learn ACM&apos;s branding and style and learn to use Figma</li>
+				<li> Graphic design interns will create social media graphics for ACM</li>
+				<li> UX design interns will design for our various internal projects</li>
+			</ul>,
+			card: '/images/cards/design_card.svg',
+			nextSteps: 'All Interns automatically become officers in the Spring if they choose to stay.',
+		},
 	},
 	{
 		name: 'Cyber',
@@ -264,12 +280,17 @@ export default [
 		mission: 'Our mission is to create a community in which both experts and beginners alike can grow in the field of cybersecurity skills and knowledge. We want to make cybersecurity simple and accessible for everyone.',
 		image: '/images/committees/cyber_wordmark.svg',
 		diamond: '/images/diamonds/cyber_diamond.svg',
-		card: '/images/cards/cyber_card.svg',
-		whatWeDo: 'Our mission is to create a community in which both experts and beginners alike can grow in the field of cybersecurity skills and knowledge. We want to make cybersecurity simple and accessible for everyone.',
-		whatInternsWillDo: `Creating workshop content (ex. XSS, SQL injections, Reverse engineering)
-			Weekly chores such as submitting newsletter, design requests, and helping with the website
-			Socials events with other officers. Delivering at the minimum 1 workshop per quarter.`,
-		nextSteps: 'All interns in good standing (attending workshops/chores/meetings) automatically become officers in the spring!',
+		internship: {
+			whatWeDo: 'Our mission is to create a community in which both experts and beginners alike can grow in the field of cybersecurity skills and knowledge. We want to make cybersecurity simple and accessible for everyone.',
+			whatInternsWillDo:
+			<ul>
+				<li> Creating workshop content (ex. XSS, SQL injections, Reverse engineering)</li>
+				<li> Weekly chores such as submitting newsletter, design requests, and helping with the website</li>
+				<li> Socials events with other officers. Delivering at the minimum 1 workshop per quarter</li>
+			</ul>,
+			card: '/images/cards/cyber_card.svg',
+			nextSteps: 'All interns in good standing (attending workshops/chores/meetings) automatically become officers in the spring!',
+		},
 	},
 	{
 		name: 'Teach LA',
@@ -347,15 +368,27 @@ export default [
 		mission: 'Our mission is to provide equal access to K-12 CS education in the Los Angeles area. We do this by teaching classes, running workshops and events, and writing software!',
 		image: '/images/committees/teachLA_wordmark.svg',
 		diamond: '/images/diamonds/teachLA_diamond.svg',
-		card: '/images/cards/teachLA_card.svg',
-		whatWeDo: 'Teach LA pairs UCLA students with schools in Los Angeles to provide free computer science classes. We have a teaching/curriculum team and a development team depending on what you’re interested in!',
-		whatInternsWillDo: `The Logistics and Outreach intern will reach out to schools and plan teaching schedules while working on instructor recruiting. 
-		The JEDI intern will work with JEDI directors to help plan allyship spaces and train new instructors. 
-		Speaker Series + Events Interns will be in charge of planning and putting on larger-scale events like Day of Code and coordinating smaller one-off events like speaker series.  
-		Teaching Interns will either help School Leads with coordinating teaching with other instructors and reporting feedback, or serve as the point person for a class. 
-		Dev Team PM interns will be trained to become Product/Project managers and oversee the life cycle of a software project (does not involve much coding). 
-		Dev Team Training interns will assist training directors in creating curriculum and training devs. `,
-		nextSteps: 'Interns will have to apply for or receive an officer role post-internship, or will revert back to instructors or devs',
+		internship: {
+			whatWeDo: 'Teach LA pairs UCLA students with schools in Los Angeles to provide free computer science classes. We have a teaching/curriculum team and a development team depending on what you’re interested in!',
+			whatInternsWillDo:
+			<ul>
+				<li> The Logistics and Outreach intern will reach out to schools and plan teaching
+					schedules while working on instructor recruiting</li>
+				<li> The JEDI intern will work with JEDI directors to help plan allyship spaces
+					and train new instructors</li>
+				<li> Speaker Series + Events Interns will be in charge of planning and putting on
+					larger-scale events like Day of Code and coordinating smaller one-off events
+					like speaker series</li>
+				<li> Teaching Interns will either help School Leads with coordinating teaching with
+					other instructors and reporting feedback, or serve as the point person for a class</li>
+				<li> Dev Team PM interns will be trained to become Product/Project managers and
+					oversee the life cycle of a software project (does not involve much coding)</li>
+				<li> Dev Team Training interns will assist training directors in creating curriculum
+					and training devs</li>
+			</ul>,
+			card: '/images/cards/teachLA_card.svg',
+			nextSteps: 'Interns will have to apply for or receive an officer role post-internship, or will revert back to instructors or devs',
+		},
 	},
 	{
 		name: 'W',
@@ -417,12 +450,19 @@ export default [
 		mission: 'Our goal is to promote diversity in tech through mentorship, networking, and professional development opportunities. We’re a safe space for everyone interested in computer science. :)',
 		image: '/images/committees/w_wordmark.svg',
 		diamond: '/images/diamonds/w_diamond.svg',
-		card: '/images/cards/w_card.svg',
-		whatWeDo: 'W is our committee focused on making tech a more diverse space! W does this through mentorship events, hosting career and networking panels, discussion spaces, and outreach events!',
-		whatInternsWillDo: `The Finance intern will manage and monitor the club budget. 
-		The Outreach intern will co-ordinate with other large UCLA clubs to plan large diversity-focused events such as QWERHacks and Day of Code. 
-		The External intern will maintain contact with industry representatives and recruiters to plan for colab events.`,
-		nextSteps: 'All Interns automatically become officers in the Spring if they choose to stay.',
+		internship: {
+			whatWeDo: 'W is our committee focused on making tech a more diverse space! W does this through mentorship events, hosting career and networking panels, discussion spaces, and outreach events!',
+			whatInternsWillDo:
+			<ul>
+				<li> The Finance intern will manage and monitor the club budget</li>
+				<li> The Outreach intern will co-ordinate with other large UCLA clubs to plan
+					large diversity-focused events such as QWERHacks and Day of Code</li>
+				<li> The External intern will maintain contact with industry representatives
+					and recruiters to plan for colab events</li>
+			</ul> ,
+			card: '/images/cards/w_card.svg',
+			nextSteps: 'All Interns automatically become officers in the Spring if they choose to stay.',
+		},
 	},
 	{
 		name: 'AI',
@@ -512,13 +552,18 @@ export default [
 		mission: 'Our mission is to grow and develop a community of students interested in Artificial Intelligence (AI) at UCLA, Los Angeles, and beyond. Our initiatives aim to serve everyone who has an interest in AI regardless of background, including people with no prior experience or knowledge in AI and non-CS majors.',
 		image: '/images/committees/ai_wordmark.svg',
 		diamond: '/images/diamonds/ai_diamond.svg',
-		card: '/images/cards/ai_card.svg',
-		whatWeDo: 'AI is about all things artificial intelligence and machine learning! We teach beginner-friendly and advanced workshops, run projects, and teach kids about machine learning :) ',
-		whatInternsWillDo: `The Outreach intern will teach weekly ML classes to high school students. 
-		The Projects intern will guide people through building a deep learning model in PyTorch. 
-		The Events intern will help create content, host and organize one-off or recurring events. 
-		The Workshops interns will teach weekly ML and AI workshops to UCLA students.`,
-		nextSteps: 'All Interns automatically become officers in the Spring',
+		internship: {
+			whatWeDo: 'AI is about all things artificial intelligence and machine learning! We teach beginner-friendly and advanced workshops, run projects, and teach kids about machine learning :) ',
+			whatInternsWillDo:
+			<ul>
+				<li> The Outreach intern will teach weekly ML classes to high school students</li>
+				<li> The Projects intern will guide people through building a deep learning model in PyTorch</li>
+				<li> The Events intern will help create content, host and organize one-off or recurring events</li>
+				<li> The Workshops interns will teach weekly ML and AI workshops to UCLA students</li>
+			</ul>,
+			card: '/images/cards/ai_card.svg',
+			nextSteps: 'All Interns automatically become officers in the Spring',
+		},
 	},
 	{
 		name: 'Hack',
@@ -568,9 +613,11 @@ export default [
 		mission: 'To empower the community by providing the means to build amazing things and explore what is possible through code!',
 		image: '/images/committees/hack_wordmark.svg',
 		diamond: '/images/diamonds/hack_diamond.svg',
-		card: '/images/cards/hack_card.svg',
-		whatWeDo: 'Hack is all about empowering the community with the means to build amazing things using software. We deal primarily with software development, most commonly web and mobile app development, and host events for these such as workshops and hackathons.',
-		whatInternsWillDo: 'Interns will work closely with the rest of the team to organize events, fulfilling roles (i.e. event  director, curriculum developer, marketing) chosen based on  personal interest prior to each quarter.',
-		nextSteps: 'All Interns automatically become officers in the Spring if they choose to stay.',
+		internship: {
+			whatWeDo: 'Hack is all about empowering the community with the means to build amazing things using software. We deal primarily with software development, most commonly web and mobile app development, and host events for these such as workshops and hackathons.',
+			whatInternsWillDo: 'Interns will work closely with the rest of the team to organize events, fulfilling roles (i.e. event  director, curriculum developer, marketing) chosen based on personal interest prior to each quarter.',
+			card: '/images/cards/hack_card.svg',
+			nextSteps: 'All Interns automatically become officers in the Spring if they choose to stay.',
+		},
 	},
 ];
