@@ -4,45 +4,26 @@ import React, { useState, useEffect } from 'react';
 
 export default function Navbar() {
   // set states
-  const [menuActive, setMenuActive] = useState('');
-  const [linkActive, setLinkActive] = useState('');
+  const [menuActive, setMenuActive] = useState(false);
+  const [activeLink, setActiveLink] = useState('');
 
   const router = useRouter();
 
   // switches mobile menu state
   const menuActivate = () => {
-    setMenuActive(menuActive ? '' : 'active');
+    setMenuActive(menuActive ? false : true);
   };
 
   // allows accessible access to mobile menu
-  const menuAccessible = (event) => {
-    if (event.code === 'Enter' || event.code === 'Space') {
-      setMenuActive(menuActive ? '' : 'active');
-    }
-  };
+  // const menuAccessible = (event) => {
+  //   if (event.code === 'Enter' || event.code === 'Space') {
+  //     setMenuActive(menuActive ? false  : true);
+  //   }
+  // };
 
   useEffect(() => {
-    const hamburger = document.querySelector('#hamburger');
-    const navItems = document.querySelector('.nav-items');
-    const listItems = navItems.querySelectorAll(':scope > li');
-
-    setLinkActive(router.asPath);
-    hamburger.addEventListener('click', menuActivate);
-    hamburger.addEventListener('keyup', menuAccessible);
-    // closes menu on link click
-    listItems.forEach((item) => {
-      item.addEventListener('click', menuActivate);
-      item.addEventListener('keyup', menuAccessible);
-    });
-
-    return function cleanUp() {
-      hamburger.removeEventListener('click', menuActivate);
-      hamburger.removeEventListener('keyup', menuAccessible);
-      listItems.forEach((item) => {
-        item.removeEventListener('click', menuActivate);
-        item.removeEventListener('keyup', menuAccessible);
-      });
-    };
+    // highlights link for current route
+    setActiveLink(router.asPath);
   }, [menuActive]);
 
   return(
@@ -57,28 +38,28 @@ export default function Navbar() {
           </a>
         </Link>
         <section id="nav-items-container">
-          <div className={menuActive} id="hamburger" role="button" aria-label="navigation menu" aria-expanded={menuActive === 'active' ? true : false} tabIndex="0">
-            <div className="bar" />
-          </div>
-          <section className={menuActive} id="menu-modal">
-            <ul className={`nav-items ${menuActive}`} role="presentation">
-              <li><Link href="/about"><a className={linkActive === '/about' ? 'active' : ''}>About</a></Link></li>
-              <li><Link href="/committees"><a className={linkActive === '/commitees' ? 'active' : ''}>Committees</a></Link></li>
+          <button className={menuActive ? 'active' : ''} id="hamburger" type="button" onClick={menuActivate} aria-label="navigation menu" aria-expanded={menuActive} tabIndex="0">
+            <span className="bar"></span>
+          </button>
+          <section className={menuActive ? 'active' : ''} id="menu-modal">
+            <ul className={`nav-items ${menuActive ? 'active' : ''}`} role="presentation">
+              <li><Link href="/about" passHref={true}><button className={activeLink === '/about' ? 'active' : ''} type="button" role="link" onClick={menuActivate}>About</button></Link></li>
+              <li><Link href="/committees" passHref={true}><button className={activeLink === '/committees' ? 'active' : ''} type="button" role="link" onClick={menuActivate}>Committees</button></Link></li>
               {/* <li><Link href="/gm"><a>{gmData.date.quarter} GM</a></Link></li> */}
               <li id="committee-mobile-nav-item">
                 <ul className="committee-mobile-nav" role="presentation">
-                  <li><Link href={'/committees#studio'}><a className={linkActive === '/committees#studio' ? 'active' : ''}>Studio</a></Link></li>
-                  <li><Link href={'/committees#icpc'}><a className={linkActive === '/committees#icpc' ? 'active' : ''}>ICPC</a></Link></li>
-                  <li><Link href={'/committees#design'}><a className={linkActive === '/committees#design' ? 'active' : ''}>Design</a></Link></li>
-                  <li><Link href={'/committees#cyber'}><a className={linkActive === '/committees#cyber' ? 'active' : ''}>Cyber</a></Link></li>
-                  <li><Link href={'/committees#teachla'}><a className={linkActive === '/committees#teachla' ? 'active' : ''}>Teach LA</a></Link></li>
-                  <li><Link href={'/committees#w'}><a className={linkActive === '/committees#w' ? 'active' : ''}>W</a></Link></li>
-                  <li><Link href={'/committees#ai'}><a className={linkActive === '/committees#ai' ? 'active' : ''}>AI</a></Link></li>
-                  <li><Link href={'/committees#hack'}><a className={linkActive === '/committees#hack' ? 'active' : ''}>Hack</a></Link></li>
+                  <li><Link href="/committees#studio" passHref={true}><button className={activeLink === '/committees#studio' ? 'active' : ''} type="button" onClick={menuActivate}>Studio</button></Link></li>
+                  <li><Link href="/committees#icpc" passHref={true}><button className={activeLink === '/committees#icpc' ? 'active' : ''} type="button" onClick={menuActivate}>ICPC</button></Link></li>
+                  <li><Link href="/committees#design" passHref={true}><button className={activeLink === '/committees#design' ? 'active' : ''} type="button" onClick={menuActivate}>Design</button></Link></li>
+                  <li><Link href="/committees#cyber" passHref={true}><button className={activeLink === '/committees#cyber' ? 'active' : ''} type="button" onClick={menuActivate}>Cyber</button></Link></li>
+                  <li><Link href="/committees#teachla" passHref={true}><button className={activeLink === '/committees#teachla' ? 'active' : ''} type="button" onClick={menuActivate}>Teach LA</button></Link></li>
+                  <li><Link href="/committees#w" passHref={true}><button className={activeLink === '/committees#w' ? 'active' : ''} type="button" onClick={menuActivate}>W</button></Link></li>
+                  <li><Link href="/committees#ai" passHref={true}><button className={activeLink === '/committees#ai' ? 'active' : ''} type="button" onClick={menuActivate}>AI</button></Link></li>
+                  <li><Link href="/committees#hack" passHref={true}><button className={activeLink === '/committees#hack' ? 'active' : ''} type="button" onClick={menuActivate}>Hack</button></Link></li>
                 </ul>
               </li>
-              <li><Link href="/events"><a className={linkActive === '/events' ? 'active' : ''}>Events</a></Link></li>
-              <li><Link href="/sponsors"><a className={linkActive === '/sponsors' ? 'active' : ''}>Sponsors</a></Link></li>
+              <li><Link href="/events" passHref={true}><button className={activeLink === '/events' ? 'active' : ''} type="button" role="link" onClick={menuActivate}>Events</button></Link></li>
+              <li><Link href="/sponsors" passHref={true}><button className={activeLink === '/sponsors' ? 'active' : ''} type="button" role="link" onClick={menuActivate}>Sponsors</button></Link></li>
               <li><Link href="https://members.uclaacm.com"><a className="button button-transparent button-lg font-header">Member Login</a></Link>
               </li>
             </ul>

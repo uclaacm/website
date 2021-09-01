@@ -30,7 +30,8 @@
 
     #hamburger {
       align-items: center;
-      border: 03px solid $font-secondary-color;
+      background-color: transparent;
+      border: none;
       border-radius: 50%;
       cursor: pointer;
       display: none; // will become flex at smaller screen size
@@ -58,6 +59,7 @@
           border-radius: 04px;
           content: '';
           height: 03px;
+          left: 0;
           position: absolute;
           transition: all 0.5s ease-in-out;
           width: 100%;
@@ -109,29 +111,29 @@
       padding: 0;
 
       li {
-        font-size: 0.95em;
-        font-weight: 600;
-        height: 40px;
+        // height: 40px;
         line-height: 40px;
         padding: 0 20px;
-        text-transform: lowercase;
-        transition: 0.2s;
 
-        a,
-        a:visited {
+        button {
+          background-color: transparent;
+          border: none;
           color: inherit;
-          text-decoration: none;
+          font-size: 0.95em;
+          font-weight: 600;
+          text-transform: lowercase;
+          transition: 0.2s;
 
           &.active {
             color: $acm-cobalt !important;
           }
-        }
-        
-        &:hover {
-          // which color to keep?
-          // color: #999;
-          color: $acm-cobalt !important;
-          cursor: pointer;
+          
+          &:hover {
+            // which color to keep?
+            // color: #999;
+            color: $acm-cobalt !important;
+            cursor: pointer;
+          }
         }
       }
 
