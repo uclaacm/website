@@ -14,13 +14,6 @@ export default function Navbar() {
     setMenuActive(menuActive ? false : true);
   };
 
-  // allows accessible access to mobile menu
-  // const menuAccessible = (event) => {
-  //   if (event.code === 'Enter' || event.code === 'Space') {
-  //     setMenuActive(menuActive ? false  : true);
-  //   }
-  // };
-
   useEffect(() => {
     // highlights link for current route
     setActiveLink(router.asPath);
