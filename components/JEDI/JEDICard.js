@@ -10,7 +10,6 @@ import styles from '../../styles/pages/jedi.module.scss';
 function JEDICard({ name, pronouns, bio, pic, alt }) {
   return (
     <div className={styles['mb-2']}>
-      {/* TODO: better CSS styling */}
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img className={styles['jedi-profile-img']} src={pic} alt={alt} />
       <div className={styles['jedi-card-body']}>

@@ -92,7 +92,7 @@ function JEDIAbout () {
             </p>
           </div>
         </div>
-        <div className="text-right">
+        <div className={`text-right ${styles['container-padding']}`}>
           <h2>don&apos;t be a stranger!</h2>
           <p>
             say hi to our JEDI director Helia at <a className={styles['jedi-link']} href={`mailto:${contactEmail}`}>{contactEmail}</a>

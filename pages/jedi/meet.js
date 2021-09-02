@@ -27,7 +27,7 @@ function Meet() {
 					site_name: 'ACM at UCLA',
 				}}
 			/>
-      <div className={styles.container}>
+      <div className={`${styles.container} ${styles['container-padding']}`}>
         <JEDINav />
         <h1 className="text-right">meet the JEDIs</h1>
         <div className={styles['tri-grid']}>

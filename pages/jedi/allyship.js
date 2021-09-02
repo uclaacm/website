@@ -28,7 +28,7 @@ function Allyship() {
 					site_name: 'ACM at UCLA',
 				}}
 			/>
-      <div className={styles.container}>
+      <div className={`${styles.container} ${styles['container-padding']}`}>
         <JEDINav />
         <h1 className="text-right">allyship spaces</h1>
         <p className={`text-right ${styles['desktop-half-width-right']}`}>

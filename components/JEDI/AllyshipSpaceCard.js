@@ -12,7 +12,6 @@ import styles from '../../styles/pages/jedi.module.scss';
 function AllyshipSpaceCard({ title, date, location, description, pic, alt, rsvp, slides }) {
   return (
     <div className={styles['allyship-row']}>
-      {/* TODO: better CSS styling */}
       <Image src={pic} alt={alt} />
       <div>
         <h2 className={styles['my-tight']}>{title}</h2>
@@ -20,8 +19,6 @@ function AllyshipSpaceCard({ title, date, location, description, pic, alt, rsvp,
         <p className={styles['my-tight']}>
           {description}
         </p>
-        {/* TODO: icon fonts? */}
-        {/* TODO: decoupling specific data structures */}
         {/* wrapped in a fragment to allow for spacing */}
         {rsvp && <><Link href={rsvp}><a className="button">RSVP</a></Link>{' '}</>}
         {slides && <><Link href={slides}><a className="button">Slides</a></Link>{' '}</>}
