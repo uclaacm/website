@@ -4,8 +4,11 @@ export default [
 	{
 		name: 'Studio',
 		class: 'studio',
+		slug: 'studio',
 		tagline: 'Creative Expression through Games and VR',
+		external_link: null,
 		image: '/images/committees/studio_wordmark.svg',
+		wordmark_dark: '/images/committees/studio_wordmark_dark.svg',
 		diamond: '/images/diamonds/studio_diamond.svg',
 		links: [
 			{
@@ -53,7 +56,9 @@ export default [
 	{
 		name: 'ICPC',
 		class: 'icpc',
+		slug: 'icpc',
 		tagline: 'Mastering Algorithms and Competitive Programming',
+		external_link: 'https://icpc.uclaacm.com/',
 		links: [
 			{
 				platform: 'website',
@@ -93,12 +98,15 @@ export default [
 		introImage: '/images/committees/icpc/icpc_motif_applied.png',
 		mission: 'Our mission is to promote algorithmic thinking and help build proficient problem solvers.',
 		image: '/images/committees/icpc_wordmark.svg',
+		wordmark_dark: '/images/committees/icpc_wordmark_dark.svg',
 		diamond: '/images/diamonds/icpc_diamond.svg',
 	},
 	{
 		name: 'Design',
 		class: 'design',
+		slug: 'design',
 		tagline: 'Form Follows Function',
+		external_link: null,
 		links: [
 			{
 				platform: 'website',
@@ -142,12 +150,15 @@ export default [
 		introImage: '/images/committees/design/design_motif_applied.png',
 		mission: 'Our mission is to design, manage, and support the visual identity of ACM at UCLA. We create the club\'s branding, event banners, and more elements, while also doing workshops to teach UI/UX to the UCLA community.',
 		image: '/images/committees/design_wordmark.svg',
+		wordmark_dark: '/images/committees/design_wordmark_dark.svg',
 		diamond: '/images/diamonds/design_diamond.svg',
 	},
 	{
 		name: 'Cyber',
 		class: 'cyber',
+		slug: 'cyber',
 		tagline: 'Cybersecurity Made Simple',
+		external_link: 'https://acmcyber.com/',
 		links: [
 			{
 				platform: 'website',
@@ -191,12 +202,15 @@ export default [
 		introImage: '/images/committees/cyber/cyber_motif_applied.png',
 		mission: 'Our mission is to create a community in which both experts and beginners alike can grow in the field of cybersecurity skills and knowledge. We want to make cybersecurity simple and accessible for everyone.',
 		image: '/images/committees/cyber_wordmark.svg',
+		wordmark_dark: '/images/committees/cyber_wordmark_dark.svg',
 		diamond: '/images/diamonds/cyber_diamond.svg',
 	},
 	{
 		name: 'Teach LA',
 		class: 'teachla',
+		slug: 'teachla',
 		tagline: 'Learn It, Teach It',
+		external_link: 'https://teachla.uclaacm.com',
 		links: [
 			{
 				platform: 'website',
@@ -244,12 +258,15 @@ export default [
 		introImage: '/images/committees/teachLA/teachLA_motif_applied.png',
 		mission: 'Our mission is to provide equal access to K-12 CS education in the Los Angeles area. We do this by teaching classes, running workshops and events, and writing software!',
 		image: '/images/committees/teachLA_wordmark.svg',
+		wordmark_dark: '/images/committees/teachLA_wordmark_dark.svg',
 		diamond: '/images/diamonds/teachLA_diamond.svg',
 	},
 	{
 		name: 'W',
 		class: 'w',
+		slug: 'w',
 		tagline: 'Starting Conversations about Diversity in Tech',
+		external_link: null,
 		links: [
 			{
 				platform: 'website',
@@ -289,12 +306,15 @@ export default [
 		introImage: '/images/committees/w/w_motif_applied.png',
 		mission: 'Our goal is to promote diversity in tech through mentorship, networking, and professional development opportunities. We’re a safe space for everyone interested in computer science. :)',
 		image: '/images/committees/w_wordmark.svg',
+		wordmark_dark: '/images/committees/w_wordmark_dark.svg',
 		diamond: '/images/diamonds/w_diamond.svg',
 	},
 	{
 		name: 'AI',
 		class: 'ai',
+		slug: 'ai',
 		tagline: 'Learning Machine Learning',
+		external_link: 'https://uclaacmai.github.io/',
 		links: [
 			{
 				platform: 'website',
@@ -350,12 +370,15 @@ export default [
 		introImage: '/images/committees/ai/ai_motif_applied.png',
 		mission: 'Our mission is to grow and develop a community of students interested in Artificial Intelligence (AI) at UCLA, Los Angeles, and beyond. Our initiatives aim to serve everyone who has an interest in AI regardless of background, including people with no prior experience or knowledge in AI and non-CS majors.',
 		image: '/images/committees/ai_wordmark.svg',
+		wordmark_dark: '/images/committees/ai_wordmark_dark.svg',
 		diamond: '/images/diamonds/ai_diamond.svg',
 	},
 	{
 		name: 'Hack',
 		class: 'hack',
+		slug: 'hack',
 		tagline: 'Move Fast, Build Things',
+		external_link: 'https://hack.uclaacm.com',
 		links: [
 			{
 				platform: 'website',
@@ -399,6 +422,7 @@ export default [
 		introImage: '/images/committees/hack/hack_motif_applied.png',
 		mission: 'To empower the community by providing the means to build amazing things and explore what is possible through code!',
 		image: '/images/committees/hack_wordmark.svg',
+		wordmark_dark: '/images/committees/hack_wordmark_dark.svg',
 		diamond: '/images/diamonds/hack_diamond.svg',
 	},
 ];
