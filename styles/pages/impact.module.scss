@@ -66,14 +66,38 @@
   width: 3em;
 }
 
-.carousel-button-prev {
+.carousel-container {
   display: flex;
-  justify-content: flex-end;
-  float: left;
+  flex-direction: column;
 }
 
-.carousel-button-next {
+.button-container {
+  margin: 5px;
+  padding: 5px;
   display: flex;
-  justify-content: flex-end;
-  float: right;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-selected {
+  padding: 5px;
+  margin: 5px;
+  display: inline-block;
+  background-color: #49EEA1;
+  border-radius: 50%;
+  width: 5.73px;
+  height: 5.73px;
+  border: none;
+}
+
+.btn-unselected {
+  padding: 5px;
+  margin: 5px;
+  display: inline-block;
+  background-color: #C4C4C4;
+  border-radius: 50%;
+  width: 5.73px;
+  height: 5.73px;
+  border: none;
 }

@@ -6,8 +6,12 @@ import styles from '../../styles/pages/impact.module.scss';
 import BlogCard from './BlogCard';
 
 function Carousel() {
-    const [ blog, changeBlog ] = useState(0);
-    const blogInfo = blogs[blog];
+    const [ blog, changeBlog ] = useState(0); // keeps track of blog index (0, 1, or 2) that is currently active
+    const blogInfo = blogs[blog]; // stores blog info for the blog number that is currently active
+
+    const handleChange = (blogNum) => {
+        changeBlog(blogNum);
+    };
 
     const handleNext = () => {
         if (blog >= (blogs.length - 1))
@@ -31,8 +35,7 @@ function Carousel() {
       }, [blog]);
 
     return (
-        <div >
-            <button onClick={handleNext} className={styles['carousel-button-prev']}>Previous</button>
+        <div className="carousel-container">
             <BlogCard
                         title={blogInfo.title}
                         author={blogInfo.author}
@@ -44,9 +47,15 @@ function Carousel() {
                         authorAlt={blogInfo.authorAlt}
                         backgroundStyle={blogInfo.backgroundStyle}
                     />
-            <button onClick={handlePrev} className={styles['carousel-button-next']}>Next</button>
+            <div className={styles['button-container']}>
+                <button onClick={() => handleChange(0)} className={blog === 0 ? styles['btn-selected'] : styles['btn-unselected']}></button>
+                <button onClick={() => handleChange(1)} className={blog === 1 ? styles['btn-selected'] : styles['btn-unselected']}></button>
+                <button onClick={() => handleChange(2)} className={blog === 2 ? styles['btn-selected'] : styles['btn-unselected']}></button>
+            </div>
         </div>
     );
 }
 
 export default Carousel;
+
+// blog === 0 ? styles['btn-selected'] : styles['btn-unselected']
