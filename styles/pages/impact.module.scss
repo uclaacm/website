@@ -16,6 +16,22 @@
   padding-bottom: 0;
 }
 
+.text-center-holographic {
+  z-index: -100;
+  position: absolute;
+  left: 626.37px;
+  top: 605.3px;
+  padding-left: 3px;
+  text-align: center;
+  font-family: $font-header;
+  background-image: linear-gradient(rgba(255, 0, 92, 0.3996),
+  rgba(177, 100, 255, 0.54),
+  rgba(51, 255, 206, 0.54),
+  rgba(125, 255, 46, 0.54));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .workshop-card {
   padding: 0 1em;
 }

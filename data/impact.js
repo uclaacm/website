@@ -85,7 +85,7 @@ export const blogs = [
 		author: 'ACM at UCLA',
 		date: 'Jan 7',
 		length: '3 min read',
-		img: 'https://cdn.shopify.com/s/files/1/0070/7032/files/how-to-start-a-blog-illustration.png?format=jpg&quality=90&v=1595363254&width=1024',
+		img: 'https://blog.hubspot.com/hubfs/GettyImages-974683580.jpg',
 		href: 'https://medium.com/@acmucla',
 		authorImg: 'https://www.ssu.ca/wp-content/uploads/2020/08/default-profile.png',
 		authorAlt: 'default profile pic',

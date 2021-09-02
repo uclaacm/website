@@ -9,8 +9,9 @@ function Carousel() {
     const [ blog, changeBlog ] = useState(0); // keeps track of blog index (0, 1, or 2) that is currently active
     const blogInfo = blogs[blog]; // stores blog info for the blog number that is currently active
 
-    const handleChange = (blogNum) => {
-        changeBlog(blogNum);
+    const handleChange = (blogIndex) => {
+        // change active blog to the one specified by the blogIndex
+        changeBlog(blogIndex);
     };
 
     const handleNext = () => {
@@ -20,13 +21,7 @@ function Carousel() {
             changeBlog(blog+1);
     };
 
-    const handlePrev = () => {
-        if (blog <= 0)
-            changeBlog(blogs.length-1);
-        else
-            changeBlog(blog-1);
-    };
-
+    // changes currently active blog every 5 seconds
     useEffect(() => {
         const interval = setInterval(() => {
           handleNext();
