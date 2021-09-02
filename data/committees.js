@@ -6,6 +6,7 @@ export default [
 		class: 'studio',
 		slug: 'studio',
 		tagline: 'Creative Expression through Games and VR',
+		external_link: null,
 		image: '/images/committees/studio_wordmark.svg',
 		wordmark_dark: '/images/committees/studio_wordmark_dark.svg',
 		diamond: '/images/diamonds/studio_diamond.svg',
@@ -105,6 +106,7 @@ export default [
 		class: 'design',
 		slug: 'design',
 		tagline: 'Form Follows Function',
+		external_link: null,
 		links: [
 			{
 				platform: 'website',
@@ -264,6 +266,7 @@ export default [
 		class: 'w',
 		slug: 'w',
 		tagline: 'Starting Conversations about Diversity in Tech',
+		external_link: null,
 		links: [
 			{
 				platform: 'website',
