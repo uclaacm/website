@@ -11,6 +11,12 @@
   position: relative;
   width: 80vw;
   
+  .internship-info-data {
+    font-size: 0.8em;
+    line-height: 150%;
+    margin: 0 22px 14px;
+  }
+
   &.studio {
     box-shadow: 0 0.125rem 0.5rem $studio-raspberry, 0 0.0625rem 0.125rem $studio-raspberry;
   }  
@@ -60,12 +66,10 @@
   
   .logo-diamond {
     padding: 5px;
-  
-    img {
-      &:hover {
-        cursor: pointer;
-        transform: scale(1.08);
-      }
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.08);
     }
   }
 }  

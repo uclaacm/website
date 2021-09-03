@@ -72,13 +72,13 @@ function InternshipPage(){
             <div className="content-section text-center">
                 <h2>Applications</h2>
                 <InternshipTimeline items={items}/>
-                <div className="application-information">
+                <div className="grid-tablet-2">
                     <div>
                         {items.map((item, i) => (
                         <div key={i} className='application-item'>
                             {item.date} &nbsp;
                             {item.name}
-                            <p>{item.info}</p>
+                            <p className='application-item-info'>{item.info}</p>
                         </div>
                         ))}
                         -- more dates will be added throughout the quarter --
@@ -126,7 +126,7 @@ function InternshipPage(){
                                     height = "60px"
                                 /> */}
                                 <p>{testimonial.quote}</p>
-                                <p className='testimonial-giver'>- {testimonial.name}, {testimonial.committee} intern, {testimonial.year}</p>
+                                <p className='text-right'>- {testimonial.name}, {testimonial.committee} intern, {testimonial.year}</p>
                             </div>
                     ))}
                 </div>

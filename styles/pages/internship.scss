@@ -4,27 +4,12 @@
   padding: 5px;
 }
 
-p {
-  font-size: 0.8em;
-  line-height: 150%;
-  margin: 0 22px 14px;
-
-  &.subheading {
-    font-size: 1em;
-  }
-}
-
-.application-information {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
 .application-item {
   margin-bottom: 15px;
   margin-top: 10px;
   text-align: left;
 
-  p {
+  .application-item-info {
     margin-left: 15%;
     margin-top: 5px;
   }
@@ -51,10 +36,6 @@ p {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin-top: 20px;
-}
-
-.testimonial-giver {
-  text-align: right;
 }
 
 // this CSS modifies the FAQ component (Faq from 'react-faq-component') 

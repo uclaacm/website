@@ -30,9 +30,9 @@ function CommitteeInternshipInfo(props) {
                         width="250px"
                     />
                     <h4>What do we do?</h4>
-                    <p> {committee.internship.whatWeDo} </p>
+                    <p className={styles['internship-info-data']}> {committee.internship.whatWeDo} </p>
                     <h4>What will interns do?</h4>
-                    <p> {committee.internship.whatInternsWillDo} </p>
+                    <p className={styles['internship-info-data']}> {committee.internship.whatInternsWillDo} </p>
                 </div> :  null,
             )}
         </>
