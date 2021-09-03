@@ -3,31 +3,31 @@ import React from 'react';
 export default {
     items: [
         {
-            date: '00/00',
+            date: '10/10',
             name: 'apps open',
             info: 'information about the event',
             active: true,
         },
         {
-            date: '00/00',
+            date: '10/22',
             name: 'apps due',
             info: 'information about the event',
             active: false,
         },
         {
-            date: '00/00',
+            date: '10/22-11/02',
             name: 'interviews',
             info: 'information about the event',
             active: false,
         },
         {
-            date: '00/00',
+            date: '11/03-11/04',
             name: 'hear back',
             info: 'information about the event',
             active: false,
         },
         {
-            date: '00/00',
+            date: '11/06',
             name: 'onboarding',
             info: 'information about the event',
             active: false,
