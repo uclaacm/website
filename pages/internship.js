@@ -115,7 +115,7 @@ function InternshipPage(){
                 </Carousel>
             </div>
             <div className="content-section text-center">
-                <h2>Past Intern Testimonials</h2>
+                <h2>Hear from past interns!</h2>
                 <div className="testimonial-section">
                     {testimonials.map((testimonial, i) => (
                             <div key={i} className="testimonial-item">
@@ -125,8 +125,8 @@ function InternshipPage(){
                                     width = "60px"
                                     height = "60px"
                                 /> */}
-                                <p>{testimonial.quote}</p>
-                                <p className='text-right'>- {testimonial.name}, {testimonial.committee} intern, {testimonial.year}</p>
+                                <p className="text-left">{testimonial.quote}</p>
+                                <p className="text-right">- {testimonial.name} <br/> {testimonial.committee} intern, {testimonial.year}</p>
                             </div>
                     ))}
                 </div>
