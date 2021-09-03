@@ -115,12 +115,12 @@ export default {
         ],
     },
     FAQStyles: {
-        arrowColor: '#1E6CFF',
+        arrowColor: '#1E6CFF', // acm-cobalt hex value
         rowContentPaddingTop: '15px',
         rowContentPaddingBottom: '15px',
     },
     responsive: {
-        // uses recommended defaults for carousel
+        // uses recommended defaults for carousel from "Common Usage" on https://www.npmjs.com/package/react-multi-carousel
         desktop:
         {
             breakpoint: { max: 3000, min: 1024 },

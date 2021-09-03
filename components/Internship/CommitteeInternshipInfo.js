@@ -1,14 +1,16 @@
 import Image from 'next/image';
 import React, {useState} from 'react';
 
+import styles from '../../styles/components/Internship/CommitteeInternshipInfo.module.scss';
+
 function CommitteeInternshipInfo(props) {
     const {committees} = props;
     const [committeeName, setCommitteeName] = useState('Board');
     return(
         <>
-            <div className="content section logos-line">
+            <div className={styles['logos-line']}>
                 {committees.map(committee =>
-                    <div className="logo-diamond" key={committee.name} onClick={()=>setCommitteeName(committee.name)}>
+                    <div className={styles['logo-diamond']} key={committee.name} onClick={()=>setCommitteeName(committee.name)}>
                         <Image
                             src={committee.diamond}
                             alt={`${committee.name}'s logo`}
@@ -20,7 +22,7 @@ function CommitteeInternshipInfo(props) {
             </div>
             {committees.map(committee =>
                 committeeName == committee.name ?
-                <div className={'committee-internship-info ' + committee.class}key={committee.name}>
+                <div className={`${styles['committee-internship-info']} ${styles[committee.class]}`} key={committee.name}>
                     <Image
                         src={committee.image}
                         alt={`${committee.name}'s wordmark`}
