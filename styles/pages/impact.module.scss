@@ -16,11 +16,23 @@
   padding-bottom: 0;
 }
 
+@media screen and (max-width: 687px) {
+  .text-center-holographic {
+    left: 33px;
+    top: -54.5px;
+  }
+}
+
+@media screen and (min-width: 688px) {
+  .text-center-holographic {
+    left: 44.37px;
+    top: -74.3px;
+  }
+}
+
 .text-center-holographic {
   z-index: -100;
-  position: absolute;
-  left: 626.37px;
-  top: 605.3px;
+  position: relative;
   padding-left: 3px;
   text-align: center;
   font-family: $font-header;
@@ -33,7 +45,7 @@
 }
 
 .workshop-card {
-  padding: 0 1em;
+  padding: 0 1em 1em 0;
 }
 
 .workshop-image-container {
@@ -96,24 +108,24 @@
   justify-content: center;
 }
 
-.btn-selected {
+.btn-selected, .btn-unselected {
   padding: 5px;
   margin: 5px;
   display: inline-block;
-  background-color: #49EEA1;
   border-radius: 50%;
   width: 5.73px;
   height: 5.73px;
   border: none;
 }
 
+.btn-selected:hover, .btn-unselected:hover {
+  cursor: pointer;
+}
+
+.btn-selected {
+  background-color: #49EEA1;
+}
+
 .btn-unselected {
-  padding: 5px;
-  margin: 5px;
-  display: inline-block;
   background-color: #C4C4C4;
-  border-radius: 50%;
-  width: 5.73px;
-  height: 5.73px;
-  border: none;
 }

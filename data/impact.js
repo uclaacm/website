@@ -51,12 +51,6 @@ export const people = [
 	},
 ];
 
-const blogImages = [
-	'https://miro.medium.com/max/1400/0*CtF08rCYE9G4Xqk7.jpg',
-	'https://miro.medium.com/max/1400/0*LSHF7HtyCOuJgbBP.jpg',
-	'https://cdn.shopify.com/s/files/1/0070/7032/files/how-to-start-a-blog-illustration.png?format=jpg&quality=90&v=1595363254&width=1024',
-];
-
 export const blogs = [
 	{
 		title: 'Digital Tech for a Greener Future',
@@ -67,7 +61,7 @@ export const blogs = [
 		href: 'https://medium.com/acm-at-ucla/digital-tech-for-a-greener-future-7bc7f2e00bda',
 		authorImg: 'https://miro.medium.com/fit/c/96/96/1*HdS_CXUnr6GGVUfMR66_4g.jpeg',
 		authorAlt: 'a photo of Jason smiling',
-		backgroundStyle: { backgroundImage: `url("${blogImages[0]}")` },
+		backgroundStyle: { backgroundImage: 'url(' + 'https://miro.medium.com/max/1400/0*CtF08rCYE9G4Xqk7.jpg' + ')'},
 	},
 	{
 		title: 'Considerations for The Future of AI Governance',
@@ -78,7 +72,7 @@ export const blogs = [
 		href: 'https://medium.com/impact-labs/considerations-for-the-future-of-ai-governance-46d727012c5b',
 		authorImg: 'https://www.ssu.ca/wp-content/uploads/2020/08/default-profile.png',
 		authorAlt: 'default profile pic',
-		backgroundStyle: { backgroundImage: `url("${blogImages[1]}")` },
+		backgroundStyle: { backgroundImage: 'url(' + 'https://miro.medium.com/max/1400/0*LSHF7HtyCOuJgbBP.jpg' + ')'},
 	},
 	{
 		title: 'Introducing ACM | Impact',
@@ -89,7 +83,7 @@ export const blogs = [
 		href: 'https://medium.com/@acmucla',
 		authorImg: 'https://www.ssu.ca/wp-content/uploads/2020/08/default-profile.png',
 		authorAlt: 'default profile pic',
-		backgroundStyle: { backgroundImage: `url("${blogImages[2]}")` },
+		backgroundStyle: { backgroundImage: 'url(' + 'https://cdn.shopify.com/s/files/1/0070/7032/files/how-to-start-a-blog-illustration.png?format=jpg&quality=90&v=1595363254&width=1024' + ')'},
 	},
 ];
 

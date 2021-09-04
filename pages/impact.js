@@ -45,10 +45,6 @@ function Impact() {
 				<div className="grid-desktop-3">
 					{people.map((person) => <PersonCard {...person} key={person.name} />)}
 				</div>
-				<h2 className="text-center">{/*Stay Connected*/}</h2>
-				<p className="text-center">
-					{/*logos go here*/}
-				</p>
 			</div>
 		</Layout>
 	);

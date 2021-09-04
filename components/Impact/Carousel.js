@@ -6,19 +6,14 @@ import styles from '../../styles/pages/impact.module.scss';
 import BlogCard from './BlogCard';
 
 function Carousel() {
-    const [ blog, changeBlog ] = useState(0); // keeps track of blog index (0, 1, or 2) that is currently active
-    const blogInfo = blogs[blog]; // stores blog info for the blog number that is currently active
-
-    const handleChange = (blogIndex) => {
-        // change active blog to the one specified by the blogIndex
-        changeBlog(blogIndex);
-    };
+    const [ activeItem, changeActiveItem ] = useState(0); // keeps track of blog index (0, 1, or 2) that is currently active
+    const blogInfo = blogs[activeItem]; // stores blog info for the blog number that is currently active
 
     const handleNext = () => {
-        if (blog >= (blogs.length - 1))
-            changeBlog(0);
+        if (activeItem >= (blogs.length - 1))
+            changeActiveItem(0);
         else
-            changeBlog(blog+1);
+            changeActiveItem(activeItem+1);
     };
 
     // changes currently active blog every 5 seconds
@@ -27,7 +22,7 @@ function Carousel() {
           handleNext();
         }, 5000);
         return () => clearInterval(interval);
-      }, [blog]);
+      }, [activeItem]);
 
     return (
         <div className="carousel-container">
@@ -43,14 +38,14 @@ function Carousel() {
                         backgroundStyle={blogInfo.backgroundStyle}
                     />
             <div className={styles['button-container']}>
-                <button onClick={() => handleChange(0)} className={blog === 0 ? styles['btn-selected'] : styles['btn-unselected']}></button>
-                <button onClick={() => handleChange(1)} className={blog === 1 ? styles['btn-selected'] : styles['btn-unselected']}></button>
-                <button onClick={() => handleChange(2)} className={blog === 2 ? styles['btn-selected'] : styles['btn-unselected']}></button>
+                {blogs.map((blog, index) =>
+                    <button key={index} onClick={() => changeActiveItem(index)}
+                            className={activeItem === index ? styles['btn-selected'] : styles['btn-unselected']}>
+                    </button>)
+                }
             </div>
         </div>
     );
 }
 
 export default Carousel;
-
-// blog === 0 ? styles['btn-selected'] : styles['btn-unselected']
