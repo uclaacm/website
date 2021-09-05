@@ -51,46 +51,25 @@
         position: relative;
         transition: all 0.5s ease-in-out;
         width: 50%;
-
-        &::before,
-        &::after {
-          background-color: $font-secondary-color;
-          border-radius: 04px;
-          content: '';
-          height: 03px;
-          left: 0;
-          position: absolute;
-          transition: all 0.5s ease-in-out;
-          width: 100%;
-        }
-
-        &::before {
-          transform: translateY(8px);
-        }
-
-        &::after {
-          transform: translateY(-8px);
-        }
+        margin: 2px 0 2px 0;
       }
 
       &.active {
-        .bar {
+        #bar-one {
+          transform: rotate(45deg) translate(5px, 4px);
+        }
+
+        #bar-two {
           transform: translateX(-50px);
         }
 
-        .bar::before {
-          transform: rotate(-45deg) translate(35px, 35px);
-        }
-
-        .bar::after {
-          transform: rotate(45deg) translate(35px, -35px);
+        #bar-three {
+          transform: rotate(-45deg) translate(5px, -5px);
         }
       }
 
       &:hover {
-        .bar,
-        .bar::before,
-        .bar::after {
+        .bar {
           background-color: $acm-cobalt;
         }
       }
@@ -111,6 +90,7 @@
           background-color: transparent;
           border: 0;
           color: inherit;
+          font-family: inherit;
           font-size: 0.95em;
           font-weight: 600;
           text-transform: lowercase;
@@ -143,44 +123,13 @@
         }
 
         // committee color applied on hover and active
-        [href='/committees#ai']:hover,
-        [href='/committees#ai'].active {
-          color: #1EBDF4;
-        }
+        $committees: ai $ai-arctic, cyber $cyber-amber, design $design-orange, hack $hack-purple, icpc $icpc-tangerine, studio $studio-raspberry, teachla $teachla-green, w $w-teal;
 
-        [href='/committees#cyber']:hover,
-        [href='/committees#cyber'].active {
-          color: #FFBA44;
-        }
-
-        [href='/committees#design']:hover,
-        [href='/committees#design'].active {
-          color: #FE823C;
-        }
-
-        [href='/committees#hack']:hover,
-        [href='/committees#hack'].active {
-          color: #C960FF;
-        }
-
-        [href='/committees#icpc']:hover,
-        [href='/committees#icpc'].active {
-          color: #FF6B6B;
-        }
-
-        [href='/committees#studio']:hover,
-        [href='/committees#studio'].active {
-          color: #ED3266;
-        }
-
-        [href='/committees#teachLA']:hover,
-        [href='/committees#teachLA'].active {
-          color: #A1D900;
-        }
-
-        [href='/committees#w']:hover,
-        [href='/committees#w'].active {
-          color: #1BC3A9;
+        @each $committee in $committees {
+          [href='/committees##{nth($committee, 1)}']:hover,
+          [href='/committees##{nth($committee, 1)}'].active {
+            color: #{nth($committee, 2)};
+          }
         }
       }
     }

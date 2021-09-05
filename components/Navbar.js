@@ -1,23 +1,15 @@
 import Link from 'next/link';
-import { useRouter } from 'next/router';
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
+import ActiveLink from './ActiveLink';
 
 export default function Navbar() {
   // set states
   const [menuActive, setMenuActive] = useState(false);
-  const [activeLink, setActiveLink] = useState('');
-
-  const router = useRouter();
 
   // switches mobile menu state
   const menuActivate = () => {
     setMenuActive(menuActive ? false : true);
   };
-
-  useEffect(() => {
-    // highlights link for current route
-    setActiveLink(router.asPath);
-  }, [menuActive]);
 
   return(
     <nav id="navbar">
@@ -32,27 +24,29 @@ export default function Navbar() {
         </Link>
         <section id="nav-items-container">
           <button className={menuActive ? 'active' : ''} id="hamburger" type="button" onClick={menuActivate} aria-label="navigation menu" aria-expanded={menuActive} tabIndex="0">
-            <span className="bar"></span>
+            <span className="bar" id="bar-one"></span>
+            <span className="bar" id="bar-two"></span>
+            <span className="bar" id="bar-three"></span>
           </button>
           <section className={menuActive ? 'active' : ''} id="menu-modal">
             <ul className={`nav-items ${menuActive ? 'active' : ''}`} role="presentation">
-              <li><Link href="/about" passHref={true}><button className={activeLink === '/about' ? 'active' : ''} type="button" role="link" onClick={menuActivate}>About</button></Link></li>
-              <li><Link href="/committees" passHref={true}><button className={activeLink === '/committees' ? 'active' : ''} type="button" role="link" onClick={menuActivate}>Committees</button></Link></li>
+              <li><ActiveLink activeClassName="active" href="/about" passHref={true}><button type="button" role="link" onClick={menuActivate}>About</button></ActiveLink></li>
+              <li><ActiveLink activeClassName="active" href="/committees" passHref={true}><button type="button" role="link" onClick={menuActivate}>Committees</button></ActiveLink></li>
               {/* <li><Link href="/gm"><a>{gmData.date.quarter} GM</a></Link></li> */}
               <li id="committee-mobile-nav-item">
                 <ul className="committee-mobile-nav" role="presentation">
-                  <li><Link href="/committees#studio" passHref={true}><button className={activeLink === '/committees#studio' ? 'active' : ''} type="button" onClick={menuActivate}>Studio</button></Link></li>
-                  <li><Link href="/committees#icpc" passHref={true}><button className={activeLink === '/committees#icpc' ? 'active' : ''} type="button" onClick={menuActivate}>ICPC</button></Link></li>
-                  <li><Link href="/committees#design" passHref={true}><button className={activeLink === '/committees#design' ? 'active' : ''} type="button" onClick={menuActivate}>Design</button></Link></li>
-                  <li><Link href="/committees#cyber" passHref={true}><button className={activeLink === '/committees#cyber' ? 'active' : ''} type="button" onClick={menuActivate}>Cyber</button></Link></li>
-                  <li><Link href="/committees#teachla" passHref={true}><button className={activeLink === '/committees#teachla' ? 'active' : ''} type="button" onClick={menuActivate}>Teach LA</button></Link></li>
-                  <li><Link href="/committees#w" passHref={true}><button className={activeLink === '/committees#w' ? 'active' : ''} type="button" onClick={menuActivate}>W</button></Link></li>
-                  <li><Link href="/committees#ai" passHref={true}><button className={activeLink === '/committees#ai' ? 'active' : ''} type="button" onClick={menuActivate}>AI</button></Link></li>
-                  <li><Link href="/committees#hack" passHref={true}><button className={activeLink === '/committees#hack' ? 'active' : ''} type="button" onClick={menuActivate}>Hack</button></Link></li>
+                  <li><ActiveLink activeClassName="active" href="/committees#studio" passHref={true}><button type="button" onClick={menuActivate}>Studio</button></ActiveLink></li>
+                  <li><ActiveLink activeClassName="active" href="/committees#icpc" passHref={true}><button type="button" onClick={menuActivate}>ICPC</button></ActiveLink></li>
+                  <li><ActiveLink activeClassName="active" href="/committees#design" passHref={true}><button type="button" onClick={menuActivate}>Design</button></ActiveLink></li>
+                  <li><ActiveLink activeClassName="active" href="/committees#cyber" passHref={true}><button type="button" onClick={menuActivate}>Cyber</button></ActiveLink></li>
+                  <li><ActiveLink activeClassName="active" href="/committees#teachla" passHref={true}><button type="button" onClick={menuActivate}>Teach LA</button></ActiveLink></li>
+                  <li><ActiveLink activeClassName="active" href="/committees#w" passHref={true}><button type="button" onClick={menuActivate}>W</button></ActiveLink></li>
+                  <li><ActiveLink activeClassName="active" href="/committees#ai" passHref={true}><button type="button" onClick={menuActivate}>AI</button></ActiveLink></li>
+                  <li><ActiveLink activeClassName="active" href="/committees#hack" passHref={true}><button type="button" onClick={menuActivate}>Hack</button></ActiveLink></li>
                 </ul>
               </li>
-              <li><Link href="/events" passHref={true}><button className={activeLink === '/events' ? 'active' : ''} type="button" role="link" onClick={menuActivate}>Events</button></Link></li>
-              <li><Link href="/sponsors" passHref={true}><button className={activeLink === '/sponsors' ? 'active' : ''} type="button" role="link" onClick={menuActivate}>Sponsors</button></Link></li>
+              <li><ActiveLink activeClassName="active" href="/events" passHref={true}><button type="button" role="link" onClick={menuActivate}>Events</button></ActiveLink></li>
+              <li><ActiveLink activeClassName="active" href="/sponsors" passHref={true}><button type="button" role="link" onClick={menuActivate}>Sponsors</button></ActiveLink></li>
               <li><Link href="https://members.uclaacm.com"><a className="button button-transparent button-lg font-header">Member Login</a></Link>
               </li>
             </ul>
