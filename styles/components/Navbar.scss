@@ -1,3 +1,5 @@
+$committees: (ai, $ai-arctic), (cyber, $cyber-amber), (design, $design-orange), (hack, $hack-purple), (icpc, $icpc-tangerine), (studio, $studio-raspberry), (teachla, $teachla-green), (w, $w-teal);
+
 #navbar {
   background: white;
   box-shadow: 0 0 4px #E2E2E2;
@@ -48,10 +50,10 @@
         background-color: $font-secondary-color;
         border-radius: 04px;
         height: 03px;
+        margin: 2px 0;
         position: relative;
         transition: all 0.5s ease-in-out;
         width: 50%;
-        margin: 2px 0 2px 0;
       }
 
       &.active {
@@ -123,7 +125,7 @@
         }
 
         // committee color applied on hover and active
-        $committees: ai $ai-arctic, cyber $cyber-amber, design $design-orange, hack $hack-purple, icpc $icpc-tangerine, studio $studio-raspberry, teachla $teachla-green, w $w-teal;
+        // $committees: (ai, $ai-arctic), (cyber, $cyber-amber), (design, $design-orange), (hack, $hack-purple), (icpc, $icpc-tangerine), (studio, $studio-raspberry), (teachla, $teachla-green), (w, $w-teal);
 
         @each $committee in $committees {
           [href='/committees##{nth($committee, 1)}']:hover,
