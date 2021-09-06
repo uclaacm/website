@@ -4,7 +4,7 @@ import React from 'react';
 function TGBanner() {
     return (
         <div className="full-width blue">
-            <div id="sign-up-section" className="banner-section">
+            <div className="sign-up-section banner-section">
                 <div id="banner-left" className="half-width">
                     <h2 style={{fontSize: '1.6em'}}>Check out the projects from Tech Gala Winter &apos;21!</h2>
                 </div>

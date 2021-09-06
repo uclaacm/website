@@ -1,5 +1,7 @@
+import { NextSeo } from 'next-seo';
 import Image from 'next/image';
 import React from 'react';
+
 import Banner from '../components/Banner';
 import CommitteeSection from '../components/Committees/CommitteeSection';
 import Navigation from '../components/Committees/Sidebar';
@@ -28,6 +30,21 @@ function CommitteesPage() {
 	const { committees } = data;
 	return (
 		<Layout>
+			<NextSeo
+				title="Committees | ACM at UCLA"
+				description="ACM comprises eight committees, each serving a unique topic and mission. Learn more about Studio, ICPC, Design, Cyber, Teach LA, W, AI, and Hack here! All of our events are open to everyone; we want to help you explore your passion!"
+				openGraph={{
+					images: [
+						{
+							url: 'https://www.uclaacm.com/images/acm_committees.png',
+							width: 2506,
+							height: 979,
+							alt: 'The ACM at UCLA logo, surrounded by our eight committees: Studio, ICPC, Design, Cyber, Teach LA, W, AI, and Hack.',
+						},
+					],
+					site_name: 'ACM at UCLA',
+				}}
+			/>
 			<Banner decorative />
 			<Navigation committees={committees} />
 			<div className="committees-page-content">
