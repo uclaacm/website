@@ -8,14 +8,17 @@ const links = [
   {
     path: '/jedi',
     title: 'home',
+    ext: false,
   },
   {
     path: '/jedi/meet',
     title: 'meet the JEDIs',
+    ext: false,
   },
   {
     path: '/jedi/allyship',
     title: 'allyship spaces',
+    ext: false,
   },
   {
     path: blogLink,
