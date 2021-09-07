@@ -41,7 +41,7 @@ function JEDIAbout () {
             <ul className={styles['nav-links']}>
               <li><Link href="/jedi/meet"><a>meet the JEDIs</a></Link></li>
               <li><Link href="/jedi/allyship"><a>allyship spaces</a></Link></li>
-              <li><Link href={blogLink}><a>blog</a></Link></li>
+              <li><Link href={blogLink}><a target="_blank" rel="noopener noreferrer">blog</a></Link></li>
             </ul>
           </nav>
           <div>
