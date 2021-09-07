@@ -31,17 +31,17 @@
 }
 
 .text-center-holographic {
-  z-index: -100;
-  position: relative;
-  padding-left: 3px;
-  text-align: center;
-  font-family: $font-header;
+  background-clip: text;
   background-image: linear-gradient(rgba(255, 0, 92, 0.3996),
   rgba(177, 100, 255, 0.54),
   rgba(51, 255, 206, 0.54),
   rgba(125, 255, 46, 0.54));
-  background-clip: text;
+  font-family: $font-header;
+  padding-left: 3px;
+  position: relative;
+  text-align: center;
   -webkit-text-fill-color: transparent;
+  z-index: -100;
 }
 
 .workshop-card {
@@ -100,25 +100,27 @@
 }
 
 .button-container {
-  margin: 5px;
-  padding: 5px;
+  align-items: center;
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: center;
-}
-
-.btn-selected, .btn-unselected {
-  padding: 5px;
   margin: 5px;
-  display: inline-block;
-  border-radius: 50%;
-  width: 5.73px;
-  height: 5.73px;
-  border: none;
+  padding: 5px;
 }
 
-.btn-selected:hover, .btn-unselected:hover {
+.btn-selected,
+.btn-unselected {
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  height: 5.73px;
+  margin: 5px;
+  padding: 5px;
+  width: 5.73px;
+}
+
+.btn-selected:hover,
+.btn-unselected:hover {
   cursor: pointer;
 }
 
