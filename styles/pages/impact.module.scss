@@ -119,15 +119,15 @@
   width: 5.73px;
 }
 
-.btn-selected:hover,
-.btn-unselected:hover {
-  cursor: pointer;
-}
-
 .btn-selected {
   background-color: #49EEA1;
 }
 
 .btn-unselected {
   background-color: #C4C4C4;
+}
+
+.btn-selected:hover,
+.btn-unselected:hover {
+  cursor: pointer;
 }
