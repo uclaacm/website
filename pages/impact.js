@@ -1,3 +1,4 @@
+import { NextSeo } from 'next-seo';
 import Image from 'next/image';
 import React from 'react';
 
@@ -12,11 +13,27 @@ import { initiatives, people } from '../data/impact';
 import impactMotifBanner from '../public/images/impact/impact-motif.png';
 import styles from '../styles/pages/impact.module.scss';
 
+const impactBlog = 'https://medium.com/acm-at-ucla';
 const pastEvents = initiatives;
 
 function Impact() {
 	return (
 		<Layout>
+			<NextSeo
+				title="ACM Impact | ACM at UCLA"
+				description="ACM Impact is an up-and-coming initiative of ACM whose mission is to start conversations and promote an understanding of how tech and society affect each other. Our aim is to build a community of people who are passionate about ethical technology, socially impactful engineering, and creating a better future for all!"
+				openGraph={{
+					images: [
+						{
+							url: 'https://www.uclaacm.com/images/impact/impact-motif.png',
+							width: 2665,
+							height: 1333,
+							alt: 'The ACM Impact banner: a space shuttle taking off, with a moon behind it',
+						},
+					],
+					site_name: 'ACM at UCLA',
+				}}
+			/>
 			<Banner decorative />
 			<div className={styles.container}>
 				<div className="text-center">
@@ -24,10 +41,11 @@ function Impact() {
 				</div>
 
 				<h2 className="text-center">Tech Ethics.</h2>
+				{/* TODO: make this not use an h2 */}
 				<h2 className={styles['text-center-holographic']}>Ethics.</h2>
 				<p>
 					{/* eslint-disable-next-line max-len */}
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					ACM Impact is an up-and-coming initiative of ACM whose mission is to start conversations and promote an understanding of how tech and society affect each other. Our aim is to build a community of people who are passionate about ethical technology, socially impactful engineering, and creating a better future for all!
 				</p>
 
         <h2 className="text-center">Our Initiatives</h2>
@@ -36,6 +54,9 @@ function Impact() {
 					{initiatives.map((initiative) => <WorkshopCard {...initiative} key={initiative.title} />)}
 				</div>
 				<h3 className="text-uppercase">Blog</h3>
+				<p>
+					Anyone from UCLA can write for our <a href={impactBlog} target="_blank" rel="noreferrer noopener">our blog</a>! Check this out to see how you can get involved. We look forward to reading your work—in the meantime, check out some of our existing posts!
+				</p>
 				<Carousel/>
 				<h3 className="text-uppercase">Past Events</h3>
 				<div className="grid-desktop-3">
