@@ -9,12 +9,15 @@ import styles from '../../styles/pages/jedi.module.scss';
  * creates an allyship space card from input parameters, using
  * next/image and next/link
  */
-function AllyshipSpaceCard({ title, date, location, description, pic, alt, rsvp, slides }) {
+function AllyshipSpaceCard({ title, presenters, date, location, description, pic, alt, rsvp, slides }) {
   return (
     <div className={styles['allyship-row']}>
-      <Image src={pic} alt={alt} />
+      <div className={styles['allyship-image']}>
+        <Image src={pic} alt={alt} />
+      </div>
       <div>
-        <h2 className={styles['my-tight']}>{title}</h2>
+        <h2 className={`${styles['allyship-title']}`}>{title}</h2>
+        <p className={styles['my-tight']}>{ presenters }</p>
         <p className={styles['my-tight']}>{date} | { location }</p>
         <p className={styles['my-tight']}>
           {description}
