@@ -31,6 +31,12 @@ h3 {
   margin-top: 70px; //To account for height of Navbar, which uses fixed positioning
 }
 
+.content-container-tight {
+  margin: 0 auto;
+  max-width: 50rem;
+  padding: 0 1rem;
+}
+
 .font-header {
   font-family: $font-header !important;
 }
