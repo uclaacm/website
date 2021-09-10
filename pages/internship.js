@@ -65,11 +65,11 @@ function InternshipPage(){
             <div className="content-section text-center">
                 <h1>Internships</h1>
                 The ACM Internship program is a program that facilitates the transition of UCLA students to
-                ACM officers. Interns learn about the ACM subcommittee they are interning for and ACM in general
+                ACM officers. Interns learn about the ACM committee they are interning for and ACM in general
                 before becoming an official ACM officer.
                 <br/>
                 Click on the different ACM subcommittee icons in order to learn more about what interns in each
-                subcommittee do and scroll down to find more information on how you can apply to the Internship Program.
+                committee do and scroll down to find more information on how you can apply to the Internship Program.
             </div>
             <CommitteeInternshipInfo
                 committees={internshipInfo}

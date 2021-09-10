@@ -5,13 +5,13 @@ export default {
         {
             date: '9/27',
             name: 'Fall General Meeting',
-            info: 'Come learn about the different ACM subcommittees!',
+            info: 'Come learn about the different ACM committees!',
             active: true,
         },
         {
             date: '10/10',
             name: 'Application Form is Open',
-            info: 'Fill out the application form for up to 3 subcommittees that you would like to intern for',
+            info: 'Fill out the application form for up to 3 committees that you would like to intern for',
             active: true,
         },
         {
@@ -23,13 +23,13 @@ export default {
         {
             date: '10/22-11/02',
             name: 'Interviews',
-            info: 'A handful of applicants will be chosen for an interview with the subcommittee(s) you applied to',
+            info: 'A handful of applicants will be chosen for an interview with the committee(s) you applied to',
             active: false,
         },
         {
             date: '11/03-11/04',
             name: 'Decisions Released',
-            info: 'Hear back via Email what subcommittee(s) accepted you(if you applied to multiple, decide which one you would like to intern for)',
+            info: 'Hear back via Email what committee(s) accepted you (if you applied to multiple, decide which one you would like to intern for)',
             active: false,
         },
         {
@@ -83,7 +83,7 @@ export default {
             {
                 title: 'What is the Internship Program?',
                 content: `The ACM Internship program is a program that facilitates the transition of UCLA students to ACM officers. 
-                Interns learn about the ACM subcommittee they are interning for and ACM in general before becoming an official ACM officer. 
+                Interns learn about the ACM committee they are interning for and ACM in general before becoming an official ACM officer. 
                 Although ACM Interns are not paid, they gain valuable experience organizing events or teaching Programming classes or 
                 designing event banners and more.`,
             },
