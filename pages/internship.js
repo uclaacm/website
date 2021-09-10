@@ -38,8 +38,8 @@ const boardInfo = [
             </> ),
             whatInternsWillDo: (
             <ul>
-                <li> Operations Interns will work on and lead important all-ACM events such as Winter GM, Faculty Fireside, 
-                    and Implicit Bias / Imposter Syndrome workshops throughout the year. </li>
+                <li> Operations Interns will work on and lead important all-ACM events such as Winter GM,
+                    Faculty Fireside, and Implicit Bias / Imposter Syndrome workshops throughout the year. </li>
                 <li> The Dev team interns will train and maintain existing ACM projects
                     (website, discord bot, membership portal), adding features and dealing with issues</li>
                 <li> The Impact interns will plan Impact events and help out with the blog</li>
@@ -55,7 +55,7 @@ const boardInfo = [
         },
     }];
 
-const internshipInfo = boardInfo.concat(committees)
+const internshipInfo = boardInfo.concat(committees);
 
 function InternshipPage(){
     const { items, testimonials, QA, FAQStyles, responsive } = internship;
@@ -64,11 +64,12 @@ function InternshipPage(){
             <Banner decorative />
             <div className="content-section text-center">
                 <h1>Internships</h1>
-                The ACM Internship program is a program that facilitates the transition of UCLA students to ACM officers. 
-                Interns learn about the ACM subcommittee they are interning for and ACM in general before becoming an official ACM officer. 
+                The ACM Internship program is a program that facilitates the transition of UCLA students to
+                ACM officers. Interns learn about the ACM subcommittee they are interning for and ACM in general
+                before becoming an official ACM officer.
                 <br/>
-                Click on the different ACM subcommittee icons in order to learn more about what interns in each subcommittee do and 
-                scroll down to find more information on how you can apply to the Internship Program. 
+                Click on the different ACM subcommittee icons in order to learn more about what interns in each
+                subcommittee do and scroll down to find more information on how you can apply to the Internship Program.
             </div>
             <CommitteeInternshipInfo
                 committees={internshipInfo}

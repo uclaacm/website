@@ -149,7 +149,7 @@ export default [
 					<li>Beginner Track (great for anyone interested in algorithms)</li>
 					<li>Interview Track (best for people with interview and internship experience already)</li>
 					<li>Possibly Advanced Track (for people with background in competitive programming)</li>
-				</ul> 
+				</ul>
 			</>),
 			card: '/images/cards/icpc_card.svg',
 			nextSteps: 'All Interns automatically become officers in the Spring if they choose to stay.',
