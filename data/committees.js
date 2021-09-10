@@ -142,7 +142,15 @@ export default [
 		diamond: '/images/diamonds/icpc_diamond.svg',
 		internship: {
 			whatWeDo: 'ICPC spreads the joy of algorithmic problem solving - and helps you kick-start your career - through workshops, contests, and a top-ranked ICPC team!',
-			whatInternsWillDo: 'Interns will help produce and teach workshops in one of our three winter workshop tracks: Beginner Track (great for anyone interested in algorithms), Interview Track (best for people with interview and internship experience  already), and possibly Advanced Track (for people with background in competitive programming).',
+			whatInternsWillDo: (
+			<>
+				Interns will help produce and teach workshops in one of our three winter workshop tracks:
+				<ul>
+					<li>Beginner Track (great for anyone interested in algorithms)</li>
+					<li>Interview Track (best for people with interview and internship experience already)</li>
+					<li>Possibly Advanced Track (for people with background in competitive programming)</li>
+				</ul> 
+			</>),
 			card: '/images/cards/icpc_card.svg',
 			nextSteps: 'All Interns automatically become officers in the Spring if they choose to stay.',
 		},
@@ -284,9 +292,9 @@ export default [
 			whatWeDo: 'Our mission is to create a community in which both experts and beginners alike can grow in the field of cybersecurity skills and knowledge. We want to make cybersecurity simple and accessible for everyone.',
 			whatInternsWillDo: (
 			<ul>
-				<li> Creating workshop content (ex. XSS, SQL injections, Reverse engineering)</li>
-				<li> Weekly chores such as submitting newsletter, design requests, and helping with the website</li>
-				<li> Socials events with other officers. Delivering at the minimum 1 workshop per quarter</li>
+				<li> Create workshop content (ex. XSS, SQL injections, Reverse engineering)</li>
+				<li> Do weekly chores such as submitting newsletter, design requests, and helping with the website</li>
+				<li> Plan Socials events with other officers. Deliver at the minimum 1 workshop per quarter</li>
 			</ul> ),
 			card: '/images/cards/cyber_card.svg',
 			nextSteps: 'All interns in good standing (attending workshops/chores/meetings) automatically become officers in the spring!',

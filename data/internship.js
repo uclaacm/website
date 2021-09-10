@@ -3,33 +3,39 @@ import React from 'react';
 export default {
     items: [
         {
+            date: '9/27',
+            name: 'Fall General Meeting',
+            info: 'Come learn about the different ACM subcommittees!',
+            active: true,
+        },
+        {
             date: '10/10',
-            name: 'apps open',
-            info: 'information about the event',
+            name: 'Application Form is Open',
+            info: 'Fill out the application form for up to 3 subcommittees that you would like to intern for',
             active: true,
         },
         {
             date: '10/22',
-            name: 'apps due',
-            info: 'information about the event',
+            name: 'Applications Due',
+            info: 'Submit your application by 11:59 pm',
             active: false,
         },
         {
             date: '10/22-11/02',
-            name: 'interviews',
-            info: 'information about the event',
+            name: 'Interviews',
+            info: 'A handful of applicants will be chosen for an interview with the subcommittee(s) you applied to',
             active: false,
         },
         {
             date: '11/03-11/04',
-            name: 'hear back',
-            info: 'information about the event',
+            name: 'Decisions Released',
+            info: 'Hear back via Email what subcommittee(s) accepted you(if you applied to multiple, decide which one you would like to intern for)',
             active: false,
         },
         {
             date: '11/06',
-            name: 'onboarding',
-            info: 'information about the event',
+            name: 'Official ACM Onboarding',
+            info: 'Learn what you need to know as an ACM Intern',
             active: false,
         },
     ],
@@ -76,10 +82,10 @@ export default {
         rows: [
             {
                 title: 'What is the Internship Program?',
-                content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed tempor sem. Aenean vel turpis feugiat,
-                ultricies metus at, consequat velit. Curabitur est nibh, varius in tellus nec, mattis pulvinar metus.
-                In maximus cursus lorem, nec laoreet velit eleifend vel. Ut aliquet mauris tortor, sed egestas libero interdum vitae.
-                Fusce sed commodo purus, at tempus turpis.`,
+                content: `The ACM Internship program is a program that facilitates the transition of UCLA students to ACM officers. 
+                Interns learn about the ACM subcommittee they are interning for and ACM in general before becoming an official ACM officer. 
+                Although ACM Interns are not paid, they gain valuable experience organizing events or teaching Programming classes or 
+                designing event banners and more.`,
             },
             {
                 title: 'What experience do you need to be an intern for ACM?',

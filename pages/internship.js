@@ -14,7 +14,7 @@ import data from '../data';
 import 'react-multi-carousel/lib/styles.css';
 
 const { committees, internship } = data;
-committees.unshift(
+const boardInfo = [
     {
         name: 'Board',
         class: 'board',
@@ -38,7 +38,8 @@ committees.unshift(
             </> ),
             whatInternsWillDo: (
             <ul>
-                <li> The Operations interns will TODO GET INFO AND ADD</li>
+                <li> Operations Interns will work on and lead important all-ACM events such as Winter GM, Faculty Fireside, 
+                    and Implicit Bias / Imposter Syndrome workshops throughout the year. </li>
                 <li> The Dev team interns will train and maintain existing ACM projects
                     (website, discord bot, membership portal), adding features and dealing with issues</li>
                 <li> The Impact interns will plan Impact events and help out with the blog</li>
@@ -52,8 +53,9 @@ committees.unshift(
             card: '/images/cards/board_card.svg',
             nextSteps: 'Dev Team interns automatically become Dev Team officers in the spring. All other Interns will run for a director position in the Spring or will no longer officially be a member of the board.',
         },
-    },
-);
+    }];
+
+const internshipInfo = boardInfo.concat(committees)
 
 function InternshipPage(){
     const { items, testimonials, QA, FAQStyles, responsive } = internship;
@@ -62,12 +64,14 @@ function InternshipPage(){
             <Banner decorative />
             <div className="content-section text-center">
                 <h1>Internships</h1>
-                What do you do as an intern? Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tristique sollicitudin
-                nibh sit amet commodo nulla. Amet facilisis magna etiam tempor.
+                The ACM Internship program is a program that facilitates the transition of UCLA students to ACM officers. 
+                Interns learn about the ACM subcommittee they are interning for and ACM in general before becoming an official ACM officer. 
+                <br/>
+                Click on the different ACM subcommittee icons in order to learn more about what interns in each subcommittee do and 
+                scroll down to find more information on how you can apply to the Internship Program. 
             </div>
             <CommitteeInternshipInfo
-                committees={committees}
+                committees={internshipInfo}
             />
             <div className="content-section text-center">
                 <h2>Applications</h2>
@@ -97,14 +101,14 @@ function InternshipPage(){
                 </div>
             </div>
             <div className="content-section text-center">
-                <h2>Next steps</h2>
+                <h2>Intern to Officer Transition</h2>
                 <Carousel
                     responsive={responsive}
                     infinite={true}
                     transitionDuration={500}
                     containerClass="carousel-container"
                 >
-                    {committees.map(committee =>
+                    {internshipInfo.map(committee =>
                         <NextSteps
                             image={committee.internship.card}
                             name={committee.name}
