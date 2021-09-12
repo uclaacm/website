@@ -1,6 +1,13 @@
+import {
+  faDiscord,
+  faSlack,
+} from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { NextSeo } from 'next-seo';
 import Link from 'next/link';
 import React from 'react';
+
 
 import JEDICard from '../../components/JEDI/JEDICard';
 import JEDINav from '../../components/JEDI/JEDINav';
@@ -29,7 +36,7 @@ function Meet() {
 			/>
       <div className={`${styles.container} ${styles['container-padding']}`}>
         <JEDINav />
-        <h1 className="text-right">meet the JEDIs</h1>
+        <h1>meet the JEDIs</h1>
         <div className={styles['tri-grid']}>
           {jedis.map((jedi) => <JEDICard {...jedi} key={jedi.name} /> )}
         </div>
@@ -41,15 +48,15 @@ function Meet() {
         <p>
           want to contact JEDI? your best bet is reaching out to Helia, our JEDI director! reach out via:
         </p>
-        <ul>
+        <ul className={`list-unstyled ${styles['mb-2']}`}>
           <li>
-            Email: <a className={styles['jedi-link']} href={`mailto:${contactEmail}`}>{contactEmail}</a>
+          <FontAwesomeIcon icon={faEnvelope} fixedWidth aria-hidden={true} /> Email: <a className={styles['jedi-link']} href={`mailto:${contactEmail}`}>{contactEmail}</a>
           </li>
           <li>
-            Discord: cuddlefish#2308
+            <FontAwesomeIcon icon={faDiscord} fixedWidth aria-hidden={true} /> Discord: cuddlefish#2308
           </li>
           <li>
-            Slack (ACM internal): Helia (she/her)
+            <FontAwesomeIcon icon={faSlack} fixedWidth aria-hidden={true} /> Slack (ACM internal): Helia (she/her)
           </li>
         </ul>
       </div>

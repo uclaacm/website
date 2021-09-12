@@ -14,13 +14,29 @@
   font-size: 3rem;
 }
 
+.hero-subtitle {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
 .allyship-title {
   font-size: 1.5rem;
+  margin-bottom: 0.5em;
   margin-top: 0;
+}
+
+.jedi-title {
+  font-size: 1.5rem;
+  margin-bottom: 0;
+  margin-top: 0.5em;
 }
 
 .allyship-image {
   padding-right: 2rem;
+}
+
+.allyship-presenters {
+  font-weight: 600;
 }
 
 .hero-row,
@@ -59,9 +75,7 @@
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  .desktop-half-width-right {
-    margin-left: auto;
-    margin-right: 0;
+  .desktop-half-width {
     width: 50%;
   }
 }
@@ -76,7 +90,7 @@
 
 .nav-links a,
 .jedi-link {
-  color: black;
+  color: $acm-cobalt;
   text-decoration-color: $acm-cobalt;
 }
 

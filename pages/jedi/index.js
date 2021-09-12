@@ -29,12 +29,12 @@ function JEDIAbout () {
 				}}
 			/>
       <div className={styles.container}>
-        <div className="text-center">
+        <div className={`text-center ${styles['mt-2']}`}>
           <Image src={tempJediBanner} alt="a temporary banner image with a diverse group of people experiencing technology" />
         </div>
         <div className="text-center">
           <h1 className={styles['hero-title']}>ACM | JEDI</h1>
-          <p>justice, equity, diversity, inclusion</p>
+          <p className={styles['hero-subtitle']}>justice, equity, diversity, inclusion</p>
         </div>
         <div className={styles['hero-row']}>
           <nav aria-label="JEDI link nav">
@@ -61,10 +61,10 @@ function JEDIAbout () {
               {/* eslint-disable-next-line max-len */}
               If you&apos;re interested in ACM&apos;s diversity and inclusion goals, reach out to any of our <Link href="/jedi/meet"><a className={styles['jedi-link']}>JEDIs</a></Link> on Slack or <a className={styles['jedi-link']} href={`mailto:${contactEmail}`}>shoot an email ({contactEmail})</a>! Being a JEDI isn&apos;t a big commitment--you can get involved with anything, be it programming, one-off events, or anything else. You can also sign up to hold an allyship space on any EDI-related topic! If you&apos;re not interested in getting involved but have any quick suggestions or questions, feel free to contact us as well :)
             </p>
-            <Link href="/jedi"><a className="button">get involved!</a></Link>
+            <Link href="/jedi/meet#contact"><a className="button">get involved!</a></Link>
           </div>
         </div>
-        <hr />
+        <hr className={styles['mt-2']} />
         <h2 className="text-center">what JEDI does</h2>
         <div className={styles['tri-grid']}>
           <div>
@@ -92,7 +92,7 @@ function JEDIAbout () {
             </p>
           </div>
         </div>
-        <div className={`text-right ${styles['container-padding']}`}>
+        <div className={`text-center ${styles['container-padding']} ${styles['mb-2']}`}>
           <h2>don&apos;t be a stranger!</h2>
           <p>
             say hi to our JEDI director Helia at <a className={styles['jedi-link']} href={`mailto:${contactEmail}`}>{contactEmail}</a>

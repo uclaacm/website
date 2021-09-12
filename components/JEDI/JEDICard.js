@@ -13,7 +13,7 @@ function JEDICard({ name, pronouns, bio, pic, alt }) {
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img className={styles['jedi-profile-img']} src={pic} alt={alt} />
       <div className={styles['jedi-card-body']}>
-        <h2 className={styles['my-tight']}>{name} <span className={styles.pronouns}>{pronouns}</span></h2>
+        <h2 className={styles['jedi-title']}>{name} <span className={styles.pronouns}>{pronouns}</span></h2>
         <p className={styles['my-tight']}>
           {bio}
         </p>

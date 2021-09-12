@@ -11,20 +11,20 @@ import styles from '../../styles/pages/jedi.module.scss';
  */
 function AllyshipSpaceCard({ title, presenters, date, location, description, pic, alt, rsvp, slides }) {
   return (
-    <div className={styles['allyship-row']}>
+    <div className={`${styles['allyship-row']} ${styles['mb-2']}`}>
       <div className={styles['allyship-image']}>
         <Image src={pic} alt={alt} />
       </div>
       <div>
         <h2 className={`${styles['allyship-title']}`}>{title}</h2>
-        <p className={styles['my-tight']}>{ presenters }</p>
-        <p className={styles['my-tight']}>{date} | { location }</p>
-        <p className={styles['my-tight']}>
-          {description}
-        </p>
         {/* wrapped in a fragment to allow for spacing */}
         {rsvp && <><Link href={rsvp}><a className="button">RSVP</a></Link>{' '}</>}
         {slides && <><Link href={slides}><a className="button">Slides</a></Link>{' '}</>}
+        <p className={`${styles['my-tight']} ${styles['allyship-presenters']}`}>by { presenters }</p>
+        <p className={styles['my-tight']}><em>{date} | { location }</em></p>
+        <p className={styles['my-tight']}>
+          {description}
+        </p>
       </div>
     </div>
   );

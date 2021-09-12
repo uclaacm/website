@@ -33,7 +33,7 @@ function NavLink({ path, title, ext }){
 
 function JEDINav() {
   return (
-    <nav id="jedi-nav" aria-label="JEDI side nav">
+    <nav id="jedi-nav" className={styles['mt-2']} aria-label="JEDI side nav">
       <ul className={styles['jedi-horz-nav']}>
         {links.map((link) => <li key={link.path}><NavLink {...link}/></li>)}
       </ul>

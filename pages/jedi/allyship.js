@@ -30,8 +30,8 @@ function Allyship() {
 			/>
       <div className={`${styles.container} ${styles['container-padding']}`}>
         <JEDINav />
-        <h1 className="text-right">allyship spaces</h1>
-        <p className={`text-right ${styles['desktop-half-width-right']}`}>
+        <h1>allyship spaces</h1>
+        <p className={`${styles['desktop-half-width']}`}>
           {/* eslint-disable-next-line max-len */}
           We hold allyship spaces on a bunch of different topics related to EDI; check out our past events below! Anyone can lead and attend an allyship space. If you have a topic you&apos;re interested in, <Link href="/jedi/meet#contact"><a className={styles['jedi-link']}>let us know</a></Link>!
         </p>
