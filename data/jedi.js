@@ -1,6 +1,14 @@
-import cisgenderPrivilege from '../public/images/jedi/cisgender-privilege.png';
-import dontGiveThemTheAux from '../public/images/jedi/dont-give-them-the-aux.png';
-import tempJediCard from '../public/images/jedi/allyship-space-temp.png';
+import ao3 from '../public/images/jedi/allyship/ao3.png';
+import cisgenderPrivilege from '../public/images/jedi/allyship/cisgender-privilege.png';
+import disabilityAccessibility from '../public/images/jedi/allyship/disability-accessibility.jpg';
+import dontGiveThemTheAux from '../public/images/jedi/allyship/dont-give-them-the-aux.png';
+import healthyLiving from '../public/images/jedi/allyship/healthy-living.png';
+import housingCrisisTechHubs from '../public/images/jedi/allyship/housing-crisis-tech-hubs.png';
+import makingSchoolAChoice from '../public/images/jedi/allyship/making-school-a-choice.png';
+import ocdAdhd from '../public/images/jedi/allyship/ocd-adhd.png';
+import qtCS from '../public/images/jedi/allyship/qt-cs.png';
+import responsibleAllyship from '../public/images/jedi/allyship/responsible-allyship.png';
+import selfCare from '../public/images/jedi/allyship/self-care.png';
 
 const allyshipSpaces = [
   {
@@ -11,7 +19,7 @@ const allyshipSpaces = [
     description: 'An allyship space on Western perception of kpop and other Asian media, including fetishization and otherization.',
     slides: 'https://drive.google.com/drive/folders/16Jk212gr2jC4xJbKEkFVxwdukwF902-o',
     pic: dontGiveThemTheAux,
-    alt: 'a temp photo',
+    alt: 'a slide titled "don\'t give them the aux, they\'re going to play kpop: asian representation and the otherization of kpop. features four prominent female Kpop idols.',
   },
   {
     title: 'Cisgender privilege',
@@ -21,7 +29,7 @@ const allyshipSpaces = [
     description: 'An allyship space on the manifestation and perpetuation of cisgender privilege.',
     slides: 'https://drive.google.com/file/d/1m_224Uf6mj6AdYZGglnhiXgE-Mq2uJyL/view?usp=sharing',
     pic: cisgenderPrivilege,
-    alt: 'a temp photo',
+    alt: 'a slide deck titled "Cisgender Privilege", with the date and time as Friday May 14th, 6:15 - 6:45 PM PDT. features an abstract sphere and ribbon.',
   },
   {
     title: 'Responsible allyship',
@@ -30,8 +38,8 @@ const allyshipSpaces = [
     location: 'Online',
     description: 'An allyship space on demonstrating responsible allyship.',
     slides: 'https://drive.google.com/file/d/1Vs6yfcnRI-0HIuHa7VSalkHMGR_mwwld/view?usp=sharing',
-    pic: tempJediCard,
-    alt: 'a temp photo',
+    pic: responsibleAllyship,
+    alt: 'a slide deck that says "a teach la allyship space: responsible allyship" with abstract shapes as the background',
   },
   {
     title: 'The housing crisis in tech hubs',
@@ -40,8 +48,8 @@ const allyshipSpaces = [
     location: 'Online',
     description: 'An allyship space on housing insecurity within tech hubs, and potential solutions.',
     slides: 'https://drive.google.com/file/d/1p6ebnqTLtXOtgJgK_Ed9emhJVeIadSye/view?usp=sharing',
-    pic: tempJediCard,
-    alt: 'a temp photo',
+    pic: housingCrisisTechHubs,
+    alt: 'a slide titled "the housing crisis in tech hubs: kristie lim and megan pham", with a house and some trees',
   },
   {
     title: 'AO3: A brief introduction',
@@ -50,8 +58,8 @@ const allyshipSpaces = [
     location: 'Online',
     description: 'An allyship space on AO3 (Archive of Our Own) and fanfiction as a safe space.',
     slides: 'https://drive.google.com/file/d/1eV0zbnuLzySXRlfESDiH6xucTsKTHQ7W/view?usp=sharing',
-    pic: tempJediCard,
-    alt: 'a temp photo',
+    pic: ao3,
+    alt: 'a simple slide with the title "AO3: a brief introduction"',
   },
   {
     title: 'Self-care',
@@ -60,8 +68,8 @@ const allyshipSpaces = [
     location: 'Online',
     description: 'An allyship space on physical forms of self-care and how to practice it.',
     slides: 'https://drive.google.com/file/d/1eV0zbnuLzySXRlfESDiH6xucTsKTHQ7W/view?usp=sharing',
-    pic: tempJediCard,
-    alt: 'a temp photo',
+    pic: selfCare,
+    alt: 'a slide deck that says "self-care, an allyship space by megha!" with a caption "give yourself the same care and attention that you give to others and watch yourself bloom"',
   },
   {
     title: 'Queer + trans representation in computer science',
@@ -70,8 +78,8 @@ const allyshipSpaces = [
     location: 'Online',
     description: 'An allyship space on gender, intersectionality, and the importance of representation in tech.',
     slides: 'https://drive.google.com/file/d/1Agve-hqXOZ4D0H2PnzaklDcazoND-39F/view?usp=sharing',
-    pic: tempJediCard,
-    alt: 'a temp photo',
+    pic: qtCS,
+    alt: 'a slide that says "queer + trans representation in computer science, an ACM JEDI allyship space by arjun (they/them) and sharvani (she/her). features a gradient moon.',
   },
   {
     title: 'Making school a choice',
@@ -80,8 +88,8 @@ const allyshipSpaces = [
     location: 'Online',
     description: 'An allyship space on juggling academic responsibilities with personal well-being.',
     slides: 'https://drive.google.com/file/d/10d3Q7aK4WMN4nGMvcNyvOG1ONL5RuaC2/view?usp=sharing',
-    pic: tempJediCard,
-    alt: 'a temp photo',
+    pic: makingSchoolAChoice,
+    alt: 'a slide that says "Making School a Choice", with fall-themed decorations like apples and acorns',
   },
   {
     title: 'OCD and ADHD',
@@ -90,8 +98,8 @@ const allyshipSpaces = [
     location: 'Online',
     description: 'An allyship space on OCD and ADHD and responding to ableism, as well as implications regarding stigma, diagnoses, and academics',
     slides: 'https://drive.google.com/file/d/1D06JKksYWq-FsyDhAGvqjRihCTmJhFxD/view?usp=sharing',
-    pic: tempJediCard,
-    alt: 'a temp photo',
+    pic: ocdAdhd,
+    alt: 'a simple slide that says "OCD + ADHD, Sophie Schoenmeyer and Arjun Subramonian"',
   },
   {
     title: 'Healthy living',
@@ -100,8 +108,8 @@ const allyshipSpaces = [
     location: 'Online',
     description: 'An allyship space on improving mental and physical health and seeking support systems.',
     slides: 'https://drive.google.com/file/d/1r9zEz5O8hLFaXtj_pOdMhjd9pgSzGkof/view?usp=sharing',
-    pic: tempJediCard,
-    alt: 'a temp photo',
+    pic: healthyLiving,
+    alt: 'a simple cover slide with the title "healthy living: eugene and matt\'s jedi allyship presentation", and some ferns',
   },
   {
     title: '(Dis)ability + accessibility in tech and beyond',
@@ -110,8 +118,8 @@ const allyshipSpaces = [
     location: 'Online',
     description: 'An allyship space on disability, ableist culture, and what can tech do to improve accessibility.',
     slides: 'https://drive.google.com/file/d/1baLskai0nIdJJESyieke3z4WkzNu3OTK/view?usp=sharing',
-    pic: tempJediCard,
-    alt: 'a temp photo',
+    pic: disabilityAccessibility,
+    alt: 'the cover slide for the talk, with a silhouette of a person sitting with a laptop on their lap and a chat bubble next to their head.',
   },
 ];
 
