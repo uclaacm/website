@@ -8,7 +8,7 @@ import PersonCard from '../components/Impact/PersonCard';
 import WorkshopCard from '../components/Impact/WorkshopCard';
 import Layout from '../components/Layout';
 
-import { initiatives, pastEvents, people } from '../data/impact';
+import { pastEvents, people } from '../data/impact';
 
 import impactMotifBanner from '../public/images/impact/impact-motif.png';
 import styles from '../styles/pages/impact.module.scss';
@@ -49,20 +49,25 @@ function Impact() {
 
         <h2 className="text-center">Our Initiatives</h2>
 				<h3 className="text-uppercase">Workshops</h3>
-				<div className="grid-desktop-3">
-					{initiatives.map((initiative) => <WorkshopCard {...initiative} key={initiative.title} />)}
-				</div>
+				<WorkshopCard
+					title={'Careers Workshop Series'}
+					quarter={'Fall 2021'}
+					description={'Wondering how to harness your tech powers for good? Come out to learn about careers in social impact tech, tech in the nonprofit space, civic tech, environmental tech, and more!'}
+					img={impactMotifBanner}
+					alt={'The ACM Impact banner: a space shuttle taking off, with a moon behind it'}
+					desktopHorizontal
+				/>
 				<h3 className="text-uppercase">Blog</h3>
 				<p>
 					Anyone from UCLA can write for our <a href={impactBlog} target="_blank" rel="noreferrer noopener">our blog</a>! Check this out to see how you can get involved. We look forward to reading your work—in the meantime, check out some of our existing posts!
 				</p>
 				<Carousel/>
 				<h3 className="text-uppercase">Past Events</h3>
-				<div className="grid-desktop-3">
+				<div className="grid-desktop-3 text-center-mobile">
 					{pastEvents.map((event) => <WorkshopCard {...event} key={event.title} />)}
 				</div>
 				<h2 className="text-center">People</h2>
-				<div className="grid-desktop-3">
+				<div className="grid-desktop-3 text-center-mobile">
 					{people.map((person) => <PersonCard {...person} key={person.name} />)}
 				</div>
 			</div>

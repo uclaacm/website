@@ -1,28 +1,6 @@
 import careersSocialImpactTech from '../public/images/impact/events/careers-social-tech.jpg';
 import introTechEthics from '../public/images/impact/events/intro-tech-ethics.png';
 import policyPitchathon21 from '../public/images/impact/events/policy-pitchathon-2021.png';
-import sampleImpactImage from '../public/images/impact/sample-image.png';
-
-export const initiatives = [
-	{
-		title: 'A workshop 1',
-		img: sampleImpactImage,
-		alt: 'sample image - will change later, I promise!',
-		description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-	},
-	{
-		title: 'A workshop 2',
-		img: sampleImpactImage,
-		alt: 'sample image - will change later, I promise!',
-		description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-	},
-	{
-		title: 'A workshop 3',
-		img: sampleImpactImage,
-		alt: 'sample image - will change later, I promise!',
-		description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-	},
-];
 
 export const pastEvents = [
 	{

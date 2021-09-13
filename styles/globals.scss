@@ -42,13 +42,6 @@ h3 {
   }
 }
 
-@media (max-width: $navbar-breakpoint) {
-  .grid-mobile-2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
 @media (min-width: $tablet-breakpoint) {
   .grid-tablet-2 {
     display: grid;
@@ -81,6 +74,12 @@ h3 {
 
 .text-center {
   text-align: center;
+}
+
+@media (max-width: $tablet-breakpoint) {
+  .text-center-mobile {
+    text-align: center;
+  }
 }
 
 .text-uppercase {
