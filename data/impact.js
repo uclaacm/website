@@ -118,7 +118,3 @@ export const blogs = [
 		backgroundStyle: { backgroundImage: 'url(' + 'https://cdn.shopify.com/s/files/1/0070/7032/files/how-to-start-a-blog-illustration.png?format=jpg&quality=90&v=1595363254&width=1024' + ')'},
 	},
 ];
-
-// possible default blog images
-//https://blog.hubspot.com/hubfs/GettyImages-974683580.jpg
-//https://cdn.shopify.com/s/files/1/0070/7032/files/how-to-start-a-blog-illustration.png?format=jpg&quality=90&v=1595363254&width=1024
