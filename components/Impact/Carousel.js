@@ -10,10 +10,12 @@ function Carousel() {
     const blogInfo = blogs[activeItem]; // stores blog info for the blog number that is currently active
 
     const handleNext = () => {
-        if (activeItem >= (blogs.length - 1))
+        if (activeItem >= (blogs.length - 1)) {
             changeActiveItem(0);
-        else
+        }
+        else {
             changeActiveItem(activeItem+1);
+        }
     };
 
     // changes currently active blog every 5 seconds
