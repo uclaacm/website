@@ -18,8 +18,8 @@ function AllyshipSpaceCard({ title, presenters, date, location, description, pic
       <div>
         <h2 className={`${styles['allyship-title']}`}>{title}</h2>
         {/* wrapped in a fragment to allow for spacing */}
-        {rsvp && <><Link href={rsvp}><a className="button">RSVP</a></Link>{' '}</>}
-        {slides && <><Link href={slides}><a className="button">Slides</a></Link>{' '}</>}
+        {rsvp && <><Link href={rsvp}><a className={styles['jedi-link']}>RSVP</a></Link>{' '}</>}
+        {slides && <><Link href={slides}><a className={styles['jedi-link']}>Slides</a></Link>{' '}</>}
         <p className={`${styles['my-tight']} ${styles['allyship-presenters']}`}>by { presenters }</p>
         <p className={styles['my-tight']}><em>{date} | { location }</em></p>
         <p className={styles['my-tight']}>

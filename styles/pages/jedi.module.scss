@@ -88,10 +88,15 @@
   padding-left: 0;
 }
 
-.nav-links a,
-.jedi-link {
+.jedi-link,
+.nav-links a {
   color: $acm-cobalt;
-  text-decoration-color: $acm-cobalt;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+    text-decoration-color: $acm-cobalt;
+  }
 }
 
 .my-tight {
