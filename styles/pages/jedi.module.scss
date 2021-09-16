@@ -1,0 +1,133 @@
+@import '../variables.scss';
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px;
+}
+
+.container-padding {
+  padding: 0 1em;
+}
+
+.hero-title {
+  font-size: 3rem;
+}
+
+.hero-subtitle {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.allyship-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5em;
+  margin-top: 0;
+}
+
+.jedi-title {
+  font-size: 1.5rem;
+  margin-bottom: 0;
+  margin-top: 0.5em;
+}
+
+.allyship-image {
+  padding-right: 2rem;
+}
+
+.allyship-presenters {
+  font-weight: 600;
+}
+
+.tri-grid,
+.allyship-row {
+  padding: 1em 0;
+}
+
+.hero-row {
+  padding: 1em;
+}
+
+.jedi-profile-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 250px;
+}
+
+.jedi-card-body {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 240px;
+}
+
+@media (min-width: $tablet-breakpoint) {
+  .hero-row {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .allyship-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .tri-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .desktop-half-width {
+    width: 50%;
+  }
+}
+
+.nav-links {
+  font-family: $font-header;
+  font-size: 1.5rem;
+  line-height: 2;
+  list-style: none;
+  padding-left: 0;
+}
+
+.jedi-link,
+.nav-links a {
+  color: $acm-cobalt;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+    text-decoration-color: $acm-cobalt;
+  }
+}
+
+.my-tight {
+  margin: 0.4em 0;
+}
+
+.mt-2 {
+  margin-top: 2em;
+}
+
+.mb-2 {
+  margin-bottom: 2em;
+}
+
+.pronouns {
+  font-size: 1rem;
+}
+
+.jedi-horz-nav {
+  list-style: none;
+  padding-left: 0;
+
+  @media (min-width: $tablet-breakpoint) {
+    text-align: right;
+  }
+
+  li {
+    display: inline-block;
+    margin: 0 1rem;
+  }
+}
