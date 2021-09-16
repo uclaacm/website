@@ -10,7 +10,7 @@ function InternshipTimeline(props) {
 
 	return (
 		<div className={`hidden-mobile ${styles.timeline}`}>
-			<div className={styles['timeline-progress']} style={{ width: `${progressBarWidth}%`}}></div>
+			<div className={styles['timeline-progress']} style={{ width: `${progressBarWidth}%`}}/>
 			<div className={styles['timeline-items']}>
 				{items.map((item, i) => (
 					<div key={i} className={`${styles['timeline-item']} ${styles[item.active ? 'active' : null ]}`}>

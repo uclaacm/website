@@ -12,7 +12,7 @@ export default {
             date: '10/10',
             name: 'Application Form is Open',
             info: 'Fill out the application form for up to 3 committees that you would like to intern for',
-            active: true,
+            active: false,
         },
         {
             date: '10/22',

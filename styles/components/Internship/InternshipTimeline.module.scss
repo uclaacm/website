@@ -23,7 +23,9 @@
 .timeline-item {
   position: relative;
 }
-  
+ 
+// creates the dot on the progress bar
+// has no content and a 100% radius - is fit into a box of 20px by 20px
 .timeline-item::before {
   background-color: #CCC;
   border-radius: 100%;
@@ -45,6 +47,8 @@
   width: 100px;
 }
   
+// creates the triangle above individual timeline elements
+// makes a small box and rotates it 45 degrees so it shows up as a triangle
 .timeline-content::before {
   background-color: #DDD;
   content: '';
