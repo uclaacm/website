@@ -82,8 +82,18 @@ h3 {
   text-align: center;
 }
 
+@media (max-width: $tablet-breakpoint) {
+  .text-center-mobile {
+    text-align: center;
+  }
+}
+
 .text-right {
   text-align: right;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
 }
 
 .text-25x {

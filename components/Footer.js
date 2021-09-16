@@ -15,6 +15,7 @@ const footerACMLinks = [
 ];
 
 const footerInitiativeLinks = [
+	{ title: 'Impact', path: '/impact' },
 	{ title: 'JEDI', path: '/jedi' },
 ];
 
