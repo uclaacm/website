@@ -32,7 +32,7 @@ function JEDIAbout () {
 			/>
       <div className={styles.container}>
         <div className={`text-center ${styles['mt-2']}`}>
-          <Image src={tempJediBanner} alt="a temporary banner image with a diverse group of people experiencing technology" />
+          <Image src={tempJediBanner} alt="a temporary banner image with a diverse group of people experiencing technology" priority />
         </div>
         <div className="text-center">
           <h1 className={styles['hero-title']}>ACM | JEDI</h1>
