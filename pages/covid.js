@@ -10,7 +10,7 @@ function COVID() {
     <Layout>
 			<NextSeo
 				title="COVID Policies | ACM at UCLA"
-				description="As a student chapter of the international Association for Computing Machinery, ACM at UCLA is the largest Computer Science student organization at UCLA and in Southern California. We welcome students of all backgrounds and skill levels to join our community and share our love for technology!"
+				description="A detailed discussion of ACM's commitment to a safe return to campus!"
 				openGraph={{
 					images: [
 						{
@@ -44,7 +44,9 @@ function COVID() {
           title="ACM COVID Policies Fall 2021"
           src="https://docs.google.com/document/d/e/2PACX-1vQNKdSdvbpaZNkXz7Fnm_ObaCBqfAFujWGgoRHIrWY3jjsQbL5NlB61wT3_rcbSMyG8RpZHauWvcgkX/pub?embedded=true"
           style={{
+            border: '1px black solid',
             height: '100vh',
+            marginBottom: '2rem',
             width: '100%',
           }}
         >
