@@ -6,8 +6,10 @@ import React from 'react';
 import Layout from '../../components/Layout';
 
 import { blogLink, contactEmail } from '../../data/jedi';
-import tempJediCard from '../../public/images/jedi/allyship-space-temp.png';
 import tempJediBanner from '../../public/images/jedi/banner-temp.png';
+import diverseDesign from '../../public/images/jedi/events/diverse-design.png';
+import hackschoolAccessibility from '../../public/images/jedi/events/hackschool-accessibility.png';
+import tlaImpostorSyndrome from '../../public/images/jedi/events/tla-impostor-syndrome.png';
 import styles from '../../styles/pages/jedi.module.scss';
 
 function JEDIAbout () {
@@ -65,30 +67,30 @@ function JEDIAbout () {
           </div>
         </div>
         <hr className={styles['mt-2']} />
-        <h2 className="text-center">what JEDI does</h2>
+        <h2 className="text-center">see what JEDIs have brought to ACM</h2>
         <div className={styles['tri-grid']}>
           <div>
-            <Image src={tempJediCard} alt="sample image - we'll change this soon, i promise" />
-            <h3>allyship spaces</h3>
+            <Image src={hackschoolAccessibility} alt="a title slide for ACM Hack's Hackschool Workshop Series: Session 6, Responsive Design and Accessibility" />
+            <h3>Web accessibility workshop</h3>
             <p>
               {/* eslint-disable-next-line max-len */}
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              A workshop on web accesibility taught as part of ACM Hack&apos;s core Hackschool curriculum!
             </p>
           </div>
           <div>
-            <Image src={tempJediCard} alt="sample image - we'll change this soon, i promise" />
+            <Image src={diverseDesign} alt="a banner for ACM Teach LA with a diverse cast of different computer science students" />
             <h3>allyship spaces</h3>
             <p>
               {/* eslint-disable-next-line max-len */}
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Graphics by ACM Design with diverse motifs and improved representation within the computer science community!
             </p>
           </div>
           <div>
-            <Image src={tempJediCard} alt="sample image - we'll change this soon, i promise" />
+            <Image src={tlaImpostorSyndrome} alt="a slide of discussion questions for Teach LA's impostor syndrome workshop!" />
             <h3>allyship spaces</h3>
             <p>
               {/* eslint-disable-next-line max-len */}
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              A discussion space held by ACM Teach LA on experiences with imposter syndrome!
             </p>
           </div>
         </div>
