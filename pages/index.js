@@ -32,7 +32,7 @@ function Home () {
 			/>
 			<div className="home-page text-center">
 				<ContentBanner
-					title="See how we're taking a safe return-to-campus seriously."
+					title="See how we're committing to a safe return-to-campus"
 					ctaText="View COVID Policy Doc"
 					ctaLink="/covid"
 				/>
