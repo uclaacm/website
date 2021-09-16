@@ -17,7 +17,7 @@ function NextSteps(props) {
                     />
                 </div>
                 <div className={`${styles['next-steps-card-face']} ${styles.back}`}>
-                    {info}
+                    <p>{info}</p>
                 </div>
             </div>
         </div>
