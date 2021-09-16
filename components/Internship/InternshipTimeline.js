@@ -9,7 +9,7 @@ function InternshipTimeline(props) {
 	const progressBarWidth = totalItems > 1 ? (numberOfActiveItems - 1) / (totalItems - 1) * 100 : 0;
 
 	return (
-		<div className={styles.timeline}>
+		<div className={`hidden-mobile ${styles.timeline}`}>
 			<div className={styles['timeline-progress']} style={{ width: `${progressBarWidth}%`}}></div>
 			<div className={styles['timeline-items']}>
 				{items.map((item, i) => (

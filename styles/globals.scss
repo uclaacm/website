@@ -79,3 +79,9 @@ h3 {
 .text-25x {
   font-size: 2.5em !important;
 }
+
+@media (max-width: $tablet-breakpoint) {
+  .hidden-mobile {
+    display: none;
+  }
+}

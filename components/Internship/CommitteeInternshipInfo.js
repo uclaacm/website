@@ -13,7 +13,7 @@ function CommitteeInternshipInfo(props) {
                     <div className={styles['logo-diamond']} key={committee.name} onClick={()=>setCommitteeName(committee.name)}>
                         <Image
                             src={committee.diamond}
-                            alt={`${committee.name}'s logo`}
+                            alt={`ACM ${committee.name}`}
                             width="100px"
                             height="100px"
                         />
@@ -21,7 +21,7 @@ function CommitteeInternshipInfo(props) {
                 )}
             </div>
             {committees.map(committee =>
-                committeeName == committee.name ?
+                committeeName === committee.name ?
                 <div className={`${styles['committee-internship-info']} ${styles[committee.class]}`} key={committee.name}>
                     <Image
                         src={committee.image}
@@ -29,9 +29,9 @@ function CommitteeInternshipInfo(props) {
                         height="60px"
                         width="250px"
                     />
-                    <h4>What do we do?</h4>
+                    <h3>What do we do?</h3>
                     <p className={styles['internship-info-data']}> {committee.internship.whatWeDo} </p>
-                    <h4>What will interns do?</h4>
+                    <h3>What will interns do?</h3>
                     <p className={styles['internship-info-data']}> {committee.internship.whatInternsWillDo} </p>
                 </div> :  null,
             )}

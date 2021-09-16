@@ -12,7 +12,7 @@ function NextSteps(props) {
                 <div className={styles['next-steps-card-face']}>
                     <Image
                         src={image}
-                        alt={`${name}'s card motif`}
+                        alt={`${name}'s card. Click to see more information.`}
                         layout='fill'
                     />
                 </div>

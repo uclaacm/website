@@ -3,8 +3,7 @@
 .timeline {
   background-color: #CCC;
   height: 4px;
-  margin: 50px 60px;
-  margin-bottom: 125px;
+  margin: 50px 60px 125px;
 }
   
 .timeline-progress {
@@ -70,10 +69,4 @@
   
 .timeline-item.active .timeline-content::before {
   background-color: $acm-cobalt;
-}
-
-@media screen and (max-width: $tablet-breakpoint) {
-  .timeline {
-    display: none;
-  }
 }

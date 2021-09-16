@@ -13,6 +13,8 @@ import Layout from '../components/Layout';
 import data from '../data';
 import 'react-multi-carousel/lib/styles.css';
 
+import styles from '../styles/pages/Internship.module.scss';
+
 const { committees, internship } = data;
 const boardInfo = [
     {
@@ -62,8 +64,8 @@ function InternshipPage(){
     return(
         <Layout>
             <Banner decorative />
-            <div className="content-section text-center">
-                <h1>Internships</h1>
+            <div className={'content-section text-center'}>
+                <h1>The Internship Program</h1>
                 The ACM Internship program is a program that facilitates the transition of UCLA students to
                 ACM officers. Interns learn about the ACM committee they are interning for and ACM in general
                 before becoming an official ACM officer.
@@ -74,34 +76,34 @@ function InternshipPage(){
             <CommitteeInternshipInfo
                 committees={internshipInfo}
             />
-            <div className="content-section text-center">
+            <div className={'content-section text-center'}>
                 <h2>Applications</h2>
                 <InternshipTimeline items={items}/>
-                <div className="grid-tablet-2">
-                    <div>
+                <div className={'grid-tablet-2'}>
+                    <section>
                         {items.map((item, i) => (
-                        <div key={i} className='application-item'>
+                        <div key={i} className={styles['application-item']}>
                             {item.date} &nbsp;
                             {item.name}
-                            <p className='application-item-info'>{item.info}</p>
+                            <p className={styles['application-item-info']}>{item.info}</p>
                         </div>
                         ))}
                         -- more dates will be added throughout the quarter --
-                    </div>
-                    <div className='application-info-card'>
+                    </section>
+                    <aside className={styles['application-info-card']}>
                         <h3>Internship Applications Reopen Fall 2021</h3>
-                        <div className='application-button'>
+                        <div className={styles['application-button']}>
                             {/* TODO: add link to internship application */}
                             <Link href="">
-                                <a className="button" target="_blank" rel="noreferrer noopener">
+                                <a className={'button'} target="_blank" rel="noreferrer noopener">
                                     Apply Now
                                 </a>
                             </Link>
                         </div>
-                    </div>
+                    </aside>
                 </div>
             </div>
-            <div className="content-section text-center">
+            <div className={'content-section text-center'}>
                 <h2>Intern to Officer Transition</h2>
                 <Carousel
                     responsive={responsive}
@@ -119,26 +121,26 @@ function InternshipPage(){
                     )}
                 </Carousel>
             </div>
-            <div className="content-section text-center">
+            <div className={'content-section text-center'}>
                 <h2>Hear from past interns!</h2>
-                <div className="testimonial-section">
+                <div className={styles['testimonial-section']}>
                     {testimonials.map((testimonial, i) => (
-                            <div key={i} className="testimonial-item">
+                            <div key={i} className={styles['testimonial-item']}>
                                 {/* <Image
                                     src = {testimonial.image}
                                     alt = {`${testimonial.name}'s image`}
                                     width = "60px"
                                     height = "60px"
                                 /> */}
-                                <p className="text-left">{testimonial.quote}</p>
-                                <p className="text-right">- {testimonial.name} <br/> {testimonial.committee} intern, {testimonial.year}</p>
+                                <p className={'text-left'}>{testimonial.quote}</p>
+                                <p className={'text-right'}>- {testimonial.name} <br/> {testimonial.committee} intern, {testimonial.year}</p>
                             </div>
                     ))}
                 </div>
             </div>
-            <div className="content-section text-center">
-                <h2>FAQ</h2>
-                <div className="faq">
+            <div className={'content-section'}>
+                <h2 className={'text-center'}>FAQ</h2>
+                <div className={styles.faq}>
                     <Faq
                     data={QA}
                     styles={FAQStyles}

@@ -113,7 +113,7 @@ export default {
                 title: 'I have more questions, how can I get them answered?',
                 content: `If you have any questions about the application process or the Internship program in general email Ava Asmani, 
                 the Internship Director[ava24@g.ucla.edu]. If you have any questions that are specific to committees, there will be an 
-                Internship Program ACM Committee Info Session/QandA sometime in week 3 or 4 of the Fall Quarter.`,
+                Internship Program ACM Committee Info Session/Q&A sometime in week 3 or 4 of the Fall Quarter.`,
             },
         ],
     },
