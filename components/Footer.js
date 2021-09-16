@@ -14,6 +14,10 @@ const footerACMLinks = [
 	{ title: 'Membership Portal', path: 'https://members.uclaacm.com', ext: true },
 ];
 
+const footerInitiativeLinks = [
+	{ title: 'JEDI', path: '/jedi' },
+];
+
 function FooterLinkElement({ title, path, ext }){
 	return (
 		<Link href={path}>
@@ -46,6 +50,14 @@ function Footer(){
 						<ul className='list-unstyled'>
 							{
 								footerACMLinks.map((link) => <li key={link.path}><FooterLinkElement {...link} /></li>)
+							}
+						</ul>
+						<h3 className={styles['footer-header']}>ACM Initiatives</h3>
+						<ul className='list-unstyled'>
+							{
+								footerInitiativeLinks.map((link) => <li key={link.path}>
+									<FooterLinkElement {...link} />
+								</li>)
 							}
 						</ul>
 						{/* TODO: consider where to put impact/jedi! events & initiatives? */}

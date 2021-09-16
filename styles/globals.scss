@@ -31,6 +31,12 @@ h3 {
   margin-top: 70px; //To account for height of Navbar, which uses fixed positioning
 }
 
+.content-container-tight {
+  margin: 0 auto;
+  max-width: 50rem;
+  padding: 0 1rem;
+}
+
 .font-header {
   font-family: $font-header !important;
 }
@@ -80,6 +86,10 @@ h3 {
   .text-center-mobile {
     text-align: center;
   }
+}
+
+.text-right {
+  text-align: right;
 }
 
 .text-uppercase {
