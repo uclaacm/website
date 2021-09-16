@@ -5,10 +5,10 @@ import React from 'react';
 import Banner from '../components/Banner';
 import Carousel from '../components/Carousel';
 import Committees from '../components/CommitteeSpread';
+import ContentBanner from '../components/ContentBanner';
 import Layout from '../components/Layout';
 import Article from '../components/NewsArticle';
 import SocialMedia from '../components/SocialMedia';
-import TGBanner from '../components/TechGala/ViewBanner';
 import data from '../data';
 
 function Home () {
@@ -31,7 +31,11 @@ function Home () {
 				}}
 			/>
 			<div className="home-page text-center">
-				<TGBanner />
+				<ContentBanner
+					title="See how we're committing to a safe return-to-campus"
+					ctaText="View COVID Policy Doc"
+					ctaLink="/covid"
+				/>
 				<Banner />
 				<div className="content-section">
 					<h2>The largest Computer Science community at UCLA</h2>
