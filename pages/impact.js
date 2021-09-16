@@ -36,7 +36,7 @@ function Impact() {
 			<Banner decorative />
 			<div className={styles.container}>
 				<div className="text-center">
-					<Image src={impactMotifBanner} alt='Impact by ACM at UCLA' />
+					<Image src={impactMotifBanner} alt='Impact by ACM at UCLA' priority />
 				</div>
 
 				<h2 className="text-center">Tech Ethics.</h2>
