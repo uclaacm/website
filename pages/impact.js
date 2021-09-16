@@ -59,7 +59,7 @@ function Impact() {
 				/>
 				<h3 className="text-uppercase">Blog</h3>
 				<p>
-					Anyone from UCLA can write for our <a href={impactBlog} target="_blank" rel="noreferrer noopener">our blog</a>! Check this out to see how you can get involved. We look forward to reading your work—in the meantime, check out some of our existing posts!
+					Anyone from UCLA can write for our <a href={impactBlog} target="_blank" rel="noreferrer noopener">our blog</a>! Soon, we&apos;ll have information on how you can get involved. We look forward to reading your work—in the meantime, check out some of our existing posts!
 				</p>
 				<Carousel/>
 				<h3 className="text-uppercase">Past Events</h3>
