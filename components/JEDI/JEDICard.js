@@ -7,7 +7,7 @@ import styles from '../../styles/pages/jedi.module.scss';
  * creates a JEDI card from props; for now, uses <img>
  * for image instead of next/image
  */
-function JEDICard({ name, pronouns, bio, pic, alt }) {
+function JEDICard({ name, pronouns, /* bio, */ pic, alt }) {
   return (
     <div className={styles['mb-2']}>
       {/* eslint-disable-next-line @next/next/no-img-element */}
