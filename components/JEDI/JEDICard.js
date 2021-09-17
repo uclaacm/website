@@ -14,9 +14,9 @@ function JEDICard({ name, pronouns, bio, pic, alt }) {
       <img className={styles['jedi-profile-img']} src={pic} alt={alt} />
       <div className={styles['jedi-card-body']}>
         <h2 className={styles['jedi-title']}>{name} <span className={styles.pronouns}>{pronouns}</span></h2>
-        <p className={styles['my-tight']}>
+        {/* <p className={styles['my-tight']}>
           {bio}
-        </p>
+        </p> */}
       </div>
     </div>
   );
