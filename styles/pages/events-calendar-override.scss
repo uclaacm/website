@@ -1,0 +1,13 @@
+@import '../variables.scss';
+
+.rbc-header {
+  background-color: #445EDC;
+  border: 0 !important;
+  color: white;
+  padding: 0.5em !important;
+  text-transform: lowercase;
+}
+
+.rbc-month-view {
+  border-radius: 100px;
+}

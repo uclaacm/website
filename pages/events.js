@@ -1,11 +1,27 @@
+import moment from 'moment';
 import { NextSeo } from 'next-seo';
 import React from 'react';
+import { Calendar, momentLocalizer } from 'react-big-calendar';
 // import data from '../data/events';
 
 import Banner from '../components/Banner';
 import Layout from '../components/Layout';
 
 import styles from '../styles/pages/Events.module.scss';
+
+import 'react-big-calendar/lib/css/react-big-calendar.css';
+
+const localizer = momentLocalizer(moment);
+
+const events = [
+	{
+    id: 1,
+    title: 'CS Welcome Day',
+    allDay: true,
+    start: new Date(2021, 8, 21),
+    end: new Date(2021, 8, 22),
+  },
+];
 
 function Events() {
 	return (
@@ -35,23 +51,16 @@ function Events() {
 
 					We&apos;ll see you soon!
 				</p>
+				<Calendar
+					localizer={localizer}
+					events={events}
+					startAccessor="start"
+					endAccessor="end"
+					style={{ height: 500 }}
+				/>
 				<p>
-					Want to know what our events look like? All of our 2020-2021 content was recorded and is available on our <a href="https://www.youtube.com/c/acmucla" target="_blank" rel="noreferrer noopener">YouTube channel!</a>
+					Want to see our past events? All of our 2020-2021 content was recorded and is available on our <a href="https://www.youtube.com/c/acmucla" target="_blank" rel="noreferrer noopener">YouTube channel!</a>
 				</p>
-				{/* <p>
-					Our events are open to everyone, regardless of major, background, or experience! Come find us on <a href="https://www.youtube.com/c/acmucla" target="_blank" rel="noreferrer noopener">YouTube!</a>
-				</p>
-
-				<br/><br/>
-				<div className={styles['calendar-container']}>
-				<iframe src={data.calendar_url}
-					className={styles['calendar-main']}
-					frameBorder="0"
-					scrolling="0"
-					title="calendar"
-					/>
-				</div>
-				<br/><br/><br/> */}
 			</div>
 		</Layout>
 	);
