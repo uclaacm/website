@@ -5,11 +5,13 @@ $committees: (ai, $ai-arctic), (cyber, $cyber-amber), (design, $design-orange), 
   box-shadow: 0 0 4px #E2E2E2;
   color: $font-primary-color;
   font-family: $font-display;
+  font-weight: 600;
   height: 72px;
   left: 0;
   margin: 0;
   padding: 0;
   position: fixed;
+  text-transform: lowercase;
   top: 0;
   width: 100%;
   z-index: 10;
@@ -97,10 +99,6 @@ $committees: (ai, $ai-arctic), (cyber, $cyber-amber), (design, $design-orange), 
           font-weight: 600;
           text-transform: lowercase;
           transition: 0.2s;
-
-          &.active {
-            color: $acm-cobalt;
-          }
           
           &:hover {
             color: $acm-cobalt;
@@ -125,7 +123,6 @@ $committees: (ai, $ai-arctic), (cyber, $cyber-amber), (design, $design-orange), 
         }
 
         // committee color applied on hover and active
-        // $committees: (ai, $ai-arctic), (cyber, $cyber-amber), (design, $design-orange), (hack, $hack-purple), (icpc, $icpc-tangerine), (studio, $studio-raspberry), (teachla, $teachla-green), (w, $w-teal);
 
         @each $committee in $committees {
           [href='/committees##{nth($committee, 1)}']:hover,
