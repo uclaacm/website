@@ -1,13 +1,28 @@
 @import '../variables.scss';
 
+// overrides the header for the calendar; this is
+// the days of the week for a month or week view
 .rbc-header {
   background-color: #445EDC;
   border: 0 !important;
   color: white;
+  font-family: $font-header !important;
+  font-weight: 500 !important;
   padding: 0.5em !important;
   text-transform: lowercase;
 }
 
-.rbc-month-view {
-  border-radius: 100px;
+// overrides an individual date cell
+.rbc-date-cell,
+.rbc-label {
+  color: #B2B2B2;
+  font-family: $font-header;
+}
+
+// overrides the label for the toolbar,
+// i.e. the month
+.rbc-toolbar-label {
+  font-family: $font-header;
+  font-size: 2rem;
+  font-weight: bold;
 }

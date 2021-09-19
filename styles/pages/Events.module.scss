@@ -1,18 +1,11 @@
-// TODO: completely remove this CSS file (pending another PR)
-// given that almost all of the styles are duplicatable
-
 .events-container {
-  //two below css properties were added when putting the "we're on pause', should be removed when adding calendar again
   margin: 0 auto;
-  max-width: 50rem;
-  text-align: center;
+  max-width: 75rem;
+  padding: 0 1em;
 }
 
-.calendar-container {
-  text-align: center;
-}
-
-.calendar-main {
-  height: 400px;
-  width: 50%;
+.calendar-view-container {
+  column-gap: 2rem;
+  display: grid;
+  grid-template-columns: auto 300px;
 }

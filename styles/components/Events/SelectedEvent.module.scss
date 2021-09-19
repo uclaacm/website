@@ -1,0 +1,41 @@
+@import '../../variables.scss';
+
+.card-container {
+  border: 1px solid #B2B2B2;
+  border-radius: 10px;
+}
+
+.card-body {
+  padding: 0 1rem;
+}
+
+.card-image {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.card-title {
+  margin-bottom: 0.25em;
+}
+
+.date-line {
+  color: #B2B2B2;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.description {
+  font-size: 0.8rem;
+  margin: 0.5em 0;
+}
+
+.event-link {
+  color: $acm-cobalt;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+    text-decoration-color: $acm-cobalt;
+  }
+}
