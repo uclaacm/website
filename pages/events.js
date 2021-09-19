@@ -2,44 +2,29 @@ import moment from 'moment';
 import { NextSeo } from 'next-seo';
 import React, { useState } from 'react';
 import { Calendar, momentLocalizer } from 'react-big-calendar';
-// import data from '../data/events';
 
 import Banner from '../components/Banner';
 import SelectedEvent from '../components/Events/SelectedEvent';
 import Layout from '../components/Layout';
 
+import events from '../data/calendar';
 import styles from '../styles/pages/Events.module.scss';
 
 import 'react-big-calendar/lib/css/react-big-calendar.css';
 
 const localizer = momentLocalizer(moment);
 
-const events = [
-	{
-    id: 1,
-    title: 'CS Welcome Day',
-    allDay: true,
-    start: new Date(2021, 8, 21),
-    end: new Date(2021, 8, 22),
-		description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam orci, aliquet eget mollis at, facilisis porta odio. Cras mauris nisl, suscipit nec posuere semper, euismod sit amet nibh. Nulla facilisi. Praesent quam lacus, vulputate vel condimentum eget, congue ac justo.',
-		links: [
-			{ text: 'Event Website', href: 'https://www.cs.ucla.edu/cs-welcome-day/', ext: true },
-		],
-  },
-	{
-    id: 2,
-    title: 'Fall GM',
-    allDay: false,
-    start: new Date(2021, 8, 27, 18),
-    end: new Date(2021, 8, 27, 19, 30),
-		description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam orci, aliquet eget mollis at, facilisis porta odio. Cras mauris nisl, suscipit nec posuere semper, euismod sit amet nibh. Nulla facilisi. Praesent quam lacus, vulputate vel condimentum eget, congue ac justo.',
-		image: '/images/events/f21-fall-gm.png',
-		alt: 'a banner that says "ACM at UCLA: Fall GM, Monday, September 27th from 6-8 PM in the Court of Sciences". Features graphical elements representing each of ACM\'s committees: ACM Hack, ACM W, ACM AI, ACM ICPC, ACM Cyber, ACM Studio, ACM Teach LA, and ACM Design.',
-		links: [
-			{ text: 'Event Website', href: '/gm/f21' , ext: false },
-		],
-  },
-];
+
+// see eventPropGetter
+const getEventClassByEvent = (event) => {
+	let modifierStr = '';
+	if (event.committee) {
+		modifierStr = event.committee;
+	}
+	return ({
+		className: `rbc-override-event rbc-override-${modifierStr}`,
+	});
+};
 
 function Events() {
 	const [activeEvent, setActiveEvent] = useState(null);
@@ -65,10 +50,7 @@ function Events() {
 			<div className={styles['events-container']}>
 				<h1 className="text-center">Our Events</h1>
 				<p className="text-center">
-					We&apos;re taking the most of the summer off to
-					rest, recharge, and prepare for a hybrid fall quarter.
-
-					We&apos;ll see you soon!
+					Take a look at our fancy calendar.
 				</p>
 				<div className={styles['calendar-view-container']}>
 					<Calendar
@@ -76,8 +58,12 @@ function Events() {
 						events={events}
 						startAccessor="start"
 						endAccessor="end"
-						style={{ height: 500 }}
+						style={{ height: 600 }}
 						onSelectEvent={setActiveEvent}
+						eventPropGetter={getEventClassByEvent}
+						// matt says: using these props this way *feels wrong*
+						min={new Date('August 19, 1975 9:00:00')}
+						max={new Date('August 19, 1975 22:00:00')}
 					/>
 					<SelectedEvent event={activeEvent}/>
 				</div>
