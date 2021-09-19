@@ -12,6 +12,7 @@ function SelectedEvent({ event }) {
   const imageSrc = image ? image : '/images/events/default-event.png';
   return (
     <div className={styles['card-container']}>
+      <h2 className={styles['card-header']}>event information</h2>
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img className={styles['card-image']} src={imageSrc} alt={alt} />
       <div className={styles['card-body']}>

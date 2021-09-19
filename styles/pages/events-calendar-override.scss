@@ -12,6 +12,23 @@
   text-transform: lowercase;
 }
 
+// overrides to round out the outer box
+
+.rbc-month-view {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.rbc-month-header {
+  > .rbc-header:first-child {
+    border-top-left-radius: 10px;
+  }
+
+  > .rbc-header:last-child {
+    border-top-right-radius: 10px;
+  }
+}
+
 // overrides an individual date cell
 .rbc-date-cell,
 .rbc-label {
@@ -25,4 +42,29 @@
   font-family: $font-header;
   font-size: 2rem;
   font-weight: bold;
+}
+
+// btn & btn-group overrides
+.rbc-btn-group {
+  background: #93A5BF;
+  border-radius: 10px;
+
+  > button {
+    border: 0 !important;
+    color: white !important;
+    font-family: $font-header;
+    font-weight: 600;
+    text-transform: lowercase;
+
+    &:hover {
+      color: black !important;
+      cursor: pointer;
+    }
+
+    &.rbc-active {
+      background-color: #3E5DE4 !important;
+      border-radius: 10px !important;
+      box-shadow: 3.85962px 3.85962px 3.85962px rgba(50, 73, 181, 0.25) !important;
+    }
+  }
 }

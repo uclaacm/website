@@ -5,6 +5,18 @@
   border-radius: 10px;
 }
 
+.card-header {
+  background-color: #445EDC;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
+  padding: 0.2em 1em;
+  text-align: center;
+}
+
 .card-body {
   padding: 0 1rem;
 }
