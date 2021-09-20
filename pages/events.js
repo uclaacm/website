@@ -7,7 +7,7 @@ import Banner from '../components/Banner';
 import SelectedEvent from '../components/Events/SelectedEvent';
 import Layout from '../components/Layout';
 
-import events from '../data/calendar';
+import events from '../data/event';
 import styles from '../styles/pages/Events.module.scss';
 
 import 'react-big-calendar/lib/css/react-big-calendar.css';
@@ -19,10 +19,10 @@ const localizer = momentLocalizer(moment);
 const getEventClassByEvent = (event) => {
 	let modifierStr = '';
 	if (event.committee) {
-		modifierStr = event.committee;
+		modifierStr = `rbc-override-${event.committee}`;
 	}
 	return ({
-		className: `rbc-override-event rbc-override-${modifierStr}`,
+		className: `rbc-override-event ${modifierStr}`,
 	});
 };
 

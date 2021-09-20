@@ -1,3 +1,5 @@
+@import '../variables.scss';
+
 .events-container {
   margin: 0 auto;
   max-width: 75rem;
@@ -5,7 +7,14 @@
 }
 
 .calendar-view-container {
-  column-gap: 2rem;
-  display: grid;
-  grid-template-columns: auto 300px;
+  @media screen and (min-width: $tablet-breakpoint) {
+    column-gap: 2rem;
+    display: grid;
+    grid-template-columns: auto 300px;
+  }
+  @media screen and (max-width: $tablet-breakpoint) {
+    > * {
+      margin-bottom: 1rem;
+    }
+  }
 }
