@@ -58,7 +58,7 @@ function Events() {
 						events={events}
 						startAccessor="start"
 						endAccessor="end"
-						style={{ height: 600 }}
+						style={{ height: 700 }}
 						onSelectEvent={setActiveEvent}
 						eventPropGetter={getEventClassByEvent}
 						// matt says: using these props this way *feels wrong*

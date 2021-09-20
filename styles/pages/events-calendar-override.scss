@@ -12,6 +12,19 @@
   text-transform: lowercase;
 }
 
+.rbc-time-header-cell > .rbc-header {
+  padding-bottom: 1.5em !important;
+}
+
+.rbc-allday-cell {
+  padding-top: 0.5em;
+}
+
+
+.rbc-today {
+  color: black;
+}
+
 // overrides to round out the outer box
 
 .rbc-month-view {
@@ -34,6 +47,11 @@
 .rbc-label {
   color: #B2B2B2;
   font-family: $font-header;
+}
+
+.rbc-day-slot .rbc-event {
+  border: 0 !important;
+  padding: 0.5em;
 }
 
 // overrides the label for the toolbar,
@@ -69,13 +87,25 @@
   }
 }
 
-// override for individual events in month view
+// override for individual events - across all views
 .rbc-override-event {
   background-color: #1E6CFF !important;
   border-radius: 10px !important;
   font-size: 0.6rem !important;
 }
 
+// agenda overrides
+.rbc-agenda-date-cell {
+  background-color: white !important;
+}
+
+.rbc-agenda-time-cell,
+.rbc-agenda-event-cell {
+  color: white;
+}
+
+
+// committee overrides
 .rbc-override-ai {
   background: linear-gradient(88.74deg, #29BBFF 41.7%, #2EE2FF 100%) !important;
 }
