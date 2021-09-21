@@ -1,3 +1,5 @@
+/* eslint-disable max-len */
+
 import React from 'react';
 
 export default [
@@ -61,12 +63,8 @@ export default [
 			whatWeDo: 'Studio wants to create a community of game developers, whether you’re interested in gameplay programming, graphics, animation, pixel, music, whatever. We want to help you express yourself through video game development.',
 			whatInternsWillDo: (
 			<ul>
-				<li> Marketing interns will focus on community engagement,
-					particularly in the form of leading socials and increasing member retention</li>
-				<li> Unity Tutorial Subcommittee interns will help host Unity tutorials and bugfix in winter quarter.
-					Unity experience is heavily valued but not absolutely required, as much of game development is a
-					&apos;learn as you go&apos; style. C# skills and teaching experience are appreciated but are soft
-					expectations.</li>
+				<li> Marketing interns will focus on community engagement, particularly in the form of leading socials and increasing member retention</li>
+				<li> Unity Tutorial Subcommittee interns will help host Unity tutorials and bugfix in winter quarter. Unity experience is heavily valued but not absolutely required, as much of game development is a &apos;learn as you go&apos; style. C# skills and teaching experience are appreciated but are soft expectations.</li>
 			</ul> ),
 			card: '/images/cards/studio_card.svg',
 			nextSteps: 'All Interns automatically become officers in the Spring if they choose to stay.',
@@ -380,19 +378,12 @@ export default [
 			whatWeDo: 'Teach LA pairs UCLA students with schools in Los Angeles to provide free computer science classes. We have a teaching/curriculum team and a development team depending on what you’re interested in!',
 			whatInternsWillDo: (
 			<ul>
-				<li> The Logistics and Outreach intern will reach out to schools and plan teaching
-					schedules while working on instructor recruiting</li>
-				<li> The JEDI intern will work with JEDI directors to help plan allyship spaces
-					and train new instructors</li>
-				<li> Speaker Series + Events Interns will be in charge of planning and putting on
-					larger-scale events like Day of Code and coordinating smaller one-off events
-					like speaker series</li>
-				<li> Teaching Interns will either help School Leads with coordinating teaching with
-					other instructors and reporting feedback, or serve as the point person for a class</li>
-				<li> Dev Team PM interns will be trained to become Product/Project managers and
-					oversee the life cycle of a software project (does not involve much coding)</li>
-				<li> Dev Team Training interns will assist training directors in creating curriculum
-					and training devs</li>
+				<li> The Logistics and Outreach intern will reach out to schools and plan teaching schedules while working on instructor recruiting</li>
+				<li> The JEDI intern will work with JEDI directors to help plan allyship spaces and train new instructors</li>
+				<li> Speaker Series + Events Interns will be in charge of planning and putting on larger-scale events like Day of Code and coordinating smaller one-off events like speaker series</li>
+				<li> Teaching Interns will either help School Leads with coordinating teaching with other instructors and reporting feedback, or serve as the point person for a class</li>
+				<li> Dev Team PM interns will be trained to become Product/Project managers and oversee the life cycle of a software project (does not involve much coding)</li>
+				<li> Dev Team Training interns will assist training directors in creating curriculum and training devs</li>
 			</ul> ),
 			card: '/images/cards/teachLA_card.svg',
 			nextSteps: 'Interns will have to apply for or receive an officer role post-internship, or will revert back to instructors or devs',
@@ -463,10 +454,8 @@ export default [
 			whatInternsWillDo: (
 			<ul>
 				<li> The Finance intern will manage and monitor the club budget</li>
-				<li> The Outreach intern will co-ordinate with other large UCLA clubs to plan
-					large diversity-focused events such as QWERHacks and Day of Code</li>
-				<li> The External intern will maintain contact with industry representatives
-					and recruiters to plan for colab events</li>
+				<li> The Outreach intern will co-ordinate with other large UCLA clubs to plan large diversity-focused events such as QWERHacks and Day of Code</li>
+				<li> The External intern will maintain contact with industry representatives and recruiters to plan for colab events</li>
 			</ul> ),
 			card: '/images/cards/w_card.svg',
 			nextSteps: 'All Interns automatically become officers in the Spring if they choose to stay.',
