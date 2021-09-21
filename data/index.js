@@ -1,3 +1,4 @@
+import Board from './board';
 import Carousel from './carousel';
 import Committees from './committees';
 import Events from './events';
@@ -16,4 +17,5 @@ export default {
 	news: News,
 	tgprojects: TGProjects,
 	internship: Internship,
+	board: Board,
 };
