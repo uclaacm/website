@@ -1,3 +1,5 @@
+/* eslint-disable max-len */
+
 import React from 'react';
 
 export default {
@@ -46,8 +48,7 @@ export default {
                 <h4>What is your favorite memory from being an intern?</h4>
                 Accidentally breaking tables at the intern retreat
                 <h4>How much CS experience did you have before you became an intern?</h4>
-                Not much - I took AP CS in high school and didn’t learn a ton,
-                and when I applied to be an intern I was taking CS 31.
+                Not much - I took AP CS in high school and didn’t learn a ton, and when I applied to be an intern I was taking CS 31.
                 <h4>Are you still an officer in ACM? If so, in what Committee?</h4>
                 Yes! I’m the director of ACM Impact!
                 <h4>What advice would you give to prospective interns?</h4>
@@ -61,17 +62,13 @@ export default {
             name: 'Archisha Datta',
             quote: <>
                 <h4>What is your favorite memory from being an intern?</h4>
-                My favorite memory is the first meeting we had for the learning lab I was working on.
-                At the time, it seemed really scary to be thrown into a project with not a lot of experience,
-                but looking back on it I’m proud of how much I learned since then.
+                My favorite memory is the first meeting we had for the learning lab I was working on. At the time, it seemed really scary to be thrown into a project with not a lot of experience, but looking back on it I’m proud of how much I learned since then.
                 <h4>How much CS experience did you have before you became an intern?</h4>
                 I only knew basic programming (CS31) level when I became an intern.
                 <h4>Are you still an officer in ACM? If so, in what Committee?</h4>
                 Yes, I’m the design director for TeachLA and I’m also getting involved in Design starting fall!
                 <h4>What advice would you give to prospective interns?</h4>
-                If you’re on the fence about applying because you think you don’t have enough experience or
-                you don’t feel like you belong in CS culture, I would give it a shot anyways!
-                You might surprise yourself.
+                If you’re on the fence about applying because you think you don’t have enough experience or you don’t feel like you belong in CS culture, I would give it a shot anyways! You might surprise yourself.
             </>,
             image: '.',
             committee: 'Teach LA',
@@ -102,9 +99,7 @@ export default {
             },
             {
                 title: 'I have more questions, how can I get them answered?',
-                content: <>If you have any questions about the application process or the Internship program in general email <a href="mailto:ava24@g.ucla.edu">Ava Asmani</a>,
-                the Internship Director. If you have any questions that are specific to committees, there will be an
-                Internship Program ACM Committee Info Session/Q&A sometime in week 3 or 4 of the Fall Quarter.</>,
+                content: <>If you have any questions about the application process or the Internship program in general email <a href="mailto:ava24@g.ucla.edu">Ava Asmani</a>, the Internship Director. If you have any questions that are specific to committees, there will be an Internship Program ACM Committee Info Session/Q&A sometime in week 3 or 4 of the Fall Quarter.</>,
             },
         ],
     },
