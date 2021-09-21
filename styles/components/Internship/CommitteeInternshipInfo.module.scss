@@ -1,5 +1,7 @@
 @import '../../variables.scss';
 
+$committees: ('ai':$ai-arctic, 'board':$acm-cobalt, 'cyber':$cyber-amber, 'design':$design-orange, 'hack':$hack-purple, 'w':$w-teal, 'icpc':$icpc-tangerine, 'teachla':$teachla-green, 'studio':$studio-raspberry);
+
 .committee-internship-info {
   background-color: #FFF;
   border-radius: 1rem;
@@ -17,40 +19,10 @@
     margin: 0 22px 14px;
   }
 
-  &.studio {
-    box-shadow: 0 0.125rem 0.5rem $studio-raspberry, 0 0.0625rem 0.125rem $studio-raspberry;
-  }  
-  
-  &.icpc {
-    box-shadow: 0 0.125rem 0.5rem $icpc-tangerine, 0 0.0625rem 0.125rem $icpc-tangerine;
-  }
-  
-  &.design {
-    box-shadow: 0 0.125rem 0.5rem $design-orange, 0 0.0625rem 0.125rem $design-orange;
-  }
-  
-  &.cyber {
-    box-shadow: 0 0.125rem 0.5rem $cyber-amber, 0 0.0625rem 0.125rem $cyber-amber;
-  }
-  
-  &.teachla {
-    box-shadow: 0 0.125rem 0.5rem $teachla-green, 0 0.0625rem 0.125rem $teachla-green;
-  }
-  
-  &.w {
-    box-shadow: 0 0.125rem 0.5rem $w-teal, 0 0.0625rem 0.125rem $w-teal;
-  }
-  
-  &.ai {
-    box-shadow: 0 0.125rem 0.5rem $ai-arctic, 0 0.0625rem 0.125rem $ai-arctic;
-  }
-  
-  &.hack {
-    box-shadow: 0 0.125rem 0.5rem $hack-purple, 0 0.0625rem 0.125rem $hack-purple;
-  }
-  
-  &.board {
-    box-shadow: 0 0.125rem 0.5rem $acm-cobalt, 0 0.0625rem 0.125rem $acm-cobalt;
+  @each $committee, $color in $committees {
+    &.#{$committee} {
+      box-shadow: 0 0.125rem 0.5rem $color, 0 0.0625rem 0.125rem  $color;
+    }
   }
 }
   
