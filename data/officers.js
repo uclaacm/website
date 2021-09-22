@@ -45,9 +45,9 @@ export default [
 		image: '/images/officers/PeterSutarjo.jpg',
 	},
 	{
-		name: 'Nikil Selvam',
+		name: 'Jacob Zhang',
 		title: 'President, ICPC',
-		image: '/images/officers/NikilSelvam.jpg',
+		image: '/images/officers/JacobZhang.jpeg',
 	},
 	{
 		name: 'Henry Chang',
