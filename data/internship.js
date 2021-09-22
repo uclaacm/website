@@ -46,15 +46,14 @@ export default {
             name: 'Maya Raman',
             quote: <>
                 <h4>What is your favorite memory from being an intern?</h4>
-                Accidentally breaking tables at the intern retreat
+                <span>Accidentally breaking tables at the intern retreat</span>
                 <h4>How much CS experience did you have before you became an intern?</h4>
-                Not much - I took AP CS in high school and didn’t learn a ton, and when I applied to be an intern I was taking CS 31.
+                <span>Not much - I took AP CS in high school and didn’t learn a ton, and when I applied to be an intern I was taking CS 31.</span>
                 <h4>Are you still an officer in ACM? If so, in what Committee?</h4>
-                Yes! I’m the director of ACM Impact!
+                <span>Yes! I’m the director of ACM Impact!</span>
                 <h4>What advice would you give to prospective interns?</h4>
-                Try to maximize the amount of rejections you get - try everything!
+                <span>Try to maximize the amount of rejections you get - try everything!</span>
             </>,
-            image: '.',
             committee: 'AI',
             year: '2019-2020',
         },
@@ -62,15 +61,14 @@ export default {
             name: 'Archisha Datta',
             quote: <>
                 <h4>What is your favorite memory from being an intern?</h4>
-                My favorite memory is the first meeting we had for the learning lab I was working on. At the time, it seemed really scary to be thrown into a project with not a lot of experience, but looking back on it I’m proud of how much I learned since then.
+                <span>My favorite memory is the first meeting we had for the learning lab I was working on. At the time, it seemed really scary to be thrown into a project with not a lot of experience, but looking back on it I’m proud of how much I learned since then.</span>
                 <h4>How much CS experience did you have before you became an intern?</h4>
-                I only knew basic programming (CS31) level when I became an intern.
+                <span>I only knew basic programming (CS31) level when I became an intern.</span>
                 <h4>Are you still an officer in ACM? If so, in what Committee?</h4>
-                Yes, I’m the design director for TeachLA and I’m also getting involved in Design starting fall!
+                <span>Yes, I’m the design director for TeachLA and I’m also getting involved in Design starting fall!</span>
                 <h4>What advice would you give to prospective interns?</h4>
-                If you’re on the fence about applying because you think you don’t have enough experience or you don’t feel like you belong in CS culture, I would give it a shot anyways! You might surprise yourself.
+                <span>If you’re on the fence about applying because you think you don’t have enough experience or you don’t feel like you belong in CS culture, I would give it a shot anyways! You might surprise yourself.</span>
             </>,
-            image: '.',
             committee: 'Teach LA',
             year: '2020-2021',
         },
