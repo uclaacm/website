@@ -37,7 +37,7 @@ export default [
                      committees together, collaborate with other committees and help create the weekly newsletters</li>
             </ul> ),
             card: '/images/cards/board_card.svg',
-            nextSteps: 'Dev Team interns automatically become Dev Team officers in the spring. All other Interns will run for a director position in the Spring or will no longer officially be a member of the board.',
+            nextSteps: 'Dev Team interns have the opportunity to become Dev Team officers in the spring. All other Interns will run for a director position in the Spring or will no longer officially be a member of the board.',
         },
     },
 ];

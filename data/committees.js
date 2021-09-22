@@ -67,7 +67,7 @@ export default [
 				<li> Unity Tutorial Subcommittee interns will help host Unity tutorials and bugfix in winter quarter. Unity experience is heavily valued but not absolutely required, as much of game development is a &apos;learn as you go&apos; style. C# skills and teaching experience are appreciated but are soft expectations.</li>
 			</ul> ),
 			card: '/images/cards/studio_card.svg',
-			nextSteps: 'All Interns automatically become officers in the Spring if they choose to stay.',
+			nextSteps: 'All Interns have the opportunity to become officers in the Spring if they choose to stay.',
 		},
 	},
 	{
@@ -150,7 +150,7 @@ export default [
 				</ul>
 			</>),
 			card: '/images/cards/icpc_card.svg',
-			nextSteps: 'All Interns automatically become officers in the Spring if they choose to stay.',
+			nextSteps: 'All Interns have the opportunity to become officers in the Spring if they choose to stay.',
 		},
 	},
 	{
@@ -235,7 +235,7 @@ export default [
 				<li> UX design interns will design for our various internal projects</li>
 			</ul> ),
 			card: '/images/cards/design_card.svg',
-			nextSteps: 'All Interns automatically become officers in the Spring if they choose to stay.',
+			nextSteps: 'All Interns have the opportunity to become officers in the Spring if they choose to stay.',
 		},
 	},
 	{
@@ -295,7 +295,7 @@ export default [
 				<li> Plan Socials events with other officers. Deliver at the minimum 1 workshop per quarter</li>
 			</ul> ),
 			card: '/images/cards/cyber_card.svg',
-			nextSteps: 'All interns in good standing (attending workshops/chores/meetings) automatically become officers in the spring!',
+			nextSteps: 'All interns in good standing (attending workshops/chores/meetings) have the opportunity to become officers in the spring!',
 		},
 	},
 	{
@@ -458,7 +458,7 @@ export default [
 				<li> The External intern will maintain contact with industry representatives and recruiters to plan for colab events</li>
 			</ul> ),
 			card: '/images/cards/w_card.svg',
-			nextSteps: 'All Interns automatically become officers in the Spring if they choose to stay.',
+			nextSteps: 'All Interns have the opportunity to become officers in the Spring if they choose to stay.',
 		},
 	},
 	{
@@ -559,7 +559,7 @@ export default [
 				<li> The Workshops interns will teach weekly ML and AI workshops to UCLA students</li>
 			</ul> ),
 			card: '/images/cards/ai_card.svg',
-			nextSteps: 'All Interns automatically become officers in the Spring',
+			nextSteps: 'All Interns have the opportunity to become officers in the Spring',
 		},
 	},
 	{
@@ -614,7 +614,7 @@ export default [
 			whatWeDo: 'Hack is all about empowering the community with the means to build amazing things using software. We deal primarily with software development, most commonly web and mobile app development, and host events for these such as workshops and hackathons.',
 			whatInternsWillDo: 'Interns will work closely with the rest of the team to organize events, fulfilling roles (i.e. event  director, curriculum developer, marketing) chosen based on personal interest prior to each quarter.',
 			card: '/images/cards/hack_card.svg',
-			nextSteps: 'All Interns automatically become officers in the Spring if they choose to stay.',
+			nextSteps: 'All Interns have the opportunity to become officers in the Spring if they choose to stay.',
 		},
 	},
 ];
