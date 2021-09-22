@@ -10,9 +10,9 @@ function CommitteeInternshipInfo(props) {
         <>
             <div className={styles['logos-line']}>
                 {committees.map(committee =>
-                    <button 
-                        className={styles['logo-diamond']}                            
-                        key={committee.name} 
+                    <button
+                        className={styles['logo-diamond']}
+                        key={committee.name}
                         onClick={()=>setCommitteeName(committee.name)}
                     >
                         <Image
