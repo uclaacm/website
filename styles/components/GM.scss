@@ -1,3 +1,42 @@
+#countdown-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -125px;
+  padding: 2rem 0;
+
+  .countdown-cards {
+    color: white;
+    margin: 20px 40px;
+
+    .square-background {
+      background-color: $acm-cobalt;
+      border-radius: 42px;
+      height: 150px;
+      position: relative;
+      top: 140px;
+      transform: rotate(45deg);
+      width: 150px;
+      z-index: -1;
+    }
+
+    .countdown-numbers {
+      font-size: 3.75em;
+      font-weight: bold;
+      text-align: center;
+      z-index: 3;
+    }
+
+    .countdown-labels {
+      font-size: 1.5em;
+      text-align: center;
+    }
+  }
+}
+
+// Grandfathered styling
 #gm-page {
   #time-to-gm-wrapper {
     #time-to-gm-headline {

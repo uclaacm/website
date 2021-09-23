@@ -1,0 +1,43 @@
+@import '../variables.scss';
+
+.footer {
+  background-color: $acm-black;
+  color: white;
+  min-height: 120px;
+  text-align: center;
+  width: 100%;
+}
+
+.footer-inner {
+  margin: auto;
+  max-width: 1000px;
+  padding: 20px;
+}
+
+.footer-header {
+  font-family: $font-body;
+  font-size: 0.75rem;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+  text-transform: uppercase;
+}
+
+.footer-text-thin {
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+.link-footer {
+  color: white;
+  font-weight: 300;
+  text-decoration-color: $acm-tint;
+}
+
+.footer-committee-sidebar-container {
+  display: inline-block;
+}
+
+.display-inline {
+  display: inline;
+}

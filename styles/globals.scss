@@ -31,6 +31,12 @@ h3 {
   margin-top: 70px; //To account for height of Navbar, which uses fixed positioning
 }
 
+.content-container-tight {
+  margin: 0 auto;
+  max-width: 50rem;
+  padding: 0 1rem;
+}
+
 .font-header {
   font-family: $font-header !important;
 }
@@ -60,20 +66,34 @@ h3 {
   }
 }
 
+.mt-1 {
+  margin-top: 1em;
+}
+
 .text-bold {
   font-weight: bold;
+}
+
+.text-left {
+  text-align: left;
 }
 
 .text-center {
   text-align: center;
 }
 
+@media (max-width: $tablet-breakpoint) {
+  .text-center-mobile {
+    text-align: center;
+  }
+}
+
 .text-right {
   text-align: right;
 }
 
-.text-left {
-  text-align: left;
+.text-uppercase {
+  text-transform: uppercase;
 }
 
 .text-25x {
@@ -85,3 +105,17 @@ h3 {
     display: none;
   }
 }
+
+.list-unstyled {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sr-only {
+  height: 1px;
+  left: -10000px;
+  overflow: hidden;
+  position: absolute;
+  top: auto;
+  width: 1px;
