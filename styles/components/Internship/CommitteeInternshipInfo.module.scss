@@ -37,9 +37,9 @@ $committees: ('ai':$ai-arctic, 'board':$acm-cobalt, 'cyber':$cyber-amber, 'desig
   width: 80vw;
   
   .logo-diamond {
+    background-color: #FFF;
+    border: 0;
     padding: 5px;
-    border: 0px;
-    background-color:#FFF;
 
     &:hover {
       cursor: pointer;
