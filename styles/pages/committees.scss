@@ -76,3 +76,10 @@
     }
   }
 }
+
+// this is for fixing location hashes scroll bug
+
+html {
+  scroll-padding-top: 75px;
+}
+

@@ -1,15 +1,34 @@
+import { NextSeo } from 'next-seo';
 import React from 'react';
-// import Config from '../../config';
+// import data from '../data/events';
 
 import Banner from '../components/Banner';
 import Layout from '../components/Layout';
 
+import styles from '../styles/pages/Events.module.scss';
+
 function Events() {
 	return (
 		<Layout>
+			<NextSeo
+				title="Events | ACM at UCLA"
+				description="ACM is currently taking the summer off to
+				rest, recharge, and prepare for a hybrid fall quarter. As soon as we're back, this page is your one-stop shop for all the events we run. We'll see you soon!"
+				openGraph={{
+					images: [
+						{
+							url: 'https://www.uclaacm.com/images/logo.png',
+							width: 1200,
+							height: 1200,
+							alt: 'The ACM at UCLA logo',
+						},
+					],
+					site_name: 'ACM at UCLA',
+				}}
+			/>
 			<Banner decorative />
-			<div className='events-container'>
-				<h2>Our Events</h2>
+			<div className={styles['events-container']}>
+				<h1>Our Events</h1>
 				<p>
 					We&apos;re taking the most of the summer off to
 					rest, recharge, and prepare for a hybrid fall quarter.
@@ -24,9 +43,9 @@ function Events() {
 				</p>
 
 				<br/><br/>
-				<div className="calendar-container">
-				<iframe src={Config.events.calendar_url}
-					className="calendar-main"
+				<div className={styles['calendar-container']}>
+				<iframe src={data.calendar_url}
+					className={styles['calendar-main']}
 					frameBorder="0"
 					scrolling="0"
 					title="calendar"

@@ -8,8 +8,9 @@ function SidebarLink(props){
 			href={`#${props.committee.class}`}
 		>
 			<div className="committee-sidebar-image">
+				{/* TODO: resolve next/image issue */}
+				{/* eslint-disable-next-line @next/next/no-img-element */}
 				<img src={props.committee.image} alt={`Logo and Wordmark for ACM ${props.committee.name}`} />
-				{/* TODO: use next image without breaking deploy */}
 			</div>
 		</a>
 	);

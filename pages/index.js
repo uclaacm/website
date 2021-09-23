@@ -1,3 +1,4 @@
+import { NextSeo } from 'next-seo';
 import Link from 'next/link';
 import React from 'react';
 
@@ -14,6 +15,21 @@ function Home () {
 	const { carousel, committees, news } = data;
 	return (
 		<Layout>
+			<NextSeo
+				title="Home | ACM at UCLA"
+				description="ACM at UCLA is UCLA's largest tech community, focused on making tech as accessible as possible. We're split up into an array of committees and initiatives that each focus on a specific area of computer science. Everyone is welcome to join - regardless of major, prior experience, or anything else!"
+				openGraph={{
+					images: [
+						{
+							url: 'https://www.uclaacm.com/images/logo.png',
+							width: 1200,
+							height: 1200,
+							alt: 'The ACM at UCLA logo',
+						},
+					],
+					site_name: 'ACM at UCLA',
+				}}
+			/>
 			<div className="home-page text-center">
 				<TGBanner />
 				<Banner />
@@ -40,11 +56,11 @@ function Home () {
 				<br /><br /><br />
 
 				<div className="blue">
-					<div id="sign-up-section" className="content-section">
-						<div id="sign-up-left" className="half-width">
+					<div className="sign-up-section content-section">
+						<div className="half-width">
 							<h2>Want to stay updated on what&rsquo;s going on?</h2>
 						</div>
-						<div id="sign-up-right" className="half-width">
+						<div className="sign-up-right half-width">
 							<Link href="http://eepurl.com/c5pE6P">
 								<a className="button tight dark" target="_blank" rel="noreferrer noopener">
 									Join our Mailing List

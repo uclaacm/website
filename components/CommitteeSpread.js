@@ -8,6 +8,7 @@ function Committee(props){
 			href={`/committees#${props.committee.class}`}
 		>
 			{/* TODO: use next image without breaking deploy */}
+			{/* eslint-disable-next-line @next/next/no-img-element */}
 			<img src={props.committee.image} layout='fill' alt={`Logo and Wordmark for ACM ${props.committee.name}`} />
 			<div className="info">
 				<p>{props.committee.tagline}</p>

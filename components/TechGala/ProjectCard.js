@@ -19,7 +19,7 @@ function ProjectCard(props) {
                 </p>
             </div>
             <div className="right-col">
-                <Image src={image} alt={`showcase image for ${title}`} height={280} width={370} />
+                <Image src={image} alt={`showcase image for ${title}`} height={280} width={370}/>
             </div>
         </div>
     );
