@@ -1,201 +1,190 @@
+$committees: (ai, $ai-arctic), (cyber, $cyber-amber), (design, $design-orange), (hack, $hack-purple), (icpc, $icpc-tangerine), (studio, $studio-raspberry), (teachla, $teachla-green), (w, $w-teal);
+
 #navbar {
   background: white;
   box-shadow: 0 0 4px #E2E2E2;
   color: $font-primary-color;
   font-family: $font-display;
-  height: 70px;
+  font-weight: 600;
+  height: 72px;
   left: 0;
+  margin: 0;
+  padding: 0;
   position: fixed;
+  text-transform: lowercase;
   top: 0;
   width: 100%;
   z-index: 10;
 
-  #acm-logo {
-    height: 60px;
-    width: 180px;
-  }
-
-  #navbar-inner {
-    margin: auto;
-    max-width: 1000px;
-    width: 100%;
-  }
-
-  .nav-section.left {
-    float: left;
-    margin-left: 20px;
-  }
-
-  .nav-section.right {
-    float: right;
-    margin-right: 20px;
-    text-align: right;
-  }
-
-  #nav-title {
-    height: 60px;
-    margin-top: 5px;
-    width: 180px;
-  }
-
-  ul.nav-items {
-    height: 100%;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  ul.nav-items li {
-    display: inline-block;
-    font-size: 0.95em;
-    font-weight: 600;
-    height: 40px;
-    line-height: 40px;
-    margin-top: 13px;
-    padding: 0 20px;
-    text-transform: lowercase;
-    transition: 0.2s;
-  }
-
-  a.active li {
-    color: $acm-cobalt !important;
-  }
-
-  ul.nav-items li:hover {
-    color: #999;
-    cursor: pointer;
-  }
-
-  a {
-    text-decoration: none;
-  }
-
-  a.active ul.nav-items li:hover {
-    color: $acm-cobalt !important;
-  }
-
-  a,
-  a:visited {
-    color: inherit;
-  }
-
-  #mobile-nav {
-    display: none;
-
-    .button {
-      padding: 10px 20px;
-    }
-
-    #committee-mobile-nav-item {
-      height: max-content;
-    }
-  }
-
-  .hamburger-icon {
+  #nav-container {
+    align-items: center;
     display: flex;
-    flex-direction: column;
-    height: 50px;
-    justify-content: center;
-    margin: 10px 20px;
-    width: 50px;
+    justify-content: space-between;
+    padding: 0 20px;
 
-    .bar {
-      align-self: center;
-      background-color: $font-secondary-color;
-      border-radius: 4px;
-      height: 3px;
-      margin: 2px 0;
-      transition: 0.35s cubic-bezier(0.05, 1.04, 0.72, 0.98);
-      width: 50%;
+    #nav-title {
+      z-index: 12;
+
+      #acm-logo {
+        height: 60px;
+        margin-top: 05px;
+        width: 180px;
+      }
     }
 
-    &:hover {
+    #hamburger {
+      align-items: center;
+      background-color: transparent;
+      border: 0;
+      border-radius: 50%;
       cursor: pointer;
+      display: none; // will become flex at smaller screen size
+      flex-direction: column;
+      height: 50px;
+      justify-content: center;
+      margin: 0 20px;
+      overflow: hidden;
+      position: relative;
+      width: 50px;
+      z-index: 12;
 
       .bar {
-        background-color: $font-primary-color;
-        margin: 3px 0;
+        background-color: $font-secondary-color;
+        border-radius: 04px;
+        height: 03px;
+        margin: 2px 0;
+        position: relative;
+        transition: all 0.5s ease-in-out;
+        width: 50%;
+      }
+
+      &.active {
+        #bar-one {
+          transform: rotate(45deg) translate(5px, 4px);
+        }
+
+        #bar-two {
+          transform: translateX(-50px);
+        }
+
+        #bar-three {
+          transform: rotate(-45deg) translate(5px, -5px);
+        }
+      }
+
+      &:hover {
+        .bar {
+          background-color: $acm-cobalt;
+        }
       }
     }
-  }
 
-  #menu-toggle {
-    display: none;
-  }
-
-  #hamburger-menu {
-    background: rgba(255, 255, 255, 0.95);
-    bottom: 0;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    justify-content: center;
-    left: 0;
-    position: fixed;
-    top: 0;
-    transform: translate3d(0, -100%, 0);
-    transition: transform 0.35s cubic-bezier(0.05, 1.04, 0.72, 0.98);
-    width: 100%;
-    z-index: -20;
-
-    ul.nav-items {
-      display: flex;
-      flex-direction: column;
-      float: none;
-      justify-content: center;
+    .nav-items {
+      align-items: center;
+      display: flex; // will become none at smaller screen size
       list-style: none;
-      margin: auto;
+      margin: 0;
       padding: 0;
-      text-align: center;
-    }
 
-    ul.nav-items li {
-      display: block;
-      font-size: 1.8em;
-      font-weight: 600;
-      margin: 40px auto;
-      opacity: 0;
-      padding: 0;
-      text-transform: lowercase;
-      transform: translate3d(0, -50%, 0);
-      transition: all 1.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
-    }
+      li {
+        line-height: 40px;
+        padding: 0 20px;
 
-    ul.nav-items li:hover {
-      color: #999;
-      cursor: pointer;
+        button {
+          background-color: transparent;
+          border: 0;
+          color: inherit;
+          font-family: inherit;
+          font-size: 0.95em;
+          font-weight: 600;
+          text-transform: lowercase;
+          transition: 0.2s;
+          
+          &:hover {
+            color: $acm-cobalt;
+            cursor: pointer;
+          }
+        }
 
+        // prevents committee text fade on li hover
+        &:hover {
+          color: $font-primary-color;
+        }
+      }
 
-    }
+      #committee-mobile-nav-item {
+        display: none;
+        height: max-content;
+        text-align: center;
+        width: 60%;
 
-    @media (max-height: 800px) {
-      ul.nav-items li {
-        margin: 20px auto;
+        li {
+          padding: 0;
+        }
+
+        // committee color applied on hover and active
+
+        @each $committee in $committees {
+          [href='/committees##{nth($committee, 1)}']:hover,
+          [href='/committees##{nth($committee, 1)}'].active {
+            color: #{nth($committee, 2)};
+          }
+        }
       }
     }
-    @media (max-height: 600px) {
-      ul.nav-items li {
-        margin: 5px auto;
+
+    @media (max-width: $navbar-breakpoint) {
+      #hamburger { 
+        display: flex;
+      }
+
+      #menu-modal {
+        background: rgba(255, 255, 255, 0.95);
+        height: 100vh;
+        left: 50vw;
+        overflow-y: scroll;
+        position: absolute;
+        top: 50vh;
+        transform: translate(-50%, -150%);
+        transition: transform 0.35s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+        width: 100vw;
+        z-index: 11;
+
+        .nav-items {
+          display: none;
+          font-size: 1.8em;
+          font-weight: 600;
+          left: 50vw;
+          margin: 10px 0;
+          position: absolute;
+          top: 50vh;
+          transform: translate(-50%, -50%);
+
+          .button {
+            padding: 10px 20px;
+            white-space: nowrap;
+          }
+
+          li {
+            margin: 5px 0;
+          }
+
+          &.active {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+
+            #committee-mobile-nav-item {
+              display: block;
+            }
+          }
+        }
+
+        &.active {
+          transform: translate(-50%, -50%);
+          transition: transform 0.35s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+        }
       }
     }
-    @media (max-height: 400px) {
-      ul.nav-items li {
-        margin: 1px auto;
-      }
-    }
-  }
-
-  #menu-toggle:checked + #hamburger-menu {
-    transform: translate3d(0, 0, 0);
-
-    ul.nav-items li {
-      opacity: 1;
-      transform: translate3d(0, 0, 0);
-    }
-  }
-
-  @media (max-width: $navbar-breakpoint) {
-    #desktop-nav { display: none; }
-    #mobile-nav { display: inline-block; }
   }
 }
