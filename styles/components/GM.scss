@@ -4,7 +4,7 @@
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  margin-top: -125px;
+  margin-top: -150px;
   padding: 2rem 0;
 
   .countdown-cards {
@@ -266,4 +266,36 @@
       }
     }
   }
+}
+
+.gm-graphic {
+  margin-top: -35px;
+  border: "1px solid grey";
+  border-radius: 10px;
+}
+
+.gm-program-row {
+  display: flex;
+  align-items: center;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  img {
+    height: 45px;
+  }
+}
+
+.section-header {
+  text-align: left;
+  h3 {
+    margin: 0;
+    color: $acm-cobalt
+  }
+  h4 {
+    margin: 0;
+    color: $font-secondary-color
+  }
+}
+
+.gm-program-section {
+  margin-bottom: 25px;
 }

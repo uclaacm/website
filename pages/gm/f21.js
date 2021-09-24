@@ -40,6 +40,7 @@ function countdownRenderer({ days, hours, minutes, seconds }) {
 
 function GMCountdown(props) {
   return (
+    <>
     <div id="countdown-wrapper">
       <div className="countdown-cards">
         <div className="square-background"/>
@@ -62,6 +63,15 @@ function GMCountdown(props) {
         <div className="countdown-labels">{props.secondString}</div>
       </div>
     </div>
+    <div className="text-center">
+      <h1>Fall 2021 General Meeting</h1>
+      <Link href={RSVP_LINK}>
+        <a className="button" target="_blank" rel="noreferrer noopener">
+          RSVP Now!
+        </a>
+      </Link>
+    </div>
+    </>
   );
 }
 
@@ -84,16 +94,57 @@ function F21() {
 				}}
 			/>
 			<Banner decorative />
+      <div className="text-center">
+        <img className="gm-graphic" src="/images/Fall_GM_2021_graphic.png" width="1000px" alt="Fall GM 2021 Marketing Graphic"/>
+      </div>
+      <Countdown date={GM_START_TIME} renderer={countdownRenderer}/>
 			<div className="content-container-tight text-center">
-				<h1>Fall &apos;21 General Meeting</h1>
-        <Link href={RSVP_LINK}>
-          <a className="button" target="_blank" rel="noreferrer noopener">
-            RSVP Now!
-          </a>
-        </Link>
-        <p>Check back later for more information on COVID safety, location, and the agenda!!</p>
+        <div id="gm-program-wrapper">
+					<div className="gm-program-section">
+            <div className="section-header">
+              <h3>Welcome</h3>
+              <h4>[COPY CHECK] Welcome from president, Matt Wang</h4>
+            </div>
+					</div>
+          <div className="gm-program-section">
+            <div className="section-header">
+              <h3>Committee Presentations</h3>
+              <h4>[COPY CHECK] Learn what each of ACM&rsquo;s eight committees has in store for Fall quarter</h4>
+            </div>
+            <p className="gm-program-row"><img src="/images/committees/studio_wordmark.svg"/> Christian Loanzon, Peter Sutarjo</p>
+            <p className="gm-program-row"><img src="/images/committees/icpc_wordmark.svg"/> Jacob Zhang</p>
+            <p className="gm-program-row"><img src="/images/committees/design_wordmark.svg"/> Crystal Huynh, Muthu Palaniappan</p>
+            <p className="gm-program-row"><img src="/images/committees/cyber_wordmark.svg"/> Josh Lee, Henry Chang</p>
+            <p className="gm-program-row"><img src="/images/committees/teachLA_wordmark.svg"/> Sophie Schoenmeyer, Chloe Uy</p>
+            <p className="gm-program-row"><img src="/images/committees/w_wordmark.svg"/> Cindy Zhang, Lena O'Grady</p>
+            <p className="gm-program-row"><img src="/images/committees/ai_wordmark.svg"/> Justin Yi</p>
+            <p className="gm-program-row"><img src="/images/committees/hack_wordmark.svg"/> Asha Kar, Eugene Lo</p>
+					</div>
+          <div className="gm-program-section">
+            <div className="section-header">
+              <h3>ACM Board</h3>
+              <h4>[COPY CHECK] How to become even more involved with ACM beyond attending workshops and events</h4>
+            </div>
+            <p className="gm-program-row"><img src="/images/committees/board_wordmark.svg"/>&nbsp;&nbsp;External: Tina Huang</p>
+            <p className="gm-program-row"><img src="/images/committees/board_wordmark.svg"/>&nbsp;&nbsp;Internal: Evan Zhong</p>
+          </div>
+          <div className="gm-program-section">
+            <div className="section-header">
+              <h3>ACM Initatives</h3>
+              <h4>[COPY CHECK] See the exciting new things ACM is trying out</h4>
+            </div>
+            <p className="gm-program-row">ACM Impact: Maya Raman</p>
+            <p className="gm-program-row">ACM JEDI: Helia Woo</p>
+          </div>
+          <div className="gm-program-section">
+            <div className="section-header">
+              <h3>Tabling and Social</h3>
+              <h4>[COPY CHECK] Come interact with real people</h4>
+            </div>
+            <p className="gm-program-row">Christina Tong, Rish Jain</p>
+          </div>
+        </div>
 			</div>
-      <Countdown date={GM_START_TIME} renderer={countdownRenderer} />
 		</Layout>
 	);
 }
