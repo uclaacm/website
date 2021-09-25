@@ -22,10 +22,26 @@ const calculateTimeStrings = ({days, hours, minutes, seconds}) => {
   return {dayString, hourString, minuteString, secondString};
 };
 
-function countdownRenderer({ days, hours, minutes, seconds }) {
+function countdownRenderer({ days, hours, minutes, seconds, completed }) {
   const {dayString, hourString, minuteString, secondString} =
     calculateTimeStrings({days, hours, minutes, seconds});
 
+  if (completed) {
+    return (
+      <div className="text-center">
+        <h1>Fall GM 2021 is happening right now in the Court of Sciences!</h1>
+
+        <div className="should-dim">
+          <a href="https://docs.google.com/presentation/d/1oBwDsSow-ekrCgAmoYUFD3oGVjnZ2glt3qnpB1Yy-y0/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
+            <div className="button-wrapper">
+              <img src="/images/slides.png" alt="Google Slides logo" className="join-links-img" width="300px"/>
+            </div>
+            <p className="join-us">View the slides as they're being presented live</p>
+          </a>
+        </div>
+      </div>
+    )
+  }
   return <GMCountdown
     days={days}
     hours={hours}
