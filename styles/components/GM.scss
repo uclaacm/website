@@ -341,3 +341,17 @@
     }
   }
 }
+
+.flex{
+  display: flex;
+  h3 {
+    margin: 0px;
+    text-align: left;
+  }
+  p {
+    margin-bottom: 0px;
+  }
+  .what-to-bring {
+    text-align: left;
+  }
+}

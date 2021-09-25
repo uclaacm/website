@@ -115,7 +115,24 @@ function F21() {
       </div>
       <Countdown date={GM_START_TIME} renderer={countdownRenderer}/>
 			<div className="content-container-tight text-center">
+        <div id="info-wrapper">
+          <h2>Relevant information</h2>
+          <div className="flex">
+            <div>
+              <h3>How to get there</h3>
+              <img src="/images/Fall_GM_2021_temp_map.png" alt="temporary FPO image of google maps" width="400px"/>
+            </div>
+            <div className="what-to-bring">
+              <h3>What to bring</h3>
+              <p>Required: Face Mask, Bruincard</p>
+              <span>(learn more about how ACM is <Link href={"/covid"}><a target="_blank" rel="noreferrer noopener">committed to running COVID safe events</a></Link> in our return to campus)</span>
+              <p>Encouraged: Laptop or Phone to view slides, excitement to learn about ACM!</p>
+            </div>
+          </div>
+        </div>
+
         <div id="gm-program-wrapper">
+          <h2>Program</h2>
 					<div className="gm-program-section">
             <div className="section-header">
               <h3>Welcome</h3>
