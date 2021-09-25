@@ -5,6 +5,7 @@ const events = [
     allDay: true,
     start: new Date(2021, 8, 21),
     end: new Date(2021, 8, 22),
+    location: 'Engineering IV Patio',
 		description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam orci, aliquet eget mollis at, facilisis porta odio. Cras mauris nisl, suscipit nec posuere semper, euismod sit amet nibh. Nulla facilisi. Praesent quam lacus, vulputate vel condimentum eget, congue ac justo.',
 		links: [
 			{ text: 'Event Website', href: 'https://www.cs.ucla.edu/cs-welcome-day/', ext: true },
@@ -16,6 +17,7 @@ const events = [
     allDay: false,
     start: new Date(2021, 8, 27, 18),
     end: new Date(2021, 8, 27, 19, 30),
+    location: 'Court of Sciences',
 		description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam orci, aliquet eget mollis at, facilisis porta odio. Cras mauris nisl, suscipit nec posuere semper, euismod sit amet nibh. Nulla facilisi. Praesent quam lacus, vulputate vel condimentum eget, congue ac justo.',
 		image: '/images/events/f21-fall-gm.png',
 		alt: 'a banner that says "ACM at UCLA: Fall GM, Monday, September 27th from 6-8 PM in the Court of Sciences". Features graphical elements representing each of ACM\'s committees: ACM Hack, ACM W, ACM AI, ACM ICPC, ACM Cyber, ACM Studio, ACM Teach LA, and ACM Design.',

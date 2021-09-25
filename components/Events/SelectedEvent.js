@@ -8,7 +8,7 @@ function SelectedEvent({ event }) {
   if (event === null) {
     return <p>click on an event to see more!</p>;
   }
-  const { title, start, description, links, image, alt } = event;
+  const { title, start, description, location, links, image, alt } = event;
   const imageSrc = image ? image : '/images/events/default-event.png';
   return (
     <div className={styles['card-container']}>
@@ -18,6 +18,9 @@ function SelectedEvent({ event }) {
       <div className={styles['card-body']}>
         <h3 className={styles['card-title']}>{title}</h3>
         <p className={styles['date-line']}>{moment(start).format('dddd, MMMM Do, YYYY -- h:mm a')}</p>
+        {
+          location && <p className={styles['date-line']}>{location}</p>
+        }
         <p className={styles.description}>{description}</p>
         {(links && links.length > 0) &&
           <ul className="list-unstyled">
