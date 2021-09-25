@@ -3,7 +3,7 @@ import React from 'react';
 
 import styles from '../../styles/pages/impact.module.scss';
 
-export default function BlogCard({title, author, date, length, img, href, authorImg, authorAlt, backgroundStyle}) {
+export default function BlogCard({title, author, date, length, href, authorImg, authorAlt, backgroundStyle}) {
 	// stylelint's CSS-in-JS is giving me an error here
 	/* stylelint-disable */
 	// const backgroundStyle = { backgroundImage: `url("${img}")`};
