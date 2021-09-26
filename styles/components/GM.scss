@@ -269,16 +269,17 @@
 }
 
 .gm-graphic {
-  margin-top: -35px;
-  border: "1px solid grey";
+  border: '1px solid grey';
   border-radius: 10px;
+  margin-top: -35px;
 }
 
 .gm-program-row {
-  display: flex;
   align-items: center;
-  margin-top: 0px;
+  display: flex;
   margin-bottom: 5px;
+  margin-top: 0;
+
   img {
     height: 45px;
   }
@@ -286,13 +287,15 @@
 
 .section-header {
   text-align: left;
+
   h3 {
+    color: $acm-cobalt;
     margin: 0;
-    color: $acm-cobalt
   }
+
   h4 {
+    color: $font-secondary-color;
     margin: 0;
-    color: $font-secondary-color
   }
 }
 
@@ -324,15 +327,15 @@
   text-decoration: none;
 }
 
-.should-dim{
-  width: 350px;
-  margin-right: auto;
+.should-dim {
   margin-left: auto;
+  margin-right: auto;
+  width: 350px;
 
   .button-wrapper {
+    background-color: lightgray;
     border-radius: 15px;
     padding: 10px;
-    background-color: lightgray;
 
     .join-links-img {
       display: block;
@@ -342,15 +345,18 @@
   }
 }
 
-.flex{
+.flex {
   display: flex;
+
   h3 {
-    margin: 0px;
+    margin: 0;
     text-align: left;
   }
+
   p {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
+
   .what-to-bring {
     text-align: left;
   }
