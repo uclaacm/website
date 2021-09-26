@@ -41,7 +41,7 @@ function countdownRenderer({ days, hours, minutes, seconds, completed }) {
           </a>
         </div>
       </div>
-    )
+    );
   }
   return <GMCountdown
     days={days}
@@ -128,7 +128,7 @@ function F21() {
             <div className="what-to-bring">
               <h3>What to bring</h3>
               <p>Required: Face Mask, Bruincard</p>
-              <span>(learn more about how ACM is <Link href={"/covid"}><a target="_blank" rel="noreferrer noopener">committed to running COVID safe events</a></Link> in our return to campus)</span>
+              <span>(learn more about how ACM is <Link href={'/covid'}><a target="_blank" rel="noreferrer noopener">committed to running COVID safe events</a></Link> in our return to campus)</span>
               <p>Encouraged: Laptop or Phone to view slides, excitement to learn about ACM!</p>
             </div>
           </div>
