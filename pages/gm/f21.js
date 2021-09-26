@@ -37,7 +37,7 @@ function countdownRenderer({ days, hours, minutes, seconds, completed }) {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src="/images/slides.png" alt="Google Slides logo" className="join-links-img" width="300px"/>
             </div>
-            <p className="join-us">View the slides as they're being presented live</p>
+            <p className="join-us">View the slides as they&apos;re being presented live</p>
           </a>
         </div>
       </div>
@@ -123,7 +123,7 @@ function F21() {
             <div>
               <h3>How to get there</h3>
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/images/Fall_GM_2021_temp_map.png" alt="temporary FPO image of google maps" width="400px"/>
+              <img src="/images/Fall_GM_2021_temp_map.png" alt="temporary FPO of google maps" width="400px"/>
             </div>
             <div className="what-to-bring">
               <h3>What to bring</h3>
@@ -158,7 +158,7 @@ function F21() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <p className="gm-program-row"><img src="/images/committees/teachLA_wordmark.svg" alt="teachLA wordmark"/> Sophie Schoenmeyer, Chloe Uy</p>
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <p className="gm-program-row"><img src="/images/committees/w_wordmark.svg" alt="w wordmark"/> Cindy Zhang, Lena O'Grady</p>
+            <p className="gm-program-row"><img src="/images/committees/w_wordmark.svg" alt="w wordmark"/> Cindy Zhang, Lena O&apos;Grady</p>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <p className="gm-program-row"><img src="/images/committees/ai_wordmark.svg" alt="ai wordmark"/> Justin Yi</p>
             {/* eslint-disable-next-line @next/next/no-img-element */}
