@@ -122,8 +122,7 @@ function F21() {
           <div className="flex">
             <div>
               <h3>How to get there</h3>
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/images/Fall_GM_2021_temp_map.png" alt="temporary FPO of google maps" width="400px"/>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d826.2546737961111!2d-118.4427945707816!3d34.069035009709545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bc87d188474b%3A0x51e2fd433d5394ea!2sCourt%20of%20Sciences!5e0!3m2!1sen!2sus!4v1632617669692!5m2!1sen!2sus" width="450" height="400" style={{border:0}} allowfullscreen="" loading="lazy"></iframe>
             </div>
             <div className="what-to-bring">
               <h3>What to bring</h3>
