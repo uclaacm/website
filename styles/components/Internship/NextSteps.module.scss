@@ -1,9 +1,10 @@
 @import '../../variables.scss';
+@import '../../pages/Internship.module.scss';
 
 .next-steps-card-inner {
+  @include shadow-boxes();
   background-color: #FFF;
   border-radius: 1rem;
-  box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.3), 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.2);
   cursor: pointer;
   height: 100%;
   position: relative;
