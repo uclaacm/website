@@ -36,7 +36,7 @@ function InternshipPage(){
             />
             <div className={'content-section text-center'}>
                 <h2>Applications</h2>
-                <InternshipTimeline items={items}/>
+                <InternshipTimeline items={items} aria-hidden="true"/>
                 <div className={'grid-tablet-2'}>
                     <section>
                         {items.map((item, i) => (
