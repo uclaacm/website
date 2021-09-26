@@ -1,3 +1,5 @@
+@import '../../variables.scss';
+
 .next-steps-card-inner {
   background-color: #FFF;
   border-radius: 1rem;
@@ -44,8 +46,8 @@
   }
 
   &.back {
-    border: 1px solid black;
-    height: 89.5%;
+    border: 1px solid $acm-black;
+    height: 90%;
     padding: 10px;
     text-align: left;
     transform: rotateY(180deg);

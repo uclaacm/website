@@ -10,6 +10,12 @@ $single-column-breakpoint: 500px;
   box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.3), 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.2);
   margin: 3px;
   padding: 5px;
+  padding-top: 10px;
+
+  .testimonial-question {
+    color: $acm-cobalt;
+    font-size: 1.1em;
+  }
 }
 
 .application-item {
