@@ -8,9 +8,10 @@ function CommitteeInternshipInfo(props) {
     const [committeeName, setCommitteeName] = useState('Board');
     return(
         <>
-            <div className={styles['logos-line']}>
+            <div className={styles['logos-line']} role='tablist' aria-label='committee logos for information'>
                 {committees.map(committee =>
                     <button
+                        role='tab'
                         className={styles['logo-diamond']}
                         key={committee.name}
                         onClick={()=>setCommitteeName(committee.name)}
