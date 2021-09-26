@@ -40,10 +40,10 @@ $single-column-breakpoint: 500px;
   width: 100%;  
 }
 
-.next-steps-grid{
-  margin: 20px;
+.next-steps-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  margin: 20px;
 }
 
 .testimonial-section {
@@ -67,7 +67,7 @@ $single-column-breakpoint: 500px;
     grid-template-columns: 1fr 1fr;
   }
 
-  .next-steps-grid{
+  .next-steps-grid {
     grid-template-columns: 1fr 1fr;
   }
 
@@ -87,7 +87,7 @@ $single-column-breakpoint: 500px;
     margin-top: 50px;
   }
 
-  .next-steps-grid{
+  .next-steps-grid {
     grid-template-columns: 1fr;
   }
 }
