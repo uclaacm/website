@@ -34,6 +34,7 @@ function countdownRenderer({ days, hours, minutes, seconds, completed }) {
         <div className="should-dim">
           <a href="https://docs.google.com/presentation/d/1oBwDsSow-ekrCgAmoYUFD3oGVjnZ2glt3qnpB1Yy-y0/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
             <div className="button-wrapper">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src="/images/slides.png" alt="Google Slides logo" className="join-links-img" width="300px"/>
             </div>
             <p className="join-us">View the slides as they're being presented live</p>
@@ -111,6 +112,7 @@ function F21() {
 			/>
 			<Banner decorative />
       <div className="text-center">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
         <img className="gm-graphic" src="/images/Fall_GM_2021_graphic.png" width="1000px" alt="Fall GM 2021 Marketing Graphic"/>
       </div>
       <Countdown date={GM_START_TIME} renderer={countdownRenderer}/>
@@ -120,6 +122,7 @@ function F21() {
           <div className="flex">
             <div>
               <h3>How to get there</h3>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src="/images/Fall_GM_2021_temp_map.png" alt="temporary FPO image of google maps" width="400px"/>
             </div>
             <div className="what-to-bring">
@@ -144,13 +147,21 @@ function F21() {
               <h3>Committee Presentations</h3>
               <h4>[COPY CHECK] Learn what each of ACM&rsquo;s eight committees has in store for Fall quarter</h4>
             </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
             <p className="gm-program-row"><img src="/images/committees/studio_wordmark.svg"/> Christian Loanzon, Peter Sutarjo</p>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
             <p className="gm-program-row"><img src="/images/committees/icpc_wordmark.svg"/> Jacob Zhang</p>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
             <p className="gm-program-row"><img src="/images/committees/design_wordmark.svg"/> Crystal Huynh, Muthu Palaniappan</p>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
             <p className="gm-program-row"><img src="/images/committees/cyber_wordmark.svg"/> Josh Lee, Henry Chang</p>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
             <p className="gm-program-row"><img src="/images/committees/teachLA_wordmark.svg"/> Sophie Schoenmeyer, Chloe Uy</p>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
             <p className="gm-program-row"><img src="/images/committees/w_wordmark.svg"/> Cindy Zhang, Lena O'Grady</p>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
             <p className="gm-program-row"><img src="/images/committees/ai_wordmark.svg"/> Justin Yi</p>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
             <p className="gm-program-row"><img src="/images/committees/hack_wordmark.svg"/> Asha Kar, Eugene Lo</p>
 					</div>
           <div className="gm-program-section">
@@ -158,7 +169,9 @@ function F21() {
               <h3>ACM Board</h3>
               <h4>[COPY CHECK] How to become even more involved with ACM beyond attending workshops and events</h4>
             </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
             <p className="gm-program-row"><img src="/images/committees/board_wordmark.svg"/>&nbsp;&nbsp;External: Tina Huang</p>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
             <p className="gm-program-row"><img src="/images/committees/board_wordmark.svg"/>&nbsp;&nbsp;Internal: Evan Zhong</p>
           </div>
           <div className="gm-program-section">
