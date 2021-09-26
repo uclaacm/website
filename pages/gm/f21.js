@@ -122,7 +122,7 @@ function F21() {
           <div className="flex">
             <div>
               <h3>How to get there</h3>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d826.2546737961111!2d-118.4427945707816!3d34.069035009709545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bc87d188474b%3A0x51e2fd433d5394ea!2sCourt%20of%20Sciences!5e0!3m2!1sen!2sus!4v1632617669692!5m2!1sen!2sus" width="450" height="400" style={{border:0}} allowfullscreen="" loading="lazy"></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d826.2546737961111!2d-118.4427945707816!3d34.069035009709545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bc87d188474b%3A0x51e2fd433d5394ea!2sCourt%20of%20Sciences!5e0!3m2!1sen!2sus!4v1632617669692!5m2!1sen!2sus" width="450" height="400" style={{border: 0}} allowFullScreen="" loading="lazy" title="gogole maps embed of court of sciences"></iframe>
             </div>
             <div className="what-to-bring">
               <h3>What to bring</h3>
@@ -138,13 +138,13 @@ function F21() {
 					<div className="gm-program-section">
             <div className="section-header">
               <h3>Welcome</h3>
-              <h4>An introduction to what ACM is, from our president Matt Wang.</h4>
+              <p className="sub-heading">An introduction to what ACM is, from our president Matt Wang.</p>
             </div>
 					</div>
           <div className="gm-program-section">
             <div className="section-header">
               <h3>Committee Presentations</h3>
-              <h4>Learn what each of ACM&apos;s eight committees has planned for Fall quarter</h4>
+              <p className="sub-heading">Learn what each of ACM&apos;s eight committees has planned for Fall quarter</p>
             </div>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <p className="gm-program-row"><img src="/images/committees/studio_wordmark.svg" alt="ACM studio"/> Christian Loanzon, Peter Sutarjo</p>
@@ -166,7 +166,7 @@ function F21() {
           <div className="gm-program-section">
             <div className="section-header">
               <h3>ACM Board</h3>
-              <h4>How to get more involved with ACM beyond attending workshops and events</h4>
+              <p className="sub-heading">How to get more involved with ACM beyond attending workshops and events</p>
             </div>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <p className="gm-program-row"><img src="/images/committees/board_wordmark.svg" alt="ACM board"/>&nbsp;&nbsp;External: Tina Huang</p>
@@ -176,7 +176,7 @@ function F21() {
           <div className="gm-program-section">
             <div className="section-header">
               <h3>ACM Initatives</h3>
-              <h4>See exciting new programs that ACM is trying out</h4>
+              <p className="sub-heading">See exciting new programs that ACM is trying out</p>
             </div>
             <p className="gm-program-row">ACM Impact: Maya Raman</p>
             <p className="gm-program-row">ACM JEDI: Helia Woo</p>
@@ -184,7 +184,7 @@ function F21() {
           <div className="gm-program-section">
             <div className="section-header">
               <h3>Tabling and Social</h3>
-              <h4>Interact with ACM&apos;s officers and walk away with new friends!</h4>
+              <p className="sub-heading">Interact with ACM&apos;s officers and walk away with new friends!</p>
             </div>
             <p className="gm-program-row">All ACM officers</p>
           </div>

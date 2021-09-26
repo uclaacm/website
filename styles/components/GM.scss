@@ -23,8 +23,11 @@
     margin: 0;
   }
 
-  h4 {
+  .sub-heading {
     color: $font-secondary-color;
+    font-family: $font-header;
+    font-size: 12pt;
+    font-weight: bold;
     margin: 0;
   }
 }
