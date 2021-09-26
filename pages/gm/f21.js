@@ -139,13 +139,13 @@ function F21() {
 					<div className="gm-program-section">
             <div className="section-header">
               <h3>Welcome</h3>
-              <h4>[COPY CHECK] Welcome from president, Matt Wang</h4>
+              <h4>An introduction to the club by Matt Wang</h4>
             </div>
 					</div>
           <div className="gm-program-section">
             <div className="section-header">
               <h3>Committee Presentations</h3>
-              <h4>[COPY CHECK] Learn what each of ACM&rsquo;s eight committees has in store for Fall quarter</h4>
+              <h4>Learn what each of ACM&rsquo;s eight committees has planned for Fall quarter</h4>
             </div>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <p className="gm-program-row"><img src="/images/committees/studio_wordmark.svg" alt="studio wordmark"/> Christian Loanzon, Peter Sutarjo</p>
@@ -167,7 +167,7 @@ function F21() {
           <div className="gm-program-section">
             <div className="section-header">
               <h3>ACM Board</h3>
-              <h4>[COPY CHECK] How to become even more involved with ACM beyond attending workshops and events</h4>
+              <h4>How to become even more involved with ACM beyond attending workshops and events</h4>
             </div>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <p className="gm-program-row"><img src="/images/committees/board_wordmark.svg" alt="board wordmark"/>&nbsp;&nbsp;External: Tina Huang</p>
@@ -177,7 +177,7 @@ function F21() {
           <div className="gm-program-section">
             <div className="section-header">
               <h3>ACM Initatives</h3>
-              <h4>[COPY CHECK] See the exciting new things ACM is trying out</h4>
+              <h4>See the exciting new things ACM is trying out</h4>
             </div>
             <p className="gm-program-row">ACM Impact: Maya Raman</p>
             <p className="gm-program-row">ACM JEDI: Helia Woo</p>
@@ -185,7 +185,7 @@ function F21() {
           <div className="gm-program-section">
             <div className="section-header">
               <h3>Tabling and Social</h3>
-              <h4>[COPY CHECK] Come interact with real people</h4>
+              <h4>Interact with ACM's officers and maybe walk away with new friends!</h4>
             </div>
             <p className="gm-program-row">Christina Tong, Rish Jain</p>
           </div>
