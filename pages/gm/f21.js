@@ -126,8 +126,8 @@ function F21() {
             </div>
             <div className="what-to-bring">
               <h3>What to bring</h3>
-              <p>Required: Face Mask, Bruincard</p>
-              <span>(learn more about how ACM is <Link href={'/covid'}><a target="_blank" rel="noreferrer noopener">committed to running COVID safe events</a></Link> in our return to campus)</span>
+              <p>Required: Face Mask, Bruincard.</p>
+              <span>(learn more about how ACM is <Link href={'/covid'}><a target="_blank" rel="noreferrer noopener">committed to running COVID-safe events</a></Link> in our return to campus)</span>
               <p>Encouraged: Laptop or Phone to view slides, excitement to learn about ACM!</p>
             </div>
           </div>
@@ -138,13 +138,13 @@ function F21() {
 					<div className="gm-program-section">
             <div className="section-header">
               <h3>Welcome</h3>
-              <h4>An introduction to the club by Matt Wang</h4>
+              <h4>An introduction to what ACM is, from our president Matt Wang.</h4>
             </div>
 					</div>
           <div className="gm-program-section">
             <div className="section-header">
               <h3>Committee Presentations</h3>
-              <h4>Learn what each of ACM&rsquo;s eight committees has planned for Fall quarter</h4>
+              <h4>Learn what each of ACM&apos;s eight committees has planned for Fall quarter</h4>
             </div>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <p className="gm-program-row"><img src="/images/committees/studio_wordmark.svg" alt="studio wordmark"/> Christian Loanzon, Peter Sutarjo</p>
@@ -166,7 +166,7 @@ function F21() {
           <div className="gm-program-section">
             <div className="section-header">
               <h3>ACM Board</h3>
-              <h4>How to become even more involved with ACM beyond attending workshops and events</h4>
+              <h4>How to get more involved with ACM beyond attending workshops and events</h4>
             </div>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <p className="gm-program-row"><img src="/images/committees/board_wordmark.svg" alt="board wordmark"/>&nbsp;&nbsp;External: Tina Huang</p>
@@ -176,7 +176,7 @@ function F21() {
           <div className="gm-program-section">
             <div className="section-header">
               <h3>ACM Initatives</h3>
-              <h4>See the exciting new things ACM is trying out</h4>
+              <h4>See exciting new programs that ACM is trying out</h4>
             </div>
             <p className="gm-program-row">ACM Impact: Maya Raman</p>
             <p className="gm-program-row">ACM JEDI: Helia Woo</p>
