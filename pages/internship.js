@@ -71,6 +71,8 @@ function InternshipPage(){
                     infinite={true}
                     transitionDuration={500}
                     containerClass="carousel-container"
+                    role='tablist'
+                    aria-label="Intern to officer transition cards for each committee"
                 >
                     {internshipInfo.map(committee =>
                         <NextSteps

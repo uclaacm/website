@@ -26,6 +26,11 @@ $committees: ('ai':$ai-arctic, 'board':$acm-cobalt, 'cyber':$cyber-amber, 'desig
   }
 }
   
+.committee-image{
+  height: 70px;
+  position: relative;
+}
+
 .logos-line {
   display: flex;
   flex-direction: row;
