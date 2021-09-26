@@ -7,7 +7,7 @@ function NextSteps(props) {
     const { image, name, info} = props;
     const [isFlipped, setFlipped] = useState(true);
     return (
-        <div className={styles['committee-card']} onClick={() => setFlipped(!isFlipped)} role='button'>
+        <button className={styles['committee-card']} onClick={() => setFlipped(!isFlipped)} role='tab'>
             <div className={`${styles['next-steps-card-inner']} ${styles[isFlipped ? null : 'is-flipped']}`}>
                 <div className={styles['next-steps-card-face']}>
                     <Image
@@ -21,7 +21,7 @@ function NextSteps(props) {
                     <p>{info}</p>
                 </div>
             </div>
-        </div>
+        </button>
     );
 }
 

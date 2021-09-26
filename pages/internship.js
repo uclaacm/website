@@ -4,7 +4,6 @@
 import React from 'react';
 
 import Faq from 'react-faq-component';
-import Carousel from 'react-multi-carousel';
 
 import Banner from '../components/Banner';
 import CommitteeInternshipInfo from '../components/Internship/CommitteeInternshipInfo';
@@ -13,7 +12,6 @@ import NextSteps from '../components/Internship/NextSteps';
 import Layout from '../components/Layout';
 
 import data from '../data';
-import 'react-multi-carousel/lib/styles.css';
 
 import styles from '../styles/pages/Internship.module.scss';
 
@@ -22,7 +20,7 @@ const { committees, internship, board } = data;
 const internshipInfo = board.concat(committees);
 
 function InternshipPage(){
-    const { items, testimonials, QA, FAQStyles, responsive } = internship;
+    const { items, testimonials, QA, FAQStyles } = internship;
     return(
         <Layout>
             <Banner decorative />
@@ -66,14 +64,8 @@ function InternshipPage(){
             </div>
             <div className={'content-section text-center'}>
                 <h2>Intern to Officer Transition</h2>
-                <Carousel
-                    responsive={responsive}
-                    infinite={true}
-                    transitionDuration={500}
-                    containerClass="carousel-container"
-                    role='tablist'
-                    aria-label="Intern to officer transition cards for each committee"
-                >
+                <p> Click on the cards below to learn more about each committee's transition process! </p>
+                <div className={styles['next-steps-grid']} role='tablist' aria-label="Intern to officer transition cards for each committee">
                     {internshipInfo.map(committee =>
                         <NextSteps
                             image={committee.internship.card}
@@ -82,7 +74,7 @@ function InternshipPage(){
                             info={committee.internship.nextSteps}
                         />,
                     )}
-                </Carousel>
+                </div>
             </div>
             <div className={'content-section text-center'}>
                 <h2>Hear from past interns!</h2>

@@ -40,6 +40,12 @@ $single-column-breakpoint: 500px;
   width: 100%;  
 }
 
+.next-steps-grid{
+  margin: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 .testimonial-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -60,6 +66,11 @@ $single-column-breakpoint: 500px;
   .testimonial-section {
     grid-template-columns: 1fr 1fr;
   }
+
+  .next-steps-grid{
+    grid-template-columns: 1fr 1fr;
+  }
+
 }
 
 @media screen and (max-width: $single-column-breakpoint) {
@@ -75,8 +86,8 @@ $single-column-breakpoint: 500px;
     margin-bottom: 50px;
     margin-top: 50px;
   }
-}
 
-.carousel-container {
-  padding-bottom: 20px;
+  .next-steps-grid{
+    grid-template-columns: 1fr;
+  }
 }
