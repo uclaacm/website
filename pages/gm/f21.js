@@ -147,21 +147,21 @@ function F21() {
               <h4>Learn what each of ACM&apos;s eight committees has planned for Fall quarter</h4>
             </div>
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <p className="gm-program-row"><img src="/images/committees/studio_wordmark.svg" alt="studio wordmark"/> Christian Loanzon, Peter Sutarjo</p>
+            <p className="gm-program-row"><img src="/images/committees/studio_wordmark.svg" alt="ACM studio"/> Christian Loanzon, Peter Sutarjo</p>
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <p className="gm-program-row"><img src="/images/committees/icpc_wordmark.svg" alt="icpc wordmark"/> Jacob Zhang</p>
+            <p className="gm-program-row"><img src="/images/committees/icpc_wordmark.svg" alt="ACM icpc"/> Jacob Zhang</p>
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <p className="gm-program-row"><img src="/images/committees/design_wordmark.svg" alt="design wordmark"/> Crystal Huynh, Muthu Palaniappan</p>
+            <p className="gm-program-row"><img src="/images/committees/design_wordmark.svg" alt="ACM design"/> Crystal Huynh, Muthu Palaniappan</p>
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <p className="gm-program-row"><img src="/images/committees/cyber_wordmark.svg" alt="cyber wordmark"/> Josh Lee, Henry Chang</p>
+            <p className="gm-program-row"><img src="/images/committees/cyber_wordmark.svg" alt="ACM cyber"/> Josh Lee, Henry Chang</p>
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <p className="gm-program-row"><img src="/images/committees/teachLA_wordmark.svg" alt="teachLA wordmark"/> Sophie Schoenmeyer, Chloe Uy</p>
+            <p className="gm-program-row"><img src="/images/committees/teachLA_wordmark.svg" alt="ACM teachLA"/> Sophie Schoenmeyer, Chloe Uy</p>
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <p className="gm-program-row"><img src="/images/committees/w_wordmark.svg" alt="w wordmark"/> Cindy Zhang, Lena O&apos;Grady</p>
+            <p className="gm-program-row"><img src="/images/committees/w_wordmark.svg" alt="ACM w"/> Cindy Zhang, Lena O&apos;Grady</p>
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <p className="gm-program-row"><img src="/images/committees/ai_wordmark.svg" alt="ai wordmark"/> Justin Yi</p>
+            <p className="gm-program-row"><img src="/images/committees/ai_wordmark.svg" alt="ACM ai"/> Justin Yi</p>
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <p className="gm-program-row"><img src="/images/committees/hack_wordmark.svg" alt="hack wordmark"/> Asha Kar, Eugene Lo</p>
+            <p className="gm-program-row"><img src="/images/committees/hack_wordmark.svg" alt="ACM hack"/> Asha Kar, Eugene Lo</p>
 					</div>
           <div className="gm-program-section">
             <div className="section-header">
@@ -169,9 +169,9 @@ function F21() {
               <h4>How to get more involved with ACM beyond attending workshops and events</h4>
             </div>
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <p className="gm-program-row"><img src="/images/committees/board_wordmark.svg" alt="board wordmark"/>&nbsp;&nbsp;External: Tina Huang</p>
+            <p className="gm-program-row"><img src="/images/committees/board_wordmark.svg" alt="ACM board"/>&nbsp;&nbsp;External: Tina Huang</p>
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <p className="gm-program-row"><img src="/images/committees/board_wordmark.svg" alt="board wordmark"/>&nbsp;&nbsp;Internal: Evan Zhong</p>
+            <p className="gm-program-row"><img src="/images/committees/board_wordmark.svg" alt="ACM board"/>&nbsp;&nbsp;Internal: Evan Zhong</p>
           </div>
           <div className="gm-program-section">
             <div className="section-header">
@@ -184,9 +184,9 @@ function F21() {
           <div className="gm-program-section">
             <div className="section-header">
               <h3>Tabling and Social</h3>
-              <h4>Interact with ACM&apos;s officers and maybe walk away with new friends!</h4>
+              <h4>Interact with ACM&apos;s officers and walk away with new friends!</h4>
             </div>
-            <p className="gm-program-row">Christina Tong, Rish Jain</p>
+            <p className="gm-program-row">All ACM officers</p>
           </div>
         </div>
 			</div>
