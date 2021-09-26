@@ -22,10 +22,27 @@ const calculateTimeStrings = ({days, hours, minutes, seconds}) => {
   return {dayString, hourString, minuteString, secondString};
 };
 
-function countdownRenderer({ days, hours, minutes, seconds }) {
+function countdownRenderer({ days, hours, minutes, seconds, completed }) {
   const {dayString, hourString, minuteString, secondString} =
     calculateTimeStrings({days, hours, minutes, seconds});
 
+  if (completed) {
+    return (
+      <div className="text-center">
+        <h1>Fall GM 2021 is happening right now in the Court of Sciences!</h1>
+
+        <div className="should-dim">
+          <a href="https://docs.google.com/presentation/d/1oBwDsSow-ekrCgAmoYUFD3oGVjnZ2glt3qnpB1Yy-y0/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
+            <div className="button-wrapper">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/images/slides.png" alt="Google Slides logo" className="join-links-img" width="300px"/>
+            </div>
+            <p className="join-us">View the slides as they&apos;re being presented live</p>
+          </a>
+        </div>
+      </div>
+    );
+  }
   return <GMCountdown
     days={days}
     hours={hours}
@@ -40,6 +57,7 @@ function countdownRenderer({ days, hours, minutes, seconds }) {
 
 function GMCountdown(props) {
   return (
+    <>
     <div id="countdown-wrapper">
       <div className="countdown-cards">
         <div className="square-background"/>
@@ -62,6 +80,15 @@ function GMCountdown(props) {
         <div className="countdown-labels">{props.secondString}</div>
       </div>
     </div>
+    <div className="text-center">
+      <h1>Fall 2021 General Meeting</h1>
+      <Link href={RSVP_LINK}>
+        <a className="button" target="_blank" rel="noreferrer noopener">
+          RSVP Now!
+        </a>
+      </Link>
+    </div>
+    </>
   );
 }
 
@@ -84,16 +111,85 @@ function F21() {
 				}}
 			/>
 			<Banner decorative />
+      <div className="text-center">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img className="gm-graphic" src="/images/Fall_GM_2021_graphic.png" width="1000px" alt="Fall GM 2021 Marketing Graphic"/>
+      </div>
+      <Countdown date={GM_START_TIME} renderer={countdownRenderer}/>
 			<div className="content-container-tight text-center">
-				<h1>Fall &apos;21 General Meeting</h1>
-        <Link href={RSVP_LINK}>
-          <a className="button" target="_blank" rel="noreferrer noopener">
-            RSVP Now!
-          </a>
-        </Link>
-        <p>Check back later for more information on COVID safety, location, and the agenda!!</p>
+        <div id="info-wrapper">
+          <h2>Relevant information</h2>
+          <div className="flex">
+            <div>
+              <h3>How to get there</h3>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d826.2546737961111!2d-118.4427945707816!3d34.069035009709545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bc87d188474b%3A0x51e2fd433d5394ea!2sCourt%20of%20Sciences!5e0!3m2!1sen!2sus!4v1632617669692!5m2!1sen!2sus" width="450" height="400" style={{border: 0}} allowFullScreen="" loading="lazy" title="gogole maps embed of court of sciences"></iframe>
+            </div>
+            <div className="what-to-bring">
+              <h3>What to bring</h3>
+              <p>Required: Face Mask, Bruincard.</p>
+              <span>(learn more about how ACM is <Link href={'/covid'}><a target="_blank" rel="noreferrer noopener">committed to running COVID-safe events</a></Link> in our return to campus)</span>
+              <p>Encouraged: Laptop or Phone to view slides, excitement to learn about ACM!</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="gm-program-wrapper">
+          <h2>Program</h2>
+					<div className="gm-program-section">
+            <div className="section-header">
+              <h3>Welcome</h3>
+              <p className="sub-heading">An introduction to what ACM is, from our president Matt Wang.</p>
+            </div>
+					</div>
+          <div className="gm-program-section">
+            <div className="section-header">
+              <h3>Committee Presentations</h3>
+              <p className="sub-heading">Learn what each of ACM&apos;s eight committees has planned for Fall quarter</p>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <p className="gm-program-row"><img src="/images/committees/studio_wordmark.svg" alt="ACM studio"/> Christian Loanzon, Peter Sutarjo</p>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <p className="gm-program-row"><img src="/images/committees/icpc_wordmark.svg" alt="ACM icpc"/> Jacob Zhang</p>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <p className="gm-program-row"><img src="/images/committees/design_wordmark.svg" alt="ACM design"/> Crystal Huynh, Muthu Palaniappan</p>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <p className="gm-program-row"><img src="/images/committees/cyber_wordmark.svg" alt="ACM cyber"/> Josh Lee, Henry Chang</p>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <p className="gm-program-row"><img src="/images/committees/teachLA_wordmark.svg" alt="ACM teachLA"/> Sophie Schoenmeyer, Chloe Uy</p>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <p className="gm-program-row"><img src="/images/committees/w_wordmark.svg" alt="ACM w"/> Cindy Zhang, Lena O&apos;Grady</p>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <p className="gm-program-row"><img src="/images/committees/ai_wordmark.svg" alt="ACM ai"/> Justin Yi</p>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <p className="gm-program-row"><img src="/images/committees/hack_wordmark.svg" alt="ACM hack"/> Asha Kar, Eugene Lo</p>
+					</div>
+          <div className="gm-program-section">
+            <div className="section-header">
+              <h3>ACM Board</h3>
+              <p className="sub-heading">How to get more involved with ACM beyond attending workshops and events</p>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <p className="gm-program-row"><img src="/images/committees/board_wordmark.svg" alt="ACM board"/>&nbsp;&nbsp;External: Tina Huang</p>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <p className="gm-program-row"><img src="/images/committees/board_wordmark.svg" alt="ACM board"/>&nbsp;&nbsp;Internal: Evan Zhong</p>
+          </div>
+          <div className="gm-program-section">
+            <div className="section-header">
+              <h3>ACM Initatives</h3>
+              <p className="sub-heading">See exciting new programs that ACM is trying out</p>
+            </div>
+            <p className="gm-program-row">ACM Impact: Maya Raman</p>
+            <p className="gm-program-row">ACM JEDI: Helia Woo</p>
+          </div>
+          <div className="gm-program-section">
+            <div className="section-header">
+              <h3>Tabling and Social</h3>
+              <p className="sub-heading">Interact with ACM&apos;s officers and walk away with new friends!</p>
+            </div>
+            <p className="gm-program-row">All ACM officers</p>
+          </div>
+        </div>
 			</div>
-      <Countdown date={GM_START_TIME} renderer={countdownRenderer} />
 		</Layout>
 	);
 }
