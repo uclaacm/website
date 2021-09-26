@@ -185,7 +185,7 @@ function F21() {
           <div className="gm-program-section">
             <div className="section-header">
               <h3>Tabling and Social</h3>
-              <h4>Interact with ACM's officers and maybe walk away with new friends!</h4>
+              <h4>Interact with ACM&apos;s officers and maybe walk away with new friends!</h4>
             </div>
             <p className="gm-program-row">Christina Tong, Rish Jain</p>
           </div>
