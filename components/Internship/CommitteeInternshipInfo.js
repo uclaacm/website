@@ -15,6 +15,7 @@ function CommitteeInternshipInfo(props) {
                         className={styles['logo-diamond']}
                         key={committee.name}
                         onClick={()=>setCommitteeName(committee.name)}
+                        style={{ borderBottom: committeeName === committee.name ? '1px solid grey': ''}}
                     >
                         <Image
                             src={committee.diamond}
