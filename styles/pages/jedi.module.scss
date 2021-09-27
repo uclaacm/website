@@ -39,9 +39,13 @@
   font-weight: 600;
 }
 
+.tri-grid {
+  column-gap: 1em;
+}
+
 .tri-grid,
 .allyship-row {
-  padding: 1em 0;
+  padding: 1em;
 }
 
 .hero-row {
