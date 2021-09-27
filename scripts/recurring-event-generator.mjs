@@ -1,6 +1,6 @@
 import fs from 'fs';
 import csv from 'csv-parser';
-import { getCssStringFromCommittee, generateSingleEvent } from './lib.mjs';
+import { getCssStringFromCommittee, generateSingleEvent, generateDateRange } from './lib.mjs';
 
 const args = process.argv.slice(2);
 
@@ -10,7 +10,7 @@ if (args.length === 0) {
 
 const fname = args[0];
 const results = [];
-const offset = 8;
+const offset = 20;
 
 fs.createReadStream(fname)
   .pipe(csv())
@@ -21,8 +21,11 @@ fs.createReadStream(fname)
     results.push(data);
   })
   .on('end', () => {
-    const generated = results.map(
-      (event, index) => {
+    let generated = [];
+    results.forEach(event => {
+      const [startDate, endDate] = event['RANGE of weeks'].split(' - ');
+      const dates = generateDateRange(startDate, endDate);
+      generated = generated.concat(dates.map((date, index) => {
         try {
           return generateSingleEvent({
             id: offset + index,
@@ -31,7 +34,7 @@ fs.createReadStream(fname)
             location: event['Location/Zoom Link'],
             description: event.Description,
             time: event.Time,
-            date: event.Date,
+            date: date,
             fblink: event['Facebook Link'],
           });
         }
@@ -39,6 +42,7 @@ fs.createReadStream(fname)
           // eslint-disable-next-line no-console
           console.error(`Error ${err} on event ${JSON.stringify(event)}`);
         }
+      }));
     });
 
     const cleaned = generated.filter((item) => item);

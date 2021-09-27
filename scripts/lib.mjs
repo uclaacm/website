@@ -1,4 +1,4 @@
-import moment from "moment";
+import moment from 'moment';
 
 const getCssStringFromCommittee = (committee) => {
   switch (committee) {
@@ -72,4 +72,14 @@ const generateSingleEvent = ({
   };
 };
 
-export { getCssStringFromCommittee, generateSingleEvent };
+const generateDateRange = (startDate, endDate) => {
+  let currentDate = startDate;
+  const dates = [];
+  while (moment(currentDate).valueOf() < moment(endDate).valueOf()) {
+    dates.push(currentDate);
+    currentDate = moment(currentDate).add(7, 'days').format('YYYY-MM-DD');
+  }
+  return dates;
+};
+
+export { getCssStringFromCommittee, generateSingleEvent, generateDateRange };

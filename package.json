@@ -26,6 +26,7 @@
     "lint-css-fix": "stylelint --fix \"**/*.css\" \"**/*.scss\"",
     "lint": "eslint \"**/*.js\" && stylelint \"**/*.css\" \"**/*.scss\"",
     "lint-fix": "eslint --fix \"**/*.js\" && stylelint --fix \"**/*.css\" \"**/*.scss\"",
+    "reg": "node scripts/recurring-event-generator.mjs",
     "seg": "node scripts/single-event-generator.mjs"
   },
   "eslintConfig": {
