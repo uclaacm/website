@@ -6,10 +6,10 @@ import React from 'react';
 import Layout from '../../components/Layout';
 
 import { blogLink, contactEmail } from '../../data/jedi';
-import tempJediBanner from '../../public/images/jedi/banner-temp.png';
 import diverseDesign from '../../public/images/jedi/events/diverse-design.png';
 import hackschoolAccessibility from '../../public/images/jedi/events/hackschool-accessibility.png';
 import tlaImpostorSyndrome from '../../public/images/jedi/events/tla-impostor-syndrome.png';
+import jediMotifApplied from '../../public/images/jedi/jedi_motif_applied.png';
 import styles from '../../styles/pages/jedi.module.scss';
 
 function JEDIAbout () {
@@ -32,7 +32,7 @@ function JEDIAbout () {
 			/>
       <div className={styles.container}>
         <div className={`text-center ${styles['mt-2']}`}>
-          <Image src={tempJediBanner} alt="a temporary banner image with a diverse group of people experiencing technology" priority />
+          <Image src={jediMotifApplied} alt="a star shooting off into space" priority />
         </div>
         <div className="text-center">
           <h1 className={styles['hero-title']}>ACM | JEDI</h1>
@@ -79,7 +79,7 @@ function JEDIAbout () {
           </div>
           <div>
             <Image src={diverseDesign} alt="a banner for ACM Teach LA with a diverse cast of different computer science students" />
-            <h3>allyship spaces</h3>
+            <h3>Inclusive graphic design</h3>
             <p>
               {/* eslint-disable-next-line max-len */}
               Graphics by ACM Design with diverse motifs and improved representation within the computer science community!
