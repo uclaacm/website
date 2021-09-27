@@ -82,12 +82,6 @@ function InternshipPage(){
                 <div className={styles['testimonial-section']}>
                     {testimonials.map((testimonial, i) => (
                             <div key={i} className={styles['testimonial-item']}>
-                                {/* <Image
-                                    src = {testimonial.image}
-                                    alt = {`${testimonial.name}'s image`}
-                                    width = "60px"
-                                    height = "60px"
-                                /> */}
                                 <p className={'text-left'}>{testimonial.quote}</p>
                                 <p className={'text-right'}>- {testimonial.name} <br/> {testimonial.committee} intern, {testimonial.year}</p>
                             </div>
