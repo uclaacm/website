@@ -1,0 +1,52 @@
+@import '../../variables.scss';
+
+.card-container {
+  border: 1px solid #B2B2B2;
+  border-radius: 10px;
+}
+
+.card-header {
+  background-color: #445EDC;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
+  padding: 0.2em 1em;
+  text-align: center;
+}
+
+.card-body {
+  padding: 0 1rem;
+}
+
+.card-image {
+  width: 100%;
+}
+
+.card-title {
+  margin-bottom: 0.25em;
+}
+
+.date-line {
+  color: #B2B2B2;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.description {
+  font-size: 0.8rem;
+  margin: 0.5em 0;
+}
+
+.event-link {
+  color: $acm-cobalt;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+    text-decoration-color: $acm-cobalt;
+  }
+}
