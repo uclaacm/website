@@ -9,9 +9,11 @@ const footerACMLinks = [
 	{ title: 'About', path: '/about' },
 	{ title: 'Committees', path: '/committees' },
 	{ title: 'Events', path: '/events' },
+	{ title: 'Fall General Meeting', path: '/gm/f21' },
 	{ title: 'Sponsors', path: '/sponsors' },
 	{ title: 'Tech Gala', path: '/techgala' },
 	{ title: 'Membership Portal', path: 'https://members.uclaacm.com', ext: true },
+	{ title: 'COVID-19', path: '/covid' },
 ];
 
 const footerInitiativeLinks = [
