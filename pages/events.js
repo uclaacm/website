@@ -56,8 +56,8 @@ function Events() {
 					<Calendar
 						localizer={localizer}
 						events={events}
-						startAccessor="start"
-						endAccessor="end"
+						startAccessor={(event) => new Date(event.start)}
+						endAccessor={(event) => new Date(event.end)}
 						style={{ height: 700 }}
 						onSelectEvent={setActiveEvent}
 						eventPropGetter={getEventClassByEvent}
