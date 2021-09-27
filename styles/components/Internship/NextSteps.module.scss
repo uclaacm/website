@@ -1,0 +1,56 @@
+@import '../../variables.scss';
+
+.next-steps-card-inner {
+  @include shadow-boxes();
+  background-color: #FFF;
+  border-radius: 1rem;
+  cursor: pointer;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+  width: 100%;
+  
+  &.is-flipped {
+    transform: rotateY(180deg);
+  }
+
+  img {
+    height: 35px;
+    margin-left: 10px;
+    position: relative;  
+  }
+}
+
+.committee-card {
+  background-color: #FFF;
+  border: 0;
+  height: 201px;
+  margin: auto;
+  margin-bottom: 20px;
+  padding: 0;
+  perspective: 1000px;
+  width: 197px;
+}
+  
+.next-steps-card-face {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background-color: #FFF;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+    
+  .card-info-name {
+    margin: 0;
+  }
+
+  &.back {
+    border: 1px solid $acm-black;
+    height: 90%;
+    padding: 10px;
+    text-align: left;
+    transform: rotateY(180deg);
+    width: 89.5%;
+  }
+}

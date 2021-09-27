@@ -100,6 +100,12 @@ h3 {
   font-size: 2.5em !important;
 }
 
+@media (max-width: $tablet-breakpoint) {
+  .hidden-mobile {
+    display: none;
+  }
+}
+
 .list-unstyled {
   list-style: none;
   margin: 0;

@@ -1,0 +1,99 @@
+@import '../variables.scss';
+
+$single-column-breakpoint: 500px;
+
+.internship-intro {
+  font-size: 1em !important;
+}
+
+.testimonial-item {
+  @include shadow-boxes();
+  margin: 3px;
+  padding: 5px;
+  padding-top: 10px;
+
+  .testimonial-question {
+    color: $acm-cobalt;
+    font-size: 1.1em;
+  }
+}
+
+.application-item {
+  margin-bottom: 15px;
+  margin-top: 10px;
+  text-align: left;
+
+  .application-item-info {
+    margin-left: 15%;
+    margin-top: 5px;
+  }
+}
+
+.application-info-card {
+  @include shadow-boxes();
+  background-color: #FFF;
+  border-radius: 1rem;
+  font-size: 1.3em;
+  margin: auto;
+  max-width: 250px;
+  padding: 20px;
+  padding-top: 0;
+  text-align: left;
+}
+
+.application-button {
+  text-align: center;
+  width: 100%;  
+}
+
+.next-steps-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 20px;
+}
+
+.testimonial-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 20px;
+}
+
+// this CSS modifies the FAQ component (Faq from 'react-faq-component') 
+// Since it's a component being imported, we have to use their structure of classes in order to manually style anything within the FAQ
+.faq {
+  .faq-row-wrapper {
+    .faq-body {
+      text-align: left;
+    }
+  }
+}
+
+@media screen and (max-width: $tablet-breakpoint) {
+  .testimonial-section {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .next-steps-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+
+@media screen and (max-width: $single-column-breakpoint) {
+  .testimonial-section {
+    grid-template-columns: 1fr;
+  }  
+
+  .application-information {
+    grid-template-columns: 1fr;
+  }  
+
+  .application-info-card {
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+
+  .next-steps-grid {
+    grid-template-columns: 1fr;
+  }
+}

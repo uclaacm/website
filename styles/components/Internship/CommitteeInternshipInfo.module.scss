@@ -1,0 +1,64 @@
+@import '../../variables.scss';
+
+$committees: ('ai':$ai-arctic, 'board':$acm-cobalt, 'cyber':$cyber-amber, 'design':$design-orange, 'hack':$hack-purple, 'w':$w-teal, 'icpc':$icpc-tangerine, 'teachla':$teachla-green, 'studio':$studio-raspberry);
+
+.committee-internship-info {
+  background-color: #FFF;
+  border-radius: 1rem;
+  font-size: 1.25em;
+  margin: auto;
+  margin-bottom: 50px;
+  padding: 1.125em 1.5em;
+  position: relative;
+  width: 80vw;
+  
+  .internship-info-data {
+    font-size: 0.8em;
+    line-height: 150%;
+    margin: 0 22px 14px 20px;
+  }
+
+  @each $committee, $color in $committees {
+    &.#{$committee} {
+      box-shadow: 0 0.125rem 0.5rem $color, 0 0.0625rem 0.125rem  $color;
+    }
+  }
+}
+  
+.committee-image {
+  height: 70px;
+  margin: 0;
+  position: relative;
+}
+
+.logos-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto;
+  margin-top: 50px;
+  padding-bottom: 10px;
+  text-align: center;
+  width: 80vw;
+  
+  .logo-diamond {
+    background-color: #FFF;
+    border: 0;
+    margin: 5px;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.08);
+    }
+  }
+}  
+  
+@media screen and (max-width: $tablet-breakpoint) {
+  .logos-line {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    margin: auto;
+  }
+}
