@@ -65,11 +65,11 @@ function InternshipPage(){
             </div>
             <div className={'content-section text-center'}>
                 <h2>Intern to Officer Transition</h2>
-                <p> Click on the cards below to learn more about each committee&apos;s transition process! </p>
+                <p> Learn more about each committee&apos;s transition process! </p>
                 <div className={styles['next-steps-grid']} role='tablist' aria-label="Intern to officer transition cards for each committee">
                     {internshipInfo.map(committee =>
                         <NextSteps
-                            image={committee.internship.card}
+                            image={committee.image}
                             name={committee.name}
                             key={committee.name}
                             info={committee.internship.nextSteps}
