@@ -1,14 +1,11 @@
-import Image from 'next/image';
-import React, {useState} from 'react';
-
-import styles from '../../styles/components/Internship/NextSteps.module.scss';
+import React from 'react';
 
 function NextSteps(props) {
     const { image, name, info} = props;
-    const [isFlipped, setFlipped] = useState(false);
     return (
         <>
         <div style={{border: '1px solid grey', margin: '5px', borderRadius: '5px', padding: '15px'}}>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src={image} alt={name} height='30px'/>
             <p>{info}</p>
         </div>
