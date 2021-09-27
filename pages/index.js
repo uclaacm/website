@@ -32,9 +32,9 @@ function Home () {
 			/>
 			<div className="home-page text-center">
 				<ContentBanner
-					title="See how we're committing to a safe return-to-campus"
-					ctaText="View COVID Policy Doc"
-					ctaLink="/covid"
+					title="Check out ACM's Fall General Meeting 2021, happening today!"
+					ctaText="Fall General Meeting 2021"
+					ctaLink="/gm/f21"
 				/>
 				<Banner />
 				<div className="content-section">
