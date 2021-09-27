@@ -1,7 +1,6 @@
 import Board from './board';
 import Carousel from './carousel';
 import Committees from './committees';
-import Events from './events';
 import Internship from './internship';
 import News from './news';
 import Officers from './officers';
@@ -13,7 +12,6 @@ export default {
 	carousel: Carousel,
 	sponsors: Sponsors,
 	officers: Officers,
-	events: Events,
 	news: News,
 	tgprojects: TGProjects,
 	internship: Internship,

@@ -1,0 +1,139 @@
+@import '../variables.scss';
+
+// overrides the header for the calendar; this is
+// the days of the week for a month or week view
+.rbc-header {
+  background-color: #445EDC;
+  border: 0 !important;
+  color: white;
+  font-family: $font-header !important;
+  font-weight: 500 !important;
+  padding: 0.5em !important;
+  text-transform: lowercase;
+}
+
+.rbc-time-header-cell > .rbc-header {
+  padding-bottom: 1.5em !important;
+}
+
+.rbc-allday-cell {
+  padding-top: 0.5em;
+}
+
+
+.rbc-today {
+  color: black;
+}
+
+// overrides to round out the outer box
+
+.rbc-month-view {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.rbc-month-header {
+  > .rbc-header:first-child {
+    border-top-left-radius: 10px;
+  }
+
+  > .rbc-header:last-child {
+    border-top-right-radius: 10px;
+  }
+}
+
+// overrides an individual date cell
+.rbc-date-cell,
+.rbc-label {
+  color: #B2B2B2;
+  font-family: $font-header;
+}
+
+.rbc-day-slot .rbc-event {
+  border: 0 !important;
+  padding: 0.5em;
+}
+
+// overrides the label for the toolbar,
+// i.e. the month
+.rbc-toolbar-label {
+  font-family: $font-header;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+// btn & btn-group overrides
+.rbc-btn-group {
+  background: #93A5BF;
+  border-radius: 10px;
+
+  > button {
+    border: 0 !important;
+    color: white !important;
+    font-family: $font-header;
+    font-weight: 600;
+    text-transform: lowercase;
+
+    &:hover {
+      color: black !important;
+      cursor: pointer;
+    }
+
+    &.rbc-active {
+      background-color: #3E5DE4 !important;
+      border-radius: 10px !important;
+      box-shadow: 3.85962px 3.85962px 3.85962px rgba(50, 73, 181, 0.25) !important;
+    }
+  }
+}
+
+// override for individual events - across all views
+.rbc-override-event {
+  background-color: #1E6CFF !important;
+  border-radius: 10px !important;
+  font-size: 0.6rem !important;
+}
+
+// agenda overrides
+.rbc-agenda-date-cell {
+  background-color: white !important;
+}
+
+.rbc-agenda-time-cell,
+.rbc-agenda-event-cell {
+  color: white;
+}
+
+
+// committee overrides
+.rbc-override-ai {
+  background: linear-gradient(88.74deg, #29BBFF 41.7%, #2EE2FF 100%) !important;
+}
+
+.rbc-override-cyber {
+  background: linear-gradient(88.74deg, #F6B704 55.75%, #FFDF3F 100%) !important;
+}
+
+.rbc-override-design {
+  background: linear-gradient(88.74deg, #F8801D 25.55%, #FECA59 100%) !important;
+}
+
+.rbc-override-hack {
+  background: linear-gradient(88.74deg, #C50CF3 11.46%, #FF5F96 100%) !important;
+}
+
+.rbc-override-icpc {
+  background: linear-gradient(88.74deg, #FF727D 11.46%, #FF9CE3 100%) !important;
+}
+
+.rbc-override-studio {
+  background: linear-gradient(88.74deg, #FF404F 11.46%, #FF70D6 83.85%) !important;
+}
+
+.rbc-override-teach-la {
+  background: linear-gradient(88.74deg, #61CC0D 11.46%, #B9F122 83.85%) !important;
+}
+
+.rbc-override-w {
+  background: linear-gradient(88.74deg, #0CD6C0 11.46%, #4EF294 78.13%) !important;
+}

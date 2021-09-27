@@ -1,13 +1,33 @@
+import moment from 'moment';
 import { NextSeo } from 'next-seo';
-import React from 'react';
-// import data from '../data/events';
+import React, { useState } from 'react';
+import { Calendar, momentLocalizer } from 'react-big-calendar';
 
 import Banner from '../components/Banner';
+import SelectedEvent from '../components/Events/SelectedEvent';
 import Layout from '../components/Layout';
 
+import events from '../data/event';
 import styles from '../styles/pages/Events.module.scss';
 
+import 'react-big-calendar/lib/css/react-big-calendar.css';
+
+const localizer = momentLocalizer(moment);
+
+
+// see eventPropGetter
+const getEventClassByEvent = (event) => {
+	let modifierStr = '';
+	if (event.committee) {
+		modifierStr = `rbc-override-${event.committee}`;
+	}
+	return ({
+		className: `rbc-override-event ${modifierStr}`,
+	});
+};
+
 function Events() {
+	const [activeEvent, setActiveEvent] = useState(null);
 	return (
 		<Layout>
 			<NextSeo
@@ -28,30 +48,28 @@ function Events() {
 			/>
 			<Banner decorative />
 			<div className={styles['events-container']}>
-				<h1>Our Events</h1>
-				<p>
-					We&apos;re taking the most of the summer off to
-					rest, recharge, and prepare for a hybrid fall quarter.
-
-					We&apos;ll see you soon!
+				<h1 className="text-center">Our Events</h1>
+				<p className="text-center">
+					Take a look at our fancy calendar.
 				</p>
-				<p>
-					Want to know what our events look like? All of our 2020-2021 content was recorded and is available on our <a href="https://www.youtube.com/c/acmucla" target="_blank" rel="noreferrer noopener">YouTube channel!</a>
-				</p>
-				{/* <p>
-					Our events are open to everyone, regardless of major, background, or experience! Come find us on <a href="https://www.youtube.com/c/acmucla" target="_blank" rel="noreferrer noopener">YouTube!</a>
-				</p>
-
-				<br/><br/>
-				<div className={styles['calendar-container']}>
-				<iframe src={data.calendar_url}
-					className={styles['calendar-main']}
-					frameBorder="0"
-					scrolling="0"
-					title="calendar"
+				<div className={styles['calendar-view-container']}>
+					<Calendar
+						localizer={localizer}
+						events={events}
+						startAccessor={(event) => new Date(event.start)}
+						endAccessor={(event) => new Date(event.end)}
+						style={{ height: 700 }}
+						onSelectEvent={setActiveEvent}
+						eventPropGetter={getEventClassByEvent}
+						// matt says: using these props this way *feels wrong*
+						min={new Date('August 19, 1975 9:00:00')}
+						max={new Date('August 19, 1975 22:00:00')}
 					/>
+					<SelectedEvent event={activeEvent}/>
 				</div>
-				<br/><br/><br/> */}
+				<p>
+					Want to see our past events? All of our 2020-2021 content was recorded and is available on our <a href="https://www.youtube.com/c/acmucla" target="_blank" rel="noreferrer noopener">YouTube channel!</a>
+				</p>
 			</div>
 		</Layout>
 	);
