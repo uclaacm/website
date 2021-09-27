@@ -15,7 +15,7 @@ $committees: ('ai':$ai-arctic, 'board':$acm-cobalt, 'cyber':$cyber-amber, 'desig
   .internship-info-data {
     font-size: 0.8em;
     line-height: 150%;
-    margin: 0 22px 14px;
+    margin: 0 22px 14px 20px;
   }
 
   @each $committee, $color in $committees {
@@ -28,6 +28,7 @@ $committees: ('ai':$ai-arctic, 'board':$acm-cobalt, 'cyber':$cyber-amber, 'desig
 .committee-image {
   height: 70px;
   position: relative;
+  margin: 0px;
 }
 
 .logos-line {

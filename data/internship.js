@@ -78,11 +78,11 @@ export default {
         rows: [
             {
                 title: 'What is the Internship Program?',
-                content: 'The ACM Internship program is a program that facilitates the transition of UCLA students to ACM officers. Interns learn about the ACM committee they are interning for and ACM in general before becoming an official ACM officer. Although ACM Interns are not paid, they gain valuable experience organizing events or teaching Programming classes or designing event banners and more.',
+                content: 'The ACM Internship program is a program that facilitates the transition of UCLA students to ACM officers. Interns learn about the ACM committee they are interning for and ACM in general before becoming an official ACM officer. Although ACM Interns are not paid, they gain valuable experience organizing events, teaching programming classes, designing event banners, and more.',
             },
             {
                 title: 'What experience do you need to be an intern for ACM?',
-                content: 'None! We are looking for students that are passionate about computer science and are willing to learn. Although a couple intern positions may state a preference for those with experience, no experience is required for any Intern position.',
+                content: 'None! We are looking for students that are passionate about computer science and are willing to learn. Although a couple intern positions may state a preference for those with experience, no experience is required for any intern position.',
             },
             {
                 title: 'How many committees can I apply for?',
@@ -90,15 +90,15 @@ export default {
             },
             {
                 title: 'When we apply to be an intern for a committee, do we apply to a specific intern position or just the committee as a whole?',
-                content: 'It depends on the committee. The application for each committee will ask what intern position you are interested in if they want their prospective interns to apply to specific positions. But some committees will allow prospective interns to just apply to the committee as a whole.',
+                content: 'It depends on the committee. The application for each committee will ask what intern position you are interested in if they want their prospective interns to apply to specific positions. Other committees will allow prospective interns to just apply to the committee as a whole.',
             },
             {
                 title: 'How can I get involved in ACM if I am not an intern?',
-                content: 'If you are not an intern, there are plenty of ways to get involved in ACM. You can always attend workshops that different committees are hosting. Subscribe to our Newsletter if you would like weekly updates on when workshops are. Some committees, like Teach LA, allow students to be officers/contributing members without participating in the ACM Internship Program.',
+                content: 'If you are not an intern, there are plenty of ways to get involved in ACM. You can always attend workshops that different committees are hosting. Subscribe to our newsletter if you would like weekly updates on when workshops are. Some committees, like Teach LA, allow students to be officers/contributing members without participating in the ACM Internship Program.',
             },
             {
                 title: 'I have more questions, how can I get them answered?',
-                content: <>If you have any questions about the application process or the Internship program in general email <a href="mailto:ava24@g.ucla.edu">Ava Asmani</a>, the Internship Director. If you have any questions that are specific to committees, there will be an Internship Program ACM Committee Info Session/Q&A sometime in week 3 or 4 of the Fall Quarter.</>,
+                content: <>If you have any questions about the application process or the Internship program in general email <a href="mailto:ava24@g.ucla.edu">Ava Asmani (ava24@g.ucla.edu)</a>, the Internship Director. If you have any questions that are specific to committees, there will be an Internship Program ACM Committee Info Session/Q&A sometime in week 3 or 4 of the Fall Quarter.</>,
             },
         ],
     },

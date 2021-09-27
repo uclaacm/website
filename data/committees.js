@@ -375,7 +375,7 @@ export default [
 			whatInternsWillDo: (
 			<ul>
 				<li> The Finance intern will manage and monitor the club budget</li>
-				<li> The Outreach intern will co-ordinate with other large UCLA clubs to plan large diversity-focused events such as QWERHacks and Day of Code</li>
+				<li> The Outreach intern will co-ordinate with other large UCLA clubs to plan large diversity-focused events such as QWER Hacks and Day of Code</li>
 				<li> The External intern will maintain contact with industry representatives and recruiters to plan for colab events</li>
 			</ul> ),
 			card: '/images/cards/w_card.svg',

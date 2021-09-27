@@ -18,9 +18,9 @@ import styles from '../styles/pages/Internship.module.scss';
 const { committees, internship, board } = data;
 
 const internshipInfo = board.concat(committees);
+const { items, testimonials, QA, FAQStyles } = internship;
 
 function InternshipPage(){
-    const { items, testimonials, QA, FAQStyles } = internship;
     return(
         <Layout>
             <Banner decorative />
@@ -35,7 +35,7 @@ function InternshipPage(){
             <div style={{position: 'relative', top: '350px', zIndex: '1', transform: 'rotate(-40deg)', textAlign: 'center', fontWeight: 'bold', fontSize: '24pt'}}>Updated timeline coming soon!</div>
             <div className={'content-section text-center'} style={{filter: 'blur(4px)'}}>
                 <h2>Applications</h2>
-                <InternshipTimeline items={items} aria-hidden="true"/>
+                <InternshipTimeline items={items}/>
                 <div className={'grid-tablet-2'}>
                     <section>
                         {items.map((item, i) => (

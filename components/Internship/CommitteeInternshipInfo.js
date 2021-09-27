@@ -29,14 +29,14 @@ function CommitteeInternshipInfo(props) {
             {committees.map(committee =>
                 committeeName === committee.name ?
                 <div className={`${styles['committee-internship-info']} ${styles[committee.class]}`} key={committee.name}>
-                    <div className={styles['committee-image']}>
+                    <h2 className={styles['committee-image']}>
                         <Image
                             src={committee.image}
                             alt={`${committee.name}'s wordmark`}
                             layout='fill'
                             objectFit='contain'
                         />
-                    </div>
+                    </h2>
                     <h3>What do we do?</h3>
                     <p className={styles['internship-info-data']}> {committee.internship.whatWeDo} </p>
                     <h3>What will interns do?</h3>
