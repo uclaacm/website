@@ -32,7 +32,7 @@ function countdownRenderer({ days, hours, minutes, seconds, completed }) {
         <h1>Fall GM 2021 is happening right now in the Court of Sciences!</h1>
 
         <div className="should-dim">
-          <a href="https://www.youtube.com/c/ACMUCLA" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.youtube.com/watch?v=7My46oCc9wA" target="_blank" rel="noopener noreferrer">
             <div className="button-wrapper">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src="/images/youtube.png" alt="YouTube Logo" className="join-links-img" width="300px"/>
