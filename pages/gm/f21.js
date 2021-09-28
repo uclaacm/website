@@ -6,7 +6,7 @@ import Countdown from 'react-countdown';
 import Banner from '../../components/Banner';
 import Layout from '../../components/Layout';
 
-const GM_START_TIME = new Date('2021-09-27T18:00-07:00');
+const GM_START_TIME = new Date('2021-09-27T17:55-07:00');
 const RSVP_LINK = 'https://forms.gle/qst46ReHAvGV88hr7';
 
 const calculateTimeStrings = ({days, hours, minutes, seconds}) => {
