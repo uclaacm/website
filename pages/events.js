@@ -32,8 +32,7 @@ function Events() {
 		<Layout>
 			<NextSeo
 				title="Events | ACM at UCLA"
-				description="ACM is currently taking the summer off to
-				rest, recharge, and prepare for a hybrid fall quarter. As soon as we're back, this page is your one-stop shop for all the events we run. We'll see you soon!"
+				description="Check out every single event ACM is running this quarter. All 100+! Crazy, right?"
 				openGraph={{
 					images: [
 						{
