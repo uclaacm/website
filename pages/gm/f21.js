@@ -104,7 +104,7 @@ function F21() {
 		<Layout>
 			<NextSeo
 				title="Fall General Meeting | ACM at UCLA"
-				description="ACM's Fall General Meeting is coming soon, on September 27th at 6 PM PT. Keep your eyes peeled, your hand on your mouse, and your fingers on sdf."
+				description="ACM's Fall General Meeting happened on September 27th at 6 PM PT!"
 				openGraph={{
 					images: [
 						{
