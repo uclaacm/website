@@ -29,24 +29,22 @@ function countdownRenderer({ days, hours, minutes, seconds, completed }) {
   if (completed) {
     return (
       <div className="text-center">
-        <h1>Fall GM 2021 is happening right now in the Court of Sciences!</h1>
-
-        <div className="should-dim">
+        <h1>Fall GM 2021 happened on the 27th!</h1>
+        {/* <div className="should-dim">
           <a href="https://www.youtube.com/watch?v=7My46oCc9wA" target="_blank" rel="noopener noreferrer">
             <div className="button-wrapper">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src="/images/youtube.png" alt="YouTube Logo" className="join-links-img" width="300px"/>
             </div>
             <p className="join-us">Watch along on the livestream</p>
           </a>
-        </div>
+        </div> */}
         <div className="should-dim">
           <a href="https://docs.google.com/presentation/d/1oBwDsSow-ekrCgAmoYUFD3oGVjnZ2glt3qnpB1Yy-y0/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
             <div className="button-wrapper">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src="/images/slides.png" alt="Google Slides logo" className="join-links-img" width="300px"/>
             </div>
-            <p className="join-us">View the slides as they&apos;re being presented live</p>
+            <p className="join-us">View the slides as they were presented!</p>
           </a>
         </div>
       </div>
