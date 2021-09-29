@@ -59,7 +59,7 @@ export const people = [
 		pronouns: 'he/him',
 		position: 'Impact Officer',
 		major: 'Computer Science Major',
-		year: 2023,
+		year: 2022,
 		img: '/images/officers/JasonJewik.jpg',
 		alt: 'a photo of jason smiling in front of some plants',
 	},
