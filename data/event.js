@@ -138,7 +138,7 @@ const events = [{
     end: 1633402800000,
     location: 'Boelter Hall Room 9436',
     committee: 'cyber',
-    description: "Thinking of building an aimbot to get you out of bronze? 🙈\nInterested in learning about how hackers get their hands on private [UC] 👀 information?\nThen ACM Cyber is just for you!! 😍\n\nCome out to Cyber's Fall General Meeting on Monday, October 4th, at Boelter Hall Room 9436 to learn more about what we do, meet our officers, make friends, and participate in a fun ✨Disney-themed✨ cyber activity! No prior experience necessary! ~See you there~",
+    description: "Thinking of building an aimbot to get you out of bronze? 🙈\nInterested in learning about how hackers get their hands on private [UC] 👀 information?\nThen ACM Cyber is just for you!! 😍\n\nCome out to Cyber's Fall General Meeting on Monday, October 4th, at Boelter Hall Room 9436 to learn more about what we do, meet our officers, make friends, and participate in a fun ✨Disney-themed✨ cyber activity! No prior experience necessary! *note* bring your ID card + a mask + your laptop to solve some cool challenges 👀! ~See you there~",
     links: [{
       text: 'Facebook Event',
       href: 'https://fb.me/e/RvlzR1Ns',
