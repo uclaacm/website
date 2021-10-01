@@ -49,7 +49,7 @@ export const people = [
 		name: 'Rohan Bansal',
 		pronouns: 'he/him',
 		position: 'Impact Officer',
-		major: 'Computer Science Major',
+		major: 'Math of Computation Major',
 		year: 2022,
 		img: '/images/officers/RohanBansal.jpg',
 		alt: 'Rohan posing on a bridge',
