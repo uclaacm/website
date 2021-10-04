@@ -10,7 +10,7 @@ if (args.length === 0) {
 
 const fname = args[0];
 const results = [];
-const offset = 20;
+let offset = 20;
 
 fs.createReadStream(fname)
   .pipe(csv())
@@ -25,10 +25,11 @@ fs.createReadStream(fname)
     results.forEach(event => {
       const [startDate, endDate] = event['RANGE of weeks'].split(' - ');
       const dates = generateDateRange(startDate, endDate);
-      generated = generated.concat(dates.map((date, index) => {
+      generated = generated.concat(dates.map((date) => {
         try {
+          offset += 1;
           return generateSingleEvent({
-            id: offset + index,
+            id: offset,
             title: event['Event/Workshop Title '],
             committee: getCssStringFromCommittee(event.Committee),
             location: event['Location/Zoom Link'],
