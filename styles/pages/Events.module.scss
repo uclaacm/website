@@ -22,7 +22,7 @@
 .calendar-size-controller {
   height: 700px !important;
   @media screen and (min-width: $tablet-breakpoint) {
+    max-width: calc(75rem - 300px - 2rem - 3em) !important;
     width: calc(100vw - 300px - 2rem - 3em) !important;
-    // width: 100% !important;
   }
 }
