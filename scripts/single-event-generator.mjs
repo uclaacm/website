@@ -10,7 +10,7 @@ if (args.length === 0) {
 
 const fname = args[0];
 const results = [];
-const offset = 8;
+const offset = 100;
 
 fs.createReadStream(fname)
   .pipe(csv())

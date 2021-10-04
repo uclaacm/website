@@ -57,12 +57,13 @@ function Events() {
 						events={events}
 						startAccessor={(event) => new Date(event.start)}
 						endAccessor={(event) => new Date(event.end)}
-						style={{ height: 700 }}
+						className={styles['calendar-size-controller']}
 						onSelectEvent={setActiveEvent}
 						eventPropGetter={getEventClassByEvent}
 						// matt says: using these props this way *feels wrong*
 						min={new Date('August 19, 1975 9:00:00')}
 						max={new Date('August 19, 1975 22:00:00')}
+						popup={true}
 					/>
 					<SelectedEvent event={activeEvent}/>
 				</div>

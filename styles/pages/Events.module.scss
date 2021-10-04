@@ -18,3 +18,11 @@
     }
   }
 }
+
+.calendar-size-controller {
+  height: 700px !important;
+  @media screen and (min-width: $tablet-breakpoint) {
+    width: calc(100vw - 300px - 2rem - 3em) !important;
+    // width: 100% !important;
+  }
+}
