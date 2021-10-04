@@ -1,5 +1,13 @@
 export default [
     {
+        date: '09/30/21',
+        headline: 'UCLA Computer Science Student Team Advances to 2021 ICPC World Finals',
+        image: '/images/icpc_team.png',
+        alt: 'Advances to 2021 ICPC World Finals',
+        link: 'https://samueli.ucla.edu/ucla-computer-science-student-team-advances-to-2021-icpc-world-finals/',
+
+    },
+    {
         date: '06/22/21',
         headline: '2020–21 Student Chapter Excellence Award',
         image: '/images/2021-acm-excellence-award.png',
