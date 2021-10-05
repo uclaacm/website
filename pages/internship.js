@@ -53,7 +53,7 @@ function InternshipPage(){
                         -- more dates will be added throughout the quarter --
                     </section>
                     <aside className={styles['application-info-card']}>
-                        <h3>Internship Applications Reopen Fall 2021</h3>
+                        <h3>Internship Applications open soon!</h3>
                         {/*
                             HIDE BUTTON TO APPLY TILL APPLICATIONS OPEN
                             once apps open, change above text to say "internship aplications are now open"
