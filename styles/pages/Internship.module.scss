@@ -58,14 +58,43 @@ $single-column-breakpoint: 500px;
   margin-top: 20px;
 }
 
-// this CSS modifies the FAQ component (Faq from 'react-faq-component') 
-// Since it's a component being imported, we have to use their structure of classes in order to manually style anything within the FAQ
+.faq-question:hover {
+  background-color: #DDD,;
+}
+
 .faq {
-  .faq-row-wrapper {
-    .faq-body {
-      text-align: left;
+  margin-bottom: 20px;
+
+  .faq-item {
+    border-bottom: 2px solid $acm-cobalt;
+    color: $acm-black;
+    padding-bottom: 15px;
+    padding-top: 15px;
+
+    .faq-question {
+      font-weight: bold;
     }
+
+    .faq-content {
+      margin-top: 10px;
+    }  
   }
+}   
+
+.faq-question::before {
+  border-bottom: 2px solid $acm-cobalt;
+  border-right: 2px solid $acm-cobalt;
+  content: '';
+  display: inline-block;
+  height: 10px;
+  margin-right: 12px;
+  transform: rotate(-45deg);
+  width: 10px;
+}
+
+.faq-question[aria-expanded='true']::before,
+.faq-question[aria-selected='true']::before {
+  transform: rotate(45deg);
 }
 
 @media screen and (max-width: $tablet-breakpoint) {

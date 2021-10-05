@@ -3,13 +3,19 @@
 
 import React from 'react';
 
-import Faq from 'react-faq-component';
-
+import {
+    Accordion,
+    AccordionItem,
+    AccordionItemHeading,
+    AccordionItemButton,
+    AccordionItemPanel,
+} from 'react-accessible-accordion';
 import Banner from '../components/Banner';
 import CommitteeInternshipInfo from '../components/Internship/CommitteeInternshipInfo';
 import InternshipTimeline from '../components/Internship/InternshipTimeline';
 import NextSteps from '../components/Internship/NextSteps';
 import Layout from '../components/Layout';
+
 
 import data from '../data';
 
@@ -18,7 +24,7 @@ import styles from '../styles/pages/Internship.module.scss';
 const { committees, internship, board } = data;
 
 const internshipInfo = board.concat(committees);
-const { items, testimonials, QA, FAQStyles } = internship;
+const { items, testimonials, QA } = internship;
 
 function InternshipPage(){
     return(
@@ -90,12 +96,26 @@ function InternshipPage(){
             </div>
             <div className={'content-section'}>
                 <h2 className={'text-center'}>FAQ</h2>
-                <div className={styles.faq}>
-                    <Faq
-                    data={QA}
-                    styles={FAQStyles}
-                    />
-                </div>
+                <Accordion
+                    className={styles.faq}
+                    allowMultipleExpanded={true}
+                    allowZeroExpanded={true}
+                    >
+                    {QA.map((QandA,i) => (
+                        <AccordionItem key={i} className={styles['faq-item']}>
+                            <AccordionItemHeading>
+                                <AccordionItemButton className={styles['faq-question']}>
+                                    {QandA.title}
+                                </AccordionItemButton>
+                            </AccordionItemHeading>
+                            <AccordionItemPanel className={styles['faq-content']}>
+                                <p>
+                                {QandA.content}
+                                </p>
+                            </AccordionItemPanel>
+                        </AccordionItem>
+                    ))}
+                </Accordion>
             </div>
         </Layout>
     );
