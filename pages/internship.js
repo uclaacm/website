@@ -32,8 +32,7 @@ function InternshipPage(){
             <CommitteeInternshipInfo
                 committees={internshipInfo}
             />
-            <div style={{position: 'relative', top: '350px', zIndex: '1', transform: 'rotate(-40deg)', textAlign: 'center', fontWeight: 'bold', fontSize: '24pt'}}>Updated timeline coming soon!</div>
-            <div className={'content-section text-center'} style={{filter: 'blur(4px)'}}>
+            <div className={'content-section text-center'}>
                 <h2>Applications</h2>
                 <InternshipTimeline items={items}/>
                 <div className={'grid-tablet-2'}>
