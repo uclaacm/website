@@ -60,7 +60,7 @@ export const people = [
 		major: 'Computer Science Major',
 		year: 2024,
 		img: '/images/officers/SaagarMahadev.jpg',
-		alt: 'Saagar ',
+		alt: 'Saagar in front of rocks',
 	},
 	{
 		name: 'Charles Liu',
