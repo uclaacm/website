@@ -6,9 +6,9 @@ import Banner from '../components/Banner';
 import PersonCard from '../components/Impact/PersonCard';
 import Layout from '../components/Layout';
 
-import { people } from '../data/devteam';
+import { people } from '../data/dev';
 
-import styles from '../styles/pages/Devteam.module.scss';
+import styles from '../styles/pages/Dev.module.scss';
 
 function DevTeam() {
 	return (

@@ -10,7 +10,7 @@ const footerACMLinks = [
 	{ title: 'Events', path: '/events' },
 	{ title: 'Fall General Meeting', path: '/gm/f21' },
 	{ title: 'Internship Program', path: '/internship' },
-	{ title: 'Dev Team', path: '/devteam'},
+	{ title: 'Dev Team', path: '/dev'},
 	{ title: 'Sponsors', path: '/sponsors' },
 	{ title: 'Tech Gala', path: '/techgala' },
 	{ title: 'Membership Portal', path: 'https://members.uclaacm.com', ext: true },
