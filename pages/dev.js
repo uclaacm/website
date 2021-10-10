@@ -32,7 +32,7 @@ function DevTeam() {
 				</p>
 				<h2 className="text-center">Our Projects</h2>
 				<div className='text-left'>
-					<h3 id={styles['first-project']}>UCLA ACM Website</h3>
+					<h3 id={styles['first-project']}>ACM at UCLA Website</h3>
 						<p className={styles['project-info']}>The&nbsp;
 							<Link href='https://www.uclaacm.com'>
 								<a target='_blank' rel='noopener noreferrer'>ACM at UCLA Website</a>
