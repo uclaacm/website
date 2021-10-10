@@ -35,7 +35,7 @@ function DevTeam() {
 					<h3 id={styles['first-project']}>UCLA ACM Website</h3>
 						<p className={styles['project-info']}>The&nbsp;
 							<Link href='https://www.uclaacm.com'>
-								<a target='_blank' rel='noopener noreferrer'>UCLA ACM Website</a>
+								<a target='_blank' rel='noopener noreferrer'>ACM at UCLA Website</a>
 							</Link>
 							{/* eslint-disable-next-line max-len */}
 							&nbsp;is the one-stop shop for all things ACM! We develop and maintain this website, keeping it up-to-date with all the latest news and events. In fact, we made the page you&apos;re looking at right now! This website is built with React.js and Next.js and deployed with Netlify - if you&apos;re curious, feel free to check out the&nbsp;
