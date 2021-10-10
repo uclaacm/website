@@ -2,7 +2,7 @@ export const people = [
 	{
 		name: 'Nhi Van',
 		pronouns: 'she/her',
-		position: 'Dev Team Advisor',
+		position: 'Dev Team Nhi',
 		major: 'Computer Science Major',
 		year: 2022,
 		img: '/images/officers/NhiVan.jpg',
