@@ -27,7 +27,7 @@ function DevTeam() {
 				<p className={styles['dev-team-info']}>
 					If you&apos;re interested in joining us,&nbsp;
 					<Link href='https://uclaacm.com/internship'>
-						<a target='_blank' rel='noopener noreferrer'>apply to intern</a>
+						<a>apply to intern</a>
 					</Link>&nbsp;with the Dev Team!
 				</p>
 				<h2 className="text-center">Our Projects</h2>
