@@ -50,7 +50,7 @@ function DevTeam() {
 								<a target='_blank' rel='noopener noreferrer'>Membership Portal</a>
 							</Link>
 							{/* eslint-disable-next-line max-len */}
-							&nbsp; is where ACM members can check in to events to earn points! We built the Membership Portal with Node.js, Express.js, PostgreSQL, Redux and React.js.
+							&nbsp;is where ACM members can check in to events to earn points! We built the Membership Portal with Node.js, Express.js, PostgreSQL, Redux and React.js.
 						</p>
 					<h3>Discord Bot</h3>
 						<p className={styles['project-info']}>The Discord bot is our in-house email verification bot for the ACM at UCLA&nbsp;
