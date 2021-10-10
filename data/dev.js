@@ -1,13 +1,4 @@
 export const people = [
-	{
-		name: 'Nhi Van',
-		pronouns: 'she/her',
-		position: 'Dev Team Nhi',
-		major: 'Computer Science Major',
-		year: 2022,
-		img: '/images/officers/NhiVan.jpg',
-		alt: 'Nhi standing in front of a bush',
-	},
   {
 		name: 'Advaith Gowrishetty',
 		pronouns: 'he/him',
@@ -16,6 +7,15 @@ export const people = [
 		year: 2024,
 		img: '/images/officers/AdvaithGowrishetty.jpg',
 		alt: 'Advaith standing in a field',
+	},
+	{
+		name: 'Nhi Van',
+		pronouns: 'she/her',
+		position: 'Dev Team Nhi',
+		major: 'Computer Science Major',
+		year: 2022,
+		img: '/images/officers/NhiVan.jpg',
+		alt: 'Nhi standing in front of a bush',
 	},
 	{
 		name: 'Anna Guo',
