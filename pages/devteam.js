@@ -75,11 +75,11 @@ function DevTeam() {
 					Everything we build is&nbsp;
 					<Link href='https://opensource-acm-ucla.netlify.app/'>
 						<a target='_blank' rel='noopener noreferrer'>open source</a>
-					</Link>! 
+					</Link>!
 					In the spirit of open-source, anyone is welcome to view and contribute to our projects on&nbsp;
 					<Link href='https://github.com/uclaacm'>
 						<a target='_blank' rel='noopener noreferrer'>Github</a>
-					</Link>.  
+					</Link>.
 				</p>
 				<h2 className="text-center">People</h2>
 				<div className="grid-desktop-3 text-center-mobile">
