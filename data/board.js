@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 export default [
@@ -20,6 +21,7 @@ export default [
                     <li> External Affairs creates events between company affiliates and the general ACM community</li>
                     <li> Finance handles finances within ACM at UCLA</li>
                     <li> Internal Affairs maintains the culture of ACM by hosting events for all officers </li>
+                    <li> Moonshots handles bold, new initiatives for ACM to take on; past examples include <Link href="/impact"><a>Impact</a></Link> and <Link href="/jedi"><a>JEDI</a></Link>! </li>
                 </ul>
             </> ),
             whatInternsWillDo: (
@@ -35,6 +37,8 @@ export default [
                     and work with committees to secure funding for events</li>
                 <li> The Internal Affairs interns will organize fun socials to bring officers across different
                      committees together, collaborate with other committees and help create the weekly newsletters</li>
+                {/* eslint-disable-next-line max-len */}
+                <li> Moonshots Interns will work with their advisor and ACM leadership on a self-driven project of their choice; examples include transfer advocacy and support, cross-organization collaboration, and new committee or event ideas</li>
             </ul> ),
             card: '/images/cards/board_card.svg',
             nextSteps: 'Dev Team interns have the opportunity to become Dev Team officers in the spring. All other Interns will run for a director position in the Spring or will no longer officially be a member of the board.',

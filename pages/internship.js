@@ -43,7 +43,6 @@ function InternshipPage(){
                             <p className={styles['application-item-info']}>{item.info}</p>
                         </div>
                         ))}
-                        -- more dates will be added throughout the quarter --
                     </section>
                     <aside className={styles['application-info-card']}>
                         <h3>Internship Applications are now open!</h3>
