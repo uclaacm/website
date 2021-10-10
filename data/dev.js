@@ -49,7 +49,7 @@ export const people = [
 		pronouns: 'she/her',
 		position: 'Dev Team Officer',
 		major: 'Linguistics & Computer Science Major',
-		year: 2024,
+		year: 2023,
 		img: '/images/officers/JuliaYin.jpg',
 		alt: 'Julia standing in a hallway with pillars',
 	},
