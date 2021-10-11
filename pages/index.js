@@ -32,9 +32,9 @@ function Home () {
 			/>
 			<div className="home-page text-center">
 				<ContentBanner
-					title="Check out ACM's Fall General Meeting 2021!"
-					ctaText="Fall General Meeting 2021"
-					ctaLink="/gm/f21"
+					title="Want to join us? Apply to be an intern!"
+					ctaText="Internship Application 2021"
+					ctaLink="/internship"
 				/>
 				<Banner />
 				<div className="content-section">
