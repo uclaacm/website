@@ -27,6 +27,11 @@ function InternshipPage(){
                 <h1>The Internship Program</h1>
                 <p className={styles['internship-intro']}>The ACM Internship program is a program that facilitates the transition of UCLA students to ACM officers. Interns learn about the ACM committee they are interning for and ACM in general before becoming an official ACM officer.</p>
                 <p className={styles['internship-intro']}>Click on the different ACM subcommittee icons in order to learn more about what interns in each committee do and scroll down to find more information on how you can apply to the Internship Program.</p>
+                <Link href="https://forms.gle/nGEPFjSRzvNaciwC6">
+                    <a className={'button'} target="_blank" rel="noreferrer noopener">
+                        Apply Now
+                    </a>
+                </Link>
             </div>
             <CommitteeInternshipInfo
                 committees={internshipInfo}
