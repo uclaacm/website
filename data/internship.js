@@ -9,13 +9,13 @@ export default {
             date: '9/27',
             name: 'Fall General Meeting',
             info: 'Come learn about the different ACM committees!',
-            active: true,
+            active: false,
         },
         {
             date: '10/10',
             name: 'Application Form is Open',
             info: 'Fill out the application form for up to 3 committees that you would like to intern for',
-            active: false,
+            active: true,
         },
         {
             date: '10/29',
@@ -24,13 +24,13 @@ export default {
             active: false,
         },
         {
-            date: '10/30 - 11/09',
+            date: '10/29-11/09',
             name: 'Interviews',
             info: 'A handful of applicants will be chosen for an interview with the committee(s) you applied to',
             active: false,
         },
         {
-            date: '11/10 - 11/11',
+            date: '11/10-11/11',
             name: 'Decisions Released',
             info: 'Hear back via Email what committee(s) accepted you (if you applied to multiple, decide which one you would like to intern for)',
             active: false,

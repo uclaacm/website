@@ -1,5 +1,4 @@
-// import Link from 'next/link';
-// uncomment when button is added
+import Link from 'next/link';
 
 import React from 'react';
 
@@ -34,6 +33,11 @@ function InternshipPage(){
                 <h1>The Internship Program</h1>
                 <p className={styles['internship-intro']}>The ACM Internship program is a program that facilitates the transition of UCLA students to ACM officers. Interns learn about the ACM committee they are interning for and ACM in general before becoming an official ACM officer.</p>
                 <p className={styles['internship-intro']}>Click on the different ACM subcommittee icons in order to learn more about what interns in each committee do and scroll down to find more information on how you can apply to the Internship Program.</p>
+                <Link href="https://forms.gle/nGEPFjSRzvNaciwC6">
+                    <a className={'button'} target="_blank" rel="noreferrer noopener">
+                        Apply Now
+                    </a>
+                </Link>
             </div>
             <CommitteeInternshipInfo
                 committees={internshipInfo}
@@ -50,21 +54,16 @@ function InternshipPage(){
                             <p className={styles['application-item-info']}>{item.info}</p>
                         </div>
                         ))}
-                        -- more dates will be added throughout the quarter --
                     </section>
                     <aside className={styles['application-info-card']}>
-                        <h3>Internship Applications open soon!</h3>
-                        {/*
-                            HIDE BUTTON TO APPLY TILL APPLICATIONS OPEN
-                            once apps open, change above text to say "internship aplications are now open"
-                        */}
-                        {/* <div className={styles['application-button']}>
-                            <Link href="">
+                        <h3>Internship Applications are now open!</h3>
+                        <div className={styles['application-button']}>
+                            <Link href="https://forms.gle/nGEPFjSRzvNaciwC6">
                                 <a className={'button'} target="_blank" rel="noreferrer noopener">
                                     Apply Now
                                 </a>
                             </Link>
-                        </div> */}
+                        </div>
                     </aside>
                 </div>
             </div>
