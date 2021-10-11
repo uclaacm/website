@@ -1,5 +1,4 @@
-// import Link from 'next/link';
-// uncomment when button is added
+import Link from 'next/link';
 
 import React from 'react';
 
@@ -32,8 +31,7 @@ function InternshipPage(){
             <CommitteeInternshipInfo
                 committees={internshipInfo}
             />
-            <div style={{position: 'relative', top: '350px', zIndex: '1', transform: 'rotate(-40deg)', textAlign: 'center', fontWeight: 'bold', fontSize: '24pt'}}>Updated timeline coming soon!</div>
-            <div className={'content-section text-center'} style={{filter: 'blur(4px)'}}>
+            <div className={'content-section text-center'}>
                 <h2>Applications</h2>
                 <InternshipTimeline items={items}/>
                 <div className={'grid-tablet-2'}>
@@ -45,21 +43,16 @@ function InternshipPage(){
                             <p className={styles['application-item-info']}>{item.info}</p>
                         </div>
                         ))}
-                        -- more dates will be added throughout the quarter --
                     </section>
                     <aside className={styles['application-info-card']}>
-                        <h3>Internship Applications Reopen Fall 2021</h3>
-                        {/*
-                            HIDE BUTTON TO APPLY TILL APPLICATIONS OPEN
-                            once apps open, change above text to say "internship aplications are now open"
-                        */}
-                        {/* <div className={styles['application-button']}>
-                            <Link href="">
+                        <h3>Internship Applications are now open!</h3>
+                        <div className={styles['application-button']}>
+                            <Link href="https://forms.gle/nGEPFjSRzvNaciwC6">
                                 <a className={'button'} target="_blank" rel="noreferrer noopener">
                                     Apply Now
                                 </a>
                             </Link>
-                        </div> */}
+                        </div>
                     </aside>
                 </div>
             </div>
