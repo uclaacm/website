@@ -42,7 +42,7 @@ function COVID() {
           <a className="button" href="https://docs.google.com/document/d/1zWBY73g0LkqM6qSa1eIhJ5bvt_sGaaKfQqqmqlOSo-U" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faExternalLinkAlt} fixedWidth aria-hidden={true} /> Link to Google Doc
           </a>{' '}
-          <a className="button" href="/files/acm-covid-policies-f21-last-updated-09-15-21.pdf" target="_blank" rel="noopener noreferrer">
+          <a className="button" href="/files/acm-covid-policies-f21-last-updated-10-15-21.pdf" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faFilePdf} fixedWidth aria-hidden={true} /> Link to PDF
           </a>
         </div>
