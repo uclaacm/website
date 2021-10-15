@@ -29,7 +29,14 @@ function COVID() {
           Our plan is approved by <a href="https://sole.ucla.edu/" target="_blank" rel="noopener noreferrer">UCLA SOLE</a> and is a superset of <a href="https://covid-19.ucla.edu/ucla-return-to-campus/" target="_blank" rel="noopener noreferrer">UCLA&apos;s return to campus</a> and <a href="http://ph.lacounty.gov/acd/ncorona2019/EducationToolkit/IHE/" target="_blank" rel="noopener noreferrer">LA County Guidelines</a>.
         </p>
         <p>
-          Last major update: <b>Wednesday, September 15th 2021</b>.
+          Last major update: <b>Friday, October 15th 2021</b>.
+          <div>
+            <p className='mb-0'>Version history</p>
+            <ul className='mt-0'>
+              <li><b>Friday, October 15th 2021</b>: updated to comply with <a href="https://ucla.app.box.com/s/ldwgbdtwohcwbmbrk2gzdmb478od5566" target="_blank" rel="noopener noreferrer">UCLA Indoor/Outdoor Organized Event Temporary Protocol</a></li>
+              <li><b>Wednesday, September 15th 2021</b>: introduced COVID policy document</li>
+            </ul>
+          </div>
         </p>
         <div className="button-section">
           <a className="button" href="https://docs.google.com/document/d/1zWBY73g0LkqM6qSa1eIhJ5bvt_sGaaKfQqqmqlOSo-U" target="_blank" rel="noopener noreferrer">
