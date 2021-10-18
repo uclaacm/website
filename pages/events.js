@@ -26,6 +26,9 @@ const getEventClassByEvent = (event) => {
 	});
 };
 
+const indexedEvents = events.map((original_event, index) => ({...original_event, id: index}));
+const googleCalendarShare = 'https://calendar.google.com/calendar/u/2?cid=YWNtYnJ1aW5zQGdtYWlsLmNvbQ';
+
 function Events() {
 	const [activeEvent, setActiveEvent] = useState(null);
 	return (
@@ -49,12 +52,12 @@ function Events() {
 			<div className={styles['events-container']}>
 				<h1 className="text-center">Our Events</h1>
 				<p className="text-center">
-					Take a look at our fancy calendar.
+					Take a look at our fancy calendar. Or, <a href={googleCalendarShare} target="_blank" rel="noopener noreferrer">subscribe to our Google Calendar</a>!
 				</p>
 				<div className={styles['calendar-view-container']}>
 					<Calendar
 						localizer={localizer}
-						events={events}
+						events={indexedEvents}
 						startAccessor={(event) => new Date(event.start)}
 						endAccessor={(event) => new Date(event.end)}
 						className={styles['calendar-size-controller']}
@@ -67,6 +70,10 @@ function Events() {
 					/>
 					<SelectedEvent event={activeEvent}/>
 				</div>
+				<p>
+					{/* eslint-disable-next-line max-len */}
+					This event page is still new. Please send us any feedback you have via email (acm@ucla.edu) or your social media platform of choice!
+				</p>
 				<p>
 					Want to see our past events? All of our 2020-2021 content was recorded and is available on our <a href="https://www.youtube.com/c/acmucla" target="_blank" rel="noreferrer noopener">YouTube channel!</a>
 				</p>
