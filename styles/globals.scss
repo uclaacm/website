@@ -31,6 +31,12 @@ h3 {
   margin-top: 70px; //To account for height of Navbar, which uses fixed positioning
 }
 
+.content-container-medium {
+  margin: 0 auto;
+  max-width: 75rem;
+  padding: 0 1rem;
+}
+
 .content-container-tight {
   margin: 0 auto;
   max-width: 50rem;
