@@ -13,6 +13,7 @@ const footerACMLinks = [
 	{ title: 'Dev Team', path: '/dev'},
 	{ title: 'Sponsors', path: '/sponsors' },
 	{ title: 'Tech Gala', path: '/techgala' },
+	{ title: 'CS Town Hall', path: '/town-hall/f21' },
 	{ title: 'Membership Portal', path: 'https://members.uclaacm.com', ext: true },
 	{ title: 'COVID-19', path: '/covid' },
 ];
