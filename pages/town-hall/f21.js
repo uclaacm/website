@@ -115,7 +115,7 @@ function TownHall() {
             <h3>Winter 2021 // Wednesday, February 24th 2021</h3>
             <p>
               {/* eslint-disable-next-line max-len */}
-              In our first ever fully-virtual town hall, we focused on three key topics: academics &amp; curriculum, academic honesty, and a new section devoted to diveristy &amp; inclusion.
+              In our first ever fully-virtual town hall, we focused on three key topics: academics &amp; curriculum, academic honesty, and a new section devoted to diversity &amp; inclusion.
             </p>
             <ul className="list-unstyled">
               <li style={inlineButtonListStyle}>
