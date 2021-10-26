@@ -1,3 +1,4 @@
+import { NextSeo } from 'next-seo';
 import Link from 'next/link';
 
 import React from 'react';
@@ -28,6 +29,10 @@ const { items, testimonials, QA } = internship;
 function InternshipPage(){
     return(
         <Layout>
+            <NextSeo
+				title="Internship | ACM at UCLA"
+				description="The ACM Internship program facilitates the transition of UCLA students to ACM officers. Interns learn about the committee they are interning for and ACM in general by working on projects before becoming an official ACM officer."
+			/>
             <Banner decorative />
             <div className={'content-section text-center'}>
                 <h1>The Internship Program</h1>
