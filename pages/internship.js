@@ -31,7 +31,7 @@ function InternshipPage(){
         <Layout>
             <NextSeo
 				title="Internship | ACM at UCLA"
-				description="The ACM Internship program facilitates the transition of UCLA students to ACM officers. Interns learn about the committee they are interning for and ACM in general by working on projects before becoming an official ACM officer."
+				description="Come apply to ACM's internship program! The program facilitates the transition of UCLA students to ACM officers. You will learn about the committee you are interning for and ACM in general."
                 openGraph={{
 					images: [
 						{
