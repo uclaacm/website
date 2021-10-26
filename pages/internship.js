@@ -37,12 +37,14 @@ function InternshipPage(){
                     <a className={'button'} target="_blank" rel="noreferrer noopener">
                         Apply Now
                     </a>
-                </Link>{' '}
-                <Link href="https://tinyurl.com/ACMInternship2021">
-                    <a className={'button'} target="_blank" rel="noreferrer noopener">
-                        View Position Descriptions
-                    </a>
                 </Link>
+                <p className={styles['internship-intro']}>
+                    or, <Link href="https://tinyurl.com/ACMInternship2021">
+                        <a target="_blank" rel="noreferrer noopener">
+                            view position descriptions!
+                        </a>
+                    </Link>
+                </p>
             </div>
             <CommitteeInternshipInfo
                 committees={internshipInfo}
