@@ -136,7 +136,7 @@ const jedis = [
     pronouns: 'she/her',
     bio: 'never stressed sometimes depressed',
     img: 'https://teachla.uclaacm.com/img/team/awang.jpg',
-    alt: 'a photo of Helia smiling',
+    alt: 'a photo of Alyssa smiling',
   },
   {
     name: 'jiin',

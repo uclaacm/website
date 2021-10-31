@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import { NextSeo } from 'next-seo';
 
 import React from 'react';
 
@@ -28,16 +28,26 @@ const { items, testimonials, QA } = internship;
 function InternshipPage(){
     return(
         <Layout>
+            <NextSeo
+				title="Internship | ACM at UCLA"
+				description="ACM's internship program facilitates the transition of UCLA students to ACM officers. Interns learn about the committee you are interning for and ACM in general."
+                openGraph={{
+					images: [
+						{
+							url: 'https://www.uclaacm.com/images/logo.png',
+							width: 1200,
+							height: 1200,
+							alt: 'The ACM at UCLA logo',
+						},
+					],
+					site_name: 'ACM at UCLA',
+				}}
+            />
             <Banner decorative />
             <div className={'content-section text-center'}>
                 <h1>The Internship Program</h1>
                 <p className={styles['internship-intro']}>The ACM Internship program is a program that facilitates the transition of UCLA students to ACM officers. Interns learn about the ACM committee they are interning for and ACM in general before becoming an official ACM officer.</p>
                 <p className={styles['internship-intro']}>Click on the different ACM subcommittee icons in order to learn more about what interns in each committee do and scroll down to find more information on how you can apply to the Internship Program.</p>
-                <Link href="https://forms.gle/nGEPFjSRzvNaciwC6">
-                    <a className={'button'} target="_blank" rel="noreferrer noopener">
-                        Apply Now
-                    </a>
-                </Link>
             </div>
             <CommitteeInternshipInfo
                 committees={internshipInfo}
@@ -56,14 +66,9 @@ function InternshipPage(){
                         ))}
                     </section>
                     <aside className={styles['application-info-card']}>
-                        <h3>Internship Applications are now open!</h3>
-                        <div className={styles['application-button']}>
-                            <Link href="https://forms.gle/nGEPFjSRzvNaciwC6">
-                                <a className={'button'} target="_blank" rel="noreferrer noopener">
-                                    Apply Now
-                                </a>
-                            </Link>
-                        </div>
+                        <h3>Internship Applications are closed until Fall 2022</h3>
+                        {/* eslint-disable-next-line max-len */}
+                        <p>Keep an eye on this page for possible open positions this Spring when ACM recruits officers!</p>
                     </aside>
                 </div>
             </div>

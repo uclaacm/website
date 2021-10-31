@@ -47,7 +47,7 @@ export default [
                     media and weekly newsletter.</li>
                 <li> Moonshots Interns will work with their advisor and ACM leadership on a self-driven project of their
                     choice; examples include transfer advocacy and support, cross-organization collaboration, and new
-                    committee or event ideas</li>
+                    committee or event ideas. See <a href="https://tinyurl.com/ACMInternship2021" target="_blank" rel="noopener noreferrer">the committee descriptions</a> for an expanded blurb!</li>
             </ul> ),
             card: '/images/cards/board_card.svg',
             nextSteps: 'Dev Team interns have the opportunity to become Dev Team officers in the spring. All other Interns will run for a director position in the Spring or will no longer officially be a member of the board.',
