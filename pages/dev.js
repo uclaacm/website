@@ -3,8 +3,8 @@ import Link from 'next/link';
 import React from 'react';
 
 import Banner from '../components/Banner';
-import Officers from '../components/OfficerCard';
 import Layout from '../components/Layout';
+import Officers from '../components/OfficerCard';
 
 import { people } from '../data/dev';
 

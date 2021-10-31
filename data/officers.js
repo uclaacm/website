@@ -10,4 +10,4 @@ export default [
 		alt: 'Dylon standing in front of the Great Wall of China',
         bio: 'When not chasing squirrels, Dylon enjoys running, chasing cyclists, and long walks.',
     },
-]
+];

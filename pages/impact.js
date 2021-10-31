@@ -1,19 +1,19 @@
-import { NextSeo } from "next-seo";
-import Image from "next/image";
-import React from "react";
+import { NextSeo } from 'next-seo';
+import Image from 'next/image';
+import React from 'react';
 
-import Banner from "../components/Banner";
-import Officers from "../components/OfficerCard";
-import Carousel from "../components/Impact/Carousel";
-import WorkshopCard from "../components/Impact/WorkshopCard";
-import Layout from "../components/Layout";
+import Banner from '../components/Banner';
+import Carousel from '../components/Impact/Carousel';
+import WorkshopCard from '../components/Impact/WorkshopCard';
+import Layout from '../components/Layout';
+import Officers from '../components/OfficerCard';
 
-import { pastEvents, people } from "../data/impact";
+import { pastEvents, people } from '../data/impact';
 
-import impactMotifBanner from "../public/images/impact/impact-motif.png";
-import styles from "../styles/pages/impact.module.scss";
+import impactMotifBanner from '../public/images/impact/impact-motif.png';
+import styles from '../styles/pages/impact.module.scss';
 
-const impactBlog = "https://medium.com/acm-at-ucla";
+const impactBlog = 'https://medium.com/acm-at-ucla';
 
 function Impact() {
   return (
@@ -24,13 +24,13 @@ function Impact() {
         openGraph={{
           images: [
             {
-              url: "https://www.uclaacm.com/images/impact/impact-motif.png",
+              url: 'https://www.uclaacm.com/images/impact/impact-motif.png',
               width: 2665,
               height: 1333,
-              alt: "The ACM Impact banner: a space shuttle taking off, with a moon behind it",
+              alt: 'The ACM Impact banner: a space shuttle taking off, with a moon behind it',
             },
           ],
-          site_name: "ACM at UCLA",
+          site_name: 'ACM at UCLA',
         }}
       />
       <Banner decorative />
@@ -41,7 +41,7 @@ function Impact() {
 
         <h2 className="text-center">Tech Ethics.</h2>
         {/* TODO: make this not use an h2 */}
-        <h2 className={styles["text-center-holographic"]}>Ethics.</h2>
+        <h2 className={styles['text-center-holographic']}>Ethics.</h2>
         <p>
           {/* eslint-disable-next-line max-len */}
           ACM Impact is an up-and-coming initiative of ACM whose mission is to
@@ -54,31 +54,31 @@ function Impact() {
         <h2 className="text-center">Our Initiatives</h2>
         <h3 className="text-uppercase">Workshops</h3>
         <WorkshopCard
-          title={"Careers Workshop Series"}
-          quarter={"Fall 2021"}
+          title={'Careers Workshop Series'}
+          quarter={'Fall 2021'}
           description={
-            "Wondering how to harness your tech powers for good? Come out to learn about careers in social impact tech, tech in the nonprofit space, civic tech, environmental tech, and more!"
+            'Wondering how to harness your tech powers for good? Come out to learn about careers in social impact tech, tech in the nonprofit space, civic tech, environmental tech, and more!'
           }
           img={impactMotifBanner}
           alt={
-            "The ACM Impact banner: a space shuttle taking off, with a moon behind it"
+            'The ACM Impact banner: a space shuttle taking off, with a moon behind it'
           }
           desktopHorizontal
         />
         <h3 className="text-uppercase">Blog</h3>
         <p>
-          Anyone from UCLA can write for our{" "}
+          Anyone from UCLA can write for our{' '}
           <a href={impactBlog} target="_blank" rel="noreferrer noopener">
             our blog
           </a>
-          ! Check{" "}
+          ! Check{' '}
           <a
             href="https://medium.com/acm-at-ucla/how-to-write-for-acm-impact-at-ucla-9a1aa0046b85"
             target="_blank"
             rel="noreferrer noopener"
           >
             this blog post
-          </a>{" "}
+          </a>{' '}
           out to see how you can get involved! We look forward to reading your
           work—in the meantime, check out some of our existing posts!
         </p>

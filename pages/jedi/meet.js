@@ -1,16 +1,16 @@
-import { faDiscord, faSlack } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { NextSeo } from "next-seo";
-import Link from "next/link";
-import React from "react";
+import { faDiscord, faSlack } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { NextSeo } from 'next-seo';
+import Link from 'next/link';
+import React from 'react';
 
-import Officers from "../../components/OfficerCard";
-import JEDINav from "../../components/JEDI/JEDINav";
-import Layout from "../../components/Layout";
+import JEDINav from '../../components/JEDI/JEDINav';
+import Layout from '../../components/Layout';
+import Officers from '../../components/OfficerCard';
 
-import { contactEmail, jedis } from "../../data/jedi";
-import styles from "../../styles/pages/jedi.module.scss";
+import { contactEmail, jedis } from '../../data/jedi';
+import styles from '../../styles/pages/jedi.module.scss';
 
 function Meet() {
   return (
@@ -21,36 +21,36 @@ function Meet() {
         openGraph={{
           images: [
             {
-              url: "https://www.uclaacm.com/images/jedi/jedi-logo.png",
+              url: 'https://www.uclaacm.com/images/jedi/jedi-logo.png',
               width: 714,
               height: 395,
-              alt: "The JEDI Logo",
+              alt: 'The JEDI Logo',
             },
           ],
-          site_name: "ACM at UCLA",
+          site_name: 'ACM at UCLA',
         }}
       />
-      <div className={`${styles.container} ${styles["container-padding"]}`}>
+      <div className={`${styles.container} ${styles['container-padding']}`}>
         <JEDINav />
         <h1>meet the JEDIs</h1>
-        <div className={styles["tri-grid"]}>
+        <div className={styles['tri-grid']}>
           <Officers officers={jedis} style="jedi" />
         </div>
         <p className="text-center">
-          not pictured:{" "}
+          not pictured:{' '}
           <Link href="https://arjunsubramonian.github.io/">
             <a
-              className={styles["jedi-link"]}
+              className={styles['jedi-link']}
               target="_blank"
               rel="noopener noreferrer"
             >
               Arjun
             </a>
-          </Link>{" "}
-          and{" "}
+          </Link>{' '}
+          and{' '}
           <Link href="https://sharvani.urspace.io/">
             <a
-              className={styles["jedi-link"]}
+              className={styles['jedi-link']}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -65,20 +65,20 @@ function Meet() {
           want to contact JEDI? your best bet is reaching out to Helia, our JEDI
           director! reach out via:
         </p>
-        <ul className={`list-unstyled ${styles["mb-2"]}`}>
+        <ul className={`list-unstyled ${styles['mb-2']}`}>
           <li>
-            <FontAwesomeIcon icon={faEnvelope} fixedWidth aria-hidden={true} />{" "}
-            Email:{" "}
-            <a className={styles["jedi-link"]} href={`mailto:${contactEmail}`}>
+            <FontAwesomeIcon icon={faEnvelope} fixedWidth aria-hidden={true} />{' '}
+            Email:{' '}
+            <a className={styles['jedi-link']} href={`mailto:${contactEmail}`}>
               {contactEmail}
             </a>
           </li>
           <li>
-            <FontAwesomeIcon icon={faDiscord} fixedWidth aria-hidden={true} />{" "}
+            <FontAwesomeIcon icon={faDiscord} fixedWidth aria-hidden={true} />{' '}
             Discord: cuddlefish#2308
           </li>
           <li>
-            <FontAwesomeIcon icon={faSlack} fixedWidth aria-hidden={true} />{" "}
+            <FontAwesomeIcon icon={faSlack} fixedWidth aria-hidden={true} />{' '}
             Slack (ACM internal): Helia (she/her)
           </li>
         </ul>

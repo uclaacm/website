@@ -1,18 +1,18 @@
-import { NextSeo } from "next-seo";
-import Image from "next/image";
-import React from "react";
+import { NextSeo } from 'next-seo';
+import Image from 'next/image';
+import React from 'react';
 
-import Banner from "../components/Banner";
-import Layout from "../components/Layout";
-import Officers from "../components/OfficerCard";
-import SocialMedia from "../components/SocialMedia";
-import data from "../data";
+import Banner from '../components/Banner';
+import Layout from '../components/Layout';
+import Officers from '../components/OfficerCard';
+import SocialMedia from '../components/SocialMedia';
+import data from '../data';
 
 // import acmAbout1 from '../public/images/about1.png';
-import acmCommittees from "../public/images/acm_committees.png";
-import acmHowToJoin from "../public/images/how-to-join.png";
+import acmCommittees from '../public/images/acm_committees.png';
+import acmHowToJoin from '../public/images/how-to-join.png';
 
-import styles from "../styles/pages/About.module.scss";
+import styles from '../styles/pages/About.module.scss';
 
 function About() {
   const { leadership } = data;
@@ -24,41 +24,41 @@ function About() {
         openGraph={{
           images: [
             {
-              url: "https://www.uclaacm.com/images/logo.png",
+              url: 'https://www.uclaacm.com/images/logo.png',
               width: 1200,
               height: 1200,
-              alt: "The ACM at UCLA logo",
+              alt: 'The ACM at UCLA logo',
             },
           ],
-          site_name: "ACM at UCLA",
+          site_name: 'ACM at UCLA',
         }}
       />
-      <div className={styles["about-page"]}>
+      <div className={styles['about-page']}>
         <Banner decorative />
-        <div className={styles["content-section"]}>
-          <div className={`${styles.ornament} ${styles["square-ornament"]}`}>
+        <div className={styles['content-section']}>
+          <div className={`${styles.ornament} ${styles['square-ornament']}`}>
             {/* TODO: resolve next/image issue */}
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              className={styles["square-splash"]}
+              className={styles['square-splash']}
               src="/images/about1.png"
               alt="ACM students at our annual CS BBQ!"
             />
             {/* TODO: use next image without breaking deploy */}
-            <div className={styles["square-small"]} />
-            <div className={styles["square-tiny"]} />
+            <div className={styles['square-small']} />
+            <div className={styles['square-tiny']} />
           </div>
-          <div className={styles["text-section"]}>
+          <div className={styles['text-section']}>
             <h1>What is ACM?</h1>
             <p>
-              As a student chapter of the international{" "}
+              As a student chapter of the international{' '}
               <a
                 href="https://www.acm.org"
                 target="_blank"
                 rel="noreferrer noopener"
               >
                 Association for Computing Machinery,
-              </a>{" "}
+              </a>{' '}
               ACM at UCLA is the largest Computer Science student organization
               at UCLA and in Southern California. We welcome students of all
               backgrounds and skill levels to join our community and share our
@@ -70,15 +70,15 @@ function About() {
               hackathons, and competitions, we cover a variety of topics
               including artificial intelligence, virtual reality, cybersecurity,
               mobile and web development, diversity initiatives, community
-              outreach, and much more. Our events are{" "}
+              outreach, and much more. Our events are{' '}
               <strong>open to everyone</strong>, regardless of major or
               experience!
             </p>
           </div>
         </div>
-        <div className={styles["content-section"]}>
+        <div className={styles['content-section']}>
           <div
-            className={`${styles.ornament} ${styles["image-ornament"]} ${styles["image-ornament-right"]}`}
+            className={`${styles.ornament} ${styles['image-ornament']} ${styles['image-ornament-right']}`}
           >
             <Image
               src={acmCommittees}
@@ -86,7 +86,7 @@ function About() {
               priority={true}
             />
           </div>
-          <div className={styles["text-section"]}>
+          <div className={styles['text-section']}>
             <h1>What are ACM committees?</h1>
             <p>
               ACM is comprised of eight committees — each serving a different
@@ -95,13 +95,13 @@ function About() {
             </p>
           </div>
         </div>
-        <div className={styles["content-section"]}>
+        <div className={styles['content-section']}>
           <div
-            className={`${styles.ornament} ${styles["image-ornament"]} ${styles["image-ornament-right"]}`}
+            className={`${styles.ornament} ${styles['image-ornament']} ${styles['image-ornament-right']}`}
           >
             <Image src={acmHowToJoin} alt="photos of acm events" />
           </div>
-          <div className={styles["text-section"]}>
+          <div className={styles['text-section']}>
             <h1>How do I get involved?</h1>
             <p>
               No matter what your background or major is, we would love to have
@@ -139,16 +139,16 @@ function About() {
               Here&rsquo;s our social media, where you can see what we&rsquo;re
               up to:
             </p>
-            <div className={styles["social-media"]}>
+            <div className={styles['social-media']}>
               <SocialMedia />
             </div>
           </div>
         </div>
-        <div className={`${styles["content-section"]} ${styles.leadership}`}>
+        <div className={`${styles['content-section']} ${styles.leadership}`}>
           <h2>Leadership</h2>
-		  <div className="grid-desktop-3">
-          	<Officers officers={leadership} size="compact" />
-		  </div>
+					<div className="grid-desktop-3">
+						<Officers officers={leadership} size="compact" />
+					</div>
         </div>
       </div>
     </Layout>
