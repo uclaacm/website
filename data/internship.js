@@ -9,7 +9,7 @@ export default {
             date: '9/27',
             name: 'Fall General Meeting',
             info: 'Come learn about the different ACM committees!',
-            active: false,
+            active: true,
         },
         {
             date: '10/10',
@@ -21,13 +21,13 @@ export default {
             date: '10/29',
             name: 'Applications Due',
             info: 'Submit your application by 11:59 pm',
-            active: false,
+            active: true,
         },
         {
             date: '10/29-11/09',
             name: 'Interviews',
             info: 'A handful of applicants will be chosen for an interview with the committee(s) you applied to',
-            active: false,
+            active: true,
         },
         {
             date: '11/10-11/11',
