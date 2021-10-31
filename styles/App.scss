@@ -3,27 +3,27 @@
  ************************************/
 
 /* globals */
-@import "variables";
-@import "globals";
+@import 'variables';
+@import 'globals';
 
 /* components */
-@import "components/Button";
-@import "components/Banner";
-@import "components/Carousel";
-@import "components/Committees/Sidebar";
-@import "components/Committees/CommitteeSectionIntro";
-@import "components/Committees/CommitteeEventCard";
-@import "components/CommitteeSpread";
-@import "components/GM";
-@import "components/Navbar";
-@import "components/News";
-@import "components/SocialMedia";
-@import "components/TechGala/ProjectCard";
-@import "components/TechGala/ViewBanner";
+@import 'components/Button';
+@import 'components/Banner';
+@import 'components/Carousel';
+@import 'components/Committees/Sidebar';
+@import 'components/Committees/CommitteeSectionIntro';
+@import 'components/Committees/CommitteeEventCard';
+@import 'components/CommitteeSpread';
+@import 'components/GM';
+@import 'components/Navbar';
+@import 'components/News';
+@import 'components/SocialMedia';
+@import 'components/TechGala/ProjectCard';
+@import 'components/TechGala/ViewBanner';
 
 /* pages */
-@import "pages/index";
-@import "pages/committees";
-@import "pages/sponsors";
-@import "pages/techgala";
-@import "pages/events-calendar-override";
+@import 'pages/index';
+@import 'pages/committees';
+@import 'pages/sponsors';
+@import 'pages/techgala';
+@import 'pages/events-calendar-override';
