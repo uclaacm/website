@@ -1,4 +1,4 @@
-import { faFileAlt } from '@fortawesome/free-solid-svg-icons';
+import { faCalendarCheck, faFileAlt, faQuestion } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { NextSeo } from 'next-seo';
 import Image from 'next/image';
@@ -68,11 +68,15 @@ function TownHall() {
         </p>
         <ul className="list-unstyled text-center">
           <li style={inlineButtonListStyle}>
-            <Link href="https://bit.ly/CSTownHallFall2021RSVP"><a className="button" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faFileAlt} fixedWidth aria-hidden={true} /> RSVP now!</a></Link>
+            <Link href="https://bit.ly/CSTownHallFall2021RSVP"><a className="button" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faCalendarCheck} fixedWidth aria-hidden={true} /> RSVP now!</a></Link>
           </li>
           {' '}
           <li style={inlineButtonListStyle}>
             <Link href="#surveys"><a className="button"><FontAwesomeIcon icon={faFileAlt} fixedWidth aria-hidden={true} /> Answer Survey Questions!</a></Link>
+          </li>
+          {' '}
+          <li style={inlineButtonListStyle}>
+            <Link href="https://app.sli.do/event/jcaoo1z7"><a className="button" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faQuestion} fixedWidth aria-hidden={true} /> Ask questions in advance!</a></Link>
           </li>
         </ul>
         <hr />
