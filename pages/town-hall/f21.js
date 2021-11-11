@@ -1,4 +1,4 @@
-import { faCalendarCheck, faFileAlt, faQuestion } from '@fortawesome/free-solid-svg-icons';
+import { faCalendarCheck, faFileAlt, faQuestion, faFilePowerpoint } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { NextSeo } from 'next-seo';
 import Image from 'next/image';
@@ -77,6 +77,10 @@ function TownHall() {
           {' '}
           <li style={inlineButtonListStyle}>
             <Link href="https://app.sli.do/event/jcaoo1z7"><a className="button" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faQuestion} fixedWidth aria-hidden={true} /> Ask questions in advance!</a></Link>
+          </li>
+          {' '}
+          <li style={inlineButtonListStyle}>
+            <Link href="https://docs.google.com/presentation/d/1IDtHk52HApxHTigT9aAXf0-fZNeYUQ9F9MYfHBybBNs/edit?usp=sharing"><a className="button" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faFilePowerpoint} fixedWidth aria-hidden={true} /> Event Slides</a></Link>
           </li>
         </ul>
         <hr />
