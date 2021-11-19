@@ -174,16 +174,17 @@ $committees: (ai, $ai-arctic), (cyber, $cyber-amber), (design, $design-orange), 
             display: flex;
             flex-direction: column;
 
-            #committee-mobile-nav-item, #initiatives-mobile-nav-item {
+            //Highlight the link active just for initiative pages
+            #initiatives-mobile-nav-item {
+              .active {
+                color: $acm-cobalt;
+              }
+            }
+
+            #committee-mobile-nav-item,
+            #initiatives-mobile-nav-item {
               display: block;
             }
-          }
-
-          //Highlight the link active just for initiative pages
-          #initiatives-mobile-nav-item {
-            .active {
-              color: $acm-cobalt;
-           }
           }
         }
 
