@@ -52,6 +52,10 @@ h3 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
+  
+  .hide-on-desktop {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-breakpoint) {
