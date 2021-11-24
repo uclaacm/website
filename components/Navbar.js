@@ -45,8 +45,8 @@ export default function Navbar() {
                   <li><ActiveLink activeClassName="active" href="/committees#hack" passHref={true}><button type="button" onClick={menuActivate}>Hack</button></ActiveLink></li>
                 </ul>
               </li>
-              <li>initiatives</li>
-              <li id="initiatives-mobile-nav-item">
+              <li className="hide-on-desktop">initiatives</li>
+              <li className="hide-on-desktop" id="initiatives-mobile-nav-item">
                 <ul className="committee-mobile-nav" role="presentation">
                   <li><ActiveLink activeClassName="active" act href="/jedi" passHref={true}><button type="button" onClick={menuActivate}>JEDI</button></ActiveLink></li>
                   <li><ActiveLink activeClassName="active" href="/impact" passHref={true}><button type="button" onClick={menuActivate}>impact</button></ActiveLink></li>
