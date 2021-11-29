@@ -51,9 +51,9 @@ function Officer({
   } else {
     return (
       <div
-        className={`${styles['workshop-card']} ${styles['grid-tablet-only-2']}`}
+        className={`${styles['officer-card']} ${styles['grid-tablet-only-2']}`}
       >
-        <div className={styles['workshop-image-container']}>
+        <div className={styles['officer-image-container']}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src={img} alt={alt} style={{ maxWidth: '100%' }} />
         </div>
