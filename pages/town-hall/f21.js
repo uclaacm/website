@@ -19,7 +19,7 @@ const inlineButtonListStyle = {
   marginBottom: '0.5em',
 };
 
-const TEST_START_TIME = new Date(`2021-11-29T01:10:00-08:00`);
+const TEST_START_TIME = new Date('2021-11-29T01:10:00-08:00');
 
 function TownHall() {
   const embed2021WRef = useRef(null);
