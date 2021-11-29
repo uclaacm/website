@@ -67,18 +67,18 @@ function Impact() {
         />
         <h3 className="text-uppercase">Blog</h3>
         <p>
-          Anyone from UCLA can write for our{' '}
+          Anyone from UCLA can write for our&nbsp;
           <a href={impactBlog} target="_blank" rel="noreferrer noopener">
             our blog
           </a>
-          ! Check{' '}
+          ! Check&nbsp;
           <a
             href="https://medium.com/acm-at-ucla/how-to-write-for-acm-impact-at-ucla-9a1aa0046b85"
             target="_blank"
             rel="noreferrer noopener"
           >
             this blog post
-          </a>{' '}
+          </a>&nbsp;
           out to see how you can get involved! We look forward to reading your
           work—in the meantime, check out some of our existing posts!
         </p>

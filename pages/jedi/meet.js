@@ -37,7 +37,7 @@ function Meet() {
           <Officers officers={jedis} style="jedi" />
         </div>
         <p className="text-center">
-          not pictured:{' '}
+          not pictured:&nbsp;
           <Link href="https://arjunsubramonian.github.io/">
             <a
               className={styles['jedi-link']}
@@ -46,8 +46,8 @@ function Meet() {
             >
               Arjun
             </a>
-          </Link>{' '}
-          and{' '}
+          </Link>&nbsp;
+          and&nbsp;
           <Link href="https://sharvani.urspace.io/">
             <a
               className={styles['jedi-link']}
@@ -67,18 +67,18 @@ function Meet() {
         </p>
         <ul className={`list-unstyled ${styles['mb-2']}`}>
           <li>
-            <FontAwesomeIcon icon={faEnvelope} fixedWidth aria-hidden={true} />{' '}
-            Email:{' '}
+            <FontAwesomeIcon icon={faEnvelope} fixedWidth aria-hidden={true} />&nbsp;
+            Email:&nbsp;
             <a className={styles['jedi-link']} href={`mailto:${contactEmail}`}>
               {contactEmail}
             </a>
           </li>
           <li>
-            <FontAwesomeIcon icon={faDiscord} fixedWidth aria-hidden={true} />{' '}
+            <FontAwesomeIcon icon={faDiscord} fixedWidth aria-hidden={true} />&nbsp;
             Discord: cuddlefish#2308
           </li>
           <li>
-            <FontAwesomeIcon icon={faSlack} fixedWidth aria-hidden={true} />{' '}
+            <FontAwesomeIcon icon={faSlack} fixedWidth aria-hidden={true} />&nbsp;
             Slack (ACM internal): Helia (she/her)
           </li>
         </ul>

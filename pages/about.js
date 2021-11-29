@@ -51,14 +51,14 @@ function About() {
           <div className={styles['text-section']}>
             <h1>What is ACM?</h1>
             <p>
-              As a student chapter of the international{' '}
+              As a student chapter of the international&nbsp;
               <a
                 href="https://www.acm.org"
                 target="_blank"
                 rel="noreferrer noopener"
               >
                 Association for Computing Machinery,
-              </a>{' '}
+              </a>&nbsp;
               ACM at UCLA is the largest Computer Science student organization
               at UCLA and in Southern California. We welcome students of all
               backgrounds and skill levels to join our community and share our
@@ -70,7 +70,7 @@ function About() {
               hackathons, and competitions, we cover a variety of topics
               including artificial intelligence, virtual reality, cybersecurity,
               mobile and web development, diversity initiatives, community
-              outreach, and much more. Our events are{' '}
+              outreach, and much more. Our events are&nbsp;
               <strong>open to everyone</strong>, regardless of major or
               experience!
             </p>
