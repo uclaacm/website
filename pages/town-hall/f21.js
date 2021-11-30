@@ -19,14 +19,14 @@ const inlineButtonListStyle = {
   marginBottom: '0.5em',
 };
 
-const TEST_START_TIME = new Date('2021-11-29T01:10:00-08:00');
+const TEST_START_TIMESTAMP = + new Date('2021-11-29T21:07:00-08:00');
 
 function TownHall() {
   const embed2021WRef = useRef(null);
   // note: this does not work :( prob need useEffect + useState!
   const embedWidth = embed2021WRef.current ? embed2021WRef.current.offsetWidth : 500;
 	return (
-    <CountdownElement switchTime={TEST_START_TIME} fallback={<span>come back soon :)</span>}>
+    <CountdownElement switchTime={TEST_START_TIMESTAMP} fallback={<span>come back soon :)</span>}>
 		<Layout>
 			<NextSeo
 				title="Fall 2021 Computer Science Town Hall | ACM at UCLA"

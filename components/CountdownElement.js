@@ -12,6 +12,6 @@ export default function CountdownElement(props) {
     };
 
     return (
-        <Countdown date={props.switchTime} renderer={chooseWhatToRender} />
+        <Countdown date={new Date(props.switchTime)} renderer={chooseWhatToRender} />
 	);
 }
