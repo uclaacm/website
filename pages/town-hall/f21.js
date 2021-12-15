@@ -6,6 +6,7 @@ import Link from 'next/link';
 import React, { useRef } from 'react';
 
 import Banner from '../../components/Banner';
+import CountdownElement from '../../components/CountdownElement';
 import Layout from '../../components/Layout';
 
 import TestimonialsCourseChanges from '../../public/images/town-hall/testimonials-course-changes.png';
@@ -18,11 +19,14 @@ const inlineButtonListStyle = {
   marginBottom: '0.5em',
 };
 
+const TEST_START_TIMESTAMP = + new Date('2021-11-29T21:07:00-08:00');
+
 function TownHall() {
   const embed2021WRef = useRef(null);
   // note: this does not work :( prob need useEffect + useState!
   const embedWidth = embed2021WRef.current ? embed2021WRef.current.offsetWidth : 500;
 	return (
+    <CountdownElement switchTime={TEST_START_TIMESTAMP} fallback={<span>come back soon :)</span>}>
 		<Layout>
 			<NextSeo
 				title="Fall 2021 Computer Science Town Hall | ACM at UCLA"
@@ -141,6 +145,7 @@ function TownHall() {
         </div>
 			</div>
 		</Layout>
+    </CountdownElement>
 	);
 }
 
