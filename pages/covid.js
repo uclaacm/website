@@ -33,9 +33,9 @@ function COVID() {
           <div>
             <p className='mb-0'>Version history</p>
             <ul className='mt-0'>
+              <li><b>Monday, December 27th 2021</b>: updated to reflect UCLA&apos;s Remote Start to Winter Quarter</li>
               <li><b>Friday, October 15th 2021</b>: updated to comply with <a href="https://ucla.app.box.com/s/ldwgbdtwohcwbmbrk2gzdmb478od5566" target="_blank" rel="noopener noreferrer">UCLA Indoor/Outdoor Organized Event Temporary Protocol</a></li>
               <li><b>Wednesday, September 15th 2021</b>: introduced COVID policy document</li>
-              <li><b>Monday, December 27th 2021</b>: updated to reflect UCLA&apos;s Remote Start to Winter Quarter</li>
             </ul>
           </div>
         </p>
