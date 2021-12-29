@@ -24,7 +24,7 @@ function COVID() {
 				}}
 			/>
       <div className='content-container-tight'>
-        <h1>ACM at UCLA COVID Policies Fall 2021</h1>
+        <h1>ACM at UCLA COVID Policies Winter 2022</h1>
         <p>
           Our plan is approved by <a href="https://sole.ucla.edu/" target="_blank" rel="noopener noreferrer">UCLA SOLE</a> and is a superset of <a href="https://covid-19.ucla.edu/ucla-return-to-campus/" target="_blank" rel="noopener noreferrer">UCLA&apos;s return to campus</a> and <a href="http://ph.lacounty.gov/acd/ncorona2019/EducationToolkit/IHE/" target="_blank" rel="noopener noreferrer">LA County Guidelines</a>.
         </p>
