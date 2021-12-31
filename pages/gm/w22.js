@@ -41,15 +41,6 @@ function countdownRenderer({ days, hours, minutes, seconds, completed }) {
             <p className="join-us">Watch the recording of the event!</p>
           </a>
         </div>
-        <div className="should-dim">
-          <a href={SLIDES_LINK} target="_blank" rel="noopener noreferrer">
-            <div className="button-wrapper">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/images/slides.png" alt="Google Slides logo" className="join-links-img" width="300px"/>
-            </div>
-            <p className="join-us">View the slides as they were presented!</p>
-          </a>
-        </div>
       </div>
     );
   }
