@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import { Calendar, momentLocalizer } from 'react-big-calendar';
 
 import Banner from '../components/Banner';
+import Search  from '../components/Events/SearchEvent';
 import SelectedEvent from '../components/Events/SelectedEvent';
 import Layout from '../components/Layout';
 
@@ -67,6 +68,14 @@ function Events() {
 						min={new Date('August 19, 1975 9:00:00')}
 						max={new Date('August 19, 1975 22:00:00')}
 						popup={true}
+						views={{
+							month: true,
+							week: true,
+							day: true,
+							agenda: true,
+							search: Search,
+						}}
+						messages={{search: 'search'}}
 					/>
 					<SelectedEvent event={activeEvent}/>
 				</div>
