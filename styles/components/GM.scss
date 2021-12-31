@@ -50,7 +50,7 @@
   }
 }
 
-.event-links{
+.event-links {
   display: grid;
   grid-template-columns: 1fr 1fr;
 
@@ -58,12 +58,13 @@
     margin-left: auto;
     margin-right: auto;
     width: 300px;
+
     .button-wrapper {
       background-color: $acm-cobalt;
       border-radius: 15px;
-      padding: 10px;
       height: 50px;
       margin: 10px;
+      padding: 10px;
     
       .join-links-img {
         display: block;
@@ -71,20 +72,22 @@
         margin: auto;
       }
     
-      .zoom{
+      .zoom {
         margin-top: 10px;
       }
-      .slides{
+
+      .slides {
         margin-top: 3px;
       }
-      .discord{
+
+      .discord {
         margin-top: -5px;
       }
     }    
   }
 }
 @media (max-width: $tablet-breakpoint) {
-  .event-links{
+  .event-links {
     grid-template-columns: 1fr;
   }
 }
@@ -155,9 +158,10 @@
   }
 }
 @media (max-width: $navbar-breakpoint) {
-  #countdown-wrapper{
+  #countdown-wrapper {
     margin-bottom: 100px;
-    .countdown-cards{
+
+    .countdown-cards {
       height: 160px;
     }  
   }
