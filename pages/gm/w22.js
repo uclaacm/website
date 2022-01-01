@@ -83,9 +83,9 @@ function GMCountdown(props) {
     </div>
     <div className="text-center">
       <h1>until the ACM at UCLA Winter 2022 General Meeting!</h1>
-      <h3>Fill out the RSVP Form:</h3>
+      <h2>Fill out the RSVP Form:</h2>
       <Link href={RSVP_LINK}>
-        <a className="button" target="_blank" rel="noreferrer noopener">
+        <a className="button rsvp-button" target="_blank" rel="noreferrer noopener">
           RSVP Now!
         </a>
       </Link>

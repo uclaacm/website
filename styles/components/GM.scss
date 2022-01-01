@@ -57,6 +57,17 @@
   }
 }
 
+.rsvp-button {
+  background-color: $acm-cobalt;
+  border-radius: 15px;
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+  height: 50px;
+  margin: 10px;
+  padding-top: 5px;
+}
+
 .event-links {
   display: grid;
   grid-template-columns: 1fr 1fr;
