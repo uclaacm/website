@@ -8,8 +8,8 @@ import Layout from '../../components/Layout';
 
 const GM_START_TIME = new Date('2022-01-06T18:30-19:30');
 const RSVP_LINK = '#';
-const SLIDES_LINK = '#';
-const ZOOM_LINK = '#';
+const SLIDES_LINK = 'https://docs.google.com/presentation/d/1XGyJdmuR78C9liEPlwqMq2PpNSaXS-PtlK15fvzQLRE/edit?usp=sharing';
+// const ZOOM_LINK = '#';
 
 const calculateTimeStrings = ({days, hours, minutes, seconds}) => {
   let dayString = 'Day';
@@ -123,13 +123,15 @@ function W22() {
           <h2>Relevant Information</h2>
           <div className="event-links">
             <div className="should-dim">
-              <a href={ZOOM_LINK} target="_blank" rel="noopener noreferrer">
+              {/* Uncomment a, img lines and remove span line before GM */}
+              {/* <a href={ZOOM_LINK} target="_blank" rel="noopener noreferrer"> */}
                 <div className="button-wrapper">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="/images/ZoomLogo.png" alt="Zoom logo" className="join-links-img zoom" width="150px"/>
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    {/* <img src="/images/ZoomLogo.png" alt="Zoom logo" className="join-links-img zoom" width="150px"/> */}
+                    <span className="pre-event-link">Link will be available 30 minutes before GM</span>
                 </div>
                 <p className="join-us">Attend the event here!</p>
-              </a>
+              {/* </a> */}
             </div>
             <div className="should-dim">
               <a href={SLIDES_LINK} target="_blank" rel="noopener noreferrer">
@@ -196,7 +198,7 @@ function W22() {
               <h3>ACM Initatives</h3>
               <p className="sub-heading">See exciting new programs that ACM is trying out</p>
             </div>
-            <p className="gm-program-row">ACM Moonshots: </p>
+            <p className="gm-program-row">ACM Moonshots: John Dang</p>
             <p className="gm-program-row">ACM JEDI: Helia Woo</p>
             <p className="gm-program-row">ACM Impact: Maya Raman</p>
           </div>
