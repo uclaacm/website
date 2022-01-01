@@ -2,6 +2,7 @@
   border: '1px solid grey';
   border-radius: 10px;
   margin-top: -35px;
+  max-width: 100vw;
 }
 
 .gm-program-row {
@@ -12,6 +13,12 @@
 
   img {
     height: 45px;
+  }
+}
+@media (max-width: 768px) {
+  .gm-program-row {
+    flex-direction: column;
+    margin: 10px;
   }
 }
 

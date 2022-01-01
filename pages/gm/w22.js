@@ -6,8 +6,8 @@ import Countdown from 'react-countdown';
 import Banner from '../../components/Banner';
 import Layout from '../../components/Layout';
 
-const GM_START_TIME = new Date('2022-01-06T18:30-19:30');
-const RSVP_LINK = '#';
+const GM_START_TIME = new Date('2022-01-06T18:30-07:00');
+const RSVP_LINK = 'http://links.uclaacm.com/wintergm-rsvp-22';
 const SLIDES_LINK = 'https://docs.google.com/presentation/d/1XGyJdmuR78C9liEPlwqMq2PpNSaXS-PtlK15fvzQLRE/edit?usp=sharing';
 // const ZOOM_LINK = '#';
 
