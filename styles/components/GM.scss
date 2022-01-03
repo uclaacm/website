@@ -78,9 +78,10 @@
     width: 300px;
 
     .button-wrapper {
-      background-color: $acm-cobalt;
       border-radius: 15px;
-      height: 50px;
+      // background-color: lightgrey;
+      box-sizing: border-box;
+      height: 70px;
       margin: 10px;
       padding: 10px;
     
@@ -89,19 +90,22 @@
         height: auto;
         margin: auto;
       }
-    
-      .zoom {
-        margin-top: 10px;
-      }
+    }
 
-      .slides {
-        margin-top: 3px;
-      }
+    .zoom {
+      // padding-top: 18px;
+      background-color: #2D8CFF;
+    }
 
-      .discord {
-        margin-top: -5px;
-      }
-    }    
+    .slides {
+      background-color: lightgrey;
+      padding-top: 12px;
+    }
+
+    .discord {
+      background-color: #5865F2;
+      padding-top: 4px;
+    }
   }
 }
 @media (max-width: $tablet-breakpoint) {

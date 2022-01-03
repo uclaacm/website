@@ -6,7 +6,7 @@ import Countdown from 'react-countdown';
 import Banner from '../../components/Banner';
 import Layout from '../../components/Layout';
 
-const GM_START_TIME = new Date('2022-01-06T18:30-07:00');
+const GM_START_TIME = new Date('2022-01-06T18:30-08:00');
 const RSVP_LINK = 'http://links.uclaacm.com/wintergm-rsvp-22';
 const SLIDES_LINK = 'https://docs.google.com/presentation/d/1XGyJdmuR78C9liEPlwqMq2PpNSaXS-PtlK15fvzQLRE/edit?usp=sharing';
 // const ZOOM_LINK = '#';
@@ -125,9 +125,9 @@ function W22() {
             <div className="should-dim">
               {/* Uncomment a, img lines and remove span line before GM */}
               {/* <a href={ZOOM_LINK} target="_blank" rel="noopener noreferrer"> */}
-                <div className="button-wrapper">
+                <div className="button-wrapper zoom">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
-                    {/* <img src="/images/ZoomLogo.png" alt="Zoom logo" className="join-links-img zoom" width="150px"/> */}
+                    {/* <img src="/images/ZoomLogo.png" alt="Zoom logo" className="join-links-img" width="150px"/> */}
                     <span className="pre-event-link">Link will be available 30 minutes before GM</span>
                 </div>
                 <p className="join-us">Attend the event here!</p>
@@ -135,18 +135,18 @@ function W22() {
             </div>
             <div className="should-dim">
               <a href={SLIDES_LINK} target="_blank" rel="noopener noreferrer">
-                <div className="button-wrapper">
+                <div className="button-wrapper slides">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="/images/slides.png" alt="Google Slides logo" className="join-links-img slides" width="200px"/>
+                  <img src="/images/slides.png" alt="Google Slides logo" className="join-links-img" width="200px"/>
                 </div>
                 <p className="join-us">View the slides and follow along!</p>
               </a>
             </div>
             <div className="should-dim">
               <a href="https://discord.gg/eWmzKsY" target="_blank" rel="noopener noreferrer">
-                <div className="button-wrapper">
+                <div className="button-wrapper discord">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="/images/DiscordLogoWordmark.png" alt="Discord logo" className="join-links-img discord" width="200px"/>
+                  <img src="/images/DiscordLogoWordmark.png" alt="Discord logo" className="join-links-img" width="200px"/>
                 </div>
                 <p className="join-us">Join the Discord Server!</p>
               </a>
