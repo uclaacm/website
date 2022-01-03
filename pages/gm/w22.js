@@ -9,7 +9,8 @@ import Layout from '../../components/Layout';
 const GM_START_TIME = new Date('2022-01-06T18:30-08:00');
 const RSVP_LINK = 'http://links.uclaacm.com/wintergm-rsvp-22';
 const SLIDES_LINK = 'https://docs.google.com/presentation/d/1XGyJdmuR78C9liEPlwqMq2PpNSaXS-PtlK15fvzQLRE/edit?usp=sharing';
-// const ZOOM_LINK = '#';
+const ZOOM_LINK = '#';
+// const YOUTUBE_LINK = '#';
 
 const calculateTimeStrings = ({days, hours, minutes, seconds}) => {
   let dayString = 'Day';
@@ -31,16 +32,17 @@ function countdownRenderer({ days, hours, minutes, seconds, completed }) {
   if (completed) {
     return (
       <div className="text-center">
-        <h1>ACM&apos;s Winter GM 2022 happened on the 6th!</h1>
-        <div className="should-dim">
-          <a href="https://www.youtube.com/watch?v=YsNs9OXXDKg" target="_blank" rel="noopener noreferrer">
-            <div className="button-wrapper">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
+        <h1>ACM&apos;s Winter GM 2022 is happening right now on <a href={ZOOM_LINK}>Zoom!</a></h1>
+        <h3>The recording of the event will be posted on YouTube later</h3>
+        {/* <div className="should-dim">
+          <a href={YOUTUBE_LINK} target="_blank" rel="noopener noreferrer">
+            <div className="button-wrapper youtube">
+              {/* eslint-disable-next-line @next/next/no-img-element
               <img src="/images/youtube.png" alt="YouTube Logo" className="join-links-img" width="300px"/>
             </div>
             <p className="join-us">Watch the recording of the event!</p>
           </a>
-        </div>
+        </div> */}
       </div>
     );
   }
