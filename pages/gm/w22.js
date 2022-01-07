@@ -37,7 +37,7 @@ function countdownRenderer({ days, hours, minutes, seconds, completed }) {
         {/* <div className="should-dim">
           <a href={YOUTUBE_LINK} target="_blank" rel="noopener noreferrer">
             <div className="button-wrapper youtube">
-              {/* eslint-disable-next-line @next/next/no-img-element
+              eslint-disable-next-line @next/next/no-img-element
               <img src="/images/youtube.png" alt="YouTube Logo" className="join-links-img" width="300px"/>
             </div>
             <p className="join-us">Watch the recording of the event!</p>
