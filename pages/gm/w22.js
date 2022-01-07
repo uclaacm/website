@@ -101,7 +101,7 @@ function W22() {
 		<Layout>
 			<NextSeo
 				title="Winter General Meeting | ACM at UCLA"
-				description="ACM's Winter General Meeting is coming soon, on January 6th at 6:30 PM PT. Keep your eyes peeled, your hand on your mouse, and your fingers on sdf."
+				description="ACM's Winter General Meeting happened on January 6th at 6:30 PM PT."
 				openGraph={{
 					images: [
 						{
