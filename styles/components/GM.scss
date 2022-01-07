@@ -71,46 +71,45 @@
 .event-links {
   display: grid;
   grid-template-columns: 1fr 1fr;
-
-  .should-dim {
-    margin-left: auto;
-    margin-right: auto;
-    width: 300px;
-
-    .button-wrapper {
-      border-radius: 15px;
-      // background-color: lightgrey;
-      box-sizing: border-box;
-      height: 70px;
-      margin: 10px;
-      padding: 10px;
-    
-      .join-links-img {
-        display: block;
-        height: auto;
-        margin: auto;
-      }
-    }
-
-    .zoom {
-      background-color: #2D8CFF;
-      padding-top: 18px;
-    }
-
-    .slides {
-      background-color: lightgrey;
-      padding-top: 12px;
-    }
-
-    .discord {
-      background-color: #5865F2;
-      padding-top: 4px;
-    }
-  }
 }
 @media (max-width: $tablet-breakpoint) {
   .event-links {
     grid-template-columns: 1fr;
+  }
+}
+
+.should-dim {
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+
+  .button-wrapper {
+    background-color: lightgrey;
+    border-radius: 15px;
+    box-sizing: border-box;
+    height: 70px;
+    margin: 10px;
+    padding: 10px;
+  
+    .join-links-img {
+      display: block;
+      height: auto;
+      margin: auto;
+    }
+  }
+
+  .zoom {
+    background-color: #2D8CFF;
+    padding-top: 18px;
+  }
+
+  .slides {
+    padding-top: 12px;
+  }
+
+  .discord {
+    background-color: #5865F2;
+    padding-top: 4px;
   }
 }
 
