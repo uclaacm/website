@@ -32,8 +32,8 @@ function countdownRenderer({ days, hours, minutes, seconds, completed }) {
   if (completed) {
     return (
       <div className="text-center">
-        <h1>ACM&apos;s Winter GM 2022 is happening right now on <a href={ZOOM_LINK}>Zoom!</a></h1>
-        <h3>The recording of the event will be posted on YouTube later</h3>
+        <h1>ACM&apos;s Winter GM 2022 happened on the 6th of January!</h1>
+        <h3>The recording of the event will be posted on YouTube soon</h3>
         {/* <div className="should-dim">
           <a href={YOUTUBE_LINK} target="_blank" rel="noopener noreferrer">
             <div className="button-wrapper youtube">
