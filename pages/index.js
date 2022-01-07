@@ -32,7 +32,7 @@ function Home () {
 			/>
 			<div className="home-page text-center">
 				<ContentBanner
-					title="Check out our Winter General Meeting!"
+					title="See what happened at our Winter General Meeting!"
 					ctaText="Learn More"
 					ctaLink="/gm/w22"
 				/>
