@@ -4,7 +4,6 @@ import React, { useState } from 'react';
 import { Calendar, momentLocalizer } from 'react-big-calendar';
 
 import Banner from '../components/Banner';
-import Search  from '../components/Events/SearchEvent';
 import SelectedEvent from '../components/Events/SelectedEvent';
 import Layout from '../components/Layout';
 
@@ -31,7 +30,10 @@ const indexedEvents = events.map((original_event, index) => ({...original_event,
 const googleCalendarShare = 'https://calendar.google.com/calendar/u/2?cid=YWNtYnJ1aW5zQGdtYWlsLmNvbQ';
 
 function Events() {
+	const committees = ["studio","icpc","design","cyber","teachLA","w","ai","hack"];
+	const days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 	const [activeEvent, setActiveEvent] = useState(null);
+	const [filterOpen, setFilterOpen] = useState(false);
 	return (
 		<Layout>
 			<NextSeo
@@ -56,27 +58,85 @@ function Events() {
 					Take a look at our fancy calendar. Or, <a href={googleCalendarShare} target="_blank" rel="noopener noreferrer">subscribe to our Google Calendar</a>!
 				</p>
 				<div className={styles['calendar-view-container']}>
-					<Calendar
-						localizer={localizer}
-						events={indexedEvents}
-						startAccessor={(event) => new Date(event.start)}
-						endAccessor={(event) => new Date(event.end)}
-						className={styles['calendar-size-controller']}
-						onSelectEvent={setActiveEvent}
-						eventPropGetter={getEventClassByEvent}
-						// matt says: using these props this way *feels wrong*
-						min={new Date('August 19, 1975 9:00:00')}
-						max={new Date('August 19, 1975 22:00:00')}
-						popup={true}
-						views={{
-							month: true,
-							week: true,
-							day: true,
-							agenda: true,
-							search: Search,
-						}}
-						messages={{search: 'search'}}
-					/>
+					<div>
+						<div>
+							<input placeholder='Search Events'/>
+							<button>Search</button>
+							<button onClick={() => setFilterOpen(!filterOpen)}>Filter</button>
+						</div>
+						{filterOpen && 
+						<div id={styles['filter-options']}>
+							<div>
+								Committees
+								{committees.map((com) => (
+									<div key={com}>
+										<input type="checkbox"/>
+										{com}
+									</div>
+								))}
+							</div>
+							<div>
+								Days
+								{days.map((day) => (
+									<div key={day}>
+										<input type="checkbox"/>
+										{day}
+									</div>
+								))}
+							</div>
+							<div>
+								Time
+								<div className={styles['timeContainer']}>
+									<div>
+										<div>From </div>
+										<div>To </div>
+									</div>
+									<div>
+										<div>
+											<input placeholder='HH' className={styles['timeInput']}/>
+											:
+											<input placeholder='SS' className={styles['timeInput']}/>
+											<select>
+												<option value ="AM">AM</option>
+												<option value="PM">PM</option>
+											</select>
+										</div>
+										<div>
+											<input placeholder='HH' className={styles['timeInput']}/>
+											:
+											<input placeholder='SS' className={styles['timeInput']}/>
+											<select>
+												<option value ="AM">AM</option>
+												<option value="PM">PM</option>
+											</select>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div>
+								<input type="checkbox"/> Online
+							</div>
+						</div>}
+						<Calendar
+							localizer={localizer}
+							events={indexedEvents}
+							startAccessor={(event) => new Date(event.start)}
+							endAccessor={(event) => new Date(event.end)}
+							className={styles['calendar-size-controller']}
+							onSelectEvent={setActiveEvent}
+							eventPropGetter={getEventClassByEvent}
+							// matt says: using these props this way *feels wrong*
+							min={new Date('August 19, 1975 9:00:00')}
+							max={new Date('August 19, 1975 22:00:00')}
+							popup={true}
+							views={{
+								month: true,
+								week: true,
+								day: true,
+								agenda: true,
+							}}
+						/>
+					</div>
 					<SelectedEvent event={activeEvent}/>
 				</div>
 				<p>

@@ -2,7 +2,7 @@
 
 .events-container {
   margin: 0 auto;
-  max-width: 83rem;
+  max-width: 75rem;
   padding: 0 1em;
 }
 
@@ -22,7 +22,21 @@
 .calendar-size-controller {
   height: 700px !important;
   @media screen and (min-width: $tablet-breakpoint) {
-    max-width: calc(83rem - 300px - 2rem - 3em) !important;
+    max-width: calc(75rem - 300px - 2rem - 3em) !important;
     width: calc(100vw - 300px - 2rem - 3em) !important;
   }
+}
+
+#filter-options {
+  display: flex;
+  justify-content: space-between;
+}
+
+.timeInput {
+  width: 1.5rem;
+}
+
+.timeContainer {
+  display: flex;
+  gap: 1rem;
 }
