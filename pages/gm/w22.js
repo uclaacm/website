@@ -6,8 +6,11 @@ import Countdown from 'react-countdown';
 import Banner from '../../components/Banner';
 import Layout from '../../components/Layout';
 
-const GM_START_TIME = new Date('2021-09-27T17:55-07:00');
-const RSVP_LINK = 'https://forms.gle/qst46ReHAvGV88hr7';
+const GM_START_TIME = new Date('2022-01-06T18:30-08:00');
+const RSVP_LINK = 'http://links.uclaacm.com/wintergm-rsvp-22';
+const SLIDES_LINK = 'https://docs.google.com/presentation/d/1XGyJdmuR78C9liEPlwqMq2PpNSaXS-PtlK15fvzQLRE/edit?usp=sharing';
+const ZOOM_LINK = 'https://ucla.zoom.us/j/92139691430?pwd=d0R0WkhuajlBS3NvNUJoUXdNWE9mQT09';
+const YOUTUBE_LINK = 'https://youtu.be/XVdCnEGoKKo';
 
 const calculateTimeStrings = ({days, hours, minutes, seconds}) => {
   let dayString = 'Day';
@@ -29,23 +32,14 @@ function countdownRenderer({ days, hours, minutes, seconds, completed }) {
   if (completed) {
     return (
       <div className="text-center">
-        <h1>ACM&apos;s Fall GM 2021 happened on the 27th!</h1>
+        <h1>ACM&apos;s Winter GM 2022 happened on the 6th of January!</h1>
         <div className="should-dim">
-          <a href="https://www.youtube.com/watch?v=YsNs9OXXDKg" target="_blank" rel="noopener noreferrer">
-            <div className="button-wrapper">
+          <a href={YOUTUBE_LINK} target="_blank" rel="noopener noreferrer">
+            <div className="button-wrapper slides">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src="/images/youtube.png" alt="YouTube Logo" className="join-links-img" width="200px"/>
             </div>
-            <p className="join-us">Watch the recorded livestream!</p>
-          </a>
-        </div>
-        <div className="should-dim">
-          <a href="https://docs.google.com/presentation/d/1oBwDsSow-ekrCgAmoYUFD3oGVjnZ2glt3qnpB1Yy-y0/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
-            <div className="button-wrapper">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/images/slides.png" alt="Google Slides logo" className="join-links-img" width="200px"/>
-            </div>
-            <p className="join-us">View the slides as they were presented!</p>
+            <p className="join-us">Watch the recording of the event!</p>
           </a>
         </div>
       </div>
@@ -89,9 +83,10 @@ function GMCountdown(props) {
       </div>
     </div>
     <div className="text-center">
-      <h1>Fall 2021 General Meeting</h1>
+      <h1>until the ACM at UCLA Winter 2022 General Meeting!</h1>
+      <h2>Fill out the RSVP Form:</h2>
       <Link href={RSVP_LINK}>
-        <a className="button" target="_blank" rel="noreferrer noopener">
+        <a className="button rsvp-button" target="_blank" rel="noreferrer noopener">
           RSVP Now!
         </a>
       </Link>
@@ -100,12 +95,12 @@ function GMCountdown(props) {
   );
 }
 
-function F21() {
+function W22() {
 	return (
 		<Layout>
 			<NextSeo
-				title="Fall General Meeting | ACM at UCLA"
-				description="ACM's Fall General Meeting happened on September 27th at 6 PM PT!"
+				title="Winter General Meeting | ACM at UCLA"
+				description="ACM's Winter General Meeting happened on January 6th at 6:30 PM PT."
 				openGraph={{
 					images: [
 						{
@@ -121,26 +116,42 @@ function F21() {
 			<Banner decorative />
       <div className="text-center">
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img className="gm-graphic" src="/images/Fall_GM_2021_graphic.png" width="1000px" alt="Fall GM 2021 Marketing Graphic"/>
+        <img className="gm-graphic" src="/images/Winter_GM_2022_graphic.png" width="1000px" alt="Winter GM 2022 Marketing Graphic"/>
       </div>
       <Countdown date={GM_START_TIME} renderer={countdownRenderer}/>
 			<div className="content-container-tight text-center">
-        <div id="info-wrapper">
-          <h2>Relevant information</h2>
-          <div className="flex">
-            <div>
-              <h3>How to get there</h3>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d826.2546737961111!2d-118.4427945707816!3d34.069035009709545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bc87d188474b%3A0x51e2fd433d5394ea!2sCourt%20of%20Sciences!5e0!3m2!1sen!2sus!4v1632617669692!5m2!1sen!2sus" width="450" height="400" style={{border: 0}} allowFullScreen="" loading="lazy" title="gogole maps embed of court of sciences"></iframe>
+        <div className="info-wrapper">
+          <h2>Relevant Information</h2>
+          <div className="event-links">
+            <div className="should-dim">
+              <a href={ZOOM_LINK} target="_blank" rel="noopener noreferrer">
+                <div className="button-wrapper zoom">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img src="/images/ZoomLogo.png" alt="Zoom logo" className="join-links-img" width="150px"/>
+                </div>
+                <p className="join-us">Attend the event here!</p>
+              </a>
             </div>
-            <div className="what-to-bring">
-              <h3>What to bring</h3>
-              <p>Required: Face Mask, Bruincard.</p>
-              <span>(learn more about how ACM is <Link href={'/covid'}><a target="_blank" rel="noreferrer noopener">committed to running COVID-safe events</a></Link> in our return to campus)</span>
-              <p>Encouraged: Laptop or Phone to view slides, excitement to learn about ACM!</p>
+            <div className="should-dim">
+              <a href={SLIDES_LINK} target="_blank" rel="noopener noreferrer">
+                <div className="button-wrapper slides">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src="/images/slides.png" alt="Google Slides logo" className="join-links-img" width="200px"/>
+                </div>
+                <p className="join-us">View the slides and follow along!</p>
+              </a>
+            </div>
+            <div className="should-dim">
+              <a href="https://discord.gg/eWmzKsY" target="_blank" rel="noopener noreferrer">
+                <div className="button-wrapper discord">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src="/images/DiscordLogoWordmark.png" alt="Discord logo" className="join-links-img" width="200px"/>
+                </div>
+                <p className="join-us">Join the Discord Server!</p>
+              </a>
             </div>
           </div>
         </div>
-
         <div id="gm-program-wrapper">
           <h2>Program</h2>
 					<div className="gm-program-section">
@@ -152,7 +163,7 @@ function F21() {
           <div className="gm-program-section">
             <div className="section-header">
               <h3>Committee Presentations</h3>
-              <p className="sub-heading">Learn what each of ACM&apos;s eight committees has planned for Fall quarter</p>
+              <p className="sub-heading">Learn what each of ACM&apos;s eight committees has planned for Winter quarter</p>
             </div>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <p className="gm-program-row"><img src="/images/committees/studio_wordmark.svg" alt="ACM studio"/> Christian Loanzon, Peter Sutarjo</p>
@@ -186,13 +197,15 @@ function F21() {
               <h3>ACM Initatives</h3>
               <p className="sub-heading">See exciting new programs that ACM is trying out</p>
             </div>
-            <p className="gm-program-row">ACM Impact: Maya Raman</p>
+            <p className="gm-program-row">ACM Moonshots: John Dang</p>
             <p className="gm-program-row">ACM JEDI: Helia Woo</p>
+            <p className="gm-program-row">ACM Impact: Maya Raman</p>
           </div>
           <div className="gm-program-section">
             <div className="section-header">
-              <h3>Tabling and Social</h3>
+              <h3>Tabling and Social (on Discord)</h3>
               <p className="sub-heading">Interact with ACM&apos;s officers and walk away with new friends!</p>
+              <p className='sub-heading'> Navigate to the Winter GM category on the <a href="https://discord.gg/eWmzKsY" target="_blank" rel="noopener noreferrer"> Discord server</a></p>
             </div>
             <p className="gm-program-row">All ACM officers</p>
           </div>
@@ -202,4 +215,4 @@ function F21() {
 	);
 }
 
-export default F21;
+export default W22;

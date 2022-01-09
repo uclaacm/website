@@ -2,6 +2,7 @@
   border: '1px solid grey';
   border-radius: 10px;
   margin-top: -35px;
+  max-width: 100vw;
 }
 
 .gm-program-row {
@@ -12,6 +13,12 @@
 
   img {
     height: 45px;
+  }
+}
+@media (max-width: 768px) {
+  .gm-program-row {
+    flex-direction: column;
+    margin: 10px;
   }
 }
 
@@ -50,21 +57,59 @@
   }
 }
 
+.rsvp-button {
+  background-color: $acm-cobalt;
+  border-radius: 15px;
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+  height: 50px;
+  margin: 10px;
+  padding-top: 5px;
+}
+
+.event-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+@media (max-width: $tablet-breakpoint) {
+  .event-links {
+    grid-template-columns: 1fr;
+  }
+}
+
 .should-dim {
   margin-left: auto;
   margin-right: auto;
-  width: 350px;
+  width: 300px;
 
   .button-wrapper {
-    background-color: lightgray;
+    background-color: lightgrey;
     border-radius: 15px;
+    box-sizing: border-box;
+    height: 70px;
+    margin: 10px;
     padding: 10px;
-
+  
     .join-links-img {
       display: block;
       height: auto;
       margin: auto;
     }
+  }
+
+  .zoom {
+    background-color: #2D8CFF;
+    padding-top: 18px;
+  }
+
+  .slides {
+    padding-top: 12px;
+  }
+
+  .discord {
+    background-color: #5865F2;
+    padding-top: 4px;
   }
 }
 
@@ -131,6 +176,15 @@
       font-size: 1.5em;
       text-align: center;
     }
+  }
+}
+@media (max-width: $navbar-breakpoint) {
+  #countdown-wrapper {
+    margin-bottom: 100px;
+
+    .countdown-cards {
+      height: 160px;
+    }  
   }
 }
 
@@ -364,4 +418,9 @@
       }
     }
   }
+}
+
+.pre-event-link {
+  color: white;
+  text-decoration: none;
 }
