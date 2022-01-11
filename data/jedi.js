@@ -152,7 +152,7 @@ const jedis = [
   {
     name: 'maya',
     pronouns: 'she/???',
-    bio: <>can someone buy me corgateres
+    bio: <>ask me about my egg flipping videos
     <br/><b>red flag:</b> reads AOT fanfiction</>,
     pic: '/images/jedi/jedi-officers/maya.jpg',
     alt: 'maya in overalls standing in front of an art piece with a threatening expression',
