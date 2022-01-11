@@ -1,3 +1,4 @@
+import React from 'react';
 import ao3 from '../public/images/jedi/allyship/ao3.png';
 import cisgenderPrivilege from '../public/images/jedi/allyship/cisgender-privilege.png';
 import disabilityAccessibility from '../public/images/jedi/allyship/disability-accessibility.jpg';
@@ -127,56 +128,75 @@ const jedis = [
   {
     name: 'helia',
     pronouns: 'she/her',
-    bio: 'Helix but with an "a" except for when I order food then I am Bob the Builder red flag: likes using 1 ply toilet paper',
+    bio: <>Helix but with an &quot;a&quot; except for when I order food then I am Bob the Builder
+    <br/>red flag: likes using 1 ply toilet paper</>,
     pic: '/images/jedi/jedi-officers/helia.jpg',
     alt: 'Helia pointing at a sign saying "Women"',
   },
   {
     name: 'archie',
     pronouns: 'she/her',
-    bio: 'I cried over finding out my friend has a twin sister red flag: will kick you out of the Sproul Cove 9th floor lounge',
+    bio: <>I cried over finding out my friend has a twin sister
+    <br/>red flag: will kick you out of the Sproul Cove 9th floor lounge</>,
     pic: '/images/jedi/jedi-officers/archie.jpeg',
     alt: 'Archie with a fence behind her!',
   },
   {
     name: 'christine',
     pronouns: 'she/they',
-    bio: 'has based taste in everything red flag: cuwustine!!!! 🥺🥺 🚩!',
+    bio: <>has based taste in everything<br/>
+    red flag: cuwustine!!!! 🥺🥺 🚩!</>,
     pic: '/images/jedi/jedi-officers/christine.jpg',
     alt: 'Christine in a corridor',
   },
   {
-    name: 'edmond',
-    pronouns: 'he/they',
-    bio: 'from: temple city, ca (near pasadena) RED FLAG …'+'likes: cats, cooking, Speedy likes: cooking cats speedily likes: cooking speedy cats likes: cats speedily cooking red flag: did high school debate dislikes: dave matthews band likes: matthew dislikes: dave neutral: band fun fact: shares birthday with mom unwilling to accept the existence of dave matthews (i play jazz steel guitar apparently) red flag: plays league :barf_emoji: RED LFAGSDFSDFSDKF :barf: :barf:',
-    pic: '/images/jedi/jedi-officers/edmond.jpg',
-    alt: 'Edmond in front of some flowers',
-  },
-  {
-    name: 'jiin',
-    pronouns: 'she/her',
-    bio: 'my labels are INTP 5w4 sp/sx Ravenclaw airbender red flag: is sus',
-    pic: '/images/jedi/jedi-officers/jiin.jpg',
-    alt: 'Jiin with a bear hat',
-  },
-  {
     name: 'maya',
     pronouns: 'she/???',
-    bio: 'can someone buy me corgateres red flag: reads AOT fanfiction',
+    bio: <>can someone buy me corgateres
+    <br/>red flag: reads AOT fanfiction</>,
     pic: '/images/jedi/jedi-officers/maya.jpg',
     alt: 'Maya in front of some art from the top',
   },
   {
+    name: 'jiin',
+    pronouns: 'she/her',
+    bio: <>my labels are INTP 5w4 sp/sx Ravenclaw airbender
+    <br/>red flag: is sus</>,
+    pic: '/images/jedi/jedi-officers/jiin.jpg',
+    alt: 'Jiin with a bear hat',
+  },
+  {
+    name: 'edmond',
+    pronouns: 'he/they',
+    bio: <>from: temple city, ca (near pasadena) RED FLAG …<br/>
+    likes: cats, cooking, Speedy<br/>
+    likes: cooking cats speedily<br/>
+    likes: cooking speedy cats<br/>
+    likes: cats speedily cooking<br/>
+    red flag: did high school debate<br/>
+    dislikes: dave matthews band<br/>
+    likes: matthew<br/>
+    dislikes: dave<br/>
+    neutral: band<br/>
+    fun fact: shares birthday with mom<br/>
+    unwilling to accept the existence of dave matthews (i play jazz steel guitar apparently)<br/>
+    red flag: plays league :barf_emoji: RED LFAGSDFSDFSDKF :barf: :barf:</>,
+    pic: '/images/jedi/jedi-officers/edmond.jpg',
+    alt: 'Edmond in front of some flowers',
+  },
+  {
     name: 'paymon',
     pronouns: 'he/him',
-    bio: 'the only time I’ve gotten into a car accident is at a McDonalds drive thru at 1 AM red flag: will hit your car at the McDonalds drive thru at 1 AM',
+    bio: <>the only time I’ve gotten into a car accident is at a McDonalds drive thru at 1 AM<br/>
+    red flag: will hit your car at the McDonalds drive thru at 1 AM</>,
     pic: '/images/jedi/jedi-officers/paymon.png',
     alt: 'Paymon in a park!',
   },
   {
     name: 'stephen',
     pronouns: 'he/him',
-    bio: 'I have never bought an eraser in my life, I just keep picking them up off the floor red flag: hates Rodrick Heffleys',
+    bio: <>I have never bought an eraser in my life, I just keep picking them up off the floor<br/>
+    red flag: hates Rodrick Heffley</>,
     pic: '/images/jedi/jedi-officers/stephen.jpg',
     alt: 'stephen staring scarily while a flashlight is pointed at his face from underneath',
   },
