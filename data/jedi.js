@@ -1,3 +1,4 @@
+import React from 'react';
 import ao3 from '../public/images/jedi/allyship/ao3.png';
 import cisgenderPrivilege from '../public/images/jedi/allyship/cisgender-privilege.png';
 import disabilityAccessibility from '../public/images/jedi/allyship/disability-accessibility.jpg';
@@ -125,39 +126,80 @@ const allyshipSpaces = [
 
 const jedis = [
   {
-    name: 'helia woo',
+    name: 'helia',
     pronouns: 'she/her',
-    bio: 'sometimes stressed, sometimes depressed, always happy to hold out a hand :-)',
-    pic: 'https://teachla.uclaacm.com/img/team/hwoo.png',
-    alt: 'Helia in a park!',
+    bio: <>Helix but with an &quot;a&quot; except for when I order food then I am Bob the Builder
+    <br/><b>red flag:</b> likes using 1 ply toilet paper</>,
+    pic: '/images/jedi/jedi-officers/helia.jpg',
+    alt: 'helia pointing at a sign saying "Women"',
   },
   {
-    name: 'alyssa wang',
-    pronouns: 'she/her',
-    bio: 'never stressed sometimes depressed',
-    pic: 'https://teachla.uclaacm.com/img/team/awang.jpg',
-    alt: 'a photo of Alyssa smiling',
+    name: 'archie',
+    pronouns: 'she/they',
+    bio: <>I cried over finding out my friend has a twin sister
+    <br/><b>red flag:</b> will kick you out of the Sproul Cove 9th floor lounge</>,
+    pic: '/images/jedi/jedi-officers/archie.jpeg',
+    alt: 'archie in a dress in a backyard',
+  },
+  {
+    name: 'christine',
+    pronouns: 'they/them',
+    bio: <>has based taste in everything<br/>
+    <b>red flag:</b> cuwustine!!!! 🥺🥺 🚩!</>,
+    pic: '/images/jedi/jedi-officers/christine.jpg',
+    alt: 'christine wearing a scarf and smiling at the camera',
+  },
+  {
+    name: 'maya',
+    pronouns: 'she/???',
+    bio: <>ask me about my egg flipping videos
+    <br/><b>red flag:</b> reads AOT fanfiction</>,
+    pic: '/images/jedi/jedi-officers/maya.jpg',
+    alt: 'maya in overalls standing in front of an art piece with a threatening expression',
   },
   {
     name: 'jiin',
     pronouns: 'she/her',
-    bio: 'sometimes stressed never depressed',
-    pic: 'https://teachla.uclaacm.com/img/team/jiinkim.png',
-    alt: 'Jiin smiling in her room',
+    bio: <>my labels are INTP 5w4 sp/sx Ravenclaw airbender
+    <br/><b>red flag:</b> is sus</>,
+    pic: '/images/jedi/jedi-officers/jiin.jpg',
+    alt: 'jiin wearing an animal hat at Joshua Tree',
   },
   {
-    name: 'christine kim',
-    pronouns: 'she/they',
-    bio: 'open 24/7 to keep learning about equity, talk about how we could be doing better, and argue over how much better breath of the wild is than genshin impact!',
-    pic: 'https://teachla.uclaacm.com/img/team/christinekim.jpg',
-    alt: 'Alyssa smiling in front of a courtyard',
+    name: 'paymon',
+    pronouns: 'he/him',
+    bio: <>the only time I’ve gotten into a car accident is at a McDonalds drive thru at 1 AM<br/>
+    <b>red flag:</b> will hit your car at the McDonalds drive thru at 1 AM</>,
+    pic: '/images/jedi/jedi-officers/paymon.png',
+    alt: 'paymon smiling in a park!',
   },
   {
     name: 'stephen',
     pronouns: 'he/him',
-    bio: 'ask me about how many different shapes I can make out of orange peels',
-    pic: 'https://teachla.uclaacm.com/img/team/skelman.jpg',
-    alt: 'stephen smiling!',
+    bio: <>I have never bought an eraser in my life, I just keep picking them up off the floor<br/>
+    <b>red flag:</b> hates Rodrick Heffley</>,
+    pic: '/images/jedi/jedi-officers/stephen.jpg',
+    alt: 'bald stephen staring scarily while a flashlight is pointed at his face from underneath',
+  },
+  {
+    name: 'edmond',
+    pronouns: 'he/they',
+    bio: <>from: temple city, ca (near pasadena) RED FLAG…<br/>
+        likes: cats, cooking, Speed <br/>
+        likes: cooking cats speedily<br/>
+        likes: cooking speedy cats<br/>
+        likes: cats speedily cooking<br/>
+        red flag: did high school debate<br/>
+        dislikes: dave matthews band<br/>
+        likes: matthew<br/>
+        dislikes: dave<br/>
+        neutral: band<br/>
+        fun fact: shares birthday with mom<br/>
+        unwilling to accept the existence of dave matthews (i play jazz steel guitar apparently)<br/>
+        red flag: plays league :barf_emoji: RED FALGSDFSDFSDKF :barf: :barf:
+y</>,
+    pic: '/images/jedi/jedi-officers/edmond.jpg',
+    alt: 'edmond in front of some flowers',
   },
 ];
 
@@ -165,4 +207,4 @@ const blogLink = 'https://medium.com/acm-at-ucla/may-the-force-be-with-acm-at-uc
 
 const contactEmail = 'helia.woo@ucla.edu';
 
-export { allyshipSpaces, blogLink, contactEmail, jedis };
+export { allyshipSpaces, blogLink, contactEmail, jedis};
