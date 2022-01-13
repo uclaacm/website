@@ -33,7 +33,7 @@ export const people = [
 		position: 'Impact Director',
 		major: 'Computer Science Major',
 		year: 2023,
-		img: 'https://teachla.uclaacm.com/img/team/mayaraman.jpg',
+		img: '/images/officers/MayaRaman.jpeg',
 		alt: 'Maya smiling beside royce hall',
 	},
 	{
@@ -42,7 +42,7 @@ export const people = [
 		position: 'Impact Officer',
 		major: 'Computer Science Major',
 		year: 2022,
-		img: 'https://teachla.uclaacm.com/img/team/awang.jpg',
+		img: '/images/officers/AlyssaWang.jpeg',
 		alt: 'Alyssa smiling in front of a courtyard',
 	},
 	{
@@ -78,7 +78,7 @@ export const people = [
 		position: 'Impact Officer',
 		major: 'Computer Science Major',
 		year: 2023,
-		img: 'https://teachla.uclaacm.com/img/team/nishamcnealis.jpg',
+		img: '/images/officers/NishaMcNealis.jpeg',
 		alt: 'Nisha smiling in front of a wood backing',
 	},
 ];
