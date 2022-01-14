@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import { Calendar, momentLocalizer } from 'react-big-calendar';
 
 import Banner from '../components/Banner';
+import Filters from '../components/Events/Filters';
 import SelectedEvent from '../components/Events/SelectedEvent';
 import Layout from '../components/Layout';
 
@@ -26,14 +27,12 @@ const getEventClassByEvent = (event) => {
 	});
 };
 
-const indexedEvents = events.map((original_event, index) => ({...original_event, id: index}));
 const googleCalendarShare = 'https://calendar.google.com/calendar/u/2?cid=YWNtYnJ1aW5zQGdtYWlsLmNvbQ';
 
 function Events() {
-	const committees = ["studio","icpc","design","cyber","teachLA","w","ai","hack"];
-	const days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 	const [activeEvent, setActiveEvent] = useState(null);
-	const [filterOpen, setFilterOpen] = useState(false);
+	const [indexedEvents,setIndexedEvents] = useState(events.map((event, index) => ({...event, id: index})));
+
 	return (
 		<Layout>
 			<NextSeo
@@ -59,64 +58,7 @@ function Events() {
 				</p>
 				<div className={styles['calendar-view-container']}>
 					<div>
-						<div>
-							<input placeholder='Search Events'/>
-							<button>Search</button>
-							<button onClick={() => setFilterOpen(!filterOpen)}>Filter</button>
-						</div>
-						{filterOpen && 
-						<div id={styles['filter-options']}>
-							<div>
-								Committees
-								{committees.map((com) => (
-									<div key={com}>
-										<input type="checkbox"/>
-										{com}
-									</div>
-								))}
-							</div>
-							<div>
-								Days
-								{days.map((day) => (
-									<div key={day}>
-										<input type="checkbox"/>
-										{day}
-									</div>
-								))}
-							</div>
-							<div>
-								Time
-								<div className={styles['timeContainer']}>
-									<div>
-										<div>From </div>
-										<div>To </div>
-									</div>
-									<div>
-										<div>
-											<input placeholder='HH' className={styles['timeInput']}/>
-											:
-											<input placeholder='SS' className={styles['timeInput']}/>
-											<select>
-												<option value ="AM">AM</option>
-												<option value="PM">PM</option>
-											</select>
-										</div>
-										<div>
-											<input placeholder='HH' className={styles['timeInput']}/>
-											:
-											<input placeholder='SS' className={styles['timeInput']}/>
-											<select>
-												<option value ="AM">AM</option>
-												<option value="PM">PM</option>
-											</select>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div>
-								<input type="checkbox"/> Online
-							</div>
-						</div>}
+						<Filters handleChange={(newEvents) => setIndexedEvents(newEvents)}/>
 						<Calendar
 							localizer={localizer}
 							events={indexedEvents}

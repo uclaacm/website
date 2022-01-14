@@ -1,0 +1,16 @@
+@import '../../variables.scss';
+
+#filter {
+  z-index: 99;
+}
+
+#filter-options {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.timeContainer {
+  display: flex;
+  gap: 1rem;
+}

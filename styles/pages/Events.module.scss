@@ -26,17 +26,3 @@
     width: calc(100vw - 300px - 2rem - 3em) !important;
   }
 }
-
-#filter-options {
-  display: flex;
-  justify-content: space-between;
-}
-
-.timeInput {
-  width: 1.5rem;
-}
-
-.timeContainer {
-  display: flex;
-  gap: 1rem;
-}
