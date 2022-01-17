@@ -185,7 +185,7 @@ const jedis = [
     name: 'edmond',
     pronouns: 'he/they',
     bio: <>from: temple city, ca (near pasadena) RED FLAG…<br/>
-        likes: cats, cooking, Speed <br/>
+        likes: cats, cooking, Speedy <br/>
         likes: cooking cats speedily<br/>
         likes: cooking speedy cats<br/>
         likes: cats speedily cooking<br/>
