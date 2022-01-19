@@ -29,11 +29,11 @@ function COVID() {
           Our plan is approved by <a href="https://sole.ucla.edu/" target="_blank" rel="noopener noreferrer">UCLA SOLE</a> and is a superset of <a href="https://covid-19.ucla.edu/ucla-return-to-campus/" target="_blank" rel="noopener noreferrer">UCLA&apos;s return to campus</a> and <a href="http://ph.lacounty.gov/acd/ncorona2019/EducationToolkit/IHE/" target="_blank" rel="noopener noreferrer">LA County Guidelines</a>.
         </p>
         <p>
-          Last major update: <b>Friday, January 17th 2022</b>.
+          Last major update: <b>Monday, January 17th 2022</b>.
           <div>
             <p className='mb-0'>Version history</p>
             <ul className='mt-0'>
-              <li><b>Friday, January 17th 2022</b>: updated to reflect <a href="https://covid-19.ucla.edu/updated-masking-isolation-and-quarantine-protocols-for-ucla/" target="_blank" rel="noopener noreferrer">Updated masking, isolation and quarantine protocols for UCLA</a></li>
+              <li><b>Monday, January 17th 2022</b>: updated to reflect <a href="https://covid-19.ucla.edu/updated-masking-isolation-and-quarantine-protocols-for-ucla/" target="_blank" rel="noopener noreferrer">Updated masking, isolation and quarantine protocols for UCLA</a></li>
               <li><b>Friday, January 7th 2022</b>: updated to reflect <a href="https://covid-19.ucla.edu/remote-instruction-extended-through-january-28/" target="_blank" rel="noopener noreferrer">UCLA Remote instruction extended through January 28</a></li>
               <li><b>Monday, December 27th 2021</b>: updated to reflect <a href="https://covid-19.ucla.edu/remote-start-to-winter-quarter-instruction-and-covid-19-booster-requirement/" target="_blank" rel="noopener noreferrer">UCLA&apos;s Remote Start to Winter Quarter</a></li>
               <li><b>Friday, October 15th 2021</b>: updated to comply with <a href="https://ucla.app.box.com/s/ldwgbdtwohcwbmbrk2gzdmb478od5566" target="_blank" rel="noopener noreferrer">UCLA Indoor/Outdoor Organized Event Temporary Protocol</a></li>
