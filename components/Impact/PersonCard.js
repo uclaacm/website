@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 import styles from '../../styles/pages/impact.module.scss';
+import Image from 'next/image';
 
 export default function PersonCard({name, pronouns, position, major, year, img, alt}){
 	return (
