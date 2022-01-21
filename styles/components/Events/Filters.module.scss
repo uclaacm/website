@@ -1,16 +1,71 @@
 @import '../../variables.scss';
 
-#filter {
+.filter {
   z-index: 99;
+  position: relative;
+  padding-bottom: 2.5rem;
 }
 
-#filter-options {
+.inner {
+  position: absolute;
+  left:0;
+  right:0;
+}
+
+.filter-options {
   display: flex;
+  background-color: white;
   justify-content: space-between;
   position: relative;
+  padding: 0 1rem 1rem 1rem;
+  border-radius:  0 0 1rem 1rem;
+  border: 1px solid lightgray
+}
+
+.searchBar {
+  border-radius: 0.5rem;
+  border-color: lightgray;
+  border-width: 1px;
+  font-size: 1rem;
+  width: 20rem;
+  height: 1.5rem;
+  @media screen and (max-width: $tablet-breakpoint) {
+    width: 10rem;
+  }
+}
+
+.searchButton{
+  margin-left: 1rem;
+  width: 6rem;
+  height: 1.5rem;
+  border: none;
+  background-color: #93A5BF;
+  border-radius: 0.5rem;
+  color: white;
+  font-family: $font-header;
+  font-weight: 600;
+  &:hover {
+    background-color: #e6e6e6;
+    color: $acm-black;
+    cursor: pointer;
+  }
+}
+
+.arrow {
+  vertical-align: middle;
+  padding-left: 15px;
+}
+
+.header {
+  margin-bottom: 0.25rem;
 }
 
 .timeContainer {
   display: flex;
   gap: 1rem;
+  align-items: center;
+}
+
+input[type=time].timeInput {
+  font-family: $font-display;
 }
