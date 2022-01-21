@@ -1,4 +1,4 @@
-import {faChevronUp, faChevronDown} from '@fortawesome/free-solid-svg-icons'
+import {faChevronUp, faChevronDown} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useState, React } from 'react';
 import events from '../../data/event';
@@ -8,7 +8,7 @@ import styles from '../../styles/components/Events/Filters.module.scss';
 export default function filters(props) {
 	const days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
 	const [filterOpen, setFilterOpen] = useState(false);
-    const [searchValue,setSearchValue] = useState("");
+    const [searchValue,setSearchValue] = useState('');
 	const [chosenDays, setChosenDays] = useState(new Array(7).fill(false));
     const [chosenComms, setChosenComms] = useState({
         studio: false,
@@ -19,10 +19,10 @@ export default function filters(props) {
         w: false,
         ai: false,
         hack: false,
-        board: false
+        board: false,
     });
-    const [fromTime, setFromTime] = useState("");
-    const [toTime, setToTime] = useState("");
+    const [fromTime, setFromTime] = useState('');
+    const [toTime, setToTime] = useState('');
     const [chosenLoc, setChosenLoc] = useState({
         online: false,
         in_person: false,
@@ -38,17 +38,17 @@ export default function filters(props) {
             if (String(item.location).toLowerCase().includes(lowerCaseSearch)) return true;
             if (String(item.description).toLowerCase().includes(lowerCaseSearch)) return true;
             return false;
-        })
+        });
         //Check filters
-        const timeEmpty = fromTime === "" || toTime === "";
-        const commEmpty = Object.keys(chosenComms).every(comm => !chosenComms[comm]); 
+        const timeEmpty = fromTime === '' || toTime === '';
+        const commEmpty = Object.keys(chosenComms).every(comm => !chosenComms[comm]);
         const daysEmpty = chosenDays.every(day => !day);
         const locEmpty =  Object.keys(chosenLoc).every(loc => !chosenLoc[loc]);
         let fromMins = 0;
         let toMins = 0;
         if (!timeEmpty) {
-            fromMins = parseInt(fromTime.split(":")[0]) * 60 + parseInt(fromTime.split(":")[1]);
-            toMins = parseInt(toTime.split(":")[0]) * 60 + parseInt(toTime.split(":")[1]);
+            fromMins = parseInt(fromTime.split(':')[0]) * 60 + parseInt(fromTime.split(':')[1]);
+            toMins = parseInt(toTime.split(':')[0]) * 60 + parseInt(toTime.split(':')[1]);
         }
         allEvents = allEvents.filter(item => {
             const itemDate = new Date(item.start);
@@ -85,20 +85,21 @@ export default function filters(props) {
         <div className={styles.filter}>
             <div className={styles.inner}>
                 <div>
-                    <input 
-                        placeholder='Search Events' 
-                        className={styles.searchBar}
-                        value={searchValue} 
+                    <input
+                        placeholder='Search Events'
+                        className={styles.searchbar}
+                        value={searchValue}
                         onChange={(e) => setSearchValue(e.target.value)}
                         onKeyPress={(e) => e.key === 'Enter' && handleSearch()}
                         />
-                    <button onClick={handleSearch} className={styles.searchButton}>search</button>
-                    <button onClick={() => setFilterOpen(!filterOpen)} className={styles.searchButton}>
-                        filter <FontAwesomeIcon className={styles.arrow} icon={filterOpen ? faChevronUp : faChevronDown}/>
+                    <button onClick={handleSearch} className={styles.searchbutton}>search</button>
+                    <button onClick={() => setFilterOpen(!filterOpen)} className={styles.searchbutton}>
+                        filter
+                        <FontAwesomeIcon className={styles.arrow} icon={filterOpen ? faChevronUp : faChevronDown}/>
                     </button>
                 </div>
                 {filterOpen &&
-                <div className={styles['filter-options']}>
+                <div className={styles.filteroptions}>
                     <div>
                         <h3 className={styles.header}>Committees </h3>
                         {Object.keys(chosenComms).map((comm) => (
@@ -117,15 +118,15 @@ export default function filters(props) {
                     </div>
                     <div>
                         <h3 className={styles.header}>Time</h3>
-                        <div className={styles.timeContainer}>
+                        <div className={styles.timecontainer}>
                             <div>
                                 <div>From </div>
                                 <div>To </div>
                             </div>
                             <div>
-                                <input type='time' className={styles.timeInput} value={fromTime} onChange={(e) => setFromTime(e.target.value)} />
+                                <input type='time' className={styles.timeinput} value={fromTime} onChange={(e) => setFromTime(e.target.value)} />
                                 <br/>
-                                <input type='time' className={styles.timeInput} value={toTime} onChange={(e) => setToTime(e.target.value)} />
+                                <input type='time' className={styles.timeinput} value={toTime} onChange={(e) => setToTime(e.target.value)} />
                             </div>
                         </div>
                     </div>

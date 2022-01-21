@@ -1,71 +1,72 @@
 @import '../../variables.scss';
 
 .filter {
-  z-index: 99;
-  position: relative;
   padding-bottom: 2.5rem;
+  position: relative;
+  z-index: 99;
 }
 
 .inner {
+  left: 0;
   position: absolute;
-  left:0;
-  right:0;
+  right: 0;
 }
 
-.filter-options {
-  display: flex;
+.filteroptions {
   background-color: white;
+  border: 1px solid lightgray;
+  border-radius: 0 0 1rem 1rem;
+  display: flex;
   justify-content: space-between;
+  padding: 0 1rem 1rem;
   position: relative;
-  padding: 0 1rem 1rem 1rem;
-  border-radius:  0 0 1rem 1rem;
-  border: 1px solid lightgray
 }
 
-.searchBar {
-  border-radius: 0.5rem;
+.searchbar {
   border-color: lightgray;
+  border-radius: 0.5rem;
   border-width: 1px;
   font-size: 1rem;
-  width: 20rem;
   height: 1.5rem;
+  width: 20rem;
   @media screen and (max-width: $tablet-breakpoint) {
     width: 10rem;
   }
 }
 
-.searchButton{
-  margin-left: 1rem;
-  width: 6rem;
-  height: 1.5rem;
-  border: none;
+.searchbutton {
   background-color: #93A5BF;
+  border: 0;
   border-radius: 0.5rem;
   color: white;
   font-family: $font-header;
   font-weight: 600;
+  height: 1.5rem;
+  margin-left: 1rem;
+  width: 6rem;
+
   &:hover {
-    background-color: #e6e6e6;
+    background-color: #E6E6E6;
     color: $acm-black;
     cursor: pointer;
   }
 }
 
 .arrow {
-  vertical-align: middle;
   padding-left: 15px;
+  vertical-align: middle;
 }
 
 .header {
   margin-bottom: 0.25rem;
 }
 
-.timeContainer {
+.timecontainer {
+  align-items: center;
   display: flex;
   gap: 1rem;
-  align-items: center;
 }
 
-input[type=time].timeInput {
+input[type=time].timeinput {
   font-family: $font-display;
 }
