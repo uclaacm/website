@@ -34,7 +34,7 @@ function countdownRenderer({ days, hours, minutes, seconds, completed }) {
           <a href="https://www.youtube.com/watch?v=YsNs9OXXDKg" target="_blank" rel="noopener noreferrer">
             <div className="button-wrapper">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/images/youtube.png" alt="YouTube Logo" className="join-links-img" width="300px"/>
+              <img src="/images/youtube.png" alt="YouTube Logo" className="join-links-img" width="200px"/>
             </div>
             <p className="join-us">Watch the recorded livestream!</p>
           </a>
@@ -43,7 +43,7 @@ function countdownRenderer({ days, hours, minutes, seconds, completed }) {
           <a href="https://docs.google.com/presentation/d/1oBwDsSow-ekrCgAmoYUFD3oGVjnZ2glt3qnpB1Yy-y0/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
             <div className="button-wrapper">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/images/slides.png" alt="Google Slides logo" className="join-links-img" width="300px"/>
+              <img src="/images/slides.png" alt="Google Slides logo" className="join-links-img" width="200px"/>
             </div>
             <p className="join-us">View the slides as they were presented!</p>
           </a>

@@ -29,11 +29,13 @@ function COVID() {
           Our plan is approved by <a href="https://sole.ucla.edu/" target="_blank" rel="noopener noreferrer">UCLA SOLE</a> and is a superset of <a href="https://covid-19.ucla.edu/ucla-return-to-campus/" target="_blank" rel="noopener noreferrer">UCLA&apos;s return to campus</a> and <a href="http://ph.lacounty.gov/acd/ncorona2019/EducationToolkit/IHE/" target="_blank" rel="noopener noreferrer">LA County Guidelines</a>.
         </p>
         <p>
-          Last major update: <b>Monday, December 27th 2021</b>.
+          Last major update: <b>Monday, January 17th 2022</b>.
           <div>
             <p className='mb-0'>Version history</p>
             <ul className='mt-0'>
-              <li><b>Monday, December 27th 2021</b>: updated to reflect UCLA&apos;s Remote Start to Winter Quarter</li>
+              <li><b>Monday, January 17th 2022</b>: updated to reflect <a href="https://covid-19.ucla.edu/updated-masking-isolation-and-quarantine-protocols-for-ucla/" target="_blank" rel="noopener noreferrer">Updated masking, isolation and quarantine protocols for UCLA</a></li>
+              <li><b>Friday, January 7th 2022</b>: updated to reflect <a href="https://covid-19.ucla.edu/remote-instruction-extended-through-january-28/" target="_blank" rel="noopener noreferrer">UCLA Remote instruction extended through January 28</a></li>
+              <li><b>Monday, December 27th 2021</b>: updated to reflect <a href="https://covid-19.ucla.edu/remote-start-to-winter-quarter-instruction-and-covid-19-booster-requirement/" target="_blank" rel="noopener noreferrer">UCLA&apos;s Remote Start to Winter Quarter</a></li>
               <li><b>Friday, October 15th 2021</b>: updated to comply with <a href="https://ucla.app.box.com/s/ldwgbdtwohcwbmbrk2gzdmb478od5566" target="_blank" rel="noopener noreferrer">UCLA Indoor/Outdoor Organized Event Temporary Protocol</a></li>
               <li><b>Wednesday, September 15th 2021</b>: introduced COVID policy document</li>
             </ul>
@@ -43,7 +45,7 @@ function COVID() {
           <a className="button" href="https://docs.google.com/document/d/1_s4SEFzgiN5AyfdhoT5ccXRGnnjZ7ar7O50U86jYRpQ/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faExternalLinkAlt} fixedWidth aria-hidden={true} /> Link to Google Doc
           </a>{' '}
-          <a className="button" href="/files/acm-covid-policies-w21-last-updated-12-27-21.pdf" target="_blank" rel="noopener noreferrer">
+          <a className="button" href="/files/acm-covid-policies-w21-last-updated-01-17-22.pdf" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faFilePdf} fixedWidth aria-hidden={true} /> Link to PDF
           </a>
         </div>

@@ -9,8 +9,8 @@ import Layout from '../../components/Layout';
 const GM_START_TIME = new Date('2022-01-06T18:30-08:00');
 const RSVP_LINK = 'http://links.uclaacm.com/wintergm-rsvp-22';
 const SLIDES_LINK = 'https://docs.google.com/presentation/d/1XGyJdmuR78C9liEPlwqMq2PpNSaXS-PtlK15fvzQLRE/edit?usp=sharing';
-const ZOOM_LINK = '#';
-// const YOUTUBE_LINK = '#';
+const ZOOM_LINK = 'https://ucla.zoom.us/j/92139691430?pwd=d0R0WkhuajlBS3NvNUJoUXdNWE9mQT09';
+const YOUTUBE_LINK = 'https://youtu.be/XVdCnEGoKKo';
 
 const calculateTimeStrings = ({days, hours, minutes, seconds}) => {
   let dayString = 'Day';
@@ -32,17 +32,16 @@ function countdownRenderer({ days, hours, minutes, seconds, completed }) {
   if (completed) {
     return (
       <div className="text-center">
-        <h1>ACM&apos;s Winter GM 2022 is happening right now on <a href={ZOOM_LINK}>Zoom!</a></h1>
-        <h3>The recording of the event will be posted on YouTube later</h3>
-        {/* <div className="should-dim">
+        <h1>ACM&apos;s Winter GM 2022 happened on the 6th of January!</h1>
+        <div className="should-dim">
           <a href={YOUTUBE_LINK} target="_blank" rel="noopener noreferrer">
-            <div className="button-wrapper youtube">
-              {/* eslint-disable-next-line @next/next/no-img-element
-              <img src="/images/youtube.png" alt="YouTube Logo" className="join-links-img" width="300px"/>
+            <div className="button-wrapper slides">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/images/youtube.png" alt="YouTube Logo" className="join-links-img" width="200px"/>
             </div>
             <p className="join-us">Watch the recording of the event!</p>
           </a>
-        </div> */}
+        </div>
       </div>
     );
   }
@@ -101,7 +100,7 @@ function W22() {
 		<Layout>
 			<NextSeo
 				title="Winter General Meeting | ACM at UCLA"
-				description="ACM's Winter General Meeting is coming soon, on January 6th at 6:30 PM PT. Keep your eyes peeled, your hand on your mouse, and your fingers on sdf."
+				description="ACM's Winter General Meeting happened on January 6th at 6:30 PM PT."
 				openGraph={{
 					images: [
 						{
@@ -125,15 +124,13 @@ function W22() {
           <h2>Relevant Information</h2>
           <div className="event-links">
             <div className="should-dim">
-              {/* Uncomment a, img lines and remove span line before GM */}
-              {/* <a href={ZOOM_LINK} target="_blank" rel="noopener noreferrer"> */}
+              <a href={ZOOM_LINK} target="_blank" rel="noopener noreferrer">
                 <div className="button-wrapper zoom">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
-                    {/* <img src="/images/ZoomLogo.png" alt="Zoom logo" className="join-links-img" width="150px"/> */}
-                    <span className="pre-event-link">Link will be available 30 minutes before GM</span>
+                    <img src="/images/ZoomLogo.png" alt="Zoom logo" className="join-links-img" width="150px"/>
                 </div>
                 <p className="join-us">Attend the event here!</p>
-              {/* </a> */}
+              </a>
             </div>
             <div className="should-dim">
               <a href={SLIDES_LINK} target="_blank" rel="noopener noreferrer">

@@ -51,6 +51,7 @@ const generateSingleEvent = ({
     end = moment(`${date} ${endHr} PM`, 'YYYY-MM-DD LT').valueOf();
   }
 
+  // add if location contains ucla.zoom.us, change location to "zoom" and links to have the zoom link
   if (!links) {
     links = [];
     if (fblink) {

@@ -1,7 +1,4 @@
-import {
-  faDiscord,
-  faSlack,
-} from '@fortawesome/free-brands-svg-icons';
+import faSlack from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { NextSeo } from 'next-seo';
@@ -51,9 +48,6 @@ function Meet() {
         <ul className={`list-unstyled ${styles['mb-2']}`}>
           <li>
           <FontAwesomeIcon icon={faEnvelope} fixedWidth aria-hidden={true} /> Email: <a className={styles['jedi-link']} href={`mailto:${contactEmail}`}>{contactEmail}</a>
-          </li>
-          <li>
-            <FontAwesomeIcon icon={faDiscord} fixedWidth aria-hidden={true} /> Discord: cuddlefish#2308
           </li>
           <li>
             <FontAwesomeIcon icon={faSlack} fixedWidth aria-hidden={true} /> Slack (ACM internal): Helia (she/her)
