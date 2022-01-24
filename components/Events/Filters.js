@@ -8,15 +8,15 @@ export default function filters(props) {
   const [isFilterOpen, setIsFilterOpen] = useState(false);
   const [searchValue, setSearchValue] = useState('');
   const [chosenComms, setChosenComms] = useState({
-    studio: false,
-    icpc: false,
-    design: false,
-    cyber: false,
-    teachLA: false,
-    w: false,
-    ai: false,
-    hack: false,
-    board: false,
+    'studio': false,
+    'icpc': false,
+    'design': false,
+    'cyber': false,
+    'teach-la': false,
+    'w': false,
+    'ai': false,
+    'hack': false,
+    'board': false,
   });
   const [chosenDays, setChosenDays] = useState({
     Sunday: false,
@@ -27,77 +27,104 @@ export default function filters(props) {
     Friday: false,
     Saturday: false,
   });
-  const [fromTime, setFromTime] = useState('');
-  const [toTime, setToTime] = useState('');
+  const [chosenTimes, setChosenTimes] = useState({
+    fromTime: '',
+    toTime: '',
+  });
   const [chosenLoc, setChosenLoc] = useState({
-    Online: false,
-    In_person: false,
+    'Online': false,
+    'In-Person': false,
   });
 
+  const dateToMinutes = (date) => {
+    const itemDate = new Date(date);
+    const itemMins =
+      itemDate.getHours() * 60 + itemDate.getMinutes();
+    return itemMins;
+  };
+
   const handleSearch = () => {
-    let allEvents = [...events];
-    //Check search input
+    // Check search input
     const lowerCaseSearch = searchValue.toLowerCase();
-    allEvents = allEvents.filter((item) => {
-      if (String(item.title).toLowerCase().includes(lowerCaseSearch))
-        return true;
-      if (String(item.committee).toLowerCase().includes(lowerCaseSearch))
-        return true;
-      if (String(item.location).toLowerCase().includes(lowerCaseSearch))
-        return true;
-      if (String(item.description).toLowerCase().includes(lowerCaseSearch))
-        return true;
-      return false;
-    });
-    //Check filters
-    const isTimeEmpty = fromTime === '' || toTime === '';
+    let allEvents = events.filter((item) =>
+      [item.title, item.committee, item.location, item.description].some(
+        (itemsToSearch) =>
+          String(itemsToSearch).toLowerCase().includes(lowerCaseSearch),
+      ),
+    );
+    // Check time filter
+    const isFilterTimeEmpty = Object.keys(chosenTimes).every(
+      (time) => chosenTimes[time] === '',
+    );
+    if (!isFilterTimeEmpty) {
+      const filterFromMins =
+        parseInt(chosenTimes.fromTime.split(':')[0]) * 60 +
+        parseInt(chosenTimes.fromTime.split(':')[1]);
+      const filterToMins =
+        parseInt(chosenTimes.toTime.split(':')[0]) * 60 +
+        parseInt(chosenTimes.toTime.split(':')[1]);
+
+      allEvents = allEvents.filter((item) => {
+        const itemStartMins = dateToMinutes(item.start);
+        const itemEndMins = dateToMinutes(item.end);
+        return itemStartMins >= filterFromMins && itemEndMins <= filterToMins;
+      });
+    }
+    // Check committee filter
     const isCommEmpty = Object.keys(chosenComms).every(
       (comm) => !chosenComms[comm],
     );
+    if (!isCommEmpty) {
+      allEvents = allEvents.filter((item) => {
+        if (!item.committee) return false;
+        return chosenComms[item.committee];
+      });
+    }
+    // Check days filter
     const isDaysEmpty = Object.keys(chosenDays).every(
       (day) => !chosenDays[day],
     );
-    const isLocEmpty = Object.keys(chosenLoc).every((loc) => !chosenLoc[loc]);
-    let fromMins = 0;
-    let toMins = 0;
-    if (!isTimeEmpty) {
-      fromMins =
-        parseInt(fromTime.split(':')[0]) * 60 +
-        parseInt(fromTime.split(':')[1]);
-      toMins =
-        parseInt(toTime.split(':')[0]) * 60 + parseInt(toTime.split(':')[1]);
+    if (!isDaysEmpty) {
+      allEvents = allEvents.filter((item) => {
+        const date = new Date(item.start);
+        const itemDay = Object.keys(chosenDays)[date.getDay()];
+        return chosenDays[itemDay];
+      });
     }
-    allEvents = allEvents.filter((item) => {
-      const itemDate = new Date(item.start);
-      const itemDay = Object.keys(chosenDays)[itemDate.getDay()];
-      const itemLoc = item.location.toLowerCase().includes('zoom') ? 'Online' : 'In_person';
-      if (!item.committee) return false;
-      const itemComm =
-        item.committee === 'teach-la' ? 'teachLA' : item.committee; //No hyphens in object key
-      const itemMins = itemDate.getHours() * 60 + itemDate.getMinutes();
-      const timeValid =
-        isTimeEmpty || (itemMins >= fromMins && itemMins <= toMins);
-      const dayValid = isDaysEmpty || chosenDays[itemDay];
-      const commValid = isCommEmpty || chosenComms[itemComm];
-      const onlineValid = isLocEmpty || chosenLoc[itemLoc];
-      return timeValid && dayValid && commValid && onlineValid;
-    });
+    // Check location filter
+    const isLocEmpty = Object.keys(chosenLoc).every((loc) => !chosenLoc[loc]);
+    if (!isLocEmpty) {
+      allEvents = allEvents.filter((item) => {
+        const itemLoc = item.location.toLowerCase().includes('zoom') ? 'Online' : 'In-Person';
+        return chosenLoc[itemLoc];
+      });
+    }
+
     const newEvents = allEvents.map((original_event, index) => ({
       ...original_event,
       id: index,
     }));
     props.handleChange(newEvents);
   };
+
   const handleWeekdayChange = (day) => {
     const updated = { ...chosenDays };
     updated[day] = !updated[day];
     setChosenDays(updated);
   };
+
   const handleCommChange = (comm) => {
     const updated = { ...chosenComms };
     updated[comm] = !updated[comm];
     setChosenComms(updated);
   };
+
+  const handleTimeChange = (key, value) => {
+    const updated = { ...chosenTimes };
+    updated[key] = value;
+    setChosenTimes(updated);
+  };
+
   const handleLocationChange = (loc) => {
     const updated = { ...chosenLoc };
     updated[loc] = !updated[loc];
@@ -165,13 +192,13 @@ export default function filters(props) {
                   <div>To </div>
                 </div>
                 <div>
-                  {[[fromTime, setFromTime],[toTime, setToTime]].map((state,index) => (
-                    <div key={index}>
+                  {Object.keys(chosenTimes).map((time) => (
+                    <div key={time}>
                       <input
                         type="time"
                         className={styles.timeinput}
-                        value={state[0]}
-                        onChange={(e) => state[1](e.target.value)}
+                        value={chosenTimes[time]}
+                        onChange={(e) => handleTimeChange(time, e.target.value)}
                       />
                       <br />
                     </div>
@@ -182,16 +209,13 @@ export default function filters(props) {
             <div>
               <h3 className={styles.header}>Location</h3>
               {Object.keys(chosenLoc).map((loc) => {
-                let title = loc;
-                if (loc === 'In_person') title = 'In-Person';
                 return (
                   <div key={loc}>
                     <input
                       type="checkbox"
-                      id="online"
                       checked={chosenLoc[loc]}
                       onChange={() => handleLocationChange(loc)}
-                    />{title}
+                    /> {loc}
                   </div>
                 );
               })}
