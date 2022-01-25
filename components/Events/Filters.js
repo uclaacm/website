@@ -37,9 +37,8 @@ export default function filters(props) {
   });
 
   const dateToMinutes = (date) => {
-    const itemDate = new Date(date);
     const itemMins =
-      itemDate.getHours() * 60 + itemDate.getMinutes();
+      date.getHours() * 60 + date.getMinutes();
     return itemMins;
   };
 
@@ -52,6 +51,7 @@ export default function filters(props) {
           String(itemsToSearch).toLowerCase().includes(lowerCaseSearch),
       ),
     );
+
     // Check time filter
     const isFilterTimeEmpty = Object.keys(chosenTimes).every(
       (time) => chosenTimes[time] === '',
@@ -65,11 +65,12 @@ export default function filters(props) {
         parseInt(chosenTimes.toTime.split(':')[1]);
 
       allEvents = allEvents.filter((item) => {
-        const itemStartMins = dateToMinutes(item.start);
-        const itemEndMins = dateToMinutes(item.end);
+        const itemStartMins = dateToMinutes(new Date(item.start));
+        const itemEndMins = dateToMinutes(new Date(item.end));
         return itemStartMins >= filterFromMins && itemEndMins <= filterToMins;
       });
     }
+
     // Check committee filter
     const isCommEmpty = Object.keys(chosenComms).every(
       (comm) => !chosenComms[comm],
@@ -80,6 +81,7 @@ export default function filters(props) {
         return chosenComms[item.committee];
       });
     }
+
     // Check days filter
     const isDaysEmpty = Object.keys(chosenDays).every(
       (day) => !chosenDays[day],
@@ -91,6 +93,7 @@ export default function filters(props) {
         return chosenDays[itemDay];
       });
     }
+
     // Check location filter
     const isLocEmpty = Object.keys(chosenLoc).every((loc) => !chosenLoc[loc]);
     if (!isLocEmpty) {
@@ -107,28 +110,20 @@ export default function filters(props) {
     props.handleChange(newEvents);
   };
 
-  const handleWeekdayChange = (day) => {
-    const updated = { ...chosenDays };
-    updated[day] = !updated[day];
-    setChosenDays(updated);
+  const handleWeekdayChange = (day, value) => {
+    setChosenDays({ ...chosenDays, [day]: value });
   };
 
-  const handleCommChange = (comm) => {
-    const updated = { ...chosenComms };
-    updated[comm] = !updated[comm];
-    setChosenComms(updated);
+  const handleCommChange = (comm, value) => {
+    setChosenComms({ ...chosenComms, [comm]: value });
   };
 
   const handleTimeChange = (key, value) => {
-    const updated = { ...chosenTimes };
-    updated[key] = value;
-    setChosenTimes(updated);
+    setChosenTimes({ ...chosenTimes, [key]: value });
   };
 
-  const handleLocationChange = (loc) => {
-    const updated = { ...chosenLoc };
-    updated[loc] = !updated[loc];
-    setChosenLoc(updated);
+  const handleLocationChange = (loc, value) => {
+    setChosenLoc({ ...chosenLoc, [loc]: value });
   };
 
   return (
@@ -164,7 +159,7 @@ export default function filters(props) {
                     type="checkbox"
                     id={comm}
                     checked={chosenComms[comm]}
-                    onChange={() => handleCommChange(comm)}
+                    onChange={(e) => handleCommChange(comm, e.target.checked)}
                   />{' '}
                   {comm}
                 </div>
@@ -178,7 +173,7 @@ export default function filters(props) {
                     type="checkbox"
                     id={day}
                     checked={chosenDays[day]}
-                    onChange={() => handleWeekdayChange(day)}
+                    onChange={(e) => handleWeekdayChange(day, e.target.checked)}
                   />{' '}
                   {day}
                 </div>
@@ -208,17 +203,16 @@ export default function filters(props) {
             </div>
             <div>
               <h3 className={styles.header}>Location</h3>
-              {Object.keys(chosenLoc).map((loc) => {
-                return (
-                  <div key={loc}>
-                    <input
-                      type="checkbox"
-                      checked={chosenLoc[loc]}
-                      onChange={() => handleLocationChange(loc)}
-                    /> {loc}
-                  </div>
-                );
-              })}
+              {Object.keys(chosenLoc).map((loc) => (
+                <div key={loc}>
+                  <input
+                    type="checkbox"
+                    checked={chosenLoc[loc]}
+                    onChange={(e) => handleLocationChange(loc, e.target.checked)}
+                  /> {loc}
+                </div>
+              ),
+              )}
             </div>
           </div>
         )}
