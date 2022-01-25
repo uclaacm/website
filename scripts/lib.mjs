@@ -1,7 +1,7 @@
 import moment from 'moment';
 
 const getCssStringFromCommittee = (committee) => {
-  switch (committee) {
+  switch (committee.trim()) {
     case 'General':
     case 'Impact': // we should change the branding here soon
       return 'board';
