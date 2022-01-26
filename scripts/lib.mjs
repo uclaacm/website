@@ -51,12 +51,12 @@ const generateSingleEvent = ({
     end = moment(`${date} ${endHr} PM`, 'YYYY-MM-DD LT').valueOf();
   }
 
+  if(!links){
+    links = [];
+  }
   if(location.includes('ucla.zoom.us')) {
     let zoomLink = location;
     location = 'Zoom';
-    if(!links){
-      links = [];
-    }
     links.push({
       text: 'Zoom Link',
       href: zoomLink,
@@ -64,9 +64,6 @@ const generateSingleEvent = ({
     });
   }
   if (fblink) {
-    if(!links){
-      links = [];
-    }
     links.push({
       text: 'Facebook Event',
       href: fblink,
