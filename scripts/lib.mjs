@@ -62,13 +62,16 @@ const generateSingleEvent = ({
       href: zoomLink,
       ext: true,
     });
-    if (fblink) {
-      links.push({
-        text: 'Facebook Event',
-        href: fblink,
-        ext: true,
-      });
+  }
+  if (fblink) {
+    if(!links){
+      links = [];
     }
+    links.push({
+      text: 'Facebook Event',
+      href: fblink,
+      ext: true,
+    });
   }
 
   return {
