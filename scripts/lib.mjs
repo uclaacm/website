@@ -55,7 +55,7 @@ const generateSingleEvent = ({
     links = [];
   }
   if(location.includes('ucla.zoom.us')) {
-    let zoomLink = location;
+    const zoomLink = location;
     location = 'Zoom';
     links.push({
       text: 'Zoom Link',
