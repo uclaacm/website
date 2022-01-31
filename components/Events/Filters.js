@@ -28,8 +28,8 @@ export default function filters(props) {
     Saturday: false,
   });
   const [chosenTimes, setChosenTimes] = useState({
-    fromTime: '',
-    toTime: '',
+    from: '',
+    to: '',
   });
   const [chosenLoc, setChosenLoc] = useState({
     'Online': false,
@@ -58,11 +58,13 @@ export default function filters(props) {
     );
     if (!isFilterTimeEmpty) {
       const filterFromMins =
-        parseInt(chosenTimes.fromTime.split(':')[0]) * 60 +
-        parseInt(chosenTimes.fromTime.split(':')[1]);
+        chosenTimes.from === '' ? 0 : // 12:00 AM if empty
+          parseInt(chosenTimes.from.split(':')[0]) * 60 +
+          parseInt(chosenTimes.from.split(':')[1]);
       const filterToMins =
-        parseInt(chosenTimes.toTime.split(':')[0]) * 60 +
-        parseInt(chosenTimes.toTime.split(':')[1]);
+        chosenTimes.to === '' ? 1440 :  // 11:59 PM if empty
+          parseInt(chosenTimes.to.split(':')[0]) * 60 +
+          parseInt(chosenTimes.to.split(':')[1]);
 
       allEvents = allEvents.filter((item) => {
         const itemStartMins = dateToMinutes(new Date(item.start));
@@ -108,6 +110,7 @@ export default function filters(props) {
       id: index,
     }));
     props.handleChange(newEvents);
+    setIsFilterOpen(false);
   };
 
   const handleWeekdayChange = (day, value) => {
