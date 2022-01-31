@@ -74,18 +74,15 @@ function Footer(){
 								committees.map(({name, slug, external_link, wordmark_dark}) => {
 									const path = external_link ? external_link : `/committees#${slug}`;
 									return (
-										<>
-											<li key={slug} className={styles['display-inline']}>
-												<FooterLinkElement
-													path={path}
-													/* TODO: resolve 404 with <Image /> component */
-													/* eslint-disable-next-line @next/next/no-img-element */
-													title={<img className='committee-sidebar-image' src={wordmark_dark} alt={`ACM ${name}`} />}
-													ext={external_link}
-												/>
-											</li>
-											<br />
-										</>
+										<li key={slug}>
+											<FooterLinkElement
+												path={path}
+												/* TODO: resolve 404 with <Image /> component */
+												/* eslint-disable-next-line @next/next/no-img-element */
+												title={<img className='committee-sidebar-image' src={wordmark_dark} alt={`ACM ${name}`} />}
+												ext={external_link}
+											/>
+										</li>
 									);
 								})
 							}
