@@ -13,7 +13,7 @@ const results = [];
 const offset = 100;
 
 fs.createReadStream(fname)
-  .pipe(csv())
+  .pipe(csv({skipLines:'1'}))
   .on('data', (data) => {
     if (data.Committee.includes('Example')) {
       return;

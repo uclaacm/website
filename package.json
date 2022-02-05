@@ -12,10 +12,10 @@
     "next-seo": "^4.28.1",
     "react": "^17.0.2",
     "react-accessible-accordion": "^4.0.0",
-    "react-big-calendar": "^0.38.1",
+    "react-big-calendar": "^0.38.5",
     "react-countdown": "^2.3.2",
     "react-dom": "^17.0.2",
-    "sass": "^1.45.0"
+    "sass": "^1.49.0"
   },
   "scripts": {
     "start": "next dev",
@@ -28,7 +28,8 @@
     "lint": "eslint \"**/*.js\" && stylelint \"**/*.css\" \"**/*.scss\"",
     "lint-fix": "eslint --fix \"**/*.js\" && stylelint --fix \"**/*.css\" \"**/*.scss\"",
     "reg": "node scripts/recurring-event-generator.mjs",
-    "seg": "node scripts/single-event-generator.mjs"
+    "seg": "node scripts/single-event-generator.mjs",
+    "test": "jest --env=jsdom"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -58,12 +59,17 @@
   },
   "devDependencies": {
     "@axe-core/react": "^4.3.2",
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "^12.1.2",
     "csv-parser": "^3.0.0",
     "eslint": "^7.32.0",
     "eslint-config-next": "^11.1.3",
     "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-react": "^7.28.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^27.4.7",
+    "jest-axe": "^5.0.1",
     "stylelint": "^13.13.1",
     "stylelint-config-recommended": "^5.0.0",
     "stylelint-config-sass-guidelines": "^8.0.0",

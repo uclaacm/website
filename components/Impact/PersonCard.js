@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 import styles from '../../styles/pages/impact.module.scss';
 
@@ -6,7 +7,7 @@ export default function PersonCard({name, pronouns, position, major, year, img, 
 		<div className={`${styles['workshop-card']} ${styles['grid-tablet-only-2']}`}>
 			<div className={styles['workshop-image-container']}>
 				{/* eslint-disable-next-line @next/next/no-img-element */}
-				<img src={img} alt={alt} style={{maxWidth: '100%'}} />
+				<Image src={img} alt={alt} width={360} height={360}/>
 			</div>
 			<div>
 				<h3 className={styles.name}>{name}</h3>
