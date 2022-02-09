@@ -62,7 +62,7 @@ export default function filters(props) {
       });
     }
     return filterEvents;
-  }
+  };
   const filterComm = (filterEvents) => {
     const isCommEmpty = Object.keys(chosenComms).every(
       (comm) => !chosenComms[comm],
@@ -74,7 +74,7 @@ export default function filters(props) {
       });
     }
     return filterEvents;
-  }
+  };
   const filterDays = (filterEvents) => {
     const isDaysEmpty = Object.keys(chosenDays).every(
       (day) => !chosenDays[day],
@@ -87,7 +87,7 @@ export default function filters(props) {
       });
     }
     return filterEvents;
-  }
+  };
   const filterLoc = (filterEvents) => {
     const isLocEmpty = Object.keys(chosenLoc).every((loc) => !chosenLoc[loc]);
     if (!isLocEmpty) {
@@ -97,7 +97,7 @@ export default function filters(props) {
       });
     }
     return filterEvents;
-  }
+  };
   const handleSearch = () => {
     // Check search input
     const lowerCaseSearch = searchValue.toLowerCase();
