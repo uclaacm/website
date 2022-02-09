@@ -41,18 +41,7 @@ export default function filters(props) {
       date.getHours() * 60 + date.getMinutes();
     return itemMins;
   };
-
-  const handleSearch = () => {
-    // Check search input
-    const lowerCaseSearch = searchValue.toLowerCase();
-    let allEvents = events.filter((item) =>
-      [item.title, item.committee, item.location, item.description].some(
-        (itemsToSearch) =>
-          String(itemsToSearch).toLowerCase().includes(lowerCaseSearch),
-      ),
-    );
-
-    // Check time filter
+  const filterTime = (filterEvents) => {
     const isFilterTimeEmpty = Object.keys(chosenTimes).every(
       (time) => chosenTimes[time] === '',
     );
@@ -66,45 +55,62 @@ export default function filters(props) {
           parseInt(chosenTimes.to.split(':')[0]) * 60 +
           parseInt(chosenTimes.to.split(':')[1]);
 
-      allEvents = allEvents.filter((item) => {
+      return filterEvents.filter((item) => {
         const itemStartMins = dateToMinutes(new Date(item.start));
         const itemEndMins = dateToMinutes(new Date(item.end));
         return itemStartMins >= filterFromMins && itemEndMins <= filterToMins;
       });
     }
-
-    // Check committee filter
+    return filterEvents;
+  }
+  const filterComm = (filterEvents) => {
     const isCommEmpty = Object.keys(chosenComms).every(
       (comm) => !chosenComms[comm],
     );
     if (!isCommEmpty) {
-      allEvents = allEvents.filter((item) => {
+      return filterEvents.filter((item) => {
         if (!item.committee) return false;
         return chosenComms[item.committee];
       });
     }
-
-    // Check days filter
+    return filterEvents;
+  }
+  const filterDays = (filterEvents) => {
     const isDaysEmpty = Object.keys(chosenDays).every(
       (day) => !chosenDays[day],
     );
     if (!isDaysEmpty) {
-      allEvents = allEvents.filter((item) => {
+      return filterEvents.filter((item) => {
         const date = new Date(item.start);
         const itemDay = Object.keys(chosenDays)[date.getDay()];
         return chosenDays[itemDay];
       });
     }
-
-    // Check location filter
+    return filterEvents;
+  }
+  const filterLoc = (filterEvents) => {
     const isLocEmpty = Object.keys(chosenLoc).every((loc) => !chosenLoc[loc]);
     if (!isLocEmpty) {
-      allEvents = allEvents.filter((item) => {
+      return filterEvents.filter((item) => {
         const itemLoc = item.location.toLowerCase().includes('zoom') ? 'Online' : 'In-Person';
         return chosenLoc[itemLoc];
       });
     }
-
+    return filterEvents;
+  }
+  const handleSearch = () => {
+    // Check search input
+    const lowerCaseSearch = searchValue.toLowerCase();
+    let allEvents = events.filter((item) =>
+      [item.title, item.committee, item.location, item.description].some(
+        (itemsToSearch) =>
+          String(itemsToSearch).toLowerCase().includes(lowerCaseSearch),
+      ),
+    );
+    allEvents = filterTime(allEvents);
+    allEvents = filterComm(allEvents);
+    allEvents = filterDays(allEvents);
+    allEvents = filterLoc(allEvents);
     const newEvents = allEvents.map((original_event, index) => ({
       ...original_event,
       id: index,
