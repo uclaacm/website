@@ -1,40 +1,57 @@
 import { faChevronUp, faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { useState, React } from 'react';
+import { useState, useReducer, React } from 'react';
 import events from '../../data/event';
 import styles from '../../styles/components/Events/Filters.module.scss';
 
 export default function filters(props) {
+  function reducer(state, action) {
+    switch (action.type) {
+      case 'comms':
+        return { ...state, comms: { ...state.comms, [action.payload.key]: action.payload.val } };
+      case 'days':
+        return { ...state, days: { ...state.days, [action.payload.key]: action.payload.val } };
+      case 'times':
+        return { ...state, times: { ...state.times, [action.payload.key]: action.payload.val } };
+      case 'loc':
+        return { ...state, loc: { ...state.loc, [action.payload.key]: action.payload.val } };
+      default:
+        throw new Error();
+    }
+  }
+  const initialState = {
+    comms: {
+      'studio': false,
+      'icpc': false,
+      'design': false,
+      'cyber': false,
+      'teach-la': false,
+      'w': false,
+      'ai': false,
+      'hack': false,
+      'board': false,
+    },
+    days: {
+      Sunday: false,
+      Monday: false,
+      Tuesday: false,
+      Wednesday: false,
+      Thursday: false,
+      Friday: false,
+      Saturday: false,
+    },
+    times: {
+      from: '',
+      to: '',
+    },
+    loc: {
+      'Online': false,
+      'In-Person': false,
+    },
+  };
+  const [filterVals, dispatch] = useReducer(reducer, initialState);
   const [isFilterOpen, setIsFilterOpen] = useState(false);
   const [searchValue, setSearchValue] = useState('');
-  const [chosenComms, setChosenComms] = useState({
-    'studio': false,
-    'icpc': false,
-    'design': false,
-    'cyber': false,
-    'teach-la': false,
-    'w': false,
-    'ai': false,
-    'hack': false,
-    'board': false,
-  });
-  const [chosenDays, setChosenDays] = useState({
-    Sunday: false,
-    Monday: false,
-    Tuesday: false,
-    Wednesday: false,
-    Thursday: false,
-    Friday: false,
-    Saturday: false,
-  });
-  const [chosenTimes, setChosenTimes] = useState({
-    from: '',
-    to: '',
-  });
-  const [chosenLoc, setChosenLoc] = useState({
-    'Online': false,
-    'In-Person': false,
-  });
 
   const dateToMinutes = (date) => {
     const itemMins =
@@ -42,18 +59,18 @@ export default function filters(props) {
     return itemMins;
   };
   const filterTime = (filterEvents) => {
-    const isFilterTimeEmpty = Object.keys(chosenTimes).every(
-      (time) => chosenTimes[time] === '',
+    const isFilterTimeEmpty = Object.keys(filterVals.times).every(
+      (time) => filterVals.times[time] === '',
     );
     if (!isFilterTimeEmpty) {
       const filterFromMins =
-        chosenTimes.from === '' ? 0 : // 12:00 AM if empty
-          parseInt(chosenTimes.from.split(':')[0]) * 60 +
-          parseInt(chosenTimes.from.split(':')[1]);
+        filterVals.times.from === '' ? 0 : // 12:00 AM if empty
+          parseInt(filterVals.times.from.split(':')[0]) * 60 +
+          parseInt(filterVals.times.from.split(':')[1]);
       const filterToMins =
-        chosenTimes.to === '' ? 1440 :  // 11:59 PM if empty
-          parseInt(chosenTimes.to.split(':')[0]) * 60 +
-          parseInt(chosenTimes.to.split(':')[1]);
+        filterVals.times.to === '' ? 1440 :  // 11:59 PM if empty
+          parseInt(filterVals.times.to.split(':')[0]) * 60 +
+          parseInt(filterVals.times.to.split(':')[1]);
 
       return filterEvents.filter((item) => {
         const itemStartMins = dateToMinutes(new Date(item.start));
@@ -64,36 +81,36 @@ export default function filters(props) {
     return filterEvents;
   };
   const filterComm = (filterEvents) => {
-    const isCommEmpty = Object.keys(chosenComms).every(
-      (comm) => !chosenComms[comm],
+    const isCommEmpty = Object.keys(filterVals.comms).every(
+      (comm) => !filterVals.comms[comm],
     );
     if (!isCommEmpty) {
       return filterEvents.filter((item) => {
         if (!item.committee) return false;
-        return chosenComms[item.committee];
+        return filterVals.comms[item.committee];
       });
     }
     return filterEvents;
   };
   const filterDays = (filterEvents) => {
-    const isDaysEmpty = Object.keys(chosenDays).every(
-      (day) => !chosenDays[day],
+    const isDaysEmpty = Object.keys(filterVals.days).every(
+      (day) => !filterVals.days[day],
     );
     if (!isDaysEmpty) {
       return filterEvents.filter((item) => {
         const date = new Date(item.start);
-        const itemDay = Object.keys(chosenDays)[date.getDay()];
-        return chosenDays[itemDay];
+        const itemDay = Object.keys(filterVals.days)[date.getDay()];
+        return filterVals.days[itemDay];
       });
     }
     return filterEvents;
   };
   const filterLoc = (filterEvents) => {
-    const isLocEmpty = Object.keys(chosenLoc).every((loc) => !chosenLoc[loc]);
+    const isLocEmpty = Object.keys(filterVals.loc).every((loc) => !filterVals.loc[loc]);
     if (!isLocEmpty) {
       return filterEvents.filter((item) => {
         const itemLoc = item.location.toLowerCase().includes('zoom') ? 'Online' : 'In-Person';
-        return chosenLoc[itemLoc];
+        return filterVals.loc[itemLoc];
       });
     }
     return filterEvents;
@@ -119,20 +136,8 @@ export default function filters(props) {
     setIsFilterOpen(false);
   };
 
-  const handleWeekdayChange = (day, value) => {
-    setChosenDays({ ...chosenDays, [day]: value });
-  };
-
-  const handleCommChange = (comm, value) => {
-    setChosenComms({ ...chosenComms, [comm]: value });
-  };
-
-  const handleTimeChange = (key, value) => {
-    setChosenTimes({ ...chosenTimes, [key]: value });
-  };
-
-  const handleLocationChange = (loc, value) => {
-    setChosenLoc({ ...chosenLoc, [loc]: value });
+  const handleFilterChange = (type, key, value) => {
+    dispatch({ type: type, payload: { key: key, val: value } });
   };
 
   return (
@@ -162,13 +167,13 @@ export default function filters(props) {
           <div className={styles.filteroptions}>
             <div>
               <h3 className={styles.header}>Committees </h3>
-              {Object.keys(chosenComms).map((comm) => (
+              {Object.keys(filterVals.comms).map((comm) => (
                 <div key={comm}>
                   <input
                     type="checkbox"
                     id={comm}
-                    checked={chosenComms[comm]}
-                    onChange={(e) => handleCommChange(comm, e.target.checked)}
+                    checked={filterVals.comms[comm]}
+                    onChange={(e) => handleFilterChange('comms', comm, e.target.checked)}
                   />{' '}
                   {comm}
                 </div>
@@ -176,13 +181,13 @@ export default function filters(props) {
             </div>
             <div>
               <h3 className={styles.header}>Days</h3>
-              {Object.keys(chosenDays).map((day) => (
+              {Object.keys(filterVals.days).map((day) => (
                 <div key={day}>
                   <input
                     type="checkbox"
                     id={day}
-                    checked={chosenDays[day]}
-                    onChange={(e) => handleWeekdayChange(day, e.target.checked)}
+                    checked={filterVals.days[day]}
+                    onChange={(e) => handleFilterChange('days', day, e.target.checked)}
                   />{' '}
                   {day}
                 </div>
@@ -196,13 +201,13 @@ export default function filters(props) {
                   <div>To </div>
                 </div>
                 <div>
-                  {Object.keys(chosenTimes).map((time) => (
+                  {Object.keys(filterVals.times).map((time) => (
                     <div key={time}>
                       <input
                         type="time"
                         className={styles.timeinput}
-                        value={chosenTimes[time]}
-                        onChange={(e) => handleTimeChange(time, e.target.value)}
+                        value={filterVals.times[time]}
+                        onChange={(e) => handleFilterChange('times', time, e.target.value)}
                       />
                       <br />
                     </div>
@@ -212,12 +217,12 @@ export default function filters(props) {
             </div>
             <div>
               <h3 className={styles.header}>Location</h3>
-              {Object.keys(chosenLoc).map((loc) => (
+              {Object.keys(filterVals.loc).map((loc) => (
                 <div key={loc}>
                   <input
                     type="checkbox"
-                    checked={chosenLoc[loc]}
-                    onChange={(e) => handleLocationChange(loc, e.target.checked)}
+                    checked={filterVals.loc[loc]}
+                    onChange={(e) => handleFilterChange('loc', loc, e.target.checked)}
                   /> {loc}
                 </div>
               ),
