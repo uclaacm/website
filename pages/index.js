@@ -73,7 +73,7 @@ function Home () {
 						</div>
 					</div>
 				</div>
-				<Carousel images={carousel.images} />
+				<Carousel images={carousel.images} aria-hidden="true"/>
 			</div>
 		</Layout>
 	);
