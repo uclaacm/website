@@ -27,6 +27,7 @@
     "lint-css-fix": "stylelint --fix \"**/*.css\" \"**/*.scss\"",
     "lint": "eslint \"**/*.js\" && stylelint \"**/*.css\" \"**/*.scss\"",
     "lint-fix": "eslint --fix \"**/*.js\" && stylelint --fix \"**/*.css\" \"**/*.scss\"",
+    "og": "node scripts/officer-generator.mjs",
     "reg": "node scripts/recurring-event-generator.mjs",
     "seg": "node scripts/single-event-generator.mjs",
     "test": "jest --env=jsdom"
