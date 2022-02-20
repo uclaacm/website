@@ -1,8 +1,15 @@
 import { faChevronUp, faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useState, useReducer, React } from 'react';
-import events from '../../data/event';
+import allEvents from '../../data/event';
 import styles from '../../styles/components/Events/Filters.module.scss';
+
+
+const dateToMinutes = (date) => {
+  const itemMins =
+    date.getHours() * 60 + date.getMinutes();
+  return itemMins;
+};
 
 export default function filters(props) {
   function reducer(state, action) {
@@ -53,12 +60,7 @@ export default function filters(props) {
   const [isFilterOpen, setIsFilterOpen] = useState(false);
   const [searchValue, setSearchValue] = useState('');
 
-  const dateToMinutes = (date) => {
-    const itemMins =
-      date.getHours() * 60 + date.getMinutes();
-    return itemMins;
-  };
-  const filterTime = (filterEvents) => {
+  const filterTime = (events) => {
     const isFilterTimeEmpty = Object.keys(filterVals.times).every(
       (time) => filterVals.times[time] === '',
     );
@@ -72,63 +74,67 @@ export default function filters(props) {
           parseInt(filterVals.times.to.split(':')[0]) * 60 +
           parseInt(filterVals.times.to.split(':')[1]);
 
-      return filterEvents.filter((item) => {
+      return events.filter((item) => {
         const itemStartMins = dateToMinutes(new Date(item.start));
         const itemEndMins = dateToMinutes(new Date(item.end));
         return itemStartMins >= filterFromMins && itemEndMins <= filterToMins;
       });
     }
-    return filterEvents;
+    return events;
   };
-  const filterComm = (filterEvents) => {
+
+  const filterComm = (events) => {
     const isCommEmpty = Object.keys(filterVals.comms).every(
       (comm) => !filterVals.comms[comm],
     );
     if (!isCommEmpty) {
-      return filterEvents.filter((item) => {
+      return events.filter((item) => {
         if (!item.committee) return false;
         return filterVals.comms[item.committee];
       });
     }
-    return filterEvents;
+    return events;
   };
-  const filterDays = (filterEvents) => {
+
+  const filterDays = (events) => {
     const isDaysEmpty = Object.keys(filterVals.days).every(
       (day) => !filterVals.days[day],
     );
     if (!isDaysEmpty) {
-      return filterEvents.filter((item) => {
+      return events.filter((item) => {
         const date = new Date(item.start);
         const itemDay = Object.keys(filterVals.days)[date.getDay()];
         return filterVals.days[itemDay];
       });
     }
-    return filterEvents;
+    return events;
   };
-  const filterLoc = (filterEvents) => {
+
+  const filterLoc = (events) => {
     const isLocEmpty = Object.keys(filterVals.loc).every((loc) => !filterVals.loc[loc]);
     if (!isLocEmpty) {
-      return filterEvents.filter((item) => {
+      return events.filter((item) => {
         const itemLoc = item.location.toLowerCase().includes('zoom') ? 'Online' : 'In-Person';
         return filterVals.loc[itemLoc];
       });
     }
-    return filterEvents;
+    return events;
   };
+
   const handleSearch = () => {
     // Check search input
     const lowerCaseSearch = searchValue.toLowerCase();
-    let allEvents = events.filter((item) =>
+    let filteredEvents = allEvents.filter((item) =>
       [item.title, item.committee, item.location, item.description].some(
         (itemsToSearch) =>
           String(itemsToSearch).toLowerCase().includes(lowerCaseSearch),
       ),
     );
-    allEvents = filterTime(allEvents);
-    allEvents = filterComm(allEvents);
-    allEvents = filterDays(allEvents);
-    allEvents = filterLoc(allEvents);
-    const newEvents = allEvents.map((original_event, index) => ({
+    filteredEvents = filterTime(filteredEvents);
+    filteredEvents = filterComm(filteredEvents);
+    filteredEvents = filterDays(filteredEvents);
+    filteredEvents = filterLoc(filteredEvents);
+    const newEvents = filteredEvents.map((original_event, index) => ({
       ...original_event,
       id: index,
     }));

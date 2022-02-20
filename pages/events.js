@@ -31,7 +31,7 @@ const googleCalendarShare = 'https://calendar.google.com/calendar/u/2?cid=YWNtYn
 
 function Events() {
 	const [activeEvent, setActiveEvent] = useState(null);
-	const [indexedEvents,setIndexedEvents] = useState(events.map((event, index) => ({...event, id: index})));
+	const [indexedEvents, setIndexedEvents] = useState(events.map((event, index) => ({...event, id: index})));
 
 	return (
 		<Layout>
