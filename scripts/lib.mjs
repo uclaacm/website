@@ -4,6 +4,7 @@ const getCssStringFromCommittee = (committee) => {
   switch (committee.trim()) {
     case 'General':
     case 'Impact': // we should change the branding here soon
+    case 'External':
       return 'board';
     case 'Teach LA':
       return 'teach-la';

@@ -22,9 +22,10 @@ export default class Carousel extends React.Component {
 					<a
 						href={item} target="_blank"
 						rel="noreferrer noopener"
-						key={i}>
-							{/* TODO: somehow encode alt tags here! */}
-							<Image src={item} width={IMAGE_WIDTH} height={IMAGE_WIDTH} alt="decorative carousel image" />
+						key={i}
+						tabIndex="-1"
+						>
+							<Image src={item} width={IMAGE_WIDTH} height={IMAGE_WIDTH} alt="" />
 					</a>),
 			});
 		}
