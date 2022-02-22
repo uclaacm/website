@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import { Calendar, momentLocalizer } from 'react-big-calendar';
 
 import Banner from '../components/Banner';
+import Filters from '../components/Events/Filters';
 import SelectedEvent from '../components/Events/SelectedEvent';
 import Layout from '../components/Layout';
 
@@ -26,11 +27,12 @@ const getEventClassByEvent = (event) => {
 	});
 };
 
-const indexedEvents = events.map((original_event, index) => ({...original_event, id: index}));
 const googleCalendarShare = 'https://calendar.google.com/calendar/u/2?cid=YWNtYnJ1aW5zQGdtYWlsLmNvbQ';
 
 function Events() {
 	const [activeEvent, setActiveEvent] = useState(null);
+	const [indexedEvents, setIndexedEvents] = useState(events.map((event, index) => ({...event, id: index})));
+
 	return (
 		<Layout>
 			<NextSeo
@@ -55,19 +57,28 @@ function Events() {
 					Take a look at our fancy calendar. Or, <a href={googleCalendarShare} target="_blank" rel="noopener noreferrer">subscribe to our Google Calendar</a>!
 				</p>
 				<div className={styles['calendar-view-container']}>
-					<Calendar
-						localizer={localizer}
-						events={indexedEvents}
-						startAccessor={(event) => new Date(event.start)}
-						endAccessor={(event) => new Date(event.end)}
-						className={styles['calendar-size-controller']}
-						onSelectEvent={setActiveEvent}
-						eventPropGetter={getEventClassByEvent}
-						// matt says: using these props this way *feels wrong*
-						min={new Date('August 19, 1975 9:00:00')}
-						max={new Date('August 19, 1975 22:00:00')}
-						popup={true}
-					/>
+					<div>
+						<Filters handleChange={(newEvents) => setIndexedEvents(newEvents)}/>
+						<Calendar
+							localizer={localizer}
+							events={indexedEvents}
+							startAccessor={(event) => new Date(event.start)}
+							endAccessor={(event) => new Date(event.end)}
+							className={styles['calendar-size-controller']}
+							onSelectEvent={setActiveEvent}
+							eventPropGetter={getEventClassByEvent}
+							// matt says: using these props this way *feels wrong*
+							min={new Date('August 19, 1975 9:00:00')}
+							max={new Date('August 19, 1975 22:00:00')}
+							popup={true}
+							views={{
+								month: true,
+								week: true,
+								day: true,
+								agenda: true,
+							}}
+						/>
+					</div>
 					<SelectedEvent event={activeEvent}/>
 				</div>
 				<p>
