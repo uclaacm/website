@@ -3,6 +3,7 @@ import React from 'react';
 
 import Banner from '../../components/Banner';
 import Layout from '../../components/Layout';
+import OfficerHistoryCard from '../../components/OfficerHistoryCard';
 
 import officers from '../../data/officer-history';
 
@@ -26,7 +27,7 @@ function OfficerHistory() {
 			/>
 			<Banner decorative />
 			<div className="content-container-tight">
-        {officers.map(officer => <p key={officer.name}>{officer.name} | {officer.year} | {officer.roles.join(', ')} </p>)}
+        {officers.map(officer => <OfficerHistoryCard {...officer} key={officer.name + officer.year}/>)}
 			</div>
 		</Layout>
 	);
