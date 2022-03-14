@@ -7,7 +7,7 @@ export default [
 	{
 		name: 'Zack Pakin',
 		title: 'External Vice President',
-		image: '/images/officers/ZackPakin.jpg',
+		image: '/images/officers/ZackPakin.jpeg',
 	},
 	{
 		name: 'Sujay Jain',
@@ -42,7 +42,7 @@ export default [
 	{
 		name: 'Robert Lee',
 		title: 'President, ICPC',
-		image: '/images/officers/RobertLee.jpeg',
+		image: '/images/officers/RobertLee.jpg',
 	},
 	{
 		name: 'Ray Hsiao',
@@ -62,7 +62,7 @@ export default [
 	{
 		name: 'Stephen Kelman',
 		title: 'Co-President, Cyber',
-		image: '/images/officers/StephenKelman.jpg',
+		image: '/images/officers/StephenKelman.png',
 	},
 	{
 		name: 'Milo Kearney',
