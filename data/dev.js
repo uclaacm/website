@@ -1,10 +1,18 @@
 export const people = [
-  {
-		name: 'Advaith Gowrishetty',
+	{	name: 'Matthew Nieva',
 		pronouns: 'he/him',
 		position: 'Dev Team Director',
-		major: 'Computer Science Major',
+		major: 'Computer Science and Engineering Major',
 		year: 2024,
+		img: '/images/officers/MattNieva.jpeg',
+		alt: 'Matt standing in front of a tree',
+	},
+	{
+		name: 'Advaith Gowrishetty',
+		pronouns: 'he/him',
+		position: 'Dev Team Advisor',
+		major: 'Computer Science Major',
+		year: 2023,
 		img: '/images/officers/AdvaithGowrishetty.jpg',
 		alt: 'Advaith standing in a field',
 	},
@@ -16,15 +24,6 @@ export const people = [
 		year: 2022,
 		img: '/images/officers/NhiVan.jpg',
 		alt: 'Nhi standing in front of a bush',
-	},
-	{
-		name: 'Anna Guo',
-		pronouns: 'she/her',
-		position: 'Dev Team Project Manager',
-		major: 'Computational and Systems Biology Major',
-		year: 2024,
-		img: '/images/officers/AnnaGuo.jpg',
-		alt: 'Anna standing in front of a fence',
 	},
 	{
 		name: 'Dylon Tjanaka',
@@ -83,7 +82,7 @@ export const people = [
 	{
 		name: 'Khanh Nguyen',
 		pronouns: 'he/him',
-		position: 'Dev Team Intern',
+		position: 'Dev Team Officer',
 		major: 'Data Theory Major',
 		year: 2023,
 		img: '/images/officers/KhanhNguyen.jpg',
@@ -92,7 +91,7 @@ export const people = [
 	{
 		name: 'Isha Rajput',
 		pronouns: 'she/her',
-		position: 'Dev Team Intern',
+		position: 'Dev Team Officer',
 		major: 'Computer Science Major',
 		year: 2024,
 		img: '/images/officers/IshaRajput.jpg',
@@ -101,7 +100,7 @@ export const people = [
 	{
 		name: 'Nathan Endow',
 		pronouns: 'he/him',
-		position: 'Dev Team Intern',
+		position: 'Dev Team Officer',
 		major: ' Computer Science and Engineering Major',
 		year: 2024,
 		img: '/images/officers/NathanEndow.jpg',
@@ -110,7 +109,7 @@ export const people = [
 	{
 		name: 'Ramsey Boyce',
 		pronouns: 'he/him',
-		position: 'Dev Team Intern',
+		position: 'Dev Team Officer',
 		major: 'Electrical Engineering Major',
 		year: 2024,
 		img: '/images/officers/RamseyBoyce.jpg',
@@ -119,7 +118,7 @@ export const people = [
 	{
 		name: 'Tristan Que',
 		pronouns: 'he/him',
-		position: 'Dev Team Intern',
+		position: 'Dev Team Officer',
 		major: 'Computer Science Major',
 		year: 2023,
 		img: '/images/officers/TristanQue.jpg',
@@ -128,7 +127,7 @@ export const people = [
 	{
 		name: 'Arvin Ding',
 		pronouns: 'he/him',
-		position: 'Dev Team Intern',
+		position: 'Dev Team Officer',
 		major: 'Computer Science Major',
 		year: 2024,
 		img: '/images/officers/ArvinDing.jpg',
@@ -137,7 +136,7 @@ export const people = [
 	{
 		name: 'Sidharth Reddy Patllollu',
 		pronouns: 'he/him',
-		position: 'Dev Team Intern',
+		position: 'Dev Team Officer',
 		major: 'Computer Science and Engineering Major',
 		year: 2024,
 		img: '/images/officers/SidharthPatlollu.png',
@@ -146,7 +145,7 @@ export const people = [
 	{
 		name: 'Jason Inaba',
 		pronouns: 'he/him',
-		position: 'Dev Team Intern',
+		position: 'Dev Team Officer',
 		major: 'Computer Science Major',
 		year: 2024,
 		img: '/images/officers/JasonInaba.jpg',
