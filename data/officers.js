@@ -22,7 +22,7 @@ export default [
 	{
 		name: 'Nareh Agazaryan',
 		title: 'Co-President, Hack',
-		image: '/images/officers/NarehAgazaryan.jpg',
+		image: '/images/officers/NarehAgazaryan.png',
 	},
 	{
 		name: 'Aman Oberoi',
