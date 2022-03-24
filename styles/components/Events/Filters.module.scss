@@ -3,7 +3,7 @@
 .filter {
   padding-bottom: 2.5rem;
   position: relative;
-  z-index: 99;
+  z-index: 9;
   @media screen and (min-width: $tablet-breakpoint) {
     max-width: calc(75rem - 300px - 2rem - 3em) !important;
     width: calc(100vw - 300px - 2rem - 3em) !important;
