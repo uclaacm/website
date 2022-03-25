@@ -1,0 +1,94 @@
+@import '../../variables.scss';
+
+.filter {
+  padding-bottom: 2.5rem;
+  position: relative;
+  z-index: 9;
+  @media screen and (min-width: $tablet-breakpoint) {
+    max-width: calc(75rem - 300px - 2rem - 3em) !important;
+    width: calc(100vw - 300px - 2rem - 3em) !important;
+  }
+  @media screen and (max-width: 1024px) {
+    height: 50px;
+    text-align: center;
+  }
+}
+
+.inner {
+  left: 0;
+  position: absolute;
+  right: 0;
+}
+
+.filteroptions {
+  background-color: white;
+  border: 1px solid lightgray;
+  border-radius: 0 0 1rem 1rem;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  padding: 0 1rem 1rem;
+  position: relative;
+  @media screen and (max-width:1024px) {
+    grid-template-columns: 40% 40%;
+    text-align: left;
+  }
+  @media screen and (max-width: 434px) {
+    grid-template-columns: 100%;
+    text-align: left;
+  }
+}
+
+.searchbar {
+  border-color: lightgray;
+  border-radius: 0.5rem;
+  border-width: 1px;
+  font-size: 1rem;
+  height: 1.5rem;
+  width: 20rem;
+  @media screen and (max-width:1024px) {
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    width: 15rem;
+  }
+}
+
+.searchbutton {
+  background-color: #93A5BF;
+  border: 0;
+  border-radius: 0.5rem;
+  color: white;
+  font-family: $font-header;
+  font-weight: 600;
+  height: 1.5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  width: 6rem;
+
+  &:hover {
+    background-color: #E6E6E6;
+    color: $acm-black;
+    cursor: pointer;
+  }
+}
+
+.arrow {
+  padding-left: 15px;
+  vertical-align: middle;
+}
+
+.header {
+  margin-bottom: 0.25rem;
+}
+
+.timecontainer {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+}
+
+input[type=time].timeinput {
+  font-family: $font-display;
+}

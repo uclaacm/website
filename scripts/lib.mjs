@@ -1,9 +1,10 @@
 import moment from 'moment';
 
 const getCssStringFromCommittee = (committee) => {
-  switch (committee) {
+  switch (committee.trim()) {
     case 'General':
     case 'Impact': // we should change the branding here soon
+    case 'External':
       return 'board';
     case 'Teach LA':
       return 'teach-la';
@@ -51,15 +52,24 @@ const generateSingleEvent = ({
     end = moment(`${date} ${endHr} PM`, 'YYYY-MM-DD LT').valueOf();
   }
 
-  if (!links) {
+  if(!links){
     links = [];
-    if (fblink) {
-      links.push({
-        text: 'Facebook Event',
-        href: fblink,
-        ext: true,
-      });
-    }
+  }
+  if(location.includes('ucla.zoom.us')) {
+    const zoomLink = location;
+    location = 'Zoom';
+    links.push({
+      text: 'Zoom Link',
+      href: zoomLink,
+      ext: true,
+    });
+  }
+  if (fblink) {
+    links.push({
+      text: 'Facebook Event',
+      href: fblink,
+      ext: true,
+    });
   }
 
   return {

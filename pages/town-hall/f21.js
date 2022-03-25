@@ -1,4 +1,4 @@
-import { faFileAlt } from '@fortawesome/free-solid-svg-icons';
+import { faCalendarCheck, faFileAlt, faQuestion, faFilePowerpoint } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { NextSeo } from 'next-seo';
 import Image from 'next/image';
@@ -6,6 +6,7 @@ import Link from 'next/link';
 import React, { useRef } from 'react';
 
 import Banner from '../../components/Banner';
+import CountdownElement from '../../components/CountdownElement';
 import Layout from '../../components/Layout';
 
 import TestimonialsCourseChanges from '../../public/images/town-hall/testimonials-course-changes.png';
@@ -18,11 +19,14 @@ const inlineButtonListStyle = {
   marginBottom: '0.5em',
 };
 
+const TEST_START_TIMESTAMP = + new Date('2021-11-29T21:07:00-08:00');
+
 function TownHall() {
   const embed2021WRef = useRef(null);
   // note: this does not work :( prob need useEffect + useState!
   const embedWidth = embed2021WRef.current ? embed2021WRef.current.offsetWidth : 500;
 	return (
+    <CountdownElement switchTime={TEST_START_TIMESTAMP} fallback={<span>come back soon :)</span>}>
 		<Layout>
 			<NextSeo
 				title="Fall 2021 Computer Science Town Hall | ACM at UCLA"
@@ -68,11 +72,19 @@ function TownHall() {
         </p>
         <ul className="list-unstyled text-center">
           <li style={inlineButtonListStyle}>
-            <Link href="https://bit.ly/CSTownHallFall2021RSVP"><a className="button" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faFileAlt} fixedWidth aria-hidden={true} /> RSVP now!</a></Link>
+            <Link href="https://bit.ly/CSTownHallFall2021RSVP"><a className="button" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faCalendarCheck} fixedWidth aria-hidden={true} /> RSVP now!</a></Link>
           </li>
           {' '}
           <li style={inlineButtonListStyle}>
             <Link href="#surveys"><a className="button"><FontAwesomeIcon icon={faFileAlt} fixedWidth aria-hidden={true} /> Answer Survey Questions!</a></Link>
+          </li>
+          {' '}
+          <li style={inlineButtonListStyle}>
+            <Link href="https://app.sli.do/event/jcaoo1z7"><a className="button" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faQuestion} fixedWidth aria-hidden={true} /> Ask questions in advance!</a></Link>
+          </li>
+          {' '}
+          <li style={inlineButtonListStyle}>
+            <Link href="https://docs.google.com/presentation/d/1IDtHk52HApxHTigT9aAXf0-fZNeYUQ9F9MYfHBybBNs/edit?usp=sharing"><a className="button" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faFilePowerpoint} fixedWidth aria-hidden={true} /> Event Slides</a></Link>
           </li>
         </ul>
         <hr />
@@ -133,6 +145,7 @@ function TownHall() {
         </div>
 			</div>
 		</Layout>
+    </CountdownElement>
 	);
 }
 

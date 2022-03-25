@@ -32,9 +32,9 @@ function Home () {
 			/>
 			<div className="home-page text-center">
 				<ContentBanner
-					title="Want to voice your concerns to the UCLA CS Department?"
-					ctaText="Attend the CS Town Hall!"
-					ctaLink="/town-hall/f21"
+					title="See what happened at our Winter General Meeting!"
+					ctaText="Learn More"
+					ctaLink="/gm/w22"
 				/>
 				<Banner />
 				<div className="content-section">
@@ -73,7 +73,7 @@ function Home () {
 						</div>
 					</div>
 				</div>
-				<Carousel images={carousel.images} />
+				<Carousel images={carousel.images} aria-hidden="true"/>
 			</div>
 		</Layout>
 	);

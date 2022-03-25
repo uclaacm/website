@@ -33,13 +33,13 @@ export default {
             date: '11/10-11/11',
             name: 'Decisions Released',
             info: 'Hear back via Email what committee(s) accepted you (if you applied to multiple, decide which one you would like to intern for)',
-            active: false,
+            active: true,
         },
         {
             date: '11/13',
             name: 'Official ACM Onboarding',
             info: 'Learn what you need to know as an ACM Intern',
-            active: false,
+            active: true,
         },
     ],
     testimonials: [
