@@ -66,13 +66,18 @@ export default [
 	},
 	{
 		name: 'Milo Kearney',
-		title: 'President, Teach LA',
+		title: 'General President, Teach LA',
 		image: '/images/officers/MiloKearney.jpg',
 	},
 	{
 		name: 'Eden Yu',
 		title: 'Vice President, Teach LA',
-		image: '/images/officers/EdenYu.jpg',
+		image: '/images/officers/EdenYu.jpeg',
+	},
+	{
+		name: 'Jiin Kim',
+		title: 'Dev President, Teach LA',
+		image: '/images/officers/JiinKim.jpg'
 	},
 	{
 		name: 'Muthu Palaniappan',
@@ -82,6 +87,6 @@ export default [
 	{
 		name: 'Amy Seo',
 		title: 'Co-President, Design',
-		image: '/images/officers/AmySeo.jpg',
+		image: '/images/officers/AmySeo.png',
 	},
 ];

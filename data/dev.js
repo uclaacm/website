@@ -1,11 +1,15 @@
+/* please have the dev team director as the first element of this array, so that the 
+dev team page correctly autopopulates the director's data! */
 export const people = [
+//dev team director also has an extra email field as they are the point of contact for the dev team
 	{	name: 'Matthew Nieva',
 		pronouns: 'he/him',
 		position: 'Dev Team Director',
 		major: 'Computer Science and Engineering Major',
 		year: 2024,
-		img: '/images/officers/MattNieva.jpeg',
-		alt: 'Matt standing in front of a tree',
+		img: '/images/officers/MattNieva.jpg',
+		alt: 'Matt standing below some arches',
+		email: 'matthewcn56@gmail.com'
 	},
 	{
 		name: 'Advaith Gowrishetty',
@@ -19,7 +23,7 @@ export const people = [
 	{
 		name: 'Nhi Van',
 		pronouns: 'she/her',
-		position: 'Dev Team Nhi',
+		position: 'Dev Team Advisor',
 		major: 'Computer Science Major',
 		year: 2022,
 		img: '/images/officers/NhiVan.jpg',
@@ -42,15 +46,6 @@ export const people = [
 		year: 2023,
 		img: '/images/officers/JeremyTsujihara.jpg',
 		alt: 'Jeremy smiling while sitting in a restaurant',
-	},
-	{
-		name: 'Julia Yin',
-		pronouns: 'she/her',
-		position: 'Dev Team Officer',
-		major: 'Linguistics & Computer Science Major',
-		year: 2023,
-		img: '/images/officers/JuliaYin.jpg',
-		alt: 'Julia standing in a hallway with pillars',
 	},
 	{
 		name: 'Saagar Mahadev',
