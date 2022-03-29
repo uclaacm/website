@@ -77,7 +77,7 @@ export default [
 	{
 		name: 'Jiin Kim',
 		title: 'Dev President, Teach LA',
-		image: '/images/officers/JiinKim.jpg'
+		image: '/images/officers/JiinKim.jpg',
 	},
 	{
 		name: 'Muthu Palaniappan',
