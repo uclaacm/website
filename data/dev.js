@@ -1,7 +1,4 @@
-/* please have the dev team director as the first element of this array, so that the
-dev team page correctly autopopulates the director's data! */
 export const people = [
-//dev team director also has an extra email field as they are the point of contact for the dev team
 	{	name: 'Matthew Nieva',
 		pronouns: 'he/him',
 		position: 'Dev Team Director',
@@ -9,7 +6,6 @@ export const people = [
 		year: 2024,
 		img: '/images/officers/MattNieva.jpg',
 		alt: 'Matt standing below some arches',
-		email: 'matthewcn56@gmail.com',
 	},
 	{
 		name: 'Advaith Gowrishetty',

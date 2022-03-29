@@ -10,7 +10,10 @@ import { people } from '../data/dev';
 
 import styles from '../styles/pages/Dev.module.scss';
 
-const devTeamDirector = people[0];
+const devTeamDirector = {
+	name: 'Matthew Nieva',
+	email: 'matthewcn56@gmail.com',
+};
 
 function DevTeam() {
 	return (

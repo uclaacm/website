@@ -27,7 +27,7 @@ function Officers(props){
 		<div className="grid-desktop-3">
 			{
 				props.officers.map(
-					officer => <Officer officer={officer} key={officer.email} />,
+					officer => <Officer officer={officer} key={officer.image} />,
 				)
 			}
 		</div>
