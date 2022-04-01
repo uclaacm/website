@@ -21,7 +21,7 @@ const allyshipSpaces = [
       'An allyship space on Western perception of kpop and other Asian media, including fetishization and otherization.',
     slides:
       'https://drive.google.com/drive/folders/16Jk212gr2jC4xJbKEkFVxwdukwF902-o',
-    pic: dontGiveThemTheAux,
+    img: dontGiveThemTheAux,
     alt: "a slide titled \"don't give them the aux, they're going to play kpop: asian representation and the otherization of kpop. features four prominent female Kpop idols.",
   },
   {
@@ -33,7 +33,7 @@ const allyshipSpaces = [
       'An allyship space on the manifestation and perpetuation of cisgender privilege.',
     slides:
       'https://drive.google.com/file/d/1m_224Uf6mj6AdYZGglnhiXgE-Mq2uJyL/view?usp=sharing',
-    pic: cisgenderPrivilege,
+    img: cisgenderPrivilege,
     alt: 'a slide deck titled "Cisgender Privilege", with the date and time as Friday May 14th, 6:15 - 6:45 PM PDT. features an abstract sphere and ribbon.',
   },
   {
@@ -44,7 +44,7 @@ const allyshipSpaces = [
     description: 'An allyship space on demonstrating responsible allyship.',
     slides:
       'https://drive.google.com/file/d/1Vs6yfcnRI-0HIuHa7VSalkHMGR_mwwld/view?usp=sharing',
-    pic: responsibleAllyship,
+    img: responsibleAllyship,
     alt: 'a slide deck that says "a teach la allyship space: responsible allyship" with abstract shapes as the background',
   },
   {
@@ -56,7 +56,7 @@ const allyshipSpaces = [
       'An allyship space on housing insecurity within tech hubs, and potential solutions.',
     slides:
       'https://drive.google.com/file/d/1p6ebnqTLtXOtgJgK_Ed9emhJVeIadSye/view?usp=sharing',
-    pic: housingCrisisTechHubs,
+    img: housingCrisisTechHubs,
     alt: 'a slide titled "the housing crisis in tech hubs: kristie lim and megan pham", with a house and some trees',
   },
   {
@@ -68,7 +68,7 @@ const allyshipSpaces = [
       'An allyship space on AO3 (Archive of Our Own) and fanfiction as a safe space.',
     slides:
       'https://drive.google.com/file/d/1eV0zbnuLzySXRlfESDiH6xucTsKTHQ7W/view?usp=sharing',
-    pic: ao3,
+    img: ao3,
     alt: 'a simple slide with the title "AO3: a brief introduction"',
   },
   {
@@ -80,7 +80,7 @@ const allyshipSpaces = [
       'An allyship space on physical forms of self-care and how to practice it.',
     slides:
       'https://drive.google.com/file/d/1eV0zbnuLzySXRlfESDiH6xucTsKTHQ7W/view?usp=sharing',
-    pic: selfCare,
+    img: selfCare,
     alt: 'a slide deck that says "self-care, an allyship space by megha!" with a caption "give yourself the same care and attention that you give to others and watch yourself bloom"',
   },
   {
@@ -92,7 +92,7 @@ const allyshipSpaces = [
       'An allyship space on gender, intersectionality, and the importance of representation in tech.',
     slides:
       'https://drive.google.com/file/d/1Agve-hqXOZ4D0H2PnzaklDcazoND-39F/view?usp=sharing',
-    pic: qtCS,
+    img: qtCS,
     alt: 'a slide that says "queer + trans representation in computer science, an ACM JEDI allyship space by arjun (they/them) and sharvani (she/her). features a gradient moon.',
   },
   {
@@ -104,7 +104,7 @@ const allyshipSpaces = [
       'An allyship space on juggling academic responsibilities with personal well-being.',
     slides:
       'https://drive.google.com/file/d/10d3Q7aK4WMN4nGMvcNyvOG1ONL5RuaC2/view?usp=sharing',
-    pic: makingSchoolAChoice,
+    img: makingSchoolAChoice,
     alt: 'a slide that says "Making School a Choice", with fall-themed decorations like apples and acorns',
   },
   {
@@ -116,7 +116,7 @@ const allyshipSpaces = [
       'An allyship space on OCD and ADHD and responding to ableism, as well as implications regarding stigma, diagnoses, and academics',
     slides:
       'https://drive.google.com/file/d/1D06JKksYWq-FsyDhAGvqjRihCTmJhFxD/view?usp=sharing',
-    pic: ocdAdhd,
+    img: ocdAdhd,
     alt: 'a simple slide that says "OCD + ADHD, Sophie Schoenmeyer and Arjun Subramonian"',
   },
   {
@@ -128,7 +128,7 @@ const allyshipSpaces = [
       'An allyship space on improving mental and physical health and seeking support systems.',
     slides:
       'https://drive.google.com/file/d/1r9zEz5O8hLFaXtj_pOdMhjd9pgSzGkof/view?usp=sharing',
-    pic: healthyLiving,
+    img: healthyLiving,
     alt: 'a simple cover slide with the title "healthy living: eugene and matt\'s jedi allyship presentation", and some ferns',
   },
   {
@@ -140,7 +140,7 @@ const allyshipSpaces = [
       'An allyship space on disability, ableist culture, and what can tech do to improve accessibility.',
     slides:
       'https://drive.google.com/file/d/1baLskai0nIdJJESyieke3z4WkzNu3OTK/view?usp=sharing',
-    pic: disabilityAccessibility,
+    img: disabilityAccessibility,
     alt: 'the cover slide for the talk, with a silhouette of a person sitting with a laptop on their lap and a chat bubble next to their head.',
   },
 ];
@@ -157,7 +157,7 @@ const jedis = [
         <b>red flag:</b> likes using 1 ply toilet paper
       </>
     ),
-    pic: '/images/jedi/jedi-officers/helia.jpg',
+    img: '/images/jedi/jedi-officers/helia.jpg',
     alt: 'helia pointing at a sign saying "Women"',
   },
   {
@@ -170,7 +170,7 @@ const jedis = [
         <b>red flag:</b> will kick you out of the Sproul Cove 9th floor lounge
       </>
     ),
-    pic: '/images/jedi/jedi-officers/archie.jpeg',
+    img: '/images/jedi/jedi-officers/archie.jpeg',
     alt: 'archie in a dress in a backyard',
   },
   {
@@ -183,7 +183,7 @@ const jedis = [
         <b>red flag:</b> cuwustine!!!! 🥺🥺 🚩!
       </>
     ),
-    pic: '/images/jedi/jedi-officers/christine.jpg',
+    img: '/images/jedi/jedi-officers/christine.jpg',
     alt: 'christine wearing a scarf and smiling at the camera',
   },
   {
@@ -196,7 +196,7 @@ const jedis = [
         <b>red flag:</b> reads AOT fanfiction
       </>
     ),
-    pic: '/images/jedi/jedi-officers/maya.jpg',
+    img: '/images/jedi/jedi-officers/maya.jpg',
     alt: 'maya in overalls standing in front of an art piece with a threatening expression',
   },
   {
@@ -209,7 +209,7 @@ const jedis = [
         <b>red flag:</b> is sus
       </>
     ),
-    pic: '/images/jedi/jedi-officers/jiin.jpg',
+    img: '/images/jedi/jedi-officers/jiin.jpg',
     alt: 'jiin wearing an animal hat at Joshua Tree',
   },
   {
@@ -223,7 +223,7 @@ const jedis = [
         <b>red flag:</b> will hit your car at the McDonalds drive thru at 1 AM
       </>
     ),
-    pic: '/images/jedi/jedi-officers/paymon.png',
+    img: '/images/jedi/jedi-officers/paymon.png',
     alt: 'paymon smiling in a park!',
   },
   {
@@ -231,13 +231,13 @@ const jedis = [
     pronouns: 'he/him',
     bio: (
       <>
-        I have never bought an eraser in my life, I just keep picking them up
+        I have never bought an eraser in my life, I just keep imgking them up
         off the floor
         <br />
         <b>red flag:</b> hates Rodrick Heffley
       </>
     ),
-    pic: '/images/jedi/jedi-officers/stephen.jpg',
+    img: '/images/jedi/jedi-officers/stephen.jpg',
     alt: 'bald stephen staring scarily while a flashlight is pointed at his face from underneath',
   },
   {
@@ -272,7 +272,7 @@ const jedis = [
         red flag: plays league :barf_emoji: RED FALGSDFSDFSDKF :barf: :barf: y
       </>
     ),
-    pic: '/images/jedi/jedi-officers/edmond.jpg',
+    img: '/images/jedi/jedi-officers/edmond.jpg',
     alt: 'edmond in front of some flowers',
   },
 ];
