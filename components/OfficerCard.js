@@ -20,8 +20,9 @@ function Officer({
   if (style && style.toLowerCase() === 'jedi') {
     return (
       <div className={styles['mb-2']}>
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img className={styles['jedi-profile-img']} src={img} alt={alt} />
+        <div className={styles['jedi-profile-img']}>
+          <Image src={img} alt={alt} width={250} height={250}/>
+        </div>
         <div className={styles['jedi-card-body']}>
           <h2 className={styles['jedi-title']}>
             {name} <span className={styles['pronouns-jedi']}>{pronouns}</span>
