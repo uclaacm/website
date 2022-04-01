@@ -6,16 +6,6 @@
   padding: 0 1em;
 }
 
-.pronouns {
-  margin-top: 0;
-  padding-top: 0;
-}
-
-.name {
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
-
 @media (min-width: $tablet-breakpoint) and (max-width: $navbar-breakpoint) {
   .grid-tablet-only-2 {
     display: grid;
