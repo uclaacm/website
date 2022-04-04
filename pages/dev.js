@@ -3,8 +3,8 @@ import Link from 'next/link';
 import React from 'react';
 
 import Banner from '../components/Banner';
-import PersonCard from '../components/Impact/PersonCard';
 import Layout from '../components/Layout';
+import Officers from '../components/OfficerCard';
 
 import { people } from '../data/dev';
 
@@ -88,7 +88,7 @@ function DevTeam() {
 				</p>
 				<h2 className="text-center">People</h2>
 				<div className="grid-desktop-3 text-center-mobile">
-					{people.map((person) => <PersonCard {...person} key={person.name} />)}
+					<Officers officers={people} />
 				</div>
 			</div>
 		</Layout>

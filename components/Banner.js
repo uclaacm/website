@@ -17,6 +17,8 @@ const generateCols = (n, m, classPattern=['']) => {
 				if (name !== '') {
 					classNames.push(classPattern[j % classPattern.length]);
 				} else {
+					// note: this Math.random() is the source of [Warning: Prop `className` did not match. Server: x Client: y]
+					// https://stackoverflow.com/questions/69866771/nextjs-prop-style-did-not-match
 					const r = Math.random();
 					if (r < 0.08)
 						classNames.push('white');
