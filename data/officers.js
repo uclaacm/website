@@ -7,12 +7,12 @@ export default [
 	{
 		name: 'Zack Pakin',
 		title: 'External Vice President',
-		image: '/images/officers/ZackPakin.jpeg',
+		image: '/images/officers/ZackPakin.jpg',
 	},
 	{
 		name: 'Sujay Jain',
 		title: 'Internal Vice President',
-		image: '/images/officers/SujayJain.jpeg',
+		image: '/images/officers/SujayJain.jpg',
 	},
 	{
 		name: 'Christina Tong',
@@ -22,7 +22,7 @@ export default [
 	{
 		name: 'Nareh Agazaryan',
 		title: 'Co-President, Hack',
-		image: '/images/officers/NarehAgazaryan.png',
+		image: '/images/officers/NarehAgazaryan.jpg',
 	},
 	{
 		name: 'Aman Oberoi',
@@ -62,7 +62,7 @@ export default [
 	{
 		name: 'Stephen Kelman',
 		title: 'Co-President, Cyber',
-		image: '/images/officers/StephenKelman.png',
+		image: '/images/officers/StephenKelman.jpg',
 	},
 	{
 		name: 'Milo Kearney',
@@ -72,7 +72,7 @@ export default [
 	{
 		name: 'Eden Yu',
 		title: 'Vice President, Teach LA',
-		image: '/images/officers/EdenYu.jpeg',
+		image: '/images/officers/EdenYu.jpg',
 	},
 	{
 		name: 'Jiin Kim',

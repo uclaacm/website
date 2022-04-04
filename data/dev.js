@@ -67,7 +67,7 @@ export const people = [
 		position: 'Dev Team Officer',
 		major: 'Computer Science Major',
 		year: 2024,
-		img: '/images/officers/SamarthUpadhyaya.jpeg',
+		img: '/images/officers/SamarthUpadhyaya.jpg',
 		alt: 'Samarth smiling while standing in front of a mountain',
 	},
 	{
@@ -130,7 +130,7 @@ export const people = [
 		position: 'Dev Team Officer',
 		major: 'Computer Science and Engineering Major',
 		year: 2024,
-		img: '/images/officers/SidharthPatlollu.png',
+		img: '/images/officers/SidharthPatlollu.jpg',
 		alt: 'Sidharth smiling',
 	},
 	{
