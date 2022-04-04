@@ -10,6 +10,11 @@ import { people } from '../data/dev';
 
 import styles from '../styles/pages/Dev.module.scss';
 
+const devTeamDirector = {
+	name: 'Matthew Nieva',
+	email: 'matthewcn56@gmail.com',
+};
+
 function DevTeam() {
 	return (
 		<Layout>
@@ -67,13 +72,13 @@ function DevTeam() {
 							{/* eslint-disable-next-line max-len */}
 							&nbsp;is an ongoing project aimed at generating shortened links for use by our committees. The link shortener is built with Flask.</p>
 					<h3>???</h3>
-						<p className={styles['project-info']}>Have an idea for a project or any questions? Feel free to contact <a href="mailto:advaithg@g.ucla.edu">Advaith Gowrishetty (advaithg@g.ucla.edu)</a>, our Dev Team Director.</p>
+						<p className={styles['project-info']}>Have an idea for a project or any questions? Feel free to contact <a href={`mailto:${devTeamDirector.email}`}>{`${devTeamDirector.name} (${devTeamDirector.email})`}</a>, our Dev Team Director.</p>
 
 				</div>
 				<h2 className="text-center">Our Commitment to Open Source</h2>
 				<p className={styles['project-info']}>
 					Everything we build is&nbsp;
-					<Link href='https://opensource-acm-ucla.netlify.app/'>
+					<Link href='https://opensource.uclaacm.com/'>
 						<a target='_blank' rel='noopener noreferrer'>open source</a>
 					</Link>!
 					In the spirit of open-source, anyone is welcome to view and contribute to our projects on&nbsp;
