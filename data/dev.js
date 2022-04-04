@@ -35,15 +35,6 @@ export const people = [
 		alt: 'Dylon standing in front of the Great Wall of China',
 	},
 	{
-		name: 'Jeremy Tsujihara',
-		pronouns: 'he/him',
-		position: 'Dev Team Officer',
-		major: 'Computer Science Major',
-		year: 2023,
-		img: '/images/officers/JeremyTsujihara.jpg',
-		alt: 'Jeremy smiling while sitting in a restaurant',
-	},
-	{
 		name: 'Saagar Mahadev',
 		pronouns: 'he/him',
 		position: 'Dev Team Officer',
