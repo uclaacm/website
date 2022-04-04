@@ -311,6 +311,7 @@ const events = [{
 
   {id: 101,title: 'ACM Game Night',allDay: false,start: 1646535600000,end: 1646542800000,location: ' Sunset Village Learning Center',committee: 'board',description: " Tired after midterms? 😭 Feeling burnt out after CS 32 Project 3? ☠️ Is school just NOT IT right now?\r\nMaybe you’ve been thinking about making new friends…🧑🏻Trying to find that one study buddy that becomes something more than a buddy🙋‍♀️🙋‍♀️🙋‍♀️?!?!? Hopefully, even find the one…\r\nIf so, join us for ACM Game Night at Sunset Village Learning Center 🌅 on Saturday, March 5, 2022, from 7-9PM PST. You can engage in board games, play with the Switch, watch TV, play poker, and more!\r\nThere will also be 🍪🍪🍪INSOMNIA COOKIES🍪🍪🍪for everyone attending. Come chat, interact with others, and make some new friends!\r\nSee you there!!\r\n(It's located @ Delta Terrace next to Cafe 1919 & the Housing Mail Center)",links: [{text: 'Facebook Event',href: ' https://fb.me/e/6ApmQxTbc',ext: true}]},
 
+  {id: 102,title: 'Studio Game Night Social',allDay: false,start: 1649556000000,end: 1649561400000,location: 'Engineering VI 289',committee: 'studio',description: 'Studio Game Night is back! Join Studio this Friday from 7:00 - 9:00 PM at Engineering VI 289 for some chill vibes. Meet up with your fellow SRS team members or meet new people apart of the Studio community. There will be snacks and board games, so come through for a fun break from school before midterms! 🤩',links: []},
 ];
 
 export default events;
