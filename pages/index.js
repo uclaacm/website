@@ -17,7 +17,7 @@ function Home () {
 		<Layout>
 			<NextSeo
 				title="Home | ACM at UCLA"
-				description="ACM at UCLA is UCLA's largest tech community, focused on making tech as accessible as possible. We're split up into an array of committees and initiatives that each focus on a specific area of computer science. Everyone is welcome to join - regardless of major, prior experience, or anything else!"
+				description="The ACM Student Chapter at UCLA is UCLA's largest tech community, focused on making tech as accessible as possible. We're split up into an array of committees and initiatives that each focus on a specific area of computer science. Everyone is welcome to join - regardless of major, prior experience, or anything else!"
 				openGraph={{
 					images: [
 						{
@@ -39,7 +39,7 @@ function Home () {
 				<Banner />
 				<div className="content-section">
 					<h2>The largest Computer Science community at UCLA</h2>
-					<p className="subheading">ACM at UCLA is the largest computer science student organization in Southern California. We welcome students of all backgrounds, interests, and skill levels to join our community and share our love for technology. ACM is comprised of eight committees — each serving a different topic and mission. Our events are open to everyone, regardless of major or experience!</p>
+					<p className="subheading">The ACM Student Chapter at UCLA is the largest computer science student organization in Southern California. We welcome students of all backgrounds, interests, and skill levels to join our community and share our love for technology. Our chapter is comprised of eight committees — each serving a different topic and mission. Our events are open to everyone, regardless of major or experience!</p>
 					<SocialMedia />
 				</div>
 				<br />
