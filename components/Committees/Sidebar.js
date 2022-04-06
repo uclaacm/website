@@ -18,11 +18,12 @@ function SidebarLink(props){
 
 function Sidebar(props){
 	// Check if user has scrolled to the bottom of the page
+	const footerHeight = 507.667; // is there a better way to do this?
 	const [bottom, setBottom] = useState(false);
 	const scrollBottomListener = () => {
 		const difference = document.documentElement.scrollHeight - window.innerHeight;
 		const scrollposition = document.documentElement.scrollTop;
-		setBottom(difference - scrollposition <= 180);
+		setBottom(difference - scrollposition <= footerHeight);
 	};
 
 	useEffect(() => {
