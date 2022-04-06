@@ -6,7 +6,7 @@
   margin-top: 40px;
   padding: 1rem;
   position: fixed;
-  top: 52%;
+  top: 58.5%;
   transform: translateY(-50%);
   transition: opacity 3s ease;
   z-index: 1000;
@@ -15,7 +15,7 @@
     align-items: center;
     color: $font-primary-color;
     display: inline-block;
-    height: 63px;
+    height: 7.5vh;
     position: relative;
     text-align: left;
     transition: transform 0.1s;
@@ -29,8 +29,7 @@
     img {
       display: inline-block;
       height: 2.5vw;
-      margin: 25px 10px;
-      width: vw;
+      margin: 0 10px;
     }
   }
 }
@@ -75,3 +74,8 @@
   }
 }
 
+@media screen and (max-height: $sidebar-breakpoint) {
+  .sidebar-item {
+    display: none;
+  }
+}
