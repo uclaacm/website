@@ -19,7 +19,7 @@ function Impact() {
   return (
     <Layout>
       <NextSeo
-        title="ACM Impact | ACM at UCLA"
+        title="ACM Impact | ACM chapter at UCLA"
         description="ACM Impact is an up-and-coming initiative of ACM whose mission is to start conversations and promote an understanding of how tech and society affect each other. Our aim is to build a community of people who are passionate about ethical technology, socially impactful engineering, and creating a better future for all!"
         openGraph={{
           images: [
@@ -30,13 +30,13 @@ function Impact() {
               alt: 'The ACM Impact banner: a space shuttle taking off, with a moon behind it',
             },
           ],
-          site_name: 'ACM at UCLA',
+          site_name: 'ACM chapter at UCLA',
         }}
       />
       <Banner decorative />
       <div className={styles.container}>
         <div className="text-center">
-          <Image src={impactMotifBanner} alt="Impact by ACM at UCLA" priority />
+          <Image src={impactMotifBanner} alt="Impact by ACM chapter at UCLA" priority />
         </div>
 
         <h2 className="text-center">Tech Ethics.</h2>

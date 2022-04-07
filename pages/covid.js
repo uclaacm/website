@@ -9,7 +9,7 @@ function COVID() {
   return (
     <Layout>
 			<NextSeo
-				title="COVID Policies | ACM at UCLA"
+				title="COVID Policies | ACM chapter at UCLA"
 				description="A detailed discussion of ACM's commitment to a safe return to campus!"
 				openGraph={{
 					images: [
@@ -17,14 +17,14 @@ function COVID() {
 							url: 'https://www.uclaacm.com/images/logo.png',
 							width: 1200,
 							height: 1200,
-							alt: 'The ACM at UCLA logo',
+							alt: 'The ACM chapter at UCLA logo',
 						},
 					],
-					site_name: 'ACM at UCLA',
+					site_name: 'ACM chapter at UCLA',
 				}}
 			/>
       <div className='content-container-tight'>
-        <h1>ACM at UCLA COVID Policies Spring 2022</h1>
+        <h1>ACM chapter at UCLA COVID Policies Spring 2022</h1>
         <p>
           Our plan is approved by <a href="https://sole.ucla.edu/" target="_blank" rel="noopener noreferrer">UCLA SOLE</a> and is a superset of <a href="https://covid-19.ucla.edu/ucla-covid-protocols/" target="_blank" rel="noopener noreferrer">UCLA&apos;s COVID-19 protocols</a> and <a href="http://ph.lacounty.gov/acd/ncorona2019/EducationToolkit/IHE/" target="_blank" rel="noopener noreferrer">LA County Guidelines</a>.
         </p>

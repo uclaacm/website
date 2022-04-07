@@ -31,7 +31,7 @@ function CommitteesPage() {
 	return (
 		<Layout>
 			<NextSeo
-				title="Committees | ACM at UCLA"
+				title="Committees | ACM chapter at UCLA"
 				description="ACM comprises eight committees, each serving a unique topic and mission. Learn more about Studio, ICPC, Design, Cyber, Teach LA, W, AI, and Hack here! All of our events are open to everyone; we want to help you explore your passion!"
 				openGraph={{
 					images: [
@@ -39,10 +39,10 @@ function CommitteesPage() {
 							url: 'https://www.uclaacm.com/images/acm_committees.png',
 							width: 2506,
 							height: 979,
-							alt: 'The ACM at UCLA logo, surrounded by our eight committees: Studio, ICPC, Design, Cyber, Teach LA, W, AI, and Hack.',
+							alt: 'The ACM chapter at UCLA logo, surrounded by our eight committees: Studio, ICPC, Design, Cyber, Teach LA, W, AI, and Hack.',
 						},
 					],
-					site_name: 'ACM at UCLA',
+					site_name: 'ACM chapter at UCLA',
 				}}
 			/>
 			<Banner decorative />

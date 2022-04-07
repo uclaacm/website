@@ -36,7 +36,7 @@ function Events() {
 	return (
 		<Layout>
 			<NextSeo
-				title="Events | ACM at UCLA"
+				title="Events | ACM chapter at UCLA"
 				description="Check out every single event ACM is running this quarter. All 100+! Crazy, right?"
 				openGraph={{
 					images: [
@@ -44,10 +44,10 @@ function Events() {
 							url: 'https://www.uclaacm.com/images/logo.png',
 							width: 1200,
 							height: 1200,
-							alt: 'The ACM at UCLA logo',
+							alt: 'The ACM chapter at UCLA logo',
 						},
 					],
-					site_name: 'ACM at UCLA',
+					site_name: 'ACM chapter at UCLA',
 				}}
 			/>
 			<Banner decorative />

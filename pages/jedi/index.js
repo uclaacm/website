@@ -16,7 +16,7 @@ function JEDIAbout () {
   return (
 		<Layout>
       <NextSeo
-				title="About JEDI | ACM at UCLA"
+				title="About JEDI | ACM chapter at UCLA"
 				description="JEDI is an initiative that aims to make ACM's culture and presence on campus more inclusive. We aim to prioritize equity, diversity, and inclusion within our committees by identifying and addressing areas of improvement in terms of inclusion, as well as better including all minoritized and marginalized groups in tech."
 				openGraph={{
 					images: [
@@ -27,7 +27,7 @@ function JEDIAbout () {
 							alt: 'The JEDI Logo',
 						},
 					],
-					site_name: 'ACM at UCLA',
+					site_name: 'ACM chapter at UCLA',
 				}}
 			/>
       <div className={styles.container}>

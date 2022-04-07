@@ -16,7 +16,7 @@ function Meet() {
   return (
     <Layout>
       <NextSeo
-        title="Meet the JEDIs | ACM at UCLA"
+        title="Meet the JEDIs | ACM chapter at UCLA"
         description="Meet our wonderful JEDIs that make our program happen!"
         openGraph={{
           images: [
@@ -27,7 +27,7 @@ function Meet() {
               alt: 'The JEDI Logo',
             },
           ],
-          site_name: 'ACM at UCLA',
+          site_name: 'ACM chapter at UCLA',
         }}
       />
       <div className={`${styles.container} ${styles['container-padding']}`}>

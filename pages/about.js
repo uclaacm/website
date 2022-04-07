@@ -19,18 +19,18 @@ function About() {
   return (
     <Layout>
       <NextSeo
-        title="About | ACM at UCLA"
-        description="As a student chapter of the international Association for Computing Machinery, ACM at UCLA is the largest Computer Science student organization at UCLA and in Southern California. We welcome students of all backgrounds and skill levels to join our community and share our love for technology!"
+        title="About | ACM chapter at UCLA"
+        description="As a student chapter of the international Association for Computing Machinery, ACM chapter at UCLA is the largest Computer Science student organization at UCLA and in Southern California. We welcome students of all backgrounds and skill levels to join our community and share our love for technology!"
         openGraph={{
           images: [
             {
               url: 'https://www.uclaacm.com/images/logo.png',
               width: 1200,
               height: 1200,
-              alt: 'The ACM at UCLA logo',
+              alt: 'The ACM chapter at UCLA logo',
             },
           ],
-          site_name: 'ACM at UCLA',
+          site_name: 'ACM chapter at UCLA',
         }}
       />
       <div className={styles['about-page']}>
@@ -59,7 +59,7 @@ function About() {
               >
                 Association for Computing Machinery,
               </a>&nbsp;
-              ACM at UCLA is the largest Computer Science student organization
+              ACM chapter at UCLA is the largest Computer Science student organization
               at UCLA and in Southern California. We welcome students of all
               backgrounds and skill levels to join our community and share our
               love for technology!

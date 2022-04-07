@@ -19,15 +19,15 @@ function DevTeam() {
 	return (
 		<Layout>
 			<NextSeo
-				title="ACM Dev Team | ACM at UCLA"
-				description="The ACM Dev Team handles general internal development needs for ACM at UCLA. We maintain and create organization-wide projects such as the website, Discord bot, Membership Portal, and link shortener."
+				title="ACM Dev Team | ACM chapter at UCLA"
+				description="The ACM Dev Team handles general internal development needs for ACM chapter at UCLA. We maintain and create organization-wide projects such as the website, Discord bot, Membership Portal, and link shortener."
 			/>
 			<Banner decorative />
 			<div className={'content-section text-center'}>
 				<h1 className="text-center">Dev Team</h1>
 				<p className={styles['dev-team-info']}>
 					{/* eslint-disable-next-line max-len */}
-					The ACM Dev Team handles general internal development needs for all of ACM at UCLA. We maintain and create organization-wide projects such as the website, Discord bot, Membership Portal, and link shortener.
+					The ACM Dev Team handles general internal development needs for all of ACM chapter at UCLA. We maintain and create organization-wide projects such as the website, Discord bot, Membership Portal, and link shortener.
 				</p>
 				<p className={styles['dev-team-info']}>
 					If you&apos;re interested in joining us,&nbsp;
@@ -37,10 +37,10 @@ function DevTeam() {
 				</p>
 				<h2 className="text-center">Our Projects</h2>
 				<div className='text-left'>
-					<h3 id={styles['first-project']}>ACM at UCLA Website</h3>
+					<h3 id={styles['first-project']}>ACM chapter at UCLA Website</h3>
 						<p className={styles['project-info']}>The&nbsp;
 							<Link href='https://www.uclaacm.com'>
-								<a target='_blank' rel='noopener noreferrer'>ACM at UCLA Website</a>
+								<a target='_blank' rel='noopener noreferrer'>ACM chapter at UCLA Website</a>
 							</Link>
 							{/* eslint-disable-next-line max-len */}
 							&nbsp;is the one-stop shop for all things ACM! We develop and maintain this website, keeping it up-to-date with all the latest news and events. In fact, we made the page you&apos;re looking at right now! This website is built with React.js and Next.js and deployed with Netlify - if you&apos;re curious, feel free to check out the&nbsp;
@@ -58,7 +58,7 @@ function DevTeam() {
 							&nbsp;is where ACM members can check in to events to earn points! We built the Membership Portal with Node.js, Express.js, PostgreSQL, Redux and React.js.
 						</p>
 					<h3>Discord Bot</h3>
-						<p className={styles['project-info']}>The Discord bot is our in-house email verification bot for the ACM at UCLA&nbsp;
+						<p className={styles['project-info']}>The Discord bot is our in-house email verification bot for the ACM chapter at UCLA&nbsp;
 							<Link href='https://discord.gg/eWmzKsY'>
 								<a target='_blank' rel='noopener noreferrer'>Discord</a>
 							</Link>

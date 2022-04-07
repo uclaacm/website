@@ -15,24 +15,24 @@ function Sponsors() {
 	return (
 		<Layout>
 			<NextSeo
-				title="Sponsors and Partners | ACM at UCLA"
-				description="ACM at UCLA couldn't happen without our amazing sponsors, partners, and affiliates that support all of our work. Interested in parterning with us? Send as an email at acm@ucla.edu!"
+				title="Sponsors and Partners | ACM chapter at UCLA"
+				description="ACM chapter at UCLA couldn't happen without our amazing sponsors, partners, and affiliates that support all of our work. Interested in parterning with us? Send as an email at acm@ucla.edu!"
 				openGraph={{
 					images: [
 						{
 							url: 'https://www.uclaacm.com/images/logo.png',
 							width: 1200,
 							height: 1200,
-							alt: 'The ACM at UCLA logo',
+							alt: 'The ACM chapter at UCLA logo',
 						},
 					],
-					site_name: 'ACM at UCLA',
+					site_name: 'ACM chapter at UCLA',
 				}}
 			/>
 			<Banner decorative />
 			<div className="content-section text-center">
 				<h1>Our Sponsors</h1>
-				<p className="subheading">A big thank-you to the <a href="https://www.cs.ucla.edu" target="_blank" rel="noreferrer noopener">UCLA Computer Science Department</a> for their continuous partnership with and support of ACM at UCLA. Shout-out to <a href="https://reslife.ucla.edu" target="_blank" rel="noreferrer noopener">UCLA ResLife</a> for providing logistical assistance and stellar venues for our events.</p>
+				<p className="subheading">A big thank-you to the <a href="https://www.cs.ucla.edu" target="_blank" rel="noreferrer noopener">UCLA Computer Science Department</a> for their continuous partnership with and support of ACM chapter at UCLA. Shout-out to <a href="https://reslife.ucla.edu" target="_blank" rel="noreferrer noopener">UCLA ResLife</a> for providing logistical assistance and stellar venues for our events.</p>
 				<div className="sponsor-container">
 					<div className="sponsor">
 						<a href="https://www.cs.ucla.edu" target="_blank" rel="noreferrer noopener">

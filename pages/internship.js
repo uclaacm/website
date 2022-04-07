@@ -30,7 +30,7 @@ function InternshipPage(){
     return(
         <Layout>
             <NextSeo
-				title="Internship | ACM at UCLA"
+				title="Internship | ACM chapter at UCLA"
 				description="ACM's internship program facilitates the transition of UCLA students to ACM officers. Interns learn about the committee you are interning for and ACM in general."
                 openGraph={{
 					images: [
@@ -38,10 +38,10 @@ function InternshipPage(){
 							url: 'https://www.uclaacm.com/images/logo.png',
 							width: 1200,
 							height: 1200,
-							alt: 'The ACM at UCLA logo',
+							alt: 'The ACM chapter at UCLA logo',
 						},
 					],
-					site_name: 'ACM at UCLA',
+					site_name: 'ACM chapter at UCLA',
 				}}
             />
             <Banner decorative />

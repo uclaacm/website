@@ -16,7 +16,7 @@ function Home () {
 	return (
 		<Layout>
 			<NextSeo
-				title="Home | ACM at UCLA"
+				title="Home | ACM chapter at UCLA"
 				description="The ACM Student Chapter at UCLA is UCLA's largest tech community, focused on making tech as accessible as possible. We're split up into an array of committees and initiatives that each focus on a specific area of computer science. Everyone is welcome to join - regardless of major, prior experience, or anything else!"
 				openGraph={{
 					images: [
@@ -24,10 +24,10 @@ function Home () {
 							url: 'https://www.uclaacm.com/images/logo.png',
 							width: 1200,
 							height: 1200,
-							alt: 'The ACM at UCLA logo',
+							alt: 'The ACM chapter at UCLA logo',
 						},
 					],
-					site_name: 'ACM at UCLA',
+					site_name: 'ACM chapter at UCLA',
 				}}
 			/>
 			<div className="home-page text-center">

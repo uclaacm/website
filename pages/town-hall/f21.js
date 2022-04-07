@@ -29,7 +29,7 @@ function TownHall() {
     <CountdownElement switchTime={TEST_START_TIMESTAMP} fallback={<span>come back soon :)</span>}>
 		<Layout>
 			<NextSeo
-				title="Fall 2021 Computer Science Town Hall | ACM at UCLA"
+				title="Fall 2021 Computer Science Town Hall | ACM chapter at UCLA"
 				description="Ask questions and get your voice heard at the Fall 2021 Computer Science Town Hall! Wednesday, November 10th from 6:30 - 8:30 PM PT - we hope to see you there :)"
 				openGraph={{
 					images: [
@@ -37,16 +37,16 @@ function TownHall() {
 							url: 'https://www.uclaacm.com/images/town-hall/town-hall-banner-f21.png',
 							width: 1920,
 							height: 1005,
-							alt: 'A banner that reads "Fall 2021 Computer Science Town Hall: ask questions and get your voice heard! Wednesday, November 10 from 6:30 - 8:30 PM PT. Held at the Mong Auditorium and Online; visit uclaacm.com/town-hall for more information. Co-hosted by ACM at UCLA, UPE at UCLA, exploretech.la, and the UCLA Computer Science Department."',
+							alt: 'A banner that reads "Fall 2021 Computer Science Town Hall: ask questions and get your voice heard! Wednesday, November 10 from 6:30 - 8:30 PM PT. Held at the Mong Auditorium and Online; visit uclaacm.com/town-hall for more information. Co-hosted by ACM chapter at UCLA, UPE at UCLA, exploretech.la, and the UCLA Computer Science Department."',
 						},
 					],
-					site_name: 'ACM at UCLA',
+					site_name: 'ACM chapter at UCLA',
 				}}
 			/>
 			<Banner decorative />
 			<div className="content-container-tight">
         <div className="text-center">
-          <Image src={TownHallBanner} alt="A banner that reads 'Fall 2021 Computer Science Town Hall: ask questions and get your voice heard! Wednesday, November 10 from 6:30 - 8:30 PM PT. Held at the Mong Auditorium and Online; visit uclaacm.com/town-hall for more information. Co-hosted by ACM at UCLA, UPE at UCLA, exploretech.la, and the UCLA Computer Science Department.'" />
+          <Image src={TownHallBanner} alt="A banner that reads 'Fall 2021 Computer Science Town Hall: ask questions and get your voice heard! Wednesday, November 10 from 6:30 - 8:30 PM PT. Held at the Mong Auditorium and Online; visit uclaacm.com/town-hall for more information. Co-hosted by ACM chapter at UCLA, UPE at UCLA, exploretech.la, and the UCLA Computer Science Department.'" />
           <h1>Fall 2021 Computer Science Town Hall</h1>
         </div>
         <p>
@@ -68,7 +68,7 @@ function TownHall() {
         </ul>
         <p>
           {/* eslint-disable-next-line max-len */}
-          The town hall is jointly held by ACM at UCLA, exploretech.la, UPE at UCLA, and the Department of Computer Science at UCLA.
+          The town hall is jointly held by ACM chapter at UCLA, exploretech.la, UPE at UCLA, and the Department of Computer Science at UCLA.
         </p>
         <ul className="list-unstyled text-center">
           <li style={inlineButtonListStyle}>

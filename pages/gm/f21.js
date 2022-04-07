@@ -104,7 +104,7 @@ function F21() {
 	return (
 		<Layout>
 			<NextSeo
-				title="Fall General Meeting | ACM at UCLA"
+				title="Fall General Meeting | ACM chapter at UCLA"
 				description="ACM's Fall General Meeting happened on September 27th at 6 PM PT!"
 				openGraph={{
 					images: [
@@ -112,10 +112,10 @@ function F21() {
 							url: 'https://www.uclaacm.com/images/logo.png',
 							width: 1200,
 							height: 1200,
-							alt: 'The ACM at UCLA logo',
+							alt: 'The ACM chapter at UCLA logo',
 						},
 					],
-					site_name: 'ACM at UCLA',
+					site_name: 'ACM chapter at UCLA',
 				}}
 			/>
 			<Banner decorative />

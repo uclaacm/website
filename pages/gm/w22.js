@@ -83,7 +83,7 @@ function GMCountdown(props) {
       </div>
     </div>
     <div className="text-center">
-      <h1>until the ACM at UCLA Winter 2022 General Meeting!</h1>
+      <h1>until the ACM chapter at UCLA Winter 2022 General Meeting!</h1>
       <h2>Fill out the RSVP Form:</h2>
       <Link href={RSVP_LINK}>
         <a className="button rsvp-button" target="_blank" rel="noreferrer noopener">
@@ -99,7 +99,7 @@ function W22() {
 	return (
 		<Layout>
 			<NextSeo
-				title="Winter General Meeting | ACM at UCLA"
+				title="Winter General Meeting | ACM chapter at UCLA"
 				description="ACM's Winter General Meeting happened on January 6th at 6:30 PM PT."
 				openGraph={{
 					images: [
@@ -107,10 +107,10 @@ function W22() {
 							url: 'https://www.uclaacm.com/images/logo.png',
 							width: 1200,
 							height: 1200,
-							alt: 'The ACM at UCLA logo',
+							alt: 'The ACM chapter at UCLA logo',
 						},
 					],
-					site_name: 'ACM at UCLA',
+					site_name: 'ACM chapter at UCLA',
 				}}
 			/>
 			<Banner decorative />

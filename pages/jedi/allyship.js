@@ -14,7 +14,7 @@ function Allyship() {
 	return (
 		<Layout>
       <NextSeo
-				title="JEDI Allyship Spaces | ACM at UCLA"
+				title="JEDI Allyship Spaces | ACM chapter at UCLA"
 				description="JEDI holds allyship spaces on a bunch of different topics related to EDI; check out our past events! Anyone can lead and attend an allyship space. If you have a topic you're interested in, let us know!"
 				openGraph={{
 					images: [
@@ -25,7 +25,7 @@ function Allyship() {
 							alt: 'The JEDI Logo',
 						},
 					],
-					site_name: 'ACM at UCLA',
+					site_name: 'ACM chapter at UCLA',
 				}}
 			/>
       <div className={`${styles.container} ${styles['container-padding']}`}>
