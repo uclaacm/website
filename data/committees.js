@@ -154,7 +154,7 @@ export default [
 					src: '/images/committees/design/rebranding_update.png',
 					alt: 'ACM Winter General Meeting',
 				},
-				desc: 'We are finishing up our main project of rebranding ACM at UCLA including the logos, wordmarks, motifs, banners, and complete visual identities of each committee. The rebranding project started to correct the pain points of our previous branding, and position ACM at UCLA to appeal to a larger audience.',
+				desc: 'We are finishing up our main project of rebranding ACM chapter at UCLA including the logos, wordmarks, motifs, banners, and complete visual identities of each committee. The rebranding project started to correct the pain points of our previous branding, and position ACM chapter at UCLA to appeal to a larger audience.',
 			},
 			{
 				title: 'UXLA: UI/UX Workshop Series',
@@ -174,7 +174,7 @@ export default [
 			},
 		],
 		introImage: '/images/committees/design/design_motif_applied.png',
-		mission: 'Our mission is to design, manage, and support the visual identity of ACM at UCLA. We create the club\'s branding, event banners, and more elements, while also doing workshops to teach UI/UX to the UCLA community.',
+		mission: 'Our mission is to design, manage, and support the visual identity of ACM chapter at UCLA. We create the club\'s branding, event banners, and more elements, while also doing workshops to teach UI/UX to the UCLA community.',
 		image: '/images/committees/design_wordmark.svg',
 		wordmark_dark: '/images/committees/design_wordmark_dark.svg',
 		diamond: '/images/diamonds/design_diamond.svg',

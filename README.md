@@ -5,7 +5,7 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/0089cafa-e447-4791-9837-dd8f45f61229/deploy-status)](https://app.netlify.com/sites/jovial-pasteur-581b4a/deploys)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](code_of_conduct.md)
 
-Hey there! This repo contains all of the code for ACM @ UCLA's front-facing website, which you can view at [uclaacm.com](https://uclaacm.com) or at [acm.cs.ucla.edu](https://acm.cs.ucla.edu). You can find out more about our organization, the events we hold, and all the different committees within ACM!
+Hey there! This repo contains all of the code for ACM chapter at UCLA's front-facing website, which you can view at [uclaacm.com](https://uclaacm.com) or at [acm.cs.ucla.edu](https://acm.cs.ucla.edu). You can find out more about our organization, the events we hold, and all the different committees within ACM!
 
 Our website is built with [Next.js](https://nextjs.org/) on top of [React](https://reactjs.org), with a style and [design system](https://design.uclaacm.com) internally developed by our dev team and [ACM Design](https://design.uclaacm.com). The site is deployed on [Netlify](https://www.netlify.com/); we're grateful for their support in the open-source program. Under the hood, we use both [ESLint](https://eslint.org/) and [Stylelint](https://stylelint.io/) to lint our JS and CSS code respectively.
 

@@ -51,7 +51,7 @@ function Footer(){
 						<a className={styles['link-footer']} href="mailto: acm@ucla.edu"><span className="footer-text">acm@ucla.edu</span></a>
 					</div>
 					<div>
-						<h3 className={styles['footer-header']}>About ACM at UCLA</h3>
+						<h3 className={styles['footer-header']}>About ACM chapter at UCLA</h3>
 						<ul className='list-unstyled'>
 							{
 								footerACMLinks.map((link) => <li key={link.path}><FooterLinkElement {...link} /></li>)
@@ -97,7 +97,7 @@ function Footer(){
 					</a>
 				</div>
 				<div>
-					<span className={styles['footer-text-thin']}>&copy; ACM at UCLA 2022.</span>
+					<span className={styles['footer-text-thin']}>&copy; ACM chapter at UCLA 2022.</span>
 				</div>
 			</nav>
 		</footer>

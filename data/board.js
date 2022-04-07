@@ -20,9 +20,9 @@ export default [
                     <li> Impact focuses on spreading awareness  to the ACM community about the social
                         impact of Technology/Computer Science</li>
                     <li> External Affairs creates events between company affiliates and the general ACM community</li>
-                    <li> Finance handles finances within ACM at UCLA</li>
+                    <li> Finance handles finances within ACM chapter at UCLA</li>
                     <li> Alumni is responsible for creating alumni events and managing the alumni network to improve
-                        our current relations with past ACM at UCLA officers.</li>
+                        our current relations with past ACM chapter at UCLA officers.</li>
                     <li> Marketing handles ACM’s social media platforms and communicate with committees as needed.</li>
                     <li> Moonshots handles bold, new initiatives for ACM to take on; past examples include <Link href="/impact"><a>Impact</a></Link> and <Link href="/jedi"><a>JEDI</a></Link>! </li>
                 </ul>
