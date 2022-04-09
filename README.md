@@ -139,7 +139,7 @@ In mid-2021, we made another set of changes surrounding performance and robustne
 
 ## Licensing and Attribution
 
-Unlike the majority of ACM at UCLA's projects, this website is under the slightly-less-permissive [Mozilla Public License 2.0 (MPL 2.0)](https://github.com/uclaacm/website/blob/main/LICENSE). You can find the [public official copy on the Mozilla website](https://www.mozilla.org/en-US/MPL/2.0/), as well as [an FAQ on the license](https://www.mozilla.org/en-US/MPL/2.0/FAQ/). We echo a sentiment shared on the FAQ:
+Unlike the majority of ACM chapter at UCLA's projects, this website is under the slightly-less-permissive [Mozilla Public License 2.0 (MPL 2.0)](https://github.com/uclaacm/website/blob/main/LICENSE). You can find the [public official copy on the Mozilla website](https://www.mozilla.org/en-US/MPL/2.0/), as well as [an FAQ on the license](https://www.mozilla.org/en-US/MPL/2.0/FAQ/). We echo a sentiment shared on the FAQ:
 
 > Please note that, while this FAQ is intended to be accurate and helpful, *it is not the license*, and may not cover important issues that affect you and your specific situation. As a result, reading the FAQ should not serve as a substitute for reading the license itself, or for seeking legal advice from a lawyer.
 
