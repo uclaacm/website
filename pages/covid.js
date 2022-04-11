@@ -29,11 +29,15 @@ function COVID() {
           Our plan is approved by <a href="https://sole.ucla.edu/" target="_blank" rel="noopener noreferrer">UCLA SOLE</a> and is a superset of <a href="https://covid-19.ucla.edu/ucla-covid-protocols/" target="_blank" rel="noopener noreferrer">UCLA&apos;s COVID-19 protocols</a> and <a href="http://ph.lacounty.gov/acd/ncorona2019/EducationToolkit/IHE/" target="_blank" rel="noopener noreferrer">LA County Guidelines</a>.
         </p>
         <p>
-          Last major update: <b>Sunday, March 27th, 2022</b>.
+          Last major update: <b>Monday, April 11th, 2022</b>.
           <div>
             <p className='mb-0'>Version history</p>
             <ul className='mt-0'>
-              <li><b>Sunday, March 27th, 2022</b>: updated to reflect <a href='https://covid-19.ucla.edu/ucla-covid-protocols/' target="_blank" rel="noopener noreferrer"> UCLA&apos;s COVID-19 protocol updates for spring quarter</a></li>
+              <li>
+                  <b>Monday, April 11th, 2022</b>
+                  : Updated based on UCLA&apos;s Updates on COVID-19 Protocols for Spring Quarter
+              </li>
+              <li><b>Sunday, March 27th, 2022</b>: updated to reflect <a href='https://covid-19.ucla.edu/ucla-covid-protocols/' target="_blank" rel="noopener noreferrer"> UCLAs&apos; COVID-19 protocol updates for spring quarter</a></li>
               <li><b>Monday, January 17th 2022</b>: updated to reflect <a href="https://covid-19.ucla.edu/updated-masking-isolation-and-quarantine-protocols-for-ucla/" target="_blank" rel="noopener noreferrer">Updated masking, isolation and quarantine protocols for UCLA</a></li>
               <li><b>Friday, January 7th 2022</b>: updated to reflect <a href="https://covid-19.ucla.edu/remote-instruction-extended-through-january-28/" target="_blank" rel="noopener noreferrer">UCLA Remote instruction extended through January 28</a></li>
               <li><b>Monday, December 27th 2021</b>: updated to reflect <a href="https://covid-19.ucla.edu/remote-start-to-winter-quarter-instruction-and-covid-19-booster-requirement/" target="_blank" rel="noopener noreferrer">UCLA&apos;s Remote Start to Winter Quarter</a></li>
@@ -46,14 +50,14 @@ function COVID() {
           <a className="button" href="https://docs.google.com/document/d/1IcBZ4yj4kJ14Gg0PVw3xbg-QqRYUQGUlHm8vVskgQOQ/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faExternalLinkAlt} fixedWidth aria-hidden={true} /> Link to Google Doc
           </a>{' '}
-          <a className="button" href="/files/acm-covid-policies-s22-last-updated-03-27-22.pdf" target="_blank" rel="noopener noreferrer">
+          <a className="button" href="/files/acm-covid-policies-s22-last-updated-04-11-22.pdf" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faFilePdf} fixedWidth aria-hidden={true} /> Link to PDF
           </a>
         </div>
         <br />
         <iframe
           title="ACM COVID Policies Spring 2022"
-          src="https://docs.google.com/document/d/e/2PACX-1vQIXLd4Omqv2XaDflpIlbmyfYyXC0GhE64XbS1kakNOHf-9PauJnIBTiNFz_rEQteixMecfN8fKld5v/pub?embedded=true"
+          src="https://docs.google.com/document/d/1IcBZ4yj4kJ14Gg0PVw3xbg-QqRYUQGUlHm8vVskgQOQ/edit?usp=sharing"
           style={{
             border: '1px black solid',
             height: '100vh',
