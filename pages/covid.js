@@ -35,7 +35,7 @@ function COVID() {
             <ul className='mt-0'>
               <li>
                   <b>Monday, April 11th, 2022</b>
-                  : Updated based on UCLA&apos;s Updates on COVID-19 Protocols for Spring Quarter
+                  : Updated based on <a href="https://covid-19.ucla.edu/update-on-covid-19-protocols-for-spring-quarter/" target="_blank" rel="noopener noreferrer">UCLA&apos;s Updates on COVID-19 Protocols for Spring Quarter</a>
               </li>
               <li><b>Sunday, March 27th, 2022</b>: updated to reflect <a href='https://covid-19.ucla.edu/ucla-covid-protocols/' target="_blank" rel="noopener noreferrer"> UCLAs&apos; COVID-19 protocol updates for spring quarter</a></li>
               <li><b>Monday, January 17th 2022</b>: updated to reflect <a href="https://covid-19.ucla.edu/updated-masking-isolation-and-quarantine-protocols-for-ucla/" target="_blank" rel="noopener noreferrer">Updated masking, isolation and quarantine protocols for UCLA</a></li>
