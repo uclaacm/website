@@ -57,7 +57,7 @@ function COVID() {
         <br />
         <iframe
           title="ACM COVID Policies Spring 2022"
-          src="https://docs.google.com/document/d/1IcBZ4yj4kJ14Gg0PVw3xbg-QqRYUQGUlHm8vVskgQOQ/edit?usp=sharing"
+          src="https://docs.google.com/document/d/e/2PACX-1vQIXLd4Omqv2XaDflpIlbmyfYyXC0GhE64XbS1kakNOHf-9PauJnIBTiNFz_rEQteixMecfN8fKld5v/pub?embedded=true"
           style={{
             border: '1px black solid',
             height: '100vh',
