@@ -32,9 +32,9 @@ function Home () {
 			/>
 			<div className="home-page text-center">
 				<ContentBanner
-					title="ACM Spring Officer Applications are out!"
-					ctaText="Apply"
-					ctaLink="https://tinyurl.com/acmspringofficer"
+					title="Fill Out The Survey and RSVP For the CS Spring Town Hall!"
+					ctaText="Learn More"
+					ctaLink="/town-hall/s22"
 				/>
 				<Banner />
 				<div className="content-section">
