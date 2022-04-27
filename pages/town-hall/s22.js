@@ -209,7 +209,7 @@ function TownHall() {
               alt="A banner that reads 'Spring 2022 Computer Science Town Hall: ask questions and get your voice heard! Wednesday, May 11 from 6:00 - 8:00 PM PT. Mong Learning Center, Engineering VI. Ask Questions and get your voice heard!'"
               width={embedWidth}
               height={(embedWidth * 315) / 560}
-              layout="responsive"
+              layout="fixed"
             />
           </div>
         </div>
