@@ -12,6 +12,7 @@ function Article(props) {
 					src={props.article.image}
 					width={360}
 					height={200}
+					objectFit='cover'
 					alt={props.article.alt}
 				/>
 				<h3>{props.article.headline}</h3>
