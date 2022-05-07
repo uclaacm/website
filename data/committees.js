@@ -477,6 +477,10 @@ export default [
 				platform: 'facebook',
 				link: 'https://www.facebook.com/groups/acmhack',
 			},
+			{
+				platform: 'discord',
+				link: 'https://discord.gg/dUp8g8wgCv',
+			},
 		],
 		infoCards: [
 			{
