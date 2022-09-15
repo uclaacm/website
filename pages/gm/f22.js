@@ -19,7 +19,7 @@ import wLogo from '../../public/images/committees/w_wordmark.svg';
 import fallGMgraphic from '../../public/images/Fall_GM_2022_graphic.png';
 import googleSlideLogo from '../../public/images/slides.png';
 
-const GM_START_TIME = new Date('2021-09-26T17:45-08:00');
+const GM_START_TIME = new Date('2022-09-26T17:45-08:00');
 const RSVP_LINK = 'https://forms.gle/9NhDHRmow5PEx3am6';
 const calculateTimeStrings = ({days, hours, minutes, seconds}) => {
   let dayString = 'Day';
