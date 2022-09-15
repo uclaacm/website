@@ -1,4 +1,5 @@
 import { NextSeo } from 'next-seo';
+import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import Countdown from 'react-countdown';
@@ -6,7 +7,19 @@ import Countdown from 'react-countdown';
 import Banner from '../../components/Banner';
 import Layout from '../../components/Layout';
 
-const GM_START_TIME = new Date('2022-09-26T17:45-08:00');
+import aiLogo from '../../public/images/committees/ai_wordmark.svg';
+import boardLogo from '../../public/images/committees/board_wordmark.svg';
+import cyberLogo from '../../public/images/committees/cyber_wordmark.svg';
+import designLogo from '../../public/images/committees/design_wordmark.svg';
+import hackLogo from '../../public/images/committees/hack_wordmark.svg';
+import icpcLogo from '../../public/images/committees/icpc_wordmark.svg';
+import studioLogo from '../../public/images/committees/studio_wordmark.svg';
+import teachlaLogo from '../../public/images/committees/teachLA_wordmark.svg';
+import wLogo from '../../public/images/committees/w_wordmark.svg';
+import fallGMgraphic from '../../public/images/Fall_GM_2022_graphic.png';
+import googleSlideLogo from '../../public/images/slides.png';
+
+const GM_START_TIME = new Date('2021-09-26T17:45-08:00');
 const RSVP_LINK = 'https://forms.gle/9NhDHRmow5PEx3am6';
 const calculateTimeStrings = ({days, hours, minutes, seconds}) => {
   let dayString = 'Day';
@@ -32,8 +45,11 @@ function countdownRenderer({ days, hours, minutes, seconds, completed }) {
         <div className="should-dim">
           <a href="https://docs.google.com/presentation/d/1N_J_FSFWX7PGVCE8qwiRUvLJud4LYEA3SeS3pdaw5aE/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
             <div className="button-wrapper">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/images/slides.png" alt="Google Slides logo" className="join-links-img" width="200px"/>
+              <Image
+                src = {googleSlideLogo}
+                alt="Google Slides logo"
+                className="join-links-img"
+              />
             </div>
             <p className="join-us">View the Fall GM slides to catch up!</p>
           </a>
@@ -110,8 +126,10 @@ function F22() {
 			/>
 			<Banner decorative />
       <div className="text-center">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img className="gm-graphic" src="/images/Fall_GM_2022_graphic.png" width="1000px" alt="Fall GM 2021 Marketing Graphic. Fall GM will happen on Monday, september 26th from 6pm to 8pm in Ackerman Grand ballroom"/>
+        <Image
+          src = {fallGMgraphic}
+          className="gm-graphic"
+          alt="Fall GM 2021 Marketing Graphic. Fall GM will happen on Monday, september 26th from 6pm to 8pm in Ackerman Grand ballroom"/>
       </div>
       <Countdown date={GM_START_TIME} renderer={countdownRenderer}/>
 			<div className="content-container-tight text-center">
@@ -147,32 +165,22 @@ function F22() {
               <h3>Committee Presentations</h3>
               <p className="sub-heading">Learn what ACM&apos;s eight committees have planned for Fall quarter.</p>
             </div>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <p className="gm-program-row"><img src="/images/committees/studio_wordmark.svg" alt="ACM studio"/> Caroline Wang, Ray Hsiao</p>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <p className="gm-program-row"><img src="/images/committees/icpc_wordmark.svg" alt="ACM icpc"/> Robert Lee</p>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <p className="gm-program-row"><img src="/images/committees/design_wordmark.svg" alt="ACM design"/> Muthu Palaniappan</p>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <p className="gm-program-row"><img src="/images/committees/cyber_wordmark.svg" alt="ACM cyber"/> Jerry Xu, Stephen Kelman</p>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <p className="gm-program-row"><img src="/images/committees/teachLA_wordmark.svg" alt="ACM teachLA"/> Jiin Kim, Milo Kearney</p>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <p className="gm-program-row"><img src="/images/committees/w_wordmark.svg" alt="ACM w"/> Ethan Wong, Paige Brown</p>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <p className="gm-program-row"><img src="/images/committees/ai_wordmark.svg" alt="ACM ai"/> Aman Oberoi</p>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <p className="gm-program-row"><img src="/images/committees/hack_wordmark.svg" alt="ACM hack"/> Christina Tong, Nareh Agazaryan</p>
+            <p className="gm-program-row"><Image src= {studioLogo} alt="ACM studio"/> Caroline Wang, Ray Hsiao</p>
+            <p className="gm-program-row"><Image src= {icpcLogo} alt="ACM icpc"/> Robert Lee</p>
+            <p className="gm-program-row"><Image src= {designLogo}  alt="ACM design"/> Muthu Palaniappan</p>
+            <p className="gm-program-row"><Image src= {cyberLogo}  alt="ACM cyber"/> Jerry Xu, Stephen Kelman</p>
+            <p className="gm-program-row"><Image src= {teachlaLogo}  alt="ACM teachLA"/> Jiin Kim, Milo Kearney</p>
+            <p className="gm-program-row"><Image src= {wLogo}  alt="ACM w"/> Ethan Wong, Paige Brown</p>
+            <p className="gm-program-row"><Image src= {aiLogo}  alt="ACM ai"/> Aman Oberoi</p>
+            <p className="gm-program-row"><Image src= {hackLogo}  alt="ACM hack"/> Christina Tong, Nareh Agazaryan</p>
 					</div>
           <div className="gm-program-section">
             <div className="section-header">
               <h3>ACM Board</h3>
               <p className="sub-heading">How to get more involved with ACM beyond attending workshops and events</p>
             </div>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <p className="gm-program-row"><img src="/images/committees/board_wordmark.svg" alt="ACM board"/>&nbsp;&nbsp;External: Zack Pakin</p>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <p className="gm-program-row"><img src="/images/committees/board_wordmark.svg" alt="ACM board"/>&nbsp;&nbsp;Internal: Sujay Jain</p>
+            <p className="gm-program-row"><Image src= {boardLogo} alt="ACM board"/>&nbsp;&nbsp;External: Zack Pakin</p>
+            <p className="gm-program-row"><Image src= {boardLogo} alt="ACM board"/>&nbsp;&nbsp;Internal: Sujay Jain</p>
           </div>
           <div className="gm-program-section">
             <div className="section-header">
