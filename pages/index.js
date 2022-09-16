@@ -32,9 +32,9 @@ function Home () {
 			/>
 			<div className="home-page text-center">
 				<ContentBanner
-					title="Fill Out The Survey and RSVP For the CS Spring Town Hall!"
+					title="RSVP and Join ACM&apos;s Fall General Meeting on 9/26!"
 					ctaText="Learn More"
-					ctaLink="/town-hall/s22"
+					ctaLink="/gm/f22"
 				/>
 				<Banner />
 				<div className="content-section">
