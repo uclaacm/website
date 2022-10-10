@@ -32,7 +32,7 @@ export default {
         {
             date: '11/14',
             name: 'Decisions Released',
-            info: 'Hear back via Email what committee(s) accepted you (if you applied to multiple, decide which one you would like to intern for)',
+            info: 'Hear back via Email what committee(s) accepted you (if you are accepted by two, decide which one you would like to intern for)',
             active: true,
         },
         {
