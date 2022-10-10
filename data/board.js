@@ -37,8 +37,8 @@ export default [
                 <li> External Affairs interns will plan out events like company tours and info-sessions</li>
                 <li> Finance interns will draft finance requests and secure funding for events</li>
                 <li> Alumni intern will organize panels and alumni social media groups.</li>
-                <li> Marketing interns will advertise general ACM events and maintain ACM's online presence.</li>
-                <li> Photography interns will record memories of ACM’s events, and take headshots.</li>
+                <li> Marketing interns will advertise general ACM events and maintain our online presence.</li>
+                <li> Photography interns will record memories of our events, and take headshots.</li>
                 <li> Transfer Affairs Intern will coordinate events to engage the transfer community at UCLA.</li>
 
             </ul> ),
