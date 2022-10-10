@@ -29,23 +29,15 @@ export default [
             </> ),
             whatInternsWillDo: (
             <ul>
-                <li> Operations Interns will work on and lead important all-ACM events such as Winter GM,
-                    Faculty Fireside, and Implicit Bias / Imposter Syndrome workshops throughout the year. </li>
-                <li> The Internal Affairs interns will organize fun socials to bring officers across different
-                     committees together, collaborate with other committees and help create the weekly newsletters</li>
-                <li> The Dev team interns will train and maintain existing ACM projects
-                    (website, discord bot, membership portal), adding features and dealing with issues</li>
+                <li> Operations Interns will work on and lead important all-ACM events such as Winter GM, Faculty Fireside, and Implicit Bias / Imposter Syndrome workshops throughout the year. </li>
+                <li> The Internal Affairs interns will organize fun socials to bring officers across different committees together, collaborate with other committees and help create the weekly newsletters</li>
+                <li> The Dev team interns will train and maintain existing ACM projects (website, discord bot, membership portal), adding features and dealing with issues</li>
                 <li> The Impact interns will plan Impact events and help out with the blog</li>
                 <li> JEDI interns will work with the JEDI director to organize events, collaborate with the dev team to work on projects like the Anti-Resume, and conduct the ACM culture survey.</li>
-                <li> The External Affairs interns will work with companies and plan out events
-                    such as panels, company tours, and info-sessions</li>
-                <li> The Finance interns will help draft various finance requests to send to the CS department
-                    and work with committees to secure funding for events</li>
-                <li> The Alumni intern will work with alumni to organize panels and other events. Assist with a
-                    quarterly alumni newsletter and alumni social media groups.</li>
-                <li> The Marketing interns will work with the marketing team to advertise general ACM events, maintain
-                    ACM’s online presence, and develop strategies for marketing and publicity. Assist with ACM’s social
-                    media and weekly newsletter.</li>
+                <li> The External Affairs interns will work with companies and plan out events such as panels, company tours, and info-sessions</li>
+                <li> The Finance interns will help draft various finance requests to send to the CS department and work with committees to secure funding for events</li>
+                <li> The Alumni intern will work with alumni to organize panels and other events. Assist with a quarterly alumni newsletter and alumni social media groups.</li>
+                <li> The Marketing interns will work with the marketing team to advertise general ACM events, maintain ACM’s online presence, and develop strategies for marketing and publicity.</li>
                 <li> Photography interns will work with the marketing team to take pictures, record memories of ACM’s events, and take headshots for ACM officers and interns.</li>
                 <li> Transfer Affairs Intern Coordinates events focused on engaging the transfer community and help connect transfer students to resources within the CS community at UCLA.</li>
 

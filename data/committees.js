@@ -58,9 +58,9 @@ export default [
 			whatWeDo: 'Studio wants to create a community of game developers, whether you’re interested in gameplay programming, graphics, animation, pixel, music, whatever. We want to help you express yourself through video game development.',
 			whatInternsWillDo: (
 			<ul>
-				<li> ACM Studio is looking for visual designers to learn ACM/ACM Studio’s style guide and create graphics to help market and promote our events on social media & update our branding on existing platforms! (Prior skills in graphic design / Figma are appreciated, but not required.)</li>
-				<li> Studio's Intro to Game Programming Track is looking for people passionate about helping to create content for future beginner level workshops and to teach the content. Interns would be learning alongside experienced officers in the Fall and will have the opportunity in Winter to start actively working on / teaching workshops. (Prior skills in Unity / C# are appreciated, but not required.)</li>
-				<li> Studio's Special Topics in Gaming is looking for people passionate about teaching more niche topics in game development (whether it’s a specific game mechanic you seem to invest too much time in developing or that you’re deeply passionate about having good game programming practices). Interns will be learning alongside experienced officers in the Fall and will have the opportunity in Winter to start actively working on / teaching workshops. (Prior skills in Unity / C# are appreciated, but not required.)</li>
+				<li> ACM Studio is looking for visual designers to learn ACM/ACM Studio style guide and create graphics to help market and promote our events on social media & update our branding on existing platforms! (Prior skills in graphic design / Figma are appreciated, but not required.)</li>
+				<li> Intro to Game Programming Track is looking for people passionate about helping to create content for future beginner level workshops and to teach the content. Interns would be learning alongside experienced officers in the Fall and will have the opportunity in Winter to start actively working on / teaching workshops. (Prior skills in Unity / C# are appreciated, but not required.)</li>
+				<li> Studio's Special Topics in Gaming is looking for people passionate about teaching more niche topics in game development (whether a specific game mechanic you seem to invest too much time in developing or that you’re deeply passionate about having good game programming practices). Interns will be learning alongside experienced officers in the Fall and will have the opportunity in Winter to start actively working on / teaching workshops. (Prior skills in Unity / C# are appreciated, but not required.)</li>
 			</ul> ),
 			card: '/images/cards/studio_card.svg',
 			nextSteps: 'After serving 2 quarters, interns will graduate and ACM Studio’s president(s) will conduct Intern Exit Interviews that will determine your officership in the spring.',
@@ -115,15 +115,12 @@ export default [
 		diamond: '/images/diamonds/icpc_diamond.svg',
 		internship: {
 			whatWeDo: 'ICPC spreads the joy of algorithmic problem solving - and helps you kick-start your career - through workshops, contests, and a top-ranked ICPC team!',
-			whatInternsWillDo: (<>
-							Interns will help produce and teach workshops in one of our two winter workshop tracks: 
-
+			whatInternsWillDo: (<>Interns will help produce and teach workshops in one of our two winter workshop tracks:
 			<ul>
 				<li>Intro to Competitive Programming (great for anyone interested in algorithms)</li> 
 				<li>Interview Track (best for people with interview and internship experience already).</li> 
 				<li> Advanced Competitive Programming workshop track (for people with a strong background in competitive programming, may or may not take interns)</li>
-				</ul>
-			</>),
+			</ul></>),
 			card: '/images/cards/icpc_card.svg',
 			nextSteps: 'All Interns have the opportunity to become officers in the Spring if they choose to stay.',
 		},
