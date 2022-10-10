@@ -85,7 +85,7 @@ export default {
         },
         {
             title: 'How many committees can I apply for?',
-            content: 'You can apply to be an intern for up to 3 committees, but you may only be an intern for one of those committees.',
+            content: 'You can apply to be an intern for up to 2 committees, but you may only be an intern for one of those committees.',
         },
         {
             title: 'When we apply to be an intern for a committee, do we apply to a specific intern position or just the committee as a whole?',
@@ -97,7 +97,7 @@ export default {
         },
         {
             title: 'I have more questions, how can I get them answered?',
-            content: <>If you have any questions about the application process or the Internship program in general email <a href="mailto:ava24@g.ucla.edu">Ava Asmani (ava24@g.ucla.edu)</a>, the Internship Director. If you have any questions that are specific to committees, there will be an Internship Program ACM Committee Info Session/Q&A sometime in week 3 or 4 of the Fall Quarter.</>,
+            content: <>If you have any questions about the application process or the Internship program in general email <a href="mailto:veronicasalas@g.ucla.edu">Veronica Salas (veronicasalas@g.ucla.edu)</a>, the Internship Affairs Director or <a href= "mailto:anmolgupta23@g.ucla.edu" > Anmol Gupta (anmolgupta23@g.ucla.edu)</a>, the Internship Trainning Director.</>,
         },
     ],
 };

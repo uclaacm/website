@@ -58,11 +58,12 @@ export default [
 			whatWeDo: 'Studio wants to create a community of game developers, whether you’re interested in gameplay programming, graphics, animation, pixel, music, whatever. We want to help you express yourself through video game development.',
 			whatInternsWillDo: (
 			<ul>
-				<li> Marketing interns will focus on community engagement, particularly in the form of leading socials and increasing member retention</li>
-				<li> Unity Tutorial Subcommittee interns will help host Unity tutorials and bugfix in winter quarter. Unity experience is heavily valued but not absolutely required, as much of game development is a &apos;learn as you go&apos; style. C# skills and teaching experience are appreciated but are soft expectations.</li>
+				<li> ACM Studio is looking for visual designers to learn ACM/ACM Studio style guide and create graphics to help market and promote our events on social media & update our branding on existing platforms! (Prior skills in graphic design / Figma are appreciated, but not required.)</li>
+				<li> Intro to Game Programming Track is looking for people passionate about helping to create content for future beginner level workshops and to teach the content. Interns would be learning alongside experienced officers in the Fall and will have the opportunity in Winter to start actively working on / teaching workshops. (Prior skills in Unity / C# are appreciated, but not required.)</li>
+				<li> Special Topics in Gaming is looking for people passionate about teaching more niche topics in game development (whether a specific game mechanic you seem to invest too much time in developing or that you’re deeply passionate about having good game programming practices). Interns will be learning alongside experienced officers in the Fall and will have the opportunity in Winter to start actively working on / teaching workshops. (Prior skills in Unity / C# are appreciated, but not required.)</li>
 			</ul> ),
 			card: '/images/cards/studio_card.svg',
-			nextSteps: 'All Interns have the opportunity to become officers in the Spring if they choose to stay.',
+			nextSteps: 'After serving 2 quarters, interns will graduate and ACM Studio’s president(s) will conduct Intern Exit Interviews that will determine your officership in the spring.',
 		},
 	},
 	{
@@ -114,15 +115,12 @@ export default [
 		diamond: '/images/diamonds/icpc_diamond.svg',
 		internship: {
 			whatWeDo: 'ICPC spreads the joy of algorithmic problem solving - and helps you kick-start your career - through workshops, contests, and a top-ranked ICPC team!',
-			whatInternsWillDo: (
-			<>
-				Interns will help produce and teach workshops in one of our three winter workshop tracks:
-				<ul>
-					<li>Beginner Track (great for anyone interested in algorithms)</li>
-					<li>Interview Track (best for people with interview and internship experience already)</li>
-					<li>Possibly Advanced Track (for people with background in competitive programming)</li>
-				</ul>
-			</>),
+			whatInternsWillDo: (<>Interns will help produce and teach workshops in one of our two winter workshop tracks:
+			<ul>
+				<li>Intro to Competitive Programming (great for anyone interested in algorithms)</li>
+				<li>Interview Track (best for people with interview and internship experience already).</li>
+				<li>Advanced Competitive Programming workshop track (for people with a strong background in competitive programming, may or may not take interns)</li>
+			</ul></>),
 			card: '/images/cards/icpc_card.svg',
 			nextSteps: 'All Interns have the opportunity to become officers in the Spring if they choose to stay.',
 		},
@@ -247,7 +245,8 @@ export default [
 			<ul>
 				<li> Create workshop content (ex. XSS, SQL injections, Reverse engineering)</li>
 				<li> Do weekly chores such as submitting newsletter, design requests, and helping with the website</li>
-				<li> Plan Socials events with other officers. Deliver at the minimum 1 workshop per quarter</li>
+				<li> Attend Socials events with other officers. </li>
+				<li> Deliver at the minimum 1 workshop per quarter</li>
 			</ul> ),
 			card: '/images/cards/cyber_card.svg',
 			nextSteps: 'All interns in good standing (attending workshops/chores/meetings) have the opportunity to become officers in the spring!',
@@ -316,8 +315,9 @@ export default [
 				<li> The JEDI intern will work with JEDI directors to help plan allyship spaces and train new instructors</li>
 				<li> Speaker Series + Events Interns will be in charge of planning and putting on larger-scale events like Day of Code and coordinating smaller one-off events like speaker series</li>
 				<li> Teaching Interns will either help School Leads with coordinating teaching with other instructors and reporting feedback, or serve as the point person for a class</li>
-				<li> Dev Team PM interns will be trained to become Product/Project managers and oversee the life cycle of a software project (does not involve much coding)</li>
+				<li> Curriculum Interns assist the Curriculum Director by working with School Leads and instructors to ensure that all of our curriculum is up-to-date and meets Teach LA’s standards.</li>
 				<li> Dev Team Training interns will assist training directors in creating curriculum and training devs</li>
+				<li> The Design intern will assist the Design Director in building hi-fidelity mockups of dev team projects, such as learning labs and the static site.</li>
 			</ul> ),
 			card: '/images/cards/teachLA_card.svg',
 			nextSteps: 'Interns will have to apply for or receive an officer role post-internship, or will revert back to instructors or devs',
@@ -515,7 +515,7 @@ export default [
 		diamond: '/images/diamonds/hack_diamond.svg',
 		internship: {
 			whatWeDo: 'Hack is all about empowering the community with the means to build amazing things using software. We deal primarily with software development, most commonly web and mobile app development, and host events for these such as workshops and hackathons.',
-			whatInternsWillDo: 'Interns will work closely with the rest of the team to organize events, fulfilling roles (i.e. event  director, curriculum developer, marketing) chosen based on personal interest prior to each quarter.',
+			whatInternsWillDo: 'Interns will work closely with the rest of the team to organize events, fulfilling roles (i.e. event  director, curriculum developer, marketing) chosen based on personal interest prior to each quarter. Interns may choose to additionally work on our internal dev team to maintain the Hack and HOTH websites.',
 			card: '/images/cards/hack_card.svg',
 			nextSteps: 'All Interns have the opportunity to become officers in the Spring if they choose to stay.',
 		},
