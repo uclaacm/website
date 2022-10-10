@@ -32,6 +32,7 @@ export default [
                 <li> Operations Interns will lead important all-ACM events such as Winter GM. </li>
                 <li> Internal Affairs interns will organize fun socials across committees.</li>
                 <li> The Dev team interns will maintain existing ACM projects and add features. </li>
+                <li> Dev Team interns will also build new ACM infrastructure and projects for the greater CS community</li>
                 <li> The Impact interns will plan Impact events and help out with the blog</li>
                 <li> JEDI interns will organize events, work on projects and conduct culture survey.</li>
                 <li> External Affairs interns will plan out events like company tours and info-sessions</li>
