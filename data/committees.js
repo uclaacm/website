@@ -119,7 +119,7 @@ export default [
 			<ul>
 				<li>Intro to Competitive Programming (great for anyone interested in algorithms)</li>
 				<li>Interview Track (best for people with interview and internship experience already).</li>
-				<li> Advanced Competitive Programming workshop track (for people with a strong background in competitive programming, may or may not take interns)</li>
+				<li>Advanced Competitive Programming workshop track (for people with a strong background in competitive programming, may or may not take interns)</li>
 			</ul></>),
 			card: '/images/cards/icpc_card.svg',
 			nextSteps: 'All Interns have the opportunity to become officers in the Spring if they choose to stay.',
