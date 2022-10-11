@@ -14,13 +14,13 @@ export default {
         {
             date: '10/10',
             name: 'Application Form is Open',
-            info: 'Fill out the application form for up to 3 committees that you would like to intern for',
+            info: 'Fill out the application form for up to 2 committees that you would like to intern for',
             active: true,
         },
         {
             date: '10/19',
             name: 'Applications Due',
-            info: 'Submit your application by 11:59 pm',
+            info: 'Submit your application by 11:55 pm',
             active: true,
         },
         {
@@ -97,7 +97,7 @@ export default {
         },
         {
             title: 'I have more questions, how can I get them answered?',
-            content: <>If you have any questions about the application process or the Internship program in general email <a href="mailto:veronicasalas@g.ucla.edu">Veronica Salas (veronicasalas@g.ucla.edu)</a>, the Internship Affairs Director or <a href= "mailto:anmolgupta23@g.ucla.edu" > Anmol Gupta (anmolgupta23@g.ucla.edu)</a>, the Internship Trainning Director.</>,
+            content: <>If you have any questions about the application process or the Internship program in general email <a href="mailto:veronicasalas@g.ucla.edu">Veronica Salas (veronicasalas@g.ucla.edu)</a>, the Internship Affairs Director or <a href= "mailto:anmolgupta23@g.ucla.edu" > Anmol Gupta (anmolgupta23@g.ucla.edu)</a>, the Internship Training Director.</>,
         },
     ],
 };
