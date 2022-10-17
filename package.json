@@ -58,7 +58,7 @@
     ]
   },
   "devDependencies": {
-    "@axe-core/react": "^4.4.3",
+    "@axe-core/react": "^4.4.5",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^12.1.5",
     "csv-parser": "^3.0.0",
