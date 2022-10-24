@@ -269,7 +269,6 @@ function TownHall() {
             />
           </div>
         </div>
-        
         <div className="grid-tablet-2">
           <div>
             <h3>Winter 2021 // Wednesday, February 24th 2021</h3>
