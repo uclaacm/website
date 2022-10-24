@@ -262,7 +262,7 @@ function TownHall() {
           <div>
             <Image
               src={TownHallFall2021Attending}
-              alt="A banner that reads 'Spring 2022 Computer Science Town Hall: ask questions and get your voice heard! Wednesday, May 11 from 6:00 - 8:00 PM PT. Mong Learning Center, Engineering VI. Ask Questions and get your voice heard!'"
+              alt="A banner that reads 'Spring 2022 Computer Science Town Hall: ask questions and be heard! Wednesday, May 11 from 6:00 - 8:00 PM PT. Mong Learning Center, Engineering VI. Ask Questions and get your voice heard!'"
               width={embedWidth}
               height={(embedWidth * 315) / 560}
               layout="fixed"
