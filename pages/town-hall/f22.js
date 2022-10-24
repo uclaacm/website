@@ -87,8 +87,8 @@ function TownHall() {
           <li>The rework of CS35L (and CS97)</li>
           <li>The start of engineering-wide ethics reform</li>
           <li>More leniency around the sci-tech and tech breadth electives</li>
-          <li>Reduction of the Physics Lab Requirement from 2 to 1</li>
-          <li>Removel of the chemistry requirement from the CS degree </li>
+          <li>Reduction of the Physics Lab Requirement from 2 classes to 1</li>
+          <li>Removal of the chemistry requirement from the CS degree </li>
         </ul>
         <p>
           The town hall is jointly held by ACM at UCLA, exploretech.la, UPE at
