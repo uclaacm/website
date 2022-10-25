@@ -32,10 +32,9 @@ function Home () {
 			/>
 			<div className="home-page text-center">
 				<ContentBanner
-          ACM-Internship-Application-Fall-2022-Updates
-					title="ACM&apos;s Internship Application for Fall 2022 are open!"
-					ctaText="Apply Now"
-					ctaLink="/internship"
+					title="Fill the Survey and RSVP For CS Town Hall!"
+					ctaText="RSVP Now"
+					ctaLink="/town-hall/f22"
         main
 				/>
 				<Banner />
