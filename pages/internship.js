@@ -68,9 +68,8 @@ function InternshipPage(){
                         </div>
                         ))}
                     </section>
-                    <aside  id="application-card" className={styles['application-info-card']}>
+                    <aside id="application-card" className={styles['application-info-card']}>
                         <h3>Check back in Spring for Officer Recruitment.</h3>
-        
                     </aside>
                 </div>
             </div>
