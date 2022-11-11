@@ -1,5 +1,4 @@
 import { NextSeo } from 'next-seo';
-import Link from 'next/link';
 
 import React from 'react';
 
