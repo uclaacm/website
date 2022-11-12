@@ -92,6 +92,7 @@ function About() {
             <p>
               {/* eslint-disable-next-line max-len */}
               ACM Board is our leadership and administrative team including our <a href ="/dev"> dev team</a> that handles behind-scenes logistics, financing, plans and hosts ACM-wide events
+              {/* eslint-disable-next-line max-len */}
               and works towards improving the CS curriculum at UCLA by engaging the CS faculty and department leadership.
             </p>
           </div>
