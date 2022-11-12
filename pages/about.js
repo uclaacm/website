@@ -8,11 +8,10 @@ import Officers from '../components/OfficerCard';
 import SocialMedia from '../components/SocialMedia';
 import data from '../data';
 
-// import acmAbout1 from '../public/images/about1.png';
-import acmCommittees from '../public/images/acm_committees.png';
-import acmHowToJoin from '../public/images/how-to-join.png';
 import boardcollage from '../public/images/boardcollage.png';
+import acmCommittees from '../public/images/acm_committees.png';
 import initiative from  '../public/images/initiative.png';
+import acmHowToJoin from '../public/images/how-to-join.png';
 import styles from '../styles/pages/About.module.scss';
 
 function About() {
@@ -91,8 +90,9 @@ function About() {
           <div className={styles['text-section']}>
             <h1>What is ACM Board?</h1>
             <p>
-               ACM Board is our leadership and administrative team including our <a href ="/dev"> dev team</a> that handles behind-scenes logistics, financing, plans and hosts ACM-wide events 
-               and works towards improving the CS curriculum at UCLA by engaging the CS faculty and department leadership. 
+              {/* eslint-disable-next-line max-len */}
+              ACM Board is our leadership and administrative team including our <a href ="/dev"> dev team</a> that handles behind-scenes logistics, financing, plans and hosts ACM-wide events
+              and works towards improving the CS curriculum at UCLA by engaging the CS faculty and department leadership.
             </p>
           </div>
         </div>
@@ -116,7 +116,6 @@ function About() {
             </p>
           </div>
         </div>
-        
         <div className={styles['content-section']}>
           <div
             className={`${styles.ornament} ${styles['image-ornament']} ${styles['image-ornament-right']}`}
@@ -130,14 +129,13 @@ function About() {
           <div className={styles['text-section']}>
             <h1>What are ACM Initiatives?</h1>
             <p>
-              ACM Initiatives are independent teams of ACM officers who dedicate their   
-              time to work on long term projects and ideas that advance ACM's mission. 
-              ACM's current Initiatives include <a href = "impact"> Impact</a>, <a href = "jedi"> JEDI</a>, 
-              and Rustaceans. 
+              ACM Initiatives are independent teams of ACM officers who dedicate their
+              time to work on long term projects and ideas that advance our mission.
+              Our current Initiatives include<a href = "impact"> Impact</a>, <a href = "jedi"> JEDI</a>,
+              and Rustaceans.
             </p>
           </div>
         </div>
-
         <div className={styles['content-section']}>
           <div
             className={`${styles.ornament} ${styles['image-ornament']} ${styles['image-ornament-right']}`}
@@ -189,8 +187,8 @@ function About() {
         </div>
         <div className={`${styles['content-section']} ${styles.leadership}`}>
           <h2>Leadership</h2>
-          <p> Our President and Internal/External Vice Presidents support the entire ACM community 
-            while our committee presidents foster the growth of their committee.</p>
+          <p>Our President and Internal/External Vice Presidents support the entire ACM community
+          while our committee presidents foster the growth of their committee.</p>
 					<div className="grid-desktop-3">
 						<Officers officers={leadership} size="compact" />
 					</div>
