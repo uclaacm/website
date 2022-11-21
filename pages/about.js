@@ -8,10 +8,10 @@ import Officers from '../components/OfficerCard';
 import SocialMedia from '../components/SocialMedia';
 import data from '../data';
 
-// import acmAbout1 from '../public/images/about1.png';
+import boardcollage from '../public/images/boardcollage.png';
 import acmCommittees from '../public/images/acm_committees.png';
+import initiative from  '../public/images/initiative.png';
 import acmHowToJoin from '../public/images/how-to-join.png';
-
 import styles from '../styles/pages/About.module.scss';
 
 function About() {
@@ -76,6 +76,28 @@ function About() {
             </p>
           </div>
         </div>
+
+        <div className={styles['content-section']}>
+          <div
+            className={`${styles.ornament} ${styles['image-ornament']} ${styles['image-ornament-right']}`}
+          >
+            <Image
+              src={boardcollage}
+              alt="images of events organised by ACM Board"
+              priority={true}
+            />
+          </div>
+          <div className={styles['text-section']}>
+            <h1>What is ACM Board?</h1>
+            <p>
+              {/* eslint-disable-next-line max-len */}
+              ACM Board is our leadership and administrative team including our <a href ="/dev"> dev team</a> that handles behind-scenes logistics, financing, plans and hosts ACM-wide events
+              {/* eslint-disable-next-line max-len */}
+              and works towards improving the CS curriculum at UCLA by engaging the CS faculty and department leadership.
+            </p>
+          </div>
+        </div>
+
         <div className={styles['content-section']}>
           <div
             className={`${styles.ornament} ${styles['image-ornament']} ${styles['image-ornament-right']}`}
@@ -92,6 +114,26 @@ function About() {
               ACM is comprised of eight committees — each serving a different
               topic and mission. We strive to cover a plethora of interests and
               encourage members to explore new topics, too!
+            </p>
+          </div>
+        </div>
+        <div className={styles['content-section']}>
+          <div
+            className={`${styles.ornament} ${styles['image-ornament']} ${styles['image-ornament-right']}`}
+          >
+            <Image
+              src={initiative}
+              alt="the logos of all ACM intiatives"
+              priority={true}
+            />
+          </div>
+          <div className={styles['text-section']}>
+            <h1>What are ACM Initiatives?</h1>
+            <p>
+              ACM Initiatives are independent teams of ACM officers who dedicate their
+              time to work on long term projects and ideas that advance our mission.
+              Our current Initiatives include<a href = "impact"> Impact</a>, <a href = "jedi"> JEDI</a>,
+              and Rustaceans.
             </p>
           </div>
         </div>
@@ -146,11 +188,14 @@ function About() {
         </div>
         <div className={`${styles['content-section']} ${styles.leadership}`}>
           <h2>Leadership</h2>
+          <p>Our President and Internal/External Vice Presidents support the entire ACM community
+          while our committee presidents foster the growth of their committee.</p>
 					<div className="grid-desktop-3">
 						<Officers officers={leadership} size="compact" />
 					</div>
         </div>
       </div>
+      <br></br>
     </Layout>
   );
 }
