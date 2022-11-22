@@ -6,16 +6,13 @@ import SocialMedia from './SocialMedia';
 
 const footerACMLinks = [
 	{ title: 'About', path: '/about' },
-	{ title: 'Committees', path: '/committees' },
 	{ title: 'Events', path: '/events' },
-	{ title: 'Fall General Meeting', path: '/gm/f22' },
+	{ title: 'General Meeting', path: '/gm/f22' },
+	{ title: 'CS Town Hall', path: '/town-hall/f22' },
 	{ title: 'Internship Program', path: '/internship' },
 	{ title: 'Dev Team', path: '/dev'},
 	{ title: 'Sponsors', path: '/sponsors' },
-	{ title: 'Tech Gala', path: '/techgala' },
-	{ title: 'CS Town Hall', path: '/town-hall/f22' },
 	{ title: 'Membership Portal', path: 'https://members.uclaacm.com', ext: true },
-	{ title: 'COVID-19', path: '/covid' },
 ];
 
 const footerInitiativeLinks = [
