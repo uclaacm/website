@@ -36,7 +36,7 @@ export default {
             active: true,
         },
         {
-            date: '11/18',
+            date: '11/20',
             name: 'Official ACM Onboarding',
             info: 'Learn what you need to know as an ACM Intern',
             active: true,
@@ -97,7 +97,7 @@ export default {
         },
         {
             title: 'I have more questions, how can I get them answered?',
-            content: <>If you have any questions about the application process or the Internship program in general email <a href="mailto:veronicasalas@g.ucla.edu">Veronica Salas (veronicasalas@g.ucla.edu)</a>, the Internship Affairs Director or <a href= "mailto:anmolgupta23@g.ucla.edu" > Anmol Gupta (anmolgupta23@g.ucla.edu)</a>, the Internship Trainning Director.</>,
+            content: <>If you have any questions about the application process or the Internship program in general email <a href="mailto:internship@uclaacm.com">Veronica Salas and Anmol Gupta (internship@uclaacm.com)</a>, our Internship Affairs and Internship Trainning Directors.</>,
         },
     ],
 };
