@@ -3,15 +3,22 @@ import dotenv from 'dotenv';
 import { google } from 'googleapis';
 import { getCssStringFromCommittee, generateSingleEvent, generateDateRange } from './lib.mjs';
 
+<<<<<<< HEAD
 // .env config
+=======
+>>>>>>> bee3eb477fc7048ccbb3d61da96c054893feb4fc
 dotenv.config();
 const SPREADSHEET_ID = process.env.EVENTS_SPREADSHEET_ID;
 const SERVICE_ACCOUNT = process.env.SERVICE_ACCOUNT ?? '';
 
+<<<<<<< HEAD
 // Grab all recurring and single events from spreadsheet
 // and write to output.json
 async function writeAllEvents() {
   // Get all events
+=======
+async function writeAllEvents() {
+>>>>>>> bee3eb477fc7048ccbb3d61da96c054893feb4fc
   let events = [];
   let temp = await getRecurringEvents();
   events = events.concat(temp);
@@ -20,7 +27,10 @@ async function writeAllEvents() {
     events = events.concat(temp);
   }
 
+<<<<<<< HEAD
   // Write to output.json
+=======
+>>>>>>> bee3eb477fc7048ccbb3d61da96c054893feb4fc
   const cleaned = events.filter((item) => item);
   const out = JSON.stringify(cleaned);
   fs.writeFile('output.json', out, (err) => {
@@ -30,8 +40,11 @@ async function writeAllEvents() {
   });
 }
 
+<<<<<<< HEAD
 // Read recurring events from spreadsheet
 // Return as array of JSON objects
+=======
+>>>>>>> bee3eb477fc7048ccbb3d61da96c054893feb4fc
 async function getRecurringEvents() {
   const sheets = google.sheets({version: 'v4'});
 
@@ -93,8 +106,11 @@ async function getRecurringEvents() {
   return events;
 }
 
+<<<<<<< HEAD
 // Read events of Week n
 // Return as array of JSON objects
+=======
+>>>>>>> bee3eb477fc7048ccbb3d61da96c054893feb4fc
 async function getEventsOfWeek(n) {
   const sheets = google.sheets({version: 'v4'});
 
