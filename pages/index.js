@@ -32,9 +32,9 @@ function Home () {
 			/>
 			<div className="home-page text-center">
 				<ContentBanner
-					title="Fill the Survey and RSVP For CS Town Hall!"
+					title="RSVP For Winter GM!"
 					ctaText="RSVP Now"
-					ctaLink="/town-hall/f22"
+					ctaLink="/gm/w23"
         main
 				/>
 				<Banner />
