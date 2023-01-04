@@ -141,7 +141,7 @@ function W23() {
             </div>
             <div className="what-to-bring">
               <h3>How to get there</h3>
-              <p> Winter GM will be hosted in the Grand Ballroom on the second floor of the Ackerman Union building. </p>
+              <p> Winter GM will be hosted in the Grand Ballroom on the second floor of Ackerman Union building. </p>
               <br></br>
               <h3>What to bring</h3>
               <p>Recommended: Face Mask.</p>
