@@ -62,7 +62,8 @@ function TownHall() {
           at <b>6:00 - 8:00 PM PT</b>. The event was fully in-person and
           hosted in the Mong Auditorium (in Engineering VI).
         </p>
-          <p>While the event was not recorded, you are welcome to read the survey form summaries and slides as well as the meeting notes.</p>
+              {/* eslint-disable-next-line max-len */}
+              <p>While the event was not recorded, you are welcome to read the survey form summaries and slides as well as the meeting notes.</p>
         <p>
           In past years, the Town Hall has been a huge driver of student
           feedback and improvements to curriculum; this includes:
