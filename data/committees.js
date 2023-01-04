@@ -45,7 +45,7 @@ export default [
 					<>
 					Each year, Studio splits into teams of students who work through the winter and spring quarters to put together an indie game. Students can apply to be team leads to pitch their idea to the club and have people join them to bring their game concept into reality! You can see past projects at <a href = "https://acmstudio.itch.io/"> acmstudio.itch.io</a>
 					</>
-					)
+					),
 			},
 			{
 				title: 'Tutorial Tracks',
