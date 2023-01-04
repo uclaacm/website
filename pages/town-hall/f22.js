@@ -11,8 +11,7 @@ import Layout from '../../components/Layout';
 import TestimonialsCourseChanges from '../../public/images/town-hall/testimonials-course-changes.png';
 import TownHallFall2021Attending from '../../public/images/town-hall/town-hall-attending-f21.jpeg';
 import TownHallBanner from '../../public/images/town-hall/town-hall-banner-f22.png';
-import SpringTownHallBanner from '../../public/images/town-hall/town-hall-banner-s22.png';
-import SpringTownhallImage from '../../public/images/spring-2023-townhall-photo.JPG'
+import SpringTownhallImage from '../../public/images/spring-2023-townhall-photo.JPG';
 
 const TOWN_HALL_2021_WINTER_VIDEO = 'https://www.youtube.com/embed/Eq2xsShPMVc';
 
@@ -61,8 +60,9 @@ function TownHall() {
         <p>
           The Fall Town Hall happened on <b>Wednesday, Novemeber 9th</b> (Week 7)
           at <b>6:00 - 8:00 PM PT</b>. The event was fully in-person and
-          hosted in the Mong Auditorium (in Engineering VI). While the event was not recorded, you are welcome to read the survey form summaries and slides as well as the meeting notes. 
-          </p>
+          hosted in the Mong Auditorium (in Engineering VI).
+        </p>
+          <p>While the event was not recorded, you are welcome to read the survey form summaries and slides as well as the meeting notes.</p>
         <p>
           In past years, the Town Hall has been a huge driver of student
           feedback and improvements to curriculum; this includes:
@@ -87,7 +87,7 @@ function TownHall() {
                   fixedWidth
                   aria-hidden={true}
                 />{' '}
-                Form Summaries and Slides 
+                Form Summaries and Slides
               </a>
             </Link>
           </li>{' '}
@@ -161,7 +161,7 @@ function TownHall() {
                     className="button"
                     target="_blank"
                     rel="noopener noreferrer"
-                  >
+                    >
                     <FontAwesomeIcon
                       icon={faFileAlt}
                       fixedWidth
