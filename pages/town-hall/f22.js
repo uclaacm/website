@@ -12,7 +12,7 @@ import TestimonialsCourseChanges from '../../public/images/town-hall/testimonial
 import TownHallFall2021Attending from '../../public/images/town-hall/town-hall-attending-f21.jpeg';
 import TownHallBanner from '../../public/images/town-hall/town-hall-banner-f22.png';
 import SpringTownHallBanner from '../../public/images/town-hall/town-hall-banner-s22.png';
-
+import SpringTownhallImage from '../../public/images/spring-2023-townhall-photo.JPG'
 
 const TOWN_HALL_2021_WINTER_VIDEO = 'https://www.youtube.com/embed/Eq2xsShPMVc';
 
@@ -59,26 +59,10 @@ function TownHall() {
           administrators in the CS department.
         </p>
         <p>
-          The upcoming Town Hall occurs on <b>Wednesday, Novemeber 9th</b> (Week 7)
-          at <b>6:00 - 8:00 PM PT</b>. The event will be fully in-person and
-          hosted in the Mong Auditorium (in Engineering VI). There&apos;ll also be
-          catered dinner after the event (you must fill out the{' '}
-          <Link
-            href="https://forms.gle/fA8M1nHYHB8y4oje7"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <a>Town Hall Survey</a>
-          </Link>{' '}
-          to get dinner!). To attend,{' '}
-          <Link
-            href="https://forms.gle/Rsh1ZVBSJnzsYqf68"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <a>please RSVP!</a>
-          </Link>{' '}
-        </p>
+          The Fall Town Hall happened on <b>Wednesday, Novemeber 9th</b> (Week 7)
+          at <b>6:00 - 8:00 PM PT</b>. The event was fully in-person and
+          hosted in the Mong Auditorium (in Engineering VI). While the event was not recorded, you are welcome to read the survey form summaries and slides as well as the meeting notes. 
+          </p>
         <p>
           In past years, the Town Hall has been a huge driver of student
           feedback and improvements to curriculum; this includes:
@@ -96,26 +80,26 @@ function TownHall() {
         </p>
         <ul className="list-unstyled text-center">
           <li style={inlineButtonListStyle}>
-            <Link href="https://forms.gle/Rsh1ZVBSJnzsYqf68">
+            <Link href="https://docs.google.com/presentation/d/14MIk1bzHHr5b11cgYX_kAz5WQa6ToKD_9nnj3_5DLco/edit?usp=sharing">
               <a className="button" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon
                   icon={faCalendarCheck}
                   fixedWidth
                   aria-hidden={true}
                 />{' '}
-                RSVP now!
+                Form Summaries and Slides 
               </a>
             </Link>
           </li>{' '}
           <li style={inlineButtonListStyle}>
-            <Link href="#surveys">
-              <a className="button">
+            <Link href="https://docs.google.com/document/d/1JTFaP27OsqA0sBhjbIC4mIzjCgqRLJyBxvOQ5FSrPCk/edit?usp=sharing">
+              <a className="button" target = "_blank">
                 <FontAwesomeIcon
                   icon={faFileAlt}
                   fixedWidth
                   aria-hidden={true}
                 />{' '}
-                Answer Survey Questions!
+                Meeting Notes
               </a>
             </Link>
           </li>
@@ -207,8 +191,8 @@ function TownHall() {
           </div>
           <div>
             <Image
-              src={SpringTownHallBanner}
-              alt="A banner that reads 'Spring 2022 Computer Science Town Hall: ask questions and get your voice heard! Wednesday, May 11 from 6:00 - 8:00 PM PT. Mong Learning Center, Engineering VI. Ask Questions and get your voice heard!'"
+              src={SpringTownhallImage}
+              alt="A photograph from the Spring 2022 Computer Science Town Hall. Professor Eggert is introducing himself and other professors are sitting beside him."
               width={embedWidth}
               height={(embedWidth * 315) / 560}
               layout="fixed"
