@@ -20,7 +20,7 @@ import fallGMgraphic from '../../public/images/Winter_GM_2023_graphic.png';
 import googleSlideLogo from '../../public/images/slides.png';
 
 const GM_START_TIME = new Date('2023-01-09T18:00-20:00');
-const RSVP_LINK = 'https://forms.gle/9NhDHRmow5PEx3am6';
+const RSVP_LINK = 'https://forms.gle/FKvP6WUgRcSWe5GQA';
 const calculateTimeStrings = ({days, hours, minutes, seconds}) => {
   let dayString = 'Day';
   let hourString = 'Hour';
