@@ -31,13 +31,8 @@ export default [
 	},
 	{
 		name: 'Paige Brown',
-		position: 'Co-President, ACM-W',
+		position: 'President, ACM-W',
 		img: '/images/officers/PaigeBrown.jpg',
-	},
-	{
-		name: 'Ethan Wong',
-		position: 'Co-President, ACM-W',
-		img: '/images/officers/EthanWong.jpg',
 	},
 	{
 		name: 'Robert Lee',
@@ -85,8 +80,8 @@ export default [
 		img: '/images/officers/MuthuPalaniappan.jpg',
 	},
 	{
-		name: 'Amy Seo',
+		name: 'Ivy Kang',
 		position: 'Co-President, Design',
-		img: '/images/officers/AmySeo.png',
+		img: '/images/officers/IvyKang.JPG',
 	},
 ];
