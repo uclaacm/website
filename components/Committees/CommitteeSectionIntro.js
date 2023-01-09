@@ -4,6 +4,7 @@ import {
     faDiscord,
     faTwitter,
     faGithub,
+    faItchIo,
 } from '@fortawesome/free-brands-svg-icons';
 import { faLink } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -31,6 +32,8 @@ function CommitteeIcon({platform}) {
     // see https://fontawesome.com/how-to-use/on-the-web/other-topics/accessibility#web-fonts-semantic
     // for more on accessibility
     switch(platform) {
+        case 'itch':
+            return <FontAwesomeIcon icon={faItchIo} fixedWidth aria-hidden={true} />;
         case 'discord':
             return <FontAwesomeIcon icon={faDiscord} fixedWidth aria-hidden={true} />;
         case 'facebook':

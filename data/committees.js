@@ -7,49 +7,70 @@ export default [
 		name: 'Studio',
 		class: 'studio',
 		slug: 'studio',
-		tagline: 'Creative Expression through Games and VR',
+		tagline: 'Creative Expression through Games',
 		external_link: null,
 		image: '/images/committees/studio_wordmark.svg',
 		wordmark_dark: '/images/committees/studio_wordmark_dark.svg',
 		diamond: '/images/diamonds/studio_diamond.svg',
 		links: [
 			{
-				platform: 'facebook',
-				link: 'https://www.facebook.com/groups/uclaacmstudio',
+				platform: 'carrd',
+				link: 'https://acmstudio.carrd.co/',
 			},
 			{
 				platform: 'discord',
 				link: 'https://discord.gg/9jDH6rN',
 			},
+			{
+				platform: 'itch',
+				link: 'https://acmstudio.itch.io/',
+			},
+			{
+				platform: 'instagram',
+				link: 'https://www.instagram.com/acmstudio.ucla/?hl=en',
+			},
+			{
+				platform: 'facebook',
+				link: 'https://www.facebook.com/groups/uclaacmstudio',
+			},
 		],
 		infoCards: [
 			{
-				title: 'Projects',
+				title: 'Student Run Studios',
 				image: {
 					src: '',
 					alt: '',
 				},
 				desc: (
 					<>
-						Each year, Studio splits into several teams of students who each work throughout winter and spring quarter to put together a fully-fledged game, usually coding in C# with the Unity engine. You can see a collection of many past projects at <a href="https://uclaacmstudio.itch.io" target="_blank" rel="noopener noreferrer" >uclaacmstudio.itch.io</a>.
+					Each year, Studio splits into teams of students who work through the winter and spring quarters to put together an indie game. Students can apply to be team leads to pitch their idea to the club and have people join them to bring their game concept into reality! You can see past projects at <a href = "https://acmstudio.itch.io/"> acmstudio.itch.io</a>
+					</>
+					),
+			},
+			{
+				title: 'Tutorial Tracks',
+				image: {
+					src: '',
+					alt: '',
+				},
+				desc: (
+					<>
+					No prior knowledge required! Studio offers the following workshop tracks: Introduction to Game Programming, Special Topics in Game Programming, and Creative Track. The Intro Track introduces students to the Unity editor. The Special Topics Track dives deep into specific game development areas officers are excited to share about. The Creative Track focuses on non-coding skills and how to incorporate them into a game project workflow. You can find tutorial content on our <a href = "https://github.com/topics/acm-studio">GitHub</a>.
+
 					</>
 				),
 			},
 			{
-				title: 'Beginner Unity track',
+				title: 'Gam Jams',
 				image: {
 					src: '',
 					alt: '',
 				},
-				desc: 'No prior knowledge required! We walk new students through navigating the Unity editor and build a working knowledge of the tools starting from the ground up.',
-			},
-			{
-				title: 'Artists track',
-				image: {
-					src: '',
-					alt: '',
-				},
-				desc: 'These tutorials cater to students more interested in the artistic side of gamedev, focusing on how to incorporate skills besides coding into a game project workflow.',
+				desc: (
+					<>
+					Game jams are a beginner-friendly way to get right into making a game of your own! These game-focused hackathons typically span 48-72 hours and revolve around a specific theme. Studio facilitates team formation for Ludum Dare (a global game jam) and also hosts in-house game jams such as our summer and winter break game jams.
+					</>
+				),
 			},
 		],
 		introImage: '/images/committees/studio/studio_motif_applied.png',
