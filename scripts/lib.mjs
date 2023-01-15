@@ -1,20 +1,21 @@
 import moment from 'moment';
 
 const getCssStringFromCommittee = (committee) => {
-  switch (committee.trim()) {
-    case 'General':
-    case 'Impact': // we should change the branding here soon
-    case 'External':
+  switch (committee.toLowerCase().trim()) {
+    case 'general':
+    case 'impact': // we should change the branding here soon
+    case 'external':
+    case 'board':
       return 'board';
-    case 'Teach LA':
+    case 'teach la':
       return 'teach-la';
-    case 'AI':
-    case 'Cyber':
-    case 'Design':
-    case 'Hack':
-    case 'ICPC':
-    case 'Studio':
-    case 'W':
+    case 'ai':
+    case 'cyber':
+    case 'design':
+    case 'hack':
+    case 'icpc':
+    case 'studio':
+    case 'w':
       return committee.toLowerCase();
     default:
       throw new Error(`Unrecognized string ${committee}`);
