@@ -1,4 +1,4 @@
-import fs from 'fs';
+import fs, { write } from 'fs';
 import dotenv from 'dotenv';
 import { google } from 'googleapis';
 import { getCssStringFromCommittee, generateSingleEvent } from './lib.mjs';
@@ -21,6 +21,19 @@ async function writeAllEventsOfWeek(n) {
   writeToOutput(cleaned);
 }
 
+// Get all single and recurring events of the quarter
+// Return as a list of JSONs
+async function getAllEvents() {
+  let events = [];
+
+  for (let i = 1; i <= 10; i++) {
+    events = events.concat(await getSingleEventsOfWeek(i));
+    events = events.concat(await getRecurringEventsOfWeek(i));
+  }
+
+  return events;
+}
+
 // Read single events of Week n
 // Return as array of JSON objects
 async function getSingleEventsOfWeek(n) {
@@ -35,6 +48,7 @@ async function getSingleEventsOfWeek(n) {
 
     try{
       events.push(generateSingleEvent({
+        id: null,
         title: row[1],
         start: null,
         end: null,
@@ -75,6 +89,7 @@ async function getRecurringEventsOfWeek(n) {
         date.setDate(date.getDate() + d);
 
         events.push(generateSingleEvent({
+          id: null,
           title: row[1],
           start: null,
           end: null,
@@ -144,4 +159,4 @@ function writeToOutput(events) {
   });
 }
 
-writeAllEventsOfWeek(1);
+export default getAllEvents;

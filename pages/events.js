@@ -8,7 +8,7 @@ import Filters from '../components/Events/Filters';
 import SelectedEvent from '../components/Events/SelectedEvent';
 import Layout from '../components/Layout';
 
-import events from '../data/event';
+import getAllEvents from '../scripts/event-generator-sheets.mjs';
 import styles from '../styles/pages/Events.module.scss';
 
 import 'react-big-calendar/lib/css/react-big-calendar.css';
@@ -29,7 +29,7 @@ const getEventClassByEvent = (event) => {
 
 const googleCalendarShare = 'https://calendar.google.com/calendar/u/2?cid=YWNtYnJ1aW5zQGdtYWlsLmNvbQ';
 
-function Events() {
+function Events({ events }) {
 	const [activeEvent, setActiveEvent] = useState(null);
 	const [indexedEvents, setIndexedEvents] = useState(events.map((event, index) => ({...event, id: index})));
 
@@ -92,5 +92,15 @@ function Events() {
 		</Layout>
 	);
 }
+
+export const getStaticProps = async () => {
+	const events = await getAllEvents();
+
+	return {
+		props: {
+			events,
+		},
+	};
+};
 
 export default Events;
