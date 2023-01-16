@@ -95,10 +95,13 @@ function Events({ events }) {
 
 export const getStaticProps = async () => {
 	const events = await getAllEvents();
+	const processedEvents = events.map((event) => (
+		{...event, description: <>{event.description.replace(/\n/g, '<br/>')}</>}));
+	console.log(processedEvents);
 
 	return {
 		props: {
-			events,
+			events: processedEvents,
 		},
 	};
 };
