@@ -85,7 +85,7 @@ async function getRecurringEventsOfWeek(n) {
       try {
         // Calculate date of event for this week
         const d = (n - 1) * 7 + DAYS_OF_WEEK.indexOf(row[4].toLowerCase());
-        const date = FIRST_DAY_OF_QUARTER;
+        const date = new Date(FIRST_DAY_OF_QUARTER);
         date.setDate(date.getDate() + d);
 
         events.push(generateSingleEvent({
@@ -144,6 +144,10 @@ async function getGoogleSheetData(range) {
     console.log('Error: no data found');
     return [];
   }
+
+  // // Replacing the new lines with <br/> (doesnt work tho)
+  // const formatRows = rows.map((row) => row.map( (r) => r.replace(/\n/g, '<br/>')));
+  // return formatRows;
 
   return rows;
 }

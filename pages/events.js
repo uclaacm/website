@@ -95,10 +95,14 @@ function Events({ events }) {
 
 export const getStaticProps = async () => {
 	const events = await getAllEvents();
+	// Attempt to replace new lines with <br/>, doesnt work
+	// const processedEvents = events.map((event) => (
+	// 	{...event, description: <>{event.description.replace(/\n/g, '<br/>')}</>}));
+	// console.log(processedEvents);
 
 	return {
 		props: {
-			events,
+			events: events,
 		},
 	};
 };
