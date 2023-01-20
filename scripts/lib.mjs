@@ -49,7 +49,7 @@ const generateSingleEvent = ({
       allDay = true;
       start = moment(`${date}`, 'YYYY-MM-DD LT').valueOf();
     } else {
-      const startHr = rawStart.trim();
+      const startHr = rawStart.replace('PST', '').trim();
       start = moment(`${date} ${startHr}`, 'YYYY-MM-DD LT').valueOf();
     }
 
@@ -57,7 +57,7 @@ const generateSingleEvent = ({
       allDay = true;
       end = moment(`${date}`, 'YYYY-MM-DD LT').valueOf();
     } else {
-      const endHr = rawEnd.trim();
+      const endHr = rawEnd.replace('PST', '').trim();
       end = moment(`${date} ${endHr}`, 'YYYY-MM-DD LT').valueOf();
     }
   }
