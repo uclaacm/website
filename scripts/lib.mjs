@@ -1,4 +1,5 @@
 import moment from 'moment';
+import 'moment-timezone';
 
 const getCssStringFromCommittee = (committee) => {
   switch (committee.toLowerCase().trim()) {
@@ -47,18 +48,18 @@ const generateSingleEvent = ({
     // If rawStart or rawEnd is missing, set allDay to true
     if (!rawStart) {
       allDay = true;
-      start = moment(`${date}`, 'YYYY-MM-DD LT').valueOf();
+      start = moment(`${date}`, 'YYYY-MM-DD LT').tz('America/Los_Angeles').valueOf();
     } else {
       const startHr = rawStart.trim();
-      start = moment(`${date} ${startHr}`, 'YYYY-MM-DD LT').valueOf();
+      start = moment(`${date} ${startHr}`, 'YYYY-MM-DD LT').tz('America/Los_Angeles').valueOf();
     }
 
     if (!rawEnd) {
       allDay = true;
-      end = moment(`${date}`, 'YYYY-MM-DD LT').valueOf();
+      end = moment(`${date}`, 'YYYY-MM-DD LT').tz('America/Los_Angeles').valueOf();
     } else {
       const endHr = rawEnd.trim();
-      end = moment(`${date} ${endHr}`, 'YYYY-MM-DD LT').valueOf();
+      end = moment(`${date} ${endHr}`, 'YYYY-MM-DD LT').tz('America/Los_Angeles').valueOf();
     }
   }
 

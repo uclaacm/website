@@ -10,6 +10,7 @@
     "dotenv": "^16.0.3",
     "googleapis": "^109.0.1",
     "moment": "^2.29.4",
+    "moment-timezone": "^0.5.40",
     "next": "11.1.4",
     "next-seo": "^5.5.0",
     "react": "^17.0.2",
