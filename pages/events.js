@@ -8,7 +8,7 @@ import Filters from '../components/Events/Filters';
 import SelectedEvent from '../components/Events/SelectedEvent';
 import Layout from '../components/Layout';
 
-import events from '../data/event';
+import getAllEvents from '../scripts/event-generator-sheets.mjs';
 import styles from '../styles/pages/Events.module.scss';
 
 import 'react-big-calendar/lib/css/react-big-calendar.css';
@@ -29,7 +29,7 @@ const getEventClassByEvent = (event) => {
 
 const googleCalendarShare = 'https://calendar.google.com/calendar/u/2?cid=YWNtYnJ1aW5zQGdtYWlsLmNvbQ';
 
-function Events() {
+function Events({ events }) {
 	const [activeEvent, setActiveEvent] = useState(null);
 	const [indexedEvents, setIndexedEvents] = useState(events.map((event, index) => ({...event, id: index})));
 
@@ -62,8 +62,8 @@ function Events() {
 						<Calendar
 							localizer={localizer}
 							events={indexedEvents}
-							startAccessor={(event) => new Date(event.start)}
-							endAccessor={(event) => new Date(event.end)}
+							startAccessor="start"
+							endAccessor="end"
 							className={styles['calendar-size-controller']}
 							onSelectEvent={setActiveEvent}
 							eventPropGetter={getEventClassByEvent}
@@ -92,5 +92,21 @@ function Events() {
 		</Layout>
 	);
 }
+
+export const getStaticProps = async () => {
+	const events = await getAllEvents();
+	// Attempt to replace new lines with <br/>, doesnt work
+	// const processedEvents = events.map((event) => (
+	// 	{...event, description: <>{event.description.replace(/\n/g, '<br/>')}</>}));
+	// console.log(processedEvents);
+
+	return {
+		props: {
+			events: events,
+		},
+
+		revalidate: 3600,
+	};
+};
 
 export default Events;
