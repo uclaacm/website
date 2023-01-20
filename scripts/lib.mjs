@@ -82,6 +82,10 @@ const generateSingleEvent = ({
     });
   }
 
+  if (!title) {
+    throw new Error('Missing title');
+  }
+
   return {
     id,
     title,

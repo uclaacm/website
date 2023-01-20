@@ -1,4 +1,5 @@
 import fs from 'fs';
+import { resolve } from 'path';
 import dotenv from 'dotenv';
 import { google } from 'googleapis';
 import { getCssStringFromCommittee, generateSingleEvent } from './lib.mjs';
@@ -24,13 +25,19 @@ async function writeAllEventsOfWeek(n) {
 // Get all single and recurring events of the quarter
 // Return as a list of JSONs
 async function getAllEvents() {
-  let events = [];
-
+  // Get all single events
+  let promises = [];
   for (let i = 1; i <= 10; i++) {
-    events = events.concat(await getSingleEventsOfWeek(i));
-    events = events.concat(await getRecurringEventsOfWeek(i));
+    promises = promises.concat(getSingleEventsOfWeek(i));
   }
+  let events = await Promise.all(promises);
+  events = [].concat(...events);
 
+  // Get all recurring events
+  let recurring_rows = await getGoogleSheetData('RECURRING EVENTS!A:J');
+  for (let i = 1; i <= 10; i++) {
+    events = events.concat(getRecurringEventsOfWeek(recurring_rows, i));
+  }
   return events;
 }
 
@@ -53,8 +60,8 @@ async function getSingleEventsOfWeek(n) {
         start: null,
         end: null,
         committee: getCssStringFromCommittee(row[0]),
-        location: row[5],
-        description: row[6],
+        location: row[5] ?? '',
+        description: row[6] ?? '',
         links: null,
         rawStart: row[3],
         rawEnd: row[4],
@@ -71,9 +78,7 @@ async function getSingleEventsOfWeek(n) {
 
 // Read recurring events of Week n
 // Return as array of JSON objects
-async function getRecurringEventsOfWeek(n) {
-  const rows = await getGoogleSheetData('RECURRING EVENTS!A:J');
-
+function getRecurringEventsOfWeek(rows, n) {
   const events = [];
   for (const row of rows) {
     // Skip header rows and example event
@@ -95,8 +100,8 @@ async function getRecurringEventsOfWeek(n) {
           start: null,
           end: null,
           committee: getCssStringFromCommittee(row[0]),
-          location: row[7],
-          description: row[8],
+          location: row[7] ?? '',
+          description: row[8] ?? '',
           links: null,
           rawStart: row[5],
           rawEnd: row[6],
@@ -166,4 +171,3 @@ function writeToOutput(events) {
 }
 
 export default getAllEvents;
-
