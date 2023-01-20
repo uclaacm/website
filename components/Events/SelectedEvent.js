@@ -17,7 +17,8 @@ function SelectedEvent({ event }) {
       <img className={styles['card-image']} src={imageSrc} alt={alt} />
       <div className={styles['card-body']}>
         <h3 className={styles['card-title']}>{title}</h3>
-        <p className={styles['date-line']}>{moment(start).format('dddd, MMMM Do, YYYY -- h:mm a')}</p>
+        {/* Don't show start time if it starts at 12:00 am (missing start time in event spreadsheet) */}
+        <p className={styles['date-line']}>{moment(start).get('hour') == 0 ? moment(start).format('dddd, MMMM Do, YYYY'): moment(start).format('dddd, MMMM Do, YYYY -- h:mm a')}</p>
         {
           location && <p className={styles['date-line']}>{location}</p>
         }

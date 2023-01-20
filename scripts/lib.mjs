@@ -33,24 +33,33 @@ const generateSingleEvent = ({
   description,
   links,
   // non-final keys that need to be processed
-  time,
+  rawStart,
+  rawEnd,
   date,
   fblink,
 }) => {
-  // TODO: change this logic to actually look at relevant info
-  const allDay = false;
+  let allDay = false;
 
   if (!start && !end) {
-    if (!date || !time) {
-      throw new Error('Missing either date or time; can\'t proceed');
+    if (!date) {
+      throw new Error('Missing date; can\'t proceed');
+    }
+    // If rawStart or rawEnd is missing, set allDay to true
+    if (!rawStart) {
+      allDay = true;
+      start = moment(`${date}`, 'YYYY-MM-DD LT').valueOf();
+    } else {
+      const startHr = rawStart.trim();
+      start = moment(`${date} ${startHr}`, 'YYYY-MM-DD LT').valueOf();
     }
 
-    // const [year, month, day] = date.split('-');
-    const [rawStart, rawEnd] = time.split('-');
-    const startHr = rawStart.trim();
-    const endHr = rawEnd.trim().split(' ')[0];
-    start = moment(`${date} ${startHr} PM`, 'YYYY-MM-DD LT').valueOf();
-    end = moment(`${date} ${endHr} PM`, 'YYYY-MM-DD LT').valueOf();
+    if (!rawEnd) {
+      allDay = true;
+      end = moment(`${date}`, 'YYYY-MM-DD LT').valueOf();
+    } else {
+      const endHr = rawEnd.trim();
+      end = moment(`${date} ${endHr}`, 'YYYY-MM-DD LT').valueOf();
+    }
   }
 
   if(!links){

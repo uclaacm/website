@@ -62,8 +62,8 @@ function Events({ events }) {
 						<Calendar
 							localizer={localizer}
 							events={indexedEvents}
-							startAccessor={(event) => new Date(event.start)}
-							endAccessor={(event) => new Date(event.end)}
+							startAccessor="start"
+							endAccessor="end"
 							className={styles['calendar-size-controller']}
 							onSelectEvent={setActiveEvent}
 							eventPropGetter={getEventClassByEvent}

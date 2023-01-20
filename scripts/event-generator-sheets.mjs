@@ -1,4 +1,4 @@
-import fs, { write } from 'fs';
+import fs from 'fs';
 import dotenv from 'dotenv';
 import { google } from 'googleapis';
 import { getCssStringFromCommittee, generateSingleEvent } from './lib.mjs';
@@ -53,12 +53,13 @@ async function getSingleEventsOfWeek(n) {
         start: null,
         end: null,
         committee: getCssStringFromCommittee(row[0]),
-        location: row[4],
-        description: row[5],
+        location: row[5],
+        description: row[6],
         links: null,
-        time: row[3],
+        rawStart: row[3],
+        rawEnd: row[4],
         date: row[2],
-        fblink: row[6]}));
+        fblink: row[7]}));
     } catch (err) {
       // eslint-disable-next-line no-console
       console.error(`Error ${err} on event ${row}`);
@@ -94,12 +95,13 @@ async function getRecurringEventsOfWeek(n) {
           start: null,
           end: null,
           committee: getCssStringFromCommittee(row[0]),
-          location: row[6],
-          description: row[7],
+          location: row[7],
+          description: row[8],
           links: null,
-          time: row[5],
+          rawStart: row[5],
+          rawEnd: row[6],
           date: date.toISOString().split('T')[0],
-          fblink: row[8]}));
+          fblink: row[9]}));
       } catch (err) {
         // eslint-disable-next-line no-console
         console.error(`Error ${err} on event ${row}`);
@@ -164,3 +166,4 @@ function writeToOutput(events) {
 }
 
 export default getAllEvents;
+
