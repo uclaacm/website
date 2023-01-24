@@ -3,4 +3,4 @@
 . "$(dirname -- "$0")/_/husky.sh"
 
 echo "Fixing any lint errors before commit!"
-yarn pre-commit
+yarn lint-fix
