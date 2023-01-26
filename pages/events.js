@@ -54,7 +54,7 @@ function Events({ events }) {
 			<div className={styles['events-container']}>
 				<h1 className="text-center">Our Events</h1>
 				<p className="text-center">
-					Take a look at our fancy calendar. Or, <a href={googleCalendarShare} target="_blank" rel="noopener noreferrer">subscribe to our Google Calendar</a>!
+					Take a look at our fancy calendar. An updated google calendar of events is in the works!
 				</p>
 				<div className={styles['calendar-view-container']}>
 					<div>
