@@ -27,7 +27,7 @@ const getEventClassByEvent = (event) => {
 	});
 };
 
-const googleCalendarShare = 'https://calendar.google.com/calendar/u/2?cid=YWNtYnJ1aW5zQGdtYWlsLmNvbQ';
+// const googleCalendarShare = 'https://calendar.google.com/calendar/u/2?cid=YWNtYnJ1aW5zQGdtYWlsLmNvbQ';
 
 function Events({ events }) {
 	const [activeEvent, setActiveEvent] = useState(null);
