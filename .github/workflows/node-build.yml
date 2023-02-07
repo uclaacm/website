@@ -33,3 +33,4 @@ jobs:
     - run: npm test
       env:
         CI: true
+        super_secret: ${{ secrets.SuperSecret }}
