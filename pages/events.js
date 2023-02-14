@@ -98,7 +98,7 @@ function Events({ events }) {
 export const getStaticProps = async () => {
 	const events = await getAllEvents();
 	// I copied this from geeksforgeeks https://www.geeksforgeeks.org/how-to-replace-plain-url-with-link-using-javascript/
-	const linkRegex = /(\b(https?|ftp|file):\/\/([-A-Z0-9+&@#%?=~_|!:,.;]*)([-A-Z0-9+&@#%?\/=~_|!:,.;]*)[-A-Z0-9+&@#\/%=~_|])/ig;
+	const linkRegex = /(\b(https?|ftp|file):\/\/([-A-Z0-9+&@#%?=~_|!:,.;]*)([-A-Z0-9+&@#%?/=~_|!:,.;]*)[-A-Z0-9+&@#/%=~_|])/ig;
 
 	const lineBreakEvents = events.map((event) => ({...event, description: event.description.replace(/(?:\r\n|\r|\n)/g, '<br/>')}));
 	const linkedEvents = lineBreakEvents.map((event) => ({...event, description: event.description.replace(linkRegex, "<a href='$1' target='_blank'>$3</a>")}));
