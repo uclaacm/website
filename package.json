@@ -10,6 +10,7 @@
     "dotenv": "^16.0.3",
     "googleapis": "^109.0.1",
     "isomorphic-dompurify": "^0.26.0",
+    "jsdom": "^21.1.0",
     "moment": "^2.29.4",
     "next": "11.1.4",
     "next-seo": "^5.5.0",
