@@ -7,7 +7,7 @@ import { getCssStringFromCommittee, generateSingleEvent } from './lib.mjs';
 // .env config
 dotenv.config();
 const SPREADSHEET_ID = process.env.EVENTS_SPREADSHEET_ID;
-const SERVICE_ACCOUNT = process.env.SERVICE_ACCOUNT ?? '';
+const SERVICE_ACCOUNT = process.env.SERVICE_ACCOUNT ?? '{}';
 
 // Week one MONDAY of the quarter (y, m (base 0), d)
 const FIRST_DAY_OF_QUARTER = new Date(2023, 0, 9);
