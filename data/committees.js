@@ -228,31 +228,39 @@ export default [
 				platform: 'facebook',
 				link: 'https://www.facebook.com/groups/320869398280511',
 			},
+			{
+				platform: 'twitter',
+				link: 'https://twitter.com/pbrucla',
+			},
+			{
+				platform: 'website',
+				link: 'https://lactf.uclaacm.com',
+			}
 		],
 		infoCards: [
 			{
-				title: 'Cyber Academy: Cryptography and Reverse Engineering',
+				title: 'Cyber Academy: Web Auditing x Bruinwalk',
 				image: {
-					src: '/images/committees/cyber/cryp_reverse.png',
+					src: '/images/committees/cyber/cyber-academy-bruinwalk.png',
 					alt: 'Image of forensics event flyer',
 				},
-				desc: 'Attend our weekly workshops on awesome topics such as classical ciphers, modern cryptography, cryptographic attacks, and advanced reverse engineering where we provide with in-depth demos and challenges. Our workshops are designed for beginners with no experience or just beginning in cybersecurity, and are self-encapsulated so feel free to attend even if you had to miss one!',
+				desc: 'ACM Cyber collaborated up with the Bruinwalk team to perform a security audit of https://bruinwalk.com/. Throughout the quarter, members learned about web hacking and security vulnerabilities which culminated a hands on experience to audit the source code of the famous website! Teams were awarded bounties for finding bugs on the website allowing the team to patch these vulnerabilities.',
 			},
 			{
-				title: 'CTF After Dark',
+				title: 'LA CTF',
 				image: {
-					src: '/images/committees/cyber/cft_after_dark.png',
-					alt: 'Capture the flag after dark',
+					src: '/images/committees/cyber/lactf-logo.gif',
+					alt: 'LA CTF 2023 mountains logo GIF.',
 				},
-				desc: 'Collaborate with your friends in our beginner friendly Capture The Flag (CTF) competition. Challenges will be targeted at the skills that you’ve learned from our Spring workshops. Top teams get bragging rights as well as prizes.',
+				desc: 'LA CTF is an annual Capture the Flag (CTF) cybersecurity competition hosted by ACM Cyber at UCLA & Psi Beta Rho. LA CTF is open to all skill levels of cybersecurity! Whether you are tackling your first exploit or have professional experience, there will be challenges just right for you! There will be a variety of events ranging from the competition containing jeopardy-style cybersecurity challenges to talks from UCLA professors to fun events such as typing competitions! If you are interested in attending, join the Discord to stay up to date with the latest information about LA CTF!',
 			},
 			{
-				title: 'Cyber x Studio: Video Game Hacking',
+				title: 'Psi Beta Rho',
 				image: {
-					src: '',
+					src: '/images/committees/cyber/pbr-team-photo.jpg',
 					alt: '',
 				},
-				desc: 'Ever wanted to know how that guy snapped to your head in a shooter game right as you peeked or somehow knew what your next move was in a strategy game? If you want to learn how to make your own aimbot or learn more about how hackers can exploit multiplayer games through packet spoofing, then our Video Game Hacking workshop is for you! No prior experience necessary!',
+				desc: 'Psi Beta Rho, also known as PBR, is UCLA\'s competetive cybersecurity team! We are a group of students who are passionate about learning more about cybersecurity and competing at CTFs. PBR attends a variety of different cybersecurity competitions throughout the year by we primarily compete in capture the flag (CTF) competitions. Psi Beta Rho is open to all skill levels. Whether you are just launching your cybersecurity career or are already an experienced professional, PBR is for you!',
 			},
 		],
 		introImage: '/images/committees/cyber/cyber_motif_applied.png',
