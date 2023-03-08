@@ -235,7 +235,7 @@ export default [
 			{
 				platform: 'website',
 				link: 'https://lactf.uclaacm.com',
-			}
+			},
 		],
 		infoCards: [
 			{
