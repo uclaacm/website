@@ -16,8 +16,8 @@ import icpcLogo from '../../public/images/committees/icpc_wordmark.svg';
 import studioLogo from '../../public/images/committees/studio_wordmark.svg';
 import teachlaLogo from '../../public/images/committees/teachLA_wordmark.svg';
 import wLogo from '../../public/images/committees/w_wordmark.svg';
-import fallGMgraphic from '../../public/images/Winter_GM_2023_graphic.png';
 import googleSlideLogo from '../../public/images/slides.png';
+import fallGMgraphic from '../../public/images/Winter_GM_2023_graphic.png';
 
 const GM_START_TIME = new Date('2023-01-09T18:00-20:00');
 const RSVP_LINK = 'https://forms.gle/FKvP6WUgRcSWe5GQA';
