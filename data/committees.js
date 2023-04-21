@@ -61,7 +61,7 @@ export default [
 				),
 			},
 			{
-				title: 'Gam Jams',
+				title: 'Game Jams',
 				image: {
 					src: '',
 					alt: '',
