@@ -73,9 +73,9 @@
     "jest": "^27.5.1",
     "jest-axe": "^7.0.0",
     "postcss": "^8.4.21",
-    "stylelint": "^13.13.1",
-    "stylelint-config-recommended": "^5.0.0",
-    "stylelint-config-sass-guidelines": "^8.0.0",
+    "stylelint": "^15.6.0",
+    "stylelint-config-recommended": "^12.0.0",
+    "stylelint-config-sass-guidelines": "^10.0.0",
     "stylelint-scss": "^3.21.0"
   }
 }
