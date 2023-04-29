@@ -8,7 +8,7 @@ module.exports = {
   },
   target: 'serverless',
   webpack: (config) => {
-    config.externals = [...config.externals, "canvas", "jsdom"];
+    config.externals = [...config.externals, 'canvas', 'jsdom'];
     return config;
   },
 };
