@@ -7,4 +7,8 @@ module.exports = {
     domains: ['www.netlify.com'],
   },
   target: 'serverless',
+  webpack: (config) => {
+    config.externals = [...config.externals, "canvas", "jsdom"];
+    return config;
+  },
 };

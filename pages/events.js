@@ -1,4 +1,3 @@
-import DOMPurify from 'isomorphic-dompurify';
 import moment from 'moment';
 import { NextSeo } from 'next-seo';
 import React, { useState } from 'react';
@@ -102,8 +101,9 @@ export const getStaticProps = async () => {
 
 	const lineBreakEvents = events.map((event) => ({...event, description: event.description.replace(/(?:\r\n|\r|\n)/g, '<br/>')}));
 	const linkedEvents = lineBreakEvents.map((event) => ({...event, description: event.description.replace(linkRegex, "<a href='$1' target='_blank'>$3</a>")}));
+	const DOMPurify = require('isomorphic-dompurify');
 	const processedEvents = linkedEvents.map((event) => (
-		{...event, description: (DOMPurify.sanitize(event.description))}));
+		{...event, description: DOMPurify.sanitize(event.description)}));
 
 	return {
 		props: {
