@@ -225,8 +225,8 @@ export default [
 				link: 'https://discord.gg/j9dgf2q',
 			},
 			{
-				platform: 'facebook',
-				link: 'https://www.facebook.com/groups/320869398280511',
+				platform: 'website',
+				link: 'https://pbr.uclaacm.com/',
 			},
 			{
 				platform: 'twitter',
