@@ -1,7 +1,7 @@
 export default [
   {
     name: 'Sujay Jain',
-    position: 'Internal Vice President',
+    position: 'President',
     img: '/images/officers/SujayJain.jpg',
   },
   {

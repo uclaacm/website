@@ -11,8 +11,8 @@ import { people } from '../data/dev';
 import styles from '../styles/pages/Dev.module.scss';
 
 const devTeamDirector = {
-	name: 'Matthew Nieva',
-	email: 'matthewcn56@gmail.com',
+	name: 'Arsh Malik',
+	email: 'arshmalik02@g.ucla.edu',
 };
 
 function DevTeam() {
