@@ -152,10 +152,6 @@ async function getGoogleSheetData(range) {
     return [];
   }
 
-  // // Replacing the new lines with <br/> (doesnt work tho)
-  // const formatRows = rows.map((row) => row.map( (r) => r.replace(/\n/g, '<br/>')));
-  // return formatRows;
-
   return rows;
 }
 
