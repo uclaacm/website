@@ -72,15 +72,6 @@ export const people = [
     alt: 'Ramsey smiling',
   },
   {
-    name: 'Anmol Gupta',
-    pronouns: 'she/her',
-    position: 'Dev Team Officer',
-    major: 'Computer Science and Engineering Major',
-    year: 2025,
-    img: '/images/officers/AnmolGupta.jpg',
-    alt: 'Anmol at BPlate',
-  },
-  {
     name: 'Amy He',
     pronouns: 'she/her',
     position: 'Dev Team Officer',
