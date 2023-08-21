@@ -31,10 +31,12 @@ function Home () {
 				}}
 			/>
 			<div className="home-page text-center">
-				<ContentBanner
-					title="Welcome New Bruins! Explore ACM"
+			<a href="https://forms.gle/TezHm1kL99vTLbHS9" style={{ textDecoration: 'none' }}>
+    <ContentBanner
+        title="RSVP now to attend ACM's Fall GM!"
         main
-				/>
+    />
+</a>
 				<Banner />
 				<div className="content-section">
 					<h2>The largest Computer Science community at UCLA</h2>
