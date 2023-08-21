@@ -32,7 +32,7 @@ function Home () {
 			/>
 			<div className="home-page text-center">
 				<ContentBanner
-					title="Welcome New Bruins! Explore ACM"
+					title="Welcome New Bruins! Explore ACM at UCLA"
         main
 				/>
 				<Banner />
