@@ -147,7 +147,7 @@ function F23() {
               <p>Encouraged: Phone to scan QR codes, excitement to learn about ACM!</p>
             </div>
           </div>
-          <p> Don&apos;t hesitate to contact us at operations@uclaacm.com if you any accessiblity concerns for fall GM.</p>
+          <p> Don&apos;t hesitate to contact us at acm@ucla.edu if you any accessiblity concerns for fall GM.</p>
 
         </div>
 
