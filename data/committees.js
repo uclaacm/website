@@ -226,7 +226,7 @@ export default [
 			},
 			{
 				platform: 'website',
-				link: 'https://pbr.uclaacm.com/',
+				link: 'https://pbr.acmcyber.com/',
 			},
 			{
 				platform: 'twitter',
@@ -234,7 +234,7 @@ export default [
 			},
 			{
 				platform: 'website',
-				link: 'https://lactf.uclaacm.com',
+				link: 'https://lac.tf',
 			},
 		],
 		infoCards: [
