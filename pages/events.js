@@ -31,7 +31,23 @@ const getEventClassByEvent = (event) => {
 
 function Events({ events }) {
 	const [activeEvent, setActiveEvent] = useState(null);
-	const [indexedEvents, setIndexedEvents] = useState(events.map((event, index) => ({...event, id: index})));
+
+	const [indexedEvents, setIndexedEvents] = useState(() => {
+		// Check if events exist and have the expected structure
+		if (!Array.isArray(events)) return [];
+		return events.map((event, index) => ({...event, id: index}));
+	});
+
+	// Handle changes from Filters
+	const handleFilteredEvents = (newEvents) => {
+		// Validate newEvents before updating
+		if (Array.isArray(newEvents)) {
+			setIndexedEvents(newEvents);
+		} else {
+			// Optional: Handle unexpected newEvents format (maybe set to an empty array or log an error)
+			setIndexedEvents([]);
+		}
+	};
 
 	return (
 		<Layout>
@@ -58,7 +74,8 @@ function Events({ events }) {
 				</p>
 				<div className={styles['calendar-view-container']}>
 					<div>
-						<Filters handleChange={(newEvents) => setIndexedEvents(newEvents)}/>
+						<Filters handleChange={handleFilteredEvents} />
+						{indexedEvents.length ? (  // Check if we have events to show
 						<Calendar
 							localizer={localizer}
 							events={indexedEvents}
@@ -78,6 +95,9 @@ function Events({ events }) {
 								agenda: true,
 							}}
 						/>
+						) : (
+							<p>No events available at the moment. Please check back later.</p>
+						)}
 					</div>
 					<SelectedEvent event={activeEvent}/>
 				</div>
@@ -94,19 +114,25 @@ function Events({ events }) {
 }
 
 export const getStaticProps = async () => {
-	const events = await getAllEvents();
-	// Attempt to replace new lines with <br/>, doesnt work
-	// const processedEvents = events.map((event) => (
-	// 	{...event, description: <>{event.description.replace(/\n/g, '<br/>')}</>}));
-	// console.log(processedEvents);
-
-	return {
-		props: {
-			events: events,
-		},
-
-		revalidate: 3600,
-	};
+	try {
+		const events = await getAllEvents();
+		return {
+			props: {
+				events: events,
+			},
+			revalidate: 3600,
+		};
+	} catch (error) {
+		// eslint-disable-next-line no-console
+		console.error('Failed to fetch events:', error.message);
+		return {
+			props: {
+				events: [],  // Return empty array as fallback
+			},
+			revalidate: 3600,
+		};
+	}
 };
 
 export default Events;
+
