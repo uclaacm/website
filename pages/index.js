@@ -1,6 +1,7 @@
 import { NextSeo } from 'next-seo';
 import Link from 'next/link';
 import React from 'react';
+import Head from 'next/head';
 
 import Banner from '../components/Banner';
 import Carousel from '../components/Carousel';
@@ -11,10 +12,17 @@ import Article from '../components/NewsArticle';
 import SocialMedia from '../components/SocialMedia';
 import data from '../data';
 
+
 function Home () {
 	const { carousel, committees, news } = data;
 	return (
 		<Layout>
+			<Head>
+                <script
+                    data-goatcounter="https://uclaacm.goatcounter.com/count"
+                    async src="//gc.zgo.at/count.js">
+                </script>
+            </Head>
 			<NextSeo
 				title="Home | ACM at UCLA"
 				description="The ACM Student Chapter at UCLA is UCLA's largest tech community, focused on making tech as accessible as possible. We're split up into an array of committees and initiatives that each focus on a specific area of computer science. Everyone is welcome to join - regardless of major, prior experience, or anything else!"
