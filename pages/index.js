@@ -12,6 +12,8 @@ import SocialMedia from '../components/SocialMedia';
 import data from '../data';
 
 function Home () {
+	<script data-goatcounter="https://uclaacm.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
 	const { carousel, committees, news } = data;
 	return (
 		<Layout>
