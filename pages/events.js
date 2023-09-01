@@ -123,7 +123,8 @@ export const getStaticProps = async () => {
 			revalidate: 3600,
 		};
 	} catch (error) {
-		console.error("Failed to fetch events:", error.message);
+		// eslint-disable-next-line no-console
+		console.error('Failed to fetch events:', error.message);
 		return {
 			props: {
 				events: [],  // Return empty array as fallback
