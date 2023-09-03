@@ -1,5 +1,29 @@
 export default [
     {
+        date: '07/06/23',
+        headline: 'Student Chapter Excellence Award for Outstanding Chapter Activites ',
+        image: '/images/activites_chapter_award.png',
+        alt: 'Banner of Student Chapter Excellence Award for Outstanding Chapter Activites',
+        link: 'https://samueli.ucla.edu/international-computing-organization-honors-ucla-student-chapter-with-2023-award/',
+
+    },
+    {
+        date: '07/06/23',
+        headline: 'Tortellini Advances to ICPC World Finals',
+        image: '/images/totellini_award.jpg',
+        alt: 'Picture of three members of Tortellini team and their coach. ',
+        link: 'https://www.cs.ucla.edu/ucla-tortellini-advances-to-icpc-world-finals/',
+
+    },
+    {
+        date: '05/12/22',
+        headline: 'Student Chapter Excellence Award for Outstanding Chapter Website ',
+        image: '/images/website_screenshot.jpg',
+        alt: 'ACM Website screenshot',
+        link: 'https://www.cs.ucla.edu/acm-at-ucla-receives-student-chapter-excellence-award-for-outstanding-chapter-website-from-acm/',
+
+    },
+    {
         date: '09/30/21',
         headline: 'UCLA Computer Science Student Team Advances to 2021 ICPC World Finals',
         image: '/images/icpc_team.png',
@@ -20,13 +44,6 @@ export default [
         image: '/images/ybAI_podcast.png',
         alt: 'Podcast Cover for "You belong in AI"!',
         link: 'https://dailybruin.com/2021/01/27/student-run-tech-podcast-aims-to-make-computer-science-more-diverse-accessible',
-    },
-    {
-        date: '07/21/20',
-        headline: 'BruinLabs: A product development summer program by Bruin Entrepreneurs, DevX, and ACM',
-        image: '/images/bruinlabs.png',
-        alt: 'BruinLabs Collaborative Program',
-        link: 'https://samueli.ucla.edu/bruinlabs-ucla-clubs-offers-free-program-to-teach-product-development-skills/',
     },
     {
         date: '05/28/20',
