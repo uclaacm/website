@@ -1,5 +1,9 @@
 export default {
 	images: [
+		'/images/carousel/41.jpg',
+		'/images/carousel/42.jpg',
+		'/images/carousel/43.jpg',
+		'/images/carousel/44.jpg',
 		'/images/carousel/01.jpg',
 		'/images/carousel/02.jpg',
 		'/images/carousel/03.jpg',
