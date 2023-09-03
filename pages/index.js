@@ -60,9 +60,7 @@ function Home () {
 				<div className="content-section">
 					<h2>In the News</h2>
 					<div className="achievements-container">
-					{news.slice(0, 10).map(
-    					article => <Article key={article.date} article={article} />,
-					)}
+						{news.slice(0, 10).map(article => <Article key={article.date} article={article} />)}
 					</div>
 				</div>
 
