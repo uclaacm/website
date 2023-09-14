@@ -167,7 +167,7 @@ function F23() {
             <p className="gm-program-row"><Image src= {studioLogo} alt="ACM studio"/> Henry and Ming</p>
             <p className="gm-program-row"><Image src= {icpcLogo} alt="ACM icpc"/> Suhas</p>
             <p className="gm-program-row"><Image src= {designLogo}  alt="ACM design"/> Michael and William</p>
-            <p className="gm-program-row"><Image src= {cyberLogo}  alt="ACM cyber"/> Ben and Salma</p>
+            <p className="gm-program-row"><Image src= {cyberLogo}  alt="ACM cyber"/> Benson and Salma</p>
             <p className="gm-program-row"><Image src= {teachlaLogo}  alt="ACM teachLA"/> Joseph and Sruthi</p>
             <p className="gm-program-row"><Image src= {wLogo}  alt="ACM w"/> Evy and Veronica</p>
             <p className="gm-program-row"><Image src= {aiLogo}  alt="ACM ai"/> Angeline and Jordan</p>
