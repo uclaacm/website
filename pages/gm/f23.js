@@ -19,7 +19,7 @@ import wLogo from '../../public/images/committees/w_wordmark.svg';
 import fallGMgraphic from '../../public/images/Fall_GM_2023_graphic.png';
 import googleSlideLogo from '../../public/images/slides.png';
 
-const GM_START_TIME = new Date('2023-10-02T18:00-08:00');
+const GM_START_TIME = new Date('2023-10-02T19:00-08:00');
 const RSVP_LINK = 'https://forms.gle/TezHm1kL99vTLbHS9';
 const calculateTimeStrings = ({days, hours, minutes, seconds}) => {
   let dayString = 'Day';
@@ -129,7 +129,7 @@ function F23() {
         <Image
           src = {fallGMgraphic}
           className="gm-graphic"
-          alt="Fall GM 2023 Marketing Graphic. Fall GM will happen on Monday, October 2nd from 6pm to 8pm in Ackerman Grand ballroom"/>
+          alt="Fall GM 2023 Marketing Graphic. Fall GM will happen on Monday, October 2nd from 7pm to 9pm in Ackerman Grand ballroom"/>
       </div>
       <Countdown date={GM_START_TIME} renderer={countdownRenderer}/>
 			<div className="content-container-tight text-center">
@@ -186,10 +186,11 @@ function F23() {
               <h3>ACM Initatives</h3>
               <p className="sub-heading">See exciting new programs that ACM is trying out</p>
             </div>
-            <p className="gm-program-row">ACM Dev Team and Open Source: Arsh</p>
+            <p className="gm-program-row">ACM Dev Team: Arsh</p>
             <p className="gm-program-row">ACM Impact: Naisha and Aarohi</p>
             <p className="gm-program-row">ACM JEDI: Jafarri</p>
-            <p className="gm-program-row">ACM Rust: Sujay</p>
+            <p className="gm-program-row">ACM Rust and Open Source: Sujay</p>
+            <p className="gm-program-row"> ACM Cloud Computing: Daniel and Satyen</p>
           </div>
           <div className="gm-program-section">
             <div className="section-header">
