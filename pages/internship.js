@@ -47,7 +47,7 @@ function InternshipPage(){
             <div className={'content-section text-center'}>
                 <h1>The Internship Program</h1>
                 {/* eslint-disable-next-line max-len */}
-                <h2>The ACM internship program is closed. <br></br> Check back in Spring Quarter for Officer Recruitment.</h2>
+                <h2>The ACM internship program opens October 6th!</h2>
                 <p className={styles['internship-intro']}>The ACM Internship program is a program that facilitates the transition of UCLA students to ACM officers. Interns learn about the ACM committee they are interning for and ACM in general before becoming an official ACM officer.</p>
                 <p className={styles['internship-intro']}>Click on the different ACM subcommittee icons in order to learn more about what interns in each committee do and scroll down to find more information on how you can apply to the Internship Program.</p>
             </div>
@@ -67,9 +67,9 @@ function InternshipPage(){
                         </div>
                         ))}
                     </section>
-                    <aside id="application-card" className={styles['application-info-card']}>
+                    {/* <aside id="application-card" className={styles['application-info-card']}>
                         <h3>Check back in Spring for Officer Recruitment.</h3>
-                    </aside>
+                    </aside> */}
                 </div>
             </div>
             <div className={'content-section text-center'}>
