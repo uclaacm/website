@@ -6,37 +6,37 @@ import styles from '../styles/pages/Internship.module.scss';
 export default {
     items: [
         {
-            date: '9/27',
+            date: '10/02',
             name: 'Fall General Meeting',
             info: 'Come learn about the different ACM committees!',
             active: true,
         },
         {
-            date: '10/10',
+            date: '10/06',
             name: 'Application Form is Open',
-            info: 'Fill out the application form for up to 3 committees that you would like to intern for',
+            info: 'Fill out the application form for up to 2 committees that you would like to intern for',
             active: true,
         },
         {
-            date: '10/19',
+            date: '10/25',
             name: 'Applications Due',
             info: 'Submit your application by 11:59 pm',
             active: true,
         },
         {
-            date: '10/20-11/12',
+            date: '11/06-11/17',
             name: 'Interviews',
             info: 'A handful of applicants will be chosen for an interview with the committee(s) you applied to',
             active: true,
         },
         {
-            date: '11/14',
+            date: '11/20',
             name: 'Decisions Released',
             info: 'Hear back via Email what committee(s) accepted you (if you are accepted by two, decide which one you would like to intern for)',
             active: true,
         },
         {
-            date: '11/20',
+            date: '11/28',
             name: 'Official ACM Onboarding',
             info: 'Learn what you need to know as an ACM Intern',
             active: true,
@@ -97,7 +97,7 @@ export default {
         },
         {
             title: 'I have more questions, how can I get them answered?',
-            content: <>If you have any questions about the application process or the Internship program in general email <a href="mailto:internship@uclaacm.com">Veronica Salas and Anmol Gupta (internship@uclaacm.com)</a>, our Internship Affairs and Internship Trainning Directors.</>,
+            content: <>If you have any questions about the application process or the Internship program in general email <a href="mailto:internship@uclaacm.com">Christine Ahn and Sahiti Gabrani (internship@uclaacm.com)</a>, our Internship Directors.</>,
         },
     ],
 };
