@@ -8,11 +8,11 @@ import React, { useRef } from 'react';
 import Banner from '../../components/Banner';
 import Layout from '../../components/Layout';
 
+import SpringTownhallImage from '../../public/images/spring-2022-townhall-photo.JPG';
 import TestimonialsCourseChanges from '../../public/images/town-hall/testimonials-course-changes.png';
 import TownHallFall2021Attending from '../../public/images/town-hall/town-hall-attending-f21.jpeg';
-import TownHallBanner from '../../public/images/town-hall/town-hall-banner-s23.png';
 import F22TownHallBanner from '../../public/images/town-hall/town-hall-banner-f22.png';
-import SpringTownhallImage from '../../public/images/spring-2022-townhall-photo.JPG';
+import TownHallBanner from '../../public/images/town-hall/town-hall-banner-s23.png';
 
 const TOWN_HALL_2021_WINTER_VIDEO = 'https://www.youtube.com/embed/Eq2xsShPMVc';
 

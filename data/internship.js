@@ -93,7 +93,7 @@ export default {
         },
         {
             title: 'How can I get involved in ACM if I am not an intern?',
-            content: 'If you are not an intern, there are plenty of ways to get involved in ACM. You can always attend workshops that different committees are hosting. Subscribe to our newsletter if you would like weekly updates on when workshops are. Some committees, like Teach LA, allow students to be officers/contributing members without participating in the ACM Internship Program.',
+            content: 'If you are not an intern, there are plenty of ways to get involved in ACM. You can always attend workshops that different committees are hosting. Subscribe to our newsletter if you would like weekly updates on when workshops are. Some committees, like Teach LA and Cyber, allow students to be officers/contributing members without participating in the ACM Internship Program.',
         },
         {
             title: 'I have more questions, how can I get them answered?',
