@@ -6,11 +6,11 @@
   version "4.3.1"
   resolved "https://registry.yarnpkg.com/@adobe/css-tools/-/css-tools-4.3.1.tgz#abfccb8ca78075a2b6187345c26243c1a0842f28"
 
-"@axe-core/react@^4.4.5":
-  version "4.4.5"
-  resolved "https://registry.npmjs.org/@axe-core/react/-/react-4.4.5.tgz"
+"@axe-core/react@^4.7.3":
+  version "4.7.3"
+  resolved "https://registry.yarnpkg.com/@axe-core/react/-/react-4.7.3.tgz#e042746e30615dcb4a2492664dbcc6b2a76b26f3"
   dependencies:
-    axe-core "^4.4.1"
+    axe-core "^4.7.0"
     requestidlecallback "^0.3.0"
 
 "@babel/code-frame@7.12.11":
@@ -1191,9 +1191,13 @@ available-typed-arrays@^1.0.5:
   version "1.0.5"
   resolved "https://registry.npmjs.org/available-typed-arrays/-/available-typed-arrays-1.0.5.tgz"
 
-axe-core@4.5.1, axe-core@^4.4.1, axe-core@^4.4.3:
+axe-core@4.5.1:
   version "4.5.1"
   resolved "https://registry.npmjs.org/axe-core/-/axe-core-4.5.1.tgz"
+
+axe-core@^4.4.3, axe-core@^4.7.0:
+  version "4.8.2"
+  resolved "https://registry.yarnpkg.com/axe-core/-/axe-core-4.8.2.tgz#2f6f3cde40935825cf4465e3c1c9e77b240ff6ae"
 
 axobject-query@^2.2.0:
   version "2.2.0"
