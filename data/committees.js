@@ -270,15 +270,9 @@ export default [
 		diamond: '/images/diamonds/cyber_diamond.svg',
 		internship: {
 			whatWeDo: 'Our mission is to create a community in which both experts and beginners alike can grow in the field of cybersecurity skills and knowledge. We want to make cybersecurity simple and accessible for everyone.',
-			whatInternsWillDo: (
-			<ul>
-				<li> Create workshop content (ex. XSS, SQL injections, Reverse engineering)</li>
-				<li> Do weekly chores such as submitting newsletter, design requests, and helping with the website</li>
-				<li> Attend Socials events with other officers. </li>
-				<li> Deliver at the minimum 1 workshop per quarter</li>
-			</ul> ),
+			whatInternsWillDo: (<p>ACM Cyber does not participate in the ACM Internship program. If you are interested in joining or becoming an active member, please check out our <a href="https://www.acmcyber.com/join">website</a>.</p>),
 			card: '/images/cards/cyber_card.svg',
-			nextSteps: 'All interns in good standing (attending workshops/chores/meetings) have the opportunity to become officers in the spring!',
+			nextSteps: 'All active members of ACM Cyber can apply to become officers in the Winter.',
 		},
 	},
 	{
