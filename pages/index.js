@@ -39,9 +39,9 @@ function Home () {
 				}}
 			/>
 			<div className="home-page text-center">
-			<a href="https://www.uclaacm.com/gm/f23" style={{ textDecoration: 'none' }}>
+			<a href="https://www.uclaacm.com/internship" style={{ textDecoration: 'none' }}>
     <ContentBanner
-        title="RSVP now to attend ACM's Fall GM!"
+        title="ACM Internship application opens October 6th!"
         main
     />
 </a>
@@ -72,7 +72,7 @@ function Home () {
 							<h2>Want to stay updated on what&rsquo;s going on?</h2>
 						</div>
 						<div className="sign-up-right half-width">
-							<Link href="http://eepurl.com/c5pE6P">
+							<Link href="http://eepurl.com/iAS95E">
 								<a className="button tight dark" target="_blank" rel="noreferrer noopener">
 									Join our Mailing List
 								</a>
