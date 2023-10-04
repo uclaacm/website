@@ -38,7 +38,7 @@ function Footer(){
 						<h3 className={styles['footer-header']}>Find us on social media</h3>
 						<SocialMedia type="light"/>
 						<div className="mt-1">
-							<Link href="http://eepurl.com/c5pE6P">
+							<Link href="http://eepurl.com/iAS95E">
 								<a className="button tight" target="_blank" rel="noreferrer noopener">
 									Join our Mailing List
 								</a>
