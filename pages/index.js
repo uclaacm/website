@@ -41,7 +41,7 @@ function Home () {
 			<div className="home-page text-center">
 			<a href="https://www.uclaacm.com/internship" style={{ textDecoration: 'none' }}>
     <ContentBanner
-        title="ACM Internship application opens October 6th!"
+        title="ACM Internship application is open!"
         main
     />
 </a>
