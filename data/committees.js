@@ -270,7 +270,7 @@ export default [
 		diamond: '/images/diamonds/cyber_diamond.svg',
 		internship: {
 			whatWeDo: 'Our mission is to create a community in which both experts and beginners alike can grow in the field of cybersecurity skills and knowledge. We want to make cybersecurity simple and accessible for everyone.',
-			whatInternsWillDo: (<p>ACM Cyber does not participate in the ACM Internship program. If you are interested in joining or becoming an active member, please check out our <a href="https://www.acmcyber.com/join">website</a>.</p>),
+			whatInternsWillDo: (<>ACM Cyber is currently not taking any interns. If you are interested in joining or becoming an active member in ACM Cyber, please check out {<a href='https://www.acmcyber.com/join.'>here</a>}.</>),
 			card: '/images/cards/cyber_card.svg',
 			nextSteps: 'All active members of ACM Cyber can apply to become officers in the Winter.',
 		},
