@@ -1,17 +1,9 @@
 import { NextSeo } from 'next-seo';
-import Image from 'next/image';
 import React from 'react';
-
 import Banner from '../components/Banner';
 import Layout from '../components/Layout';
 import Officers from '../components/OfficerCard';
-import SocialMedia from '../components/SocialMedia';
 import data from '../data';
-
-import acmCommittees from '../public/images/acm_committees.png';
-import boardcollage from '../public/images/boardcollage.png';
-import acmHowToJoin from '../public/images/how-to-join.png';
-import initiative from  '../public/images/initiative.png';
 import styles from '../styles/pages/About.module.scss';
 
 function About() {
