@@ -54,6 +54,7 @@ export default function Navbar() {
               <li><ActiveLink activeClassName="active" href="/events" passHref={true}><button type="button" role="link" onClick={menuActivate}>Events</button></ActiveLink></li>
               <li><ActiveLink activeClassName="active" href="/internship" passHref={true}><button type="button" role="link" onClick={menuActivate}>Join Us</button></ActiveLink></li>
               <li><ActiveLink activeClassName="active" href="https://opensource.uclaacm.com/" passHref={true}><button type="button" role="link" onClick={menuActivate}>Open Source</button></ActiveLink></li>
+              <li><ActiveLink activeClassName="active" href="/team" passHref={true}><button type="button" role="link" onClick={menuActivate}>Our Team</button></ActiveLink></li>
               <li><Link href="https://members.uclaacm.com"><a className="button button-transparent button-lg font-header">Member Login</a></Link>
               </li>
             </ul>
