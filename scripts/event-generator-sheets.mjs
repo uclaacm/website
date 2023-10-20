@@ -34,19 +34,21 @@ async function getAllEvents() {
   events = [].concat(...events);
 
   // Get all recurring events
-  let recurring_rows = await getGoogleSheetData('RECURRING EVENTS!A:J');
+  let recurring_rows = await getGoogleSheetData('RECURRING EVENTS!A:K');
   for (let i = 1; i <= 10; i++) {
     events = events.concat(getRecurringEventsOfWeek(recurring_rows, i));
   }
-  return events.filter((item, index, self) => index === self.findIndex(
-      (other) => item.title === other.title && item.rawStart === other.rawStart),
-    );
+
+  events = events.filter((item, index, self) => index === self.findIndex(
+    (other) => item.title === other.title && item.rawStart === other.rawStart));
+
+  return events;
 }
 
 // Read single events of Week n
 // Return as array of JSON objects
 async function getSingleEventsOfWeek(n) {
-  const rows = await getGoogleSheetData('Week ' + n + '!A:H');
+  const rows = await getGoogleSheetData('Week ' + n + '!A:I');
 
   const events = [];
   for (const row of rows) {
@@ -68,7 +70,8 @@ async function getSingleEventsOfWeek(n) {
         rawStart: row[3],
         rawEnd: row[4],
         date: row[2],
-        fblink: row[7]}));
+        fblink: row[7],
+        image: row[8],}));
     } catch (err) {
       // eslint-disable-next-line no-console
       console.error(`Error ${err} on event ${row}`);
@@ -108,7 +111,8 @@ function getRecurringEventsOfWeek(rows, n) {
           rawStart: row[5],
           rawEnd: row[6],
           date: date.toISOString().split('T')[0],
-          fblink: row[9]}));
+          fblink: row[9],
+          image: row[10]}));
       } catch (err) {
         // eslint-disable-next-line no-console
         console.error(`Error ${err} on event ${row}`);
