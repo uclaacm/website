@@ -8,6 +8,7 @@ const getCssStringFromCommittee = (committee) => {
     case 'board':
       return 'board';
     case 'teach la':
+    case 'teachla':
       return 'teach-la';
     case 'ai':
     case 'cyber':
@@ -37,6 +38,7 @@ const generateSingleEvent = ({
   rawEnd,
   date,
   fblink,
+  image,
 }) => {
   let allDay = false;
 
@@ -81,6 +83,18 @@ const generateSingleEvent = ({
       ext: true,
     });
   }
+  if (image) {
+    if (image.includes('drive.google.com')) {
+      // Google drive urls need to be transformed
+      // 'https://drive.google.com/uc?export=view&id=' + image id (follows /d)
+      image = 'https://drive.google.com/uc?export=view&id=' + image.substring(image.indexOf("/d/") + 3, image.indexOf("/view"));
+    } else {
+      image = image
+    }
+  } else {
+    // Default image
+    image = '/images/events/default-event.png';
+  }
 
   if (!title) {
     throw new Error('Missing title');
@@ -96,6 +110,7 @@ const generateSingleEvent = ({
     committee,
     description,
     links,
+    image,
   };
 };
 
