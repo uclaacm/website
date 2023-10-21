@@ -38,7 +38,6 @@ async function getAllEvents() {
   for (let i = 1; i <= 10; i++) {
     events = events.concat(getRecurringEventsOfWeek(recurring_rows, i));
   }
-
   events = events.filter((item, index, self) => index === self.findIndex(
     (other) => item.title === other.title && item.rawStart === other.rawStart));
 
