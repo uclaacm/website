@@ -159,7 +159,7 @@ function TownHall() {
                 </Link>
               </li>{' '}
               <li style={inlineButtonListStyle}>
-                <Link href="https://docs.google.com/document/d/1JTFaP27OsqA0sBhjbIC4mIzjCgqRLJyBxvOQ5FSrPCk/edit?usp=sharing">
+                <Link href="https://docs.google.com/document/d/1Mc23mMFJ9Sq1CgsFIqg_uESLHNSWgvaAXRHQwgHusmA/edit?usp=sharing">
                   <a
                     className="button"
                     target="_blank"
