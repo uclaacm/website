@@ -139,7 +139,10 @@ function TownHall() {
           <div>
             <h3>Spring 2023 // Wednesday, May 10th 2023</h3>
             <p>
-            In our Spring 2023 Town Hall, we focused on topics such as the faculty's responsiveness to feedback, the introduction of autograders, the relevance of Physics as a degree requirement, and issues surrounding academic dishonesty, including the impact of tools like GPT.
+              In our Spring 2023 Town Hall, we focused on topics such as the faculty&apos;s responsiveness
+              to feedback, the introduction of autograders, the relevance of Physics as a degree
+              requirement, and issues surrounding academic dishonesty,
+              including the impact of tools like GPT.
             </p>
             <ul className="list-unstyled">
               <li style={inlineButtonListStyle}>
