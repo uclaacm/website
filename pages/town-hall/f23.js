@@ -12,8 +12,8 @@ import SpringTownhallImage from '../../public/images/spring-2022-townhall-photo.
 import TestimonialsCourseChanges from '../../public/images/town-hall/testimonials-course-changes.png';
 import TownHallFall2021Attending from '../../public/images/town-hall/town-hall-attending-f21.jpeg';
 import F22TownHallBanner from '../../public/images/town-hall/town-hall-banner-f22.png';
-import S23TownHallBanner from '../../public/images/town-hall/town-hall-banner-s23.png';
 import TownHallBanner from '../../public/images/town-hall/town-hall-banner-f23.png';
+import S23TownHallBanner from '../../public/images/town-hall/town-hall-banner-s23.png';
 
 const TOWN_HALL_2021_WINTER_VIDEO = 'https://www.youtube.com/embed/Eq2xsShPMVc';
 
