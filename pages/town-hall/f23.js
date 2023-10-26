@@ -36,7 +36,7 @@ function TownHall() {
         openGraph={{
           images: [
             {
-              url: 'https://www.uclaacm.com/images/town-hall/town-hall-banner-f22.png',
+              url: 'https://www.uclaacm.com/images/town-hall/town-hall-banner-f23.png',
               width: 1920,
               height: 1005,
               alt: "A banner that reads 'Fall 2023 Computer Science Town Hall: ask questions and be heard! Wednesday, November 14th from 6:00 - 7:30 PM PT. Mong Learning Center, Engineering VI. Ask Questions and get your voice heard!'",
