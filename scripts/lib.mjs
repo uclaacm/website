@@ -84,7 +84,7 @@ const generateSingleEvent = ({
     });
   }
   if (image) {
-    if (image.includes('drive.google.com')) {
+    if (image.startsWith('https://drive.google.com')) {
       // Google drive urls need to be transformed
       // 'https://drive.google.com/uc?export=view&id=' + image id (follows /d)
       image = 'https://drive.google.com/uc?export=view&id=' + image.substring(image.indexOf("/d/") + 3, image.indexOf("/view"));
