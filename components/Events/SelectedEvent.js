@@ -14,7 +14,7 @@ function SelectedEvent({ event }) {
   // Must set imageUrl if event prop changes
   useEffect(() => {
     setImageUrl(event.image);
-  }, [event])
+  }, [event]);
 
   return (
     <div className={styles['card-container']}>
