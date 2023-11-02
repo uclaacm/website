@@ -84,12 +84,29 @@ const generateSingleEvent = ({
     });
   }
   if (image) {
-    if (image.startsWith('https://drive.google.com')) {
+    // Encode and decode URL to make sure it's safe
+    const uri = encodeURI(image)
+    const host = uri.host;
+    // https://github.com/uclaacm/website/security/code-scanning/3
+    const allowedHosts = [
+      'drive.google.com',
+      'facebook.com',
+      'i.ibb.co',
+      'ucla.com',
+      'discordapp.net',
+    ];
+
+    if (host === 'drive.google.com') {
       // Google drive urls need to be transformed
-      // 'https://drive.google.com/uc?export=view&id=' + image id (follows /d)
+      // 'https://drive.google.com/uc?export=view&id=' + image id (id which follows /d in original link)
       image = 'https://drive.google.com/uc?export=view&id=' + image.substring(image.indexOf("/d/") + 3, image.indexOf("/view"));
-    } else {
-      image = image
+    } else if (allowedHosts.includes(host)){
+      try {
+        image = decodeURI(uri);
+      } catch (e) {
+        console.log("Warning: Invalid Image Id");
+        image = '/images/events/default-event.png'
+      }
     }
   } else {
     // Default image
