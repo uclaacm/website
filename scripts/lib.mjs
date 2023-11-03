@@ -84,21 +84,21 @@ const generateSingleEvent = ({
     });
   }
   if (image) {
-    // Encode and decode URL to make sure it's safe
-    const uri = encodeURI(image)
-    const host = uri.host;
+    try {
+      // Extract host from url to comply with codeQL scanner
+      const url = new URL(image);
+      const host = url.hostname;
 
-    if (host === 'drive.google.com') {
-      // Google drive urls need to be transformed
-      // 'https://drive.google.com/uc?export=view&id=' + image id (id which follows /d in original link)
-      image = 'https://drive.google.com/uc?export=view&id=' + image.substring(image.indexOf("/d/") + 3, image.indexOf("/view"));
-    } else {
-      try {
-        image = decodeURI(uri);
-      } catch (e) {
-        console.log("Warning: Invalid Image URL");
-        image = '/images/events/default-event.png'
+      if (host === 'drive.google.com') {
+        // Google drive urls need to be transformed
+        // 'https://drive.google.com/uc?export=view&id=' + image id (id which follows /d in original link)
+        image = 'https://drive.google.com/uc?export=view&id=' + image.substring(image.indexOf("/d/") + 3, image.indexOf("/view"));
+      } else {
+          image = url.href;
       }
+    } catch (e) {
+      console.log("Warning: Invalid Image URL: " + e);
+      image = '/images/events/default-event.png'
     }
   } else {
     // Default image
