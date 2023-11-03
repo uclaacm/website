@@ -96,7 +96,7 @@ const generateSingleEvent = ({
       try {
         image = decodeURI(uri);
       } catch (e) {
-        console.log("Warning: Invalid Image Id");
+        console.log("Warning: Invalid Image URL");
         image = '/images/events/default-event.png'
       }
     }
