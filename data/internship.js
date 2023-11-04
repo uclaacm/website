@@ -24,13 +24,13 @@ export default {
             active: true,
         },
         {
-            date: '11/06-11/17',
+            date: '11/08-11/21',
             name: 'Interviews',
             info: 'A handful of applicants will be chosen for an interview with the committee(s) you applied to',
             active: true,
         },
         {
-            date: '11/20',
+            date: '11/22',
             name: 'Decisions Released',
             info: 'Hear back via Email what committee(s) accepted you (if you are accepted by two, decide which one you would like to intern for)',
             active: true,
