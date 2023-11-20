@@ -20,6 +20,7 @@ const TOWN_HALL_2021_WINTER_VIDEO = 'https://www.youtube.com/embed/Eq2xsShPMVc';
 const inlineButtonListStyle = {
   display: 'inline-block',
   marginBottom: '0.5em',
+  margin: '0.5em',
 };
 
 
@@ -60,7 +61,7 @@ function TownHall() {
           administrators in the CS department.
         </p>
         <p>
-          The Fall Town Hall will take place on <b>Tuesday, November 14th</b> (Week 7)
+          The Fall Town Hall took place on <b>Tuesday, November 14th</b> (Week 7)
           at <b>6:00 - 7:30 PM PT</b> in the Mong Learning Center (in Engineering VI).
         </p>
               {/* eslint-disable-next-line max-len */}
@@ -82,14 +83,26 @@ function TownHall() {
         </p>
         <ul className="list-unstyled text-center">
           <li style={inlineButtonListStyle}>
-            <Link href="https://forms.gle/z6gLiP7CWZ49SAWy5">
+            <Link href="https://docs.google.com/presentation/d/1g02vH7xWtwK83ry8Pr7pKlpSrFkL4NSJLhpkjhQbzks/edit?usp=sharing">
               <a className="button" target = "_blank">
                 <FontAwesomeIcon
                   icon={faFileAlt}
                   fixedWidth
                   aria-hidden={true}
                 />{' '}
-                RSVP Here!
+                Form Summaries and Slides
+              </a>
+            </Link>
+          </li>
+          <li style={inlineButtonListStyle}>
+            <Link href="https://docs.google.com/document/d/1u4jqODuyZ1Vvy_LztsK1QfU5YdNhuYg33D_V24obrm0/edit?usp=sharing">
+              <a className="button" target = "_blank">
+                <FontAwesomeIcon
+                  icon={faFileAlt}
+                  fixedWidth
+                  aria-hidden={true}
+                />{' '}
+                Event Notes
               </a>
             </Link>
           </li>
