@@ -41,7 +41,7 @@ function Home () {
 			<div className="home-page text-center">
 			<a href="https://www.uclaacm.com/town-hall/f23/" style={{ textDecoration: 'none' }}>
     <ContentBanner
-        title="RSVP for Fall 2023 CS Town Hall!"
+        title="Check out updates from Fall 2023 CS Town Hall!"
         main
     />
 </a>
