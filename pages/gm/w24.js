@@ -163,12 +163,12 @@ function W24() {
           <div className="gm-program-section">
             <div className="section-header">
               <h3>Committee Presentations</h3>
-              <p className="sub-heading">Learn what ACM&apos;s eight committees have planned for Fall quarter.</p>
+              <p className="sub-heading">Learn what ACM&apos;s eight committees have planned for Winter quarter.</p>
             </div>
             <p className="gm-program-row"><Image src= {studioLogo} alt="ACM studio"/> Henry and Ming</p>
             <p className="gm-program-row"><Image src= {icpcLogo} alt="ACM icpc"/> Suhas</p>
             <p className="gm-program-row"><Image src= {designLogo}  alt="ACM design"/> Michael and William</p>
-            <p className="gm-program-row"><Image src= {cyberLogo}  alt="ACM cyber"/> Ben and Salma</p>
+            <p className="gm-program-row"><Image src= {cyberLogo}  alt="ACM cyber"/> Benson and Salma</p>
             <p className="gm-program-row"><Image src= {teachlaLogo}  alt="ACM teachLA"/> Joseph and Sruthi</p>
             <p className="gm-program-row"><Image src= {wLogo}  alt="ACM w"/> Evy and Veronica</p>
             <p className="gm-program-row"><Image src= {aiLogo}  alt="ACM ai"/> Angeline and Jordan</p>
@@ -190,7 +190,7 @@ function W24() {
             <p className="gm-program-row">ACM Dev Team and Open Source: Arsh</p>
             <p className="gm-program-row">ACM Impact: Naisha and Aarohi</p>
             <p className="gm-program-row">ACM JEDI: Jafarri</p>
-            <p className="gm-program-row">ACM Rust: Sujay</p>
+            <p className="gm-program-row">ACM Cloud: Satyen and Daniel</p>
           </div>
           <div className="gm-program-section">
             <div className="section-header">
