@@ -1,6 +1,6 @@
 import moment from 'moment';
 import Link from 'next/link';
-import React from 'react';
+import {React, useEffect, useState} from 'react';
 
 import styles from '../../styles/components/Events/SelectedEvent.module.scss';
 
@@ -9,12 +9,18 @@ function SelectedEvent({ event }) {
     return <p>click on an event to see more!</p>;
   }
   const { title, start, description, location, links, image, alt } = event;
-  const imageSrc = image ? image : '/images/events/default-event.png';
+  const [imageUrl, setImageUrl] = useState(image ?? '/images/events/default-event.png');
+
+  // Must set imageUrl if event prop changes
+  useEffect(() => {
+    setImageUrl(event.image);
+  }, [event]);
+
   return (
     <div className={styles['card-container']}>
       <h2 className={styles['card-header']}>event information</h2>
       {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img className={styles['card-image']} src={imageSrc} alt={alt} />
+      <img className={styles['card-image']} src={imageUrl} alt={alt} onError={() => setImageUrl('/images/events/default-event.png')}/>
       <div className={styles['card-body']}>
         <h3 className={styles['card-title']}>{title}</h3>
         {/* Don't show start time if it starts at 12:00 am (missing start time in event spreadsheet) */}

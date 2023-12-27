@@ -8,8 +8,8 @@ import Navigation from '../components/Committees/Sidebar';
 import Archive from '../components/Committees/ArchiveSidebar';
 import Layout from '../components/Layout';
 import data from '../data';
-
 import acmCommittees from '../public/images/acm_committees.png';
+
 
 function OfficersBanner() {	//fix description
 	return (
@@ -54,9 +54,15 @@ function OfficersPage() {
       {/* <Archive committees={committees} /> */}
 			<div className="committees-page-content">
 			<OfficersBanner />
-				<div className='committee-sections-container'>
-					{committeeInfo.map(committee => <CommitteeSectionOfficers key={committeeInfo.name} committee={committee} />) }
-				</div>
+			<div className='committee-sections-container'>
+				{committeeInfo.map(committee => (
+					<CommitteeSectionOfficers key={committee.name} committee={committee} />
+				))}
+			</div>
+
+
+				
+				
 			</div>	
 		</Layout>
 	);
