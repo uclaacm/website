@@ -73,7 +73,7 @@ async function getGoogleSheetData(range) {
       const row = rows[i];
       if (committees.includes(row[0])){
         currCommittee = row[0];
-      } else {
+      } else if (row[1]) {
         row[11] = currCommittee;
         offs.push(row);
       }
