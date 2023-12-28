@@ -5,7 +5,7 @@
   text-align: center;
   background-color: #ffffff;
   width: 250px;
-  height: 300px;
+  height: 325px;
   border-radius: 10px;
   padding: 10px;
   overflow: hidden;
@@ -41,17 +41,11 @@
   margin: 5px 0;
 }
 
-/* yourStyles.module.css */
-
-.officer-email-container {
-  display: flex;
-  align-items: center;
+.officer-email{
+  margin-top: 10px;
+  text-decoration: none; /* Remove underline */
+  color: inherit;
 }
-
-.email-icon {
-  margin-right: 5px;
-}
-
 /* Add additional styles as needed */
 
 

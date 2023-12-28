@@ -38,7 +38,7 @@ function CommitteeSection(props) {
 			{/* TODO: use next image without breaking deploy */}
       <div className={`committee-header ${committee.class}`}>
 				{/* eslint-disable-next-line @next/next/no-img-element */}
-				<img src={committee.image} alt={`${committee.name}'s logo`} />
+				<img src={committee.image} className="committeebanner" alt={`${committee.name}'s logo`} />
       </div>
       {/* Committee Intro */}
       {/* <Intro committee={committee} /> */}
