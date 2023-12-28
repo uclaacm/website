@@ -17,34 +17,35 @@ function Officer({
 }) {
 
   
- if (size && size.toLowerCase() === 'compact') {
-  // console.log(img);
+  if (size && size.toLowerCase() === 'compact') {
     return (
-      <div className={styles['officer-grid-row']}>
+      <div className={`${styles['officer-card']} ${styles['officer-grid-row']}`}>
         <div className={styles['officer-grid-col']}>
-        {/* {img ? (
-  <Image
-    className={styles['officer-image']}
-    src={img}
-    alt={alt}
-    width={70}
-    height={70}
-  />
-) : (
-  // You can render an alternative component or content when img is falsy or doesn't start with Google Drive link
-  <div>No image available</div>
-)} */}
-
+          {img ? (
+            <div className={styles['image-container']}>
+              <Image
+                className={'officer-image'}
+                src="https://drive.google.com/uc?id=1-0y_rpmxGnexeRPAFUffX-9jSqSuRHpH"
+                alt={alt}
+                width={100}
+                height={100}
+                unoptimized={true}
+                style={{ borderRadius: '100%' }}
+              />
+            </div>
+          ) : (
+            <div className={styles['no-image']}>No image available</div>
+          )}
         </div>
         <div className={`${styles['officer-grid-col']} ${styles['officer-info']}`}>
           <h3 className={styles['officer-title']}>{name}</h3>
-          <p>{position}</p>
-          <p>Class of {year}</p>
-          <p>{email}</p>
+          <p className={styles['officer-text']}>{position}</p>
+          <p className={styles['officer-text']}>Class of {year}</p>
+          <p className={styles['officer-email']}>{email}</p>
         </div>
       </div>
     );
-  } 
+  }
   // else {
 //     return (
 //       <div
@@ -75,7 +76,7 @@ function Officers(props) {
     // TODO: more flexible mobile views
     <>
       {props.officers.map((officer) => (
-        <Officer {...officer} size={props.size} style={props.style} key={officer.name} cname={officer.committee} position={officer.role} img={officer.photo} />
+        <Officer {...officer} size={props.size} style={props.style} key={officer.name} cname={officer.committee} position={officer.role} img={'https://drive.google.com/file/d/1-0y_rpmxGnexeRPAFUffX-9jSqSuRHpH/view?usp=sharing'} />
       ))}
     </>
   );

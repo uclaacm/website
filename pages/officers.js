@@ -51,8 +51,9 @@ function OfficersPage() {
 			<Banner decorative />
 			<Navigation committees={committeeInfo} />
 			
+			
       {/* <Archive committees={committees} /> */}
-			<div className="committees-page-content">
+			<div className="officers-page-content">
 			<OfficersBanner />
 			<div className='committee-sections-container'>
 				{committeeInfo.map(committee => (

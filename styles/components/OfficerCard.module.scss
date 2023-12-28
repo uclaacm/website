@@ -1,157 +1,63 @@
-@import '../variables.scss';
-
-.mb-2 {
-  margin-bottom: 2em;
-}
-
-.my-tight {
-  margin: 0.4em 0;
-}
-
-.jedi-profile-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 250px;
-}
-
-.jedi-card-body {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 240px;
-}
-
-.jedi-title {
-  font-size: 1.5rem;
-  margin-bottom: 0;
-  margin-top: 0.5em;
-}
-
-.pronouns-jedi {
-  font-size: 1rem;
-}
-
-.pronouns {
-  margin-top: 0;
-  padding-top: 0;
-}
-
-.name {
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
+/* yourStyles.module.css */
 
 .officer-card {
-  margin-bottom: 2em;
-  padding: 0 1em 1em 0;
+  display: block;
+  text-align: center;
+  background-color: #ffffff;
+  width: 250px;
+  height: 300px;
+  border-radius: 10px;
+  padding: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
 }
 
-.officer-image-container {
-  align-items: center;
+
+.image-container {
+  flex: 1;
   display: flex;
-  margin: 0 auto;
-  max-width: 300px;
-}
-
-@media (min-width: $tablet-breakpoint) and (max-width: $navbar-breakpoint) {
-  .grid-tablet-only-2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-.officer-grid-row {
-  display: flex;
-  height: 100%;
-  justify-content: flex-start;
-  margin-bottom: 1em;
-  padding: 0.5em;
-  width: 100%;
-}
-
-.officer-grid-col {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  margin-top: 10px;
 }
 
-.officer-image {
-  border: 2px solid #EAEAEA;
-  border-radius: 50%;
-  display: inline-block;
-  height: 70px;
-  margin: 25px 10px 0;
-  width: 70px;
-}
+// .officer-image {
+//   width: 100%;
+//   height: 100%;
+//   border-radius: 50%; /* Make the image completely round */
+//   padding: 10px; /* Add padding around the image */
+// }
 
 .officer-info {
-  padding-left: 1em;
-
-  p {
-    margin: 0 !important; // this is to override .content-section p
-  }
-
-  .officer-title {
-    font-weight: 600;
-    margin: 0;
-  }
+  padding: 10px;
 }
 
-#officers-container {
-  box-sizing: border-box;
-  margin: auto;
-  max-width: 1000px;
-  padding: 0 20px;
+.officer-title {
+  margin-bottom: 5px;
+}
+
+.officer-text {
+  margin: 5px 0;
+}
+
+/* yourStyles.module.css */
+
+.officer-email-container {
+  display: flex;
+  align-items: center;
+}
+
+.email-icon {
+  margin-right: 5px;
+}
+
+/* Add additional styles as needed */
+
+
+.no-image {
   text-align: center;
-  width: 100%;
-
-  .officer {
-    color: $font-primary-color;
-    display: inline-block;
-    height: 100px;
-    text-align: left;
-    transition: transform 0.1s;
-    width: 300px;
-
-    img {
-      border: 2px solid #EAEAEA;
-      border-radius: 50%;
-      display: inline-block;
-      height: 70px;
-      margin: 25px 10px 0;
-      width: 70px;
-    }
-
-    .info {
-      display: inline-block;
-      vertical-align: top;
-      width: 200px;
-
-      h2 {
-        display: inline-block;
-        font-family: $font-display;
-        font-size: 1.3em;
-        font-weight: 600;
-        line-height: 1.8em;
-        margin: 0;
-        margin-top: 35px;
-        padding: 0;
-
-        span {
-          font-weight: 700;
-        }
-      }
-
-      p {
-        color: $font-primary-color;
-        display: inline-block;
-        font-family: $font-body;
-        font-size: 0.7em;
-        margin: 0;
-        margin-top: -5px;
-        vertical-align: top;
-      }
-    }
-  }
+  padding: 10px;
+  font-style: italic;
+  color: #999999;
 }
