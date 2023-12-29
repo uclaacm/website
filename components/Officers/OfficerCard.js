@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import React from 'react';
-
+import '@fortawesome/fontawesome-svg-core/styles.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons'; 
 import styles from '../../styles/components/OfficerCard.module.scss';
 
 function getDirectImageUrl(sharedUrl) {
@@ -23,7 +25,7 @@ function getDirectImageUrl(sharedUrl) {
     }
   } else {
     console.error("Not a Google Drive link");
-    return null;
+    return sharedUrl;
   }
 }
 
@@ -78,44 +80,31 @@ function Officer({
           <h3 className={styles['officer-title']}>{name}</h3>
           <p className={styles['officer-text']}>{position}</p>
           <p className={styles['officer-text']}>Class of {year}</p>
-          <p><a href={`mailto:${email}`} className={styles['officer-email']}>
+          <p className={styles['email-container']}>  <a href={`mailto:${email}`} className={styles['officer-email']}> <FontAwesomeIcon icon={faEnvelope} className={styles['email-icon']} />{/* Email icon */} 
         {email}
       </a></p>
         </div>
       </div>
     );
   }
-  // else {
-//     return (
-//       <div
-//         className={`${styles['officer-card']} ${styles['grid-tablet-only-2']}`}
-//       >
-//         <div className={styles['officer-image-container']}>
-//           {/* eslint-disable-next-line @next/next/no-img-element */}
-//           <img src={img} alt={alt} style={{ maxWidth: '100%' }} />
-//         </div>
-//         <div>
-//           <h3 className={styles.name}>{name}</h3>
-//           <h4 className={styles.pronouns}>{pronouns}</h4>
-//           <ul className="list-unstyled">
-//             <li>{position}</li>
-//             <li>{major}</li>
-//             <li>Class of {year}</li>
-//           </ul>
-//         </div>
-//       </div>
-//     );
-//   }
+
 }
 
 function Officers(props) {
 
-  
   return (
     // TODO: more flexible mobile views
     <>
       {props.officers.map((officer) => (
-        <Officer {...officer} size={props.size} style={props.style} key={officer.name} cname={officer.committee} position={officer.role} img={getDirectImageUrl(officer.photo)} />
+        <Officer 
+          {...officer} 
+          size={props.size} 
+          style={props.style} 
+          key={officer.name} 
+          cname={officer.committee} 
+          position={officer.role} 
+          img={getDirectImageUrl(officer.photo)} 
+        />
       ))}
     </>
   );

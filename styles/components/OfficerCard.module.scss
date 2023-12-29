@@ -4,15 +4,21 @@
   display: block;
   text-align: center;
   background-color: #ffffff;
-  width: 250px;
+  width: 260px;
   height: 325px;
   border-radius: 10px;
+  font-size: 15px;
   padding: 10px;
   overflow: hidden;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin: 20px;
 }
 
+.officer-card:hover {
+  /* Scale and add a box shadow on hover */
+  transform: scale(1.025);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
 .image-container {
   flex: 1;
@@ -54,4 +60,18 @@
   padding: 10px;
   font-style: italic;
   color: #999999;
+}
+
+
+.email-container {
+  // display: flex;
+  // align-items: center; /* Align items vertically in the container */
+  white-space: nowrap; /* Prevent line breaks */
+  overflow: hidden; /* Hide overflow content */
+  text-overflow: ellipsis;
+}
+
+.email-icon {
+  margin-right: 8px; /* Adjust the margin as needed for the desired spacing */
+
 }
