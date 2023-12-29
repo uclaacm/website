@@ -1,11 +1,10 @@
 import { NextSeo } from 'next-seo';
 import Image from 'next/image';
 import React from 'react';
-
 import Banner from '../components/Banner';
 import CommitteeSectionOfficers from '../components/Officers/CommitteeSectionOfficers';
 import Navigation from '../components/Committees/Sidebar';
-import Archive from '../components/Committees/ArchiveSidebar';
+// import Archive from '../components/Committees/ArchiveSidebar';
 import Layout from '../components/Layout';
 import data from '../data';
 import acmCommittees from '../public/images/acm_committees.png';
@@ -50,8 +49,7 @@ function OfficersPage() {
 			/>
 			<Banner decorative />
 			<Navigation committees={committeeInfo} />
-			
-			
+
       {/* <Archive committees={committees} /> */}
 			<div className="officers-page-content">
 			<OfficersBanner />
@@ -60,11 +58,7 @@ function OfficersPage() {
 					<CommitteeSectionOfficers key={committee.name} committee={committee} />
 				))}
 			</div>
-
-
-				
-				
-			</div>	
+			</div>
 		</Layout>
 	);
 }

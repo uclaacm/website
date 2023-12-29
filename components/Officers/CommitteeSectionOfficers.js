@@ -1,7 +1,8 @@
 // import Image from 'next/image';
 import React from 'react';
-import Officers from "../Officers/OfficerCard";
 import data from '../../offoutput.json';
+import Officers from '../Officers/OfficerCard';
+
 
 function CommitteeOfficers({committee}) {   //maps officers to a particular commitee
 	return (
@@ -9,18 +10,18 @@ function CommitteeOfficers({committee}) {   //maps officers to a particular comm
 			<div className="card-container">
 						<div className="grid-desktop-3">
 						{committee.name === 'Board' ? (	//Board is an execption
-						<Officers	
-							officers={data.filter(officer => (officer.committee === 'Board, Internal' || officer.committee === 'Board, External' || officer.committee === 'President'))} 
+						<Officers
+							officers={data.filter(officer => (officer.committee === 'Board, Internal' || officer.committee === 'Board, External' || officer.committee === 'President'))}
 							size="compact"
 							committee={committee.name}
 						/>
-						) : 
+						) :
 						<Officers		//all other officers are straightforward
-							officers={data.filter(officer => officer.committee==committee.name)} 
+							officers={data.filter(officer => officer.committee==committee.name)}
 							size="compact"
 							committee={committee.name}
 						/>
-						}			
+						}
 						</div>
 				</div>
 		</div>
@@ -30,9 +31,9 @@ function CommitteeOfficers({committee}) {   //maps officers to a particular comm
 function CommitteeSection(props) {
   const { committee } = props;
   return (
-    <div id={committee.class} className="committee-section">	
-      <div className={`committee-header ${committee.class}`}>	
-			<img src={committee.image} className="committeebanner" alt={`${committee.name}'s logo`} />	
+    <div id={committee.class} className="committee-section">
+      <div className={`committee-header ${committee.class}`}>
+			<img src={committee.image} className="committeebanner" alt={`${committee.name}'s logo`} />
       </div>
       <CommitteeOfficers committee={committee} />
     </div>
