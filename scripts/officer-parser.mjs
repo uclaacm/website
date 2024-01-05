@@ -2,8 +2,6 @@ import * as fs from 'fs';
 import { google } from "googleapis";
 import * as dotenv from "dotenv";
 
-
-
 dotenv.config();
 const SERVICE_ACCOUNT = process.env["SERVICE_ACCOUNT"];
 const DIRECTORY_SPREADSHEET_ID = process.env["DIRECTORY_SPREADSHEET_ID"];
@@ -11,27 +9,6 @@ const DIRECTORY_SPREADSHEET_ID = process.env["DIRECTORY_SPREADSHEET_ID"];
 
 // await getGoogleSheetData('Officers!A2:K');
 writeToOutput(await getGoogleSheetData('Officers!A2:K'));
-
-async function getAllOfficers() {       //tofix
-    // Get all single events
-    let promises = [];
-    for (let i = 1; i <= 10; i++) {
-      promises = promises.concat(getSingleEventsOfWeek(i));
-    }
-    let events = await Promise.all(promises);
-    events = [].concat(...events);
-  
-    // Get all recurring events
-    let recurring_rows = await getGoogleSheetData('RECURRING EVENTS!A:J');
-    for (let i = 1; i <= 10; i++) {
-      events = events.concat(getRecurringEventsOfWeek(recurring_rows, i));
-    }
-    return events.filter((item, index, self) => index === self.findIndex(
-        (other) => item.title === other.title && item.rawStart === other.rawStart),
-      );
-  }
-
-
 
 
 ////////////////////////////////////////////////////////
@@ -74,17 +51,19 @@ async function getGoogleSheetData(range) {
       if (committees.includes(row[0])){
         currCommittee = row[0];
       } else if (row[1]) {
+        // Handle image URL
+        let image = row[10];
+        if (!image) {
+          image = 'https://t4.ftcdn.net/jpg/02/15/84/43/360_F_215844325_ttX9YiIIyeaR7Ne6EaLLjMAmy4GvPC69.jpg';  //try making this a reference under assests?
+        } else if (image.includes('drive.google.com')) {
+          const fileID = image.match(/\/file\/d\/(.+?)\//)[1];  //convert into viewable url using regex
+          image = `https://drive.google.com/uc?export=download&id=${fileID}`;
+        }
         row[11] = currCommittee;
+        row[10] = image;
         offs.push(row);
       }
-      
-      // console.log(`Row ${i + 1}: ${row[10]}`);
     }
-
-    // if (!rows || rows.length === 0) {
-    //   console.log('Error: no data found');
-    //   return [];
-    // }
 
     // Format the rows into an array of objects
     const formattedData = offs.map((row) => ({
@@ -114,7 +93,6 @@ async function getGoogleSheetData(range) {
     const out = JSON.stringify(officers);
     fs.writeFile('offoutput.json', out, (err) => {
       if (err) throw err;
-      // eslint-disable-next-line no-console
       console.log('Output successfully saved to offoutput.json');
     });
   }
