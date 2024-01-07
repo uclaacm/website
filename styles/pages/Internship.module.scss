@@ -6,6 +6,11 @@ $single-column-breakpoint: 500px;
   font-size: 1em !important;
 }
 
+.internship-intro-highlight {
+  font-size: 1em !important;
+  font-weight: bold;
+}
+
 .testimonial-item {
   @include shadow-boxes();
   margin: 3px;
