@@ -6,37 +6,37 @@ import styles from '../styles/pages/Internship.module.scss';
 export default {
     items: [
         {
-            date: '10/02',
-            name: 'Fall General Meeting',
+            date: '01/08',
+            name: 'Winter General Meeting',
             info: 'Come learn about the different ACM committees!',
             active: true,
         },
         {
-            date: '10/06',
+            date: '01/08',
             name: 'Application Form is Open',
             info: 'Fill out the application form for up to 2 committees that you would like to intern for',
             active: true,
         },
         {
-            date: '10/27',
+            date: '01/12',
             name: 'Applications Due',
             info: 'Submit your application by 11:59 pm',
             active: true,
         },
         {
-            date: '11/08-11/21',
+            date: '01/15-01/19',
             name: 'Interviews',
             info: 'A handful of applicants will be chosen for an interview with the committee(s) you applied to',
             active: true,
         },
         {
-            date: '11/22',
+            date: '01/21',
             name: 'Decisions Released',
             info: 'Hear back via Email what committee(s) accepted you (if you are accepted by two, decide which one you would like to intern for)',
             active: true,
         },
         {
-            date: '11/28',
+            date: '01/23',
             name: 'Official ACM Onboarding',
             info: 'Learn what you need to know as an ACM Intern',
             active: true,
