@@ -7,14 +7,14 @@ export default {
     items: [
         {
             date: '01/08',
-            name: 'Winter General Meeting',   
+            name: 'Winter General Meeting',
             info: 'Come learn about the different ACM committees!',
             active: true,
         },
         {
             date: '01/08',
             name: 'Application Form is Open',
-            info: 'Fill out the application form for as many positions as you want!',
+            info: 'Fill out the application form for as many committees as you want!',
             active: true,
         },
         {
