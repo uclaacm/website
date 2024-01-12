@@ -14,7 +14,7 @@ export default {
         {
             date: '01/08',
             name: 'Application Form is Open',
-            info: 'Fill out the application form for up to 2 committees that you would like to intern for',
+            info: 'Fill out the application form for as many committees as you want!',
             active: true,
         },
         {
@@ -32,7 +32,7 @@ export default {
         {
             date: '01/21',
             name: 'Decisions Released',
-            info: 'Hear back via Email what committee(s) accepted you (if you are accepted by two, decide which one you would like to intern for)',
+            info: 'Hear back via Email what committee(s) accepted you',
             active: true,
         },
         {
