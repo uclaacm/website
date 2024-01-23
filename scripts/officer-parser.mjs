@@ -57,7 +57,7 @@ async function getGoogleSheetData(range) {
           image = 'https://t4.ftcdn.net/jpg/02/15/84/43/360_F_215844325_ttX9YiIIyeaR7Ne6EaLLjMAmy4GvPC69.jpg';  //try making this a reference under assests?
         } else if (image.includes('drive.google.com')) {
           const fileID = image.match(/\/file\/d\/(.+?)\//)[1];  //convert into viewable url using regex
-          image = `https://drive.google.com/uc?export=download&id=${fileID}`;
+          image = `https://drive.google.com/thumbnail?id=${fileID}`;
         }
         row[11] = currCommittee;
         row[10] = image;

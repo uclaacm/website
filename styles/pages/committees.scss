@@ -86,11 +86,21 @@ html {
 
 .officers-page-content {
   box-sizing: border-box;
-margin: auto 320px;
-max-width: 1100px;
-// border: 1px solid black;
-padding: 0 30px;
-width: 100%;
+  margin: auto 320px;
+  max-width: 1100px;
+  // border: 1px solid black;
+  padding: 0 30px;
+  width: 100%;
+
+  @media (max-width: 767px) {
+    box-sizing: border-box;
+    margin: auto;
+    max-width: 900px;
+    padding: 0 30px;
+    width: 100%;
+  }
+
+
 
   h1 {
     font-size: 2em;
