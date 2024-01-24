@@ -55,7 +55,7 @@ async function getGoogleSheetData(range) {
         let image = row[10];
         if (!image) {
           image = 'https://t4.ftcdn.net/jpg/02/15/84/43/360_F_215844325_ttX9YiIIyeaR7Ne6EaLLjMAmy4GvPC69.jpg';  //try making this a reference under assests?
-        } else if (image.includes('https://drive.google.com')) {
+        } else if (image.startsWith('https://drive.google.com')) {
           const fileID = image.match(/\/file\/d\/(.+?)\//)[1];  //convert into viewable url using regex
           image = `https://drive.google.com/thumbnail?id=${fileID}`;
         }
