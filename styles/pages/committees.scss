@@ -100,8 +100,6 @@ html {
     width: 100%;
   }
 
-
-
   h1 {
     font-size: 2em;
     margin: 10px 0;
@@ -124,7 +122,11 @@ html {
     strong {
       font-weight: bold;
     }
+    
+    
   }
+
+ 
 
   .officer-image{
     width: 100%;
@@ -147,6 +149,12 @@ html {
 
   @media (min-width: 688px) {
     padding: 0 60px;
+  }
+
+  .bannerpic{
+    border-radius: 10px;
+    box-shadow: 0 0 1pt 0;
+    width: 100%;
   }
 }
 

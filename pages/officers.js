@@ -7,7 +7,7 @@ import Navigation from '../components/Committees/Sidebar';
 // import Archive from '../components/Committees/ArchiveSidebar';
 import Layout from '../components/Layout';
 import data from '../data';
-import acmCommittees from '../public/images/acm_committees.png';
+import teamPhoto from '../public/images/officers/internal.png';
 
 
 function OfficersBanner() {	//fix description
@@ -15,7 +15,7 @@ function OfficersBanner() {	//fix description
 		<div className="committee-banner-container">
 			<div className="banner-main-content">
 				<div className="image-wrapper">
-					<Image src={acmCommittees} alt="the logos of all ACM committees" priority={true} />
+					<Image className='bannerpic' src={teamPhoto} alt="the logos of all ACM committees" priority={true} />
 				</div>
 				<div className="info">
 					<h1>Our Team</h1>

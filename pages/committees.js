@@ -6,7 +6,6 @@ import CommitteeSection from '../components/Committees/CommitteeSection';
 import Navigation from '../components/Committees/Sidebar';
 import Layout from '../components/Layout';
 import data from '../data';
-
 import acmCommittees from '../public/images/acm_committees.png';
 
 function CommitteesBanner() {
