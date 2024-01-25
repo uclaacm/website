@@ -6,7 +6,7 @@ import React from 'react';
 import Banner from '../components/Banner';
 import Carousel from '../components/Carousel';
 import Committees from '../components/CommitteeSpread';
-import ContentBanner from '../components/ContentBanner';
+// import ContentBanner from '../components/ContentBanner';
 import Layout from '../components/Layout';
 import Article from '../components/NewsArticle';
 import SocialMedia from '../components/SocialMedia';
@@ -39,12 +39,12 @@ function Home () {
 				}}
 			/>
 			<div className="home-page text-center">
-			<a href="https://www.uclaacm.com/gm/w24/" style={{ textDecoration: 'none' }}>
+			{/* <a href="https://www.uclaacm.com/gm/w24/" style={{ textDecoration: 'none' }}>
     <ContentBanner
         title="RSVP now to attend ACM's Winter GM!"
         main
     />
-</a>
+</a> */}
 				<Banner />
 				<div className="content-section">
 					<h2>The largest Computer Science community at UCLA</h2>
