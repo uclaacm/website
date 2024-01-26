@@ -15,7 +15,7 @@ export default [
 					alt: '',
 				},
 				desc: '',
-			}
+			},
         ],
         diamond: '/images/logo.png',
         links: [
