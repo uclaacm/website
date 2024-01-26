@@ -1,4 +1,4 @@
-import * as fs from 'fs';
+import * as fs from "fs";
 import { google } from "googleapis";
 import * as dotenv from "dotenv";
 
@@ -6,10 +6,8 @@ dotenv.config();
 const SERVICE_ACCOUNT = process.env.SERVICE_ACCOUNT;
 const DIRECTORY_SPREADSHEET_ID = process.env.DIRECTORY_SPREADSHEET_ID;
 
-
 // await getGoogleSheetData('Officers!A2:K');
-writeToOutput(await getGoogleSheetData('Officers!A2:K'));
-
+writeToOutput(await getGoogleSheetData("Officers!A2:K"));
 
 ////////////////////////////////////////////////////////
 // Helper Functions
@@ -18,7 +16,7 @@ writeToOutput(await getGoogleSheetData('Officers!A2:K'));
 // Read data from Google sheets
 // using sheet range (eg: 'Week 1!A:H)
 async function getGoogleSheetData(range) {
-  const sheets = google.sheets({ version: 'v4' });
+  const sheets = google.sheets({ version: "v4" });
 
   // Get JWT Token to access sheet
   const service_account = JSON.parse(SERVICE_ACCOUNT);
@@ -26,13 +24,24 @@ async function getGoogleSheetData(range) {
     service_account.client_email,
     null, // or undefined, or an empty string (depends on your use case)
     service_account.private_key,
-    ['https://www.googleapis.com/auth/spreadsheets'],
+    ["https://www.googleapis.com/auth/spreadsheets"]
   );
 
   // Authorize the client
   await jwtClient.authorize();
 
-  const committees = ["Board, Internal", "Board, External", "AI", "Cyber", "Design", "Studio", "Hack", "ICPC", "Teach LA", "W"];
+  const committees = [
+    "Board, Internal",
+    "Board, External",
+    "AI",
+    "Cyber",
+    "Design",
+    "Studio",
+    "Hack",
+    "ICPC",
+    "Teach LA",
+    "W",
+  ];
 
   // Get data from Google spreadsheets
   try {
@@ -42,22 +51,32 @@ async function getGoogleSheetData(range) {
       range: range,
     });
 
-    
     let currCommittee = "President";
     let offs = [];
     const rows = res?.data.values;
     for (let i = 0; i < rows.length; i++) {
       const row = rows[i];
-      if (committees.includes(row[0])){
+      if (committees.includes(row[0])) {
         currCommittee = row[0];
       } else if (row[1]) {
         // Handle image URL
         let image = row[10];
         if (!image) {
-          image = 'https://t4.ftcdn.net/jpg/02/15/84/43/360_F_215844325_ttX9YiIIyeaR7Ne6EaLLjMAmy4GvPC69.jpg';  //try making this a reference under assests?
-        } else if (image.startsWith('https://drive.google.com')) {
-          const fileID = image.match(/\/file\/d\/(.+?)\//)[1];  //convert into viewable url using regex
-          image = `https://drive.google.com/thumbnail?id=${fileID}`;
+          image =
+            "https://t4.ftcdn.net/jpg/02/15/84/43/360_F_215844325_ttX9YiIIyeaR7Ne6EaLLjMAmy4GvPC69.jpg"; //try making this a reference under assests?
+        } else {
+          try {
+            const url = new URL(image);
+            const host = url.hostname;
+            if (host === "drive.google.com") {
+              const fileID = image.match(/\/file\/d\/(.+?)\//)[1]; //convert into viewable url using regex
+              image = `https://drive.google.com/thumbnail?id=${fileID}`;
+            } else {
+              image = url.href;
+            }
+          } catch (err) {
+            console.log(err);
+          }
         }
         row[11] = currCommittee;
         row[10] = image;
@@ -82,16 +101,16 @@ async function getGoogleSheetData(range) {
     }));
     return formattedData;
   } catch (error) {
-    console.error('Error retrieving data from Google Sheets:', error.message);
+    console.error("Error retrieving data from Google Sheets:", error.message);
     return [];
   }
 }
 
-  function writeToOutput(officers) {
-    // Write to offoutput.json
-    const out = JSON.stringify(officers);
-    fs.writeFile('offoutput.json', out, (err) => {
-      if (err) throw err;
-      console.log('Output successfully saved to offoutput.json');
-    });
-  }
+function writeToOutput(officers) {
+  // Write to offoutput.json
+  const out = JSON.stringify(officers);
+  fs.writeFile("offoutput.json", out, (err) => {
+    if (err) throw err;
+    console.log("Output successfully saved to offoutput.json");
+  });
+}
