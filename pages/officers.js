@@ -19,7 +19,7 @@ function OfficersBanner() {	//fix description
 				</div>
 				<div className="info">
 					<h1>Our Team</h1>
-					<p className="half-size">ACM comprises eight committees, each serving a unique topic and mission. All of our events are open to everyone. We strive to cover all of our members’ interests and encourage members to explore new topics and events, too!</p>
+					<p className="half-size">ACM officers make the amazing events and projects that we do possible. This page recognizes our entire team across the entire board and all eight committees. Don't hesitate to get in touch with any of them!</p>
 				</div>
 			</div>
 		</div>
@@ -34,7 +34,7 @@ function OfficersPage() {
 		<Layout>
 			<NextSeo
 				title="Our Team | ACM at UCLA"
-				description="ACM comprises eight committees, each serving a unique topic and mission. Learn more about Studio, ICPC, Design, Cyber, Teach LA, W, AI, and Hack here! All of our events are open to everyone; we want to help you explore your passion!"
+				description="ACM officers make the amazing events and projects that we do possible. This page recognizes our entire team across the entire board and all eight committees. Don't hesitate to get in touch with any of them!"
 				openGraph={{
 					images: [
 						{
