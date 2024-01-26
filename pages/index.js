@@ -39,9 +39,9 @@ function Home () {
 				}}
 			/>
 			<div className="home-page text-center">
-			<a href="https://www.uclaacm.com/gm/w24/" style={{ textDecoration: 'none' }}>
+			<a href="https://forms.gle/hCTEKJvM7LnVKCez9" style={{ textDecoration: 'none' }}>
     <ContentBanner
-        title="RSVP now to attend ACM's Winter GM!"
+        title="Fill out the ACM Census!"
         main
     />
 </a>
