@@ -30,6 +30,10 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: npm install
     - run: npm run ofp
+      env:
+        EVENTS_SPREADSHEET_ID: ${{ secrets.EVENTS_SPREADSHEET_ID }}
+        SERVICE_ACCOUNT: ${{ secrets.SERVICE_ACCOUNT }}
+        DIRECTORY_SPREADSHEET_ID: ${{ secrets.DIRECTORY_SPREADSHEET_ID }}
     - run: npm run build
       env:
         EVENTS_SPREADSHEET_ID: ${{ secrets.EVENTS_SPREADSHEET_ID }}
