@@ -19,7 +19,7 @@ function OfficersBanner() {	//fix description
 				</div>
 				<div className="info">
 					<h1>Our Team</h1>
-					<p className="half-size">ACM officers make the amazing events and projects that we do possible. This page recognizes our entire team across the entire board and all eight committees. Don't hesitate to get in touch with any of them!</p>
+					<p className="half-size">ACM officers make the amazing events and projects that we do possible. This page recognizes our entire team across the entire board and all eight committees. Don&apos;t hesitate to get in touch with any of them!</p>
 				</div>
 			</div>
 		</div>

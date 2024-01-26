@@ -80,7 +80,6 @@ async function getGoogleSheetData(range) {
       photo: row[10],
       committee: row[11],
     }));
-    console.log(formattedData);
     return formattedData;
   } catch (error) {
     console.error('Error retrieving data from Google Sheets:', error.message);

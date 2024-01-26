@@ -1,7 +1,7 @@
 // import Image from 'next/image';
 import React from 'react';
-import data from '../../offoutput.json';
 import Officers from '../Officers/OfficerCard';
+import data from '../../offoutput.json';
 
 
 function CommitteeOfficers({committee}) {   //maps officers to a particular commitee
