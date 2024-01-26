@@ -7,7 +7,7 @@ export default {
     items: [
         {
             date: '01/08',
-            name: 'Winter General Meeting',   
+            name: 'Winter General Meeting',
             info: 'Come learn about the different ACM committees!',
             active: true,
         },
