@@ -7,7 +7,7 @@ import Navigation from '../components/Committees/Sidebar';
 // import Archive from '../components/Committees/ArchiveSidebar';
 import Layout from '../components/Layout';
 import data from '../data';
-import teamPhoto from '../public/images/officers/internal.png';
+import teamPhoto from '../public/images/officers/internal_compressed.png';
 
 
 function OfficersBanner() {	//fix description
