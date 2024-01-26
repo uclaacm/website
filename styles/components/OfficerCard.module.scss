@@ -1,30 +1,30 @@
 /* yourStyles.module.css */
 
 .officer-card {
-  display: block;
-  text-align: center;
-  background-color: #ffffff;
-  width: 260px;
-  height: 300px;
+  background-color: #FFF;
   border-radius: 10px;
-  font-size: 15px;
-  padding: 10px;
-  overflow: hidden;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: block;
+  font-size: 15px;
+  height: 300px;
   margin: 25px;
+  overflow: hidden;
+  padding: 10px;
+  text-align: center;
+  width: 260px;
 }
 
 .officer-card:hover {
   /* Scale and add a box shadow on hover */
-  transform: scale(1.025);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: scale(1.025);
 }
 
 .image-container {
-  flex: 1;
-  display: flex;
-  justify-content: center;
   align-items: center;
+  display: flex;
+  flex: 1;
+  justify-content: center;
   margin-top: 30px;
 }
 
@@ -47,28 +47,28 @@
   margin: 5px 0;
 }
 
-.officer-email{
+.officer-email {
+  color: inherit;
   margin-top: 10px;
   text-decoration: none; /* Remove underline */
-  color: inherit;
 }
 /* Add additional styles as needed */
 
 
 .no-image {
-  text-align: center;
-  padding: 10px;
+  color: #999;
   font-style: italic;
-  color: #999999;
+  padding: 10px;
+  text-align: center;
 }
 
 
 .email-container {
   // display: flex;
   // align-items: center; /* Align items vertically in the container */
-  white-space: nowrap; /* Prevent line breaks */
   overflow: hidden; /* Hide overflow content */
   text-overflow: ellipsis;
+  white-space: nowrap; /* Prevent line breaks */
 }
 
 .email-icon {

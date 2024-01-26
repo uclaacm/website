@@ -128,11 +128,11 @@ html {
 
  
 
-  .officer-image{
-    width: 100%;
-    height: 100%;
+  .officer-image {
     border-radius: 50%; /* Make the image completely round */
+    height: 100%;
     padding: 10px; /* Add padding around the image */
+    width: 100%;
   }
 
   // img{
@@ -151,7 +151,7 @@ html {
     padding: 0 60px;
   }
 
-  .bannerpic{
+  .bannerpic {
     border-radius: 10px;
     box-shadow: 0 0 1pt 0;
     width: 100%;
