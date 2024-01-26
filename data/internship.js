@@ -14,7 +14,7 @@ export default {
         {
             date: '01/08',
             name: 'Application Form is Open',
-            info: 'Fill out the application form for as many positions as you want!',
+            info: 'Fill out the application form for as many committees as you want!',
             active: true,
         },
         {

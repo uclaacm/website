@@ -44,6 +44,13 @@ function Footer(){
 								</a>
 							</Link>
 						</div>
+						<div className="mt-1">
+							<Link href="https://linktr.ee/acmucla">
+								<a className="button tight" target="_blank" rel="noreferrer noopener">
+									Linktree
+								</a>
+							</Link>
+						</div>
 						<p className={styles['footer-header']}>Reach us at</p>
 						<a className={styles['link-footer']} href="mailto: acm@ucla.edu"><span className="footer-text">acm@ucla.edu</span></a>
 					</div>
