@@ -3,8 +3,8 @@ import { google } from "googleapis";
 import * as dotenv from "dotenv";
 
 dotenv.config();
-const SERVICE_ACCOUNT = process.env["SERVICE_ACCOUNT"];
-const DIRECTORY_SPREADSHEET_ID = process.env["DIRECTORY_SPREADSHEET_ID"];
+const SERVICE_ACCOUNT = process.env.SERVICE_ACCOUNT;
+const DIRECTORY_SPREADSHEET_ID = process.env.DIRECTORY_SPREADSHEET_ID;
 
 
 // await getGoogleSheetData('Officers!A2:K');
