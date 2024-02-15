@@ -11,6 +11,7 @@ import Officers from '../components/OfficerCard';
 import { pastEvents, people } from '../data/impact';
 
 import impactMotifBanner from '../public/images/impact/impact-motif.png';
+import impactathon from '../public/images/impact/impactathon.JPEG';
 import styles from '../styles/pages/impact.module.scss';
 
 const impactBlog = 'https://medium.com/acm-at-ucla';
@@ -20,7 +21,7 @@ function Impact() {
     <Layout>
       <NextSeo
         title="ACM Impact | ACM at UCLA"
-        description="ACM Impact is an up-and-coming initiative of ACM whose mission is to start conversations and promote an understanding of how tech and society affect each other. Our aim is to build a community of people who are passionate about ethical technology, socially impactful engineering, and creating a better future for all!"
+        description="ACM Impact's mission: Raise awareness on ethical issues in tech & create a community of impactful technologists @ UCLA!"
         openGraph={{
           images: [
             {
@@ -52,6 +53,19 @@ function Impact() {
         </p>
 
         <h2 className="text-center">Our Initiatives</h2>
+        <h3 className="text-uppercase">Upcoming Events</h3>
+        <WorkshopCard
+          title={'ACM Impact x Blueprint Impactathon'}
+          quarter={'Spring 2024'}
+          description={
+            'This spring, ACM Impact and Blueprint are hosting UCLA’s first IMPACTATHON! The goal of this hackathon is to partner groups of students with nonprofits in order to aid them in building any technical solutions that the organization requires. Students will get to work directly with nonprofit leaders and work to come up with a product that fits their needs best. The hackathon will be taking place in the first week of spring quarter, from April 12th to 14th. Please fill out the registration form linked here: http://tinyurl.com/impactathon-registration-form!  Prizes and nonprofit organizations announcements soon to come!'
+          }
+          img={impactathon}
+          alt={
+            'The ACM Impact banner: a space shuttle taking off, with a moon behind it'
+          }
+          desktopHorizontal
+        />
         <h3 className="text-uppercase">Workshops</h3>
         <WorkshopCard
           title={'Careers Workshop Series'}
