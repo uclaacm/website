@@ -2,7 +2,7 @@
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Image from 'next/image';
 import React from 'react';
-import styles from '../../styles/components/OfficerCard.module.scss';
+import styles from '../../styles/components/Officers/OfficerCard.module.scss';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 
 function Officer({
