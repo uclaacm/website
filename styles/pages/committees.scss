@@ -83,3 +83,78 @@ html {
   scroll-padding-top: 75px;
 }
 
+
+.officers-page-content {
+  box-sizing: border-box;
+  margin: auto 320px;
+  max-width: 1100px;
+  // border: 1px solid black;
+  padding: 0 30px;
+  width: 100%;
+
+  @media (max-width: 767px) {
+    box-sizing: border-box;
+    margin: auto;
+    max-width: 900px;
+    padding: 0 30px;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 2em;
+    margin: 10px 0;
+  }
+
+  h2 {
+    font-size: 1.2em;
+    margin: 0;
+  }
+
+  p {
+    font-family: $font-body;
+    font-size: 1em;
+    line-height: 150%;
+
+    &.subheading {
+      font-size: 1em;
+    }
+
+    strong {
+      font-weight: bold;
+    }
+    
+    
+  }
+
+ 
+
+  .officer-image {
+    border-radius: 50%; /* Make the image completely round */
+    height: 100%;
+    padding: 10px; /* Add padding around the image */
+    width: 100%;
+  }
+
+  // img{
+    
+  // }
+
+  .committeebanner {
+    border-radius: 10px;
+    // box-shadow: 0 0 1pt 0;
+    width: 50%;
+    // display: block;
+    // margin: auto;
+  }
+
+  @media (min-width: 688px) {
+    padding: 0 60px;
+  }
+
+  .bannerpic {
+    border-radius: 10px;
+    box-shadow: 0 0 1pt 0;
+    width: 100%;
+  }
+}
+
