@@ -36,3 +36,4 @@ yarn-error.log*
 *.csv
 output.json
 offoutput.json
+townhall.json
