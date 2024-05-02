@@ -347,45 +347,18 @@
   "integrity" "sha512-P7LAw/LbojPzkgp5oznjE6tQEIWbp4PkkfrZDINTro9zgBRtI324/EYsiSI7lhPbpIQ+DCeR2NNmMWANGGfZsg=="
   "resolved" "https://registry.npmjs.org/@babel/types/-/types-7.22.19.tgz"
   "version" "7.22.19"
-  "integrity" "sha512-P7LAw/LbojPzkgp5oznjE6tQEIWbp4PkkfrZDINTro9zgBRtI324/EYsiSI7lhPbpIQ+DCeR2NNmMWANGGfZsg=="
-  "resolved" "https://registry.npmjs.org/@babel/types/-/types-7.22.19.tgz"
-  "version" "7.22.19"
   dependencies:
     "@babel/helper-string-parser" "^7.22.5"
     "@babel/helper-validator-identifier" "^7.22.19"
     "to-fast-properties" "^2.0.0"
-    "to-fast-properties" "^2.0.0"
 
 "@babel/types@^7.22.15":
   "integrity" "sha512-0oIyUfKoI3mSqMvsxBdclDwxXKXAUA8v/apZbc+iSyARYou1o8ZGDxbUYyLFoW2arqS2jDGqJuZvv1d/io1axg=="
   "resolved" "https://registry.npmjs.org/@babel/types/-/types-7.23.0.tgz"
   "version" "7.23.0"
-"@babel/types@^7.22.15":
-  "integrity" "sha512-0oIyUfKoI3mSqMvsxBdclDwxXKXAUA8v/apZbc+iSyARYou1o8ZGDxbUYyLFoW2arqS2jDGqJuZvv1d/io1axg=="
-  "resolved" "https://registry.npmjs.org/@babel/types/-/types-7.23.0.tgz"
-  "version" "7.23.0"
   dependencies:
     "@babel/helper-string-parser" "^7.22.5"
     "@babel/helper-validator-identifier" "^7.22.20"
-    "to-fast-properties" "^2.0.0"
-
-"@babel/types@^7.22.5":
-  "integrity" "sha512-0oIyUfKoI3mSqMvsxBdclDwxXKXAUA8v/apZbc+iSyARYou1o8ZGDxbUYyLFoW2arqS2jDGqJuZvv1d/io1axg=="
-  "resolved" "https://registry.npmjs.org/@babel/types/-/types-7.23.0.tgz"
-  "version" "7.23.0"
-  dependencies:
-    "@babel/helper-string-parser" "^7.22.5"
-    "@babel/helper-validator-identifier" "^7.22.20"
-    "to-fast-properties" "^2.0.0"
-
-"@babel/types@^7.23.0":
-  "integrity" "sha512-0oIyUfKoI3mSqMvsxBdclDwxXKXAUA8v/apZbc+iSyARYou1o8ZGDxbUYyLFoW2arqS2jDGqJuZvv1d/io1axg=="
-  "resolved" "https://registry.npmjs.org/@babel/types/-/types-7.23.0.tgz"
-  "version" "7.23.0"
-  dependencies:
-    "@babel/helper-string-parser" "^7.22.5"
-    "@babel/helper-validator-identifier" "^7.22.20"
-    "to-fast-properties" "^2.0.0"
     "to-fast-properties" "^2.0.0"
 
 "@babel/types@^7.22.5":
@@ -425,15 +398,6 @@
     "js-yaml" "^3.13.1"
     "minimatch" "^3.0.4"
     "strip-json-comments" "^3.1.1"
-    "ajv" "^6.12.4"
-    "debug" "^4.1.1"
-    "espree" "^7.3.0"
-    "globals" "^13.9.0"
-    "ignore" "^4.0.6"
-    "import-fresh" "^3.2.1"
-    "js-yaml" "^3.13.1"
-    "minimatch" "^3.0.4"
-    "strip-json-comments" "^3.1.1"
 
 "@fortawesome/fontawesome-common-types@6.4.2":
   "integrity" "sha512-1DgP7f+XQIJbLFCTX1V2QnxVmpLdKdzzo2k8EmvDOePfchaIGQ9eCHj2up3/jNEbZuBqel5OxiaOJf37TWauRA=="
@@ -453,8 +417,9 @@
     "@fortawesome/fontawesome-common-types" "6.4.2"
 
 "@fortawesome/free-brands-svg-icons@^6.4.2":
-  version "6.4.2"
-  resolved "https://registry.npmjs.org/@fortawesome/free-brands-svg-icons/-/free-brands-svg-icons-6.4.2.tgz"
+  "integrity" "sha512-LKOwJX0I7+mR/cvvf6qIiqcERbdnY+24zgpUSouySml+5w8B4BJOx8EhDR/FTKAu06W12fmUIcv6lzPSwYKGGg=="
+  "resolved" "https://registry.npmjs.org/@fortawesome/free-brands-svg-icons/-/free-brands-svg-icons-6.4.2.tgz"
+  "version" "6.4.2"
   dependencies:
     "@fortawesome/fontawesome-common-types" "6.4.2"
 
@@ -797,9 +762,9 @@
   "resolved" "https://registry.npmjs.org/@next/react-refresh-utils/-/react-refresh-utils-11.1.4.tgz"
   "version" "11.1.4"
 
-"@next/swc-darwin-arm64@11.1.4":
-  "integrity" "sha512-jt8dMtIRWnJjRYLid6NWCxXzXdpr9VFT/vhDp8ioh+TtOR0UKPHMxei6R4GA3RqoyPEfFcSNmkG7OtyqCSxNIw=="
-  "resolved" "https://registry.npmjs.org/@next/swc-darwin-arm64/-/swc-darwin-arm64-11.1.4.tgz"
+"@next/swc-linux-x64-gnu@11.1.4":
+  "integrity" "sha512-QfVuXugxBkCUHN9yD/VZ1xqszcMlBDj6vrbRiQvmWuyNo39ON6HqGn3jDwVrTHc9oKo2a0XInm+0zEnQeDmjSw=="
+  "resolved" "https://registry.npmjs.org/@next/swc-linux-x64-gnu/-/swc-linux-x64-gnu-11.1.4.tgz"
   "version" "11.1.4"
 
 "@node-rs/helper@1.2.1":
@@ -3011,11 +2976,6 @@
   "integrity" "sha1-FQStJSMVjKpA20onh8sBQRmU6k8="
   "resolved" "https://registry.npmjs.org/fs.realpath/-/fs.realpath-1.0.0.tgz"
   "version" "1.0.0"
-
-"fsevents@^2.3.2", "fsevents@~2.3.1":
-  "integrity" "sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA=="
-  "resolved" "https://registry.npmjs.org/fsevents/-/fsevents-2.3.2.tgz"
-  "version" "2.3.2"
 
 "function-bind@^1.1.1":
   "integrity" "sha512-yIovAzMX49sF8Yl58fSCWJ5svSLuaibPxXQJFLmBObTuCr0Mf1KiPopGM9NiFjiYBCbfaa2Fh6breQ6ANVTI0A=="
