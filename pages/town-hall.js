@@ -5,12 +5,12 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React, { useRef } from 'react';
 
-import Banner from '../../components/Banner';
-import Layout from '../../components/Layout';
+import Banner from '../components/Banner';
+import Layout from '../components/Layout';
 
-import pastData from '../../past-townhall.json';
-import TestimonialsCourseChanges from '../../public/images/town-hall/testimonials-course-changes.png';
-import data from '../../townhall.json';
+import pastData from '../past-townhall.json';
+import TestimonialsCourseChanges from '../public/images/town-hall/testimonials-course-changes.png';
+import data from '../townhall.json';
 
 const TOWN_HALL_2021_WINTER_VIDEO = 'https://www.youtube.com/embed/Eq2xsShPMVc';
 
