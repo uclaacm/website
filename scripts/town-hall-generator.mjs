@@ -57,7 +57,7 @@ async function fetchTownHallData() {
 }
 
 async function fetchPastTownHallData() {
-  const data = await getGoogleSheetData('PastTownHalls!A2:G');
+  const data = await getGoogleSheetData('PastTownHalls!A3:G');
 
   // Format the rows into an array of objects
   const formattedData = data.map((row) => ({

@@ -8,10 +8,8 @@ import React, { useRef } from 'react';
 import Banner from '../../components/Banner';
 import Layout from '../../components/Layout';
 
-import SpringTownhallImage from '../../public/images/spring-2022-townhall-photo.JPG';
+import pastData from '../../past-townhall.json';
 import TestimonialsCourseChanges from '../../public/images/town-hall/testimonials-course-changes.png';
-import TownHallFall2021Attending from '../../public/images/town-hall/town-hall-attending-f21.jpeg';
-import F22TownHallBanner from '../../public/images/town-hall/town-hall-banner-f22.png';
 import data from '../../townhall.json';
 
 const TOWN_HALL_2021_WINTER_VIDEO = 'https://www.youtube.com/embed/Eq2xsShPMVc';
@@ -38,6 +36,9 @@ function TownHall() {
     rsvp: '',
     survey: '',
   };
+
+  // Reverse pastData from past-townhall.json
+  const pastTownHalls = [...pastData].reverse();
 
   // Fetch and assign data from townhall.json
   for(let row of data) {
@@ -95,6 +96,7 @@ function TownHall() {
           site_name: 'ACM at UCLA',
         }}
       />
+      {/* Most Recent Town Hall*/}
       <Banner decorative />
       <div className="content-container-tight">
         <div className="text-center">
@@ -148,6 +150,7 @@ function TownHall() {
         </ul>
         <hr />
       </div>
+      {/* Surveys */}
       <div className="content-container-medium">
         <div className="grid-tablet-2">
           <div>
@@ -185,170 +188,61 @@ function TownHall() {
         </div>
         <hr />
       </div>
+      {/* Past Town Halls */}
       <div className="content-container-medium">
         <h2 className="text-center">Past Town Halls</h2>
-        <div className="grid-tablet-2">
-          <div>
-            <h3>Fall 2022 // Wednesday, Nov 9th 2022</h3>
-            <p>
-              At our Fall 2022 Town Hall, we centered our attention on several important topics,
-              including proposed reforms to the Computer Science curriculum, exploring research
-              opportunities for undergraduates, and ongoing discussions around enabling students
-              to provide anonymous feedback to faculty members.
-            </p>
-            <ul className="list-unstyled">
-              <li style={inlineButtonListStyle}>
-                <Link href="https://docs.google.com/presentation/d/14MIk1bzHHr5b11cgYX_kAz5WQa6ToKD_9nnj3_5DLco/edit?usp=sharing">
-                  <a
-                    className="button"
-                    target="_blank"
-                    rel="noopener noreferrer"
+        {pastTownHalls.map((pastTownHall, index) => (
+          <div className="grid-tablet-2" key={index}>
+            <div>
+              <h3>{pastTownHall.title + ' // ' + pastTownHall.date}</h3>
+              <p>{pastTownHall.description}</p>
+              <ul className="list-unstyled">
+                <li style={inlineButtonListStyle}>
+                  <Link href={pastTownHall.slides}>
+                    <a
+                      className="button"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >
+                      <FontAwesomeIcon
+                        icon={faFileAlt}
+                        fixedWidth
+                        aria-hidden={true}
+                      />{' '}
+                      Form Summaries and Slides
+                    </a>
+                  </Link>
+                </li>{' '}
+                <li style={inlineButtonListStyle}>
+                  <Link href={pastTownHall.notes}>
+                    <a
+                      className="button"
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
-                    <FontAwesomeIcon
-                      icon={faFileAlt}
-                      fixedWidth
-                      aria-hidden={true}
-                    />{' '}
-                    Form Summaries and Slides
-                  </a>
-                </Link>
-              </li>{' '}
-              <li style={inlineButtonListStyle}>
-                <Link href="https://docs.google.com/document/d/1JTFaP27OsqA0sBhjbIC4mIzjCgqRLJyBxvOQ5FSrPCk/edit?usp=sharing">
-                  <a
-                    className="button"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FontAwesomeIcon
-                      icon={faFileAlt}
-                      fixedWidth
-                      aria-hidden={true}
-                    />{' '}
-                    Event Notes
-                  </a>
-                </Link>
-              </li>
-            </ul>
+                      <FontAwesomeIcon
+                        icon={faFileAlt}
+                        fixedWidth
+                        aria-hidden={true}
+                      />{' '}
+                      Event Notes
+                    </a>
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <Image
+                src={pastTownHall.banner}
+                alt={pastTownHall.alt_text}
+                width={embedWidth}
+                height={(embedWidth * 315) / 560}
+                layout="fixed"
+              />
+            </div>
           </div>
-          <div>
-            <Image
-              src={F22TownHallBanner}
-              alt="Fall 2022 Computer Science Town Hall Banner."
-              width={embedWidth}
-              height={(embedWidth * 315) / 560}
-              layout="fixed"
-            />
-          </div>
-        </div>
-        <div className="grid-tablet-2">
-          <div>
-            <h3>Spring 2022 // Wednesday, May 11th 2022</h3>
-            <p>
-              In our Spring 2022 Town Hall, we focused on identifying effective
-              teaching practices and dicussed the curriculum reform with the
-              CS department while enabling more students to directly address their concerns
-              with professors and the department&apos;s leadership.
-            </p>
-            <ul className="list-unstyled">
-              <li style={inlineButtonListStyle}>
-                <Link href="https://docs.google.com/presentation/d/1L9dSMVUr1TSazZu0-LqSHRSjEMMOO4GG-kZlOrkAjOM/edit?usp=sharing">
-                  <a
-                    className="button"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >
-                    <FontAwesomeIcon
-                      icon={faFileAlt}
-                      fixedWidth
-                      aria-hidden={true}
-                    />{' '}
-                    Form Summaries and Slides
-                  </a>
-                </Link>
-              </li>{' '}
-              <li style={inlineButtonListStyle}>
-                <Link href="https://docs.google.com/document/d/1QADyPwSqwf4cS_O51klvqA8dAcNlOXF1zT5YThi78q4/edit?usp=sharing">
-                  <a
-                    className="button"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FontAwesomeIcon
-                      icon={faFileAlt}
-                      fixedWidth
-                      aria-hidden={true}
-                    />{' '}
-                    Event Notes
-                  </a>
-                </Link>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <Image
-              src={SpringTownhallImage}
-              alt="A photograph from the Spring 2022 Computer Science Town Hall. Professor Eggert is introducing himself and other professors are sitting beside him."
-              width={embedWidth}
-              height={(embedWidth * 315) / 560}
-              layout="fixed"
-            />
-          </div>
-        </div>
-        <div className="grid-tablet-2">
-          <div>
-            <h3>Fall 2021 // Wednesday, November 10th 2021</h3>
-            <p>
-              In our Fall 2021 Town Hall, we continued the conversation on
-              critical issues such as inclusion and curriculum reform with the
-              CS department while empowering students to share their concerns
-              with professors and the department&apos;s leadership.
-            </p>
-            <ul className="list-unstyled">
-              <li style={inlineButtonListStyle}>
-                <Link href="/files/town-hall/CS Town Hall Fall 2021 Slides.pdf">
-                  <a
-                    className="button"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FontAwesomeIcon
-                      icon={faFileAlt}
-                      fixedWidth
-                      aria-hidden={true}
-                    />{' '}
-                    Form Summaries and Slides
-                  </a>
-                </Link>
-              </li>{' '}
-              <li style={inlineButtonListStyle}>
-                <Link href="/files/town-hall/CS Town Hall Fall 2021 Notes.pdf">
-                  <a
-                    className="button"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FontAwesomeIcon
-                      icon={faFileAlt}
-                      fixedWidth
-                      aria-hidden={true}
-                    />{' '}
-                    Event Notes
-                  </a>
-                </Link>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <Image
-              src={TownHallFall2021Attending}
-              alt="A banner that reads 'Spring 2022 Computer Science Town Hall: ask questions and be heard! Wednesday, May 11 from 6:00 - 8:00 PM PT. Mong Learning Center, Engineering VI. Ask Questions and get your voice heard!'"
-              width={embedWidth}
-              height={(embedWidth * 315) / 560}
-              layout="fixed"
-            />
-          </div>
-        </div>
+        ))}
+
         <div className="grid-tablet-2">
           <div>
             <h3>Winter 2021 // Wednesday, February 24th 2021</h3>
