@@ -24,7 +24,7 @@
   "scripts": {
     "start": "next dev",
     "start-production": "next start",
-    "build": "node scripts/officer-parser.mjs && scripts/town-hall-generator.mjs && next build",
+    "build": "node scripts/officer-parser.mjs && node scripts/town-hall-generator.mjs && next build",
     "lint-js": "eslint \"**/*.js\"",
     "lint-js-fix": "eslint --fix \"**/*.js\"",
     "lint-css": "stylelint \"**/*.css\" \"**/*.scss\"",
