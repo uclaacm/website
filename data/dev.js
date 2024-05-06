@@ -135,3 +135,53 @@ export const people = [
     alt: 'acm logo',
   },
 ];
+
+export const projdata = [
+  {
+    name: 'ACM at UCLA Website',
+    prim_lang: 'HTML',
+    proj_link: '',
+    repo_link: '',
+    description: `The ACM at UCLA Website is the one-stop shop for all things ACM! We develop 
+    and maintain this website, keeping it up-to-date with all the latest news and events. `,
+    img: '/images/dev-projects/acmlogocopy.jpg',
+    alt: 'ACM Website!',
+  },
+  {
+    name: 'Membership Portal',
+    prim_lang: 'HTML',
+    proj_link: '',
+    repo_link: '',
+    description: `The Discord bot is our in-house email verification bot for the ACM at UCLA 
+    Discord server! It's written in JavaScript using the Discord API and Amazon SES.`,
+    img: '/images/dev-projects/acmlogocopy.jpg',
+    alt: 'Membership Portal!',
+  },{
+    name: 'Discord Bot',
+    prim_lang: 'HTML',
+    proj_link: '',
+    repo_link: '',
+    description: `The ACM at UCLA Website is the one-stop shop for all things ACM! We develop 
+    and maintain this website, keeping it up-to-date with all the latest news and events. `,
+    img: '/images/dev-projects/acmlogocopy.jpg',
+    alt: 'Discord Bot!',
+  },{
+    name: 'Link Shortener',
+    prim_lang: 'HTML',
+    proj_link: '',
+    repo_link: '',
+    description: `The link shortener is an ongoing project aimed at generating shortened links
+     for use by our committees. The link shortener is built with Flask.`,
+    img: '/images/dev-projects/acmlogocopy.jpg',
+    alt: 'ACM Website!',
+  },{
+    name: '???',
+    prim_lang: 'HTML',
+    proj_link: '',
+    repo_link: '',
+    description: `Have an idea for a project or any questions? Feel free to contact Arsh Malik 
+    (arshmalik02@g.ucla.edu), our Dev Team Director.`,
+    img: '/images/dev-projects/acmlogocopy.jpg',
+    alt: 'ACM Website!',
+  },
+];
