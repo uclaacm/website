@@ -42,14 +42,14 @@ function Project({
           </div>
           <div className={`${styles['project-grid-col']} ${styles['project-info']}`}>
             <h3 className={styles['project-title']}>{name}</h3>
-            <h3 className={styles['project-title']}>{prim_lang}</h3>
           </div>
         </div>
-        <div className={styles['card-hover-content']}>
+        <div className={styles['card-`hover-content']}>
           <div>
-            <h2>{name}</h2>
             <p>{description}</p>
-            <a href={repo_link} target="_blank" rel="noopener noreferrer">View Repository</a>
+            <p>{prim_lang}</p>
+            <a href={repo_link} target="_blank" rel="noopener noreferrer">View Repository<br></br></a>
+            <a href={proj_link} target="_blank" rel="noopener noreferrer">View Project</a>
           </div>
         </div>
       </div>
@@ -65,13 +65,15 @@ function Project({
         </div>
         <div>
           <h3 className={styles.name}>{name}</h3>
-          <h3 className={styles['project-title']}>{prim_lang}</h3>
         </div>
         <div className={styles['card-hover-content']}>
           <div>
-            <h2>{name}</h2>
+          <span class="dev-badge lang-HTML"></span>
+          <a>{prim_lang}</a>
+          • <a href={repo_link} target="_blank" rel="noopener noreferrer">Repo</a> • 
+            <a href={proj_link} target="_blank" rel="noopener noreferrer">Project</a>
             <p>{description}</p>
-            <a href={repo_link} target="_blank" rel="noopener noreferrer">View Repository</a>
+            
           </div>
         </div>
       </div>

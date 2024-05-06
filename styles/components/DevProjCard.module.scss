@@ -37,6 +37,7 @@
   position: relative;  // Ensure the position is relative to allow absolute positioning inside
   margin-bottom: 2em;
   padding: .5em;
+  padding-bottom: 1em;
   margin: .5em;
   border-radius: .5em;
   border: 2px solid #10a0d4;
@@ -51,6 +52,31 @@
   &:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);  // Optional: Add a shadow effect on hover
   }
+}
+
+.dev-badge{
+  width: 1em;
+    height: 1em;
+    border-radius: 100px;
+    position: relative;
+    top: 0.125em;
+    margin-right: 0.25em;
+
+    &.lang-Javascript{
+        background-color: #EFDF6A;
+    }
+
+    &.lang-TypeScript{
+        background-color: #efaa6a;
+    }
+
+    &.lang-Go{
+        background-color: #4AABD5;
+    }
+
+    &.lang-HTML{
+        background-color: #D35A31;
+    }
 }
 
 .card-hover-content {

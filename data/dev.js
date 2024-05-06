@@ -152,8 +152,8 @@ export const projdata = [
     prim_lang: 'HTML',
     proj_link: '',
     repo_link: '',
-    description: `The Discord bot is our in-house email verification bot for the ACM at UCLA 
-    Discord server! It's written in JavaScript using the Discord API and Amazon SES.`,
+    description: `The Membership Portal is where ACM members can check in to events to earn 
+    points! We built the Membership Portal with Node.js, Express.js, PostgreSQL, Redux and React.js.`,
     img: '/images/dev-projects/acmlogocopy.jpg',
     alt: 'Membership Portal!',
   },{
@@ -161,8 +161,8 @@ export const projdata = [
     prim_lang: 'HTML',
     proj_link: '',
     repo_link: '',
-    description: `The ACM at UCLA Website is the one-stop shop for all things ACM! We develop 
-    and maintain this website, keeping it up-to-date with all the latest news and events. `,
+    description: `The Discord bot is our in-house email verification bot for the ACM at UCLA 
+    Discord server! It's written in JavaScript using the Discord API and Amazon SES.`,
     img: '/images/dev-projects/acmlogocopy.jpg',
     alt: 'Discord Bot!',
   },{
