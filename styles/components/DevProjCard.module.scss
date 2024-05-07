@@ -34,49 +34,48 @@
 }
 
 .project-card {
-  position: relative;  // Ensure the position is relative to allow absolute positioning inside
+  position: relative;  
   margin-bottom: 2em;
   padding: .5em;
   padding-bottom: 1em;
   margin: .5em;
   border-radius: .5em;
   border: 2px solid #10a0d4;
-  overflow: hidden;  // Important to hide the overflow of the hover content
-  cursor: pointer;
-  transition: box-shadow 0.3s ease-in-out;  // Smooth transition for shadow
+  overflow: hidden; 
+  transition: box-shadow 0.3s ease-in-out;
+  font-size: 1em;
 
   &:hover .card-hover-content {
     opacity: 1;  // Make the hover content visible when hovered
   }
 
   &:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);  // Optional: Add a shadow effect on hover
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
 }
 
 .dev-badge{
-  width: 1em;
-    height: 1em;
-    border-radius: 100px;
-    position: relative;
-    top: 0.125em;
-    margin-right: 0.25em;
+  width: .8em;
+  height: .8em;
+  border-radius:50%;
+  position: relative;
+  display: inline-block;
+}
 
-    &.lang-Javascript{
-        background-color: #EFDF6A;
-    }
+.Javascript{
+  background-color: #EFDF6A;
+}
 
-    &.lang-TypeScript{
-        background-color: #efaa6a;
-    }
+.TypeScript{
+  background-color: #efaa6a;
+}
 
-    &.lang-Go{
-        background-color: #4AABD5;
-    }
+.Go{
+  background-color: #4AABD5;
+}
 
-    &.lang-HTML{
-        background-color: #D35A31;
-    }
+.HTML{
+  background-color: #D35A31;
 }
 
 .card-hover-content {
@@ -85,7 +84,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 1);  // Semi-transparent black
+  background-color: rgba(0, 0, 0, .9);  
   color: white;
   display: flex;
   align-items: center;
@@ -93,7 +92,17 @@
   opacity: 0;  // Initially hidden
   transition: opacity 0.3s ease-in-out;
   text-align: center;
-  font-size: 1.2em;  // Adjust the font size as needed
+  font-size: 1.2em; 
+}
+
+.project-card a {
+  font-weight: bold;          
+  color: #10a0d4;                
+  text-decoration: none;     
+
+  &:link, &:visited, &:hover, &:active {
+    color: #10a0d4;               
+  }
 }
 
 

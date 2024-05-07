@@ -139,36 +139,36 @@ export const people = [
 export const projdata = [
   {
     name: 'ACM at UCLA Website',
-    prim_lang: 'HTML',
-    proj_link: '',
-    repo_link: '',
+    prim_lang: 'Javascript',
+    proj_link: 'https://www.uclaacm.com',
+    repo_link: 'https://github.com/uclaacm/website',
     description: `The ACM at UCLA Website is the one-stop shop for all things ACM! We develop 
     and maintain this website, keeping it up-to-date with all the latest news and events. `,
-    img: '/images/dev-projects/acmlogocopy.jpg',
+    img: '/images/dev-projects/acmwebsite.png',
     alt: 'ACM Website!',
   },
   {
     name: 'Membership Portal',
-    prim_lang: 'HTML',
-    proj_link: '',
-    repo_link: '',
+    prim_lang: 'Javascript',
+    proj_link: 'https://members.uclaacm.com/login',
+    repo_link: 'https://github.com/uclaacm/membership-portal',
     description: `The Membership Portal is where ACM members can check in to events to earn 
     points! We built the Membership Portal with Node.js, Express.js, PostgreSQL, Redux and React.js.`,
     img: '/images/dev-projects/acmlogocopy.jpg',
     alt: 'Membership Portal!',
   },{
     name: 'Discord Bot',
-    prim_lang: 'HTML',
-    proj_link: '',
-    repo_link: '',
+    prim_lang: 'Javascript',
+    proj_link: 'https://discord.gg/eWmzKsY',
+    repo_link: 'https://github.com/uclaacm/ACM-at-UCLA-Discord-Bot',
     description: `The Discord bot is our in-house email verification bot for the ACM at UCLA 
     Discord server! It's written in JavaScript using the Discord API and Amazon SES.`,
-    img: '/images/dev-projects/acmlogocopy.jpg',
+    img: '/images/dev-projects/acmdiscord.png',
     alt: 'Discord Bot!',
   },{
     name: 'Link Shortener',
-    prim_lang: 'HTML',
-    proj_link: '',
+    prim_lang: 'Flask',
+    proj_link: 'http://links.uclaacm.com/',
     repo_link: '',
     description: `The link shortener is an ongoing project aimed at generating shortened links
      for use by our committees. The link shortener is built with Flask.`,
@@ -176,9 +176,9 @@ export const projdata = [
     alt: 'ACM Website!',
   },{
     name: '???',
-    prim_lang: 'HTML',
-    proj_link: '',
-    repo_link: '',
+    prim_lang: 'Any',
+    proj_link: 'mailto:arshmalik02@g.ucla.edu',
+    repo_link: 'mailto:arshmalik02@g.ucla.edu',
     description: `Have an idea for a project or any questions? Feel free to contact Arsh Malik 
     (arshmalik02@g.ucla.edu), our Dev Team Director.`,
     img: '/images/dev-projects/acmlogocopy.jpg',

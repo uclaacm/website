@@ -60,7 +60,6 @@ function Project({
         className={`${styles['project-card']} ${styles['grid-tablet-only-2']}`}
       >
         <div className={styles['project-image-container']}>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src={img} alt={alt} style={{ maxWidth: '100%' }} />
         </div>
         <div>
@@ -68,12 +67,14 @@ function Project({
         </div>
         <div className={styles['card-hover-content']}>
           <div>
-          <span class="dev-badge lang-HTML"></span>
-          <a>{prim_lang}</a>
-          • <a href={repo_link} target="_blank" rel="noopener noreferrer">Repo</a> • 
-            <a href={proj_link} target="_blank" rel="noopener noreferrer">Project</a>
-            <p>{description}</p>
-            
+          <div>
+          <span className={`${styles['dev-badge']} ${styles[prim_lang]}`}></span>
+            {/* TODO: Try dev-badge lang-{prim_lang} */}
+            &nbsp;{prim_lang}
+            &nbsp;•&nbsp;<a href={proj_link} target="_blank" rel="">Proj</a>&nbsp;•&nbsp;
+              <a href={repo_link} target="_blank" rel="">Repo</a> 
+              <p>{description}</p>
+            </div>
           </div>
         </div>
       </div>
