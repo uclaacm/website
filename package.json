@@ -24,7 +24,7 @@
   "scripts": {
     "start": "next dev",
     "start-production": "next start",
-    "build": "node scripts/officer-parser.mjs && node scripts/town-hall-generator.mjs && next build",
+    "build": "npm run ofp && npm run thp && next build",
     "lint-js": "eslint \"**/*.js\"",
     "lint-js-fix": "eslint --fix \"**/*.js\"",
     "lint-css": "stylelint \"**/*.css\" \"**/*.scss\"",
@@ -34,6 +34,7 @@
     "reg": "node scripts/recurring-event-generator.mjs",
     "seg": "node scripts/single-event-generator.mjs",
     "ofp": "node scripts/officer-parser.mjs",
+    "thp": "node scripts/town-hall-generator.mjs",
     "test": "jest --env=jsdom"
   },
   "eslintConfig": {

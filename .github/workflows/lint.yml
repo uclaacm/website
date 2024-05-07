@@ -22,16 +22,24 @@ jobs:
       matrix:
         node-version: [16.x]
 
+    env:
+      EVENTS_SPREADSHEET_ID: ${{ secrets.EVENTS_SPREADSHEET_ID }}
+      SERVICE_ACCOUNT: ${{ secrets.SERVICE_ACCOUNT }}
+      DIRECTORY_SPREADSHEET_ID: ${{ secrets.DIRECTORY_SPREADSHEET_ID }}
+      TOWNHALL_SPREADSHEET_ID: ${{ secrets.TOWNHALL_SPREADSHEET_ID }}
+
     steps:
     - uses: actions/checkout@v2
+
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
+
     - run: npm install
+
     - run: npm run ofp
-      env:
-        EVENTS_SPREADSHEET_ID: ${{ secrets.EVENTS_SPREADSHEET_ID }}
-        SERVICE_ACCOUNT: ${{ secrets.SERVICE_ACCOUNT }}
-        DIRECTORY_SPREADSHEET_ID: ${{ secrets.DIRECTORY_SPREADSHEET_ID }}
+    
+    - run: npm run thp
+
     - run: npm run lint
