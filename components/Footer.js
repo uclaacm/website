@@ -8,7 +8,7 @@ const footerACMLinks = [
 	{ title: 'About', path: '/about' },
 	{ title: 'Events', path: '/events' },
 	{ title: 'General Meeting', path: '/gm/w24' },
-	{ title: 'CS Town Hall', path: '/town-hall/f23' },
+	{ title: 'CS Town Hall', path: '/town-hall' },
 	{ title: 'Internship Program', path: '/internship' },
 	{ title: 'Dev Team', path: '/dev'},
 	{ title: 'Sponsors', path: '/sponsors' },
