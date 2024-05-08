@@ -16,8 +16,8 @@ import icpcLogo from '../../public/images/committees/icpc_wordmark.svg';
 import studioLogo from '../../public/images/committees/studio_wordmark.svg';
 import teachlaLogo from '../../public/images/committees/teachLA_wordmark.svg';
 import wLogo from '../../public/images/committees/w_wordmark.svg';
-import winterGMgraphic from '../../public/images/Winter_GM_2024_graphic.png';
 import googleSlideLogo from '../../public/images/slides.png';
+import winterGMgraphic from '../../public/images/Winter_GM_2024_graphic.png';
 
 const GM_START_TIME = new Date('2024-01-08T18:00:00-08:00');
 const RSVP_LINK = 'https://forms.gle/givA6ESwKskzeoBK9';

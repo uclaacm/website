@@ -6,7 +6,40 @@ export default [
         name: 'Board',
         class: 'board',
         image: '/images/committees/board_wordmark.svg',
+        introImage: '/images/committees/studio/studio_motif_applied.png',
+        infoCards: [
+			{
+				title: 'Board',
+				image: {
+					src: '',
+					alt: '',
+				},
+				desc: '',
+			},
+        ],
         diamond: '/images/logo.png',
+        links: [
+			{
+				platform: 'carrd',
+				link: 'https://acmstudio.carrd.co/',
+			},
+			{
+				platform: 'discord',
+				link: 'https://discord.gg/9jDH6rN',
+			},
+			{
+				platform: 'itch',
+				link: 'https://acmstudio.itch.io/',
+			},
+			{
+				platform: 'instagram',
+				link: 'https://www.instagram.com/acmstudio.ucla/?hl=en',
+			},
+			{
+				platform: 'facebook',
+				link: 'https://www.facebook.com/groups/uclaacmstudio',
+			},
+		],
         internship: {
             whatWeDo: (
             <>

@@ -1,13 +1,11 @@
 import { NextSeo } from 'next-seo';
 import Image from 'next/image';
 import React from 'react';
-
 import Banner from '../components/Banner';
 import CommitteeSection from '../components/Committees/CommitteeSection';
 import Navigation from '../components/Committees/Sidebar';
 import Layout from '../components/Layout';
 import data from '../data';
-
 import acmCommittees from '../public/images/acm_committees.png';
 
 function CommitteesBanner() {

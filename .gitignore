@@ -35,3 +35,6 @@ yarn-error.log*
 # script remnants
 *.csv
 output.json
+offoutput.json
+townhall.json
+past-townhall.json

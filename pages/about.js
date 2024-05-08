@@ -1,5 +1,6 @@
 import { NextSeo } from 'next-seo';
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 import Banner from '../components/Banner';
@@ -11,7 +12,7 @@ import data from '../data';
 import acmCommittees from '../public/images/acm_committees.png';
 import boardcollage from '../public/images/boardcollage.png';
 import acmHowToJoin from '../public/images/how-to-join.png';
-import initiative from  '../public/images/initiative.png';
+import initiative from '../public/images/initiative.png';
 import styles from '../styles/pages/About.module.scss';
 
 function About() {
@@ -91,7 +92,7 @@ function About() {
             <h1>What is ACM Board?</h1>
             <p>
               {/* eslint-disable-next-line max-len */}
-              ACM Board is our leadership and administrative team including our <a href ="/dev"> dev team</a> that handles behind-scenes logistics, financing, plans and hosts ACM-wide events
+              ACM Board is our leadership and administrative team including our <Link href ="/dev"> dev team</Link> that handles behind-scenes logistics, financing, plans and hosts ACM-wide events
               {/* eslint-disable-next-line max-len */}
               and works towards improving the CS curriculum at UCLA by engaging the CS faculty and department leadership.
             </p>

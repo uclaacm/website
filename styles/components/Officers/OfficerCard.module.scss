@@ -1,0 +1,74 @@
+/* yourStyles.module.css */
+
+.officer-card {
+  background-color: #FFF;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: block;
+  font-size: 15px;
+  height: 300px;
+  margin: 25px;
+  overflow: hidden;
+  padding: 10px;
+  text-align: center;
+  width: 260px;
+}
+
+.officer-card:hover {
+  /* Scale and add a box shadow on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: scale(1.025);
+}
+
+.image-container {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.officer-image {
+  border-radius: 50%; /* Make the image completely round */
+  height: 100%;
+  padding: 10px; /* Add padding around the image */
+  width: 100%;
+}
+
+.officer-info {
+  padding: 10px;
+}
+
+.officer-title {
+  margin-bottom: 5px;
+}
+
+.officer-text {
+  margin: 5px 0;
+}
+
+.officer-email {
+  color: inherit;
+  margin-top: 10px;
+  text-decoration: none; /* Remove underline */
+}
+/* Add additional styles as needed */
+
+.no-image {
+  color: #999;
+  font-style: italic;
+  padding: 10px;
+  text-align: center;
+}
+
+.email-container {
+  // display: flex;
+  // align-items: center; /* Align items vertically in the container */
+  overflow: hidden; /* Hide overflow content */
+  text-overflow: ellipsis;
+  white-space: nowrap; /* Prevent line breaks */
+}
+
+.email-icon {
+  margin-right: 8px; /* Adjust the margin as needed for the desired spacing */
+}
