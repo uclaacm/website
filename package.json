@@ -24,7 +24,7 @@
   "scripts": {
     "start": "next dev",
     "start-production": "next start",
-    "build": "npm run ofp && npm run thp && next build",
+    "build": "npm run ofp && npm run thp && npm run gmp && next build",
     "lint-js": "eslint \"**/*.js\"",
     "lint-js-fix": "eslint --fix \"**/*.js\"",
     "lint-css": "stylelint \"**/*.css\" \"**/*.scss\"",
@@ -35,6 +35,7 @@
     "seg": "node scripts/single-event-generator.mjs",
     "ofp": "node scripts/officer-parser.mjs",
     "thp": "node scripts/town-hall-generator.mjs",
+    "gmp": "node scripts/gm-generator.mjs",
     "test": "jest --env=jsdom"
   },
   "eslintConfig": {

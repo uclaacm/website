@@ -7,7 +7,7 @@ import SocialMedia from './SocialMedia';
 const footerACMLinks = [
 	{ title: 'About', path: '/about' },
 	{ title: 'Events', path: '/events' },
-	{ title: 'General Meeting', path: '/gm/gm' },
+	{ title: 'General Meeting', path: '/gm' },
 	{ title: 'CS Town Hall', path: '/town-hall' },
 	{ title: 'Internship Program', path: '/internship' },
 	{ title: 'Dev Team', path: '/dev'},
