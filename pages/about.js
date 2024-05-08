@@ -6,17 +6,35 @@ import React from 'react';
 import Banner from '../components/Banner';
 import Layout from '../components/Layout';
 import Officers from '../components/OfficerCard';
+// import Officers from '../components/Officers/OfficerCard';
 import SocialMedia from '../components/SocialMedia';
-import data from '../data';
 
 import acmCommittees from '../public/images/acm_committees.png';
 import boardcollage from '../public/images/boardcollage.png';
 import acmHowToJoin from '../public/images/how-to-join.png';
 import initiative from '../public/images/initiative.png';
 import styles from '../styles/pages/About.module.scss';
+import newData from '../scripts/offoutput.json';
+
+// should filter both the names for about along with put data in the right format
+function extractContent(officerContent) {
+  const includedOfficers = ['Nyla Zia', 'Meryl Mathew', 'Larry Zhi', 'Jenna Wang', 'Shiyu Ye', 'Gregor MacDonald', 'Maxine Wu', 'Nemi Desai',
+                           'Sananshi Pidyar', 'William Zhao', 'Joanna Liu', 'Aaron Kwan', 'Jason An', 'Savannah Alanis', 'Leroy Betterton Gage', 
+                           'Vera Peker', 'Natalie Lord', 'Tiffany Zheng', 'Edward Ng'];
+  const convertedData = officerContent.map(officer => ({
+    name: officer.name,
+    pronouns: officer.pronouns,
+    position: officer.role,
+    committee: officer.committee,
+    major: officer.major,
+    year: officer.year,
+    img: officer.photo,
+  })).filter(officer => includedOfficers.includes(officer.name));
+  return convertedData;
+}
 
 function About() {
-  const { leadership } = data;
+  const convD = extractContent(newData);
   return (
     <Layout>
       <NextSeo
@@ -192,7 +210,7 @@ function About() {
           <p>Our President and Internal/External Vice Presidents support the entire ACM community
           while our committee presidents foster the growth of their committee.</p>
 					<div className="grid-desktop-3">
-						<Officers officers={leadership} size="compact" />
+						<Officers officers={convD} size="compact" />
 					</div>
         </div>
       </div>
