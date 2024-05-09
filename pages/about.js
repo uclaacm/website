@@ -14,12 +14,11 @@ import boardcollage from '../public/images/boardcollage.png';
 import acmHowToJoin from '../public/images/how-to-join.png';
 import initiative from '../public/images/initiative.png';
 import styles from '../styles/pages/About.module.scss';
-import newData from '../scripts/offoutput.json';
+import data from '../scripts/offoutput.json';
 
-// should filter both the names for about along with put data in the right format
 function extractContent(officerContent) {
   const includedOfficers = ['Nyla Zia', 'Meryl Mathew', 'Larry Zhi', 'Jenna Wang', 'Shiyu Ye', 'Gregor MacDonald', 'Maxine Wu', 'Nemi Desai',
-                           'Sananshi Pidyar', 'William Zhao', 'Joanna Liu', 'Aaron Kwan', 'Jason An', 'Savannah Alanis', 'Leroy Betterton Gage', 
+                           'Sananshi Pidyar', 'William Zhao', 'Joanna Liu', 'Aaron Kwan', 'Jason An', 'Savannah Alanis', 'Leroy Betterton Gage',
                            'Vera Peker', 'Natalie Lord', 'Tiffany Zheng', 'Edward Ng'];
   const convertedData = officerContent.map(officer => ({
     name: officer.name,
@@ -34,7 +33,7 @@ function extractContent(officerContent) {
 }
 
 function About() {
-  const convD = extractContent(newData);
+  const convD = extractContent(data);
   return (
     <Layout>
       <NextSeo
