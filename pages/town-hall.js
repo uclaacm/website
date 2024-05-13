@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { NextSeo } from 'next-seo';
 import Image from 'next/image';
 import Link from 'next/link';
-import React, { useRef } from 'react';
+import React from 'react';
 
 import Banner from '../components/Banner';
 import Layout from '../components/Layout';
@@ -16,14 +16,36 @@ const TOWN_HALL_2021_WINTER_VIDEO = 'https://www.youtube.com/embed/Eq2xsShPMVc';
 
 const inlineButtonListStyle = {
   display: 'inline-block',
-  marginBottom: '0.5em',
+  marginBottom: '1em',
+};
+
+const TBD = {
+  fontSize: '2em',
+  fontWeight: 'bold',
+  textAlign: 'center',
+};
+
+const video_wrapper = {
+  position: 'relative',
+  width: '100%',
+  height: '0',
+  overflow: 'hidden',
+  paddingTop: '56.25%',
+  marginBottom: '2rem',
+};
+
+const video = {
+  position: 'absolute',
+  top: 0,
+  left: 0,
+  width: '100%',
+  height: '100%',
 };
 
 function TownHall() {
-  const embed2021WRef = useRef(null);
-  const embedWidth = embed2021WRef.current ? embed2021WRef.current.offsetWidth : 500;
 
   let townHall = {
+    status: true,
     title: '[Title]',
     description: '',
     alt_text: '',
@@ -43,32 +65,37 @@ function TownHall() {
   // Fetch and assign data from townhall.json
   for(let row of data) {
     switch(row.name) {
+      case 'Event Status':
+        // Set event status to true or false
+        (row.description == 'TBD' || row.description == 'Canceled') ?
+          townHall.status = false : townHall.status = true;
+        break;
       case 'Title':
-        if(row.description) { townHall.title = row.description; }
+        if (row.description) { townHall.title = row.description; }
         break;
       case 'Banner':
-        if(row.description) { townHall.image = row.description; }
+        if (row.description) { townHall.image = row.description; }
         break;
       case 'Time':
-        if(row.description) { townHall.time = row.description; }
+        if (row.description) { townHall.time = row.description; }
         break;
       case 'Date':
-        if(row.description) { townHall.date = row.description; }
+        if (row.description) { townHall.date = row.description; }
         break;
       case 'Location':
-        if(row.description) { townHall.location = row.description; }
+        if (row.description) { townHall.location = row.description; }
         break;
       case 'Quarter':
-        if(row.description) { townHall.quarter = row.description; }
+        if (row.description) { townHall.quarter = row.description; }
         break;
       case 'Week':
-        if(row.description) { townHall.week = row.description; }
+        if (row.description) { townHall.week = row.description; }
         break;
       case 'RSVP Form':
-        if(row.description) { townHall.rsvp = row.description; }
+        if (row.description) { townHall.rsvp = row.description; }
         break;
       case 'Survey Form':
-        if(row.description) { townHall.survey = row.description; }
+        if (row.description) { townHall.survey = row.description; }
         break;
     }
   }
@@ -84,7 +111,7 @@ function TownHall() {
       <NextSeo
         title={townHall.title + ' | ACM at UCLA'}
         description={townHall.description}
-        openGraph={{
+        openGraph={townHall.status ? {
           images: [
             {
               url: townHall.image,
@@ -94,18 +121,23 @@ function TownHall() {
             },
           ],
           site_name: 'ACM at UCLA',
-        }}
+        } : undefined}
       />
       {/* Most Recent Town Hall*/}
       <Banner decorative />
       <div className="content-container-tight">
         <div className="text-center">
-          <Image
-            src={townHall.image}
-            alt={townHall.alt_text}
-            width={1920}
-            height={1005}
-          />
+          {townHall.status ?
+            <Image
+              src={townHall.image}
+              alt={townHall.alt_text}
+              width={1920}
+              height={1005}
+              priority={true}
+            />
+            :
+            <></>
+          }
           <h1>{townHall.title}</h1>
         </div>
         <p>
@@ -113,12 +145,18 @@ function TownHall() {
           opportunity for students to directly speak with professors and
           administrators in the CS department.
         </p>
-        <p>
-          The {townHall.quarter} Town Hall will take place on <b>{townHall.date}</b> (Week {townHall.week})
-          at <b>{townHall.time} PT</b> in the {townHall.location}.
-        </p>
-              {/* eslint-disable-next-line max-len */}
-              {/* <p>While the event was not recorded, you are welcome to read the survey form summaries and slides as well as the meeting notes.</p> */}
+
+        {townHall.status ?
+          <p>
+            The {townHall.quarter} Town Hall will take place on <b>{townHall.date}</b> (Week {townHall.week})
+            at <b>{townHall.time} PT</b> in the {townHall.location}.
+          </p>
+          :
+          <p style={TBD}>TBD</p>
+        }
+
+        {/* eslint-disable-next-line max-len */}
+        {/* <p>While the event was not recorded, you are welcome to read the survey form summaries and slides as well as the meeting notes.</p> */}
         <p>
           In past years, the Town Hall has been a huge driver of student
           feedback and improvements to curriculum; this includes:
@@ -168,16 +206,18 @@ function TownHall() {
               We need to hear your voice! Please answer this survey before the
               event.
             </p>
-            <Link href={townHall.survey}>
-              <a className="button" target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon
-                  icon={faFileAlt}
-                  fixedWidth
-                  aria-hidden={true}
-                />{' '}
-                CS Town Hall Survey
-              </a>
-            </Link>
+            <li style={inlineButtonListStyle}>
+              <Link href={townHall.survey}>
+                <a className="button" target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon
+                    icon={faFileAlt}
+                    fixedWidth
+                    aria-hidden={true}
+                  />{' '}
+                  CS Town Hall Survey
+                </a>
+              </Link>
+            </li>
           </div>
           <div>
             <Image
@@ -235,14 +275,14 @@ function TownHall() {
               <Image
                 src={pastTownHall.banner}
                 alt={pastTownHall.alt_text}
-                width={embedWidth}
-                height={(embedWidth * 315) / 560}
-                layout="fixed"
+                width={800}
+                height={450}
+                quality={70}
               />
             </div>
           </div>
         ))}
-
+        {/* Winter 2021 Town Hall (Static) */}
         <div className="grid-tablet-2">
           <div>
             <h3>Winter 2021 // Wednesday, February 24th 2021</h3>
@@ -287,10 +327,11 @@ function TownHall() {
               </li>
             </ul>
           </div>
-          <div ref={embed2021WRef}>
+          <div style={video_wrapper}>
             <iframe
-              width={embedWidth}
-              height={(embedWidth * 315) / 560}
+              style={video}
+              width={600}
+              height={338}
               src={TOWN_HALL_2021_WINTER_VIDEO}
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
