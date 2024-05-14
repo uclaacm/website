@@ -43,6 +43,8 @@ jobs:
 
     - run: npm run thp
 
+    - run: npm run gmp
+
     - run: npm run build
 
     - run: npm test
