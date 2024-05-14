@@ -46,6 +46,7 @@ function TownHall() {
 
   let townHall = {
     status: true,
+    status_text: '',
     title: '[Title]',
     description: '',
     alt_text: '',
@@ -69,6 +70,7 @@ function TownHall() {
         // Set event status to true or false
         (row.description == 'TBD' || row.description == 'Canceled') ?
           townHall.status = false : townHall.status = true;
+        townHall.status_text = row.description;
         break;
       case 'Title':
         if (row.description) { townHall.title = row.description; }
@@ -152,7 +154,7 @@ function TownHall() {
             at <b>{townHall.time} PT</b> in the {townHall.location}.
           </p>
           :
-          <p style={TBD}>TBD</p>
+          <p style={TBD}>{townHall.status_text}</p>
         }
 
         {/* eslint-disable-next-line max-len */}
