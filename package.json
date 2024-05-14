@@ -8,7 +8,7 @@
     "@fortawesome/free-regular-svg-icons": "^6.5.1",
     "@fortawesome/free-solid-svg-icons": "^6.5.1",
     "@fortawesome/react-fontawesome": "^0.1.19",
-    "dotenv": "^16.0.3",
+    "dotenv": "^16.4.5",
     "googleapis": "^109.0.1",
     "moment": "^2.29.4",
     "next": "^11.1.4",

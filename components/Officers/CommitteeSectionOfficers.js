@@ -5,7 +5,7 @@ import Officers from '../Officers/OfficerCard';
 
 
 function CommitteeOfficers({committee}) {   //maps officers to a particular commitee
-	return (
+	return ( 
 		<div className="body-wrapper">
 			<div className="card-container">
 						<div className="grid-desktop-3">
