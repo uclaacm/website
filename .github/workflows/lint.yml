@@ -27,6 +27,7 @@ jobs:
       SERVICE_ACCOUNT: ${{ secrets.SERVICE_ACCOUNT }}
       DIRECTORY_SPREADSHEET_ID: ${{ secrets.DIRECTORY_SPREADSHEET_ID }}
       TOWNHALL_SPREADSHEET_ID: ${{ secrets.TOWNHALL_SPREADSHEET_ID }}
+      GM_SPREADSHEET_ID: ${{ secrets.GM_SPREADSHEET_ID }}
 
     steps:
     - uses: actions/checkout@v2
@@ -41,5 +42,7 @@ jobs:
     - run: npm run ofp
     
     - run: npm run thp
+
+    - run: npm run gmp
 
     - run: npm run lint

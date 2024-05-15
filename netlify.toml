@@ -1,5 +1,5 @@
 [build]
-  command = "npm run ofp; npm run thp; npm run build"
+  command = "npm run ofp; npm run thp; npm run gmp; npm run build"
   publish = "build"
 
 [[plugins]]
