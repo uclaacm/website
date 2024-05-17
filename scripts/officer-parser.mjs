@@ -5,7 +5,6 @@ import * as dotenv from "dotenv";
 dotenv.config();
 const SERVICE_ACCOUNT = process.env.SERVICE_ACCOUNT;
 const DIRECTORY_SPREADSHEET_ID = process.env.DIRECTORY_SPREADSHEET_ID;
-console.log(SERVICE_ACCOUNT);
 
 // await getGoogleSheetData('Officers!A2:K');
 writeToOutput(await getGoogleSheetData("Officers!A2:K"));
@@ -20,7 +19,6 @@ async function getGoogleSheetData(range) {
   const sheets = google.sheets({ version: "v4" });
 
   // Get JWT Token to access sheet
-  console.log('SERVICE_ACCOUNT:', SERVICE_ACCOUNT);
   const service_account = JSON.parse(SERVICE_ACCOUNT);
   const jwtClient = new google.auth.JWT(
     service_account.client_email,
