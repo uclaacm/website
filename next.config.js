@@ -18,5 +18,5 @@ module.exports = {
       'www.uclaacm.com',
     ],
   },
-  target: 'serverless',
+  output: 'standalone',
 };
