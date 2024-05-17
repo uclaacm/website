@@ -23,5 +23,5 @@ module.exports = {
       'raw.githubusercontent.com',
     ],
   },
-  target: 'serverless',
+  output: 'standalone',
 };
