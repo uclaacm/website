@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import React from 'react';
+import SocialMedia from './SocialMedia';
 import committees from '../data/committees';
 import styles from '../styles/components/Footer.module.scss';
-import SocialMedia from './SocialMedia';
 
 const footerACMLinks = [
   { title: 'About', path: '/about' },
