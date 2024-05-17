@@ -6,16 +6,17 @@ import Banner from '../components/Banner';
 import Layout from '../components/Layout';
 import Officers from '../components/OfficerCard';
 
-import { people } from '../data/dev';
+import data from '../offoutput.json';
 
 import styles from '../styles/pages/Dev.module.scss';
 
 const devTeamDirector = {
-	name: 'Arsh Malik',
-	email: 'arshmalik02@g.ucla.edu',
+	name: 'Snigdha Kansal',
+	email: 'snigdha0206@g.ucla.edu',
 };
 
 function DevTeam() {
+	const devTeamOfficers = data.filter(officer => officer.role.includes('Dev Team') && officer.committee.includes('Board, Internal'));
 	return (
 		<Layout>
 			<NextSeo
@@ -88,7 +89,7 @@ function DevTeam() {
 				</p>
 				<h2 className="text-center">People</h2>
 				<div className="grid-desktop-3 text-center-mobile">
-					<Officers officers={people} />
+					<Officers officers={devTeamOfficers} />
 				</div>
 			</div>
 		</Layout>

@@ -50,8 +50,9 @@
 .officer-image-container {
   align-items: center;
   display: flex;
+  justify-content: center;
   margin: 0 auto;
-  max-width: 300px;
+  max-width: 220px;
 }
 
 @media (min-width: $tablet-breakpoint) and (max-width: $navbar-breakpoint) {
