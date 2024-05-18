@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 
-import BlogCard from './BlogCard';
 import { blogs } from '../../data/impact';
 import styles from '../../styles/pages/impact.module.scss';
+import BlogCard from './BlogCard';
 
 
 function Carousel() {
