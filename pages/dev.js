@@ -15,8 +15,17 @@ const devTeamDirector = {
 	email: 'snigdha0206@g.ucla.edu',
 };
 
+const devTeamAdvisor = {
+	role: 'Dev Team Advisor',
+	name: 'Arsh Malik',
+	pronouns: 'he/him/his',
+	year: '2025', major: 'Computer Science',
+	photo: 'https://drive.google.com/thumbnail?id=1LWWf0NdOuVjWsxPkXG7e7ki135KfCAq7',
+};
+
 function DevTeam() {
 	const devTeamOfficers = data.filter(officer => officer.role.includes('Dev Team') && officer.committee.includes('Board, Internal'));
+	devTeamOfficers.splice(1, 0, devTeamAdvisor);
 	return (
 		<Layout>
 			<NextSeo
