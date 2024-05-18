@@ -53,6 +53,7 @@ function JEDIAbout () {
           JEDI is an initiative that aims to make ACM&apos;s culture and presence on campus more inclusive. It was proposed through the Moonshots initiative and was first run during Fall 2020. We aim to prioritize equity, diversity, and inclusion within our committees by identifying and addressing areas of improvement in terms of inclusion, as well as better including all minoritized and marginalized groups in tech.
         </p>
         <p>
+          {/* eslint-disable-next-line max-len */}
           So far, we&apos;ve worked with each committee to reach specific EDI goals within ACM - read more about our achievements <Link
           href="https://medium.com/acm-at-ucla/may-the-force-be-with-acm-at-ucla-49e9258d71e1"
           className={styles['jedi-link']}
