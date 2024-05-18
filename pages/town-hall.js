@@ -391,35 +391,31 @@ function TownHall() {
             </p>
             <ul className="list-unstyled">
               <li style={inlineButtonListStyle}>
-                <Link href="/files/town-hall/CS Town Hall Winter 2021 Slides.pdf">
-                  <a
-                    className="button"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FontAwesomeIcon
-                      icon={faFileAlt}
-                      fixedWidth
-                      aria-hidden={true}
-                    />{' '}
-                    Form Summaries and Slides
-                  </a>
+                <Link
+                  href="/files/town-hall/CS Town Hall Winter 2021 Slides.pdf"
+                  className="button"
+                  target="_blank"
+                  rel="noopener noreferrer">
+
+                  <FontAwesomeIcon
+                    icon={faFileAlt}
+                    fixedWidth
+                    aria-hidden={true}
+                  />{' '}Form Summaries and Slides
                 </Link>
               </li>{' '}
               <li style={inlineButtonListStyle}>
-                <Link href="/files/town-hall/CS Town Hall Winter 2021 Notes.pdf">
-                  <a
-                    className="button"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FontAwesomeIcon
-                      icon={faFileAlt}
-                      fixedWidth
-                      aria-hidden={true}
-                    />{' '}
-                    Event Notes
-                  </a>
+                <Link
+                  href="/files/town-hall/CS Town Hall Winter 2021 Notes.pdf"
+                  className="button"
+                  target="_blank"
+                  rel="noopener noreferrer">
+
+                  <FontAwesomeIcon
+                    icon={faFileAlt}
+                    fixedWidth
+                    aria-hidden={true}
+                  />{' '}Event Notes
                 </Link>
               </li>
             </ul>

@@ -13,14 +13,14 @@ const ActiveLink = ({ children, activeClassName, ...props }) => {
       ? `${childClassName} ${activeClassName}`.trim()
       : childClassName;
 
-  return (
-    //clones child with className if className exists
-    <Link {...props}>
-      {React.cloneElement(child, {
-        className: className || null,
-      })}
-    </Link>
-  );
+    return (
+      //clones child with className if className exists
+      <Link {...props} legacyBehavior>
+        {React.cloneElement(child, {
+          className: className || null,
+        })}
+      </Link>
+    );
 };
 
 export default ActiveLink;
