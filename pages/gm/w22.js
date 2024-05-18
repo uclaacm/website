@@ -1,5 +1,5 @@
-import Link from 'next/link';
 import { NextSeo } from 'next-seo';
+import Link from 'next/link';
 import React from 'react';
 import Countdown from 'react-countdown';
 

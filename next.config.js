@@ -1,8 +1,5 @@
 module.exports = {
   distDir: 'build',
-  experimental: {
-    craCompat: true,
-  },
   images: {
     domains: [
       'lh3.googleusercontent.com',

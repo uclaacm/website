@@ -1,8 +1,8 @@
 import { faFileAlt } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { NextSeo } from 'next-seo';
 import Image from 'next/image';
 import Link from 'next/link';
-import { NextSeo } from 'next-seo';
 import React from 'react';
 
 import Banner from '../components/Banner';
