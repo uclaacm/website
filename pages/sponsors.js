@@ -59,9 +59,9 @@ function Sponsors() {
 				<h2>Interested in becoming a sponsor?</h2>
 				<div className="button-section">
 					<Link href="mailto:acm@ucla.edu" className="button">
-						
+
 							Contact Us at acm@ucla.edu
-						
+
 					</Link>
 				</div>
 			</div>

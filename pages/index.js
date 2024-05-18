@@ -70,9 +70,9 @@ function Home () {
                                 className="button tight dark"
                                 target="_blank"
                                 rel="noreferrer noopener">
-								
+
 									Join our Mailing List
-								
+
 							</Link>
 						</div>
 					</div>

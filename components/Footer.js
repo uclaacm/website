@@ -48,9 +48,9 @@ function Footer(){
                                 className="button tight"
                                 target="_blank"
                                 rel="noreferrer noopener">
-								
+
 									Join our Mailing List
-								
+
 							</Link>
 						</div>
 						<div className="mt-1">
@@ -59,9 +59,9 @@ function Footer(){
                                 className="button tight"
                                 target="_blank"
                                 rel="noreferrer noopener">
-								
+
 									Linktree
-								
+
 							</Link>
 						</div>
 						<p className={styles['footer-header']}>Reach us at</p>

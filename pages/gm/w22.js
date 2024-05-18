@@ -89,9 +89,9 @@ function GMCountdown(props) {
       className="button rsvp-button"
       target="_blank"
       rel="noreferrer noopener">
-      
+
         RSVP Now!
-      
+
     </Link>
   </div>
   </>;
