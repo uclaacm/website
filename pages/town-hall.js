@@ -176,15 +176,13 @@ function TownHall() {
         </p>
         <ul className="list-unstyled text-center">
           <li style={inlineButtonListStyle}>
-            <Link href={townHall.rsvp}>
-              <a className="button" target = "_blank">
-                <FontAwesomeIcon
-                  icon={faFileAlt}
-                  fixedWidth
-                  aria-hidden={true}
-                />{' '}
-                RSVP Here!
-              </a>
+            <Link href={townHall.rsvp} className="button" target = "_blank">
+
+              <FontAwesomeIcon
+                icon={faFileAlt}
+                fixedWidth
+                aria-hidden={true}
+              />{' '}RSVP Here!
             </Link>
           </li>
         </ul>
@@ -209,15 +207,17 @@ function TownHall() {
               event.
             </p>
             <li style={inlineButtonListStyle}>
-              <Link href={townHall.survey}>
-                <a className="button" target="_blank" rel="noopener noreferrer">
-                  <FontAwesomeIcon
-                    icon={faFileAlt}
-                    fixedWidth
-                    aria-hidden={true}
-                  />{' '}
-                  CS Town Hall Survey
-                </a>
+              <Link
+                href={townHall.survey}
+                className="button"
+                target="_blank"
+                rel="noopener noreferrer">
+
+                <FontAwesomeIcon
+                  icon={faFileAlt}
+                  fixedWidth
+                  aria-hidden={true}
+                />{' '}CS Town Hall Survey
               </Link>
             </li>
           </div>
@@ -240,35 +240,31 @@ function TownHall() {
               <p>{pastTownHall.description}</p>
               <ul className="list-unstyled">
                 <li style={inlineButtonListStyle}>
-                  <Link href={pastTownHall.slides}>
-                    <a
-                      className="button"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      >
-                      <FontAwesomeIcon
-                        icon={faFileAlt}
-                        fixedWidth
-                        aria-hidden={true}
-                      />{' '}
-                      Form Summaries and Slides
-                    </a>
+                  <Link
+                    href={pastTownHall.slides}
+                    className="button"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    <FontAwesomeIcon
+                      icon={faFileAlt}
+                      fixedWidth
+                      aria-hidden={true}
+                    />{' '}Form Summaries and Slides
                   </Link>
                 </li>{' '}
                 <li style={inlineButtonListStyle}>
-                  <Link href={pastTownHall.notes}>
-                    <a
-                      className="button"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <FontAwesomeIcon
-                        icon={faFileAlt}
-                        fixedWidth
-                        aria-hidden={true}
-                      />{' '}
-                      Event Notes
-                    </a>
+                  <Link
+                    href={pastTownHall.notes}
+                    className="button"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    <FontAwesomeIcon
+                      icon={faFileAlt}
+                      fixedWidth
+                      aria-hidden={true}
+                    />{' '}Event Notes
                   </Link>
                 </li>
               </ul>
@@ -296,35 +292,31 @@ function TownHall() {
             </p>
             <ul className="list-unstyled">
               <li style={inlineButtonListStyle}>
-                <Link href="/files/town-hall/CS Town Hall Winter 2021 Slides.pdf">
-                  <a
-                    className="button"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FontAwesomeIcon
-                      icon={faFileAlt}
-                      fixedWidth
-                      aria-hidden={true}
-                    />{' '}
-                    Form Summaries and Slides
-                  </a>
+                <Link
+                  href="/files/town-hall/CS Town Hall Winter 2021 Slides.pdf"
+                  className="button"
+                  target="_blank"
+                  rel="noopener noreferrer">
+
+                  <FontAwesomeIcon
+                    icon={faFileAlt}
+                    fixedWidth
+                    aria-hidden={true}
+                  />{' '}Form Summaries and Slides
                 </Link>
               </li>{' '}
               <li style={inlineButtonListStyle}>
-                <Link href="/files/town-hall/CS Town Hall Winter 2021 Notes.pdf">
-                  <a
-                    className="button"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FontAwesomeIcon
-                      icon={faFileAlt}
-                      fixedWidth
-                      aria-hidden={true}
-                    />{' '}
-                    Event Notes
-                  </a>
+                <Link
+                  href="/files/town-hall/CS Town Hall Winter 2021 Notes.pdf"
+                  className="button"
+                  target="_blank"
+                  rel="noopener noreferrer">
+
+                  <FontAwesomeIcon
+                    icon={faFileAlt}
+                    fixedWidth
+                    aria-hidden={true}
+                  />{' '}Event Notes
                 </Link>
               </li>
             </ul>

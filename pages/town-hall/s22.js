@@ -68,7 +68,7 @@ function TownHall() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <a>Town Hall Survey</a>
+            Town Hall Survey
           </Link>{' '}
           to get dinner!). To attend,{' '}
           <Link
@@ -76,7 +76,7 @@ function TownHall() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <a>please RSVP!</a>
+            please RSVP!
           </Link>{' '}
         </p>
         <p>
@@ -94,27 +94,27 @@ function TownHall() {
         </p>
         <ul className="list-unstyled text-center">
           <li style={inlineButtonListStyle}>
-            <Link href="https://tinyurl.com/22town-hall-rsvp">
-              <a className="button" target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon
-                  icon={faCalendarCheck}
-                  fixedWidth
-                  aria-hidden={true}
-                />{' '}
-                RSVP now!
-              </a>
+            <Link
+              href="https://tinyurl.com/22town-hall-rsvp"
+              className="button"
+              target="_blank"
+              rel="noopener noreferrer">
+
+              <FontAwesomeIcon
+                icon={faCalendarCheck}
+                fixedWidth
+                aria-hidden={true}
+              />{' '}RSVP now!
             </Link>
           </li>{' '}
           <li style={inlineButtonListStyle}>
-            <Link href="#surveys">
-              <a className="button">
-                <FontAwesomeIcon
-                  icon={faFileAlt}
-                  fixedWidth
-                  aria-hidden={true}
-                />{' '}
-                Answer Survey Questions!
-              </a>
+            <Link href="#surveys" className="button">
+
+              <FontAwesomeIcon
+                icon={faFileAlt}
+                fixedWidth
+                aria-hidden={true}
+              />{' '}Answer Survey Questions!
             </Link>
           </li>
         </ul>
@@ -137,15 +137,17 @@ function TownHall() {
               We need to hear your voice! Please answer this survey before the
               event.
             </p>
-            <Link href="https://tinyurl.com/cs-town-hall-s22">
-              <a className="button" target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon
-                  icon={faFileAlt}
-                  fixedWidth
-                  aria-hidden={true}
-                />{' '}
-                CS Town Hall Survey
-              </a>
+            <Link
+              href="https://tinyurl.com/cs-town-hall-s22"
+              className="button"
+              target="_blank"
+              rel="noopener noreferrer">
+
+              <FontAwesomeIcon
+                icon={faFileAlt}
+                fixedWidth
+                aria-hidden={true}
+              />{' '}CS Town Hall Survey
             </Link>
           </div>
           <div>
@@ -170,35 +172,31 @@ function TownHall() {
             </p>
             <ul className="list-unstyled">
               <li style={inlineButtonListStyle}>
-                <Link href="/files/town-hall/CS Town Hall Fall 2021 Slides.pdf">
-                  <a
-                    className="button"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FontAwesomeIcon
-                      icon={faFileAlt}
-                      fixedWidth
-                      aria-hidden={true}
-                    />{' '}
-                    Form Summaries and Slides
-                  </a>
+                <Link
+                  href="/files/town-hall/CS Town Hall Fall 2021 Slides.pdf"
+                  className="button"
+                  target="_blank"
+                  rel="noopener noreferrer">
+
+                  <FontAwesomeIcon
+                    icon={faFileAlt}
+                    fixedWidth
+                    aria-hidden={true}
+                  />{' '}Form Summaries and Slides
                 </Link>
               </li>{' '}
               <li style={inlineButtonListStyle}>
-                <Link href="/files/town-hall/CS Town Hall Fall 2021 Notes.pdf">
-                  <a
-                    className="button"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FontAwesomeIcon
-                      icon={faFileAlt}
-                      fixedWidth
-                      aria-hidden={true}
-                    />{' '}
-                    Event Notes
-                  </a>
+                <Link
+                  href="/files/town-hall/CS Town Hall Fall 2021 Notes.pdf"
+                  className="button"
+                  target="_blank"
+                  rel="noopener noreferrer">
+
+                  <FontAwesomeIcon
+                    icon={faFileAlt}
+                    fixedWidth
+                    aria-hidden={true}
+                  />{' '}Event Notes
                 </Link>
               </li>
             </ul>
@@ -224,35 +222,31 @@ function TownHall() {
             </p>
             <ul className="list-unstyled">
               <li style={inlineButtonListStyle}>
-                <Link href="/files/town-hall/CS Town Hall Winter 2021 Slides.pdf">
-                  <a
-                    className="button"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FontAwesomeIcon
-                      icon={faFileAlt}
-                      fixedWidth
-                      aria-hidden={true}
-                    />{' '}
-                    Form Summaries and Slides
-                  </a>
+                <Link
+                  href="/files/town-hall/CS Town Hall Winter 2021 Slides.pdf"
+                  className="button"
+                  target="_blank"
+                  rel="noopener noreferrer">
+
+                  <FontAwesomeIcon
+                    icon={faFileAlt}
+                    fixedWidth
+                    aria-hidden={true}
+                  />{' '}Form Summaries and Slides
                 </Link>
               </li>{' '}
               <li style={inlineButtonListStyle}>
-                <Link href="/files/town-hall/CS Town Hall Winter 2021 Notes.pdf">
-                  <a
-                    className="button"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FontAwesomeIcon
-                      icon={faFileAlt}
-                      fixedWidth
-                      aria-hidden={true}
-                    />{' '}
-                    Event Notes
-                  </a>
+                <Link
+                  href="/files/town-hall/CS Town Hall Winter 2021 Notes.pdf"
+                  className="button"
+                  target="_blank"
+                  rel="noopener noreferrer">
+
+                  <FontAwesomeIcon
+                    icon={faFileAlt}
+                    fixedWidth
+                    aria-hidden={true}
+                  />{' '}Event Notes
                 </Link>
               </li>
             </ul>

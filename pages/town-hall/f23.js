@@ -83,27 +83,29 @@ function TownHall() {
         </p>
         <ul className="list-unstyled text-center">
           <li style={inlineButtonListStyle}>
-            <Link href="https://docs.google.com/presentation/d/1g02vH7xWtwK83ry8Pr7pKlpSrFkL4NSJLhpkjhQbzks/edit?usp=sharing">
-              <a className="button" target = "_blank">
-                <FontAwesomeIcon
-                  icon={faFileAlt}
-                  fixedWidth
-                  aria-hidden={true}
-                />{' '}
-                Form Summaries and Slides
-              </a>
+            <Link
+              href="https://docs.google.com/presentation/d/1g02vH7xWtwK83ry8Pr7pKlpSrFkL4NSJLhpkjhQbzks/edit?usp=sharing"
+              className="button"
+              target = "_blank">
+
+              <FontAwesomeIcon
+                icon={faFileAlt}
+                fixedWidth
+                aria-hidden={true}
+              />{' '}Form Summaries and Slides
             </Link>
           </li>
           <li style={inlineButtonListStyle}>
-            <Link href="https://docs.google.com/document/d/1u4jqODuyZ1Vvy_LztsK1QfU5YdNhuYg33D_V24obrm0/edit?usp=sharing">
-              <a className="button" target = "_blank">
-                <FontAwesomeIcon
-                  icon={faFileAlt}
-                  fixedWidth
-                  aria-hidden={true}
-                />{' '}
-                Event Notes
-              </a>
+            <Link
+              href="https://docs.google.com/document/d/1u4jqODuyZ1Vvy_LztsK1QfU5YdNhuYg33D_V24obrm0/edit?usp=sharing"
+              className="button"
+              target = "_blank">
+
+              <FontAwesomeIcon
+                icon={faFileAlt}
+                fixedWidth
+                aria-hidden={true}
+              />{' '}Event Notes
             </Link>
           </li>
         </ul>
@@ -126,15 +128,17 @@ function TownHall() {
               We need to hear your voice! Please answer this survey before the
               event.
             </p>
-            <Link href="https://forms.gle/ybPKAwrTVbVHhp4b9">
-              <a className="button" target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon
-                  icon={faFileAlt}
-                  fixedWidth
-                  aria-hidden={true}
-                />{' '}
-                CS Town Hall Survey
-              </a>
+            <Link
+              href="https://forms.gle/ybPKAwrTVbVHhp4b9"
+              className="button"
+              target="_blank"
+              rel="noopener noreferrer">
+
+              <FontAwesomeIcon
+                icon={faFileAlt}
+                fixedWidth
+                aria-hidden={true}
+              />{' '}CS Town Hall Survey
             </Link>
           </div>
           <div>
@@ -159,35 +163,31 @@ function TownHall() {
             </p>
             <ul className="list-unstyled">
               <li style={inlineButtonListStyle}>
-                <Link href="https://docs.google.com/presentation/d/1MTnZ6fWWaCFbv0gDQManmpx9XyrLNGy07kMOYI2JYno/edit?usp=drive_link">
-                  <a
-                    className="button"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >
-                    <FontAwesomeIcon
-                      icon={faFileAlt}
-                      fixedWidth
-                      aria-hidden={true}
-                    />{' '}
-                    Form Summaries and Slides
-                  </a>
+                <Link
+                  href="https://docs.google.com/presentation/d/1MTnZ6fWWaCFbv0gDQManmpx9XyrLNGy07kMOYI2JYno/edit?usp=drive_link"
+                  className="button"
+                  target="_blank"
+                  rel="noopener noreferrer">
+
+                  <FontAwesomeIcon
+                    icon={faFileAlt}
+                    fixedWidth
+                    aria-hidden={true}
+                  />{' '}Form Summaries and Slides
                 </Link>
               </li>{' '}
               <li style={inlineButtonListStyle}>
-                <Link href="https://docs.google.com/document/d/1Mc23mMFJ9Sq1CgsFIqg_uESLHNSWgvaAXRHQwgHusmA/edit?usp=sharing">
-                  <a
-                    className="button"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FontAwesomeIcon
-                      icon={faFileAlt}
-                      fixedWidth
-                      aria-hidden={true}
-                    />{' '}
-                    Event Notes
-                  </a>
+                <Link
+                  href="https://docs.google.com/document/d/1Mc23mMFJ9Sq1CgsFIqg_uESLHNSWgvaAXRHQwgHusmA/edit?usp=sharing"
+                  className="button"
+                  target="_blank"
+                  rel="noopener noreferrer">
+
+                  <FontAwesomeIcon
+                    icon={faFileAlt}
+                    fixedWidth
+                    aria-hidden={true}
+                  />{' '}Event Notes
                 </Link>
               </li>
             </ul>
@@ -213,35 +213,31 @@ function TownHall() {
             </p>
             <ul className="list-unstyled">
               <li style={inlineButtonListStyle}>
-                <Link href="https://docs.google.com/presentation/d/14MIk1bzHHr5b11cgYX_kAz5WQa6ToKD_9nnj3_5DLco/edit?usp=sharing">
-                  <a
-                    className="button"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >
-                    <FontAwesomeIcon
-                      icon={faFileAlt}
-                      fixedWidth
-                      aria-hidden={true}
-                    />{' '}
-                    Form Summaries and Slides
-                  </a>
+                <Link
+                  href="https://docs.google.com/presentation/d/14MIk1bzHHr5b11cgYX_kAz5WQa6ToKD_9nnj3_5DLco/edit?usp=sharing"
+                  className="button"
+                  target="_blank"
+                  rel="noopener noreferrer">
+
+                  <FontAwesomeIcon
+                    icon={faFileAlt}
+                    fixedWidth
+                    aria-hidden={true}
+                  />{' '}Form Summaries and Slides
                 </Link>
               </li>{' '}
               <li style={inlineButtonListStyle}>
-                <Link href="https://docs.google.com/document/d/1JTFaP27OsqA0sBhjbIC4mIzjCgqRLJyBxvOQ5FSrPCk/edit?usp=sharing">
-                  <a
-                    className="button"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FontAwesomeIcon
-                      icon={faFileAlt}
-                      fixedWidth
-                      aria-hidden={true}
-                    />{' '}
-                    Event Notes
-                  </a>
+                <Link
+                  href="https://docs.google.com/document/d/1JTFaP27OsqA0sBhjbIC4mIzjCgqRLJyBxvOQ5FSrPCk/edit?usp=sharing"
+                  className="button"
+                  target="_blank"
+                  rel="noopener noreferrer">
+
+                  <FontAwesomeIcon
+                    icon={faFileAlt}
+                    fixedWidth
+                    aria-hidden={true}
+                  />{' '}Event Notes
                 </Link>
               </li>
             </ul>
@@ -267,35 +263,31 @@ function TownHall() {
             </p>
             <ul className="list-unstyled">
               <li style={inlineButtonListStyle}>
-                <Link href="https://docs.google.com/presentation/d/1L9dSMVUr1TSazZu0-LqSHRSjEMMOO4GG-kZlOrkAjOM/edit?usp=sharing">
-                  <a
-                    className="button"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >
-                    <FontAwesomeIcon
-                      icon={faFileAlt}
-                      fixedWidth
-                      aria-hidden={true}
-                    />{' '}
-                    Form Summaries and Slides
-                  </a>
+                <Link
+                  href="https://docs.google.com/presentation/d/1L9dSMVUr1TSazZu0-LqSHRSjEMMOO4GG-kZlOrkAjOM/edit?usp=sharing"
+                  className="button"
+                  target="_blank"
+                  rel="noopener noreferrer">
+
+                  <FontAwesomeIcon
+                    icon={faFileAlt}
+                    fixedWidth
+                    aria-hidden={true}
+                  />{' '}Form Summaries and Slides
                 </Link>
               </li>{' '}
               <li style={inlineButtonListStyle}>
-                <Link href="https://docs.google.com/document/d/1QADyPwSqwf4cS_O51klvqA8dAcNlOXF1zT5YThi78q4/edit?usp=sharing">
-                  <a
-                    className="button"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FontAwesomeIcon
-                      icon={faFileAlt}
-                      fixedWidth
-                      aria-hidden={true}
-                    />{' '}
-                    Event Notes
-                  </a>
+                <Link
+                  href="https://docs.google.com/document/d/1QADyPwSqwf4cS_O51klvqA8dAcNlOXF1zT5YThi78q4/edit?usp=sharing"
+                  className="button"
+                  target="_blank"
+                  rel="noopener noreferrer">
+
+                  <FontAwesomeIcon
+                    icon={faFileAlt}
+                    fixedWidth
+                    aria-hidden={true}
+                  />{' '}Event Notes
                 </Link>
               </li>
             </ul>
@@ -321,35 +313,31 @@ function TownHall() {
             </p>
             <ul className="list-unstyled">
               <li style={inlineButtonListStyle}>
-                <Link href="/files/town-hall/CS Town Hall Fall 2021 Slides.pdf">
-                  <a
-                    className="button"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FontAwesomeIcon
-                      icon={faFileAlt}
-                      fixedWidth
-                      aria-hidden={true}
-                    />{' '}
-                    Form Summaries and Slides
-                  </a>
+                <Link
+                  href="/files/town-hall/CS Town Hall Fall 2021 Slides.pdf"
+                  className="button"
+                  target="_blank"
+                  rel="noopener noreferrer">
+
+                  <FontAwesomeIcon
+                    icon={faFileAlt}
+                    fixedWidth
+                    aria-hidden={true}
+                  />{' '}Form Summaries and Slides
                 </Link>
               </li>{' '}
               <li style={inlineButtonListStyle}>
-                <Link href="/files/town-hall/CS Town Hall Fall 2021 Notes.pdf">
-                  <a
-                    className="button"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FontAwesomeIcon
-                      icon={faFileAlt}
-                      fixedWidth
-                      aria-hidden={true}
-                    />{' '}
-                    Event Notes
-                  </a>
+                <Link
+                  href="/files/town-hall/CS Town Hall Fall 2021 Notes.pdf"
+                  className="button"
+                  target="_blank"
+                  rel="noopener noreferrer">
+
+                  <FontAwesomeIcon
+                    icon={faFileAlt}
+                    fixedWidth
+                    aria-hidden={true}
+                  />{' '}Event Notes
                 </Link>
               </li>
             </ul>
@@ -375,35 +363,31 @@ function TownHall() {
             </p>
             <ul className="list-unstyled">
               <li style={inlineButtonListStyle}>
-                <Link href="/files/town-hall/CS Town Hall Winter 2021 Slides.pdf">
-                  <a
-                    className="button"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FontAwesomeIcon
-                      icon={faFileAlt}
-                      fixedWidth
-                      aria-hidden={true}
-                    />{' '}
-                    Form Summaries and Slides
-                  </a>
+                <Link
+                  href="/files/town-hall/CS Town Hall Winter 2021 Slides.pdf"
+                  className="button"
+                  target="_blank"
+                  rel="noopener noreferrer">
+
+                  <FontAwesomeIcon
+                    icon={faFileAlt}
+                    fixedWidth
+                    aria-hidden={true}
+                  />{' '}Form Summaries and Slides
                 </Link>
               </li>{' '}
               <li style={inlineButtonListStyle}>
-                <Link href="/files/town-hall/CS Town Hall Winter 2021 Notes.pdf">
-                  <a
-                    className="button"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FontAwesomeIcon
-                      icon={faFileAlt}
-                      fixedWidth
-                      aria-hidden={true}
-                    />{' '}
-                    Event Notes
-                  </a>
+                <Link
+                  href="/files/town-hall/CS Town Hall Winter 2021 Notes.pdf"
+                  className="button"
+                  target="_blank"
+                  rel="noopener noreferrer">
+
+                  <FontAwesomeIcon
+                    icon={faFileAlt}
+                    fixedWidth
+                    aria-hidden={true}
+                  />{' '}Event Notes
                 </Link>
               </li>
             </ul>

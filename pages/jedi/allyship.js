@@ -12,7 +12,7 @@ import styles from '../../styles/pages/jedi.module.scss';
 
 function Allyship() {
 	return (
-		<Layout>
+        <Layout>
       <NextSeo
 				title="JEDI Allyship Spaces | ACM at UCLA"
 				description="JEDI holds allyship spaces on a bunch of different topics related to EDI; check out our past events! Anyone can lead and attend an allyship space. If you have a topic you're interested in, let us know!"
@@ -33,12 +33,12 @@ function Allyship() {
         <h1>allyship spaces</h1>
         <p className={`${styles['desktop-half-width']}`}>
           {/* eslint-disable-next-line max-len */}
-          We hold allyship spaces on a bunch of different topics related to EDI; check out our past events below! Anyone can lead and attend an allyship space. If you have a topic you&apos;re interested in, <Link href="/jedi/meet#contact"><a className={styles['jedi-link']}>let us know</a></Link>!
+          We hold allyship spaces on a bunch of different topics related to EDI; check out our past events below! Anyone can lead and attend an allyship space. If you have a topic you&apos;re interested in, <Link href="/jedi/meet#contact" className={styles['jedi-link']}>let us know</Link>!
         </p>
         {spaces.map((space, i) => <AllyshipSpaceCard {...space} key={space.title} priority={i < 2} /> )}
       </div>
 		</Layout>
-	);
+    );
 }
 
 export default Allyship;
