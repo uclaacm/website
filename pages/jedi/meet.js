@@ -43,9 +43,9 @@ function Meet() {
             className={styles['jedi-link']}
             target="_blank"
             rel="noopener noreferrer">
-            
+
               Arjun
-            
+
           </Link>
           &nbsp; and&nbsp;
           <Link
@@ -53,9 +53,9 @@ function Meet() {
             className={styles['jedi-link']}
             target="_blank"
             rel="noopener noreferrer">
-            
+
               Sharvani
-            
+
           </Link>
           , who we wouldn&apos;t have JEDI without!
         </p>
