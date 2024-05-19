@@ -41,6 +41,7 @@ async function getGoogleSheetData(range) {
     "ICPC",
     "Teach LA",
     "W",
+    "Cloud",
   ];
 
   // Get data from Google spreadsheets
