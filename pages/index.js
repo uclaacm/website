@@ -1,6 +1,6 @@
 import { NextSeo } from 'next-seo';
-import Head from 'next/head';
 import Link from 'next/link';
+import Script from 'next/script';
 import React from 'react';
 
 import Banner from '../components/Banner';
