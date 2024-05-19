@@ -8,6 +8,7 @@
     "@fortawesome/free-regular-svg-icons": "^6.5.1",
     "@fortawesome/free-solid-svg-icons": "^6.5.1",
     "@fortawesome/react-fontawesome": "^0.2.1",
+    "@netlify/plugin-nextjs": "^5.2.2",
     "dotenv": "^16.4.5",
     "googleapis": "^109.0.1",
     "moment": "^2.29.4",
