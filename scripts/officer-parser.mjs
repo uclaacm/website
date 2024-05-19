@@ -64,15 +64,21 @@ async function getGoogleSheetData(range) {
         let image = row[10];
         if (!image) {
           image =
-            "https://t4.ftcdn.net/jpg/02/15/84/43/360_F_215844325_ttX9YiIIyeaR7Ne6EaLLjMAmy4GvPC69.jpg"; //try making this a reference under assests?
+            "https://t4.ftcdn.net/jpg/02/15/84/43/360_F_215844325_ttX9YiIIyeaR7Ne6EaLLjMAmy4GvPC69.jpg"; //try making this a reference under assets?
         } else {
           try {
             const url = new URL(image);
             const host = url.hostname;
             if (host === "drive.google.com") {
-              const fileID = image.match(/\/file\/d\/(.+?)\//)[1]; //convert into viewable url using regex
+              const fileID = image.match(/\/file\/d\/(.+?)\//)[1]; //convert gdrive urls into viewable url using regex
               image = `https://drive.google.com/thumbnail?id=${fileID}`;
-            } else {
+            }
+            else if (host === "github.com") {
+              const regex = /^https:\/\/github\.com\/([^\/]+)\/([^\/]+)\/blob\/([^\/]+)\/(.+)$/; //convert github urls into viewable url using regex
+              const replacement = 'https://raw.githubusercontent.com/$1/$2/$3/$4';
+              image = image.replace(regex, replacement);
+            }
+            else {
               image = url.href;
             }
           } catch (err) {
