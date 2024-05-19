@@ -46,6 +46,10 @@ module.exports = {
         protocol: 'https',
         hostname: 'www.uclaacm.com',
       },
+      {
+        protocol: 'https',
+        hostname: 'raw.githubusercontent.com',
+      },
     ],
   },
   output: 'standalone',

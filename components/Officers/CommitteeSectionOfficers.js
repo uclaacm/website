@@ -9,7 +9,7 @@ function CommitteeOfficers({committee}) {   //maps officers to a particular comm
 		<div className="body-wrapper">
 			<div className="card-container">
 						<div className="grid-desktop-3">
-						{committee.name === 'Board' ? (	//Board is an execption
+						{committee.name === 'Board' ? (	//Board is an exception
 						<Officers
 							officers={data.filter(officer => (officer.committee === 'Board, Internal' || officer.committee === 'Board, External' || officer.committee === 'President'))}
 							size="compact"
