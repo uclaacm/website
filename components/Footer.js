@@ -12,7 +12,7 @@ const footerACMLinks = [
 	{ title: 'Internship Program', path: '/internship' },
 	{ title: 'Dev Team', path: '/dev'},
 	{ title: 'Sponsors', path: '/sponsors' },
-	{ title: 'Our Team', path: '/team' },
+	{ title: 'Our Team', path: '/officers' },
 	{ title: 'Membership Portal', path: 'https://members.uclaacm.com', ext: true },
 ];
 
@@ -102,7 +102,7 @@ function Footer(){
 					</a>
 				</div>
 				<div>
-					<span className={styles['footer-text-thin']}>&copy; ACM at UCLA 2022.</span>
+					<span className={styles['footer-text-thin']}>&copy; ACM at UCLA 2024.</span>
 				</div>
 			</nav>
 		</footer>
