@@ -8,8 +8,8 @@ import Layout from '../components/Layout';
 import Officers from '../components/OfficerCard';
 // import Officers from '../components/Officers/OfficerCard';
 import SocialMedia from '../components/SocialMedia';
-import data from '../offoutput.json';
 
+import data from '../offoutput.json';
 import acmCommittees from '../public/images/acm_committees.png';
 import boardcollage from '../public/images/boardcollage.png';
 import acmHowToJoin from '../public/images/how-to-join.png';
