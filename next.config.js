@@ -19,6 +19,8 @@ module.exports = {
       'www.acmcyber.com',
       'media.licdn.com',
       'github.com',
+      'www.uclaacm.com',
+      'raw.githubusercontent.com',
     ],
   },
   target: 'serverless',
