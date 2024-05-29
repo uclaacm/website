@@ -8,6 +8,7 @@ import Layout from '../components/Layout';
 import Officers from '../components/OfficerCard';
 // import Officers from '../components/Officers/OfficerCard';
 import SocialMedia from '../components/SocialMedia';
+import data from '../offoutput.json';
 
 import acmCommittees from '../public/images/acm_committees.png';
 import boardcollage from '../public/images/boardcollage.png';
@@ -15,7 +16,6 @@ import acmHowToJoin from '../public/images/how-to-join.png';
 import initiative from '../public/images/initiative.png';
 import styles from '../styles/pages/About.module.scss';
 
-import data from '../scripts/offoutput.json';
 
 function extractContent(officerContent) {
   const convertedData = officerContent.map(officer => ({
