@@ -14,21 +14,19 @@ import boardcollage from '../public/images/boardcollage.png';
 import acmHowToJoin from '../public/images/how-to-join.png';
 import initiative from '../public/images/initiative.png';
 import styles from '../styles/pages/About.module.scss';
+
 import data from '../scripts/offoutput.json';
 
 function extractContent(officerContent) {
-  const includedOfficers = ['Nyla Zia', 'Meryl Mathew', 'Larry Zhi', 'Jenna Wang', 'Shiyu Ye', 'Gregor MacDonald', 'Maxine Wu', 'Nemi Desai',
-                           'Sananshi Pidyar', 'William Zhao', 'Joanna Liu', 'Aaron Kwan', 'Jason An', 'Savannah Alanis', 'Leroy Betterton Gage',
-                           'Vera Peker', 'Natalie Lord', 'Tiffany Zheng', 'Edward Ng'];
   const convertedData = officerContent.map(officer => ({
     name: officer.name,
     pronouns: officer.pronouns,
-    position: officer.role,
+    position: (officer.role === officer.committee ? officer.role : officer.role + ', ' + officer.committee),
     committee: officer.committee,
     major: officer.major,
     year: officer.year,
     img: officer.photo,
-  })).filter(officer => includedOfficers.includes(officer.name));
+  })).filter(officer => officer.position.includes('President'));
   return convertedData;
 }
 
