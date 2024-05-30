@@ -31,7 +31,7 @@ function extractContent(officerContent) {
 }
 
 function About() {
-  const convD = extractContent(data);
+  const filteredOfficers = extractContent(data);
   return (
     <Layout>
       <NextSeo
@@ -207,7 +207,7 @@ function About() {
           <p>Our President and Internal/External Vice Presidents support the entire ACM community
           while our committee presidents foster the growth of their committee.</p>
 					<div className="grid-desktop-3">
-						<Officers officers={convD} size="compact" />
+						<Officers officers={filteredOfficers} size="compact" />
 					</div>
         </div>
       </div>
