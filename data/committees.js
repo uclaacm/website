@@ -636,12 +636,12 @@ export default [
 				),
             },
         ],
-        introImage: '/images/committees/hack/hack_motif_applied.png',  // TODO
+        introImage: '/images/committees/cloud/cloud_motif_base.png',  // TODO - change to applied
         mission:
             'ACM Cloud is committed to providing resources to build a strong intuition of the architectural foundations of the modern cloud environment through project-based, hands-on experience.',
         image: '/images/committees/hack_wordmark.svg',  // TODO
         wordmark_dark: '/images/committees/hack_wordmark_dark.svg',  // TODO
-        diamond: '/images/diamonds/hack_diamond.svg',  // TODO
+        diamond: '/images/diamonds/ai_diamond.svg',  // TODO
         internship: {
             whatWeDo:
                 'ACM Cloud is committed to providing resources to build a strong intuition of the architectural foundations of the modern cloud environment through project-based, hands-on experience. ACM Cloud supports the UCLA community through three core pillars: Cloud Training Workshops, Research Projects, and Consulting Projects.',
