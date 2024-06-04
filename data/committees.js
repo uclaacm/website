@@ -547,7 +547,7 @@ export default [
         name: 'Cloud',
         class: 'cloud',
         slug: 'cloud',
-        tagline: '<Cloud Tagline>',  // TODO
+        tagline: 'Building the Future in the Clouds',
         external_link: null,
         links: [
             {
@@ -638,7 +638,7 @@ export default [
         ],
         introImage: '/images/committees/hack/hack_motif_applied.png',  // TODO
         mission:
-            'ACM Cloud is committed to providing resources to build a strong intuition of the architectural foundations of the modern cloud environment through project-based, hands-on experience. ACM Cloud supports the UCLA community through three core pillars: Cloud Training Workshops, Research Projects, and Consulting Projects. Through our Cloud Training Workshops, we aim to build intuition and teach the fundamentals of working with cloud providers like Amazon Web Services (AWS). Building upon these skills, our Research Projects delve into the underlying architectural foundations of cloud technologies, seeking to innovate through publishing literature and collaborating with department faculty. Finally, for those hoping to gain industry experience, our Consulting Projects provide a space to master the technologies introduced in our workshops in a authentic business setting.',
+            'ACM Cloud is committed to providing resources to build a strong intuition of the architectural foundations of the modern cloud environment through project-based, hands-on experience.',
         image: '/images/committees/hack_wordmark.svg',  // TODO
         wordmark_dark: '/images/committees/hack_wordmark_dark.svg',  // TODO
         diamond: '/images/diamonds/hack_diamond.svg',  // TODO
