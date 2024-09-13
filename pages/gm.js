@@ -18,8 +18,7 @@ import studioLogo from '../public/images/committees/studio_wordmark.svg';
 import teachlaLogo from '../public/images/committees/teachLA_wordmark.svg';
 import wLogo from '../public/images/committees/w_wordmark.svg';
 import googleSlideLogo from '../public/images/slides.png';
-import winterGMgraphic from '../public/images/Winter_GM_2024_graphic.png';
-
+import fallGMgraphic from '../public/images/Fall_GM_2024_graphic.png';
 
 const dayToName = (day) => {
   switch (day) {
@@ -58,17 +57,25 @@ const getDateWithSuffix = (date) => {
   return date.toString() + suffix;
 };
 
-const calculateTimeStrings = ({days, hours, minutes, seconds}) => {
+const calculateTimeStrings = ({ days, hours, minutes, seconds }) => {
   let dayString = 'Day';
   let hourString = 'Hour';
   let minuteString = 'Minute';
   let secondString = 'Second';
-  if(days !== 1){ dayString += 's'; }
-  if(hours !== 1){ hourString += 's'; }
-  if(minutes !== 1){ minuteString += 's'; }
-  if(seconds !== 1){ secondString += 's'; }
+  if (days !== 1) {
+    dayString += 's';
+  }
+  if (hours !== 1) {
+    hourString += 's';
+  }
+  if (minutes !== 1) {
+    minuteString += 's';
+  }
+  if (seconds !== 1) {
+    secondString += 's';
+  }
 
-  return {dayString, hourString, minuteString, secondString};
+  return { dayString, hourString, minuteString, secondString };
 };
 
 const parseGMData = (jsonContent) => {
@@ -200,7 +207,7 @@ function gm() {
 			<Banner decorative />
       <div className='text-center'>
         <Image
-          src = {winterGMgraphic}
+          src = {fallGMgraphic}
           className='gm-graphic'
           alt={`${data.quarter} GM ${data.gm_start_time.getFullYear()} Marketing Graphic. ${data.quarter} GM will happen on ${data.day_of_week}, ${data.gm_start_time.getMonth()} ${data.date_with_suffix} from ${data.gm_start_time.getHours()}:${data.gm_start_time.getMinutes()} to ${data.gm_end_time.getHours()}:${data.gm_end_time.getMinutes()} in ${data.location}`}
         />
@@ -211,7 +218,7 @@ function gm() {
           <h2>Relevant information</h2>
           <div className='flex'>
             <div>
-              <iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3304.8687573568445!2d-118.4437108235007!3d34.07287847314926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bd8bbb175573%3A0x46c5c13d4084a4b3!2sHaines%20Hall!5e0!3m2!1sen!2sus!4v1702237752096!5m2!1sen!2sus' width='450' height='400' style={{border: 0}} allowfullscreen='' loading='lazy' title='gogole maps embed of haines 39' referrerPolicy='no-referrer-when-downgrade'></iframe>
+              <iframe src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13219.85897956824!2d-118.4441451!3d34.070418!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x62f97fe423993f80!2sUCLA%20Ackerman%20Union!5e0!3m2!1sen!2sin!4v1663063464157!5m2!1sen!2sin' width='450' height='400' style={{border: 0}} allowfullscreen='' loading='lazy' title='google maps embed of ackerman grand ballroom' referrerPolicy='no-referrer-when-downgrade'></iframe>
             </div>
             <div className='what-to-bring'>
               <h3>How to get there</h3>
@@ -222,7 +229,7 @@ function gm() {
             </div>
           </div>
           <p>
-            Don&apos;t hesitate to contact us at acm@ucla.edu if you any accessiblity concerns for {data.quarter} GM.
+            Don&apos;t hesitate to contact us at acm@ucla.edu if you have any accessibility concerns for {data.quarter} GM.
           </p>
 
         </div>
