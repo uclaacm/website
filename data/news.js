@@ -9,9 +9,9 @@ export default [
     },
     {
         date: '07/06/23',
-        headline: 'Student Chapter Excellence Award for Outstanding Chapter Activites',
-        image: '/images/activites_chapter_award.png',
-        alt: 'Banner of Student Chapter Excellence Award for Outstanding Chapter Activites',
+        headline: 'Student Chapter Excellence Award for Outstanding Chapter Activities',
+        image: '/images/activities_chapter_award.png',
+        alt: 'Banner of Student Chapter Excellence Award for Outstanding Chapter Activities',
         link: 'https://samueli.ucla.edu/international-computing-organization-honors-ucla-student-chapter-with-2023-award/',
 
     },
