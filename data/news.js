@@ -1,7 +1,15 @@
 export default [
     {
+        date: '06/03/24',
+        headline: 'Student Chapter Excellence Award for Outstanding Chapter Website',
+        image: '/images/website_screenshot_24.png',
+        alt: 'ACM Website screenshot',
+        link: 'https://www.cs.ucla.edu/ucla-acm-student-chapter-wins-the-2023-2024-acm-outstanding-chapter-activities-award/',
+
+    },
+    {
         date: '07/06/23',
-        headline: 'Student Chapter Excellence Award for Outstanding Chapter Activites ',
+        headline: 'Student Chapter Excellence Award for Outstanding Chapter Activites',
         image: '/images/activites_chapter_award.png',
         alt: 'Banner of Student Chapter Excellence Award for Outstanding Chapter Activites',
         link: 'https://samueli.ucla.edu/international-computing-organization-honors-ucla-student-chapter-with-2023-award/',
@@ -18,7 +26,7 @@ export default [
     {
         date: '05/12/22',
         headline: 'Student Chapter Excellence Award for Outstanding Chapter Website ',
-        image: '/images/website_screenshot.jpg',
+        image: '/images/website_screenshot_23.jpg',
         alt: 'ACM Website screenshot',
         link: 'https://www.cs.ucla.edu/acm-at-ucla-receives-student-chapter-excellence-award-for-outstanding-chapter-website-from-acm/',
 
