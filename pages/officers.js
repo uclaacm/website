@@ -1,13 +1,13 @@
-import { NextSeo } from "next-seo";
-import Image from "next/image";
-import React from "react";
-import Banner from "../components/Banner";
-import Navigation from "../components/Committees/Sidebar";
+import { NextSeo } from 'next-seo';
+import Image from 'next/image';
+import React from 'react';
+import Banner from '../components/Banner';
+import Navigation from '../components/Committees/Sidebar';
 // import Archive from '../components/Committees/ArchiveSidebar';
-import Layout from "../components/Layout";
-import CommitteeSectionOfficers from "../components/Officers/CommitteeSectionOfficers";
-import data from "../data";
-import teamPhoto from "../public/images/officers/internal_compressed.jpg";
+import Layout from '../components/Layout';
+import CommitteeSectionOfficers from '../components/Officers/CommitteeSectionOfficers';
+import data from '../data';
+import teamPhoto from '../public/images/officers/internal_compressed.jpg';
 
 function OfficersBanner() {
   //fix description
@@ -47,13 +47,13 @@ function OfficersPage() {
         openGraph={{
           images: [
             {
-              url: "https://www.uclaacm.com/images/acm_committees.png",
+              url: 'https://www.uclaacm.com/images/acm_committees.png',
               width: 2506,
               height: 979,
-              alt: "The ACM at UCLA logo, surrounded by our eight committees: Studio, ICPC, Design, Cyber, Teach LA, W, AI, and Hack.",
+              alt: 'The ACM at UCLA logo, surrounded by our eight committees: Studio, ICPC, Design, Cyber, Teach LA, W, AI, and Hack.',
             },
           ],
-          site_name: "ACM at UCLA",
+          site_name: 'ACM at UCLA',
         }}
       />
       <Banner decorative />
