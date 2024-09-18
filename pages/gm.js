@@ -18,8 +18,8 @@ import icpcLogo from '../public/images/committees/icpc_wordmark.svg';
 import studioLogo from '../public/images/committees/studio_wordmark.svg';
 import teachlaLogo from '../public/images/committees/teachLA_wordmark.svg';
 import wLogo from '../public/images/committees/w_wordmark.svg';
-import googleSlideLogo from '../public/images/slides.png';
 import fallGMgraphic from '../public/images/Fall_GM_2024_graphic.png';
+import googleSlideLogo from '../public/images/slides.png';
 
 const dayToName = (day) => {
   switch (day) {
@@ -231,7 +231,8 @@ function gm() {
             </div>
           </div>
           <p>
-            Don&apos;t hesitate to contact us at acm@ucla.edu if you have any accessibility concerns for {data.quarter} GM.
+            Don&apos;t hesitate to contact us at acm@ucla.edu if you have any accessibility concerns
+            for {data.quarter} GM.
           </p>
 
         </div>
