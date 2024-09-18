@@ -10,6 +10,7 @@ import gmData from '../gmData.json';
 
 import aiLogo from '../public/images/committees/ai_wordmark.svg';
 import boardLogo from '../public/images/committees/board_wordmark.svg';
+import cloudLogo from '../public/images/committees/cloud_wordmark.svg';
 import cyberLogo from '../public/images/committees/cyber_wordmark.svg';
 import designLogo from '../public/images/committees/design_wordmark.svg';
 import hackLogo from '../public/images/committees/hack_wordmark.svg';
@@ -107,6 +108,7 @@ const parseGMData = (jsonContent) => {
     w: data?.w,
     ai: data?.ai,
     hack: data?.hack,
+    cloud: data?.cloud,
     initiatives: data?.initiatives.split(';'),
   };
 };
@@ -245,7 +247,7 @@ function gm() {
           <div className='gm-program-section'>
             <div className='section-header'>
               <h3>Committee Presentations</h3>
-              <p className='sub-heading'>Learn what ACM&apos;s eight committees have planned for {data.quarter} quarter.</p>
+              <p className='sub-heading'>Learn what ACM&apos;s nine committees have planned for {data.quarter} quarter.</p>
             </div>
             <p className='gm-program-row'><Image src= {studioLogo} alt='ACM studio'/> {data.studio}</p>
             <p className='gm-program-row'><Image src= {icpcLogo} alt='ACM icpc'/> {data.icpc}</p>
@@ -254,6 +256,7 @@ function gm() {
             <p className='gm-program-row'><Image src= {teachlaLogo}  alt='ACM teachLA'/> {data.teachLA}</p>
             <p className='gm-program-row'><Image src= {wLogo}  alt='ACM w'/> {data.w}</p>
             <p className='gm-program-row'><Image src= {aiLogo}  alt='ACM ai'/> {data.ai}</p>
+            <p className='gm-program-row'><Image src= {cloudLogo}  alt='ACM cloud'/> &nbsp;{data.cloud}</p>
             <p className='gm-program-row'><Image src= {hackLogo}  alt='ACM hack'/> {data.hack}</p>
 					</div>
           <div className='gm-program-section'>
