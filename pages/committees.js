@@ -37,7 +37,7 @@ function CommitteesPage() {
 							url: 'https://www.uclaacm.com/images/acm_committees.png',
 							width: 2506,
 							height: 979,
-							alt: 'The ACM at UCLA logo, surrounded by our nine committees: Studio, ICPC, Design, Cyber, Teach LA, W, AI, and Hack.',
+							alt: 'The ACM at UCLA logo, surrounded by our nine committees: Studio, ICPC, Design, Cyber, Teach LA, W, AI, Cloud, and Hack.',
 						},
 					],
 					site_name: 'ACM at UCLA',
@@ -48,7 +48,7 @@ function CommitteesPage() {
 			<div className="committees-page-content">
 				<CommitteesBanner />
 				<div className='committee-sections-container'>
-					{committees.map(committee => <CommitteeSection key={committee.name} committee={committee} />) }
+					{committees.map(committee => <CommitteeSection key={committee.name} committee={committee} />)}
 				</div>
 			</div>
 		</Layout>
