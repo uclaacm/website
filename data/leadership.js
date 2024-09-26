@@ -94,4 +94,9 @@ export default [
     role: 'Co-President, Design',
     photo: '/images/officers/EdwardNg.jpeg',
   },
+  {
+    name: 'Daniel Yang',
+    role: 'President, Cloud',
+    photo: '/images/officers/DanielYang.jpeg',
+  },
 ];

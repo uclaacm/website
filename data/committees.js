@@ -481,6 +481,116 @@ export default [
 			nextSteps: 'All Interns have the opportunity to become officers in the Spring',
 		},
 	},
+
+	{
+		name: 'Cloud',
+		class: 'cloud',
+		slug: 'cloud',
+		tagline: 'Building the Future in the Clouds',
+		external_link: null,
+		links: [
+			{
+				platform: 'instagram',
+				link: 'https://www.instagram.com/acmcloud/',
+			},
+			{
+				platform: 'discord',
+				link: 'https://discord.gg/smE3pk5DsJ',
+			},
+		],
+		infoCards: [
+			{
+				title: 'Distributed Systems Workshops',
+				image: {
+					src: '',
+					alt: '',
+				},
+				desc: (
+					<>
+						Our weekly Distributed File System Project series provided a hands-on introduction to distributed systems. Each week, participants explored concepts like cloud computing, system architectures, process communication, and security while building and enhancing a distributed file system. Starting with setting up a basic file server, they progressively implemented features such as client-server communication, naming services, consistency models, fault tolerance, and security measures. View the{' '}
+						<a
+							href='https://drive.google.com/drive/folders/1ZpBAxImfSNb-6HXjxvZ2gWgXxMQe-jVj'
+							target='_blank'
+							rel='noopener noreferrer'
+						>
+							drive of resources
+						</a>
+						{' '}and the{' '}
+						<a
+							href='https://drive.google.com/drive/folders/1nNUahdX3wLiI2NcrNm5q48mGGQ6wAPy_'
+							target='_blank'
+							rel='noopener noreferrer'
+						>
+							slides
+						</a>
+						.
+					</>
+				),
+			},
+			{
+				title: 'Amazon Web Services Workshops',
+				image: {
+					src: '/images/committees/cloud/aws.png',
+					alt: 'Image of Cloud AWS Workshops',
+				},
+				desc: (
+					<>
+						Our Amazon Web Services Workshop Series provided a comprehensive
+						introduction to AWS, featuring weekly sessions on key topics such as
+						cloud management, scaling, continuous integration and deployment,
+						databases, serverless technologies, and infrastructure as code.
+						The{' '}
+						<a
+							href='https://github.com/uclaacm/acmcloud-aws-w24'
+							target='_blank'
+							rel='noopener noreferrer'
+						>
+							GitHub repository
+						</a>
+						{' '}includes all code examples, slides, recordings, and guided project steps for you to get started with AWS.
+					</>
+				),
+			},
+			{
+				title: 'Google Cloud Platform Workshops',
+				image: {
+					src: '/images/committees/cloud/gcp.png',
+					alt: 'Image of Cloud GCP Workshops',
+				},
+				desc: (
+					<>
+						The Spring 2024 Google Cloud Platform Workshop mini-series provided
+						a comprehensive overview of GCP, featuring sessions on computing
+						and databases with Google Cloud.
+						View our GitHub repository{' '}
+						<a
+							href='https://github.com/uclaacm/acmcloud-gcp-s24'
+							target='_blank'
+							rel='noopener noreferrer'
+						>
+							here
+						</a>
+						.
+					</>
+				),
+			},
+		],
+		introImage: '/images/committees/cloud/cloud_motif_base.png',  // TODO - change to applied
+		mission:
+			'ACM Cloud is committed to providing resources to build a strong intuition of the architectural foundations of the modern cloud environment through project-based, hands-on experience.',
+		image: '/images/committees/cloud_wordmark.svg',  // TODO
+		wordmark_dark: '/images/committees/cloud_wordmark_dark.svg',  // TODO
+		diamond: '/images/diamonds/cloud_diamond.svg',  // TODO
+		internship: {
+			whatWeDo:
+				'ACM Cloud is committed to providing resources to build a strong intuition of the architectural foundations of the modern cloud environment through project-based, hands-on experience. ACM Cloud supports the UCLA community through three core pillars: Cloud Training Workshops, Research Projects, and Consulting Projects.',
+			whatInternsWillDo:
+				'Interns will work assist in organizing events and workshops based on personal interests each quarter.',
+			card: '/images/cards/cloud_card.svg',  // TODO
+			nextSteps:
+				'All Interns have the opportunity to become officers in the Spring if they choose to stay.',
+		},
+	},
 	{
 		name: 'Hack',
 		class: 'hack',
