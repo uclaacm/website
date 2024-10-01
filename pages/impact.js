@@ -7,8 +7,8 @@ import Carousel from '../components/Impact/Carousel';
 import WorkshopCard from '../components/Impact/WorkshopCard';
 import Layout from '../components/Layout';
 import Officers from '../components/OfficerCard';
-
-import { pastEvents, people } from '../data/impact';
+import { pastEvents } from '../data/impact';
+import data from '../offoutput.json';
 
 import impactMotifBanner from '../public/images/impact/impact-motif.png';
 import impactathon from '../public/images/impact/impactathon.JPEG';
@@ -17,6 +17,7 @@ import styles from '../styles/pages/impact.module.scss';
 const impactBlog = 'https://medium.com/acm-at-ucla';
 
 function Impact() {
+  const impactOfficers = data.filter(officer => officer.role.includes('Impact') && officer.committee.includes('Board, Internal'));
   return (
     <Layout>
       <NextSeo
@@ -105,7 +106,8 @@ function Impact() {
         </div>
         <h2 className="text-center">People</h2>
         <div className="grid-desktop-3 text-center-mobile">
-          <Officers officers={people} />
+
+          <Officers officers={impactOfficers} />
         </div>
       </div>
     </Layout>
