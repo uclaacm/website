@@ -478,7 +478,7 @@ export default [
 				<li> The Workshops interns will teach weekly ML and AI workshops to UCLA students</li>
 			</ul> ),
 			card: '/images/cards/ai_card.svg',
-			nextSteps: 'All Interns have the opportunity to become officers in the Spring',
+			nextSteps: 'All Interns have the opportunity to become officers in the Spring.',
 		},
 	},
 
