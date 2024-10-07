@@ -37,7 +37,10 @@
 
 @media screen and (min-width: 688px) {
   .text-center-holographic {
-    left: 44.37px;
+    left: 0;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
     top: -74.3px;
   }
 }
@@ -49,6 +52,7 @@
   rgba(51, 255, 206, 0.54),
   rgba(125, 255, 46, 0.54));
   font-family: $font-header;
+  margin-left: 3px;
   padding-left: 3px;
   position: relative;
   text-align: center;
