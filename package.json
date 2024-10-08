@@ -8,7 +8,7 @@
     "@fortawesome/free-regular-svg-icons": "^6.5.1",
     "@fortawesome/free-solid-svg-icons": "^6.5.1",
     "@fortawesome/react-fontawesome": "^0.1.19",
-    "dotenv": "^16.0.3",
+    "dotenv": "^16.4.5",
     "googleapis": "^109.0.1",
     "moment": "^2.29.4",
     "next": "^11.1.4",
@@ -24,7 +24,7 @@
   "scripts": {
     "start": "next dev",
     "start-production": "next start",
-    "build": "node scripts/officer-parser.mjs && next build",
+    "build": "npm run ofp && npm run thp && npm run gmp && next build",
     "lint-js": "eslint \"**/*.js\"",
     "lint-js-fix": "eslint --fix \"**/*.js\"",
     "lint-css": "stylelint \"**/*.css\" \"**/*.scss\"",
@@ -34,6 +34,8 @@
     "reg": "node scripts/recurring-event-generator.mjs",
     "seg": "node scripts/single-event-generator.mjs",
     "ofp": "node scripts/officer-parser.mjs",
+    "thp": "node scripts/town-hall-generator.mjs",
+    "gmp": "node scripts/gm-generator.mjs",
     "test": "jest --env=jsdom"
   },
   "eslintConfig": {

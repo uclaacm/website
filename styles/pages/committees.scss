@@ -52,6 +52,7 @@
 .image-wrapper {
   border-radius: 10px;
   box-shadow: 0 0 1pt 0;
+  padding: 10px 20px;
 
   // this is kind of gnarly, but the !important override is needed to overwrite the CSS built into /next/image
   // the div is to change display from inline-block to block so there's no weird spacing between border and image

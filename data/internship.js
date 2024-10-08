@@ -6,37 +6,37 @@ import styles from '../styles/pages/Internship.module.scss';
 export default {
     items: [
         {
-            date: '01/08',
-            name: 'Winter General Meeting',
+            date: '10/01',
+            name: 'Fall General Meeting',
             info: 'Come learn about the different ACM committees!',
             active: true,
         },
         {
-            date: '01/08',
+            date: '10/11',
             name: 'Application Form is Open',
             info: 'Fill out the application form for as many committees as you want!',
             active: true,
         },
         {
-            date: '01/12',
+            date: '10/22',
             name: 'Applications Due',
             info: 'Submit your application by 11:59 pm',
             active: true,
         },
         {
-            date: '01/15-01/19',
+            date: 'Weeks 5-6',
             name: 'Interviews',
             info: 'A handful of applicants will be chosen for an interview with the committee(s) you applied to',
             active: true,
         },
         {
-            date: '01/21',
+            date: 'Week 7',
             name: 'Decisions Released',
             info: 'Hear back via Email what committee(s) accepted you',
             active: true,
         },
         {
-            date: '01/23',
+            date: 'Week 8',
             name: 'Official ACM Onboarding',
             info: 'Learn what you need to know as an ACM Intern',
             active: true,
@@ -97,7 +97,7 @@ export default {
         },
         {
             title: 'I have more questions, how can I get them answered?',
-            content: <>If you have any questions about the application process or the Internship program in general email <a href="mailto:internship@uclaacm.com">Christine Ahn and Sahiti Gabrani (internship@uclaacm.com)</a>, our Internship Directors.</>,
+            content: <>If you have any questions about the application process or the Internship program in general email <a href="mailto:internship@uclaacm.com">Elena Yu and Tiffany Chen (internship@uclaacm.com)</a>, our Internship Directors.</>,
         },
     ],
 };

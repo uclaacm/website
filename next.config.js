@@ -15,6 +15,8 @@ module.exports = {
       'jcfp.site',
       'photos.google.com',
       'photos.app.goo.gl',
+      'www.uclaacm.com',
+      'raw.githubusercontent.com',
     ],
   },
   target: 'serverless',

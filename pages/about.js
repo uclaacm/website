@@ -112,7 +112,7 @@ function About() {
           <div className={styles['text-section']}>
             <h1>What are ACM committees?</h1>
             <p>
-              ACM is comprised of eight committees — each serving a different
+              ACM is comprised of nine committees — each serving a different
               topic and mission. We strive to cover a plethora of interests and
               encourage members to explore new topics, too!
             </p>

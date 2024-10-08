@@ -7,12 +7,12 @@ import SocialMedia from './SocialMedia';
 const footerACMLinks = [
 	{ title: 'About', path: '/about' },
 	{ title: 'Events', path: '/events' },
-	{ title: 'General Meeting', path: '/gm/w24' },
-	{ title: 'CS Town Hall', path: '/town-hall/f23' },
+	{ title: 'General Meeting', path: '/gm' },
+	{ title: 'CS Town Hall', path: '/town-hall' },
 	{ title: 'Internship Program', path: '/internship' },
 	{ title: 'Dev Team', path: '/dev'},
 	{ title: 'Sponsors', path: '/sponsors' },
-	{ title: 'Our Team', path: '/team' },
+	{ title: 'Our Team', path: '/officers' },
 	{ title: 'Membership Portal', path: 'https://members.uclaacm.com', ext: true },
 ];
 
@@ -102,7 +102,7 @@ function Footer(){
 					</a>
 				</div>
 				<div>
-					<span className={styles['footer-text-thin']}>&copy; ACM at UCLA 2022.</span>
+					<span className={styles['footer-text-thin']}>&copy; ACM at UCLA 2024.</span>
 				</div>
 			</nav>
 		</footer>

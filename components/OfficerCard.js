@@ -6,12 +6,12 @@ import styles from '../styles/components/OfficerCard.module.scss';
 function Officer({
   name,
   pronouns,
-  position,
+  role,
   /* eslint-disable-next-line no-unused-vars */
   committee, // no officer card formats use committee yet
   major,
   year,
-  img,
+  photo,
   alt,
   bio,
   size,
@@ -21,7 +21,7 @@ function Officer({
     return (
       <div className={styles['mb-2']}>
         <div className={styles['jedi-profile-img']}>
-          <Image src={img} alt={alt} width={250} height={250}/>
+          <Image src={photo} alt={alt} width={250} height={250}/>
         </div>
         <div className={styles['jedi-card-body']}>
           <h2 className={styles['jedi-title']}>
@@ -37,7 +37,7 @@ function Officer({
         <div className={styles['officer-grid-col']}>
           <Image
             className={styles['officer-image']}
-            src={img}
+            src={photo}
             alt={alt}
             width={70}
             height={70}
@@ -45,7 +45,7 @@ function Officer({
         </div>
         <div className={`${styles['officer-grid-col']} ${styles['officer-info']}`}>
           <h3 className={styles['officer-title']}>{name}</h3>
-          <p>{position}</p>
+          <p>{role}</p>
         </div>
       </div>
     );
@@ -56,13 +56,13 @@ function Officer({
       >
         <div className={styles['officer-image-container']}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={img} alt={alt} style={{ maxWidth: '100%' }} />
+          <img src={photo} alt={alt} style={{ maxWidth: '100%' }} />
         </div>
         <div>
           <h3 className={styles.name}>{name}</h3>
           <h4 className={styles.pronouns}>{pronouns}</h4>
           <ul className="list-unstyled">
-            <li>{position}</li>
+            <li>{role}</li>
             <li>{major}</li>
             <li>Class of {year}</li>
           </ul>
