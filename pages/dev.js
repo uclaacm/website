@@ -38,7 +38,7 @@ function DevTeam() {
 					</Link>&nbsp;with the Dev Team!
 				</p>
 				<h2 className="text-center">Our Projects</h2>
-				<div className="grid-desktop-3 text-center-mobile">
+				<div className={styles['grid-container'] + " text-center-mobile"}>
 					<Projects projects={projdata} />
 				</div>
 				<h2 className="text-center">Our Commitment to Open Source</h2>

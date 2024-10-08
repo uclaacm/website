@@ -139,7 +139,7 @@ export const people = [
 export const projdata = [
   {
     name: 'ACM at UCLA Website',
-    prim_lang: 'Javascript',
+    prim_lang: 'JS',
     proj_link: 'https://www.uclaacm.com',
     repo_link: 'https://github.com/uclaacm/website',
     description: `The ACM at UCLA Website is the one-stop shop for all things ACM! We develop 
@@ -149,7 +149,7 @@ export const projdata = [
   },
   {
     name: 'Membership Portal',
-    prim_lang: 'Javascript',
+    prim_lang: 'JS',
     proj_link: 'https://members.uclaacm.com/login',
     repo_link: 'https://github.com/uclaacm/membership-portal',
     description: `The Membership Portal is where ACM members can check in to events to earn 
@@ -157,8 +157,17 @@ export const projdata = [
     img: '/images/dev-projects/acmlogocopy.jpg',
     alt: 'Membership Portal!',
   },{
+    name: 'Open Source',
+    prim_lang: 'JS',
+    proj_link: 'https://opensource.uclaacm.com/',
+    repo_link: 'https://github.com/uclaacm',
+    description: `Everything we build is open source! In the spirit of open-source, anyone is welcome 
+    to view and contribute to our projects on Github.`,
+    img: '/images/dev-projects/opensource.png',
+    alt: 'Open Source!',
+  },{
     name: 'Discord Bot',
-    prim_lang: 'Javascript',
+    prim_lang: 'JS',
     proj_link: 'https://discord.gg/eWmzKsY',
     repo_link: 'https://github.com/uclaacm/ACM-at-UCLA-Discord-Bot',
     description: `The Discord bot is our in-house email verification bot for the ACM at UCLA 
@@ -173,7 +182,7 @@ export const projdata = [
     description: `The link shortener is an ongoing project aimed at generating shortened links
      for use by our committees. The link shortener is built with Flask.`,
     img: '/images/dev-projects/acmlogocopy.jpg',
-    alt: 'ACM Website!',
+    alt: 'ACM Logo!',
   },{
     name: '???',
     prim_lang: 'Any',
@@ -182,6 +191,6 @@ export const projdata = [
     description: `Have an idea for a project or any questions? Feel free to contact Arsh Malik 
     (arshmalik02@g.ucla.edu), our Dev Team Director.`,
     img: '/images/dev-projects/acmlogocopy.jpg',
-    alt: 'ACM Website!',
+    alt: 'ACM Logo!',
   },
 ];

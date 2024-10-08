@@ -67,14 +67,15 @@ function Project({
         </div>
         <div className={styles['card-hover-content']}>
           <div>
-          <div>
-          <span className={`${styles['dev-badge']} ${styles[prim_lang]}`}></span>
-            {/* TODO: Try dev-badge lang-{prim_lang} */}
+            <p classname={`${styles['mobile-header']}`}>&nbsp;</p>
+            <span className={`${styles['dev-badge']} ${styles[prim_lang]}`}></span>
+              {/* TODO: Try dev-badge lang-{prim_lang} */}
             &nbsp;{prim_lang}
-            &nbsp;•&nbsp;<a href={proj_link} target="_blank" rel="">Proj</a>&nbsp;•&nbsp;
-              <a href={repo_link} target="_blank" rel="">Repo</a> 
-              <p>{description}</p>
-            </div>
+            &nbsp;•&nbsp;<a href={proj_link} target="_blank" rel=""><u>Proj</u></a>&nbsp;•&nbsp;
+              <a href={repo_link} target="_blank" rel=""><u>Repo</u></a> 
+          </div>
+          <div className={styles['description-box']}>
+            <p>{description}</p>
           </div>
         </div>
       </div>
