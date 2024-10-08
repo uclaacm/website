@@ -6,8 +6,9 @@ import React from 'react';
 import Banner from '../components/Banner';
 import Layout from '../components/Layout';
 import Officers from '../components/OfficerCard';
+// import Officers from '../components/Officers/OfficerCard';
 import SocialMedia from '../components/SocialMedia';
-import data from '../data';
+import data from '../offoutput.json';
 
 import acmCommittees from '../public/images/acm_committees.png';
 import boardcollage from '../public/images/boardcollage.png';
@@ -15,8 +16,22 @@ import acmHowToJoin from '../public/images/how-to-join.png';
 import initiative from '../public/images/initiative.png';
 import styles from '../styles/pages/About.module.scss';
 
+
+function extractContent(officerContent) {
+  const convertedData = officerContent.map(officer => ({
+    name: officer.name,
+    pronouns: officer.pronouns,
+    position: (officer.role === officer.committee ? officer.role : officer.role + ', ' + officer.committee),
+    committee: officer.committee,
+    major: officer.major,
+    year: officer.year,
+    img: officer.photo,
+  })).filter(officer => officer.position.includes('President'));
+  return convertedData;
+}
+
 function About() {
-  const { leadership } = data;
+  const filteredOfficers = extractContent(data);
   return (
     <Layout>
       <NextSeo
@@ -192,7 +207,7 @@ function About() {
           <p>Our President and Internal/External Vice Presidents support the entire ACM community
           while our committee presidents foster the growth of their committee.</p>
 					<div className="grid-desktop-3">
-						<Officers officers={leadership} size="compact" />
+						<Officers officers={filteredOfficers} size="compact" />
 					</div>
         </div>
       </div>
