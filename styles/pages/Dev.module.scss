@@ -13,3 +13,19 @@
 #first-project {
   margin-top: 0;
 }
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+$navbar-breakpoint: 992px;
+$tablet-breakpoint: 768px;
+
+@media (max-width: $navbar-breakpoint) {
+  .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+  }
+}
