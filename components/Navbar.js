@@ -18,7 +18,7 @@ export default function Navbar() {
           <a id="nav-title" className="nav-section left" aria-label="acm home">
             {/* TODO: resolve next/image issue */}
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={'/images/acm_wordmark_chapter.svg'} id="acm-logo" alt="ACM at UCLA" />
+            <img src={'/images/acm_wordmark_chapter.svg'} class="acm-logo" alt="ACM at UCLA" />
           </a>
         </Link>
         <section id="nav-items-container">
