@@ -21,7 +21,7 @@ const devTeamAdvisor = {
 	name: 'Arsh Malik',
 	pronouns: 'he/him/his',
 	year: '2025', major: 'Computer Science',
-	photo: 'https://drive.google.com/thumbnail?id=1LWWf0NdOuVjWsxPkXG7e7ki135KfCAq7',
+	photo: 'https://drive.google.com/thumbnail?id=1d1wYxOHHS5hGzC4xOU9_39sUFb1xxSv7',
 };
 
 function DevTeam() {

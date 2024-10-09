@@ -137,6 +137,9 @@
   display: flex;
   margin: 0 auto;
   max-width: 300px;
+  object-fit: cover;
+  width: 100%;
+  aspect-ratio: 1 / 1;
 }
 
 .project-grid-row {

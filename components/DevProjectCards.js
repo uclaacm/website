@@ -67,7 +67,7 @@ function Project({
         </div>
         <div className={styles['card-hover-content']}>
           <div>
-            <p classname={`${styles['mobile-header']}`}>&nbsp;</p>
+            <p className={`${styles['mobile-header']}`}>&nbsp;</p>
             <span className={`${styles['dev-badge']} ${styles[prim_lang]}`}></span>
               {/* TODO: Try dev-badge lang-{prim_lang} */}
             &nbsp;{prim_lang}

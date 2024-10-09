@@ -146,15 +146,14 @@ export const projdata = [
     and maintain this website, keeping it up-to-date with all the latest news and events. `,
     img: '/images/dev-projects/acmwebsite.png',
     alt: 'ACM Website!',
-  },
-  {
+  },{
     name: 'Membership Portal',
     prim_lang: 'JS',
     proj_link: 'https://members.uclaacm.com/login',
     repo_link: 'https://github.com/uclaacm/membership-portal',
     description: `The Membership Portal is where ACM members can check in to events to earn 
     points! We built the Membership Portal with Node.js, Express.js, PostgreSQL, Redux and React.js.`,
-    img: '/images/dev-projects/acmlogocopy.jpg',
+    img: '/images/dev-projects/membership.png',
     alt: 'Membership Portal!',
   },{
     name: 'Open Source',
@@ -165,6 +164,14 @@ export const projdata = [
     to view and contribute to our projects on Github.`,
     img: '/images/dev-projects/opensource.png',
     alt: 'Open Source!',
+  },{
+    name: 'CMS Template',
+    prim_lang: 'JS',
+    proj_link: 'https://github.com/uclaacm/committee-website-template-cms',
+    repo_link: 'https://github.com/uclaacm/committee-website-template-cms',
+    description: `This Committee Website template enables any ACM Committee to put up their website in minutes!`,
+    img: '/images/dev-projects/acmlogocopy.jpg',
+    alt: 'Committee Website Template!',
   },{
     name: 'Discord Bot',
     prim_lang: 'JS',
