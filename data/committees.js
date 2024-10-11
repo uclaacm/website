@@ -585,10 +585,10 @@ export default [
 			whatWeDo:
 				'ACM Cloud is committed to providing resources to build a strong intuition of the architectural foundations of the modern cloud environment through project-based, hands-on experience. ACM Cloud supports the UCLA community through three core pillars: Cloud Training Workshops, Research Projects, and Consulting Projects.',
 			whatInternsWillDo:
-				'Interns will work assist in organizing events and workshops based on personal interests each quarter.',
+				(<>ACM Cloud is currently not taking any interns. If you are interested in joining or becoming an active member in ACM Cloud, please check out {<a href='https://docs.google.com/forms/d/e/1FAIpQLSeeZzJ8dm_jqOj41DFRxMxTr1u7hVo7OEOPY_T1c2vggeZEjA/viewform'>here</a>}.</>),
 			card: '/images/cards/cloud_card.svg',  // TODO
 			nextSteps:
-				'All Interns have the opportunity to become officers in the Spring if they choose to stay.',
+				'Any members interested in joining Cloud can fill out our membership application which can be found at the top of the ACM internship application.',
 		},
 	},
 	{
