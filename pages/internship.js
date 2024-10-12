@@ -47,7 +47,7 @@ function InternshipPage(){
             <div className={'content-section text-center'}>
                 <h1>ACM Internship Program</h1>
                 {/* eslint-disable-next-line max-len */}
-                <h2>Applications for the ACM Internship Program are now open! <a href='https://airtable.com/appYKWBNnE32Yr5O2/pagwbCYOy7f6MsRYf/form'>Apply here</a></h2>
+                <h2>Applications for the ACM Internship Program are now open! <a href='https://tinyurl.com/acminternapp24'>Apply here</a></h2>
                 <br></br>
                 <p className={styles['internship-intro']}>The ACM Internship program is a program that facilitates the transition of UCLA students to ACM officers. Interns learn about the ACM committee they are interning for and ACM in general before becoming an official ACM officer.</p>
 
