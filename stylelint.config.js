@@ -6,7 +6,7 @@ module.exports = {
     plugins: [
       'stylelint-scss',
     ],
-    ignoreFiles: ['dist/*', 'node_modules/*'],
+    ignoreFiles: ['dist/*', 'node_modules/*', 'build/**/*'],
     rules: {
       'color-named': null,
       'selector-max-id': null,
