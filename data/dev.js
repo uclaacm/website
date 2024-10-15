@@ -169,7 +169,7 @@ export const projdata = [
     prim_lang: 'JS',
     proj_link: 'https://github.com/uclaacm/committee-website-template-cms',
     repo_link: 'https://github.com/uclaacm/committee-website-template-cms',
-    description: `This Committee Website template enables any ACM Committee to put up their website in minutes!`,
+    description: 'This Committee Website template enables any ACM Committee to put up their website in minutes!',
     img: '/images/dev-projects/acmlogocopy.jpg',
     alt: 'Committee Website Template!',
   },{

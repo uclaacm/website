@@ -7,7 +7,7 @@ function Project({
   name,
   prim_lang,
   proj_link,
-  repo_link, 
+  repo_link,
   description,
   img,
   alt,
@@ -55,12 +55,12 @@ function Project({
       </div>
     );
   } else {
-    return ( 
+    return (
       <div
         className={`${styles['project-card']} ${styles['grid-tablet-only-2']}`}
       >
         <div className={styles['project-image-container']}>
-          <img src={img} alt={alt} style={{ maxWidth: '100%' }} />
+          <img src={img} alt={alt} style={{ maxWidth: '100%' }}/>
         </div>
         <div>
           <h3 className={styles.name}>{name}</h3>
@@ -71,8 +71,8 @@ function Project({
             <span className={`${styles['dev-badge']} ${styles[prim_lang]}`}></span>
               {/* TODO: Try dev-badge lang-{prim_lang} */}
             &nbsp;{prim_lang}
-            &nbsp;•&nbsp;<a href={proj_link} target="_blank" rel=""><u>Proj</u></a>&nbsp;•&nbsp;
-              <a href={repo_link} target="_blank" rel=""><u>Repo</u></a> 
+            &nbsp;•&nbsp;<a href={proj_link} target="_blank" rel="noopener noreferrer"><u>Proj</u></a>&nbsp;•&nbsp;
+              <a href={repo_link} target="_blank" rel="noopener noreferrer"><u>Repo</u></a>
           </div>
           <div className={styles['description-box']}>
             <p>{description}</p>
