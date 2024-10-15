@@ -21,7 +21,7 @@ async function getGoogleSheetData(range) {
     service_account.client_email,
     null, // or undefined, or an empty string (depends on your use case)
     service_account.private_key,
-    ['https://www.googleapis.com/auth/spreadsheets']
+    ['https://www.googleapis.com/auth/spreadsheets'],
   );
 
   // Authorize the client

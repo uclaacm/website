@@ -12,6 +12,7 @@ import pastData from '../past-townhall.json';
 import TestimonialsCourseChanges from '../public/images/town-hall/testimonials-course-changes.png';
 import data from '../townhall.json';
 
+// NOT FETCHED FROM GOOGLE SHEETS (STATIC DATA)
 const TOWN_HALL_2021_WINTER_VIDEO = 'https://www.youtube.com/embed/Eq2xsShPMVc';
 
 const inlineButtonListStyle = {
@@ -113,7 +114,7 @@ function TownHall() {
       <NextSeo
         title={townHall.title + ' | ACM at UCLA'}
         description={townHall.description}
-        openGraph={townHall.status ? {
+        openGraph={(townHall.status && townHall.image) ? {
           images: [
             {
               url: townHall.image,
@@ -123,13 +124,13 @@ function TownHall() {
             },
           ],
           site_name: 'ACM at UCLA',
-        } : undefined}
+        } : {}}
       />
       {/* Most Recent Town Hall*/}
       <Banner decorative />
       <div className="content-container-tight">
         <div className="text-center">
-          {townHall.status ?
+          {(townHall.status && townHall.image) ?
             <Image
               src={townHall.image}
               alt={townHall.alt_text}
@@ -176,16 +177,29 @@ function TownHall() {
         </p>
         <ul className="list-unstyled text-center">
           <li style={inlineButtonListStyle}>
-            <Link href={townHall.rsvp}>
-              <a className="button" target = "_blank">
-                <FontAwesomeIcon
-                  icon={faFileAlt}
-                  fixedWidth
-                  aria-hidden={true}
-                />{' '}
-                RSVP Here!
-              </a>
-            </Link>
+            { townHall.rsvp ?
+              <Link href={townHall.rsvp}>
+                <a className="button" target = "_blank">
+                  <FontAwesomeIcon
+                    icon={faFileAlt}
+                    fixedWidth
+                    aria-hidden={true}
+                  />{' '}
+                  RSVP Here!
+                </a>
+              </Link>
+            :
+              <div>
+                <a className="button" target = "_blank">
+                  <FontAwesomeIcon
+                    icon={faFileAlt}
+                    fixedWidth
+                    aria-hidden={true}
+                  />{' '}
+                  RSVP Coming Soon!
+                </a>
+              </div>
+            }
           </li>
         </ul>
         <hr />
@@ -209,7 +223,8 @@ function TownHall() {
               event.
             </p>
             <li style={inlineButtonListStyle}>
-              <Link href={townHall.survey}>
+              {townHall.survey ?
+                <Link href={townHall.survey}>
                 <a className="button" target="_blank" rel="noopener noreferrer">
                   <FontAwesomeIcon
                     icon={faFileAlt}
@@ -218,7 +233,19 @@ function TownHall() {
                   />{' '}
                   CS Town Hall Survey
                 </a>
-              </Link>
+                </Link>
+              :
+                <div>
+                <a className="button" target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon
+                    icon={faFileAlt}
+                    fixedWidth
+                    aria-hidden={true}
+                  />{' '}
+                  Stay Tuned for the Survey!
+                </a>
+                </div>
+              }
             </li>
           </div>
           <div>
