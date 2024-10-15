@@ -85,6 +85,8 @@
   width: 0.8em;
 }
 
+/* stylelint-disable selector-class-pattern */
+
 .JS {
   background-color: #EFDF6A;
 }
@@ -100,6 +102,8 @@
 .HTML {
   background-color: #D35A31;
 }
+/* stylelint-enable selector-class-pattern */
+
 
 .mobile-header {
   margin: 0;
