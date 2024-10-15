@@ -25,7 +25,7 @@ $tablet-breakpoint: 768px;
 
 @media (max-width: $navbar-breakpoint) {
   .grid-container {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
