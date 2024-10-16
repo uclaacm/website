@@ -7,7 +7,7 @@ import Projects from '../components/DevProjectCards';
 import Banner from '../components/Banner';
 import Layout from '../components/Layout';
 
-import {projdata} from '../data/dev';
+import {projects} from '../data/dev';
 import data from '../offoutput.json';
 import styles from '../styles/pages/Dev.module.scss';
 
@@ -48,7 +48,7 @@ function DevTeam() {
 				</p>
 				<h2 className='text-center'>Our Projects</h2>
 				<div className='grid-desktop-3 text-center-mobile'>
-					<Projects projects={projdata} />
+					<Projects projects={projects} />
 				</div>
 				<h2 className='text-center'>Our Commitment to Open Source</h2>
 				<p className={styles['project-info']}>

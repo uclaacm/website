@@ -136,7 +136,7 @@ export const people = [
   },
 ];
 
-export const projdata = [
+export const projects = [
   {
     name: 'ACM at UCLA Website',
     prim_lang: 'JS',
