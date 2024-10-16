@@ -159,7 +159,7 @@ export const projects = [
     name: 'Open Source',
     prim_lang: 'JS',
     proj_link: 'https://opensource.uclaacm.com/',
-    repo_link: 'https://github.com/uclaacm',
+    repo_link: 'https://github.com/uclaacm/opensource',
     description: `Everything we build is open source! In the spirit of open-source, anyone is welcome 
     to view and contribute to our projects on Github.`,
     img: '/images/dev-projects/opensource.png',
@@ -170,7 +170,7 @@ export const projects = [
     proj_link: 'https://github.com/uclaacm/committee-website-template-cms',
     repo_link: 'https://github.com/uclaacm/committee-website-template-cms',
     description: 'This Committee Website template enables any ACM Committee to put up their website in minutes!',
-    img: '/images/dev-projects/acmlogocopy.jpg',
+    img: '/images/dev-projects/cmsproject.png',
     alt: 'Committee Website Template!',
   },{
     name: 'Discord Bot',
