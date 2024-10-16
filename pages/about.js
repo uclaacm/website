@@ -169,7 +169,7 @@ function About() {
               </a>
               , and&nbsp;
               <a
-                href="http://eepurl.com/c5pE6P"
+                href="http://eepurl.com/hdEvNP"
                 target="_blank"
                 rel="noreferrer noopener"
               >
