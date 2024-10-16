@@ -135,3 +135,69 @@ export const people = [
     alt: 'acm logo',
   },
 ];
+
+export const projects = [
+  {
+    name: 'ACM at UCLA Website',
+    prim_lang: 'JS',
+    proj_link: 'https://www.uclaacm.com',
+    repo_link: 'https://github.com/uclaacm/website',
+    description: `The ACM at UCLA Website is the one-stop shop for all things ACM! We develop 
+    and maintain this website, keeping it up-to-date with all the latest news and events. `,
+    img: '/images/dev-projects/acmwebsite.png',
+    alt: 'ACM Website!',
+  },{
+    name: 'Membership Portal',
+    prim_lang: 'JS',
+    proj_link: 'https://members.uclaacm.com/login',
+    repo_link: 'https://github.com/uclaacm/membership-portal',
+    description: `The Membership Portal is where ACM members can check in to events to earn 
+    points! We built the Membership Portal with Node.js, Express.js, PostgreSQL, Redux and React.js.`,
+    img: '/images/dev-projects/membership.png',
+    alt: 'Membership Portal!',
+  },{
+    name: 'Open Source',
+    prim_lang: 'JS',
+    proj_link: 'https://opensource.uclaacm.com/',
+    repo_link: 'https://github.com/uclaacm/opensource',
+    description: `Everything we build is open source! In the spirit of open-source, anyone is welcome 
+    to view and contribute to our projects on Github.`,
+    img: '/images/dev-projects/opensource.png',
+    alt: 'Open Source!',
+  },{
+    name: 'CMS Template',
+    prim_lang: 'JS',
+    proj_link: 'https://github.com/uclaacm/committee-website-template-cms',
+    repo_link: 'https://github.com/uclaacm/committee-website-template-cms',
+    description: 'This Committee Website template enables any ACM Committee to put up their website in minutes!',
+    img: '/images/dev-projects/cmsproject.png',
+    alt: 'Committee Website Template!',
+  },{
+    name: 'Discord Bot',
+    prim_lang: 'JS',
+    proj_link: 'https://discord.gg/eWmzKsY',
+    repo_link: 'https://github.com/uclaacm/ACM-at-UCLA-Discord-Bot',
+    description: `The Discord bot is our in-house email verification bot for the ACM at UCLA 
+    Discord server! It's written in JavaScript using the Discord API and Amazon SES.`,
+    img: '/images/dev-projects/acmdiscord.png',
+    alt: 'Discord Bot!',
+  },{
+    name: 'Link Shortener',
+    prim_lang: 'Flask',
+    proj_link: 'http://links.uclaacm.com/',
+    repo_link: '',
+    description: `The link shortener is an ongoing project aimed at generating shortened links
+     for use by our committees. The link shortener is built with Flask.`,
+    img: '/images/dev-projects/acmlogocopy.jpg',
+    alt: 'ACM Logo!',
+  },{
+    name: '???',
+    prim_lang: 'Any',
+    proj_link: 'mailto:arshmalik02@g.ucla.edu',
+    repo_link: 'mailto:arshmalik02@g.ucla.edu',
+    description: `Have an idea for a project or any questions? Feel free to contact Arsh Malik 
+    (arshmalik02@g.ucla.edu), our Dev Team Director.`,
+    img: '/images/dev-projects/acmlogocopy.jpg',
+    alt: 'ACM Logo!',
+  },
+];
