@@ -151,7 +151,7 @@ export default [
 		class: 'design',
 		slug: 'design',
 		tagline: 'Form Follows Function',
-		external_link: 'https://design.uclaacm.com/',
+		external_link: null,
 		links: [
 			{
 				platform: 'website',
