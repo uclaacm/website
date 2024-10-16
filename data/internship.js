@@ -85,7 +85,7 @@ export default {
         },
         {
             title: 'How many committees can I apply for?',
-            content: 'You can apply to be an intern for up to 2 committees, but you may only be an intern for one of those committees.',
+            content: 'You can apply to be an intern for up to 3 committees, but you may only be an intern for one of those committees.',
         },
         {
             title: 'When we apply to be an intern for a committee, do we apply to a specific intern position or just the committee as a whole?',
