@@ -14,6 +14,10 @@ export default [
 		diamond: '/images/diamonds/studio_diamond.svg',
 		links: [
 			{
+				platform: 'website',
+				link: 'https://studio.uclaacm.com/',
+			},
+			{
 				platform: 'carrd',
 				link: 'https://acmstudio.carrd.co/',
 			},
@@ -153,10 +157,10 @@ export default [
 		tagline: 'Form Follows Function',
 		external_link: null,
 		links: [
-			{
-				platform: 'website',
-				link: 'https://design.uclaacm.com/',
-			},
+			// {
+			// 	platform: 'website',
+			// 	link: 'https://design.uclaacm.com/',
+			// },
 			{
 				platform: 'facebook',
 				link: 'https://www.facebook.com/groups/acmdesign',
@@ -410,12 +414,12 @@ export default [
 		class: 'ai',
 		slug: 'ai',
 		tagline: 'Learning Machine Learning',
-		external_link: 'https://ai.uclaacm.com/',
+		external_link: null,
 		links: [
-			{
-				platform: 'website',
-				link: 'https://ai.uclaacm.com/',
-			},
+			// {
+			// 	platform: 'website',
+			// 	link: null,
+			// },
 			{
 				platform: 'facebook',
 				link: 'https://www.facebook.com/groups/uclaacmai',
@@ -489,6 +493,10 @@ export default [
 		tagline: 'Building the Future in the Clouds',
 		external_link: 'https://cloud.uclaacm.com/',
 		links: [
+			{
+				platform: 'website',
+				link: 'https://cloud.uclaacm.com/',
+			},
 			{
 				platform: 'instagram',
 				link: 'https://www.instagram.com/acmcloud/',
