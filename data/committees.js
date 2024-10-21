@@ -8,11 +8,15 @@ export default [
 		class: 'studio',
 		slug: 'studio',
 		tagline: 'Creative Expression through Games',
-		external_link: null,
+		external_link: 'https://studio.uclaacm.com/',
 		image: '/images/committees/studio_wordmark.svg',
 		wordmark_dark: '/images/committees/studio_wordmark_dark.svg',
 		diamond: '/images/diamonds/studio_diamond.svg',
 		links: [
+			{
+				platform: 'website',
+				link: 'https://studio.uclaacm.com/',
+			},
 			{
 				platform: 'carrd',
 				link: 'https://acmstudio.carrd.co/',
@@ -153,10 +157,10 @@ export default [
 		tagline: 'Form Follows Function',
 		external_link: null,
 		links: [
-			{
-				platform: 'website',
-				link: 'https://design.uclaacm.com/',
-			},
+			// {
+			// 	platform: 'website',
+			// 	link: 'https://design.uclaacm.com/',
+			// },
 			{
 				platform: 'facebook',
 				link: 'https://www.facebook.com/groups/acmdesign',
@@ -351,7 +355,7 @@ export default [
 		class: 'w',
 		slug: 'w',
 		tagline: 'Starting Conversations about Diversity in Tech',
-		external_link: null,
+		external_link: 'https://w.uclaacm.com',
 		links: [
 			{
 				platform: 'website',
@@ -410,12 +414,12 @@ export default [
 		class: 'ai',
 		slug: 'ai',
 		tagline: 'Learning Machine Learning',
-		external_link: 'https://uclaacmai.github.io/',
+		external_link: null,
 		links: [
-			{
-				platform: 'website',
-				link: 'https://uclaacmai.github.io/',
-			},
+			// {
+			// 	platform: 'website',
+			// 	link: null,
+			// },
 			{
 				platform: 'facebook',
 				link: 'https://www.facebook.com/groups/uclaacmai',
@@ -487,8 +491,12 @@ export default [
 		class: 'cloud',
 		slug: 'cloud',
 		tagline: 'Building the Future in the Clouds',
-		external_link: null,
+		external_link: 'https://cloud.uclaacm.com/',
 		links: [
+			{
+				platform: 'website',
+				link: 'https://cloud.uclaacm.com/',
+			},
 			{
 				platform: 'instagram',
 				link: 'https://www.instagram.com/acmcloud/',
