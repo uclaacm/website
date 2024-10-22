@@ -2,10 +2,10 @@ import { NextSeo } from 'next-seo';
 import Link from 'next/link';
 import React from 'react';
 
-import Officers from '../components/OfficerCard';
-import Projects from '../components/DevProjectCards';
 import Banner from '../components/Banner';
+import Projects from '../components/DevProjectCards';
 import Layout from '../components/Layout';
+import Officers from '../components/OfficerCard';
 
 import {projects} from '../data/dev';
 import data from '../offoutput.json';

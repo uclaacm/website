@@ -44,9 +44,9 @@ function Project({
             <h3 className={styles['project-title']}>{name}</h3>
           </div>
         </div>
-        <div className={styles['card-`hover-content']}>
+        <div className={styles['card-hover-content']}>
           <div>
-            <p>{description}</p>
+            <p dangerouslySetInnerHTML={{ __html: description }}/>
             <p>{prim_lang}</p>
             <a href={repo_link} target="_blank" rel="noopener noreferrer">View Repository<br></br></a>
             <a href={proj_link} target="_blank" rel="noopener noreferrer">View Project</a>
@@ -66,7 +66,7 @@ function Project({
           <h3 className={styles.name}>{name}</h3>
         </div>
         <div className={styles['card-hover-content']}>
-          <div>
+          <div className={styles['description-header']}>
             <p className={`${styles['mobile-header']}`}>&nbsp;</p>
             <span className={`${styles['dev-badge']} ${styles[prim_lang]}`}></span>
               {/* TODO: Try dev-badge lang-{prim_lang} */}
@@ -75,7 +75,7 @@ function Project({
               <a href={repo_link} target="_blank" rel="noopener noreferrer"><u>Repo</u></a>
           </div>
           <div className={styles['description-box']}>
-            <p>{description}</p>
+            <p dangerouslySetInnerHTML={{ __html: description }}/>
           </div>
         </div>
       </div>

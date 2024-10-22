@@ -1,3 +1,4 @@
+// Note: people array is now depreciated, board members is parsed from ggl sheets using officerparser.mjs
 export const people = [
   {
     name: 'Arsh Malik',
@@ -160,8 +161,10 @@ export const projects = [
     prim_lang: 'JS',
     proj_link: 'https://opensource.uclaacm.com/',
     repo_link: 'https://github.com/uclaacm/opensource',
-    description: `Everything we build is open source! In the spirit of open-source, anyone is welcome 
-    to view and contribute to our projects on Github.`,
+    description: `Open Source highlights all open source projects managed by 
+    <a href="https://github.com/uclaacm">ACM at UCLA</a>, and an activity feed showing
+     recent contributions. Anyone is welcome to contribute - an open invitation to get 
+     involved and make an impact!`,
     img: '/images/dev-projects/opensource.png',
     alt: 'Open Source!',
   },{
@@ -169,7 +172,9 @@ export const projects = [
     prim_lang: 'JS',
     proj_link: 'https://github.com/uclaacm/committee-website-template-cms',
     repo_link: 'https://github.com/uclaacm/committee-website-template-cms',
-    description: 'This Committee Website template enables any ACM Committee to put up their website in minutes!',
+    description: `This Committee Website template is a no-code solution that empowers any ACM 
+    committee to build and deploy their website in minutes! It's actively in use by multiple
+    committees as it saves time and ensures consistency across sites.`,
     img: '/images/dev-projects/cmsproject.png',
     alt: 'Committee Website Template!',
   },{
@@ -195,8 +200,8 @@ export const projects = [
     prim_lang: 'Any',
     proj_link: 'mailto:arshmalik02@g.ucla.edu',
     repo_link: 'mailto:arshmalik02@g.ucla.edu',
-    description: `Have an idea for a project or any questions? Feel free to contact Arsh Malik 
-    (arshmalik02@g.ucla.edu), our Dev Team Director.`,
+    description: `Have an idea for a project or any questions?<br><br>Feel free to contact Arsh Malik 
+    (<a href="mailto:arshmalik02@g.ucla.edu">Email</a>), our Dev Team Advisor.`,
     img: '/images/dev-projects/acmlogocopy.jpg',
     alt: 'ACM Logo!',
   },
