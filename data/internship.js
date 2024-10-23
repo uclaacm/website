@@ -18,7 +18,7 @@ export default {
             active: true,
         },
         {
-            date: '10/22',
+            date: '10/25',
             name: 'Applications Due',
             info: 'Submit your application by 11:59 pm',
             active: true,
