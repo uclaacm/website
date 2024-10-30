@@ -28,6 +28,7 @@ function Officer({
                 alt={alt}
                 width={130}
                 height={130}
+                objectFit="cover" // Crop to fit the aspect ratio
                 unoptimized={true}
               />
             </div>
