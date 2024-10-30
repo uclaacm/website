@@ -48,8 +48,12 @@ function Project({
           <div>
             <p dangerouslySetInnerHTML={{ __html: description }}/>
             <p>{prim_lang}</p>
-            <a href={repo_link} target="_blank" rel="noopener noreferrer">View Repository<br></br></a>
-            <a href={proj_link} target="_blank" rel="noopener noreferrer">View Project</a>
+            { name !== '???' && (
+              <>
+              <a href={repo_link} target="_blank" rel="noopener noreferrer">View Repository<br></br></a>
+              <a href={proj_link} target="_blank" rel="noopener noreferrer">View Project</a>
+              </>
+            )}
           </div>
         </div>
       </div>
@@ -71,8 +75,14 @@ function Project({
             <span className={`${styles['dev-badge']} ${styles[prim_lang]}`}></span>
               {/* TODO: Try dev-badge lang-{prim_lang} */}
             &nbsp;{prim_lang}
-            &nbsp;•&nbsp;<a href={proj_link} target="_blank" rel="noopener noreferrer"><u>Proj</u></a>&nbsp;•&nbsp;
-              <a href={repo_link} target="_blank" rel="noopener noreferrer"><u>Repo</u></a>
+            { name !== '???' && (
+              <>
+                &nbsp;•&nbsp;
+                <a href={proj_link} target="_blank" rel="noopener noreferrer"><u>Proj</u></a>
+                &nbsp;•&nbsp;
+                <a href={repo_link} target="_blank" rel="noopener noreferrer"><u>Repo</u></a>
+              </>
+            )}
           </div>
           <div className={styles['description-box']}>
             <p dangerouslySetInnerHTML={{ __html: description }}/>

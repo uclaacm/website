@@ -187,21 +187,12 @@ export const projects = [
     img: '/images/dev-projects/acmdiscord.png',
     alt: 'Discord Bot!',
   },{
-    name: 'Link Shortener',
-    prim_lang: 'Flask',
-    proj_link: 'http://links.uclaacm.com/',
-    repo_link: '',
-    description: `The link shortener is an ongoing project aimed at generating shortened links
-     for use by our committees. The link shortener is built with Flask.`,
-    img: '/images/dev-projects/acmlogocopy.jpg',
-    alt: 'ACM Logo!',
-  },{
     name: '???',
-    prim_lang: 'Any',
-    proj_link: 'mailto:arshmalik02@g.ucla.edu',
-    repo_link: 'mailto:arshmalik02@g.ucla.edu',
-    description: `Have an idea for a project or any questions?<br><br>Feel free to contact Arsh Malik 
-    (<a href="mailto:arshmalik02@g.ucla.edu">Email</a>), our Dev Team Advisor.`,
+    prim_lang: '???',
+    proj_link: 'mailto:snigdha0206@g.ucla.edu',
+    repo_link: 'mailto:snigdha0206@g.ucla.edu',
+    description: `Have an idea for a project or any questions?<br><br>Feel free to contact Sngihda 
+    Kansal (<a href="mailto:snigdha0206@g.ucla.edu">Email</a>), our Dev Team Director.`,
     img: '/images/dev-projects/acmlogocopy.jpg',
     alt: 'ACM Logo!',
   },
