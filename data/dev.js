@@ -191,7 +191,7 @@ export const projects = [
     prim_lang: '???',
     proj_link: 'mailto:snigdha0206@g.ucla.edu',
     repo_link: 'mailto:snigdha0206@g.ucla.edu',
-    description: `Have an idea for a project or any questions?<br><br>Feel free to contact Sngihda 
+    description: `Have an idea for a project or any questions?<br><br>Feel free to contact Snigdha 
     Kansal (<a href="mailto:snigdha0206@g.ucla.edu">Email</a>), our Dev Team Director.`,
     img: '/images/dev-projects/acmlogocopy.jpg',
     alt: 'ACM Logo!',

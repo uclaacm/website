@@ -72,9 +72,14 @@ function Project({
         <div className={styles['card-hover-content']}>
           <div className={styles['description-header']}>
             <p className={`${styles['mobile-header']}`}>&nbsp;</p>
-            <span className={`${styles['dev-badge']} ${styles[prim_lang]}`}></span>
+            { name !== '???' && (
+              <>
+              <span className={`${styles['dev-badge']} ${styles[prim_lang]}`}></span>
+              &nbsp;
               {/* TODO: Try dev-badge lang-{prim_lang} */}
-            &nbsp;{prim_lang}
+              </>
+            )}
+            {prim_lang}
             { name !== '???' && (
               <>
                 &nbsp;•&nbsp;
