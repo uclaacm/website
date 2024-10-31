@@ -123,6 +123,10 @@
   text-decoration: none;
 }
 
+.map-container {
+  height: 400px;
+}
+
 .flex {
   display: flex;
 
@@ -138,6 +142,20 @@
   .what-to-bring {
     margin-left: 25px;
     text-align: left;
+  }
+}
+
+@media (max-width: 640px) {
+  .map-container {
+    height: 450px;
+    flex-direction: column;
+  }
+
+  .flex { 
+    .what-to-bring{
+      margin-left: 0;
+      margin-top: 15px;
+    }
   }
 }
 
