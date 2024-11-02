@@ -223,10 +223,10 @@ function gm() {
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13219.85897956824!2d-118.4441451!3d34.070418!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x62f97fe423993f80!2sUCLA%20Ackerman%20Union!5e0!3m2!1sen!2sin!4v1663063464157!5m2!1sen!2sin"
                 style={{ width: '100%', height: '100%'}}
-                allowFullScreen=""
-                loading="lazy"
-                title="google maps embed of ackerman grand ballroom"
-                referrerPolicy="no-referrer-when-downgrade"
+                allowFullScreen=''
+                loading='lazy'
+                title='google maps embed of ackerman grand ballroom'
+                referrerPolicy='no-referrer-when-downgrade'
               ></iframe>
             </div>
             <div className='what-to-bring'>
