@@ -123,8 +123,18 @@
   text-decoration: none;
 }
 
-.map-container {
+.rel-info {
   height: 400px;
+}
+
+.map-container {
+  flex-grow: 1;
+  width: 100%;
+}
+
+.map-frame {
+  height: 100%;
+  width: 100%;
 }
 
 .flex {
@@ -146,7 +156,7 @@
 }
 
 @media (max-width: 640px) {
-  .map-container {
+  .rel-info {
     flex-direction: column;
     height: 450px;
   }
