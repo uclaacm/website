@@ -11,59 +11,59 @@ import sandia from '../public/images/sponsors/sandia.png';
 import viasat from '../public/images/sponsors/viasat.png';
 
 export default [
-	{
-		name: 'Blizzard Entertainment',
-		image: blizzard,
-		link: 'https://www.blizzard.com/en-us/',
-	},
-	{
-		name: 'Citadel',
-		image: citadel,
-		link: 'https://www.citadel.com',
-	},
-	{
-		name: 'Deloitte',
-		image: deloitte,
-		link: 'https://www.deloitte.com',
-	},
-	{
-		name: 'Facebook',
-		image: facebook,
-		link: 'https://about.fb.com/',
-	},
-	{
-		name: 'Google',
-		image: google,
-		link: 'https://www.google.com/',
-	},
-	{
-		name: 'Green Hills Software',
-		image: ghs,
-		link: 'https://ghs.com/',
-	},
-	{
-		name: 'Human Capital',
-		image: humancapital,
-		link: 'https://human.capital/',
-	},
-	{
-		name: 'Northrop Grumman',
-		image: northrop,
-		link: 'https://www.northropgrumman.com/',
-	},
-	{
-		name: 'Samsung',
-		image: samsung,
-		link: 'https://www.samsung.com/us/',
-	},
-	{
-		name: 'Sandia National Laboratories',
-		image: sandia,
-		link: 'https://www.sandia.gov/',
-	},
-	{
-		name: 'Viasat',
-		image: viasat,
-		link: 'https://www.viasat.com/',
-	},
+  {
+    name: 'Blizzard Entertainment',
+    image: blizzard,
+    link: 'https://www.blizzard.com/en-us/',
+  },
+  {
+    name: 'Citadel',
+    image: citadel,
+    link: 'https://www.citadel.com',
+  },
+  {
+    name: 'Deloitte',
+    image: deloitte,
+    link: 'https://www.deloitte.com',
+  },
+  {
+    name: 'Facebook',
+    image: facebook,
+    link: 'https://about.fb.com/',
+  },
+  {
+    name: 'Google',
+    image: google,
+    link: 'https://www.google.com/',
+  },
+  {
+    name: 'Green Hills Software',
+    image: ghs,
+    link: 'https://ghs.com/',
+  },
+  {
+    name: 'Human Capital',
+    image: humancapital,
+    link: 'https://human.capital/',
+  },
+  {
+    name: 'Northrop Grumman',
+    image: northrop,
+    link: 'https://www.northropgrumman.com/',
+  },
+  {
+    name: 'Samsung',
+    image: samsung,
+    link: 'https://www.samsung.com/us/',
+  },
+  {
+    name: 'Sandia National Laboratories',
+    image: sandia,
+    link: 'https://www.sandia.gov/',
+  },
+  {
+    name: 'Viasat',
+    image: viasat,
+    link: 'https://www.viasat.com/',
+  },
 ];

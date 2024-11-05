@@ -45,7 +45,7 @@ const generateSingleEvent = ({
 
   if (!start && !end) {
     if (!date) {
-      throw new Error('Missing date; can\'t proceed');
+      throw new Error("Missing date; can't proceed");
     }
     // If rawStart or rawEnd is missing, set allDay to true
     if (!rawStart) {
@@ -65,10 +65,10 @@ const generateSingleEvent = ({
     }
   }
 
-  if(!links){
+  if (!links) {
     links = [];
   }
-  if(location.includes('ucla.zoom.us')) {
+  if (location.includes('ucla.zoom.us')) {
     const zoomLink = location;
     location = 'Zoom';
     links.push({
@@ -93,13 +93,15 @@ const generateSingleEvent = ({
       if (host === 'drive.google.com') {
         // Google drive urls need to be transformed
         // 'https://drive.google.com/uc?export=view&id=' + image id (id which follows /d in original link)
-        image = 'https://drive.google.com/uc?export=view&id=' + image.substring(image.indexOf("/d/") + 3, image.indexOf("/view"));
+        image =
+          'https://drive.google.com/uc?export=view&id=' +
+          image.substring(image.indexOf('/d/') + 3, image.indexOf('/view'));
       } else {
-          image = url.href;
+        image = url.href;
       }
     } catch (e) {
-      console.log("Warning: Invalid Image URL: " + e);
-      image = '/images/events/default-event.png'
+      console.log('Warning: Invalid Image URL: ' + e);
+      image = '/images/events/default-event.png';
     }
   } else {
     // Default image

@@ -48,7 +48,7 @@ $single-column-breakpoint: 500px;
 
 .application-button {
   text-align: center;
-  width: 100%;  
+  width: 100%;
 }
 
 .next-steps-grid {
@@ -64,7 +64,7 @@ $single-column-breakpoint: 500px;
 }
 
 .faq-question:hover {
-  background-color: #DDD,;
+  background-color: #DDD;
 }
 
 .faq {
@@ -82,9 +82,9 @@ $single-column-breakpoint: 500px;
 
     .faq-content {
       margin-top: 10px;
-    }  
+    }
   }
-}   
+}
 
 .faq-question::before {
   border-bottom: 2px solid $acm-cobalt;
@@ -110,17 +110,16 @@ $single-column-breakpoint: 500px;
   .next-steps-grid {
     grid-template-columns: 1fr 1fr;
   }
-
 }
 
 @media screen and (max-width: $single-column-breakpoint) {
   .testimonial-section {
     grid-template-columns: 1fr;
-  }  
+  }
 
   .application-information {
     grid-template-columns: 1fr;
-  }  
+  }
 
   .application-info-card {
     margin-bottom: 50px;

@@ -36,41 +36,113 @@
     width: 50px;
   }
 
-  .square.dark { background-color: $acm-black; }
-  .square.light { background-color: $acm-tint; }
-  .square.white { background-color: white !important; }
+  .square.dark {
+    background-color: $acm-black;
+  }
 
-  &.hack .square { background-color: $hack-purple; }
-  &.hack .square.dark { background-color: $hack-black; }
-  &.hack .square.light { background-color: $hack-tint; }
+  .square.light {
+    background-color: $acm-tint;
+  }
 
-  &.ai .square { background-color: $ai-arctic; }
-  &.ai .square.dark { background-color: $ai-black; }
-  &.ai .square.light { background-color: $ai-tint; }
+  .square.white {
+    background-color: white !important;
+  }
 
-  &.w .square { background-color: $w-teal; }
-  &.w .square.dark { background-color: $w-black; }
-  &.w .square.light { background-color: $w-tint; }
+  &.hack .square {
+    background-color: $hack-purple;
+  }
 
-  &.cyber .square { background-color: $cyber-amber; }
-  &.cyber .square.dark { background-color: $cyber-black; }
-  &.cyber .square.light { background-color: $cyber-tint; }
+  &.hack .square.dark {
+    background-color: $hack-black;
+  }
 
-  &.studio .square { background-color: $studio-raspberry; }
-  &.studio .square.dark { background-color: $studio-black; }
-  &.studio .square.light { background-color: $studio-tint; }
+  &.hack .square.light {
+    background-color: $hack-tint;
+  }
 
-  &.icpc .square { background-color: $icpc-tangerine; }
-  &.icpc .square.dark { background-color: $icpc-black; }
-  &.icpc .square.light { background-color: $icpc-tint; }
+  &.ai .square {
+    background-color: $ai-arctic;
+  }
 
-  &.design .square { background-color: $design-orange; }
-  &.design .square.dark { background-color: $design-black; }
-  &.design .square.light { background-color: $design-tint; }
+  &.ai .square.dark {
+    background-color: $ai-black;
+  }
 
-  &.teachla .square { background-color: $teachla-green; }
-  &.teachla .square.dark { background-color: $teachla-black; }
-  &.teachla .square.light { background-color: $teachla-tint; }
+  &.ai .square.light {
+    background-color: $ai-tint;
+  }
+
+  &.w .square {
+    background-color: $w-teal;
+  }
+
+  &.w .square.dark {
+    background-color: $w-black;
+  }
+
+  &.w .square.light {
+    background-color: $w-tint;
+  }
+
+  &.cyber .square {
+    background-color: $cyber-amber;
+  }
+
+  &.cyber .square.dark {
+    background-color: $cyber-black;
+  }
+
+  &.cyber .square.light {
+    background-color: $cyber-tint;
+  }
+
+  &.studio .square {
+    background-color: $studio-raspberry;
+  }
+
+  &.studio .square.dark {
+    background-color: $studio-black;
+  }
+
+  &.studio .square.light {
+    background-color: $studio-tint;
+  }
+
+  &.icpc .square {
+    background-color: $icpc-tangerine;
+  }
+
+  &.icpc .square.dark {
+    background-color: $icpc-black;
+  }
+
+  &.icpc .square.light {
+    background-color: $icpc-tint;
+  }
+
+  &.design .square {
+    background-color: $design-orange;
+  }
+
+  &.design .square.dark {
+    background-color: $design-black;
+  }
+
+  &.design .square.light {
+    background-color: $design-tint;
+  }
+
+  &.teachla .square {
+    background-color: $teachla-green;
+  }
+
+  &.teachla .square.dark {
+    background-color: $teachla-black;
+  }
+
+  &.teachla .square.light {
+    background-color: $teachla-tint;
+  }
 
   .title {
     height: 280px;
@@ -92,12 +164,35 @@
     }
   }
 
-  &.hack    .title h1 { color: $hack-purple; }
-  &.ai      .title h1 { color: $ai-arctic; }
-  &.w       .title h1 { color: $w-teal; }
-  &.cyber   .title h1 { color: $cyber-amber; }
-  &.studio  .title h1 { color: $studio-raspberry; }
-  &.icpc    .title h1 { color: $icpc-tangerine; }
-  &.design  .title h1 { color: $design-orange; }
-  &.teachla .title h1 { color: $teachla-green; }
+  &.hack .title h1 {
+    color: $hack-purple;
+  }
+
+  &.ai .title h1 {
+    color: $ai-arctic;
+  }
+
+  &.w .title h1 {
+    color: $w-teal;
+  }
+
+  &.cyber .title h1 {
+    color: $cyber-amber;
+  }
+
+  &.studio .title h1 {
+    color: $studio-raspberry;
+  }
+
+  &.icpc .title h1 {
+    color: $icpc-tangerine;
+  }
+
+  &.design .title h1 {
+    color: $design-orange;
+  }
+
+  &.teachla .title h1 {
+    color: $teachla-green;
+  }
 }
