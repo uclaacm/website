@@ -523,7 +523,7 @@ export default [
 			},
 			{
 				platform: 'discord',
-				link: 'https://discord.gg/smE3pk5DsJ',
+				link: 'https://discord.gg/s2VGxKqTYA',
 			},
 			{
 				platform: 'instagram',
