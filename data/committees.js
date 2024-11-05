@@ -171,7 +171,7 @@ export default [
 			// },
 			{
 				platform: 'instagram',
-				link: 'https://www.instagram.com/acmdesign.ucla',
+				link: 'https://www.instagram.com/ucladesign',
 			},
 			{
 				platform: 'facebook',
