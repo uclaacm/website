@@ -446,7 +446,7 @@ export default [
 			},
 			{
 				platform: 'instagram',
-				link: 'https://www.instagram.com/acm_ai_ucla/',
+				link: 'https://www.instagram.com/acm.ai.ucla',
 			},
 			{
 				platform: 'facebook',
