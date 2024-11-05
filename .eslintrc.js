@@ -18,11 +18,7 @@ module.exports = {
     sourceType: 'module',
   },
   ignorePatterns: ['/build/*'],
-  plugins: [
-    'react',
-    'import',
-    'jsx-a11y',
-  ],
+  plugins: ['react', 'import', 'jsx-a11y'],
   settings: {
     react: {
       version: 'detect',
@@ -117,10 +113,13 @@ module.exports = {
     // bandaid fix; see the following github issues
     // https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/issues/402
     // https://github.com/vercel/next.js/issues/5533
-    'jsx-a11y/anchor-is-valid': [ 'error', {
-      components: [ 'Link' ],
-      specialLink: [ 'hrefLeft', 'hrefRight' ],
-      aspects: [ 'invalidHref', 'preferButton' ],
-    }],
+    'jsx-a11y/anchor-is-valid': [
+      'error',
+      {
+        components: ['Link'],
+        specialLink: ['hrefLeft', 'hrefRight'],
+        aspects: ['invalidHref', 'preferButton'],
+      },
+    ],
   },
 };

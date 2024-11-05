@@ -4,10 +4,8 @@ import { useState, useReducer, React } from 'react';
 import allEvents from '../../data/event';
 import styles from '../../styles/components/Events/Filters.module.scss';
 
-
 const dateToMinutes = (date) => {
-  const itemMins =
-    date.getHours() * 60 + date.getMinutes();
+  const itemMins = date.getHours() * 60 + date.getMinutes();
   return itemMins;
 };
 
@@ -15,13 +13,37 @@ export default function filters(props) {
   function reducer(state, action) {
     switch (action.type) {
       case 'comms':
-        return { ...state, comms: { ...state.comms, [action.payload.key]: action.payload.val } };
+        return {
+          ...state,
+          comms: {
+            ...state.comms,
+            [action.payload.key]: action.payload.val,
+          },
+        };
       case 'days':
-        return { ...state, days: { ...state.days, [action.payload.key]: action.payload.val } };
+        return {
+          ...state,
+          days: {
+            ...state.days,
+            [action.payload.key]: action.payload.val,
+          },
+        };
       case 'times':
-        return { ...state, times: { ...state.times, [action.payload.key]: action.payload.val } };
+        return {
+          ...state,
+          times: {
+            ...state.times,
+            [action.payload.key]: action.payload.val,
+          },
+        };
       case 'loc':
-        return { ...state, loc: { ...state.loc, [action.payload.key]: action.payload.val } };
+        return {
+          ...state,
+          loc: {
+            ...state.loc,
+            [action.payload.key]: action.payload.val,
+          },
+        };
       default:
         throw new Error();
     }
@@ -66,13 +88,15 @@ export default function filters(props) {
     );
     if (!isFilterTimeEmpty) {
       const filterFromMins =
-        filterVals.times.from === '' ? 0 : // 12:00 AM if empty
-          parseInt(filterVals.times.from.split(':')[0]) * 60 +
-          parseInt(filterVals.times.from.split(':')[1]);
+        filterVals.times.from === ''
+          ? 0 // 12:00 AM if empty
+          : parseInt(filterVals.times.from.split(':')[0]) * 60 +
+            parseInt(filterVals.times.from.split(':')[1]);
       const filterToMins =
-        filterVals.times.to === '' ? 1440 :  // 11:59 PM if empty
-          parseInt(filterVals.times.to.split(':')[0]) * 60 +
-          parseInt(filterVals.times.to.split(':')[1]);
+        filterVals.times.to === ''
+          ? 1440 // 11:59 PM if empty
+          : parseInt(filterVals.times.to.split(':')[0]) * 60 +
+            parseInt(filterVals.times.to.split(':')[1]);
 
       return events.filter((item) => {
         const itemStartMins = dateToMinutes(new Date(item.start));
@@ -111,10 +135,14 @@ export default function filters(props) {
   };
 
   const filterLoc = (events) => {
-    const isLocEmpty = Object.keys(filterVals.loc).every((loc) => !filterVals.loc[loc]);
+    const isLocEmpty = Object.keys(filterVals.loc).every(
+      (loc) => !filterVals.loc[loc],
+    );
     if (!isLocEmpty) {
       return events.filter((item) => {
-        const itemLoc = item.location.toLowerCase().includes('zoom') ? 'Online' : 'In-Person';
+        const itemLoc = item.location.toLowerCase().includes('zoom')
+          ? 'Online'
+          : 'In-Person';
         return filterVals.loc[itemLoc];
       });
     }
@@ -179,7 +207,9 @@ export default function filters(props) {
                     type="checkbox"
                     id={comm}
                     checked={filterVals.comms[comm]}
-                    onChange={(e) => handleFilterChange('comms', comm, e.target.checked)}
+                    onChange={(e) =>
+                      handleFilterChange('comms', comm, e.target.checked)
+                    }
                   />{' '}
                   {comm}
                 </div>
@@ -193,7 +223,9 @@ export default function filters(props) {
                     type="checkbox"
                     id={day}
                     checked={filterVals.days[day]}
-                    onChange={(e) => handleFilterChange('days', day, e.target.checked)}
+                    onChange={(e) =>
+                      handleFilterChange('days', day, e.target.checked)
+                    }
                   />{' '}
                   {day}
                 </div>
@@ -213,7 +245,9 @@ export default function filters(props) {
                         type="time"
                         className={styles.timeinput}
                         value={filterVals.times[time]}
-                        onChange={(e) => handleFilterChange('times', time, e.target.value)}
+                        onChange={(e) =>
+                          handleFilterChange('times', time, e.target.value)
+                        }
                       />
                       <br />
                     </div>
@@ -228,11 +262,13 @@ export default function filters(props) {
                   <input
                     type="checkbox"
                     checked={filterVals.loc[loc]}
-                    onChange={(e) => handleFilterChange('loc', loc, e.target.checked)}
-                  /> {loc}
+                    onChange={(e) =>
+                      handleFilterChange('loc', loc, e.target.checked)
+                    }
+                  />{' '}
+                  {loc}
                 </div>
-              ),
-              )}
+              ))}
             </div>
           </div>
         )}

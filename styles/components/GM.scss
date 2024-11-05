@@ -90,7 +90,7 @@
     height: 70px;
     margin: 10px;
     padding: 10px;
-  
+
     .join-links-img {
       display: block;
       height: auto;
@@ -161,7 +161,7 @@
     height: 450px;
   }
 
-  .flex { 
+  .flex {
     .what-to-bring {
       margin-left: 0;
       margin-top: 15px;
@@ -212,7 +212,7 @@
 
     .countdown-cards {
       height: 160px;
-    }  
+    }
   }
 }
 
@@ -288,8 +288,13 @@
     }
 
     @media (max-width: 915px) {
-      .countdown-cards { height: 175px; }
-      #countdown-wrapper { margin-bottom: 125px;}
+      .countdown-cards {
+        height: 175px;
+      }
+
+      #countdown-wrapper {
+        margin-bottom: 125px;
+      }
     }
   }
 
@@ -408,15 +413,42 @@
                 color: inherit;
               }
             }
-            .board { color: $acm-cobalt; }
-            #studio { color: $studio-raspberry; }
-            #icpc { color: $icpc-tangerine; }
-            #design { color: $design-orange; }
-            #cyber { color: $cyber-amber; }
-            #teach { color: $teachla-green; }
-            #w { color: $w-teal; }
-            #ai { color: $ai-arctic; }
-            #hack { color: $hack-purple; }
+
+            .board {
+              color: $acm-cobalt;
+            }
+
+            #studio {
+              color: $studio-raspberry;
+            }
+
+            #icpc {
+              color: $icpc-tangerine;
+            }
+
+            #design {
+              color: $design-orange;
+            }
+
+            #cyber {
+              color: $cyber-amber;
+            }
+
+            #teach {
+              color: $teachla-green;
+            }
+
+            #w {
+              color: $w-teal;
+            }
+
+            #ai {
+              color: $ai-arctic;
+            }
+
+            #hack {
+              color: $hack-purple;
+            }
 
             .committee-logos {
               height: 20px;
@@ -430,7 +462,9 @@
       }
     }
     @media (max-width: 915px) {
-      .row-description-wrapper { margin-left: 15px !important;}
+      .row-description-wrapper {
+        margin-left: 15px !important;
+      }
 
       #join-links-wrapper {
         align-items: center;
@@ -440,8 +474,14 @@
         .click-to-join {
           max-width: 300px;
           min-width: 200px;
-          #zoom-join-link-wrapper {margin-right: 5px;}
-          #discord-join-link-wrapper {margin-left: 5px;}
+
+          #zoom-join-link-wrapper {
+            margin-right: 5px;
+          }
+
+          #discord-join-link-wrapper {
+            margin-left: 5px;
+          }
         }
       }
     }

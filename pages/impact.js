@@ -17,7 +17,11 @@ import styles from '../styles/pages/impact.module.scss';
 const impactBlog = 'https://medium.com/acm-at-ucla';
 
 function Impact() {
-  const impactOfficers = data.filter(officer => officer.role.includes('Impact') && officer.committee.includes('Board, Internal'));
+  const impactOfficers = data.filter(
+    (officer) =>
+      officer.role.includes('Impact') &&
+      officer.committee.includes('Board, Internal'),
+  );
   return (
     <Layout>
       <NextSeo
@@ -48,13 +52,16 @@ function Impact() {
           ACM Impact is an up-and-coming initiative within ACM Board.
           <br />
           <br />
-          Our mission is to promote an understanding of technology’s ethical and societal implications
-          through education, advocacy, and community engagement.
+          Our mission is to promote an understanding of technology’s ethical and
+          societal implications through education, advocacy, and community
+          engagement.
         </p>
 
-        <br/>
-        <h3 className="text-center">🚨 🚧 Website update in progress...come back soon! 🚧 🚨</h3>
-        <br/>
+        <br />
+        <h3 className="text-center">
+          🚨 🚧 Website update in progress...come back soon! 🚧 🚨
+        </h3>
+        <br />
 
         {/* <h2 className="text-center">Our Initiatives</h2> */}
         <h3 className="text-uppercase">Upcoming Events</h3>
@@ -94,7 +101,8 @@ function Impact() {
         <h3 className="text-uppercase">Blog</h3>
         <Carousel />
         <p>
-          While our blog isn&apos;t active now, anyone from UCLA can write for&nbsp;
+          While our blog isn&apos;t active now, anyone from UCLA can write
+          for&nbsp;
           <a href={impactBlog} target="_blank" rel="noreferrer noopener">
             our blog
           </a>
@@ -105,13 +113,13 @@ function Impact() {
             rel="noreferrer noopener"
           >
             this blog post
-          </a>&nbsp; to see how you can get involved. We look forward to reading your
-          work—in the meantime, check out some of our existing posts above.
+          </a>
+          &nbsp; to see how you can get involved. We look forward to reading
+          your work—in the meantime, check out some of our existing posts above.
         </p>
 
         <h2 className="text-center">People</h2>
         <div className="grid-desktop-3 text-center-mobile">
-
           <Officers officers={impactOfficers} />
         </div>
       </div>

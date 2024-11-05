@@ -34,7 +34,6 @@
   }
 }
 
-
 .committee-mobile-nav li {
   display: inline-block;
   font-family: $font-header;
@@ -60,12 +59,10 @@
   white-space: pre;
 }
 
-
 .committee-mobile-nav {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 0;
-
 }
 
 @media screen and (max-width: $navbar-breakpoint) {
