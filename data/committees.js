@@ -103,6 +103,14 @@ export default [
 				link: 'https://icpc.uclaacm.com/',
 			},
 			{
+				platform: 'discord',
+				link: 'https://discord.gg/6pxWhttfs6',
+			},
+			{
+				platform: 'instagram',
+				link: 'https://www.instagram.com/icpc.ucla',
+			},
+			{
 				platform: 'facebook',
 				link: 'https://www.facebook.com/groups/ucla.icpc/',
 			},
@@ -162,12 +170,12 @@ export default [
 			// 	link: 'https://design.uclaacm.com/',
 			// },
 			{
-				platform: 'facebook',
-				link: 'https://www.facebook.com/groups/acmdesign',
-			},
-			{
 				platform: 'instagram',
 				link: 'https://www.instagram.com/acmdesign.ucla',
+			},
+			{
+				platform: 'facebook',
+				link: 'https://www.facebook.com/groups/acmdesign',
 			},
 		],
 		infoCards: [
@@ -225,20 +233,24 @@ export default [
 				link: 'https://acmcyber.com/',
 			},
 			{
-				platform: 'discord',
-				link: 'https://discord.gg/j9dgf2q',
-			},
-			{
 				platform: 'website',
 				link: 'https://pbr.acmcyber.com/',
 			},
 			{
-				platform: 'twitter',
-				link: 'https://twitter.com/pbrucla',
-			},
-			{
 				platform: 'website',
 				link: 'https://lac.tf',
+			},
+			{
+				platform: 'discord',
+				link: 'https://discord.gg/j9dgf2q',
+			},
+			{
+				platform: 'instagram',
+				link: 'https://www.instagram.com/uclacyber',
+			},
+			{
+				platform: 'twitter',
+				link: 'https://twitter.com/pbrucla',
 			},
 		],
 		infoCards: [
@@ -291,12 +303,12 @@ export default [
 				link: 'https://teachla.uclaacm.com',
 			},
 			{
-				platform: 'facebook',
-				link: 'https://www.facebook.com/teachlaucla/',
-			},
-			{
 				platform: 'instagram',
 				link: 'https://www.instagram.com/acm.teachla/',
+			},
+			{
+				platform: 'facebook',
+				link: 'https://www.facebook.com/teachlaucla/',
 			},
 		],
 		infoCards: [
@@ -362,6 +374,10 @@ export default [
 				link: 'https://w.uclaacm.com',
 			},
 			{
+				platform: 'instagram',
+				link: 'https://www.instagram.com/uclaacmw',
+			},
+			{
 				platform: 'facebook',
 				link: 'https://www.facebook.com/groups/uclaacmw',
 			},
@@ -421,12 +437,16 @@ export default [
 			// 	link: null,
 			// },
 			{
-				platform: 'facebook',
-				link: 'https://www.facebook.com/groups/uclaacmai',
+				platform: 'discord',
+				link: 'https://discord.gg/QcU9AVW9hm',
 			},
 			{
 				platform: 'instagram',
 				link: 'https://www.instagram.com/acm_ai_ucla/',
+			},
+			{
+				platform: 'facebook',
+				link: 'https://www.facebook.com/groups/uclaacmai',
 			},
 			{
 				platform: 'twitter',
@@ -498,12 +518,12 @@ export default [
 				link: 'https://cloud.uclaacm.com/',
 			},
 			{
-				platform: 'instagram',
-				link: 'https://www.instagram.com/acmcloud/',
-			},
-			{
 				platform: 'discord',
 				link: 'https://discord.gg/smE3pk5DsJ',
+			},
+			{
+				platform: 'instagram',
+				link: 'https://www.instagram.com/acmcloud/',
 			},
 		],
 		infoCards: [
@@ -611,16 +631,16 @@ export default [
 				link: 'https://hack.uclaacm.com',
 			},
 			{
+				platform: 'discord',
+				link: 'https://discord.gg/dUp8g8wgCv',
+			},
+			{
 				platform: 'instagram',
 				link: 'https://www.instagram.com/uclahack',
 			},
 			{
 				platform: 'facebook',
 				link: 'https://www.facebook.com/groups/acmhack',
-			},
-			{
-				platform: 'discord',
-				link: 'https://discord.gg/dUp8g8wgCv',
 			},
 		],
 		infoCards: [
