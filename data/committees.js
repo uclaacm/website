@@ -170,6 +170,10 @@ export default [
 			// 	link: 'https://design.uclaacm.com/',
 			// },
 			{
+				platform: 'discord',
+				link: 'https://discord.gg/hS62MnPm',
+			},
+			{
 				platform: 'instagram',
 				link: 'https://www.instagram.com/ucladesign',
 			},
