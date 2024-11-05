@@ -308,7 +308,7 @@ export default [
 			},
 			{
 				platform: 'facebook',
-				link: 'https://www.facebook.com/teachlaucla/',
+				link: 'https://www.facebook.com/acmteachla/',
 			},
 		],
 		infoCards: [
