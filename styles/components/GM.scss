@@ -123,6 +123,20 @@
   text-decoration: none;
 }
 
+.rel-info {
+  height: 400px;
+}
+
+.map-container {
+  flex-grow: 1;
+  width: 100%;
+}
+
+.map-frame {
+  height: 100%;
+  width: 100%;
+}
+
 .flex {
   display: flex;
 
@@ -138,6 +152,20 @@
   .what-to-bring {
     margin-left: 25px;
     text-align: left;
+  }
+}
+
+@media (max-width: 640px) {
+  .rel-info {
+    flex-direction: column;
+    height: 450px;
+  }
+
+  .flex { 
+    .what-to-bring {
+      margin-left: 0;
+      margin-top: 15px;
+    }
   }
 }
 
