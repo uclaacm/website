@@ -253,6 +253,10 @@ export default [
 				link: 'https://www.instagram.com/uclacyber',
 			},
 			{
+				platform: 'facebook',
+				link: 'https://www.facebook.com/groups/uclacyber/',
+			},
+			{
 				platform: 'twitter',
 				link: 'https://twitter.com/pbrucla',
 			},
