@@ -1,4 +1,4 @@
-@import '../variables.scss';
+@import "../variables.scss";
 
 .ornament {
   position: absolute;
@@ -98,10 +98,10 @@
 
 .social-media {
   display: flex;
-  justify-content: center; 
+  justify-content: center;
 }
 
-@media (max-width: 600px) {
+@media (max-width: $navbar-breakpoint) {
   .square-ornament {
     display: block;
 
