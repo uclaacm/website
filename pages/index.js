@@ -22,6 +22,12 @@ function Home () {
                     data-goatcounter="https://uclaacm.goatcounter.com/count"
                     async src="//gc.zgo.at/count.js">
                 </script>
+                {/* MailChimp script */}
+                <script
+                    id="mcjs"
+                    src="https://chimpstatic.com/mcjs-connected/js/users/5666284d62e955e1bc84f7ba0/4a4c455ee0b05fb0493dc86b2.js"
+                    async
+                />
             </Head>
 			<NextSeo
 				title="Home | ACM at UCLA"

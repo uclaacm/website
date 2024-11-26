@@ -79,7 +79,7 @@ const generateSingleEvent = ({
   }
   if (fblink) {
     links.push({
-      text: 'Facebook Event',
+      text: 'Link',
       href: fblink,
       ext: true,
     });
