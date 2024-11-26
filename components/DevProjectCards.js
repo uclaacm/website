@@ -64,6 +64,7 @@ function Project({
         className={`${styles['project-card']} ${styles['grid-tablet-only-2']}`}
       >
         <div className={styles['project-image-container']}>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src={img} alt={alt} style={{ maxWidth: '100%' }}/>
         </div>
         <div>

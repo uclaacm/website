@@ -138,11 +138,11 @@
   }
 
   .description-header {
-    font-size: 1.8em;
+    font-size: 1.4em;
   }
 
   .description-box p {
-    font-size: 1.8em;
+    font-size: 1.4em;
   }
 }
 
@@ -174,7 +174,7 @@
   aspect-ratio: 1 / 1;
   display: flex;
   height: auto;
-  justify-content: start;
+  justify-content: flex-start;
   margin: 0 auto;
   max-width: 300px;
   width: 100%;
