@@ -77,7 +77,7 @@ function Officers(props) {
     // TODO: more flexible mobile views
     <>
       {props.officers.map((officer) => (
-        <Officer {...officer} size={props.size} style={props.style} key={props.officers.name} />
+        <Officer {...officer} size={props.size} style={props.style} key={officer.name} />
       ))}
     </>
   );
