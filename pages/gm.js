@@ -1,4 +1,7 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFileAlt } from '@fortawesome/free-solid-svg-icons';
 import { NextSeo } from 'next-seo';
+
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
@@ -7,6 +10,7 @@ import Countdown from 'react-countdown';
 import Banner from '../components/Banner';
 import Layout from '../components/Layout';
 import gmData from '../gmData.json';
+import pastData from '../past-gm.json';
 
 import aiLogo from '../public/images/committees/ai_wordmark.svg';
 import boardLogo from '../public/images/committees/board_wordmark.svg';
@@ -20,6 +24,11 @@ import teachlaLogo from '../public/images/committees/teachLA_wordmark.svg';
 import wLogo from '../public/images/committees/w_wordmark.svg';
 import fallGMgraphic from '../public/images/Fall_GM_2024_graphic.png';
 import googleSlideLogo from '../public/images/slides.png';
+
+const inlineButtonListStyle = {
+  display: 'inline-block',
+  marginBottom: '1em',
+};
 
 const dayToName = (day) => {
   switch (day) {
@@ -151,6 +160,8 @@ const GMCountdown = (props) => {
 };
 
 function gm() {
+
+  const pastGMs = [...pastData].reverse();
   const data = parseGMData(gmData);
   function countdownRenderer({ days, hours, minutes, seconds, completed }) {
     const {dayString, hourString, minuteString, secondString} =
@@ -291,6 +302,62 @@ function gm() {
           </div>
         </div>
 			</div>
+      {/* Past GMs */}
+      <div className="content-container-medium">
+        <hr></hr>
+        <h2 className="text-center">Past General Meetings</h2>
+        {pastGMs.map((pastTownHall, index) => (
+          <div className="grid-tablet-2" key={index}>
+            <div>
+              <h3>{pastTownHall.title + ' // ' + pastTownHall.date}</h3>
+              <p>{pastTownHall.description}</p>
+              <ul className="list-unstyled">
+                <li style={inlineButtonListStyle}>
+                  <Link href={pastTownHall.slides}>
+                    <a
+                      className="button"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >
+                      <FontAwesomeIcon
+                        icon={faFileAlt}
+                        fixedWidth
+                        aria-hidden={true}
+                      />{' '}
+                      Form Summaries and Slides
+                    </a>
+                  </Link>
+                </li>{' '}
+                <li style={inlineButtonListStyle}>
+                  <Link href={pastTownHall.notes}>
+                    <a
+                      className="button"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FontAwesomeIcon
+                        icon={faFileAlt}
+                        fixedWidth
+                        aria-hidden={true}
+                      />{' '}
+                      Event Notes
+                    </a>
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <Image
+                src={pastTownHall.banner}
+                alt={pastTownHall.alt_text}
+                width={800}
+                height={450}
+                quality={70}
+              />
+            </div>
+          </div>
+        ))}
+      </div>
 		</Layout>
 	);
 }
