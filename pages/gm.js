@@ -1,5 +1,5 @@
+import { faFileAlt, faVideo } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFileAlt } from '@fortawesome/free-solid-svg-icons';
 import { NextSeo } from 'next-seo';
 
 import Image from 'next/image';
@@ -306,14 +306,14 @@ function gm() {
       <div className="content-container-medium">
         <hr></hr>
         <h2 className="text-center">Past General Meetings</h2>
-        {pastGMs.map((pastTownHall, index) => (
+        {pastGMs.map((pastGM, index) => (
           <div className="grid-tablet-2" key={index}>
             <div>
-              <h3>{pastTownHall.title + ' // ' + pastTownHall.date}</h3>
-              <p>{pastTownHall.description}</p>
+              <h3>{pastGM.title + ' // ' + pastGM.date}</h3>
+              <p>{pastGM.description}</p>
               <ul className="list-unstyled">
                 <li style={inlineButtonListStyle}>
-                  <Link href={pastTownHall.slides}>
+                  <Link href={pastGM.slides}>
                     <a
                       className="button"
                       target="_blank"
@@ -324,35 +324,36 @@ function gm() {
                         fixedWidth
                         aria-hidden={true}
                       />{' '}
-                      Form Summaries and Slides
+                      Event Slides
                     </a>
                   </Link>
                 </li>{' '}
                 <li style={inlineButtonListStyle}>
-                  <Link href={pastTownHall.notes}>
-                    <a
-                      className="button"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <FontAwesomeIcon
-                        icon={faFileAlt}
-                        fixedWidth
-                        aria-hidden={true}
-                      />{' '}
-                      Event Notes
-                    </a>
-                  </Link>
+                  {pastGM.notes && pastGM.notes.trim() !== '' && (
+                    <Link href={pastGM.notes}>
+                      <a
+                        className="button"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <FontAwesomeIcon
+                          icon={faVideo}
+                          fixedWidth
+                          aria-hidden={true}
+                        />{' '}
+                        Event Recording
+                      </a>
+                    </Link>
+                  )}
                 </li>
               </ul>
             </div>
             <div>
-              <Image
-                src={pastTownHall.banner}
-                alt={pastTownHall.alt_text}
-                width={800}
-                height={450}
-                quality={70}
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={pastGM.banner}
+                alt={pastGM.alt_text}
+                style={{ maxWidth: '100%' }}
               />
             </div>
           </div>
