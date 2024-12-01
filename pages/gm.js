@@ -268,37 +268,39 @@ function gm() {
               <h3>Committee Presentations</h3>
               <p className='sub-heading'>Learn what ACM&apos;s nine committees have planned for {data.quarter} quarter.</p>
             </div>
-            <p className='gm-program-row'><Image src= {studioLogo} alt='ACM studio'/> {data.studio}</p>
-            <p className='gm-program-row'><Image src= {icpcLogo} alt='ACM icpc'/> {data.icpc}</p>
-            <p className='gm-program-row'><Image src= {designLogo}  alt='ACM design'/> {data.design}</p>
-            <p className='gm-program-row'><Image src= {cyberLogo}  alt='ACM cyber'/> {data.cyber}</p>
-            <p className='gm-program-row'><Image src= {teachlaLogo}  alt='ACM teachLA'/> {data.teachLA}</p>
-            <p className='gm-program-row'><Image src= {wLogo}  alt='ACM w'/> {data.w}</p>
-            <p className='gm-program-row'><Image src= {aiLogo}  alt='ACM ai'/> {data.ai}</p>
-            <p className='gm-program-row'><Image src= {cloudLogo}  alt='ACM cloud'/> &nbsp;{data.cloud}</p>
-            <p className='gm-program-row'><Image src= {hackLogo}  alt='ACM hack'/> {data.hack}</p>
+            <div className='gm-program-row'><Image src= {studioLogo} alt='ACM studio'/> {data.studio}</div>
+            <div className='gm-program-row'><Image src= {icpcLogo} alt='ACM icpc'/> {data.icpc}</div>
+            <div className='gm-program-row'><Image src= {designLogo}  alt='ACM design'/> {data.design}</div>
+            <div className='gm-program-row'><Image src= {cyberLogo}  alt='ACM cyber'/> {data.cyber}</div>
+            <div className='gm-program-row'><Image src= {teachlaLogo}  alt='ACM teachLA'/> {data.teachLA}</div>
+            <div className='gm-program-row'><Image src= {wLogo}  alt='ACM w'/> {data.w}</div>
+            <div className='gm-program-row'><Image src= {aiLogo}  alt='ACM ai'/> {data.ai}</div>
+            <div className='gm-program-row'><Image src= {cloudLogo}  alt='ACM cloud'/> &nbsp;{data.cloud}</div>
+            <div className='gm-program-row'><Image src= {hackLogo}  alt='ACM hack'/> {data.hack}</div>
 					</div>
           <div className='gm-program-section'>
             <div className='section-header'>
               <h3>ACM Board</h3>
               <p className='sub-heading'>How to get more involved with ACM beyond attending workshops and events</p>
             </div>
-            <p className='gm-program-row'><Image src= {boardLogo} alt='ACM board'/>&nbsp;&nbsp;External: {data.evp}</p>
-            <p className='gm-program-row'><Image src= {boardLogo} alt='ACM board'/>&nbsp;&nbsp;Internal: {data.ivp}</p>
+            <div className='gm-program-row'><Image src= {boardLogo} alt='ACM board'/>&nbsp;&nbsp;External: {data.evp}</div>
+            <div className='gm-program-row'><Image src= {boardLogo} alt='ACM board'/>&nbsp;&nbsp;Internal: {data.ivp}</div>
           </div>
           <div className='gm-program-section'>
             <div className='section-header'>
               <h3>ACM Initatives</h3>
               <p className='sub-heading'>See exciting new programs that ACM is trying out</p>
             </div>
-            {data.initiatives.map(item => <p key={item.id} className='gm-program-row'>{item}</p>)}
+            {data.initiatives.map((item, index) => (
+              <p key={index} className='gm-program-row'>{item}</p>
+            ))}
           </div>
           <div className='gm-program-section'>
             <div className='section-header'>
               <h3>Tabling and Social</h3>
               <p className='sub-heading'>Interact with ACM&apos;s officers and walk away with new friends!</p>
             </div>
-            <p className='gm-program-row'>All ACM officers</p>
+            <div className='gm-program-row'>All ACM officers</div>
           </div>
         </div>
 			</div>
