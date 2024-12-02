@@ -1,4 +1,7 @@
+import { faFileAlt, faVideo } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { NextSeo } from 'next-seo';
+
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
@@ -7,6 +10,7 @@ import Countdown from 'react-countdown';
 import Banner from '../components/Banner';
 import Layout from '../components/Layout';
 import gmData from '../gmData.json';
+import pastData from '../past-gm.json';
 
 import aiLogo from '../public/images/committees/ai_wordmark.svg';
 import boardLogo from '../public/images/committees/board_wordmark.svg';
@@ -20,6 +24,11 @@ import teachlaLogo from '../public/images/committees/teachLA_wordmark.svg';
 import wLogo from '../public/images/committees/w_wordmark.svg';
 import fallGMgraphic from '../public/images/Fall_GM_2024_graphic.png';
 import googleSlideLogo from '../public/images/slides.png';
+
+const inlineButtonListStyle = {
+  display: 'inline-block',
+  marginBottom: '1em',
+};
 
 const dayToName = (day) => {
   switch (day) {
@@ -151,6 +160,8 @@ const GMCountdown = (props) => {
 };
 
 function gm() {
+
+  const pastGMs = [...pastData].reverse();
   const data = parseGMData(gmData);
   function countdownRenderer({ days, hours, minutes, seconds, completed }) {
     const {dayString, hourString, minuteString, secondString} =
@@ -257,40 +268,99 @@ function gm() {
               <h3>Committee Presentations</h3>
               <p className='sub-heading'>Learn what ACM&apos;s nine committees have planned for {data.quarter} quarter.</p>
             </div>
-            <p className='gm-program-row'><Image src= {studioLogo} alt='ACM studio'/> {data.studio}</p>
-            <p className='gm-program-row'><Image src= {icpcLogo} alt='ACM icpc'/> {data.icpc}</p>
-            <p className='gm-program-row'><Image src= {designLogo}  alt='ACM design'/> {data.design}</p>
-            <p className='gm-program-row'><Image src= {cyberLogo}  alt='ACM cyber'/> {data.cyber}</p>
-            <p className='gm-program-row'><Image src= {teachlaLogo}  alt='ACM teachLA'/> {data.teachLA}</p>
-            <p className='gm-program-row'><Image src= {wLogo}  alt='ACM w'/> {data.w}</p>
-            <p className='gm-program-row'><Image src= {aiLogo}  alt='ACM ai'/> {data.ai}</p>
-            <p className='gm-program-row'><Image src= {cloudLogo}  alt='ACM cloud'/> &nbsp;{data.cloud}</p>
-            <p className='gm-program-row'><Image src= {hackLogo}  alt='ACM hack'/> {data.hack}</p>
+            <div className='gm-program-row'><Image src= {studioLogo} alt='ACM studio'/> {data.studio}</div>
+            <div className='gm-program-row'><Image src= {icpcLogo} alt='ACM icpc'/> {data.icpc}</div>
+            <div className='gm-program-row'><Image src= {designLogo}  alt='ACM design'/> {data.design}</div>
+            <div className='gm-program-row'><Image src= {cyberLogo}  alt='ACM cyber'/> {data.cyber}</div>
+            <div className='gm-program-row'><Image src= {teachlaLogo}  alt='ACM teachLA'/> {data.teachLA}</div>
+            <div className='gm-program-row'><Image src= {wLogo}  alt='ACM w'/> {data.w}</div>
+            <div className='gm-program-row'><Image src= {aiLogo}  alt='ACM ai'/> {data.ai}</div>
+            <div className='gm-program-row'><Image src= {cloudLogo}  alt='ACM cloud'/> &nbsp;{data.cloud}</div>
+            <div className='gm-program-row'><Image src= {hackLogo}  alt='ACM hack'/> {data.hack}</div>
 					</div>
           <div className='gm-program-section'>
             <div className='section-header'>
               <h3>ACM Board</h3>
               <p className='sub-heading'>How to get more involved with ACM beyond attending workshops and events</p>
             </div>
-            <p className='gm-program-row'><Image src= {boardLogo} alt='ACM board'/>&nbsp;&nbsp;External: {data.evp}</p>
-            <p className='gm-program-row'><Image src= {boardLogo} alt='ACM board'/>&nbsp;&nbsp;Internal: {data.ivp}</p>
+            <div className='gm-program-row'><Image src= {boardLogo} alt='ACM board'/>&nbsp;&nbsp;External: {data.evp}</div>
+            <div className='gm-program-row'><Image src= {boardLogo} alt='ACM board'/>&nbsp;&nbsp;Internal: {data.ivp}</div>
           </div>
           <div className='gm-program-section'>
             <div className='section-header'>
               <h3>ACM Initatives</h3>
               <p className='sub-heading'>See exciting new programs that ACM is trying out</p>
             </div>
-            {data.initiatives.map(item => <p key={item.id} className='gm-program-row'>{item}</p>)}
+            {data.initiatives.map((item, index) => (
+              <p key={index} className='gm-program-row'>{item}</p>
+            ))}
           </div>
           <div className='gm-program-section'>
             <div className='section-header'>
               <h3>Tabling and Social</h3>
               <p className='sub-heading'>Interact with ACM&apos;s officers and walk away with new friends!</p>
             </div>
-            <p className='gm-program-row'>All ACM officers</p>
+            <div className='gm-program-row'>All ACM officers</div>
           </div>
         </div>
 			</div>
+      {/* Past GMs */}
+      <div className="content-container-medium">
+        <hr></hr>
+        <h2 className="text-center">Past General Meetings</h2>
+        {pastGMs.map((pastGM, index) => (
+          <div className="grid-tablet-2" key={index}>
+            <div>
+              <h3>{pastGM.title + ' // ' + pastGM.date}</h3>
+              <p>{pastGM.description}</p>
+              <ul className="list-unstyled">
+                <li style={inlineButtonListStyle}>
+                  <Link href={pastGM.slides}>
+                    <a
+                      className="button"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >
+                      <FontAwesomeIcon
+                        icon={faFileAlt}
+                        fixedWidth
+                        aria-hidden={true}
+                      />{' '}
+                      Event Slides
+                    </a>
+                  </Link>
+                </li>{' '}
+                <li style={inlineButtonListStyle}>
+                  {pastGM.notes && pastGM.notes.trim() !== '' && (
+                    <Link href={pastGM.notes}>
+                      <a
+                        className="button"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <FontAwesomeIcon
+                          icon={faVideo}
+                          fixedWidth
+                          aria-hidden={true}
+                        />{' '}
+                        Event Recording
+                      </a>
+                    </Link>
+                  )}
+                </li>
+              </ul>
+            </div>
+            <div>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={pastGM.banner}
+                alt={pastGM.alt_text}
+                style={{ maxWidth: '100%' }}
+              />
+            </div>
+          </div>
+        ))}
+      </div>
 		</Layout>
 	);
 }
