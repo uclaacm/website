@@ -221,11 +221,11 @@ function gm() {
           <div className='flex rel-info'>
             <div className='map-container'>
               <iframe
-                src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13219.85897956824!2d-118.4441451!3d34.070418!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x62f97fe423993f80!2sUCLA%20Ackerman%20Union!5e0!3m2!1sen!2sin!4v1663063464157!5m2!1sen!2sin'
+                src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3304.8685840026733!2d-118.44371082416286!3d34.07288291663994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bd8bbb175573%3A0x46c5c13d4084a4b3!2sHaines%20Hall!5e0!3m2!1sen!2sus!4v1735028032412!5m2!1sen!2sus'
                 className='map-frame'
                 allowFullScreen=''
                 loading='lazy'
-                title='google maps embed of ackerman grand ballroom'
+                title='google maps embed of haines hall'
                 referrerPolicy='no-referrer-when-downgrade'
               ></iframe>
             </div>
