@@ -6,7 +6,7 @@ import React from 'react';
 import Banner from '../components/Banner';
 import Carousel from '../components/Carousel';
 import Committees from '../components/CommitteeSpread';
-import ContentBanner from '../components/ContentBanner';
+// import ContentBanner from '../components/ContentBanner';
 import Layout from '../components/Layout';
 import Article from '../components/NewsArticle';
 import SocialMedia from '../components/SocialMedia';
@@ -39,12 +39,12 @@ function Home () {
 				}}
 			/>
 			<div className="home-page text-center">
-				<a href="https://www.uclaacm.com/town-hall" style={{ textDecoration: 'none' }}>
+				{/* <a href="https://www.uclaacm.com/town-hall" style={{ textDecoration: 'none' }}>
 					<ContentBanner
 						title="RSVP for Fall 2024 CS Town Hall!"
 						main
 					/>
-				</a>
+				</a> */}
 				<Banner />
 				<div className="content-section">
 					<h2>The largest Computer Science community at UCLA</h2>
@@ -72,7 +72,7 @@ function Home () {
 							<h2>Want to stay updated on what&rsquo;s going on?</h2>
 						</div>
 						<div className="sign-up-right half-width">
-							<Link href="http://eepurl.com/iAS95E">
+							<Link href="https://uclaacm.us8.list-manage.com/subscribe?u=5666284d62e955e1bc84f7ba0&id=eca2984b5a">
 								<a className="button tight dark" target="_blank" rel="noreferrer noopener">
 									Join our Mailing List
 								</a>
