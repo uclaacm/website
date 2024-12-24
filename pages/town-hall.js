@@ -151,7 +151,7 @@ function TownHall() {
 
         {townHall.status ?
           <p>
-            The {townHall.quarter} Town Hall will take place on <b>{townHall.date}</b> (Week {townHall.week})
+            The {townHall.quarter} Town Hall took place on <b>{townHall.date}</b> (Week {townHall.week})
             at <b>{townHall.time} PT</b> in the {townHall.location}.
           </p>
           :
