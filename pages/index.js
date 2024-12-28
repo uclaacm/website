@@ -72,7 +72,7 @@ function Home () {
 							<h2>Want to stay updated on what&rsquo;s going on?</h2>
 						</div>
 						<div className="sign-up-right half-width">
-							<Link href="https://uclaacm.us8.list-manage.com/subscribe?u=5666284d62e955e1bc84f7ba0&id=eca2984b5a">
+							<Link href="http://eepurl.com/hdEvNP">
 								<a className="button tight dark" target="_blank" rel="noreferrer noopener">
 									Join our Mailing List
 								</a>
