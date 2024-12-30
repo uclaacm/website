@@ -301,12 +301,11 @@ function TownHall() {
               </ul>
             </div>
             <div>
-              <Image
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
                 src={pastTownHall.banner}
                 alt={pastTownHall.alt_text}
-                width={800}
-                height={450}
-                quality={70}
+                style={{ maxWidth: '100%' }}
               />
             </div>
           </div>

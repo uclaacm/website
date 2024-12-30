@@ -55,6 +55,23 @@ async function fetchGMData() {
   return formattedData;
 }
 
+async function fetchPastGMData() {
+  const data = await getGoogleSheetData('PastGMs!A2:G');
+
+  // Format the rows into an array of objects
+  const formattedData = data.map((row) => ({
+    title: row[0],
+    date: row[1],
+    description: row[2],
+    slides: row[3],
+    notes: row[4],
+    banner: row[5],
+    alt_text: row[6],
+  }));
+
+  return formattedData;
+}
+
 // Write data from sheets to a json file
 async function writeToOutput(name, formattedData) {
   const output = JSON.stringify(formattedData);
@@ -68,4 +85,5 @@ async function writeToOutput(name, formattedData) {
 // Outputs all necessary json files
 async function writeAllOutputs() {
   writeToOutput('gmData.json', await fetchGMData());
+  writeToOutput('past-gm.json', await fetchPastGMData());
 }
