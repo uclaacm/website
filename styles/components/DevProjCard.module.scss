@@ -43,7 +43,7 @@
   font-size: 1.2em;
   height: 100%;
   left: 0;
-  opacity: 0;  // Initially hidden
+  opacity: 0; // Initially hidden
   position: absolute;
   text-align: center;
   top: 0;
@@ -64,16 +64,14 @@
   position: relative;
   transition: box-shadow 0.3s ease-in-out;
 
-
   &:hover .card-hover-content {
     flex-direction: column;
     justify-content: start;
-    opacity: 1;  // Make the hover content visible when hovered
+    opacity: 1; // Make the hover content visible when hovered
   }
 
   &:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
-    
   }
 }
 
@@ -103,7 +101,6 @@
 }
 /* stylelint-enable selector-class-pattern */
 
-
 .mobile-header {
   margin: 0;
 }
@@ -130,7 +127,7 @@
 
 @media (max-width: $navbar-breakpoint) {
   .card-hover-content {
-    font-size: 1em; 
+    font-size: 1em;
   }
 
   .mobile-header {
@@ -156,7 +153,7 @@
   }
 }
 
-.project-card a {          
+.project-card a {
   color: #10A0D4;
   font-weight: bold;
   text-decoration: none;
@@ -165,7 +162,7 @@
   &:visited,
   &:hover,
   &:active {
-    color: #10A0D4;               
+    color: #10A0D4;
   }
 }
 

@@ -8,12 +8,12 @@ import Sponsors from './sponsors';
 import TGProjects from './tgprojects';
 
 export default {
-	committees: Committees,
-	carousel: Carousel,
-	sponsors: Sponsors,
-	leadership: Leadership,
-	news: News,
-	tgprojects: TGProjects,
-	internship: Internship,
-	board: Board,
+  committees: Committees,
+  carousel: Carousel,
+  sponsors: Sponsors,
+  leadership: Leadership,
+  news: News,
+  tgprojects: TGProjects,
+  internship: Internship,
+  board: Board,
 };

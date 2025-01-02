@@ -116,32 +116,35 @@ const parseGMData = (jsonContent) => {
 const GMCountdown = (props) => {
   return (
     <>
-      <div id='countdown-wrapper'>
-        <div className='countdown-cards'>
-          <div className='square-background'/>
-          <div className='countdown-numbers'>{props.days}</div>
-          <div className='countdown-labels'>{props.dayString}</div>
+      <div id="countdown-wrapper">
+        <div className="countdown-cards">
+          <div className="square-background" />
+          <div className="countdown-numbers">{props.days}</div>
+          <div className="countdown-labels">{props.dayString}</div>
         </div>
-        <div className='countdown-cards'>
-          <div className='square-background'/>
-          <div className='countdown-numbers'>{props.hours}</div>
-          <div className='countdown-labels'>{props.hourString}</div>
+        <div className="countdown-cards">
+          <div className="square-background" />
+          <div className="countdown-numbers">{props.hours}</div>
+          <div className="countdown-labels">{props.hourString}</div>
         </div>
-        <div className='countdown-cards'>
-          <div className='square-background'/>
-          <div className='countdown-numbers'>{props.minutes}</div>
-          <div className='countdown-labels'>{props.minuteString}</div>
+        <div className="countdown-cards">
+          <div className="square-background" />
+          <div className="countdown-numbers">{props.minutes}</div>
+          <div className="countdown-labels">{props.minuteString}</div>
         </div>
-        <div className='countdown-cards'>
-          <div className='square-background'/>
-          <div className='countdown-numbers'>{props.seconds}</div>
-          <div className='countdown-labels'>{props.secondString}</div>
+        <div className="countdown-cards">
+          <div className="square-background" />
+          <div className="countdown-numbers">{props.seconds}</div>
+          <div className="countdown-labels">{props.secondString}</div>
         </div>
       </div>
-      <div className='text-center'>
-        <h1>{props.data.quarter} {props.data.gm_start_time.getFullYear()} General Meeting</h1>
+      <div className="text-center">
+        <h1>
+          {props.data.quarter} {props.data.gm_start_time.getFullYear()} General
+          Meeting
+        </h1>
         <Link href={props.data.rsvp_link}>
-          <a className='button' target='_blank' rel='noreferrer noopener'>
+          <a className="button" target="_blank" rel="noreferrer noopener">
             RSVP Now!
           </a>
         </Link>
@@ -153,146 +156,201 @@ const GMCountdown = (props) => {
 function gm() {
   const data = parseGMData(gmData);
   function countdownRenderer({ days, hours, minutes, seconds, completed }) {
-    const {dayString, hourString, minuteString, secondString} =
-      calculateTimeStrings({days, hours, minutes, seconds});
+    const { dayString, hourString, minuteString, secondString } =
+      calculateTimeStrings({ days, hours, minutes, seconds });
     if (completed) {
       return (
-        <div className='text-center'>
+        <div className="text-center">
           <h1>
-            ACM&apos;s {data.quarter} GM {data.gm_start_time.getFullYear()} happened on the {data.date_with_suffix}!
+            ACM&apos;s {data.quarter} GM {data.gm_start_time.getFullYear()}{' '}
+            happened on the {data.date_with_suffix}!
           </h1>
-          <div className='should-dim'>
-            <a href={data.slides_link} target='_blank' rel='noopener noreferrer'>
-              <div className='button-wrapper'>
+          <div className="should-dim">
+            <a
+              href={data.slides_link}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="button-wrapper">
                 <Image
-                  src = {googleSlideLogo}
-                  alt='Google Slides logo'
-                  className='join-links-img'
+                  src={googleSlideLogo}
+                  alt="Google Slides logo"
+                  className="join-links-img"
                 />
               </div>
-              <p className='join-us'>View the {data.quarter} GM slides to catch up!</p>
+              <p className="join-us">
+                View the {data.quarter} GM slides to catch up!
+              </p>
             </a>
           </div>
         </div>
       );
     }
-    return <GMCountdown
-      data={data}
-      days={days}
-      hours={hours}
-      minutes={minutes}
-      seconds={seconds}
-      dayString={dayString}
-      hourString={hourString}
-      minuteString={minuteString}
-      secondString={secondString}
-    />;
+    return (
+      <GMCountdown
+        data={data}
+        days={days}
+        hours={hours}
+        minutes={minutes}
+        seconds={seconds}
+        dayString={dayString}
+        hourString={hourString}
+        minuteString={minuteString}
+        secondString={secondString}
+      />
+    );
   }
-	return (
-		<Layout>
-			<NextSeo
-				title={`${data.quarter} General Meeting | ACM at UCLA`}
-				description={
-          `ACM's ${data.quarter} General Meeting will take place on ${data.gm_start_time.getMonth()} ${data.date_with_suffix} at ${data.gm_start_time.getHours()}:${data.gm_start_time.getMinutes()} PT!`}
-				openGraph={{
-					images: [
-						{
-							url: 'https://www.uclaacm.com/images/logo.png',
-							width: 1200,
-							height: 1200,
-							alt: 'The ACM at UCLA logo',
-						},
-					],
-					site_name: 'ACM at UCLA',
-				}}
-			/>
-			<Banner decorative />
-      <div className='text-center'>
+  return (
+    <Layout>
+      <NextSeo
+        title={`${data.quarter} General Meeting | ACM at UCLA`}
+        description={`ACM's ${data.quarter} General Meeting will take place on ${data.gm_start_time.getMonth()} ${data.date_with_suffix} at ${data.gm_start_time.getHours()}:${data.gm_start_time.getMinutes()} PT!`}
+        openGraph={{
+          images: [
+            {
+              url: 'https://www.uclaacm.com/images/logo.png',
+              width: 1200,
+              height: 1200,
+              alt: 'The ACM at UCLA logo',
+            },
+          ],
+          site_name: 'ACM at UCLA',
+        }}
+      />
+      <Banner decorative />
+      <div className="text-center">
         <Image
-          src = {fallGMgraphic}
-          className='gm-graphic'
+          src={fallGMgraphic}
+          className="gm-graphic"
           alt={`${data.quarter} GM ${data.gm_start_time.getFullYear()} Marketing Graphic. ${data.quarter} GM will happen on ${data.day_of_week}, ${data.gm_start_time.getMonth()} ${data.date_with_suffix} from ${data.gm_start_time.getHours()}:${data.gm_start_time.getMinutes()} to ${data.gm_end_time.getHours()}:${data.gm_end_time.getMinutes()} in ${data.location}`}
         />
       </div>
-      <Countdown date={data.gm_start_time} renderer={countdownRenderer}/>
-			<div className='content-container-tight text-center'>
-        <div id='info-wrapper'>
+      <Countdown date={data.gm_start_time} renderer={countdownRenderer} />
+      <div className="content-container-tight text-center">
+        <div id="info-wrapper">
           <h2>Relevant information</h2>
-          <div className='flex rel-info'>
-            <div className='map-container'>
+          <div className="flex rel-info">
+            <div className="map-container">
               <iframe
-                src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3304.8685840026733!2d-118.44371082416286!3d34.07288291663994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bd8bbb175573%3A0x46c5c13d4084a4b3!2sHaines%20Hall!5e0!3m2!1sen!2sus!4v1735028032412!5m2!1sen!2sus'
-                className='map-frame'
-                allowFullScreen=''
-                loading='lazy'
-                title='google maps embed of haines hall'
-                referrerPolicy='no-referrer-when-downgrade'
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3304.8685840026733!2d-118.44371082416286!3d34.07288291663994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bd8bbb175573%3A0x46c5c13d4084a4b3!2sHaines%20Hall!5e0!3m2!1sen!2sus!4v1735028032412!5m2!1sen!2sus"
+                className="map-frame"
+                allowFullScreen=""
+                loading="lazy"
+                title="google maps embed of haines hall"
+                referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
             </div>
-            <div className='what-to-bring'>
+            <div className="what-to-bring">
               <h3>How to get there</h3>
-              <p> {data.quarter} GM will be hosted in {data.location}. </p>
+              <p>
+                {' '}
+                {data.quarter} GM will be hosted in {data.location}.{' '}
+              </p>
               <br></br>
               <h3>What to bring</h3>
-              <p>Encouraged: Phone to scan QR codes, excitement to learn about ACM!</p>
+              <p>
+                Encouraged: Phone to scan QR codes, excitement to learn about
+                ACM!
+              </p>
             </div>
           </div>
           <p>
-            Don&apos;t hesitate to contact us at acm@ucla.edu if you have any accessibility concerns
-            for {data.quarter} GM.
+            Don&apos;t hesitate to contact us at acm@ucla.edu if you have any
+            accessibility concerns for {data.quarter} GM.
           </p>
-
         </div>
 
-        <div id='gm-program-wrapper'>
+        <div id="gm-program-wrapper">
           <h2>Program</h2>
-					<div className='gm-program-section'>
-            <div className='section-header'>
+          <div className="gm-program-section">
+            <div className="section-header">
               <h3>Welcome</h3>
-              <p className='sub-heading'>An introduction to ACM by our president {data.pres}.</p>
+              <p className="sub-heading">
+                An introduction to ACM by our president {data.pres}.
+              </p>
             </div>
-					</div>
-          <div className='gm-program-section'>
-            <div className='section-header'>
+          </div>
+          <div className="gm-program-section">
+            <div className="section-header">
               <h3>Committee Presentations</h3>
-              <p className='sub-heading'>Learn what ACM&apos;s nine committees have planned for {data.quarter} quarter.</p>
+              <p className="sub-heading">
+                Learn what ACM&apos;s nine committees have planned for{' '}
+                {data.quarter} quarter.
+              </p>
             </div>
-            <p className='gm-program-row'><Image src= {studioLogo} alt='ACM studio'/> {data.studio}</p>
-            <p className='gm-program-row'><Image src= {icpcLogo} alt='ACM icpc'/> {data.icpc}</p>
-            <p className='gm-program-row'><Image src= {designLogo}  alt='ACM design'/> {data.design}</p>
-            <p className='gm-program-row'><Image src= {cyberLogo}  alt='ACM cyber'/> {data.cyber}</p>
-            <p className='gm-program-row'><Image src= {teachlaLogo}  alt='ACM teachLA'/> {data.teachLA}</p>
-            <p className='gm-program-row'><Image src= {wLogo}  alt='ACM w'/> {data.w}</p>
-            <p className='gm-program-row'><Image src= {aiLogo}  alt='ACM ai'/> {data.ai}</p>
-            <p className='gm-program-row'><Image src= {cloudLogo}  alt='ACM cloud'/> &nbsp;{data.cloud}</p>
-            <p className='gm-program-row'><Image src= {hackLogo}  alt='ACM hack'/> {data.hack}</p>
-					</div>
-          <div className='gm-program-section'>
-            <div className='section-header'>
+            <p className="gm-program-row">
+              <Image src={studioLogo} alt="ACM studio" /> {data.studio}
+            </p>
+            <p className="gm-program-row">
+              <Image src={icpcLogo} alt="ACM icpc" /> {data.icpc}
+            </p>
+            <p className="gm-program-row">
+              <Image src={designLogo} alt="ACM design" /> {data.design}
+            </p>
+            <p className="gm-program-row">
+              <Image src={cyberLogo} alt="ACM cyber" /> {data.cyber}
+            </p>
+            <p className="gm-program-row">
+              <Image src={teachlaLogo} alt="ACM teachLA" /> {data.teachLA}
+            </p>
+            <p className="gm-program-row">
+              <Image src={wLogo} alt="ACM w" /> {data.w}
+            </p>
+            <p className="gm-program-row">
+              <Image src={aiLogo} alt="ACM ai" /> {data.ai}
+            </p>
+            <p className="gm-program-row">
+              <Image src={cloudLogo} alt="ACM cloud" /> &nbsp;
+              {data.cloud}
+            </p>
+            <p className="gm-program-row">
+              <Image src={hackLogo} alt="ACM hack" /> {data.hack}
+            </p>
+          </div>
+          <div className="gm-program-section">
+            <div className="section-header">
               <h3>ACM Board</h3>
-              <p className='sub-heading'>How to get more involved with ACM beyond attending workshops and events</p>
+              <p className="sub-heading">
+                How to get more involved with ACM beyond attending workshops and
+                events
+              </p>
             </div>
-            <p className='gm-program-row'><Image src= {boardLogo} alt='ACM board'/>&nbsp;&nbsp;External: {data.evp}</p>
-            <p className='gm-program-row'><Image src= {boardLogo} alt='ACM board'/>&nbsp;&nbsp;Internal: {data.ivp}</p>
+            <p className="gm-program-row">
+              <Image src={boardLogo} alt="ACM board" />
+              &nbsp;&nbsp;External: {data.evp}
+            </p>
+            <p className="gm-program-row">
+              <Image src={boardLogo} alt="ACM board" />
+              &nbsp;&nbsp;Internal: {data.ivp}
+            </p>
           </div>
-          <div className='gm-program-section'>
-            <div className='section-header'>
+          <div className="gm-program-section">
+            <div className="section-header">
               <h3>ACM Initatives</h3>
-              <p className='sub-heading'>See exciting new programs that ACM is trying out</p>
+              <p className="sub-heading">
+                See exciting new programs that ACM is trying out
+              </p>
             </div>
-            {data.initiatives.map(item => <p key={item.id} className='gm-program-row'>{item}</p>)}
+            {data.initiatives.map((item) => (
+              <p key={item.id} className="gm-program-row">
+                {item}
+              </p>
+            ))}
           </div>
-          <div className='gm-program-section'>
-            <div className='section-header'>
+          <div className="gm-program-section">
+            <div className="section-header">
               <h3>Tabling and Social</h3>
-              <p className='sub-heading'>Interact with ACM&apos;s officers and walk away with new friends!</p>
+              <p className="sub-heading">
+                Interact with ACM&apos;s officers and walk away with new
+                friends!
+              </p>
             </div>
-            <p className='gm-program-row'>All ACM officers</p>
+            <p className="gm-program-row">All ACM officers</p>
           </div>
         </div>
-			</div>
-		</Layout>
-	);
+      </div>
+    </Layout>
+  );
 }
 
 export default gm;

@@ -18,17 +18,15 @@ module.exports = {
     sourceType: 'module',
   },
   ignorePatterns: ['/build/*'],
-  plugins: [
-    'react',
-    'import',
-    'jsx-a11y',
-  ],
+  plugins: ['react', 'import', 'jsx-a11y'],
   settings: {
     react: {
       version: 'detect',
     },
   },
   rules: {
+    'indent': ['error', 2, { SwitchCase: 1 }],
+    'no-tabs': ['error'],
     'eol-last': ['error', 'always'],
     'react/prop-types': 'off',
     'react/no-unknown-property': 'off',
@@ -46,6 +44,8 @@ module.exports = {
         avoidEscape: true,
       },
     ],
+
+    'jsx-quotes': ['error', 'prefer-double'],
 
     // ensures clean diffs, see https://medium.com/@nikgraf/why-you-should-enforce-dangling-commas-for-multiline-statements-d034c98e36f8
     'comma-dangle': ['error', 'always-multiline'],
@@ -117,10 +117,13 @@ module.exports = {
     // bandaid fix; see the following github issues
     // https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/issues/402
     // https://github.com/vercel/next.js/issues/5533
-    'jsx-a11y/anchor-is-valid': [ 'error', {
-      components: [ 'Link' ],
-      specialLink: [ 'hrefLeft', 'hrefRight' ],
-      aspects: [ 'invalidHref', 'preferButton' ],
-    }],
+    'jsx-a11y/anchor-is-valid': [
+      'error',
+      {
+        components: ['Link'],
+        specialLink: ['hrefLeft', 'hrefRight'],
+        aspects: ['invalidHref', 'preferButton'],
+      },
+    ],
   },
 };
