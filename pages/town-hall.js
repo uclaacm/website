@@ -44,7 +44,6 @@ const video = {
 };
 
 function TownHall() {
-
   let townHall = {
     status: true,
     status_text: '',
@@ -65,72 +64,111 @@ function TownHall() {
   const pastTownHalls = [...pastData].reverse();
 
   // Fetch and assign data from townhall.json
-  for(let row of data) {
-    switch(row.name) {
+  for (let row of data) {
+    switch (row.name) {
       case 'Event Status':
         // Set event status to true or false
-        (row.description == 'TBD' || row.description == 'Canceled') ?
-          townHall.status = false : townHall.status = true;
+        row.description == 'TBD' || row.description == 'Canceled'
+          ? (townHall.status = false)
+          : (townHall.status = true);
         townHall.status_text = row.description;
         break;
       case 'Title':
-        if (row.description) { townHall.title = row.description; }
+        if (row.description) {
+          townHall.title = row.description;
+        }
         break;
       case 'Banner':
-        if (row.description) { townHall.image = row.description; }
+        if (row.description) {
+          townHall.image = row.description;
+        }
         break;
       case 'Time':
-        if (row.description) { townHall.time = row.description; }
+        if (row.description) {
+          townHall.time = row.description;
+        }
         break;
       case 'Date':
-        if (row.description) { townHall.date = row.description; }
+        if (row.description) {
+          townHall.date = row.description;
+        }
         break;
       case 'Location':
-        if (row.description) { townHall.location = row.description; }
+        if (row.description) {
+          townHall.location = row.description;
+        }
         break;
       case 'Quarter':
-        if (row.description) { townHall.quarter = row.description; }
+        if (row.description) {
+          townHall.quarter = row.description;
+        }
         break;
       case 'Week':
-        if (row.description) { townHall.week = row.description; }
+        if (row.description) {
+          townHall.week = row.description;
+        }
         break;
       case 'RSVP Form':
-        if (row.description) { townHall.rsvp = row.description; }
+        if (row.description) {
+          townHall.rsvp = row.description;
+        }
         break;
       case 'Survey Form':
-        if (row.description) { townHall.survey = row.description; }
+        if (row.description) {
+          townHall.survey = row.description;
+        }
         break;
     }
   }
 
   // Set alt text for SEO
-  townHall.alt_text = "A banner that reads '" + townHall.title + ': ask questions and be heard! ' + townHall.date + ' from ' + townHall.time + ' PT. ' + townHall.location + ". Ask Questions and get your voice heard!'";
+  townHall.alt_text =
+    "A banner that reads '" +
+    townHall.title +
+    ': ask questions and be heard! ' +
+    townHall.date +
+    ' from ' +
+    townHall.time +
+    ' PT. ' +
+    townHall.location +
+    ". Ask Questions and get your voice heard!'";
 
   // Set description for SEO
-  townHall.description = 'Ask questions and get your voice heard at the ' + townHall.title + '! ' + townHall.date + ' from ' + townHall.time + ' PT - we hope to see you there :)';
+  townHall.description =
+    'Ask questions and get your voice heard at the ' +
+    townHall.title +
+    '! ' +
+    townHall.date +
+    ' from ' +
+    townHall.time +
+    ' PT - we hope to see you there :)';
 
   return (
     <Layout>
       <NextSeo
         title={townHall.title + ' | ACM at UCLA'}
         description={townHall.description}
-        openGraph={(townHall.status && townHall.image) ? {
-          images: [
-            {
-              url: townHall.image,
-              alt: townHall.alt_text,
-              width: 1920,
-              height: 1005,
-            },
-          ],
-          site_name: 'ACM at UCLA',
-        } : {}}
+        openGraph={
+          townHall.status && townHall.image
+            ? {
+              images: [
+                {
+                  url: townHall.image,
+                  alt: townHall.alt_text,
+                  width: 1920,
+                  height: 1005,
+                },
+              ],
+              site_name: 'ACM at UCLA',
+            }
+            : {}
+        }
       />
       {/* Most Recent Town Hall*/}
       <Banner decorative />
       <div className="content-container-tight">
         <div className="text-center">
-          {(townHall.status && townHall.image) ?
+          {townHall.status && townHall.image ? (
             <Image
               src={townHall.image}
               alt={townHall.alt_text}
@@ -138,25 +176,25 @@ function TownHall() {
               height={1005}
               priority={true}
             />
-            :
+          ) : (
             <></>
-          }
+          )}
           <h1>{townHall.title}</h1>
         </div>
         <p>
-          <b>Ask questions and be heard!</b> The CS Town Hall is an
-          opportunity for students to directly speak with professors and
-          administrators in the CS department.
+          <b>Ask questions and be heard!</b> The CS Town Hall is an opportunity
+          for students to directly speak with professors and administrators in
+          the CS department.
         </p>
 
-        {townHall.status ?
+        {townHall.status ? (
           <p>
             The {townHall.quarter} Town Hall took place on <b>{townHall.date}</b> (Week {townHall.week})
             at <b>{townHall.time} PT</b> in the {townHall.location}.
           </p>
-          :
+        ) : (
           <p style={TBD}>{townHall.status_text}</p>
-        }
+        )}
 
         {/* eslint-disable-next-line max-len */}
         {/* <p>While the event was not recorded, you are welcome to read the survey form summaries and slides as well as the meeting notes.</p> */}
@@ -177,9 +215,9 @@ function TownHall() {
         </p>
         <ul className="list-unstyled text-center">
           <li style={inlineButtonListStyle}>
-            { townHall.rsvp ?
+            {townHall.rsvp ? (
               <Link href={townHall.rsvp}>
-                <a className="button" target = "_blank">
+                <a className="button" target="_blank">
                   <FontAwesomeIcon
                     icon={faFileAlt}
                     fixedWidth
@@ -188,9 +226,9 @@ function TownHall() {
                   RSVP Here!
                 </a>
               </Link>
-            :
+            ) : (
               <div>
-                <a className="button" target = "_blank">
+                <a className="button" target="_blank">
                   <FontAwesomeIcon
                     icon={faFileAlt}
                     fixedWidth
@@ -199,7 +237,7 @@ function TownHall() {
                   RSVP Coming Soon!
                 </a>
               </div>
-            }
+            )}
           </li>
         </ul>
         <hr />
@@ -213,39 +251,48 @@ function TownHall() {
               {/* eslint-disable-next-line max-len */}
               We use pre-event surveys to gauge students&apos; opinions on{' '}
               <b>diversity &amp; inclusion</b>, <b>academics and curriculum</b>,
-              and <b>teaching practices</b>. The {townHall.quarter} Town Hall&apos;s focus is on
-              your questions so we only have <b>one survey.</b> We use the
-              answers to present problems to the CS department and guide the
-              discussion. <b>Survey responses are anonymous!</b>
+              and <b>teaching practices</b>. The {townHall.quarter} Town
+              Hall&apos;s focus is on your questions so we only have{' '}
+              <b>one survey.</b> We use the answers to present problems to the
+              CS department and guide the discussion.{' '}
+              <b>Survey responses are anonymous!</b>
             </p>
             <p>
               We need to hear your voice! Please answer this survey before the
               event.
             </p>
             <li style={inlineButtonListStyle}>
-              {townHall.survey ?
+              {townHall.survey ? (
                 <Link href={townHall.survey}>
-                <a className="button" target="_blank" rel="noopener noreferrer">
-                  <FontAwesomeIcon
-                    icon={faFileAlt}
-                    fixedWidth
-                    aria-hidden={true}
-                  />{' '}
-                  CS Town Hall Survey
-                </a>
+                  <a
+                    className="button"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FontAwesomeIcon
+                      icon={faFileAlt}
+                      fixedWidth
+                      aria-hidden={true}
+                    />{' '}
+                    CS Town Hall Survey
+                  </a>
                 </Link>
-              :
+              ) : (
                 <div>
-                <a className="button" target="_blank" rel="noopener noreferrer">
-                  <FontAwesomeIcon
-                    icon={faFileAlt}
-                    fixedWidth
-                    aria-hidden={true}
-                  />{' '}
-                  Stay Tuned for the Survey!
-                </a>
+                  <a
+                    className="button"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FontAwesomeIcon
+                      icon={faFileAlt}
+                      fixedWidth
+                      aria-hidden={true}
+                    />{' '}
+                    Stay Tuned for the Survey!
+                  </a>
                 </div>
-              }
+              )}
             </li>
           </div>
           <div>
@@ -272,7 +319,7 @@ function TownHall() {
                       className="button"
                       target="_blank"
                       rel="noopener noreferrer"
-                      >
+                    >
                       <FontAwesomeIcon
                         icon={faFileAlt}
                         fixedWidth
