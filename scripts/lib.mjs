@@ -1,6 +1,10 @@
 import moment from 'moment';
 
 const getCssStringFromCommittee = (committee) => {
+  if (!committee) {
+    console.warn('Skipping event. Committee is missing or null.');
+    return null;
+  }
   switch (committee.toLowerCase().trim()) {
     case 'general':
     case 'impact': // we should change the branding here soon
@@ -20,7 +24,9 @@ const getCssStringFromCommittee = (committee) => {
     case 'cloud':
       return committee.toLowerCase();
     default:
-      throw new Error(`Unrecognized string ${committee}`);
+      // throw new Error(`Unrecognized string ${committee}`);
+      console.warn(`Skipping event. Unrecognized committee: ${committee}`);
+      return null;
   }
 };
 
@@ -43,9 +49,19 @@ const generateSingleEvent = ({
 }) => {
   let allDay = false;
 
+  // If committee is already null (from getCssStringFromCommittee), skip
+  if (committee === null) {
+    console.warn('Skipping event because committee returned null.');
+    return null;
+  }
+
   if (!start && !end) {
+    // if (!date) {
+    //   throw new Error('Missing date; can\'t proceed');
+    // }
     if (!date) {
-      throw new Error("Missing date; can't proceed");
+      console.warn('Skipping event because date is missing.');
+      return null;
     }
     // If rawStart or rawEnd is missing, set allDay to true
     if (!rawStart) {
@@ -109,7 +125,9 @@ const generateSingleEvent = ({
   }
 
   if (!title) {
-    throw new Error('Missing title');
+    // throw new Error('Missing title');
+    console.warn('Skipping event because title is missing.');
+    return null;
   }
 
   return {
