@@ -18,7 +18,7 @@ import icpcLogo from '../public/images/committees/icpc_wordmark.svg';
 import studioLogo from '../public/images/committees/studio_wordmark.svg';
 import teachlaLogo from '../public/images/committees/teachLA_wordmark.svg';
 import wLogo from '../public/images/committees/w_wordmark.svg';
-import fallGMgraphic from '../public/images/Fall_GM_2024_graphic.png';
+import winterGMgraphic from '../public/images/Winter_GM_2025_graphic.png';
 import googleSlideLogo from '../public/images/slides.png';
 
 const dayToName = (day) => {
@@ -145,7 +145,7 @@ const GMCountdown = (props) => {
         </h1>
         <Link href={props.data.rsvp_link}>
           <a className="button" target="_blank" rel="noreferrer noopener">
-            RSVP Now!
+            RSVP Now to get the zoom link!
           </a>
         </Link>
       </div>
@@ -220,7 +220,7 @@ function gm() {
       <Banner decorative />
       <div className="text-center">
         <Image
-          src={fallGMgraphic}
+          src={winterGMgraphic}
           className="gm-graphic"
           alt={`${data.quarter} GM ${data.gm_start_time.getFullYear()} Marketing Graphic. ${data.quarter} GM will happen on ${data.day_of_week}, ${data.gm_start_time.getMonth()} ${data.date_with_suffix} from ${data.gm_start_time.getHours()}:${data.gm_start_time.getMinutes()} to ${data.gm_end_time.getHours()}:${data.gm_end_time.getMinutes()} in ${data.location}`}
         />
@@ -232,11 +232,11 @@ function gm() {
           <div className="flex rel-info">
             <div className="map-container">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3304.8685840026733!2d-118.44371082416286!3d34.07288291663994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bd8bbb175573%3A0x46c5c13d4084a4b3!2sHaines%20Hall!5e0!3m2!1sen!2sus!4v1735028032412!5m2!1sen!2sus"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3301.9116979881577!2d-118.4451879!3d34.0689216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bc0204c546b1%3A0xd5a64f1b8e6a9db8!2sUniversity%20of%20California%2C%20Los%20Angeles!5e0!3m2!1sen!2sus!4v1696835312938!5m2!1sen!2sus"
                 className="map-frame"
                 allowFullScreen=""
                 loading="lazy"
-                title="google maps embed of haines hall"
+                title="google maps embed of ucla"
                 referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
             </div>
@@ -244,7 +244,7 @@ function gm() {
               <h3>How to get there</h3>
               <p>
                 {' '}
-                {data.quarter} GM will be hosted in {data.location}.{' '}
+                {data.quarter} GM will be hosted {data.location}.{' '}
               </p>
               <br></br>
               <h3>What to bring</h3>
