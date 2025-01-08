@@ -147,7 +147,7 @@ function Footer() {
         </div>
         <div>
           <span className={styles['footer-text-thin']}>
-            &copy; ACM at UCLA 2024.
+            &copy; ACM at UCLA 2025.
           </span>
         </div>
       </nav>
