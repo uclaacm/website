@@ -189,8 +189,9 @@ function TownHall() {
 
         {townHall.status ? (
           <p>
-            The {townHall.quarter} Town Hall took place on <b>{townHall.date}</b> (Week {townHall.week})
-            at <b>{townHall.time} PT</b> in the {townHall.location}.
+            The {townHall.quarter} Town Hall took place on{' '}
+            <b>{townHall.date}</b> (Week {townHall.week}) at{' '}
+            <b>{townHall.time} PT</b> in the {townHall.location}.
           </p>
         ) : (
           <p style={TBD}>{townHall.status_text}</p>
@@ -344,7 +345,25 @@ function TownHall() {
                       Event Notes
                     </a>
                   </Link>
-                </li>
+                </li>{' '}
+                {pastTownHall.results && (
+                  <li style={inlineButtonListStyle}>
+                    <Link href={pastTownHall.results}>
+                      <a
+                        className="button"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <FontAwesomeIcon
+                          icon={faFileAlt}
+                          fixedWidth
+                          aria-hidden={true}
+                        />{' '}
+                        Results
+                      </a>
+                    </Link>
+                  </li>
+                )}
               </ul>
             </div>
             <div>
