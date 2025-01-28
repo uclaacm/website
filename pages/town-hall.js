@@ -359,7 +359,7 @@ function TownHall() {
                           fixedWidth
                           aria-hidden={true}
                         />{' '}
-                        Results
+                        Survey Results
                       </a>
                     </Link>
                   </li>
