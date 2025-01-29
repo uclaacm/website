@@ -314,22 +314,24 @@ function TownHall() {
               <h3>{pastTownHall.title + ' // ' + pastTownHall.date}</h3>
               <p>{pastTownHall.description}</p>
               <ul className="list-unstyled">
-                <li style={inlineButtonListStyle}>
-                  <Link href={pastTownHall.slides}>
-                    <a
-                      className="button"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <FontAwesomeIcon
-                        icon={faFileAlt}
-                        fixedWidth
-                        aria-hidden={true}
-                      />{' '}
-                      Form Summaries and Slides
-                    </a>
-                  </Link>
-                </li>{' '}
+                {pastTownHall.slides && (
+                  <li style={inlineButtonListStyle}>
+                    <Link href={pastTownHall.slides}>
+                      <a
+                        className="button"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <FontAwesomeIcon
+                          icon={faFileAlt}
+                          fixedWidth
+                          aria-hidden={true}
+                        />{' '}
+                        Form Summaries and Slides
+                      </a>
+                    </Link>
+                  </li>
+                )}{' '}
                 <li style={inlineButtonListStyle}>
                   <Link href={pastTownHall.notes}>
                     <a
