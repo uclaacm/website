@@ -214,7 +214,7 @@ function About() {
             growth of their committee.
           </p>
           <div className="grid-desktop-3">
-            <Officers officers={leadership} size="compact" />
+            <Officers officers={filteredOfficers} size="compact" />
           </div>
         </div>
       </div>
