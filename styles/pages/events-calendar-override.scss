@@ -20,7 +20,6 @@
   padding-top: 0.5em;
 }
 
-
 .rbc-today {
   color: black;
 }
@@ -104,38 +103,51 @@
   color: white;
 }
 
-
 // committee overrides
 .rbc-override-ai {
   background: linear-gradient(88.74deg, #29BBFF 41.7%, #2EE2FF 100%) !important;
 }
 
 .rbc-override-cyber {
-  background: linear-gradient(88.74deg, #F6B704 55.75%, #FFDF3F 100%) !important;
+  background: linear-gradient(88.74deg,
+  #F6B704 55.75%,
+  #FFDF3F 100%) !important;
 }
 
 .rbc-override-design {
-  background: linear-gradient(88.74deg, #F8801D 25.55%, #FECA59 100%) !important;
+  background: linear-gradient(88.74deg,
+  #F8801D 25.55%,
+  #FECA59 100%) !important;
 }
 
 .rbc-override-hack {
-  background: linear-gradient(88.74deg, #C50CF3 11.46%, #FF5F96 100%) !important;
+  background: linear-gradient(88.74deg,
+  #C50CF3 11.46%,
+  #FF5F96 100%) !important;
 }
 
 .rbc-override-icpc {
-  background: linear-gradient(88.74deg, #FF727D 11.46%, #FF9CE3 100%) !important;
+  background: linear-gradient(88.74deg,
+  #FF727D 11.46%,
+  #FF9CE3 100%) !important;
 }
 
 .rbc-override-studio {
-  background: linear-gradient(88.74deg, #FF404F 11.46%, #FF70D6 83.85%) !important;
+  background: linear-gradient(88.74deg,
+  #FF404F 11.46%,
+  #FF70D6 83.85%) !important;
 }
 
 .rbc-override-teach-la {
-  background: linear-gradient(88.74deg, #61CC0D 11.46%, #B9F122 83.85%) !important;
+  background: linear-gradient(88.74deg,
+  #61CC0D 11.46%,
+  #B9F122 83.85%) !important;
 }
 
 .rbc-override-w {
-  background: linear-gradient(88.74deg, #0CD6C0 11.46%, #4EF294 78.13%) !important;
+  background: linear-gradient(88.74deg,
+  #0CD6C0 11.46%,
+  #4EF294 78.13%) !important;
 }
 
 .rbc-override-icpc-cyber {

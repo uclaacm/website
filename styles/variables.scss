@@ -9,6 +9,10 @@ $hack-purple: #C960FF;
 $hack-black: #262938;
 $hack-tint: #C137D8;
 
+$cloud-purple: #8272FF;
+$cloud-black: #29273B;
+$cloud-tint: #CFDBFF;
+
 $w-teal: #1BC3A9;
 $w-black: #233431;
 $w-tint: #56E4B1;
@@ -49,5 +53,7 @@ $sidebar-breakpoint: 420px;
 $tablet-breakpoint: 768px;
 
 @mixin shadow-boxes {
-  box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.3), 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.2);
+  box-shadow:
+    0 0.125rem 0.5rem rgba(0, 0, 0, 0.3),
+    0 0.0625rem 0.125rem rgba(0, 0, 0, 0.2);
 }

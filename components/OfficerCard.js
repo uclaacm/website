@@ -21,7 +21,7 @@ function Officer({
     return (
       <div className={styles['mb-2']}>
         <div className={styles['jedi-profile-img']}>
-          <Image src={photo} alt={alt} width={250} height={250}/>
+          <Image src={photo} alt={alt} width={250} height={250} />
         </div>
         <div className={styles['jedi-card-body']}>
           <h2 className={styles['jedi-title']}>
@@ -43,7 +43,9 @@ function Officer({
             height={70}
           />
         </div>
-        <div className={`${styles['officer-grid-col']} ${styles['officer-info']}`}>
+        <div
+          className={`${styles['officer-grid-col']} ${styles['officer-info']}`}
+        >
           <h3 className={styles['officer-title']}>{name}</h3>
           <p>{role}</p>
         </div>
@@ -77,7 +79,12 @@ function Officers(props) {
     // TODO: more flexible mobile views
     <>
       {props.officers.map((officer) => (
-        <Officer {...officer} size={props.size} style={props.style} key={props.officers.name} />
+        <Officer
+          {...officer}
+          size={props.size}
+          style={props.style}
+          key={props.officers.name}
+        />
       ))}
     </>
   );

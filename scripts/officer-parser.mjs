@@ -1,13 +1,13 @@
-import * as fs from "fs";
-import { google } from "googleapis";
-import * as dotenv from "dotenv";
+import * as fs from 'fs';
+import { google } from 'googleapis';
+import * as dotenv from 'dotenv';
 
 dotenv.config();
 const SERVICE_ACCOUNT = process.env.SERVICE_ACCOUNT;
 const DIRECTORY_SPREADSHEET_ID = process.env.DIRECTORY_SPREADSHEET_ID;
 
 // await getGoogleSheetData('Officers!A2:K');
-writeToOutput(await getGoogleSheetData("Officers!A2:K"));
+writeToOutput(await getGoogleSheetData('Officers!A2:K'));
 
 ////////////////////////////////////////////////////////
 // Helper Functions
@@ -16,7 +16,7 @@ writeToOutput(await getGoogleSheetData("Officers!A2:K"));
 // Read data from Google sheets
 // using sheet range (eg: 'Week 1!A:H)
 async function getGoogleSheetData(range) {
-  const sheets = google.sheets({ version: "v4" });
+  const sheets = google.sheets({ version: 'v4' });
 
   // Get JWT Token to access sheet
   const service_account = JSON.parse(SERVICE_ACCOUNT);
@@ -24,24 +24,24 @@ async function getGoogleSheetData(range) {
     service_account.client_email,
     null, // or undefined, or an empty string (depends on your use case)
     service_account.private_key,
-    ["https://www.googleapis.com/auth/spreadsheets"]
+    ['https://www.googleapis.com/auth/spreadsheets'],
   );
 
   // Authorize the client
   await jwtClient.authorize();
 
   const committees = [
-    "Board, Internal",
-    "Board, External",
-    "AI",
-    "Cyber",
-    "Design",
-    "Studio",
-    "Hack",
-    "ICPC",
-    "Teach LA",
-    "W",
-    "Cloud",
+    'Board, Internal',
+    'Board, External',
+    'AI',
+    'Cyber',
+    'Design',
+    'Studio',
+    'Hack',
+    'ICPC',
+    'Teach LA',
+    'W',
+    'Cloud',
   ];
 
   // Get data from Google spreadsheets
@@ -52,7 +52,7 @@ async function getGoogleSheetData(range) {
       range: range,
     });
 
-    let currCommittee = "President";
+    let currCommittee = 'President';
     let offs = [];
     const rows = res?.data.values;
     for (let i = 0; i < rows.length; i++) {
@@ -64,21 +64,21 @@ async function getGoogleSheetData(range) {
         let image = row[10];
         if (!image) {
           image =
-            "https://t4.ftcdn.net/jpg/02/15/84/43/360_F_215844325_ttX9YiIIyeaR7Ne6EaLLjMAmy4GvPC69.jpg"; //try making this a reference under assets?
+            'https://t4.ftcdn.net/jpg/02/15/84/43/360_F_215844325_ttX9YiIIyeaR7Ne6EaLLjMAmy4GvPC69.jpg'; //try making this a reference under assets?
         } else {
           try {
             const url = new URL(image);
             const host = url.hostname;
-            if (host === "drive.google.com") {
+            if (host === 'drive.google.com') {
               const fileID = image.match(/\/file\/d\/(.+?)\//)[1]; //convert gdrive urls into viewable url using regex
               image = `https://drive.google.com/thumbnail?id=${fileID}`;
-            }
-            else if (host === "github.com") {
-              const regex = /^https:\/\/github\.com\/([^\/]+)\/([^\/]+)\/blob\/([^\/]+)\/(.+)$/; //convert github urls into viewable url using regex
-              const replacement = 'https://raw.githubusercontent.com/$1/$2/$3/$4';
+            } else if (host === 'github.com') {
+              const regex =
+                /^https:\/\/github\.com\/([^\/]+)\/([^\/]+)\/blob\/([^\/]+)\/(.+)$/; //convert github urls into viewable url using regex
+              const replacement =
+                'https://raw.githubusercontent.com/$1/$2/$3/$4';
               image = image.replace(regex, replacement);
-            }
-            else {
+            } else {
               image = url.href;
             }
           } catch (err) {
@@ -108,7 +108,7 @@ async function getGoogleSheetData(range) {
     }));
     return formattedData;
   } catch (error) {
-    console.error("Error retrieving data from Google Sheets:", error.message);
+    console.error('Error retrieving data from Google Sheets:', error.message);
     return [];
   }
 }
@@ -116,8 +116,8 @@ async function getGoogleSheetData(range) {
 function writeToOutput(officers) {
   // Write to offoutput.json
   const out = JSON.stringify(officers);
-  fs.writeFile("offoutput.json", out, (err) => {
+  fs.writeFile('offoutput.json', out, (err) => {
     if (err) throw err;
-    console.log("Output successfully saved to offoutput.json");
+    console.log('Output successfully saved to offoutput.json');
   });
 }

@@ -1,4 +1,6 @@
-$committees: (ai, $ai-arctic), (cyber, $cyber-amber), (design, $design-orange), (hack, $hack-purple), (icpc, $icpc-tangerine), (studio, $studio-raspberry), (teachla, $teachla-green), (w, $w-teal);
+$committees: (ai, $ai-arctic), (cyber, $cyber-amber), (design, $design-orange),
+  (hack, $hack-purple), (icpc, $icpc-tangerine), (studio, $studio-raspberry),
+  (teachla, $teachla-green), (w, $w-teal);
 
 #navbar {
   background: white;
@@ -25,9 +27,9 @@ $committees: (ai, $ai-arctic), (cyber, $cyber-amber), (design, $design-orange), 
     #nav-title {
       z-index: 12;
 
-      #acm-logo {
+      .acm-logo {
         height: 60px;
-        margin-top: 05px;
+        margin-top: 5px;
         width: 180px;
       }
     }
@@ -99,7 +101,7 @@ $committees: (ai, $ai-arctic), (cyber, $cyber-amber), (design, $design-orange), 
           font-weight: 600;
           text-transform: lowercase;
           transition: 0.2s;
-          
+
           &:hover {
             color: $acm-cobalt;
             cursor: pointer;
@@ -134,7 +136,7 @@ $committees: (ai, $ai-arctic), (cyber, $cyber-amber), (design, $design-orange), 
     }
 
     @media (max-width: $navbar-breakpoint) {
-      #hamburger { 
+      #hamburger {
         display: flex;
       }
 
