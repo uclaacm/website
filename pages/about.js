@@ -25,10 +25,7 @@ function extractContent(officerContent) {
     committee: officer.committee,
     major: officer.major,
     year: officer.year,
-    photo: (officer.photo != 'https://t4.ftcdn.net/jpg/02/15/84/43/360_F_215844325_ttX9YiIIyeaR7Ne6EaLLjMAmy4GvPC69.jpg' 
-      ? officer.photo 
-      : '/images/officers/acmlogocopy.jpg'
-    ), // if photo is default, display ACM logo
+    photo: (officer.photo != 'https://t4.ftcdn.net/jpg/02/15/84/43/360_F_215844325_ttX9YiIIyeaR7Ne6EaLLjMAmy4GvPC69.jpg' ? officer.photo : '/images/officers/acmlogocopy.jpg'), // if photo is default, display ACM logo
   })).filter(officer => officer.role.includes('President'));
   return convertedData;
 }
