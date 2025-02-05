@@ -21,7 +21,7 @@ function extractContent(officerContent) {
   const convertedData = officerContent.map(officer => ({
     name: officer.name,
     pronouns: officer.pronouns,
-    role: (officer.role === officer.committee ? officer.role : officer.role + ', ' + officer.committee),
+    role: (officer.committee.includes('Board') ? officer.role : officer.role + ', ' + officer.committee),
     committee: officer.committee,
     major: officer.major,
     year: officer.year,
