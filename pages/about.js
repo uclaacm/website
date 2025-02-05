@@ -21,12 +21,12 @@ function extractContent(officerContent) {
   const convertedData = officerContent.map(officer => ({
     name: officer.name,
     pronouns: officer.pronouns,
-    position: (officer.role === officer.committee ? officer.role : officer.role + ', ' + officer.committee),
+    role: (officer.role === officer.committee ? officer.role : officer.role + ', ' + officer.committee),
     committee: officer.committee,
     major: officer.major,
     year: officer.year,
-    img: officer.photo,
-  })).filter(officer => officer.position.includes('President'));
+    photo: officer.photo,
+  })).filter(officer => officer.role.includes('President'));
   return convertedData;
 }
 

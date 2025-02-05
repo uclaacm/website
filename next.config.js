@@ -21,6 +21,7 @@ module.exports = {
       'github.com',
       'www.uclaacm.com',
       'raw.githubusercontent.com',
+      't4.ftcdn.net'
     ],
   },
   target: 'serverless',
