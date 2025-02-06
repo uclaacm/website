@@ -16,7 +16,7 @@ import data from '../data';
 function Home() {
   const { carousel, committees, news } = data;
   return (
-    <Layout>
+    (<Layout>
       <Script
         id="goatcounter-script"
         data-goatcounter="https://uclaacm.goatcounter.com/count"
@@ -53,7 +53,7 @@ function Home() {
         <br />
         <Committees committees={committees} />
         <div className="button-section">
-          <Link href="/committees"><a className="button">Learn More About Our Committees</a></Link>
+          <Link href="/committees" className="button">Learn More About Our Committees</Link>
         </div><br /><br />
 
         <div className="content-section">
@@ -75,17 +75,21 @@ function Home() {
               <h2>Want to stay updated on what&rsquo;s going on?</h2>
             </div>
             <div className="sign-up-right half-width">
-              <Link href="http://eepurl.com/hdEvNP">
-                <a className="button tight dark" target="_blank" rel="noreferrer noopener">
+              <Link
+                href="http://eepurl.com/hdEvNP"
+                className="button tight dark"
+                target="_blank"
+                rel="noreferrer noopener">
+                
                   Join our Mailing List
-                </a>
+                
               </Link>
             </div>
           </div>
         </div>
         <Carousel images={carousel.images} aria-hidden="true" />
       </div>
-    </Layout>
+    </Layout>)
   );
 }
 

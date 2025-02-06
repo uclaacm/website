@@ -77,7 +77,7 @@ function Officer({
 function Officers(props) {
   return (
     // TODO: more flexible mobile views
-    <>
+    (<>
       {props.officers.map((officer) => (
         <Officer
           {...officer}
@@ -86,7 +86,7 @@ function Officers(props) {
           key={props.officers.name}
         />
       ))}
-    </>
+    </>)
   );
 }
 

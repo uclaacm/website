@@ -6,11 +6,11 @@ import Officers from '../Officers/OfficerCard';
 function CommitteeOfficers({ committee }) {
   //maps officers to a particular commitee
   return (
-    <div className="body-wrapper">
+    (<div className="body-wrapper">
       <div className="card-container">
         <div className="grid-desktop-3">
           {committee.name === 'Board' ? ( //Board is an exception
-            <Officers
+            (<Officers
               officers={data.filter(
                 (officer) =>
                   officer.committee === 'Board, Internal' ||
@@ -19,7 +19,7 @@ function CommitteeOfficers({ committee }) {
               )}
               size="compact"
               committee={committee.name}
-            />
+            />)
           ) : (
             <Officers //all other officers are straightforward
               officers={data.filter(
@@ -31,7 +31,7 @@ function CommitteeOfficers({ committee }) {
           )}
         </div>
       </div>
-    </div>
+    </div>)
   );
 }
 

@@ -22,7 +22,7 @@ function AllyshipSpaceCard({
   priority,
 }) {
   return (
-    <div className={`${styles['allyship-row']} ${styles['mb-2']}`}>
+    (<div className={`${styles['allyship-row']} ${styles['mb-2']}`}>
       <div className={styles['allyship-image']}>
         <Image src={img} alt={alt} priority={priority} />
       </div>
@@ -31,15 +31,15 @@ function AllyshipSpaceCard({
         {/* wrapped in a fragment to allow for spacing */}
         {rsvp && (
           <>
-            <Link href={rsvp}>
-              <a className={styles['jedi-link']}>RSVP</a>
+            <Link href={rsvp} className={styles['jedi-link']}>
+              RSVP
             </Link>{' '}
           </>
         )}
         {slides && (
           <>
-            <Link href={slides}>
-              <a className={styles['jedi-link']}>Slides</a>
+            <Link href={slides} className={styles['jedi-link']}>
+              Slides
             </Link>{' '}
           </>
         )}
@@ -53,7 +53,7 @@ function AllyshipSpaceCard({
         </p>
         <p className={styles['my-tight']}>{description}</p>
       </div>
-    </div>
+    </div>)
   );
 }
 

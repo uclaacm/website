@@ -14,7 +14,7 @@ import styles from '../../styles/pages/jedi.module.scss';
 
 function JEDIAbout() {
   return (
-    <Layout>
+    (<Layout>
       <NextSeo
         title="About JEDI | ACM at UCLA"
         description="JEDI is an initiative that aims to make ACM's culture and presence on campus more inclusive. We aim to prioritize equity, diversity, and inclusion within our committees by identifying and addressing areas of improvement in terms of inclusion, as well as better including all minoritized and marginalized groups in tech."
@@ -49,19 +49,19 @@ function JEDIAbout() {
             <ul className={styles['nav-links']}>
               <li>
                 <Link href="/jedi/meet">
-                  <a>meet the JEDIs</a>
+                  meet the JEDIs
                 </Link>
               </li>
               <li>
                 <Link href="/jedi/allyship">
-                  <a>allyship spaces</a>
+                  allyship spaces
                 </Link>
               </li>
               <li>
-                <Link href={blogLink}>
-                  <a target="_blank" rel="noopener noreferrer">
+                <Link href={blogLink} target="_blank" rel="noopener noreferrer">
+                  
                     blog
-                  </a>
+                  
                 </Link>
               </li>
             </ul>
@@ -81,55 +81,55 @@ function JEDIAbout() {
             <p>
               So far, we&apos;ve worked with each committee to reach specific
               EDI goals within ACM - read more about our achievements{' '}
-              <Link href="https://medium.com/acm-at-ucla/may-the-force-be-with-acm-at-ucla-49e9258d71e1">
-                <a
-                  className={styles['jedi-link']}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+              <Link
+                href="https://medium.com/acm-at-ucla/may-the-force-be-with-acm-at-ucla-49e9258d71e1"
+                className={styles['jedi-link']}
+                target="_blank"
+                rel="noopener noreferrer">
+                
                   in this blog post
-                </a>
+                
               </Link>
               . We also hold allyship spaces on various EDI topics (not always
               related to tech) such as{' '}
-              <Link href="https://drive.google.com/file/d/1Agve-hqXOZ4D0H2PnzaklDcazoND-39F/view">
-                <a
-                  className={styles['jedi-link']}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+              <Link
+                href="https://drive.google.com/file/d/1Agve-hqXOZ4D0H2PnzaklDcazoND-39F/view"
+                className={styles['jedi-link']}
+                target="_blank"
+                rel="noopener noreferrer">
+                
                   queer and trans representation in computer science
-                </a>
+                
               </Link>{' '}
               and{' '}
-              <Link href="https://drive.google.com/drive/folders/16Jk212gr2jC4xJbKEkFVxwdukwF902-o">
-                <a
-                  className={styles['jedi-link']}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+              <Link
+                href="https://drive.google.com/drive/folders/16Jk212gr2jC4xJbKEkFVxwdukwF902-o"
+                className={styles['jedi-link']}
+                target="_blank"
+                rel="noopener noreferrer">
+                
                   Asian representation and the otherization of kpop
-                </a>
+                
               </Link>
               .
             </p>
             <p>
-              <Link href="/jedi/meet">
-                <a className={styles['jedi-link']}>Meet our JEDIs</a>
+              <Link href="/jedi/meet" className={styles['jedi-link']}>
+                Meet our JEDIs
               </Link>
               ,{' '}
-              <Link href="/jedi/allyship">
-                <a className={styles['jedi-link']}>see past allyship spaces</a>
+              <Link href="/jedi/allyship" className={styles['jedi-link']}>
+                see past allyship spaces
               </Link>
               , or{' '}
-              <Link href="https://medium.com/acm-at-ucla/may-the-force-be-with-acm-at-ucla-49e9258d71e1">
-                <a
-                  className={styles['jedi-link']}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+              <Link
+                href="https://medium.com/acm-at-ucla/may-the-force-be-with-acm-at-ucla-49e9258d71e1"
+                className={styles['jedi-link']}
+                target="_blank"
+                rel="noopener noreferrer">
+                
                   read our blog
-                </a>
+                
               </Link>
               !
             </p>
@@ -138,8 +138,8 @@ function JEDIAbout() {
               {/* eslint-disable-next-line max-len */}
               If you&apos;re interested in ACM&apos;s diversity and inclusion
               goals, reach out to any of our{' '}
-              <Link href="/jedi/meet">
-                <a className={styles['jedi-link']}>JEDIs</a>
+              <Link href="/jedi/meet" className={styles['jedi-link']}>
+                JEDIs
               </Link>{' '}
               on Slack or{' '}
               <a
@@ -155,8 +155,8 @@ function JEDIAbout() {
               involved but have any quick suggestions or questions, feel free to
               contact us as well :)
             </p>
-            <Link href="/jedi/meet#contact">
-              <a className="button">get involved!</a>
+            <Link href="/jedi/meet#contact" className="button">
+              get involved!
             </Link>
           </div>
         </div>
@@ -211,7 +211,7 @@ function JEDIAbout() {
           </p>
         </div>
       </div>
-    </Layout>
+    </Layout>)
   );
 }
 

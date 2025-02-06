@@ -87,11 +87,11 @@ export default [
               Moonshots handles bold, new initiatives for ACM to take on; past
               examples include{' '}
               <Link href="/impact">
-                <a>Impact</a>
+                Impact
               </Link>{' '}
               and{' '}
               <Link href="/jedi">
-                <a>JEDI</a>
+                JEDI
               </Link>
               !{' '}
             </li>

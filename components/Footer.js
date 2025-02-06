@@ -27,21 +27,21 @@ const footerInitiativeLinks = [
 
 function FooterLinkElement({ title, path, ext }) {
   return (
-    <Link href={path}>
-      <a
-        className={styles['link-footer']}
-        target={ext ? '_blank' : ''}
-        rel={ext ? 'noopener noreferrer' : ''}
-      >
-        {title}
-      </a>
-    </Link>
+    (<Link
+      href={path}
+      className={styles['link-footer']}
+      target={ext ? '_blank' : ''}
+      rel={ext ? 'noopener noreferrer' : ''}>
+
+      {title}
+
+    </Link>)
   );
 }
 
 function Footer() {
   return (
-    <footer className={styles.footer}>
+    (<footer className={styles.footer}>
       <nav
         className={styles['footer-inner']}
         aria-labelledby="footer-navigation"
@@ -54,25 +54,25 @@ function Footer() {
             <h3 className={styles['footer-header']}>Find us on social media</h3>
             <SocialMedia type="light" />
             <div className="mt-1">
-              <Link href="http://eepurl.com/hdEvNP">
-                <a
-                  className="button tight"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                >
+              <Link
+                href="http://eepurl.com/hdEvNP"
+                className="button tight"
+                target="_blank"
+                rel="noreferrer noopener">
+                
                   Join our Mailing List
-                </a>
+                
               </Link>
             </div>
             <div className="mt-1">
-              <Link href="https://linktr.ee/acmucla">
-                <a
-                  className="button tight"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                >
+              <Link
+                href="https://linktr.ee/acmucla"
+                className="button tight"
+                target="_blank"
+                rel="noreferrer noopener">
+                
                   Linktree
-                </a>
+                
               </Link>
             </div>
             <p className={styles['footer-header']}>Reach us at</p>
@@ -151,7 +151,7 @@ function Footer() {
           </span>
         </div>
       </nav>
-    </footer>
+    </footer>)
   );
 }
 

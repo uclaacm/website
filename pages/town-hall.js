@@ -144,7 +144,7 @@ function TownHall() {
     ' PT - we hope to see you there :)';
 
   return (
-    <Layout>
+    (<Layout>
       <NextSeo
         title={townHall.title + ' | ACM at UCLA'}
         description={townHall.description}
@@ -217,15 +217,14 @@ function TownHall() {
         <ul className="list-unstyled text-center">
           <li style={inlineButtonListStyle}>
             {townHall.rsvp ? (
-              <Link href={townHall.rsvp}>
-                <a className="button" target="_blank">
-                  <FontAwesomeIcon
-                    icon={faFileAlt}
-                    fixedWidth
-                    aria-hidden={true}
-                  />{' '}
-                  RSVP Here!
-                </a>
+              <Link href={townHall.rsvp} className="button" target="_blank">
+
+                <FontAwesomeIcon
+                  icon={faFileAlt}
+                  fixedWidth
+                  aria-hidden={true}
+                />{' '}RSVP Here!
+                                
               </Link>
             ) : (
               <div>
@@ -264,19 +263,18 @@ function TownHall() {
             </p>
             <li style={inlineButtonListStyle}>
               {townHall.survey ? (
-                <Link href={townHall.survey}>
-                  <a
-                    className="button"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FontAwesomeIcon
-                      icon={faFileAlt}
-                      fixedWidth
-                      aria-hidden={true}
-                    />{' '}
-                    CS Town Hall Survey
-                  </a>
+                <Link
+                  href={townHall.survey}
+                  className="button"
+                  target="_blank"
+                  rel="noopener noreferrer">
+
+                  <FontAwesomeIcon
+                    icon={faFileAlt}
+                    fixedWidth
+                    aria-hidden={true}
+                  />{' '}CS Town Hall Survey
+                                    
                 </Link>
               ) : (
                 <div>
@@ -316,53 +314,50 @@ function TownHall() {
               <ul className="list-unstyled">
                 {pastTownHall.slides && (
                   <li style={inlineButtonListStyle}>
-                    <Link href={pastTownHall.slides}>
-                      <a
-                        className="button"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <FontAwesomeIcon
-                          icon={faFileAlt}
-                          fixedWidth
-                          aria-hidden={true}
-                        />{' '}
-                        Form Summaries and Slides
-                      </a>
-                    </Link>
-                  </li>
-                )}{' '}
-                <li style={inlineButtonListStyle}>
-                  <Link href={pastTownHall.notes}>
-                    <a
+                    <Link
+                      href={pastTownHall.slides}
                       className="button"
                       target="_blank"
-                      rel="noopener noreferrer"
-                    >
+                      rel="noopener noreferrer">
+
                       <FontAwesomeIcon
                         icon={faFileAlt}
                         fixedWidth
                         aria-hidden={true}
-                      />{' '}
-                      Event Notes
-                    </a>
+                      />{' '}Form Summaries and Slides
+                                            
+                    </Link>
+                  </li>
+                )}{' '}
+                <li style={inlineButtonListStyle}>
+                  <Link
+                    href={pastTownHall.notes}
+                    className="button"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    <FontAwesomeIcon
+                      icon={faFileAlt}
+                      fixedWidth
+                      aria-hidden={true}
+                    />{' '}Event Notes
+                                        
                   </Link>
                 </li>{' '}
                 {pastTownHall.results && (
                   <li style={inlineButtonListStyle}>
-                    <Link href={pastTownHall.results}>
-                      <a
-                        className="button"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <FontAwesomeIcon
-                          icon={faFileAlt}
-                          fixedWidth
-                          aria-hidden={true}
-                        />{' '}
-                        Survey Results
-                      </a>
+                    <Link
+                      href={pastTownHall.results}
+                      className="button"
+                      target="_blank"
+                      rel="noopener noreferrer">
+
+                      <FontAwesomeIcon
+                        icon={faFileAlt}
+                        fixedWidth
+                        aria-hidden={true}
+                      />{' '}Survey Results
+                                            
                     </Link>
                   </li>
                 )}
@@ -395,7 +390,8 @@ function TownHall() {
                   href="/files/town-hall/CS Town Hall Winter 2021 Slides.pdf"
                   className="button"
                   target="_blank"
-                  rel="noopener noreferrer">
+                  rel="noopener noreferrer"
+                  legacyBehavior>
 
                   <FontAwesomeIcon
                     icon={faFileAlt}
@@ -409,7 +405,8 @@ function TownHall() {
                   href="/files/town-hall/CS Town Hall Winter 2021 Notes.pdf"
                   className="button"
                   target="_blank"
-                  rel="noopener noreferrer">
+                  rel="noopener noreferrer"
+                  legacyBehavior>
 
                   <FontAwesomeIcon
                     icon={faFileAlt}
@@ -433,7 +430,7 @@ function TownHall() {
           </div>
         </div>
       </div>
-    </Layout>
+    </Layout>)
   );
 }
 

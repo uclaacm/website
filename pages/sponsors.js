@@ -13,7 +13,7 @@ import uclaCsDeptLogo from '../public/images/sponsors/ucla_cs_dept.png';
 function Sponsors() {
   const { sponsors } = data;
   return (
-    <Layout>
+    (<Layout>
       <NextSeo
         title="Sponsors and Partners | ACM at UCLA"
         description="ACM at UCLA couldn't happen without our amazing sponsors, partners, and affiliates that support all of our work. Interested in parterning with us? Send as an email at acm@ucla.edu!"
@@ -99,12 +99,12 @@ function Sponsors() {
         </div>
         <h2>Interested in becoming a sponsor?</h2>
         <div className="button-section">
-          <Link href="mailto:acm@ucla.edu">
-            <a className="button">Contact Us at acm@ucla.edu</a>
+          <Link href="mailto:acm@ucla.edu" className="button">
+            Contact Us at acm@ucla.edu
           </Link>
         </div>
       </div>
-    </Layout>
+    </Layout>)
   );
 }
 

@@ -112,7 +112,7 @@ function Project({
 function projects(props) {
   return (
     // TODO: more flexible mobile views
-    <>
+    (<>
       {props.projects.map((project) => (
         <Project
           {...project}
@@ -121,7 +121,7 @@ function projects(props) {
           key={project.name}
         />
       ))}
-    </>
+    </>)
   );
 }
 
