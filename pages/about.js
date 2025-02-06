@@ -6,7 +6,6 @@ import React from 'react';
 import Banner from '../components/Banner';
 import Layout from '../components/Layout';
 import Officers from '../components/OfficerCard';
-// import Officers from '../components/Officers/OfficerCard';
 import SocialMedia from '../components/SocialMedia';
 import data from '../offoutput.json';
 
