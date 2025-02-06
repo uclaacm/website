@@ -52,7 +52,7 @@ module.exports = {
       },
       {
         protocol: 'https',
-        hostname: ' www.acmcyber.com',
+        hostname: 'www.acmcyber.com',
       },
       {
         protocol: 'https',
@@ -61,6 +61,10 @@ module.exports = {
       {
         protocol: 'https',
         hostname: 'github.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'raw.githubusercontent.com',
       },
     ],
   },
