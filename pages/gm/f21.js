@@ -1,5 +1,5 @@
-import { NextSeo } from 'next-seo';
 import Link from 'next/link';
+import { NextSeo } from 'next-seo';
 import React from 'react';
 import Countdown from 'react-countdown';
 
@@ -122,9 +122,9 @@ function GMCountdown(props) {
         className="button"
         target="_blank"
         rel="noreferrer noopener">
-        
+
           RSVP Now!
-        
+
       </Link>
     </div>
   </>);
@@ -181,9 +181,9 @@ function F21() {
               <span>
                 (learn more about how ACM is{' '}
                 <Link href={'/covid'} target="_blank" rel="noreferrer noopener">
-                  
+
                     committed to running COVID-safe events
-                  
+
                 </Link>{' '}
                 in our return to campus)
               </span>

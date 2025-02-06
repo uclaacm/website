@@ -1,5 +1,5 @@
-import { NextSeo } from 'next-seo';
 import Image from 'next/legacy/image';
+import { NextSeo } from 'next-seo';
 import React from 'react';
 import Banner from '../components/Banner';
 import CommitteeSection from '../components/Committees/CommitteeSection';

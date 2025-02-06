@@ -250,9 +250,9 @@ export default function Navbar() {
                 <Link
                   href="https://members.uclaacm.com"
                   className="button button-transparent button-lg font-header">
-                  
+
                     Member Login
-                  
+
                 </Link>
               </li>
             </ul>

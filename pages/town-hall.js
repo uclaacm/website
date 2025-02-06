@@ -1,8 +1,8 @@
 import { faFileAlt } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { NextSeo } from 'next-seo';
 import Image from 'next/legacy/image';
 import Link from 'next/link';
+import { NextSeo } from 'next-seo';
 import React from 'react';
 
 import Banner from '../components/Banner';
@@ -224,7 +224,7 @@ function TownHall() {
                   fixedWidth
                   aria-hidden={true}
                 />{' '}RSVP Here!
-                                
+
               </Link>
             ) : (
               <div>
@@ -274,7 +274,7 @@ function TownHall() {
                     fixedWidth
                     aria-hidden={true}
                   />{' '}CS Town Hall Survey
-                                    
+
                 </Link>
               ) : (
                 <div>
@@ -325,7 +325,7 @@ function TownHall() {
                         fixedWidth
                         aria-hidden={true}
                       />{' '}Form Summaries and Slides
-                                            
+
                     </Link>
                   </li>
                 )}{' '}
@@ -341,7 +341,7 @@ function TownHall() {
                       fixedWidth
                       aria-hidden={true}
                     />{' '}Event Notes
-                                        
+
                   </Link>
                 </li>{' '}
                 {pastTownHall.results && (
@@ -357,7 +357,7 @@ function TownHall() {
                         fixedWidth
                         aria-hidden={true}
                       />{' '}Survey Results
-                                            
+
                     </Link>
                   </li>
                 )}

@@ -1,6 +1,6 @@
-import { NextSeo } from 'next-seo';
 import Image from 'next/legacy/image';
 import Link from 'next/link';
+import { NextSeo } from 'next-seo';
 import React from 'react';
 import Countdown from 'react-countdown';
 
@@ -18,8 +18,8 @@ import icpcLogo from '../public/images/committees/icpc_wordmark.svg';
 import studioLogo from '../public/images/committees/studio_wordmark.svg';
 import teachlaLogo from '../public/images/committees/teachLA_wordmark.svg';
 import wLogo from '../public/images/committees/w_wordmark.svg';
-import winterGMgraphic from '../public/images/Winter_GM_2025_graphic.png';
 import googleSlideLogo from '../public/images/slides.png';
+import winterGMgraphic from '../public/images/Winter_GM_2025_graphic.png';
 
 const dayToName = (day) => {
   switch (day) {
@@ -147,9 +147,9 @@ const GMCountdown = (props) => {
         className="button"
         target="_blank"
         rel="noreferrer noopener">
-        
+
           RSVP Now to get the zoom link!
-        
+
       </Link>
     </div>
   </>);

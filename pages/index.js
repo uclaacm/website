@@ -1,6 +1,6 @@
-import { NextSeo } from 'next-seo';
 import Link from 'next/link';
 import Script from 'next/script';
+import { NextSeo } from 'next-seo';
 import React from 'react';
 
 import Banner from '../components/Banner';
@@ -80,9 +80,9 @@ function Home() {
                 className="button tight dark"
                 target="_blank"
                 rel="noreferrer noopener">
-                
+
                   Join our Mailing List
-                
+
               </Link>
             </div>
           </div>

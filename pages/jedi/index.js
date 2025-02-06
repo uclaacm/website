@@ -1,6 +1,6 @@
-import { NextSeo } from 'next-seo';
 import Image from 'next/legacy/image';
 import Link from 'next/link';
+import { NextSeo } from 'next-seo';
 import React from 'react';
 
 import Layout from '../../components/Layout';
@@ -59,9 +59,9 @@ function JEDIAbout() {
               </li>
               <li>
                 <Link href={blogLink} target="_blank" rel="noopener noreferrer">
-                  
+
                     blog
-                  
+
                 </Link>
               </li>
             </ul>
@@ -86,9 +86,9 @@ function JEDIAbout() {
                 className={styles['jedi-link']}
                 target="_blank"
                 rel="noopener noreferrer">
-                
+
                   in this blog post
-                
+
               </Link>
               . We also hold allyship spaces on various EDI topics (not always
               related to tech) such as{' '}
@@ -97,9 +97,9 @@ function JEDIAbout() {
                 className={styles['jedi-link']}
                 target="_blank"
                 rel="noopener noreferrer">
-                
+
                   queer and trans representation in computer science
-                
+
               </Link>{' '}
               and{' '}
               <Link
@@ -107,9 +107,9 @@ function JEDIAbout() {
                 className={styles['jedi-link']}
                 target="_blank"
                 rel="noopener noreferrer">
-                
+
                   Asian representation and the otherization of kpop
-                
+
               </Link>
               .
             </p>
@@ -127,9 +127,9 @@ function JEDIAbout() {
                 className={styles['jedi-link']}
                 target="_blank"
                 rel="noopener noreferrer">
-                
+
                   read our blog
-                
+
               </Link>
               !
             </p>

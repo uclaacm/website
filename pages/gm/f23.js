@@ -1,6 +1,6 @@
-import { NextSeo } from 'next-seo';
 import Image from 'next/legacy/image';
 import Link from 'next/link';
+import { NextSeo } from 'next-seo';
 import React from 'react';
 import Countdown from 'react-countdown';
 
@@ -114,9 +114,9 @@ function GMCountdown(props) {
         className="button"
         target="_blank"
         rel="noreferrer noopener">
-        
+
           RSVP Now!
-        
+
       </Link>
     </div>
   </>);
