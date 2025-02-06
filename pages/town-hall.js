@@ -390,8 +390,7 @@ function TownHall() {
                   href="/files/town-hall/CS Town Hall Winter 2021 Slides.pdf"
                   className="button"
                   target="_blank"
-                  rel="noopener noreferrer"
-                  legacyBehavior>
+                  rel="noopener noreferrer">
 
                   <FontAwesomeIcon
                     icon={faFileAlt}
@@ -405,8 +404,7 @@ function TownHall() {
                   href="/files/town-hall/CS Town Hall Winter 2021 Notes.pdf"
                   className="button"
                   target="_blank"
-                  rel="noopener noreferrer"
-                  legacyBehavior>
+                  rel="noopener noreferrer">
 
                   <FontAwesomeIcon
                     icon={faFileAlt}
