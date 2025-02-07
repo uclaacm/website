@@ -24,7 +24,6 @@ const getCssStringFromCommittee = (committee) => {
     case 'cloud':
       return committee.toLowerCase();
     default:
-      // throw new Error(`Unrecognized string ${committee}`);
       console.warn(`Skipping event. Unrecognized committee: ${committee}`);
       return null;
   }
@@ -56,9 +55,6 @@ const generateSingleEvent = ({
   }
 
   if (!start && !end) {
-    // if (!date) {
-    //   throw new Error('Missing date; can\'t proceed');
-    // }
     if (!date) {
       console.warn('Skipping event because date is missing.');
       return null;
@@ -125,7 +121,6 @@ const generateSingleEvent = ({
   }
 
   if (!title) {
-    // throw new Error('Missing title');
     console.warn('Skipping event because title is missing.');
     return null;
   }
