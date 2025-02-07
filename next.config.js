@@ -1,5 +1,5 @@
 module.exports = {
-  distDir: 'build',
+  output: 'standalone',
   images: {
     remotePatterns: [
       {
