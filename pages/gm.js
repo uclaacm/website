@@ -281,32 +281,32 @@ function gm() {
               </p>
             </div>
             <p className="gm-program-row">
-              <Image src={studioLogo} alt="ACM studio" /> {data.studio}
+              <Image src={studioLogo} alt="ACM studio" width={214} height={45} /> {data.studio}
             </p>
             <p className="gm-program-row">
-              <Image src={icpcLogo} alt="ACM icpc" /> {data.icpc}
+              <Image src={icpcLogo} alt="ACM icpc" width={187} height={45} /> {data.icpc}
             </p>
             <p className="gm-program-row">
-              <Image src={designLogo} alt="ACM design" /> {data.design}
+              <Image src={designLogo} alt="ACM design" width={218} height={45} /> {data.design}
             </p>
             <p className="gm-program-row">
-              <Image src={cyberLogo} alt="ACM cyber" /> {data.cyber}
+              <Image src={cyberLogo} alt="ACM cyber" width={208} height={45} /> {data.cyber}
             </p>
             <p className="gm-program-row">
-              <Image src={teachlaLogo} alt="ACM teachLA" /> {data.teachLA}
+              <Image src={teachlaLogo} alt="ACM teachLA" width={251} height={45} /> {data.teachLA}
             </p>
             <p className="gm-program-row">
-              <Image src={wLogo} alt="ACM w" /> {data.w}
+              <Image src={wLogo} alt="ACM w" width={151} height={45} /> {data.w}
             </p>
             <p className="gm-program-row">
-              <Image src={aiLogo} alt="ACM ai" /> {data.ai}
+              <Image src={aiLogo} alt="ACM ai" width={154} height={45} /> {data.ai}
             </p>
             <p className="gm-program-row">
-              <Image src={cloudLogo} alt="ACM cloud" /> &nbsp;
+              <Image src={cloudLogo} alt="ACM cloud" width={206} height={45} /> &nbsp;
               {data.cloud}
             </p>
             <p className="gm-program-row">
-              <Image src={hackLogo} alt="ACM hack" /> {data.hack}
+              <Image src={hackLogo} alt="ACM hack" width={194} height={45} /> {data.hack}
             </p>
           </div>
           <div className="gm-program-section">
@@ -318,11 +318,11 @@ function gm() {
               </p>
             </div>
             <p className="gm-program-row">
-              <Image src={boardLogo} alt="ACM board" />
+              <Image src={boardLogo} alt="ACM board" width={194} height={45} />
               &nbsp;&nbsp;External: {data.evp}
             </p>
             <p className="gm-program-row">
-              <Image src={boardLogo} alt="ACM board" />
+              <Image src={boardLogo} alt="ACM board" width={194} height={45} />
               &nbsp;&nbsp;Internal: {data.ivp}
             </p>
           </div>
