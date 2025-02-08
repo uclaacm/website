@@ -10,9 +10,9 @@ module.exports = {
 
     'max-nesting-depth': null,
     'selector-max-compound-selectors': null,
+    'media-query-no-invalid': null,
+    '@stylistic/color-hex-case': 'upper',
 
-    'color-hex-case': 'upper',
-
-    'scss/at-import-partial-extension-blacklist': 'never',
+    'scss/at-import-partial-extension-disallowed-list': 'never',
   },
 };

@@ -1,6 +1,5 @@
 import Image from 'next/legacy/image';
 
-
 function ProjectCard(props) {
   const { image, title, winner, summary, names, url, category } = props.project;
   return (
