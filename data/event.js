@@ -1,7 +1,6 @@
 /* eslint-disable jsx-a11y/accessible-emoji */
 /* eslint-disable max-len */
 
-import React from 'react';
 
 const events = [
   {

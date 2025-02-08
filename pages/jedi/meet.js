@@ -3,7 +3,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
 import { NextSeo } from 'next-seo';
-import React from 'react';
+
 
 import JEDINav from '../../components/JEDI/JEDINav';
 import Layout from '../../components/Layout';
@@ -44,7 +44,7 @@ function Meet() {
             target="_blank"
             rel="noopener noreferrer">
 
-              Arjun
+            Arjun
 
           </Link>
           &nbsp; and&nbsp;
@@ -54,7 +54,7 @@ function Meet() {
             target="_blank"
             rel="noopener noreferrer">
 
-              Sharvani
+            Sharvani
 
           </Link>
           , who we wouldn&apos;t have JEDI without!

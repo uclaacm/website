@@ -1,6 +1,6 @@
 import Image from 'next/legacy/image';
 import Link from 'next/link';
-import React from 'react';
+
 
 import styles from '../../styles/pages/jedi.module.scss';
 

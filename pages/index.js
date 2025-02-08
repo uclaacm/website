@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Script from 'next/script';
 import { NextSeo } from 'next-seo';
-import React from 'react';
+
 
 import Banner from '../components/Banner';
 import Carousel from '../components/Carousel';
@@ -81,7 +81,7 @@ function Home() {
                 target="_blank"
                 rel="noreferrer noopener">
 
-                  Join our Mailing List
+                Join our Mailing List
 
               </Link>
             </div>

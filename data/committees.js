@@ -1,6 +1,5 @@
 /* eslint-disable max-len */
 
-import React from 'react';
 
 export default [
   {
@@ -47,7 +46,7 @@ export default [
         },
         desc: (
           <>
-                        Each year, Studio splits into teams of students who work through the winter and spring quarters to put together an indie game. Students can apply to be team leads to pitch their idea to the club and have people join them to bring their game concept into reality! You can see past projects at <a href="https://acmstudio.itch.io/"> acmstudio.itch.io</a>
+            Each year, Studio splits into teams of students who work through the winter and spring quarters to put together an indie game. Students can apply to be team leads to pitch their idea to the club and have people join them to bring their game concept into reality! You can see past projects at <a href="https://acmstudio.itch.io/"> acmstudio.itch.io</a>
           </>
         ),
       },
@@ -59,7 +58,7 @@ export default [
         },
         desc: (
           <>
-                        No prior knowledge required! Studio offers the following workshop tracks: Introduction to Game Programming, Special Topics in Game Programming, and Creative Track. The Intro Track introduces students to the Unity editor. The Special Topics Track dives deep into specific game development areas officers are excited to share about. The Creative Track focuses on non-coding skills and how to incorporate them into a game project workflow. You can find tutorial content on our <a href="https://github.com/topics/acm-studio">GitHub</a>.
+            No prior knowledge required! Studio offers the following workshop tracks: Introduction to Game Programming, Special Topics in Game Programming, and Creative Track. The Intro Track introduces students to the Unity editor. The Special Topics Track dives deep into specific game development areas officers are excited to share about. The Creative Track focuses on non-coding skills and how to incorporate them into a game project workflow. You can find tutorial content on our <a href="https://github.com/topics/acm-studio">GitHub</a>.
 
           </>
         ),
@@ -72,7 +71,7 @@ export default [
         },
         desc: (
           <>
-                        Game jams are a beginner-friendly way to get right into making a game of your own! These game-focused hackathons typically span 48-72 hours and revolve around a specific theme. Studio facilitates team formation for Ludum Dare (a global game jam) and also hosts in-house game jams such as our summer and winter break game jams.
+            Game jams are a beginner-friendly way to get right into making a game of your own! These game-focused hackathons typically span 48-72 hours and revolve around a specific theme. Studio facilitates team formation for Ludum Dare (a global game jam) and also hosts in-house game jams such as our summer and winter break game jams.
           </>
         ),
       },
@@ -344,7 +343,7 @@ export default [
         },
         desc: (
           <>
-                        Write educational software to make teaching easier, either by developing interactive web applications called “Learning Labs” (e.g. <a href="https://passworks.uclaacm.com" target="_blank" rel="noopener noreferrer">Passworks Lesson</a>), maintain our <a href="https://editor.uclaacm.com" target="_blank" rel="noopener noreferrer">free online code editor</a>, or bust out your design skills on <a href="https://teachla.uclaacm.com" target="_blank" rel="noopener noreferrer">our website</a>. No prior dev experience required!
+            Write educational software to make teaching easier, either by developing interactive web applications called “Learning Labs” (e.g. <a href="https://passworks.uclaacm.com" target="_blank" rel="noopener noreferrer">Passworks Lesson</a>), maintain our <a href="https://editor.uclaacm.com" target="_blank" rel="noopener noreferrer">free online code editor</a>, or bust out your design skills on <a href="https://teachla.uclaacm.com" target="_blank" rel="noopener noreferrer">our website</a>. No prior dev experience required!
           </>
         ),
       },
@@ -543,13 +542,13 @@ export default [
         },
         desc: (
           <>
-                        Our weekly Distributed File System Project series provided a hands-on introduction to distributed systems. Each week, participants explored concepts like cloud computing, system architectures, process communication, and security while building and enhancing a distributed file system. Starting with setting up a basic file server, they progressively implemented features such as client-server communication, naming services, consistency models, fault tolerance, and security measures. View the{' '}
+            Our weekly Distributed File System Project series provided a hands-on introduction to distributed systems. Each week, participants explored concepts like cloud computing, system architectures, process communication, and security while building and enhancing a distributed file system. Starting with setting up a basic file server, they progressively implemented features such as client-server communication, naming services, consistency models, fault tolerance, and security measures. View the{' '}
             <a
               href="https://drive.google.com/drive/folders/1ZpBAxImfSNb-6HXjxvZ2gWgXxMQe-jVj"
               target="_blank"
               rel="noopener noreferrer"
             >
-                            drive of resources
+              drive of resources
             </a>
             {' '}and the{' '}
             <a
@@ -557,9 +556,9 @@ export default [
               target="_blank"
               rel="noopener noreferrer"
             >
-                            slides
+              slides
             </a>
-                        .
+            .
           </>
         ),
       },
@@ -571,17 +570,17 @@ export default [
         },
         desc: (
           <>
-                        Our Amazon Web Services Workshop Series provided a comprehensive
-                        introduction to AWS, featuring weekly sessions on key topics such as
-                        cloud management, scaling, continuous integration and deployment,
-                        databases, serverless technologies, and infrastructure as code.
-                        The{' '}
+            Our Amazon Web Services Workshop Series provided a comprehensive
+            introduction to AWS, featuring weekly sessions on key topics such as
+            cloud management, scaling, continuous integration and deployment,
+            databases, serverless technologies, and infrastructure as code.
+            The{' '}
             <a
               href="https://github.com/uclaacm/acmcloud-aws-w24"
               target="_blank"
               rel="noopener noreferrer"
             >
-                            GitHub repository
+              GitHub repository
             </a>
             {' '}includes all code examples, slides, recordings, and guided project steps for you to get started with AWS.
           </>
@@ -595,36 +594,36 @@ export default [
         },
         desc: (
           <>
-                        The Spring 2024 Google Cloud Platform Workshop mini-series provided
-                        a comprehensive overview of GCP, featuring sessions on computing
-                        and databases with Google Cloud.
-                        View our GitHub repository{' '}
+            The Spring 2024 Google Cloud Platform Workshop mini-series provided
+            a comprehensive overview of GCP, featuring sessions on computing
+            and databases with Google Cloud.
+            View our GitHub repository{' '}
             <a
               href="https://github.com/uclaacm/acmcloud-gcp-s24"
               target="_blank"
               rel="noopener noreferrer"
             >
-                            here
+              here
             </a>
-                        .
+            .
           </>
         ),
       },
     ],
     introImage: '/images/committees/cloud/cloud_motif_base.png',  // TODO - change to applied
     mission:
-            'ACM Cloud is committed to providing resources to build a strong intuition of the architectural foundations of the modern cloud environment through project-based, hands-on experience.',
+      'ACM Cloud is committed to providing resources to build a strong intuition of the architectural foundations of the modern cloud environment through project-based, hands-on experience.',
     image: '/images/committees/cloud_wordmark.svg',  // TODO
     wordmark_dark: '/images/committees/cloud_wordmark_dark.svg',  // TODO
     diamond: '/images/diamonds/cloud_diamond.svg',  // TODO
     internship: {
       whatWeDo:
-                'ACM Cloud is committed to providing resources to build a strong intuition of the architectural foundations of the modern cloud environment through project-based, hands-on experience. ACM Cloud supports the UCLA community through three core pillars: Cloud Training Workshops, Research Projects, and Consulting Projects.',
+        'ACM Cloud is committed to providing resources to build a strong intuition of the architectural foundations of the modern cloud environment through project-based, hands-on experience. ACM Cloud supports the UCLA community through three core pillars: Cloud Training Workshops, Research Projects, and Consulting Projects.',
       whatInternsWillDo:
-                (<>ACM Cloud is currently not taking any interns. If you are interested in joining or becoming an active member in ACM Cloud, please check out {<a href="https://docs.google.com/forms/d/e/1FAIpQLSeeZzJ8dm_jqOj41DFRxMxTr1u7hVo7OEOPY_T1c2vggeZEjA/viewform">here</a>}.</>),
+        (<>ACM Cloud is currently not taking any interns. If you are interested in joining or becoming an active member in ACM Cloud, please check out {<a href="https://docs.google.com/forms/d/e/1FAIpQLSeeZzJ8dm_jqOj41DFRxMxTr1u7hVo7OEOPY_T1c2vggeZEjA/viewform">here</a>}.</>),
       card: '/images/cards/cloud_card.svg',  // TODO
       nextSteps:
-                'Any members interested in joining Cloud can fill out our membership application which can be found at the top of the ACM internship application.',
+        'Any members interested in joining Cloud can fill out our membership application which can be found at the top of the ACM internship application.',
     },
   },
   {

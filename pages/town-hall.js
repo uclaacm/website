@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Image from 'next/legacy/image';
 import Link from 'next/link';
 import { NextSeo } from 'next-seo';
-import React from 'react';
+
 
 import Banner from '../components/Banner';
 import Layout from '../components/Layout';

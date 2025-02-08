@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import React, { Children } from 'react';
+import { Children, cloneElement } from 'react';
 
 const ActiveLink = ({ children, activeClassName, ...props }) => {
   const { asPath } = useRouter();
@@ -14,9 +14,9 @@ const ActiveLink = ({ children, activeClassName, ...props }) => {
       : childClassName;
 
   return (
-  //clones child with className if className exists
+    //clones child with className if className exists
     (<Link {...props} legacyBehavior>
-      {React.cloneElement(child, {
+      {cloneElement(child, {
         className: className || null,
       })}
     </Link>)

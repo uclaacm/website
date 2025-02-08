@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import React, { useState } from 'react';
+import { useState } from 'react';
 import ActiveLink from './ActiveLink';
 
 export default function Navbar() {
@@ -251,7 +251,7 @@ export default function Navbar() {
                   href="https://members.uclaacm.com"
                   className="button button-transparent button-lg font-header">
 
-                    Member Login
+                  Member Login
 
                 </Link>
               </li>

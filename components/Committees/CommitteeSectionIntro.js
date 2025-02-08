@@ -9,7 +9,7 @@ import {
 import { faLink } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Image from 'next/legacy/image';
-import React from 'react';
+
 
 function CommitteeIconLink({ committee, link }) {
   const committeeStr = `acm ${committee.name}`;

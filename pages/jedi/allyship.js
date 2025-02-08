@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { NextSeo } from 'next-seo';
-import React from 'react';
+
 
 import AllyshipSpaceCard from '../../components/JEDI/AllyshipSpaceCard';
 import JEDINav from '../../components/JEDI/JEDINav';

@@ -1,4 +1,4 @@
-@use "sass:list";
+@use 'sass:list';
 @use '../variables.scss';
 
 $committees: (ai,variables.$ai-arctic), (cyber,variables.$cyber-amber), (design,variables.$design-orange),

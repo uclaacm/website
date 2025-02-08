@@ -1,5 +1,5 @@
 // import Image from 'next/image';
-import React from 'react';
+
 import data from '../../offoutput.json';
 import Officers from '../Officers/OfficerCard';
 

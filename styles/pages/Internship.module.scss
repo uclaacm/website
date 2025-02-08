@@ -19,9 +19,9 @@ $single-column-breakpoint: 500px;
 
   .testimonial-question {
     color: variables.$acm-cobalt;
+    font-family: variables.$font-display;
     font-size: 0.88rem;
     font-weight: 900;
-    font-family: variables.$font-display;
     line-height: 1.4;
   }
 
