@@ -19,7 +19,7 @@ function SelectedEvent({ event }) {
   }, [event]);
 
   return (
-    <div className={styles['card-container']}>
+    (<div className={styles['card-container']}>
       <h2 className={styles['card-header']}>event information</h2>
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
@@ -42,21 +42,21 @@ function SelectedEvent({ event }) {
           <ul className="list-unstyled">
             {links.map(({ text, href, ext }) => (
               <li key={href}>
-                <Link href={href}>
-                  <a
-                    className={styles['event-link']}
-                    target={ext ? '_blank' : ''}
-                    rel={ext ? 'noopener noreferrer' : ''}
-                  >
-                    {text}
-                  </a>
+                <Link
+                  href={href}
+                  className={styles['event-link']}
+                  target={ext ? '_blank' : ''}
+                  rel={ext ? 'noopener noreferrer' : ''}>
+
+                  {text}
+
                 </Link>
               </li>
             ))}
           </ul>
         )}
       </div>
-    </div>
+    </div>)
   );
 }
 

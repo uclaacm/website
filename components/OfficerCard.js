@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from 'next/legacy/image';
 import React from 'react';
 
 import styles from '../styles/components/OfficerCard.module.scss';
@@ -77,7 +77,7 @@ function Officer({
 function Officers(props) {
   return (
     // TODO: more flexible mobile views
-    <>
+    (<>
       {props.officers.map((officer) => (
         <Officer
           {...officer}
@@ -86,7 +86,7 @@ function Officers(props) {
           key={props.officers.name}
         />
       ))}
-    </>
+    </>)
   );
 }
 

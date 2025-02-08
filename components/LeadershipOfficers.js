@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from 'next/legacy/image';
 import React from 'react';
 
 function Officer(props) {
@@ -24,11 +24,11 @@ function Officer(props) {
 function Officers(props) {
   return (
     // TODO: more flexible mobile views
-    <div className="grid-desktop-3">
+    (<div className="grid-desktop-3">
       {props.officers.map((officer) => (
         <Officer officer={officer} key={officer.image} />
       ))}
-    </div>
+    </div>)
   );
 }
 

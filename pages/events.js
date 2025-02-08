@@ -49,7 +49,7 @@ function Events({ events }) {
   };
 
   return (
-    <Layout>
+    (<Layout>
       <NextSeo
         title="Events | ACM at UCLA"
         description="Check out every single event ACM is running this quarter. All 100+! Crazy, right?"
@@ -76,7 +76,7 @@ function Events({ events }) {
           <div>
             <Filters handleChange={handleFilteredEvents} />
             {indexedEvents.length ? ( // Check if we have events to show
-              <Calendar
+              (<Calendar
                 localizer={localizer}
                 events={indexedEvents}
                 startAccessor={(event) => new Date(event.start)}
@@ -94,7 +94,7 @@ function Events({ events }) {
                   day: true,
                   agenda: true,
                 }}
-              />
+              />)
             ) : (
               <p>No events available at the moment. Please check back later.</p>
             )}
@@ -118,7 +118,7 @@ function Events({ events }) {
           </a>
         </p>
       </div>
-    </Layout>
+    </Layout>)
   );
 }
 

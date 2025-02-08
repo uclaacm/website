@@ -1,6 +1,6 @@
-import { NextSeo } from 'next-seo';
-import Image from 'next/image';
+import Image from 'next/legacy/image';
 import Link from 'next/link';
+import { NextSeo } from 'next-seo';
 import React from 'react';
 import Countdown from 'react-countdown';
 
@@ -18,8 +18,8 @@ import icpcLogo from '../public/images/committees/icpc_wordmark.svg';
 import studioLogo from '../public/images/committees/studio_wordmark.svg';
 import teachlaLogo from '../public/images/committees/teachLA_wordmark.svg';
 import wLogo from '../public/images/committees/w_wordmark.svg';
-import winterGMgraphic from '../public/images/Winter_GM_2025_graphic.png';
 import googleSlideLogo from '../public/images/slides.png';
+import winterGMgraphic from '../public/images/Winter_GM_2025_graphic.png';
 
 const dayToName = (day) => {
   switch (day) {
@@ -114,43 +114,45 @@ const parseGMData = (jsonContent) => {
 };
 
 const GMCountdown = (props) => {
-  return (
-    <>
-      <div id="countdown-wrapper">
-        <div className="countdown-cards">
-          <div className="square-background" />
-          <div className="countdown-numbers">{props.days}</div>
-          <div className="countdown-labels">{props.dayString}</div>
-        </div>
-        <div className="countdown-cards">
-          <div className="square-background" />
-          <div className="countdown-numbers">{props.hours}</div>
-          <div className="countdown-labels">{props.hourString}</div>
-        </div>
-        <div className="countdown-cards">
-          <div className="square-background" />
-          <div className="countdown-numbers">{props.minutes}</div>
-          <div className="countdown-labels">{props.minuteString}</div>
-        </div>
-        <div className="countdown-cards">
-          <div className="square-background" />
-          <div className="countdown-numbers">{props.seconds}</div>
-          <div className="countdown-labels">{props.secondString}</div>
-        </div>
+  return (<>
+    <div id="countdown-wrapper">
+      <div className="countdown-cards">
+        <div className="square-background" />
+        <div className="countdown-numbers">{props.days}</div>
+        <div className="countdown-labels">{props.dayString}</div>
       </div>
-      <div className="text-center">
-        <h1>
-          {props.data.quarter} {props.data.gm_start_time.getFullYear()} General
-          Meeting
-        </h1>
-        <Link href={props.data.rsvp_link}>
-          <a className="button" target="_blank" rel="noreferrer noopener">
-            RSVP Now to get the zoom link!
-          </a>
-        </Link>
+      <div className="countdown-cards">
+        <div className="square-background" />
+        <div className="countdown-numbers">{props.hours}</div>
+        <div className="countdown-labels">{props.hourString}</div>
       </div>
-    </>
-  );
+      <div className="countdown-cards">
+        <div className="square-background" />
+        <div className="countdown-numbers">{props.minutes}</div>
+        <div className="countdown-labels">{props.minuteString}</div>
+      </div>
+      <div className="countdown-cards">
+        <div className="square-background" />
+        <div className="countdown-numbers">{props.seconds}</div>
+        <div className="countdown-labels">{props.secondString}</div>
+      </div>
+    </div>
+    <div className="text-center">
+      <h1>
+        {props.data.quarter} {props.data.gm_start_time.getFullYear()} General
+        Meeting
+      </h1>
+      <Link
+        href={props.data.rsvp_link}
+        className="button"
+        target="_blank"
+        rel="noreferrer noopener">
+
+          RSVP Now to get the zoom link!
+
+      </Link>
+    </div>
+  </>);
 };
 
 function gm() {

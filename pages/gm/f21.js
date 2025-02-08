@@ -1,5 +1,5 @@
-import { NextSeo } from 'next-seo';
 import Link from 'next/link';
+import { NextSeo } from 'next-seo';
 import React from 'react';
 import Countdown from 'react-countdown';
 
@@ -92,45 +92,47 @@ function countdownRenderer({ days, hours, minutes, seconds, completed }) {
 }
 
 function GMCountdown(props) {
-  return (
-    <>
-      <div id="countdown-wrapper">
-        <div className="countdown-cards">
-          <div className="square-background" />
-          <div className="countdown-numbers">{props.days}</div>
-          <div className="countdown-labels">{props.dayString}</div>
-        </div>
-        <div className="countdown-cards">
-          <div className="square-background" />
-          <div className="countdown-numbers">{props.hours}</div>
-          <div className="countdown-labels">{props.hourString}</div>
-        </div>
-        <div className="countdown-cards">
-          <div className="square-background" />
-          <div className="countdown-numbers">{props.minutes}</div>
-          <div className="countdown-labels">{props.minuteString}</div>
-        </div>
-        <div className="countdown-cards">
-          <div className="square-background" />
-          <div className="countdown-numbers">{props.seconds}</div>
-          <div className="countdown-labels">{props.secondString}</div>
-        </div>
+  return (<>
+    <div id="countdown-wrapper">
+      <div className="countdown-cards">
+        <div className="square-background" />
+        <div className="countdown-numbers">{props.days}</div>
+        <div className="countdown-labels">{props.dayString}</div>
       </div>
-      <div className="text-center">
-        <h1>Fall 2021 General Meeting</h1>
-        <Link href={RSVP_LINK}>
-          <a className="button" target="_blank" rel="noreferrer noopener">
-            RSVP Now!
-          </a>
-        </Link>
+      <div className="countdown-cards">
+        <div className="square-background" />
+        <div className="countdown-numbers">{props.hours}</div>
+        <div className="countdown-labels">{props.hourString}</div>
       </div>
-    </>
-  );
+      <div className="countdown-cards">
+        <div className="square-background" />
+        <div className="countdown-numbers">{props.minutes}</div>
+        <div className="countdown-labels">{props.minuteString}</div>
+      </div>
+      <div className="countdown-cards">
+        <div className="square-background" />
+        <div className="countdown-numbers">{props.seconds}</div>
+        <div className="countdown-labels">{props.secondString}</div>
+      </div>
+    </div>
+    <div className="text-center">
+      <h1>Fall 2021 General Meeting</h1>
+      <Link
+        href={RSVP_LINK}
+        className="button"
+        target="_blank"
+        rel="noreferrer noopener">
+
+          RSVP Now!
+
+      </Link>
+    </div>
+  </>);
 }
 
 function F21() {
   return (
-    <Layout>
+    (<Layout>
       <NextSeo
         title="Fall General Meeting | ACM at UCLA"
         description="ACM's Fall General Meeting happened on September 27th at 6 PM PT!"
@@ -178,10 +180,10 @@ function F21() {
               <p>Required: Face Mask, Bruincard.</p>
               <span>
                 (learn more about how ACM is{' '}
-                <Link href={'/covid'}>
-                  <a target="_blank" rel="noreferrer noopener">
+                <Link href={'/covid'} target="_blank" rel="noreferrer noopener">
+
                     committed to running COVID-safe events
-                  </a>
+
                 </Link>{' '}
                 in our return to campus)
               </span>
@@ -311,7 +313,7 @@ function F21() {
           </div>
         </div>
       </div>
-    </Layout>
+    </Layout>)
   );
 }
 

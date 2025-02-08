@@ -12,18 +12,22 @@ export default function Navbar() {
   };
 
   return (
-    <nav id="navbar">
+    (<nav id="navbar">
       <section id="nav-container">
-        <Link href="/">
-          <a id="nav-title" className="nav-section left" aria-label="acm home">
-            {/* TODO: resolve next/image issue */}
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src={'/images/acm_wordmark_chapter.svg'}
-              className="acm-logo"
-              alt="ACM at UCLA"
-            />
-          </a>
+        <Link
+          href="/"
+          id="nav-title"
+          className="nav-section left"
+          aria-label="acm home">
+
+          {/* TODO: resolve next/image issue */}
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={'/images/acm_wordmark_chapter.svg'}
+            className="acm-logo"
+            alt="ACM at UCLA"
+          />
+
         </Link>
         <section id="nav-items-container">
           <button
@@ -243,16 +247,18 @@ export default function Navbar() {
                 </ActiveLink>
               </li>
               <li>
-                <Link href="https://members.uclaacm.com">
-                  <a className="button button-transparent button-lg font-header">
+                <Link
+                  href="https://members.uclaacm.com"
+                  className="button button-transparent button-lg font-header">
+
                     Member Login
-                  </a>
+
                 </Link>
               </li>
             </ul>
           </section>
         </section>
       </section>
-    </nav>
+    </nav>)
   );
 }

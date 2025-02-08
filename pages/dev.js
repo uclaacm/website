@@ -1,5 +1,5 @@
-import { NextSeo } from 'next-seo';
 import Link from 'next/link';
+import { NextSeo } from 'next-seo';
 import React from 'react';
 
 import Banner from '../components/Banner';
@@ -30,7 +30,7 @@ function DevTeam() {
   const devTeamOfficers = data.filter(officer => officer.role.includes('Dev Team') && officer.committee.includes('Board, Internal'));
   devTeamOfficers.splice(1, 0, devTeamAdvisor);
   return (
-    <Layout>
+    (<Layout>
       <NextSeo
         title="ACM Dev Team | ACM at UCLA"
         description="The ACM Dev Team handles general internal development needs for ACM at UCLA. We maintain and create organization-wide projects such as the website, Discord bot, Membership Portal, and CMS Template."
@@ -45,7 +45,7 @@ function DevTeam() {
         <p className={styles['dev-team-info']}>
           If you&apos;re interested in joining us,&nbsp;
           <Link href="https://uclaacm.com/internship">
-            <a>apply to intern</a>
+            apply to intern
           </Link>&nbsp;with the Dev Team!
         </p>
         <h2 className="text-center">Our Projects</h2>
@@ -55,12 +55,18 @@ function DevTeam() {
         <h2 className="text-center">Our Commitment to Open Source</h2>
         <p className={styles['project-info']}>
           Everything we build is&nbsp;
-          <Link href="https://opensource.uclaacm.com/">
-            <a target="_blank" rel="noopener noreferrer">open source</a>
+          <Link
+            href="https://opensource.uclaacm.com/"
+            target="_blank"
+            rel="noopener noreferrer">
+            open source
           </Link>!
           In the spirit of open-source, anyone is welcome to view and contribute to our projects on&nbsp;
-          <Link href="https://github.com/uclaacm">
-            <a target="_blank" rel="noopener noreferrer">Github</a>
+          <Link
+            href="https://github.com/uclaacm"
+            target="_blank"
+            rel="noopener noreferrer">
+            Github
           </Link>.
         </p>
         <h2 className="text-center">People</h2>
@@ -68,7 +74,7 @@ function DevTeam() {
           <Officers officers={devTeamOfficers} />
         </div>
       </div>
-    </Layout>
+    </Layout>)
   );
 }
 

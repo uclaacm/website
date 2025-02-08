@@ -1,5 +1,5 @@
-import { NextSeo } from 'next-seo';
 import Link from 'next/link';
+import { NextSeo } from 'next-seo';
 import React from 'react';
 import Countdown from 'react-countdown';
 
@@ -75,45 +75,43 @@ function countdownRenderer({ days, hours, minutes, seconds, completed }) {
 }
 
 function GMCountdown(props) {
-  return (
-    <>
-      <div id="countdown-wrapper">
-        <div className="countdown-cards">
-          <div className="square-background" />
-          <div className="countdown-numbers">{props.days}</div>
-          <div className="countdown-labels">{props.dayString}</div>
-        </div>
-        <div className="countdown-cards">
-          <div className="square-background" />
-          <div className="countdown-numbers">{props.hours}</div>
-          <div className="countdown-labels">{props.hourString}</div>
-        </div>
-        <div className="countdown-cards">
-          <div className="square-background" />
-          <div className="countdown-numbers">{props.minutes}</div>
-          <div className="countdown-labels">{props.minuteString}</div>
-        </div>
-        <div className="countdown-cards">
-          <div className="square-background" />
-          <div className="countdown-numbers">{props.seconds}</div>
-          <div className="countdown-labels">{props.secondString}</div>
-        </div>
+  return (<>
+    <div id="countdown-wrapper">
+      <div className="countdown-cards">
+        <div className="square-background" />
+        <div className="countdown-numbers">{props.days}</div>
+        <div className="countdown-labels">{props.dayString}</div>
       </div>
-      <div className="text-center">
-        <h1>until the ACM at UCLA Winter 2022 General Meeting!</h1>
-        <h2>Fill out the RSVP Form:</h2>
-        <Link href={RSVP_LINK}>
-          <a
-            className="button rsvp-button"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            RSVP Now!
-          </a>
-        </Link>
+      <div className="countdown-cards">
+        <div className="square-background" />
+        <div className="countdown-numbers">{props.hours}</div>
+        <div className="countdown-labels">{props.hourString}</div>
       </div>
-    </>
-  );
+      <div className="countdown-cards">
+        <div className="square-background" />
+        <div className="countdown-numbers">{props.minutes}</div>
+        <div className="countdown-labels">{props.minuteString}</div>
+      </div>
+      <div className="countdown-cards">
+        <div className="square-background" />
+        <div className="countdown-numbers">{props.seconds}</div>
+        <div className="countdown-labels">{props.secondString}</div>
+      </div>
+    </div>
+    <div className="text-center">
+      <h1>until the ACM at UCLA Winter 2022 General Meeting!</h1>
+      <h2>Fill out the RSVP Form:</h2>
+      <Link
+        href={RSVP_LINK}
+        className="button rsvp-button"
+        target="_blank"
+        rel="noreferrer noopener">
+
+          RSVP Now!
+
+      </Link>
+    </div>
+  </>);
 }
 
 function W22() {

@@ -77,23 +77,25 @@ async function getSingleEventsOfWeek(n) {
     }
 
     try {
-      events.push(
-        generateSingleEvent({
-          id: null,
-          title: row[1],
-          start: null,
-          end: null,
-          committee: getCssStringFromCommittee(row[0]),
-          location: row[5] ?? '',
-          description: row[6] ?? '',
-          links: null,
-          rawStart: row[3],
-          rawEnd: row[4],
-          date: row[2],
-          fblink: row[7],
-          image: row[8],
-        }),
-      );
+      const eventObj = generateSingleEvent({
+        id: null,
+        title: row[1],
+        start: null,
+        end: null,
+        committee: getCssStringFromCommittee(row[0]),
+        location: row[5] ?? '',
+        description: row[6] ?? '',
+        links: null,
+        rawStart: row[3],
+        rawEnd: row[4],
+        date: row[2],
+        fblink: row[7],
+        image: row[8],
+      });
+
+      if (eventObj) {
+        events.push(eventObj);
+      }
     } catch (err) {
       // eslint-disable-next-line no-console
       console.error(`Error ${err} on event ${row}`);

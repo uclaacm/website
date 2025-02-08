@@ -29,15 +29,15 @@ const links = [
 
 function NavLink({ path, title, ext }) {
   return (
-    <Link href={path}>
-      <a
-        className={styles['jedi-link']}
-        target={ext ? '_blank' : ''}
-        rel={ext ? 'noopener noreferrer' : ''}
-      >
-        {title}
-      </a>
-    </Link>
+    (<Link
+      href={path}
+      className={styles['jedi-link']}
+      target={ext ? '_blank' : ''}
+      rel={ext ? 'noopener noreferrer' : ''}>
+
+      {title}
+
+    </Link>)
   );
 }
 
