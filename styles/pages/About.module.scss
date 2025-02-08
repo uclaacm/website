@@ -1,4 +1,4 @@
-@import '../variables.scss';
+@use '../variables.scss';
 
 .ornament {
   position: absolute;
@@ -7,7 +7,7 @@
 }
 
 .square-ornament {
-  background: $acm-tint;
+  background: variables.$acm-tint;
   border-radius: 40px;
   height: 200px;
   transform: rotate(45deg);
@@ -46,7 +46,7 @@
 }
 
 .square-small {
-  background-color: $acm-cobalt;
+  background-color: variables.$acm-cobalt;
   border-radius: 10px;
   height: 50px;
   position: absolute;
@@ -56,7 +56,7 @@
 }
 
 .square-tiny {
-  background-color: $acm-cobalt;
+  background-color: variables.$acm-cobalt;
   border-radius: 4px; //Roudning up from 3.6px
   height: 18px;
   position: absolute;
@@ -101,7 +101,7 @@
   justify-content: center;
 }
 
-@media (max-width: $navbar-breakpoint) {
+@media (max-width: variables.$navbar-breakpoint) {
   .square-ornament {
     display: block;
 

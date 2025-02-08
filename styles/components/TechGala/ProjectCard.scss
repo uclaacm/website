@@ -1,3 +1,5 @@
+@use '../../variables.scss';
+
 .intro-row {
   margin-bottom: 24px;
 }
@@ -16,7 +18,7 @@
 }
 
 .link {
-  color: $acm-cobalt;
+  color: variables.$acm-cobalt;
 }
 
 @media (min-width: 688px) {
@@ -53,16 +55,16 @@
 }
 
 .winner {
-  color: $acm-cobalt;
-  font-family: $font-header;
+  color: variables.$acm-cobalt;
+  font-family: variables.$font-header;
   font-size: 1.1em;
   font-weight: bold;
 }
 
 .tg-tag {
-  border: 1px solid $acm-cobalt;
+  border: 1px solid variables.$acm-cobalt;
   border-radius: 8px;
-  color: $acm-cobalt;
+  color: variables.$acm-cobalt;
   font-size: 0.8em;
   padding: 2px 10px;
 }

@@ -1,4 +1,4 @@
-@import '../../variables.scss';
+@use '../../variables.scss';
 
 .card-container {
   border: 1px solid #B2B2B2;
@@ -43,11 +43,11 @@
 }
 
 .event-link {
-  color: $acm-cobalt;
+  color: variables.$acm-cobalt;
   text-decoration: none;
 
   &:hover {
     text-decoration: underline;
-    text-decoration-color: $acm-cobalt;
+    text-decoration-color: variables.$acm-cobalt;
   }
 }

@@ -1,3 +1,5 @@
+@use '../variables.scss';
+
 .banner {
   height: 360px;
   overflow: hidden;
@@ -28,7 +30,7 @@
   }
 
   .square {
-    background-color: $acm-cobalt;
+    background-color: variables.$acm-cobalt;
     border-radius: 14px;
     height: 50px;
     margin-bottom: 6px;
@@ -37,11 +39,11 @@
   }
 
   .square.dark {
-    background-color: $acm-black;
+    background-color: variables.$acm-black;
   }
 
   .square.light {
-    background-color: $acm-tint;
+    background-color: variables.$acm-tint;
   }
 
   .square.white {
@@ -49,99 +51,99 @@
   }
 
   &.hack .square {
-    background-color: $hack-purple;
+    background-color: variables.$hack-purple;
   }
 
   &.hack .square.dark {
-    background-color: $hack-black;
+    background-color: variables.$hack-black;
   }
 
   &.hack .square.light {
-    background-color: $hack-tint;
+    background-color: variables.$hack-tint;
   }
 
   &.ai .square {
-    background-color: $ai-arctic;
+    background-color: variables.$ai-arctic;
   }
 
   &.ai .square.dark {
-    background-color: $ai-black;
+    background-color: variables.$ai-black;
   }
 
   &.ai .square.light {
-    background-color: $ai-tint;
+    background-color: variables.$ai-tint;
   }
 
   &.w .square {
-    background-color: $w-teal;
+    background-color: variables.$w-teal;
   }
 
   &.w .square.dark {
-    background-color: $w-black;
+    background-color: variables.$w-black;
   }
 
   &.w .square.light {
-    background-color: $w-tint;
+    background-color: variables.$w-tint;
   }
 
   &.cyber .square {
-    background-color: $cyber-amber;
+    background-color: variables.$cyber-amber;
   }
 
   &.cyber .square.dark {
-    background-color: $cyber-black;
+    background-color: variables.$cyber-black;
   }
 
   &.cyber .square.light {
-    background-color: $cyber-tint;
+    background-color: variables.$cyber-tint;
   }
 
   &.studio .square {
-    background-color: $studio-raspberry;
+    background-color: variables.$studio-raspberry;
   }
 
   &.studio .square.dark {
-    background-color: $studio-black;
+    background-color: variables.$studio-black;
   }
 
   &.studio .square.light {
-    background-color: $studio-tint;
+    background-color: variables.$studio-tint;
   }
 
   &.icpc .square {
-    background-color: $icpc-tangerine;
+    background-color: variables.$icpc-tangerine;
   }
 
   &.icpc .square.dark {
-    background-color: $icpc-black;
+    background-color: variables.$icpc-black;
   }
 
   &.icpc .square.light {
-    background-color: $icpc-tint;
+    background-color: variables.$icpc-tint;
   }
 
   &.design .square {
-    background-color: $design-orange;
+    background-color: variables.$design-orange;
   }
 
   &.design .square.dark {
-    background-color: $design-black;
+    background-color: variables.$design-black;
   }
 
   &.design .square.light {
-    background-color: $design-tint;
+    background-color: variables.$design-tint;
   }
 
   &.teachla .square {
-    background-color: $teachla-green;
+    background-color: variables.$teachla-green;
   }
 
   &.teachla .square.dark {
-    background-color: $teachla-black;
+    background-color: variables.$teachla-black;
   }
 
   &.teachla .square.light {
-    background-color: $teachla-tint;
+    background-color: variables.$teachla-tint;
   }
 
   .title {
@@ -154,8 +156,8 @@
     width: 100%;
 
     h1 {
-      color: $acm-cobalt;
-      font-family: $font-display;
+      color: variables.$acm-cobalt;
+      font-family: variables.$font-display;
       font-size: 2.3em;
       font-weight: bold;
       margin: 0;
@@ -165,34 +167,34 @@
   }
 
   &.hack .title h1 {
-    color: $hack-purple;
+    color: variables.$hack-purple;
   }
 
   &.ai .title h1 {
-    color: $ai-arctic;
+    color: variables.$ai-arctic;
   }
 
   &.w .title h1 {
-    color: $w-teal;
+    color: variables.$w-teal;
   }
 
   &.cyber .title h1 {
-    color: $cyber-amber;
+    color: variables.$cyber-amber;
   }
 
   &.studio .title h1 {
-    color: $studio-raspberry;
+    color: variables.$studio-raspberry;
   }
 
   &.icpc .title h1 {
-    color: $icpc-tangerine;
+    color: variables.$icpc-tangerine;
   }
 
   &.design .title h1 {
-    color: $design-orange;
+    color: variables.$design-orange;
   }
 
   &.teachla .title h1 {
-    color: $teachla-green;
+    color: variables.$teachla-green;
   }
 }

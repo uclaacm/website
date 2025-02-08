@@ -1,10 +1,12 @@
+@use '../variables.scss';
+
 .button {
-  background-color: $acm-cobalt;
+  background-color: variables.$acm-cobalt;
   border: 0;
   border-radius: 11.2px;
   color: white;
   display: inline-block;
-  font-family: $font-body;
+  font-family: variables.$font-body;
   font-size: 0.85em;
   height: 40px;
   line-height: 40px;
@@ -13,12 +15,12 @@
   transition: 0.2s;
 
   &:hover {
-    background-color: $acm-black;
+    background-color: variables.$acm-black;
     cursor: pointer;
   }
 
   &:active {
-    background-color: $acm-black;
+    background-color: variables.$acm-black;
     margin-top: 2px;
   }
 }
@@ -31,37 +33,37 @@
 .button.fade-light {
   &:active {
     background: white;
-    color: $acm-black;
+    color: variables.$acm-black;
   }
 }
 
 .button.dark {
-  background-color: $acm-black;
+  background-color: variables.$acm-black;
 
   &:hover {
-    background: $acm-tint;
+    background: variables.$acm-tint;
   }
 
   &:active {
     background: white;
-    color: $acm-black;
+    color: variables.$acm-black;
   }
 }
 
 .button.button-transparent {
   background: white;
-  border: 2px solid $acm-cobalt;
+  border: 2px solid variables.$acm-cobalt;
   border-radius: 11.2px;
-  color: $acm-cobalt !important;
+  color: variables.$acm-cobalt !important;
 
   &:hover {
-    background: $acm-cobalt;
+    background: variables.$acm-cobalt;
     color: white !important;
   }
 
   &:active {
-    background-color: $acm-black;
-    border: 2px solid $acm-black;
+    background-color: variables.$acm-black;
+    border: 2px solid variables.$acm-black;
   }
 }
 

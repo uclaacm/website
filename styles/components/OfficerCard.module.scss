@@ -1,4 +1,4 @@
-@import '../variables.scss';
+@use '../variables.scss';
 
 .mb-2 {
   margin-bottom: 2em;
@@ -55,7 +55,7 @@
   max-width: 220px;
 }
 
-@media (min-width: $tablet-breakpoint) and (max-width: $navbar-breakpoint) {
+@media (min-width: variables.$tablet-breakpoint) and (max-width: variables.$navbar-breakpoint) {
   .grid-tablet-only-2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -109,7 +109,7 @@
   width: 100%;
 
   .officer {
-    color: $font-primary-color;
+    color: variables.$font-primary-color;
     display: inline-block;
     height: 100px;
     text-align: left;
@@ -132,7 +132,7 @@
 
       h2 {
         display: inline-block;
-        font-family: $font-display;
+        font-family: variables.$font-display;
         font-size: 1.3em;
         font-weight: 600;
         line-height: 1.8em;
@@ -146,9 +146,9 @@
       }
 
       p {
-        color: $font-primary-color;
+        color: variables.$font-primary-color;
         display: inline-block;
-        font-family: $font-body;
+        font-family: variables.$font-body;
         font-size: 0.7em;
         margin: 0;
         margin-top: -5px;

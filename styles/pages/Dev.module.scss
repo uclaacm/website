@@ -1,4 +1,4 @@
-@import '../variables.scss';
+@use '../variables.scss';;
 
 .dev-team-info {
   font-size: 1.2em !important;
@@ -22,7 +22,7 @@
 $navbar-breakpoint: 992px;
 $tablet-breakpoint: 768px;
 
-@media (max-width: $navbar-breakpoint) {
+@media (max-width: variables.$navbar-breakpoint) {
   .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;

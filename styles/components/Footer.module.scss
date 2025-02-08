@@ -1,7 +1,7 @@
-@import '../variables.scss';
+@use '../variables.scss';
 
 .footer {
-  background-color: $acm-black;
+  background-color: variables.$acm-black;
   color: white;
   min-height: 120px;
   text-align: center;
@@ -15,7 +15,7 @@
 }
 
 .footer-header {
-  font-family: $font-body;
+  font-family: variables.$font-body;
   font-size: 0.75rem;
   margin-bottom: 0.5rem;
   margin-top: 1rem;
@@ -31,7 +31,7 @@
 .link-footer {
   color: white;
   font-weight: 300;
-  text-decoration-color: $acm-tint;
+  text-decoration-color: variables.$acm-tint;
 }
 
 .footer-committee-sidebar-container {

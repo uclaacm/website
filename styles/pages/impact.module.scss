@@ -1,4 +1,4 @@
-@import '../variables.scss';
+@use '../variables.scss';
 
 .container {
   margin: 0 auto;
@@ -6,7 +6,7 @@
   padding: 0 1em;
 }
 
-@media (min-width: $tablet-breakpoint) and (max-width: $navbar-breakpoint) {
+@media (min-width: variables.$tablet-breakpoint) and (max-width: variables.$navbar-breakpoint) {
   .grid-tablet-only-2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -14,10 +14,10 @@
 }
 
 .impact-event-header {
-  font-family: $font-header;
+  font-family: variables.$font-header;
   font-weight: bold;
   margin-bottom: 0;
-  @media screen and (min-width: $tablet-breakpoint) and (max-width: $navbar-breakpoint) {
+  @media screen and (min-width: variables.$tablet-breakpoint) and (max-width: variables.$navbar-breakpoint) {
     margin: 0;
   }
 }
@@ -51,7 +51,7 @@
   rgba(177, 100, 255, 0.54),
   rgba(51, 255, 206, 0.54),
   rgba(125, 255, 46, 0.54));
-  font-family: $font-header;
+  font-family: variables.$font-header;
   margin-left: 3px;
   padding-left: 3px;
   position: relative;
@@ -96,7 +96,7 @@
 }
 
 .blog-title {
-  font-family: $font-header;
+  font-family: variables.$font-header;
   font-size: 1.5rem;
   margin: 0;
 }

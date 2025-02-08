@@ -1,3 +1,5 @@
+@use '../variables.scss';
+
 .gm-graphic {
   border: '1px solid grey';
   border-radius: 10px;
@@ -26,13 +28,13 @@
   text-align: left;
 
   h3 {
-    color: $acm-cobalt;
+    color: variables.$acm-cobalt;
     margin: 0;
   }
 
   .sub-heading {
-    color: $font-secondary-color;
-    font-family: $font-header;
+    color: variables.$font-secondary-color;
+    font-family: variables.$font-header;
     font-size: 12pt;
     font-weight: bold;
     margin: 0;
@@ -58,7 +60,7 @@
 }
 
 .rsvp-button {
-  background-color: $acm-cobalt;
+  background-color: variables.$acm-cobalt;
   border-radius: 15px;
   color: white;
   font-size: 1.2em;
@@ -72,7 +74,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-@media (max-width: $tablet-breakpoint) {
+@media (max-width: variables.$tablet-breakpoint) {
   .event-links {
     grid-template-columns: 1fr;
   }
@@ -119,7 +121,7 @@
 }
 
 .should-dim a {
-  color: $font-primary-color;
+  color: variables.$font-primary-color;
   text-decoration: none;
 }
 
@@ -183,7 +185,7 @@
     margin: 20px 40px;
 
     .square-background {
-      background-color: $acm-cobalt;
+      background-color: variables.$acm-cobalt;
       border-radius: 42px;
       height: 150px;
       position: relative;
@@ -206,7 +208,7 @@
     }
   }
 }
-@media (max-width: $navbar-breakpoint) {
+@media (max-width: variables.$navbar-breakpoint) {
   #countdown-wrapper {
     margin-bottom: 100px;
 
@@ -238,7 +240,7 @@
         margin: 40px;
 
         .square-background {
-          background-color: $acm-cobalt;
+          background-color: variables.$acm-cobalt;
           border-radius: 42px;
           height: 150px;
           position: relative;
@@ -354,7 +356,7 @@
         }
 
         .should-dim a {
-          color: $font-primary-color;
+          color: variables.$font-primary-color;
           text-decoration: none;
         }
 
@@ -364,7 +366,7 @@
         }
 
         p.join-us-descriptor {
-          color: $font-secondary-color;
+          color: variables.$font-secondary-color;
           font-size: 10pt;
           margin-top: 5px;
           text-align: center;
@@ -383,7 +385,7 @@
       }
 
       #gm-program-wrapper {
-        border-top: 1px dotted $acm-black;
+        border-top: 1px dotted variables.$acm-black;
 
         .row {
           display: flex;
@@ -401,12 +403,12 @@
             margin-left: 350px;
 
             h3.row-description-heading {
-              color: $acm-cobalt;
+              color: variables.$acm-cobalt;
               margin: 0;
             }
 
             p.row-description-subheading {
-              color: $acm-tint;
+              color: variables.$acm-tint;
               margin-top: 4px;
 
               a#acm-discord-invite-cta {
@@ -415,39 +417,39 @@
             }
 
             .board {
-              color: $acm-cobalt;
+              color: variables.$acm-cobalt;
             }
 
             #studio {
-              color: $studio-raspberry;
+              color: variables.$studio-raspberry;
             }
 
             #icpc {
-              color: $icpc-tangerine;
+              color: variables.$icpc-tangerine;
             }
 
             #design {
-              color: $design-orange;
+              color: variables.$design-orange;
             }
 
             #cyber {
-              color: $cyber-amber;
+              color: variables.$cyber-amber;
             }
 
             #teach {
-              color: $teachla-green;
+              color: variables.$teachla-green;
             }
 
             #w {
-              color: $w-teal;
+              color: variables.$w-teal;
             }
 
             #ai {
-              color: $ai-arctic;
+              color: variables.$ai-arctic;
             }
 
             #hack {
-              color: $hack-purple;
+              color: variables.$hack-purple;
             }
 
             .committee-logos {

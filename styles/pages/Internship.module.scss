@@ -1,4 +1,4 @@
-@import '../variables.scss';
+@use '../variables.scss';
 
 $single-column-breakpoint: 500px;
 
@@ -12,14 +12,22 @@ $single-column-breakpoint: 500px;
 }
 
 .testimonial-item {
-  @include shadow-boxes();
+  @include variables.shadow-boxes();
   margin: 3px;
   padding: 5px;
-  padding-top: 10px;
+  padding-top: 22px;
 
   .testimonial-question {
-    color: $acm-cobalt;
-    font-size: 1.1em;
+    color: variables.$acm-cobalt;
+    font-size: 0.88rem;
+    font-weight: 900;
+    font-family: variables.$font-display;
+    line-height: 1.4;
+  }
+
+  .testimonial-answer {
+    font-size: 0.8rem;
+    margin-bottom: 12px;
   }
 }
 
@@ -35,7 +43,7 @@ $single-column-breakpoint: 500px;
 }
 
 .application-info-card {
-  @include shadow-boxes();
+  @include variables.shadow-boxes();
   background-color: #FFF;
   border-radius: 1rem;
   font-size: 1.3em;
@@ -71,8 +79,8 @@ $single-column-breakpoint: 500px;
   margin-bottom: 20px;
 
   .faq-item {
-    border-bottom: 2px solid $acm-cobalt;
-    color: $acm-black;
+    border-bottom: 2px solid variables.$acm-cobalt;
+    color: variables.$acm-black;
     padding-bottom: 15px;
     padding-top: 15px;
 
@@ -87,8 +95,8 @@ $single-column-breakpoint: 500px;
 }
 
 .faq-question::before {
-  border-bottom: 2px solid $acm-cobalt;
-  border-right: 2px solid $acm-cobalt;
+  border-bottom: 2px solid variables.$acm-cobalt;
+  border-right: 2px solid variables.$acm-cobalt;
   content: '';
   display: inline-block;
   height: 10px;
@@ -102,7 +110,7 @@ $single-column-breakpoint: 500px;
   transform: rotate(45deg);
 }
 
-@media screen and (max-width: $tablet-breakpoint) {
+@media screen and (max-width: variables.$tablet-breakpoint) {
   .testimonial-section {
     grid-template-columns: 1fr 1fr;
   }

@@ -30,7 +30,7 @@ export default function BlogCard({
 
       <div className={styles['blog-card-content']}>
         <h4 className={styles['blog-title']}>{title}</h4>
-        <p className={styles['blog-info']}>
+        <div className={styles['blog-info']}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             className={styles['blog-author-img']}
@@ -43,7 +43,7 @@ export default function BlogCard({
             {/* TODO: moment for date? */}
             {date} • {length}
           </div>
-        </p>
+        </div>
       </div>
 
     </Link>)

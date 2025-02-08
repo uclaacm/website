@@ -1,4 +1,4 @@
-@import '../variables.scss';
+@use '../variables.scss';
 
 // overrides the header for the calendar; this is
 // the days of the week for a month or week view
@@ -6,7 +6,7 @@
   background-color: #445EDC;
   border: 0 !important;
   color: white;
-  font-family: $font-header !important;
+  font-family: variables.$font-header !important;
   font-weight: 500 !important;
   padding: 0.5em !important;
   text-transform: lowercase;
@@ -45,7 +45,7 @@
 .rbc-date-cell,
 .rbc-label {
   color: #B2B2B2;
-  font-family: $font-header;
+  font-family: variables.$font-header;
 }
 
 .rbc-day-slot .rbc-event {
@@ -56,7 +56,7 @@
 // overrides the label for the toolbar,
 // i.e. the month
 .rbc-toolbar-label {
-  font-family: $font-header;
+  font-family: variables.$font-header;
   font-size: 2rem;
   font-weight: bold;
 }
@@ -69,7 +69,7 @@
   > button {
     border: 0 !important;
     color: white !important;
-    font-family: $font-header;
+    font-family: variables.$font-header;
     font-weight: 600;
     text-transform: lowercase;
 

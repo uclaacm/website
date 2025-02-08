@@ -1,7 +1,7 @@
-@import '../../variables.scss';
+@use '../../variables.scss';
 
 .next-steps-card-inner {
-  @include shadow-boxes();
+  @include variables.shadow-boxes();
   background-color: #FFF;
   border-radius: 1rem;
   cursor: pointer;
@@ -46,7 +46,7 @@
   }
 
   &.back {
-    border: 1px solid $acm-black;
+    border: 1px solid variables.$acm-black;
     height: 90%;
     padding: 10px;
     text-align: left;
