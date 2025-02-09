@@ -1,12 +1,9 @@
 import Image from 'next/legacy/image';
 import Link from 'next/link';
 import { NextSeo } from 'next-seo';
-
-
 import Banner from '../components/Banner';
 import Layout from '../components/Layout';
 import data from '../data';
-
 import reslifeLogo from '../public/images/sponsors/reslife.png';
 import uclaCsDeptLogo from '../public/images/sponsors/ucla_cs_dept.png';
 

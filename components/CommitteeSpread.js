@@ -1,6 +1,4 @@
 // import Image from 'next/image';
-
-
 function Committee(props) {
   return (
     <a

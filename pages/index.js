@@ -1,8 +1,6 @@
 import Link from 'next/link';
 import Script from 'next/script';
 import { NextSeo } from 'next-seo';
-
-
 import Banner from '../components/Banner';
 import Carousel from '../components/Carousel';
 import Committees from '../components/CommitteeSpread';
@@ -11,7 +9,6 @@ import Layout from '../components/Layout';
 import Article from '../components/NewsArticle';
 import SocialMedia from '../components/SocialMedia';
 import data from '../data';
-
 
 function Home() {
   const { carousel, committees, news } = data;

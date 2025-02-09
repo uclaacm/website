@@ -1,5 +1,3 @@
-
-
 function NextSteps(props) {
   const { image, name, info } = props;
   return (

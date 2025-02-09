@@ -1,6 +1,4 @@
 import Image from 'next/legacy/image';
-
-
 import styles from '../../styles/pages/impact.module.scss';
 
 export default function WorkshopCard({

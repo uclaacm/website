@@ -8,7 +8,6 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-
 function SocialMedia(props) {
   const iconType = props.type ? props.type : '';
   // see https://fontawesome.com/how-to-use/on-the-web/other-topics/accessibility#web-fonts-semantic

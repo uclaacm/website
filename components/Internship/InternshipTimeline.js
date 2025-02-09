@@ -1,5 +1,3 @@
-
-
 import styles from '../../styles/components/Internship/InternshipTimeline.module.scss';
 
 function InternshipTimeline(props) {

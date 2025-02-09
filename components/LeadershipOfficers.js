@@ -1,6 +1,5 @@
 import Image from 'next/legacy/image';
 
-
 function Officer(props) {
   return (
     <div className="officer-grid-row">

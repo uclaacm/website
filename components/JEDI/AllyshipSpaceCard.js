@@ -1,7 +1,5 @@
 import Image from 'next/legacy/image';
 import Link from 'next/link';
-
-
 import styles from '../../styles/pages/jedi.module.scss';
 
 // TODO: flesh out docs

@@ -1,10 +1,7 @@
 import Image from 'next/legacy/image';
 import Link from 'next/link';
 import { NextSeo } from 'next-seo';
-
-
 import Layout from '../../components/Layout';
-
 import { blogLink, contactEmail } from '../../data/jedi';
 import diverseDesign from '../../public/images/jedi/events/diverse-design.png';
 import hackschoolAccessibility from '../../public/images/jedi/events/hackschool-accessibility.png';

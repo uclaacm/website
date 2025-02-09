@@ -1,6 +1,4 @@
 import Image from 'next/image';
-
-
 import styles from '../styles/components/DevProjCard.module.scss';
 
 function Project({

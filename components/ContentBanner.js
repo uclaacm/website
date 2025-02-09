@@ -1,5 +1,3 @@
-
-
 function ContentBanner({ title }) {
   return (
     <div className="full-width blue">

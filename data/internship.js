@@ -1,6 +1,4 @@
 /* eslint-disable max-len */
-
-
 import styles from '../styles/pages/Internship.module.scss';
 
 export default {

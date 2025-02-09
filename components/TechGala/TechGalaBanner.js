@@ -1,6 +1,5 @@
 import Image from 'next/legacy/image';
 
-
 function TechGalaBanner() {
   return (
     <div>

@@ -1,9 +1,7 @@
 import { useState, useEffect } from 'react';
-
 import BlogCard from './BlogCard';
 import { blogs } from '../../data/impact';
 import styles from '../../styles/pages/impact.module.scss';
-
 
 function Carousel() {
   const [activeItem, changeActiveItem] = useState(0); // keeps track of blog index (0, 1, or 2) that is currently active

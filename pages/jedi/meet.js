@@ -3,12 +3,9 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
 import { NextSeo } from 'next-seo';
-
-
 import JEDINav from '../../components/JEDI/JEDINav';
 import Layout from '../../components/Layout';
 import Officers from '../../components/OfficerCard';
-
 import { contactEmail, jedis } from '../../data/jedi';
 import styles from '../../styles/pages/jedi.module.scss';
 

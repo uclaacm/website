@@ -1,12 +1,9 @@
 import Link from 'next/link';
 import { NextSeo } from 'next-seo';
-
-
 import Banner from '../components/Banner';
 import Projects from '../components/DevProjectCards';
 import Layout from '../components/Layout';
 import Officers from '../components/OfficerCard';
-
 import { projects } from '../data/dev';
 import data from '../offoutput.json';
 import styles from '../styles/pages/Dev.module.scss';

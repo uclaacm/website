@@ -1,7 +1,5 @@
 /* eslint-disable jsx-a11y/accessible-emoji */
 /* eslint-disable max-len */
-
-
 const events = [
   {
     id: 1,

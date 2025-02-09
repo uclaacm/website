@@ -1,6 +1,5 @@
 import Image from 'next/legacy/image';
 
-
 function Article(props) {
   return (
     <a target="_blank" rel="noreferrer noopener" href={props.article.link}>

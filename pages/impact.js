@@ -1,7 +1,5 @@
 import Image from 'next/legacy/image';
 import { NextSeo } from 'next-seo';
-
-
 import Banner from '../components/Banner';
 import Carousel from '../components/Impact/Carousel';
 import WorkshopCard from '../components/Impact/WorkshopCard';
@@ -9,7 +7,6 @@ import Layout from '../components/Layout';
 import Officers from '../components/OfficerCard';
 import { pastEvents } from '../data/impact';
 import data from '../offoutput.json';
-
 import impactMotifBanner from '../public/images/impact/impact-motif.png';
 import impactathon from '../public/images/impact/impactathon.JPEG';
 import styles from '../styles/pages/impact.module.scss';

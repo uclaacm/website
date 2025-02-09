@@ -1,6 +1,4 @@
 import Link from 'next/link';
-
-
 import styles from '../../styles/pages/impact.module.scss';
 
 export default function BlogCard({
