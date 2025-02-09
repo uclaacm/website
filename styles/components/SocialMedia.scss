@@ -1,8 +1,10 @@
+@use '../variables.scss';
+
 .icon-link {
-  color: $acm-cobalt;
+  color: variables.$acm-cobalt;
 
   &:hover {
-    color: $acm-black;
+    color: variables.$acm-black;
     cursor: pointer;
   }
 }
@@ -14,7 +16,7 @@
     color: white;
 
     :hover {
-      color: $acm-cobalt;
+      color: variables.$acm-cobalt;
     }
   }
 }

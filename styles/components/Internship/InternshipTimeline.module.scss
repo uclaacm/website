@@ -1,4 +1,4 @@
-@import '../../variables.scss';
+@use '../../variables.scss';
 
 .timeline {
   background-color: #CCC;
@@ -7,7 +7,7 @@
 }
 
 .timeline-progress {
-  background-color: $acm-cobalt;
+  background-color: variables.$acm-cobalt;
   height: 100%;
   width: 0;
 }
@@ -63,14 +63,14 @@
 }
 
 .timeline-item.active::before {
-  background-color: $acm-cobalt;
+  background-color: variables.$acm-cobalt;
 }
 
 .timeline-item.active .timeline-content {
-  background-color: $acm-cobalt;
+  background-color: variables.$acm-cobalt;
   color: #FFF;
 }
 
 .timeline-item.active .timeline-content::before {
-  background-color: $acm-cobalt;
+  background-color: variables.$acm-cobalt;
 }

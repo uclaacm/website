@@ -1,3 +1,5 @@
+@use '../variables.scss';
+
 .achievements-container {
   margin: auto;
   text-align: center;
@@ -26,8 +28,8 @@
     }
 
     h3 {
-      color: $font-primary-color;
-      font-family: $font-body;
+      color: variables.$font-primary-color;
+      font-family: variables.$font-body;
       font-size: 0.9em;
       font-weight: bold;
       text-transform: capitalize;

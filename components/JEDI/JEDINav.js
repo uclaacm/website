@@ -1,6 +1,4 @@
 import Link from 'next/link';
-import React from 'react';
-
 import { blogLink } from '../../data/jedi';
 import styles from '../../styles/pages/jedi.module.scss';
 

@@ -1,11 +1,8 @@
 import Link from 'next/link';
 import { NextSeo } from 'next-seo';
-import React from 'react';
-
 import AllyshipSpaceCard from '../../components/JEDI/AllyshipSpaceCard';
 import JEDINav from '../../components/JEDI/JEDINav';
 import Layout from '../../components/Layout';
-
 import { allyshipSpaces as spaces } from '../../data/jedi';
 import styles from '../../styles/pages/jedi.module.scss';
 

@@ -1,5 +1,5 @@
 import Image from 'next/legacy/image';
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 import styles from '../../styles/components/Internship/CommitteeInternshipInfo.module.scss';
 
@@ -48,15 +48,15 @@ function CommitteeInternshipInfo(props) {
               />
             </h2>
             <h3>What do we do?</h3>
-            <p className={styles['internship-info-data']}>
+            <div className={styles['internship-info-data']}>
               {' '}
               {committee.internship.whatWeDo}{' '}
-            </p>
+            </div>
             <h3>What will interns do?</h3>
-            <p className={styles['internship-info-data']}>
+            <div className={styles['internship-info-data']}>
               {' '}
               {committee.internship.whatInternsWillDo}{' '}
-            </p>
+            </div>
           </div>
         ) : null,
       )}

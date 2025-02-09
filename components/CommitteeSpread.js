@@ -1,6 +1,4 @@
 // import Image from 'next/image';
-import React from 'react';
-
 function Committee(props) {
   return (
     <a

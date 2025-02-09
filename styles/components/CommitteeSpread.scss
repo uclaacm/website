@@ -1,3 +1,5 @@
+@use '../variables.scss';
+
 .committees {
   box-sizing: border-box;
   margin: auto;
@@ -7,7 +9,7 @@
   width: 100%;
 
   .committee {
-    color: $font-primary-color;
+    color: variables.$font-primary-color;
     display: inline-block;
     height: 120px;
     position: relative;
@@ -33,7 +35,7 @@
 
       h2 {
         display: inline-block;
-        font-family: $font-display;
+        font-family: variables.$font-display;
         font-size: 1.5em;
         font-weight: 500;
         line-height: 1.5em;
@@ -48,7 +50,7 @@
 
       p {
         display: inline-block;
-        font-family: $font-body;
+        font-family: variables.$font-body;
         font-size: 0.8em;
         left: 72px;
         margin: 0;
@@ -60,35 +62,35 @@
     }
 
     &.hack .info h2 {
-      color: $hack-purple;
+      color: variables.$hack-purple;
     }
 
     &.ai .info h2 {
-      color: $ai-arctic;
+      color: variables.$ai-arctic;
     }
 
     &.w .info h2 {
-      color: $w-teal;
+      color: variables.$w-teal;
     }
 
     &.cyber .info h2 {
-      color: $cyber-amber;
+      color: variables.$cyber-amber;
     }
 
     &.studio .info h2 {
-      color: $studio-raspberry;
+      color: variables.$studio-raspberry;
     }
 
     &.icpc .info h2 {
-      color: $icpc-tangerine;
+      color: variables.$icpc-tangerine;
     }
 
     &.design .info h2 {
-      color: $design-orange;
+      color: variables.$design-orange;
     }
 
     &.teachla .info h2 {
-      color: $teachla-green;
+      color: variables.$teachla-green;
     }
   }
 }

@@ -1,7 +1,5 @@
 import { NextSeo } from 'next-seo';
 
-import React from 'react';
-
 import {
   Accordion,
   AccordionItem,
@@ -106,7 +104,7 @@ function InternshipPage() {
         <div className={styles['testimonial-section']}>
           {testimonials.map((testimonial, i) => (
             <div key={i} className={styles['testimonial-item']}>
-              <p className={'text-left'}>{testimonial.quote}</p>
+              <div className={'text-left'}>{testimonial.quote}</div>
               <p className={'text-right'}>
                 - {testimonial.name} <br /> {testimonial.committee} intern,{' '}
                 {testimonial.year}

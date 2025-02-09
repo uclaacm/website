@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import React from 'react';
+
 import SocialMedia from './SocialMedia';
 import committees from '../data/committees';
 import styles from '../styles/components/Footer.module.scss';
@@ -60,7 +60,7 @@ function Footer() {
                 target="_blank"
                 rel="noreferrer noopener">
 
-                  Join our Mailing List
+                Join our Mailing List
 
               </Link>
             </div>
@@ -71,7 +71,7 @@ function Footer() {
                 target="_blank"
                 rel="noreferrer noopener">
 
-                  Linktree
+                Linktree
 
               </Link>
             </div>

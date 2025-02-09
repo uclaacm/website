@@ -1,5 +1,3 @@
-import React from 'react';
-
 import styles from '../../styles/components/Internship/InternshipTimeline.module.scss';
 
 function InternshipTimeline(props) {
@@ -10,7 +8,7 @@ function InternshipTimeline(props) {
     totalItems > 1 ? ((numberOfActiveItems - 1) / (totalItems - 1)) * 100 : 0;
 
   return (
-    <div className={`hidden-mobile ${styles.timeline}`} ariaHidden="true">
+    <div className={`hidden-mobile ${styles.timeline}`} aria-hidden="true">
       <div
         className={styles['timeline-progress']}
         style={{ width: `${progressBarWidth}%` }}

@@ -4,8 +4,6 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { NextSeo } from 'next-seo';
-import React from 'react';
-
 import Layout from '../components/Layout';
 
 function COVID() {

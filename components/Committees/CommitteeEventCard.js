@@ -1,5 +1,4 @@
 import Image from 'next/legacy/image';
-import React from 'react';
 
 function CommitteeEventCard(props) {
   const hasImage = props.image.src;

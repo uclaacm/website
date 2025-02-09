@@ -1,29 +1,29 @@
 import Image from 'next/legacy/image';
-import React from 'react';
+import { useState, useEffect } from 'react';
 
 // width of each img in px
 // needs to be updated if style.scss changes
 const IMAGE_WIDTH = 360;
 const ITEMS_PER_SECTION = 4;
 
-export default class Carousel extends React.Component {
-  constructor(props) {
-    super(props);
+const Carousel = ({ images }) => {
+  const [sections, setSections] = useState([]);
+  const sectionWidth = (IMAGE_WIDTH * ITEMS_PER_SECTION) / 2;
 
-    const numItems = this.props.images.length;
-    const sections = [];
-    this.sectionWidth = (IMAGE_WIDTH * ITEMS_PER_SECTION) / 2;
+  useEffect(() => {
+    const numItems = images.length;
+    const sectionsData = [];
 
     for (let i = 0; i < numItems; i += ITEMS_PER_SECTION) {
-      sections.push({
-        left: (i / ITEMS_PER_SECTION) * this.sectionWidth,
-        width: this.sectionWidth,
-        items: this.props.images.slice(i, i + 4).map((item, i) => (
+      sectionsData.push({
+        left: (i / ITEMS_PER_SECTION) * sectionWidth,
+        width: sectionWidth,
+        items: images.slice(i, i + ITEMS_PER_SECTION).map((item, index) => (
           <a
             href={item}
             target="_blank"
             rel="noreferrer noopener"
-            key={i}
+            key={index}
             tabIndex="-1"
           >
             <Image src={item} width={IMAGE_WIDTH} height={IMAGE_WIDTH} alt="" />
@@ -32,49 +32,41 @@ export default class Carousel extends React.Component {
       });
     }
 
-    this.timer = null;
-    this.state = {
-      sections,
-    };
-  }
+    setSections(sectionsData);
 
-  componentDidMount() {
-    this.timer = setInterval(() => {
-      this.setState({
-        sections: this.state.sections.map((section) => {
+    const timer = setInterval(() => {
+      setSections((prevSections) => {
+        return prevSections.map((section) => {
           section.left -= 1;
-          if (section.left < -this.sectionWidth) {
+          if (section.left < -sectionWidth) {
             section.left =
-              (this.state.sections.length - 1) * this.sectionWidth - 1;
+              (prevSections.length - 1) * sectionWidth - 1;
           }
           return section;
-        }),
+        });
       });
     }, 30);
-  }
 
-  componentWillUnmount() {
-    clearInterval(this.timer);
-    this.timer = null;
-  }
+    return () => clearInterval(timer);
+  }, [images]);
 
-  render() {
-    return (
-      <div id="carousel">
-        <div id="carousel-inner">
-          {this.state.sections.map((section, i) => {
-            const carouselStyle = {
-              left: section.left + 'px',
-              width: section.width + 'px',
-            };
-            return (
-              <div className="carousel-sect" style={carouselStyle} key={i}>
-                {section.items}
-              </div>
-            );
-          })}
-        </div>
+  return (
+    <div id="carousel">
+      <div id="carousel-inner">
+        {sections.map((section, i) => {
+          const carouselStyle = {
+            left: section.left + 'px',
+            width: section.width + 'px',
+          };
+          return (
+            <div className="carousel-sect" style={carouselStyle} key={i}>
+              {section.items}
+            </div>
+          );
+        })}
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
+
+export default Carousel;

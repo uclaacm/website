@@ -3,11 +3,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Image from 'next/legacy/image';
 import Link from 'next/link';
 import { NextSeo } from 'next-seo';
-import React from 'react';
-
 import Banner from '../components/Banner';
 import Layout from '../components/Layout';
-
 import pastData from '../past-townhall.json';
 import TestimonialsCourseChanges from '../public/images/town-hall/testimonials-course-changes.png';
 import data from '../townhall.json';
