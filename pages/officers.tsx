@@ -1,13 +1,13 @@
-import Image from 'next/legacy/image';
-import { NextSeo } from 'next-seo';
+import Image from "next/legacy/image";
+import { NextSeo } from "next-seo";
 
-import Banner from '../components/Banner';
-import Navigation from '../components/Committees/Sidebar';
+import Banner from "../components/Banner";
+import Navigation from "../components/Committees/Sidebar";
 // import Archive from '../components/Committees/ArchiveSidebar';
-import Layout from '../components/Layout';
-import CommitteeSectionOfficers from '../components/Officers/CommitteeSectionOfficers';
-import data from '../data';
-import teamPhoto from '../public/images/officers/internal_compressed.jpg';
+import Layout from "../components/Layout";
+import CommitteeSectionOfficers from "../components/Officers/CommitteeSectionOfficers";
+import data from "../data";
+import teamPhoto from "../public/images/officers/internal_compressed.jpg";
 
 function OfficersBanner() {
   //fix description
@@ -38,7 +38,8 @@ function OfficersBanner() {
 
 function OfficersPage() {
   const { committees, board } = data;
-  const committeeInfo = board.concat(committees);
+  const committeeInfo = [...board, ...committees];
+
   return (
     <Layout>
       <NextSeo
@@ -47,13 +48,13 @@ function OfficersPage() {
         openGraph={{
           images: [
             {
-              url: 'https://www.uclaacm.com/images/acm_committees.png',
+              url: "https://www.uclaacm.com/images/acm_committees.png",
               width: 2506,
               height: 979,
-              alt: 'The ACM at UCLA logo, surrounded by our nine committees: Studio, ICPC, Design, Cyber, Teach LA, W, AI, Cloud, and Hack.',
+              alt: "The ACM at UCLA logo, surrounded by our nine committees: Studio, ICPC, Design, Cyber, Teach LA, W, AI, Cloud, and Hack.",
             },
           ],
-          site_name: 'ACM at UCLA',
+          site_name: "ACM at UCLA",
         }}
       />
       <Banner decorative />
