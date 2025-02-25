@@ -13,7 +13,7 @@ const results = [];
 const offset = 100;
 
 fs.createReadStream(fname)
-  .pipe(csv({skipLines:'1'}))
+  .pipe(csv({ skipLines: '1' }))
   .on('data', (data) => {
     if (data.Committee.includes('Example')) {
       return;
@@ -21,24 +21,22 @@ fs.createReadStream(fname)
     results.push(data);
   })
   .on('end', () => {
-    const generated = results.map(
-      (event, index) => {
-        try {
-          return generateSingleEvent({
-            id: offset + index,
-            title: event['Event/Workshop Title '],
-            committee: getCssStringFromCommittee(event.Committee),
-            location: event['Location/Zoom Link'],
-            description: event.Description,
-            time: event.Time,
-            date: event.Date,
-            fblink: event['Facebook Link'],
-          });
-        }
-        catch (err) {
-          // eslint-disable-next-line no-console
-          console.error(`Error ${err} on event ${JSON.stringify(event)}`);
-        }
+    const generated = results.map((event, index) => {
+      try {
+        return generateSingleEvent({
+          id: offset + index,
+          title: event['Event/Workshop Title '],
+          committee: getCssStringFromCommittee(event.Committee),
+          location: event['Location/Zoom Link'],
+          description: event.Description,
+          time: event.Time,
+          date: event.Date,
+          fblink: event['Facebook Link'],
+        });
+      } catch (err) {
+        // eslint-disable-next-line no-console
+        console.error(`Error ${err} on event ${JSON.stringify(event)}`);
+      }
     });
 
     const cleaned = generated.filter((item) => item);

@@ -1,4 +1,4 @@
-@import '../variables.scss';
+@use '../variables.scss';
 
 .container {
   margin-left: auto;
@@ -46,7 +46,7 @@
   padding: 1em;
 }
 
-@media (min-width: $tablet-breakpoint) {
+@media (min-width: variables.$tablet-breakpoint) {
   .hero-row {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -68,7 +68,7 @@
 }
 
 .nav-links {
-  font-family: $font-header;
+  font-family: variables.$font-header;
   font-size: 1.5rem;
   line-height: 2;
   list-style: none;
@@ -77,12 +77,12 @@
 
 .jedi-link,
 .nav-links a {
-  color: $acm-cobalt;
+  color: variables.$acm-cobalt;
   text-decoration: none;
 
   &:hover {
     text-decoration: underline;
-    text-decoration-color: $acm-cobalt;
+    text-decoration-color: variables.$acm-cobalt;
   }
 }
 
@@ -102,7 +102,7 @@
   list-style: none;
   padding-left: 0;
 
-  @media (min-width: $tablet-breakpoint) {
+  @media (min-width: variables.$tablet-breakpoint) {
     text-align: right;
   }
 

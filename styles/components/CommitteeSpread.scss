@@ -1,3 +1,5 @@
+@use '../variables.scss';
+
 .committees {
   box-sizing: border-box;
   margin: auto;
@@ -7,7 +9,7 @@
   width: 100%;
 
   .committee {
-    color: $font-primary-color;
+    color: variables.$font-primary-color;
     display: inline-block;
     height: 120px;
     position: relative;
@@ -33,7 +35,7 @@
 
       h2 {
         display: inline-block;
-        font-family: $font-display;
+        font-family: variables.$font-display;
         font-size: 1.5em;
         font-weight: 500;
         line-height: 1.5em;
@@ -48,7 +50,7 @@
 
       p {
         display: inline-block;
-        font-family: $font-body;
+        font-family: variables.$font-body;
         font-size: 0.8em;
         left: 72px;
         margin: 0;
@@ -59,13 +61,36 @@
       }
     }
 
-    &.hack    .info h2 { color: $hack-purple; }
-    &.ai      .info h2 { color: $ai-arctic; }
-    &.w       .info h2 { color: $w-teal; }
-    &.cyber   .info h2 { color: $cyber-amber; }
-    &.studio  .info h2 { color: $studio-raspberry; }
-    &.icpc    .info h2 { color: $icpc-tangerine; }
-    &.design  .info h2 { color: $design-orange; }
-    &.teachla .info h2 { color: $teachla-green; }
+    &.hack .info h2 {
+      color: variables.$hack-purple;
+    }
+
+    &.ai .info h2 {
+      color: variables.$ai-arctic;
+    }
+
+    &.w .info h2 {
+      color: variables.$w-teal;
+    }
+
+    &.cyber .info h2 {
+      color: variables.$cyber-amber;
+    }
+
+    &.studio .info h2 {
+      color: variables.$studio-raspberry;
+    }
+
+    &.icpc .info h2 {
+      color: variables.$icpc-tangerine;
+    }
+
+    &.design .info h2 {
+      color: variables.$design-orange;
+    }
+
+    &.teachla .info h2 {
+      color: variables.$teachla-green;
+    }
   }
 }

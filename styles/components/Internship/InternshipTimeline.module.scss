@@ -1,17 +1,17 @@
-@import '../../variables.scss';
+@use '../../variables.scss';
 
 .timeline {
   background-color: #CCC;
   height: 4px;
   margin: 50px 60px 125px;
 }
-  
+
 .timeline-progress {
-  background-color: $acm-cobalt;
+  background-color: variables.$acm-cobalt;
   height: 100%;
   width: 0;
 }
-  
+
 .timeline-items {
   display: flex;
   justify-content: space-between;
@@ -19,11 +19,11 @@
   margin-right: -10px;
   margin-top: -12px;
 }
-  
+
 .timeline-item {
   position: relative;
 }
- 
+
 // creates the dot on the progress bar
 // has no content and a 100% radius - is fit into a box of 20px by 20px
 .timeline-item::before {
@@ -34,7 +34,7 @@
   height: 20px;
   width: 20px;
 }
-  
+
 .timeline-content {
   background-color: #DDD;
   border-radius: 5px;
@@ -46,7 +46,7 @@
   transform: translateX(-50%);
   width: 100px;
 }
-  
+
 // creates the triangle above individual timeline elements
 // makes a small box and rotates it 45 degrees so it shows up as a triangle
 .timeline-content::before {
@@ -61,16 +61,16 @@
   transform: rotate(-45deg) translateX(-50%);
   width: 10px;
 }
-  
+
 .timeline-item.active::before {
-  background-color: $acm-cobalt;
+  background-color: variables.$acm-cobalt;
 }
-  
+
 .timeline-item.active .timeline-content {
-  background-color: $acm-cobalt;
+  background-color: variables.$acm-cobalt;
   color: #FFF;
 }
-  
+
 .timeline-item.active .timeline-content::before {
-  background-color: $acm-cobalt;
+  background-color: variables.$acm-cobalt;
 }

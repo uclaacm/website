@@ -11,13 +11,23 @@ const SERVICE_ACCOUNT = process.env.SERVICE_ACCOUNT ?? '{}';
 
 // Week one MONDAY of the quarter (y, m (base 0), d)
 const FIRST_DAY_OF_QUARTER = new Date(2023, 0, 9);
-const DAYS_OF_WEEK = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'];
+const DAYS_OF_WEEK = [
+  'monday',
+  'tuesday',
+  'wednesday',
+  'thursday',
+  'friday',
+  'saturday',
+  'sunday',
+];
 
 // Grab all single and recurring events of Week n
 // and write to output.json
 async function writeAllEventsOfWeek(n) {
   // Get events
-  let events = (await getSingleEventsOfWeek(n)).concat(await getRecurringEventsOfWeek(n));
+  let events = (await getSingleEventsOfWeek(n)).concat(
+    await getRecurringEventsOfWeek(n),
+  );
   const cleaned = events.filter((item) => item);
   writeToOutput(cleaned);
 }
@@ -38,8 +48,14 @@ async function getAllEvents() {
   for (let i = 1; i <= 10; i++) {
     events = events.concat(getRecurringEventsOfWeek(recurring_rows, i));
   }
-  events = events.filter((item, index, self) => index === self.findIndex(
-    (other) => item.title === other.title && item.rawStart === other.rawStart));
+  events = events.filter(
+    (item, index, self) =>
+      index ===
+      self.findIndex(
+        (other) =>
+          item.title === other.title && item.rawStart === other.rawStart,
+      ),
+  );
 
   return events;
 }
@@ -52,12 +68,16 @@ async function getSingleEventsOfWeek(n) {
   const events = [];
   for (const row of rows) {
     // Skip header rows and example event
-    if (row.length < 5 || row[0] === 'Committee' || row[0].includes('Example:')) {
+    if (
+      row.length < 5 ||
+      row[0] === 'Committee' ||
+      row[0].includes('Example:')
+    ) {
       continue;
     }
 
-    try{
-      events.push(generateSingleEvent({
+    try {
+      const eventObj = generateSingleEvent({
         id: null,
         title: row[1],
         start: null,
@@ -70,7 +90,12 @@ async function getSingleEventsOfWeek(n) {
         rawEnd: row[4],
         date: row[2],
         fblink: row[7],
-        image: row[8],}));
+        image: row[8],
+      });
+
+      if (eventObj) {
+        events.push(eventObj);
+      }
     } catch (err) {
       // eslint-disable-next-line no-console
       console.error(`Error ${err} on event ${row}`);
@@ -86,7 +111,11 @@ function getRecurringEventsOfWeek(rows, n) {
   const events = [];
   for (const row of rows) {
     // Skip header rows and example event
-    if (row.length < 5 || row[0] === 'Committee' || row[0].includes('Example:')) {
+    if (
+      row.length < 5 ||
+      row[0] === 'Committee' ||
+      row[0].includes('Example:')
+    ) {
       continue;
     }
 
@@ -98,20 +127,23 @@ function getRecurringEventsOfWeek(rows, n) {
         const date = new Date(FIRST_DAY_OF_QUARTER);
         date.setDate(date.getDate() + d);
 
-        events.push(generateSingleEvent({
-          id: null,
-          title: row[1],
-          start: null,
-          end: null,
-          committee: getCssStringFromCommittee(row[0]),
-          location: row[7] ?? '',
-          description: row[8] ?? '',
-          links: null,
-          rawStart: row[5],
-          rawEnd: row[6],
-          date: date.toISOString().split('T')[0],
-          fblink: row[9],
-          image: row[10]}));
+        events.push(
+          generateSingleEvent({
+            id: null,
+            title: row[1],
+            start: null,
+            end: null,
+            committee: getCssStringFromCommittee(row[0]),
+            location: row[7] ?? '',
+            description: row[8] ?? '',
+            links: null,
+            rawStart: row[5],
+            rawEnd: row[6],
+            date: date.toISOString().split('T')[0],
+            fblink: row[9],
+            image: row[10],
+          }),
+        );
       } catch (err) {
         // eslint-disable-next-line no-console
         console.error(`Error ${err} on event ${row}`);
@@ -129,7 +161,7 @@ function getRecurringEventsOfWeek(rows, n) {
 // Read data from Google sheets
 // using sheet range (eg: 'Week 1!A:H)
 async function getGoogleSheetData(range) {
-  const sheets = google.sheets({version: 'v4'});
+  const sheets = google.sheets({ version: 'v4' });
 
   // Get JWT Token to access sheet
   const service_account = JSON.parse(SERVICE_ACCOUNT);
@@ -152,7 +184,7 @@ async function getGoogleSheetData(range) {
     range: range,
   });
   const rows = res?.data.values;
-  if(!rows || rows.length == 0) {
+  if (!rows || rows.length == 0) {
     console.log('Error: no data found');
     return [];
   }

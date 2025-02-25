@@ -1,11 +1,15 @@
-$committees: (ai, $ai-arctic), (cyber, $cyber-amber), (design, $design-orange), (hack, $hack-purple),
-  (icpc, $icpc-tangerine), (studio, $studio-raspberry), (teachla, $teachla-green), (w, $w-teal);
+@use 'sass:list';
+@use '../variables.scss';
+
+$committees: (ai,variables.$ai-arctic), (cyber,variables.$cyber-amber), (design,variables.$design-orange),
+  (hack,variables.$hack-purple), (icpc,variables.$icpc-tangerine), (studio,variables.$studio-raspberry),
+  (teachla,variables.$teachla-green), (w,variables.$w-teal);
 
 #navbar {
   background: white;
   box-shadow: 0 0 4px #E2E2E2;
-  color: $font-primary-color;
-  font-family: $font-display;
+  color: variables.$font-primary-color;
+  font-family: variables.$font-display;
   font-weight: 600;
   height: 72px;
   left: 0;
@@ -50,7 +54,7 @@ $committees: (ai, $ai-arctic), (cyber, $cyber-amber), (design, $design-orange), 
       z-index: 12;
 
       .bar {
-        background-color: $font-secondary-color;
+        background-color: variables.$font-secondary-color;
         border-radius: 04px;
         height: 03px;
         margin: 2px 0;
@@ -75,7 +79,7 @@ $committees: (ai, $ai-arctic), (cyber, $cyber-amber), (design, $design-orange), 
 
       &:hover {
         .bar {
-          background-color: $acm-cobalt;
+          background-color: variables.$acm-cobalt;
         }
       }
     }
@@ -102,14 +106,14 @@ $committees: (ai, $ai-arctic), (cyber, $cyber-amber), (design, $design-orange), 
           transition: 0.2s;
 
           &:hover {
-            color: $acm-cobalt;
+            color: variables.$acm-cobalt;
             cursor: pointer;
           }
         }
 
         // prevents committee text fade on li hover
         &:hover {
-          color: $font-primary-color;
+          color: variables.$font-primary-color;
         }
       }
 
@@ -126,15 +130,15 @@ $committees: (ai, $ai-arctic), (cyber, $cyber-amber), (design, $design-orange), 
         // committee color applied on hover and active
 
         @each $committee in $committees {
-          [href="/committees##{nth($committee, 1)}"]:hover,
-          [href="/committees##{nth($committee, 1)}"].active {
-            color: #{nth($committee, 2)};
+          [href='/committees##{list.nth($committee, 1)}']:hover,
+          [href='/committees##{list.nth($committee, 1)}'].active {
+            color: #{list.nth($committee, 2)};
           }
         }
       }
     }
 
-    @media (max-width: $navbar-breakpoint) {
+    @media (max-width: variables.$navbar-breakpoint) {
       #hamburger {
         display: flex;
       }
@@ -178,7 +182,7 @@ $committees: (ai, $ai-arctic), (cyber, $cyber-amber), (design, $design-orange), 
             //Highlight the link active just for initiative pages
             #initiatives-mobile-nav-item {
               .active {
-                color: $acm-cobalt;
+                color: variables.$acm-cobalt;
               }
             }
 

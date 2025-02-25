@@ -1,6 +1,17 @@
-@import '../../variables.scss';
+@use '../../variables.scss';
 
-$committees: ('ai':$ai-arctic, 'board':$acm-cobalt, 'cyber':$cyber-amber, 'design':$design-orange, 'hack':$hack-purple, 'cloud':$cloud-purple, 'w':$w-teal, 'icpc':$icpc-tangerine, 'teachla':$teachla-green, 'studio':$studio-raspberry);
+$committees: (
+  'ai': variables.$ai-arctic,
+  'board': variables.$acm-cobalt,
+  'cyber': variables.$cyber-amber,
+  'design': variables.$design-orange,
+  'hack': variables.$hack-purple,
+  'cloud': variables.$cloud-purple,
+  'w': variables.$w-teal,
+  'icpc': variables.$icpc-tangerine,
+  'teachla': variables.$teachla-green,
+  'studio': variables.$studio-raspberry,
+);
 
 .committee-internship-info {
   background-color: #FFF;
@@ -11,7 +22,7 @@ $committees: ('ai':$ai-arctic, 'board':$acm-cobalt, 'cyber':$cyber-amber, 'desig
   padding: 1.125em 1.5em;
   position: relative;
   width: 80vw;
-  
+
   .internship-info-data {
     font-size: 0.8em;
     line-height: 150%;
@@ -20,11 +31,13 @@ $committees: ('ai':$ai-arctic, 'board':$acm-cobalt, 'cyber':$cyber-amber, 'desig
 
   @each $committee, $color in $committees {
     &.#{$committee} {
-      box-shadow: 0 0.125rem 0.5rem $color, 0 0.0625rem 0.125rem  $color;
+      box-shadow:
+        0 0.125rem 0.5rem $color,
+        0 0.0625rem 0.125rem $color;
     }
   }
 }
-  
+
 .committee-image {
   height: 70px;
   margin: 0;
@@ -40,7 +53,7 @@ $committees: ('ai':$ai-arctic, 'board':$acm-cobalt, 'cyber':$cyber-amber, 'desig
   padding-bottom: 10px;
   text-align: center;
   width: 80vw;
-  
+
   .logo-diamond {
     background-color: #FFF;
     border: 0;
@@ -51,9 +64,9 @@ $committees: ('ai':$ai-arctic, 'board':$acm-cobalt, 'cyber':$cyber-amber, 'desig
       transform: scale(1.08);
     }
   }
-}  
-  
-@media screen and (max-width: $tablet-breakpoint) {
+}
+
+@media screen and (max-width: variables.$tablet-breakpoint) {
   .logos-line {
     align-items: center;
     display: grid;

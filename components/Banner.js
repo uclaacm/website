@@ -1,88 +1,127 @@
-import React from 'react';
+import { useState, useEffect } from 'react';
 
 // this can get refactored into something better
 const mapUpToSum = (num, fn) => {
-	const res = [];
-	for (let i = 0; i < num; i++)
-		res.push(fn(i, res));
-	return res;
+  const res = [];
+  for (let i = 0; i < num; i++) res.push(fn(i, res));
+  return res;
 };
 
-const generateCols = (n, m, classPattern=['']) => {
-	return mapUpToSum(n,(i =>
-		<div className="square-col" key={i}>
-			{mapUpToSum(m,(j => {
-				const classNames = ['square'];
-				const name = classPattern[j % classPattern.length];
-				if (name !== '') {
-					classNames.push(classPattern[j % classPattern.length]);
-				} else {
-					// note: this Math.random() is the source of [Warning: Prop `className` did not match. Server: x Client: y]
-					// https://stackoverflow.com/questions/69866771/nextjs-prop-style-did-not-match
-					const r = Math.random();
-					if (r < 0.08)
-						classNames.push('white');
-					else if (r < 0.40)
-						classNames.push('light');
-				}
-				return <div className={classNames.join(' ')} key={j} />;
-			}))}
-		</div>
-	));
+const generateCols = (n, m, classPattern = [''], randomize = false) => {
+  return mapUpToSum(n, (i) => (
+    <div className="square-col" key={i}>
+      {mapUpToSum(m, (j) => {
+        const classNames = ['square'];
+        const name = classPattern[j % classPattern.length];
+        if (name !== '') {
+          classNames.push(classPattern[j % classPattern.length]);
+        } else {
+          // note: this Math.random() is the source of [Warning: Prop `className` did not match. Server: x Client: y]
+          // https://stackoverflow.com/questions/69866771/nextjs-prop-style-did-not-match
+          if (randomize) {
+            const r = Math.random();
+            if (r < 0.08) classNames.push('white');
+            else if (r < 0.4) classNames.push('light');
+          }
+        }
+        return <div className={classNames.join(' ')} key={j} />;
+      })}
+    </div>
+  ));
 };
 
-export default class Banner extends React.Component {
-	constructor(props) {
-		super(props);
-		this.timer = null;
-		this.color = 0;
-	}
+const Banner = (props) => {
+  const [randomize, setRandomize] = useState(false);
+  const [color, setColor] = useState(0);
+  let timer;
 
-	componentDidMount() {
-		const committees = ['acm'];
-		if (!this.props.decorative)
-			committees.push('studio', 'icpc', 'design', 'cyber', 'teachla', 'w', 'ai', 'hack');
-		const el = document.querySelector('.banner');
-		this.timer = setInterval(() => {
-			el.classList.remove(committees[this.color]);
-			this.color = (this.color + 1) % committees.length;
-			el.classList.add(committees[this.color]);
-			this.forceUpdate();
-		}, 4000);
-	}
+  useEffect(() => {
+    setRandomize(true);
 
-	componentWillUnmount() {
-		clearInterval(this.timer);
-		this.timer = null;
-	}
+    const committees = ['acm'];
+    if (!props.decorative) {
+      committees.push(
+        'studio',
+        'icpc',
+        'design',
+        'cyber',
+        'teachla',
+        'w',
+        'ai',
+        'hack',
+      );
+    }
 
-	render() {
-		const decorative = this.props.decorative || false;
+    const el = document.querySelector('.banner');
+    timer = setInterval(() => {
+      el.classList.remove(committees[color]);
+      setColor((prevColor) => (prevColor + 1) % committees.length);
+      el.classList.add(committees[color]);
+    }, 4000);
 
-		const sideCols = this.props.sideCols || (decorative ? 12 : 7);
-		const height = this.props.height || (decorative ? 2 : 7);
-		const width = this.props.width || 5;
-		return (
-			<div className={`banner ${ decorative ? 'decorative' : '' }`}>
-				<div className="square-col-container">
-					{ (!decorative) && generateCols(1, height, ['','','','','white','white','white']) }
-					{ (!decorative) && generateCols(1, height, ['','','','','','white','white']) }
-					{ generateCols(1, height, ['','','','','','','white']) }
-					{ generateCols(sideCols, height) }
-					{ (!decorative) && generateCols(1, height, ['','','white','white','','','']) }
-					{ (!decorative) && generateCols(width, height, ['','','white','white','white','','']) }
-					{ (!decorative) && generateCols(1, height, ['','','','white','white','','']) }
-					{ generateCols(sideCols, height) }
-					{ generateCols(1, height, ['white','','','','','','']) }
-					{ (!decorative) && generateCols(1, height, ['white','white','','','','','']) }
-					{ (!decorative) && generateCols(1, height, ['white','white','white','','','','']) }
-				</div>
-				{ (!decorative) &&
-					<div className="title">
-						<h1>code the future.</h1>
-					</div>
-				}
-			</div>
-		);
-	}
-}
+    return () => {
+      clearInterval(timer); // Cleanup on unmount
+    };
+  }, [color, props.decorative]); // Re-run when color or decorative props change
+
+  const decorative = props.decorative || false;
+  const sideCols = props.sideCols || (decorative ? 12 : 7);
+  const height = props.height || (decorative ? 2 : 7);
+  const width = props.width || 5;
+
+  return (
+    <div className={`banner ${decorative ? 'decorative' : ''}`}>
+      <div className="square-col-container">
+        {!decorative &&
+          generateCols(1, height, [
+            '',
+            '',
+            '',
+            '',
+            'white',
+            'white',
+            'white',
+          ])}
+        {!decorative &&
+          generateCols(1, height, ['', '', '', '', '', 'white', 'white'])}
+        {generateCols(1, height, ['', '', '', '', '', '', 'white'])}
+        {generateCols(sideCols, height, undefined, randomize)}
+        {!decorative &&
+          generateCols(1, height, ['', '', 'white', 'white', '', '', ''])}
+        {!decorative &&
+          generateCols(width, height, [
+            '',
+            '',
+            'white',
+            'white',
+            'white',
+            '',
+            '',
+          ])}
+        {!decorative &&
+          generateCols(1, height, ['', '', '', 'white', 'white', '', ''])}
+        {generateCols(sideCols, height, undefined, randomize)}
+        {generateCols(1, height, ['white', '', '', '', '', '', ''])}
+        {!decorative &&
+          generateCols(1, height, ['white', 'white', '', '', '', '', ''])}
+        {!decorative &&
+          generateCols(1, height, [
+            'white',
+            'white',
+            'white',
+            '',
+            '',
+            '',
+            '',
+          ])}
+      </div>
+      {!decorative && (
+        <div className="title">
+          <h1>code the future.</h1>
+        </div>
+      )}
+    </div>
+  );
+};
+
+export default Banner;

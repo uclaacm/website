@@ -2,12 +2,12 @@
  * Base styles                       *
  ************************************/
 
-
 /* miniresets */
+@use 'variables.scss';
 
 body {
-  color: $font-primary-color;
-  font-family: $font-body;
+  color: variables.$font-primary-color;
+  font-family: variables.$font-body;
   margin: 0;
   padding: 0;
 }
@@ -15,7 +15,7 @@ body {
 h1,
 h2,
 h3 {
-  font-family: $font-header;
+  font-family: variables.$font-header;
 }
 
 /* global classes */
@@ -44,21 +44,21 @@ h3 {
 }
 
 .font-header {
-  font-family: $font-header !important;
+  font-family: variables.$font-header !important;
 }
 
-@media (min-width: $navbar-breakpoint) {
+@media (min-width: variables.$navbar-breakpoint) {
   .grid-desktop-3 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
-  
+
   .hide-on-desktop {
     display: none;
   }
 }
 
-@media (min-width: $tablet-breakpoint) {
+@media (min-width: variables.$tablet-breakpoint) {
   .grid-tablet-2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -70,7 +70,7 @@ h3 {
   }
 }
 
-@media (min-width: $tablet-breakpoint) {
+@media (min-width: variables.$tablet-breakpoint) {
   .pr-tablet-2 {
     padding-right: 2em;
   }
@@ -100,7 +100,7 @@ h3 {
   text-align: center;
 }
 
-@media (max-width: $tablet-breakpoint) {
+@media (max-width: variables.$tablet-breakpoint) {
   .text-center-mobile {
     text-align: center;
   }
@@ -118,7 +118,7 @@ h3 {
   font-size: 2.5em !important;
 }
 
-@media (max-width: $tablet-breakpoint) {
+@media (max-width: variables.$tablet-breakpoint) {
   .hidden-mobile {
     display: none;
   }

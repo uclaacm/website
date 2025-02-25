@@ -1,3 +1,5 @@
+@use '../variables.scss';
+
 .committees-page-content {
   box-sizing: border-box;
   margin: auto;
@@ -16,7 +18,7 @@
   }
 
   p {
-    font-family: $font-body;
+    font-family: variables.$font-body;
     font-size: 1em;
     line-height: 150%;
 
@@ -64,7 +66,7 @@
 
   img {
     box-shadow: none !important;
-  }  
+  }
 }
 
 .committee-banner-container {
@@ -83,7 +85,6 @@
 html {
   scroll-padding-top: 75px;
 }
-
 
 .officers-page-content {
   box-sizing: border-box;
@@ -112,7 +113,7 @@ html {
   }
 
   p {
-    font-family: $font-body;
+    font-family: variables.$font-body;
     font-size: 1em;
     line-height: 150%;
 
@@ -123,11 +124,7 @@ html {
     strong {
       font-weight: bold;
     }
-    
-    
   }
-
- 
 
   .officer-image {
     border-radius: 50%; /* Make the image completely round */
@@ -137,7 +134,7 @@ html {
   }
 
   // img{
-    
+
   // }
 
   .committeebanner {
@@ -158,4 +155,3 @@ html {
     width: 100%;
   }
 }
-

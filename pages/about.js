@@ -1,22 +1,32 @@
-import { NextSeo } from 'next-seo';
-import Image from 'next/image';
+import Image from 'next/legacy/image';
 import Link from 'next/link';
-import React from 'react';
-
+import { NextSeo } from 'next-seo';
 import Banner from '../components/Banner';
 import Layout from '../components/Layout';
 import Officers from '../components/OfficerCard';
 import SocialMedia from '../components/SocialMedia';
-import data from '../data';
-
+import data from '../offoutput.json';
 import acmCommittees from '../public/images/acm_committees.png';
 import boardcollage from '../public/images/boardcollage.png';
 import acmHowToJoin from '../public/images/how-to-join.png';
 import initiative from '../public/images/initiative.png';
 import styles from '../styles/pages/About.module.scss';
 
+function extractContent(officerContent) {
+  const convertedData = officerContent.map(officer => ({
+    name: officer.name,
+    pronouns: officer.pronouns,
+    role: (officer.committee.includes('Board') ? officer.role : officer.role + ', ' + officer.committee),
+    committee: officer.committee,
+    major: officer.major,
+    year: officer.year,
+    photo: (officer.photo != 'https://t4.ftcdn.net/jpg/02/15/84/43/360_F_215844325_ttX9YiIIyeaR7Ne6EaLLjMAmy4GvPC69.jpg' ? officer.photo : '/images/officers/acmlogocopy.jpg'), // if photo is default, display ACM logo
+  })).filter(officer => officer.role.includes('President'));
+  return convertedData;
+}
+
 function About() {
-  const { leadership } = data;
+  const filteredOfficers = extractContent(data);
   return (
     <Layout>
       <NextSeo
@@ -59,11 +69,11 @@ function About() {
                 rel="noreferrer noopener"
               >
                 Association for Computing Machinery,
-              </a>&nbsp;
-              ACM at UCLA is the largest Computer Science student organization
-              at UCLA and in Southern California. We welcome students of all
-              backgrounds and skill levels to join our community and share our
-              love for technology!
+              </a>
+              &nbsp; ACM at UCLA is the largest Computer Science student
+              organization at UCLA and in Southern California. We welcome
+              students of all backgrounds and skill levels to join our community
+              and share our love for technology!
             </p>
             <p>
               {/* eslint-disable-next-line max-len */}
@@ -92,9 +102,12 @@ function About() {
             <h1>What is ACM Board?</h1>
             <p>
               {/* eslint-disable-next-line max-len */}
-              ACM Board is our leadership and administrative team including our <Link href ="/dev"> dev team</Link> that handles behind-scenes logistics, financing, plans and hosts ACM-wide events
+              ACM Board is our leadership and administrative team including our{' '}
+              <Link href="/dev"> dev team</Link> that handles behind-scenes
+              logistics, financing, plans and hosts ACM-wide events
               {/* eslint-disable-next-line max-len */}
-              and works towards improving the CS curriculum at UCLA by engaging the CS faculty and department leadership.
+              and works towards improving the CS curriculum at UCLA by engaging
+              the CS faculty and department leadership.
             </p>
           </div>
         </div>
@@ -131,10 +144,11 @@ function About() {
           <div className={styles['text-section']}>
             <h1>What are ACM Initiatives?</h1>
             <p>
-              ACM Initiatives are independent teams of ACM officers who dedicate their
-              time to work on long term projects and ideas that advance our mission.
-              Our current Initiatives include<a href = "impact"> Impact</a>, <a href = "jedi"> JEDI</a>,
-              and Rustaceans.
+              ACM Initiatives are independent teams of ACM officers who dedicate
+              their time to work on long term projects and ideas that advance
+              our mission. Our current Initiatives include
+              <a href="impact"> Impact</a>, <a href="jedi"> JEDI</a>, and
+              Rustaceans.
             </p>
           </div>
         </div>
@@ -189,11 +203,14 @@ function About() {
         </div>
         <div className={`${styles['content-section']} ${styles.leadership}`}>
           <h2>Leadership</h2>
-          <p>Our President and Internal/External Vice Presidents support the entire ACM community
-          while our committee presidents foster the growth of their committee.</p>
-					<div className="grid-desktop-3">
-						<Officers officers={leadership} size="compact" />
-					</div>
+          <p>
+            Our President and Internal/External Vice Presidents support the
+            entire ACM community while our committee presidents foster the
+            growth of their committee.
+          </p>
+          <div className="grid-desktop-3">
+            <Officers officers={filteredOfficers} size="compact" />
+          </div>
         </div>
       </div>
       <br></br>

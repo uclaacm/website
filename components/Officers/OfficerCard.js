@@ -1,7 +1,7 @@
 // import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Image from 'next/image';
-import React from 'react';
+import Image from 'next/legacy/image';
+
 import styles from '../../styles/components/Officers/OfficerCard.module.scss';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 
@@ -16,24 +16,27 @@ function Officer({
   /* eslint-disable-next-line no-unused-vars */
   committee, // no officer card formats use committee yet
 }) {
-
   if (size && size.toLowerCase() === 'compact') {
     return (
-      <div className={`${styles['officer-card']} ${styles['officer-grid-row']}`}>
+      <div
+        className={`${styles['officer-card']} ${styles['officer-grid-row']}`}
+      >
         <div className={styles['officer-grid-col']}>
-            <div className={styles['image-container']}>
-              <Image
-                className="officer-image"
-                src={img}
-                alt={alt}
-                width={130}
-                height={130}
-                objectFit="cover" // Crop to fit the aspect ratio
-                unoptimized={true}
-              />
-            </div>
+          <div className={styles['image-container']}>
+            <Image
+              className="officer-image"
+              src={img}
+              alt={alt}
+              width={130}
+              height={130}
+              objectFit="cover" // Crop to fit the aspect ratio
+              unoptimized={true}
+            />
+          </div>
         </div>
-        <div className={`${styles['officer-grid-col']} ${styles['officer-info']}`}>
+        <div
+          className={`${styles['officer-grid-col']} ${styles['officer-info']}`}
+        >
           <h3 className={styles['officer-title']}>{name}</h3>
           <p className={styles['officer-text']}>{position}</p>
           <p className={styles['officer-text']}>Class of {year}</p>

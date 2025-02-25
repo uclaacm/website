@@ -1,4 +1,4 @@
-@import '../variables.scss';
+@use '../variables.scss';
 
 $single-column-breakpoint: 500px;
 
@@ -12,14 +12,22 @@ $single-column-breakpoint: 500px;
 }
 
 .testimonial-item {
-  @include shadow-boxes();
+  @include variables.shadow-boxes();
   margin: 3px;
   padding: 5px;
-  padding-top: 10px;
+  padding-top: 22px;
 
   .testimonial-question {
-    color: $acm-cobalt;
-    font-size: 1.1em;
+    color: variables.$acm-cobalt;
+    font-family: variables.$font-display;
+    font-size: 0.88rem;
+    font-weight: 900;
+    line-height: 1.4;
+  }
+
+  .testimonial-answer {
+    font-size: 0.8rem;
+    margin-bottom: 12px;
   }
 }
 
@@ -35,7 +43,7 @@ $single-column-breakpoint: 500px;
 }
 
 .application-info-card {
-  @include shadow-boxes();
+  @include variables.shadow-boxes();
   background-color: #FFF;
   border-radius: 1rem;
   font-size: 1.3em;
@@ -48,7 +56,7 @@ $single-column-breakpoint: 500px;
 
 .application-button {
   text-align: center;
-  width: 100%;  
+  width: 100%;
 }
 
 .next-steps-grid {
@@ -64,15 +72,15 @@ $single-column-breakpoint: 500px;
 }
 
 .faq-question:hover {
-  background-color: #DDD,;
+  background-color: #DDD;
 }
 
 .faq {
   margin-bottom: 20px;
 
   .faq-item {
-    border-bottom: 2px solid $acm-cobalt;
-    color: $acm-black;
+    border-bottom: 2px solid variables.$acm-cobalt;
+    color: variables.$acm-black;
     padding-bottom: 15px;
     padding-top: 15px;
 
@@ -82,13 +90,13 @@ $single-column-breakpoint: 500px;
 
     .faq-content {
       margin-top: 10px;
-    }  
+    }
   }
-}   
+}
 
 .faq-question::before {
-  border-bottom: 2px solid $acm-cobalt;
-  border-right: 2px solid $acm-cobalt;
+  border-bottom: 2px solid variables.$acm-cobalt;
+  border-right: 2px solid variables.$acm-cobalt;
   content: '';
   display: inline-block;
   height: 10px;
@@ -102,7 +110,7 @@ $single-column-breakpoint: 500px;
   transform: rotate(45deg);
 }
 
-@media screen and (max-width: $tablet-breakpoint) {
+@media screen and (max-width: variables.$tablet-breakpoint) {
   .testimonial-section {
     grid-template-columns: 1fr 1fr;
   }
@@ -110,17 +118,16 @@ $single-column-breakpoint: 500px;
   .next-steps-grid {
     grid-template-columns: 1fr 1fr;
   }
-
 }
 
 @media screen and (max-width: $single-column-breakpoint) {
   .testimonial-section {
     grid-template-columns: 1fr;
-  }  
+  }
 
   .application-information {
     grid-template-columns: 1fr;
-  }  
+  }
 
   .application-info-card {
     margin-bottom: 50px;

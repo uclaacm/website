@@ -1,6 +1,6 @@
+import Image from 'next/legacy/image';
 import { NextSeo } from 'next-seo';
-import Image from 'next/image';
-import React from 'react';
+
 import Banner from '../components/Banner';
 import Navigation from '../components/Committees/Sidebar';
 // import Archive from '../components/Committees/ArchiveSidebar';

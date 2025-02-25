@@ -1,6 +1,10 @@
 import moment from 'moment';
 
 const getCssStringFromCommittee = (committee) => {
+  if (!committee) {
+    console.warn('Skipping event. Committee is missing or null.');
+    return null;
+  }
   switch (committee.toLowerCase().trim()) {
     case 'general':
     case 'impact': // we should change the branding here soon
@@ -20,7 +24,8 @@ const getCssStringFromCommittee = (committee) => {
     case 'cloud':
       return committee.toLowerCase();
     default:
-      throw new Error(`Unrecognized string ${committee}`);
+      console.warn(`Skipping event. Unrecognized committee: ${committee}`);
+      return null;
   }
 };
 
@@ -43,9 +48,16 @@ const generateSingleEvent = ({
 }) => {
   let allDay = false;
 
+  // If committee is already null (from getCssStringFromCommittee), skip
+  if (committee === null) {
+    console.warn('Skipping event because committee returned null.');
+    return null;
+  }
+
   if (!start && !end) {
     if (!date) {
-      throw new Error('Missing date; can\'t proceed');
+      console.warn('Skipping event because date is missing.');
+      return null;
     }
     // If rawStart or rawEnd is missing, set allDay to true
     if (!rawStart) {
@@ -65,10 +77,10 @@ const generateSingleEvent = ({
     }
   }
 
-  if(!links){
+  if (!links) {
     links = [];
   }
-  if(location.includes('ucla.zoom.us')) {
+  if (location.includes('ucla.zoom.us')) {
     const zoomLink = location;
     location = 'Zoom';
     links.push({
@@ -93,13 +105,15 @@ const generateSingleEvent = ({
       if (host === 'drive.google.com') {
         // Google drive urls need to be transformed
         // 'https://drive.google.com/uc?export=view&id=' + image id (id which follows /d in original link)
-        image = 'https://drive.google.com/uc?export=view&id=' + image.substring(image.indexOf("/d/") + 3, image.indexOf("/view"));
+        image =
+          'https://drive.google.com/uc?export=view&id=' +
+          image.substring(image.indexOf('/d/') + 3, image.indexOf('/view'));
       } else {
-          image = url.href;
+        image = url.href;
       }
     } catch (e) {
-      console.log("Warning: Invalid Image URL: " + e);
-      image = '/images/events/default-event.png'
+      console.log('Warning: Invalid Image URL: ' + e);
+      image = '/images/events/default-event.png';
     }
   } else {
     // Default image
@@ -107,7 +121,8 @@ const generateSingleEvent = ({
   }
 
   if (!title) {
-    throw new Error('Missing title');
+    console.warn('Skipping event because title is missing.');
+    return null;
   }
 
   return {

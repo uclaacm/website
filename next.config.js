@@ -1,23 +1,71 @@
 module.exports = {
-  distDir: 'build',
-  experimental: {
-    craCompat: true,
-  },
+  output: 'standalone',
   images: {
-    domains: [
-      'lh3.googleusercontent.com',
-      'drive.google.com',
-      'teachla.uclaacm.com',
-      'icpc.uclaacm.com',
-      'cdn.discordapp.com',
-      'i.ibb.co',
-      'josephcamyre.com',
-      'jcfp.site',
-      'photos.google.com',
-      'photos.app.goo.gl',
-      'www.uclaacm.com',
-      'raw.githubusercontent.com',
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'lh3.googleusercontent.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'drive.google.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'teachla.uclaacm.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'icpc.uclaacm.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'cdn.discordapp.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'i.ibb.co',
+      },
+      {
+        protocol: 'https',
+        hostname: 'josephcamyre.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'jcfp.site',
+      },
+      {
+        protocol: 'https',
+        hostname: 'photos.google.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'photos.app.goo.gl',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.uclaacm.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 't4.ftcdn.net',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.acmcyber.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'media.licdn.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'github.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'raw.githubusercontent.com',
+      },
     ],
   },
-  target: 'serverless',
 };

@@ -1,7 +1,7 @@
 import { render } from '@testing-library/react';
 import { axe, toHaveNoViolations } from 'jest-axe';
-import React from 'react';
-import { act } from 'react-dom/test-utils';
+
+import { act } from 'react';
 import NewsArticle from '../../components/NewsArticle';
 import data from '../../data';
 

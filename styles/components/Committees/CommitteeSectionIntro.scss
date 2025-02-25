@@ -1,5 +1,7 @@
+@use '../../variables.scss';
+
 .learn-more {
-  color: $font-secondary-color;
+  color: variables.$font-secondary-color;
   font-weight: 700;
   letter-spacing: 0.8em;
   margin: 30px 0 0;
@@ -18,39 +20,39 @@
   }
 
   &.hack {
-    color: $hack-purple;
+    color: variables.$hack-purple;
   }
 
   &.ai {
-    color: $ai-arctic;
+    color: variables.$ai-arctic;
   }
 
   &.w {
-    color: $w-teal;
+    color: variables.$w-teal;
   }
 
   &.cyber {
-    color: $cyber-amber;
+    color: variables.$cyber-amber;
   }
 
   &.studio {
-    color: $studio-raspberry;
+    color: variables.$studio-raspberry;
   }
 
   &.icpc {
-    color: $icpc-tangerine;
+    color: variables.$icpc-tangerine;
   }
 
   &.design {
-    color: $design-orange;
+    color: variables.$design-orange;
   }
 
   &.teachla {
-    color: $teachla-green;
+    color: variables.$teachla-green;
   }
 }
 
-@media (min-width: $tablet-breakpoint) {
+@media (min-width: variables.$tablet-breakpoint) {
   .learn-more {
     font-size: 0.9em;
 

@@ -1,3 +1,5 @@
+@use '../variables.scss';
+
 #carousel {
   background: #FAFAFA;
   height: 480px;
@@ -10,7 +12,7 @@
   }
 
   .carousel-sect {
-    background: linear-gradient(rgba($acm-black, 0.8), rgba($acm-black, 1));
+    background: linear-gradient(rgba(variables.$acm-black, 0.8), rgba(variables.$acm-black, 1));
     position: absolute;
     top: 0;
     width: 1600px;
@@ -26,7 +28,9 @@
       vertical-align: top;
       width: 360px;
 
-      &:hover { opacity: 0.6; }
+      &:hover {
+        opacity: 0.6;
+      }
     }
   }
 }
