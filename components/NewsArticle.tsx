@@ -19,7 +19,6 @@ function Article(props) {
 
 export default Article;
 */
-import React from 'react';
 import Image from 'next/image'; // Assuming you're using Next.js Image component
 
 interface ArticleProps {
