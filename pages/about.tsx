@@ -11,8 +11,9 @@ import boardcollage from '../public/images/boardcollage.png';
 import acmHowToJoin from '../public/images/how-to-join.png';
 import initiative from '../public/images/initiative.png';
 import styles from '../styles/pages/About.module.scss';
+import { OfficerProps } from '../components/OfficerCard';
 
-function extractContent(officerContent) {
+function extractContent(officerContent:OfficerProps[]):OfficerProps[] {
   const convertedData = officerContent.map(officer => ({
     name: officer.name,
     pronouns: officer.pronouns,

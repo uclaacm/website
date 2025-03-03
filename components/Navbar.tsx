@@ -37,7 +37,7 @@ export default function Navbar() {
             onClick={menuActivate}
             aria-label="navigation menu"
             aria-expanded={menuActive}
-            tabIndex="0"
+            tabIndex={0}
           >
             <span className="bar" id="bar-one"></span>
             <span className="bar" id="bar-two"></span>
@@ -180,7 +180,6 @@ export default function Navbar() {
                   <li>
                     <ActiveLink
                       activeClassName="active"
-                      act
                       href="/jedi"
                       passHref={true}
                     >
