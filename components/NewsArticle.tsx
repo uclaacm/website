@@ -19,7 +19,7 @@ function Article(props) {
 
 export default Article;
 */
-import Image from 'next/image'; // Assuming you're using Next.js Image component
+import Image from 'next/image'; 
 
 interface ArticleProps {
   article: {
