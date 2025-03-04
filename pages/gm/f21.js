@@ -214,7 +214,7 @@ function F21() {
               </p>
             </div>
             <p className="gm-program-row">
-            {/* eslint-disable-next-line @next/next/no-img-element */}  
+              {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/images/committees/studio_wordmark.svg"
                 alt="ACM studio"
@@ -222,12 +222,12 @@ function F21() {
               Christian Loanzon, Peter Sutarjo
             </p>
             <p className="gm-program-row">
-            {/* eslint-disable-next-line @next/next/no-img-element */}  
+              {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src="/images/committees/icpc_wordmark.svg" alt="ACM icpc" />{' '}
               Jacob Zhang
             </p>
             <p className="gm-program-row">
-            {/* eslint-disable-next-line @next/next/no-img-element */}  
+              {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/images/committees/design_wordmark.svg"
                 alt="ACM design"
@@ -235,7 +235,7 @@ function F21() {
               Crystal Huynh, Muthu Palaniappan
             </p>
             <p className="gm-program-row">
-            {/* eslint-disable-next-line @next/next/no-img-element */}  
+              {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/images/committees/cyber_wordmark.svg"
                 alt="ACM cyber"
@@ -243,7 +243,7 @@ function F21() {
               Josh Lee, Henry Chang
             </p>
             <p className="gm-program-row">
-            {/* eslint-disable-next-line @next/next/no-img-element */}  
+              {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/images/committees/teachLA_wordmark.svg"
                 alt="ACM teachLA"
@@ -251,17 +251,17 @@ function F21() {
               Sophie Schoenmeyer, Chloe Uy
             </p>
             <p className="gm-program-row">
-            {/* eslint-disable-next-line @next/next/no-img-element */}  
+              {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src="/images/committees/w_wordmark.svg" alt="ACM w" /> Cindy
               Zhang, Lena O&apos;Grady
             </p>
             <p className="gm-program-row">
-            {/* eslint-disable-next-line @next/next/no-img-element */}  
+              {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src="/images/committees/ai_wordmark.svg" alt="ACM ai" />{' '}
               Justin Yi
             </p>
             <p className="gm-program-row">
-            {/* eslint-disable-next-line @next/next/no-img-element */}  
+              {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src="/images/committees/hack_wordmark.svg" alt="ACM hack" />{' '}
               Asha Kar, Eugene Lo
             </p>

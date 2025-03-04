@@ -4,7 +4,6 @@ import { NextSeo } from 'next-seo';
 
 import Image from 'next/legacy/image';
 import Link from 'next/link';
-import { NextSeo } from 'next-seo';
 
 import Countdown from 'react-countdown';
 
