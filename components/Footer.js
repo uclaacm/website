@@ -114,8 +114,8 @@ function Footer() {
                       <FooterLinkElement
                         path={path}
                         /* TODO: resolve 404 with <Image /> component */
-                        /* eslint-disable-next-line @next/next/no-img-element */
                         title={
+                          /* eslint-disable-next-line @next/next/no-img-element */
                           <img
                             className="committee-sidebar-image"
                             src={wordmark_dark}
