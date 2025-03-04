@@ -1,0 +1,23 @@
+components/Carousel.tsx(9,21): error TS7031: Binding element 'images' implicitly has an 'any' type.
+components/Carousel.tsx(21,60): error TS7006: Parameter 'item' implicitly has an 'any' type.
+components/Carousel.tsx(21,66): error TS7006: Parameter 'index' implicitly has an 'any' type.
+components/Carousel.tsx(27,13): error TS2322: Type 'string' is not assignable to type 'number'.
+components/Carousel.tsx(35,17): error TS2345: Argument of type '{ left: number; width: number; items: any; }[]' is not assignable to parameter of type 'SetStateAction<never[]>'.
+  Type '{ left: number; width: number; items: any; }[]' is not assignable to type 'never[]'.
+    Type '{ left: number; width: number; items: any; }' is not assignable to type 'never'.
+components/Carousel.tsx(40,19): error TS2339: Property 'left' does not exist on type 'never'.
+components/Carousel.tsx(41,23): error TS2339: Property 'left' does not exist on type 'never'.
+components/Carousel.tsx(42,21): error TS2339: Property 'left' does not exist on type 'never'.
+components/Carousel.tsx(58,27): error TS2339: Property 'left' does not exist on type 'never'.
+components/Carousel.tsx(59,28): error TS2339: Property 'width' does not exist on type 'never'.
+components/Carousel.tsx(63,24): error TS2339: Property 'items' does not exist on type 'never'.
+data/committees.tsx(16,9): error TS2503: Cannot find namespace 'JSX'.
+data/committees.tsx(21,22): error TS2503: Cannot find namespace 'JSX'.
+pages/about.tsx(8,18): error TS2307: Cannot find module '../offoutput.json' or its corresponding type declarations.
+pages/committees.tsx(5,30): error TS7016: Could not find a declaration file for module '../components/Committees/CommitteeSection'. '/Users/susiekim/webdev/website/components/Committees/CommitteeSection.js' implicitly has an 'any' type.
+pages/committees.tsx(6,24): error TS7016: Could not find a declaration file for module '../components/Committees/Sidebar'. '/Users/susiekim/webdev/website/components/Committees/Sidebar.js' implicitly has an 'any' type.
+pages/committees.tsx(8,18): error TS7016: Could not find a declaration file for module '../data'. '/Users/susiekim/webdev/website/data/index.js' implicitly has an 'any' type.
+pages/committees.tsx(60,28): error TS7006: Parameter 'committee' implicitly has an 'any' type.
+pages/officers.tsx(5,24): error TS7016: Could not find a declaration file for module '../components/Committees/Sidebar'. '/Users/susiekim/webdev/website/components/Committees/Sidebar.js' implicitly has an 'any' type.
+pages/officers.tsx(8,38): error TS7016: Could not find a declaration file for module '../components/Officers/CommitteeSectionOfficers'. '/Users/susiekim/webdev/website/components/Officers/CommitteeSectionOfficers.js' implicitly has an 'any' type.
+pages/officers.tsx(9,18): error TS7016: Could not find a declaration file for module '../data'. '/Users/susiekim/webdev/website/data/index.js' implicitly has an 'any' type.

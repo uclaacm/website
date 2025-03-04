@@ -1,18 +1,30 @@
+import { ItemListElements } from 'next-seo/lib/types';
 import Image from 'next/legacy/image';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, JSX } from 'react';
 
 // width of each img in px
 // needs to be updated if style.scss changes
 const IMAGE_WIDTH = 360;
 const ITEMS_PER_SECTION = 4;
 
-const Carousel = ({ images }) => {
-  const [sections, setSections] = useState([]);
+interface CarouselProps{
+  images: string[];
+}
+
+interface Section{
+  left: number;
+  width: number;
+  items: JSX.Element[];
+}
+
+const Carousel = ({images} : CarouselProps) => {
+  const [sections, setSections] = useState<Section[]>([]);
   const sectionWidth = (IMAGE_WIDTH * ITEMS_PER_SECTION) / 2;
 
   useEffect(() => {
     const numItems = images.length;
-    const sectionsData = [];
+    
+    const sectionsData: Section[] = [];
 
     for (let i = 0; i < numItems; i += ITEMS_PER_SECTION) {
       sectionsData.push({
@@ -24,7 +36,7 @@ const Carousel = ({ images }) => {
             target="_blank"
             rel="noreferrer noopener"
             key={index}
-            tabIndex="-1"
+            tabIndex={-1}
           >
             <Image src={item} width={IMAGE_WIDTH} height={IMAGE_WIDTH} alt="" />
           </a>
@@ -54,9 +66,9 @@ const Carousel = ({ images }) => {
     <div id="carousel">
       <div id="carousel-inner">
         {sections.map((section, i) => {
-          const carouselStyle = {
-            left: section.left + 'px',
-            width: section.width + 'px',
+          const carouselStyle: React.CSSProperties = {
+            left: `${section.left}px`,
+            width: `${section.width}px`,
           };
           return (
             <div className="carousel-sect" style={carouselStyle} key={i}>
