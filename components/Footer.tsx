@@ -1,10 +1,22 @@
 import Link from 'next/link';
-
 import SocialMedia from './SocialMedia';
 import committees from '../data/committees';
 import styles from '../styles/components/Footer.module.scss';
+import { Committee } from '../data/committees';
 
-const footerACMLinks = [
+interface FooterLink {
+  title: string;
+  path: string;
+  ext?: boolean;
+}
+
+interface FooterLinkElementProps {
+  title: string | React.ReactNode;
+  path: string;
+  ext?: boolean; 
+}
+
+const footerACMLinks: FooterLink[] = [
   { title: 'About', path: '/about' },
   { title: 'Events', path: '/events' },
   { title: 'General Meeting', path: '/gm' },
@@ -25,7 +37,7 @@ const footerInitiativeLinks = [
   { title: 'JEDI', path: '/jedi' },
 ];
 
-function FooterLinkElement({ title, path, ext }) {
+function FooterLinkElement({ title, path, ext }: FooterLinkElementProps) {
   return (
     (<Link
       href={path}
@@ -105,7 +117,7 @@ function Footer() {
               className={`list-unstyled text-left ${styles['footer-committee-sidebar-container']}`}
             >
               {committees.map(
-                ({ name, slug, external_link, wordmark_dark }) => {
+                ({ name, slug, external_link, wordmark_dark }: Committee) => {
                   const path = external_link
                     ? external_link
                     : `/committees#${slug}`;
@@ -122,7 +134,7 @@ function Footer() {
                             alt={`ACM ${name}`}
                           />
                         }
-                        ext={external_link}
+                        ext={!!external_link}
                       />
                     </li>
                   );

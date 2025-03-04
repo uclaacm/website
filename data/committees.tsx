@@ -1,4 +1,44 @@
 /* eslint-disable max-len */
+
+interface Link {
+  platform: string;
+  link: string;
+}
+
+interface Image {
+  src: string;
+  alt: string;
+}
+
+interface InfoCard {
+  title: string;
+  image: Image;
+  desc: JSX.Element;
+}
+
+interface Internship {
+  whatWeDo: string;
+  whatInternsWillDo: JSX.Element;
+  card: string;
+  nextSteps: string;
+}
+
+export interface Committee {
+  name: string;
+  class: string;
+  slug: string;
+  tagline: string;
+  external_link: string | null;
+  image: string;
+  wordmark_dark: string;
+  diamond: string;
+  links: Link[];
+  infoCards: InfoCard[];
+  introImage: string;
+  mission: string;
+  internship: Internship;
+}
+
 export default [
   {
     name: 'Studio',
@@ -119,7 +159,7 @@ export default [
           src: '/images/committees/icpc/codesprint.png',
           alt: 'Codesprint Flyer',
         },
-        desc: 'CodeSprintLA is UCLA\'s own Competitive Programming Competition organized by ACM ICPC. Competitive Programming is the activity (some call it a sport!) of writing programs to solve computational problems. You must be clever with your algorithm to solve the program in a given time limit. Individual or teams compete to solve the most problems!',
+        desc: <>CodeSprintLA is UCLA\'s own Competitive Programming Competition organized by ACM ICPC. Competitive Programming is the activity (some call it a sport!) of writing programs to solve computational problems. You must be clever with your algorithm to solve the program in a given time limit. Individual or teams compete to solve the most problems!</>,
       },
       {
         title: 'Project A*: Competitive Programming Workshops',
@@ -127,7 +167,7 @@ export default [
           src: '/images/committees/icpc/A.png',
           alt: 'ICPC Project A* Flyer',
         },
-        desc: 'All you need is a passion for problem-solving! Whether you are completely new to competitive programming (or even CS!), or a veteran coder we have a learning opportunity for you this Fall. Introducing Project A*, our weekly algorithm academy! Our Intro to Competitive Programming track will cover all the essentials from the bottom up to get you started in competitive programming. The Advanced Training track will delve deeper into more complicated data structures and algorithms to help you compete at the highest level.',
+        desc: <>All you need is a passion for problem-solving! Whether you are completely new to competitive programming (or even CS!), or a veteran coder we have a learning opportunity for you this Fall. Introducing Project A*, our weekly algorithm academy! Our Intro to Competitive Programming track will cover all the essentials from the bottom up to get you started in competitive programming. The Advanced Training track will delve deeper into more complicated data structures and algorithms to help you compete at the highest level.</>,
       },
       {
         title: 'Advanced Interview Prep',
@@ -135,7 +175,7 @@ export default [
           src: '/images/committees/icpc/interview_advanced.png',
           alt: 'Advanced Interview Prep Flyer',
         },
-        desc: 'Are you ready to bring your coding interview skills to the next level? Are you worried about the upcoming fall recruiting season? Do your CS 32 algorithm skills feel rusty? 🤔 💭 Don’t worry, we’ve got you covered! ACM ICPC is hosting an ⚙️  Advanced ⚙️  Interview Prep workshop that’ll let you in on all of the secrets to acing your next technical interview. In this workshop, we will be going over advanced algorithms and data structures asked in even the most difficult phone and onsite interviews! 🖥️ ',
+        desc: <>Are you ready to bring your coding interview skills to the next level? Are you worried about the upcoming fall recruiting season? Do your CS 32 algorithm skills feel rusty? 🤔 💭 Don’t worry, we’ve got you covered! ACM ICPC is hosting an ⚙️  Advanced ⚙️  Interview Prep workshop that’ll let you in on all of the secrets to acing your next technical interview. In this workshop, we will be going over advanced algorithms and data structures asked in even the most difficult phone and onsite interviews! 🖥️ </>,
       },
     ],
     introImage: '/images/committees/icpc/icpc_motif_applied.png',
@@ -186,7 +226,7 @@ export default [
           src: '/images/committees/design/rebranding_update.png',
           alt: 'ACM Winter General Meeting',
         },
-        desc: 'We are finishing up our main project of rebranding ACM at UCLA including the logos, wordmarks, motifs, banners, and complete visual identities of each committee. The rebranding project started to correct the pain points of our previous branding, and position ACM at UCLA to appeal to a larger audience.',
+        desc: <>We are finishing up our main project of rebranding ACM at UCLA including the logos, wordmarks, motifs, banners, and complete visual identities of each committee. The rebranding project started to correct the pain points of our previous branding, and position ACM at UCLA to appeal to a larger audience.</>,
       },
       {
         title: 'UXLA: UI/UX Workshop Series',
@@ -194,7 +234,7 @@ export default [
           src: '/images/committees/design/uxla_1.png',
           alt: 'UI/UX Workshop Series Flyer',
         },
-        desc: 'Come join ACM Design\'s second workshop series of the quarter, UXLA! UXLA will cover core aspects of the UI/UX process. Come join us for our first of four workshops, Intro to UI/UX 💡 This week, we will cover the higher level goals of UI/UX, define terms like "user research" and "wireframes", and analyze companies that use good UI/UX practices!',
+        desc: <>Come join ACM Design\'s second workshop series of the quarter, UXLA! UXLA will cover core aspects of the UI/UX process. Come join us for our first of four workshops, Intro to UI/UX 💡 This week, we will cover the higher level goals of UI/UX, define terms like "user research" and "wireframes", and analyze companies that use good UI/UX practices!</>,
       },
       {
         title: 'Design Tapas: HTML/CSS',
@@ -202,7 +242,7 @@ export default [
           src: '/images/committees/design/design_tapas_html_css.jpeg',
           alt: 'Design Tapas Flyer',
         },
-        desc: 'We are continuing 🍢 Design Tapas 🍢 this quarter - Come join us this week for a fresh dive into HTML/CSS for beginners! This technology is all over the way we interact with Internet and is essential to know for any web development - a couple of our officers will be demystifying this secret to constructing websites and making them look awesome through code!',
+        desc: <>We are continuing 🍢 Design Tapas 🍢 this quarter - Come join us this week for a fresh dive into HTML/CSS for beginners! This technology is all over the way we interact with Internet and is essential to know for any web development - a couple of our officers will be demystifying this secret to constructing websites and making them look awesome through code!</>,
       },
     ],
     introImage: '/images/committees/design/design_motif_applied.png',
@@ -265,7 +305,7 @@ export default [
           src: '/images/committees/cyber/cyber-academy-bruinwalk.png',
           alt: 'Image of forensics event flyer',
         },
-        desc: 'ACM Cyber collaborated up with the Bruinwalk team to perform a security audit of https://bruinwalk.com/. Throughout the quarter, members learned about web hacking and security vulnerabilities which culminated a hands on experience to audit the source code of the famous website! Teams were awarded bounties for finding bugs on the website allowing the team to patch these vulnerabilities.',
+        desc: <>ACM Cyber collaborated up with the Bruinwalk team to perform a security audit of https://bruinwalk.com/. Throughout the quarter, members learned about web hacking and security vulnerabilities which culminated a hands on experience to audit the source code of the famous website! Teams were awarded bounties for finding bugs on the website allowing the team to patch these vulnerabilities.</>,
       },
       {
         title: 'LA CTF',
@@ -273,7 +313,7 @@ export default [
           src: '/images/committees/cyber/lactf-logo.gif',
           alt: 'LA CTF 2023 mountains logo GIF.',
         },
-        desc: 'LA CTF is an annual Capture the Flag (CTF) cybersecurity competition hosted by ACM Cyber at UCLA & Psi Beta Rho. LA CTF is open to all skill levels of cybersecurity! Whether you are tackling your first exploit or have professional experience, there will be challenges just right for you! There will be a variety of events ranging from the competition containing jeopardy-style cybersecurity challenges to talks from UCLA professors to fun events such as typing competitions! If you are interested in attending, join the Discord to stay up to date with the latest information about LA CTF!',
+        desc: <>LA CTF is an annual Capture the Flag (CTF) cybersecurity competition hosted by ACM Cyber at UCLA & Psi Beta Rho. LA CTF is open to all skill levels of cybersecurity! Whether you are tackling your first exploit or have professional experience, there will be challenges just right for you! There will be a variety of events ranging from the competition containing jeopardy-style cybersecurity challenges to talks from UCLA professors to fun events such as typing competitions! If you are interested in attending, join the Discord to stay up to date with the latest information about LA CTF!</>,
       },
       {
         title: 'Psi Beta Rho',
@@ -281,7 +321,7 @@ export default [
           src: '/images/committees/cyber/pbr-team-photo.jpg',
           alt: '',
         },
-        desc: 'Psi Beta Rho, also known as PBR, is UCLA\'s competetive cybersecurity team! We are a group of students who are passionate about learning more about cybersecurity and competing at CTFs. PBR attends a variety of different cybersecurity competitions throughout the year by we primarily compete in capture the flag (CTF) competitions. Psi Beta Rho is open to all skill levels. Whether you are just launching your cybersecurity career or are already an experienced professional, PBR is for you!',
+        desc: <>Psi Beta Rho, also known as PBR, is UCLA\'s competetive cybersecurity team! We are a group of students who are passionate about learning more about cybersecurity and competing at CTFs. PBR attends a variety of different cybersecurity competitions throughout the year by we primarily compete in capture the flag (CTF) competitions. Psi Beta Rho is open to all skill levels. Whether you are just launching your cybersecurity career or are already an experienced professional, PBR is for you!</>,
       },
     ],
     introImage: '/images/committees/cyber/cyber_motif_applied.png',
@@ -323,7 +363,7 @@ export default [
           src: '/images/committees/teachLA/brockton-original.jpg',
           alt: 'Teach LA members with a class they are teaching.',
         },
-        desc: 'Teach remote classes on Scratch, Python, Web Development, App Development (w/ React Native), and AI/ML (w/ ACM AI Outreach)! No prior CS experience required, and we like all majors!',
+        desc: <>Teach remote classes on Scratch, Python, Web Development, App Development (w/ React Native), and AI/ML (w/ ACM AI Outreach)! No prior CS experience required, and we like all majors!</>,
       },
       {
         title: 'Speaker Series & Events',
@@ -331,7 +371,7 @@ export default [
           src: '/images/committees/teachLA/speaker-events.jpg',
           alt: 'Students and instructors from an event',
         },
-        desc: 'Help run one-off virtual events like Day of Code (with ACM-W), “What CS in College is Like”, “Diversity in CS”, “Bias in AI & ML”, or “Hacking for Good!”! Here, we especially value diverse experiences, including CS backgrounds and majors.',
+        desc: <>Help run one-off virtual events like Day of Code (with ACM-W), “What CS in College is Like”, “Diversity in CS”, “Bias in AI & ML”, or “Hacking for Good!”! Here, we especially value diverse experiences, including CS backgrounds and majors.</>,
       },
       {
         title: 'Dev Team',
@@ -394,7 +434,7 @@ export default [
           src: '/images/committees/w/startup-panel.png',
           alt: 'Flyer for student panel with title "From Idea to Prototype to Business" and the speakers\' names ',
         },
-        desc: 'We invite current and past students to share the wisdom they’ve gained from a variety of experiences, including entrepreneurship and the Grace Hopper Conference!',
+        desc: <>We invite current and past students to share the wisdom they’ve gained from a variety of experiences, including entrepreneurship and the Grace Hopper Conference!</>,
       },
       {
         title: 'WESP',
@@ -402,7 +442,7 @@ export default [
           src: '/images/committees/w/wesp.png',
           alt: 'A large gathering of WESP participants outside B-Plate the cafeteria.',
         },
-        desc: 'The Women in Engineering Stayover Program is our annual event (pre-coronavirus) put on with WATT and SWE to showcase what UCLA Engineering (and UCLA Dining) has to offer to prospective students!',
+        desc: <>The Women in Engineering Stayover Program is our annual event (pre-coronavirus) put on with WATT and SWE to showcase what UCLA Engineering (and UCLA Dining) has to offer to prospective students!</>,
       },
       {
         title: 'Mentorship Program',
@@ -410,7 +450,7 @@ export default [
           src: '/images/committees/w/mentorship.jpg',
           alt: 'ACM W members hanging out at UCLA.',
         },
-        desc: 'Our year-long mentorship program pairs underclassmen/those new to CS with upperclassmen who can offer advice on everything from internships to favorite spots in LA (pre-COVID, at least).',
+        desc: <>Our year-long mentorship program pairs underclassmen/those new to CS with upperclassmen who can offer advice on everything from internships to favorite spots in LA (pre-COVID, at least).</>,
       },
     ],
     introImage: '/images/committees/w/w_motif_applied.png',
@@ -469,7 +509,7 @@ export default [
           src: '',
           alt: '',
         },
-        desc: 'This fall ACM AI is offering three workshop series: Beginner Track, Advanced Track, and Applied ML. Beginner Track is an introductory course that teaches fundamentals of machine learning and assumes no prior background in AI. Advanced Track is a more advanced machine learning course that covers more advanced deep learning topics and is designed for students who have already previously taken Beginner Track or have prior knowledge of machine learning fundamentals. Our Applied ML workshops series covers practical skills needed to apply machine learning theory to real world problems and is designed for students who already have knowledge of machine learning fundamentals.',
+        desc: <>This fall ACM AI is offering three workshop series: Beginner Track, Advanced Track, and Applied ML. Beginner Track is an introductory course that teaches fundamentals of machine learning and assumes no prior background in AI. Advanced Track is a more advanced machine learning course that covers more advanced deep learning topics and is designed for students who have already previously taken Beginner Track or have prior knowledge of machine learning fundamentals. Our Applied ML workshops series covers practical skills needed to apply machine learning theory to real world problems and is designed for students who already have knowledge of machine learning fundamentals.</>,
       },
       {
         title: 'You Belong in AI! Podcast',
@@ -489,7 +529,7 @@ export default [
           src: '',
           alt: '',
         },
-        desc: 'ACM AI’s projects team collaborated with ACM Game Studio to develop AI for a fighting video game that would match the skill level of the player. This project made use of reinforcement learning, an advanced machine learning technique used to teach agents to act intelligently in complex environments.',
+        desc: <>ACM AI’s projects team collaborated with ACM Game Studio to develop AI for a fighting video game that would match the skill level of the player. This project made use of reinforcement learning, an advanced machine learning technique used to teach agents to act intelligently in complex environments.</>,
       },
     ],
     introImage: '/images/committees/ai/ai_motif_applied.png',
@@ -655,7 +695,7 @@ export default [
           src: '/images/committees/hack/learn_py.png',
           alt: 'Image of Hack Sprint Flyer',
         },
-        desc: 'This is our weekly Python workshop series on Wednesdays @ 6-8 PM PDT, dedicated to giving you an accessible introduction to Python. Our goal is to teach you the essentials of the programming language itself, as well as some of its practical and cool applications, such as task automation and web development! No prior Python experience is required, but basic programming knowledge is recommended.',
+        desc: <>This is our weekly Python workshop series on Wednesdays @ 6-8 PM PDT, dedicated to giving you an accessible introduction to Python. Our goal is to teach you the essentials of the programming language itself, as well as some of its practical and cool applications, such as task automation and web development! No prior Python experience is required, but basic programming knowledge is recommended.</>,
       },
       {
         title: 'Hack Kitchen',
@@ -663,7 +703,7 @@ export default [
           src: '/images/committees/hack/hack_kitchen.png',
           alt: 'Image of Hack off the Hill flyer',
         },
-        desc: 'Hack Kitchen is a virtual coding puzzle competition that encourages creativity in technology. Coders will participate in a 8 hour MasterChef style tournament, where each round will consist of a wacky coding puzzle and some for your favorite Gordon Ramsay references. To accommodate for time zones, we will be offering 2 sessions of Hack Kitchen.',
+        desc: <>Hack Kitchen is a virtual coding puzzle competition that encourages creativity in technology. Coders will participate in a 8 hour MasterChef style tournament, where each round will consist of a wacky coding puzzle and some for your favorite Gordon Ramsay references. To accommodate for time zones, we will be offering 2 sessions of Hack Kitchen.</>,
       },
       {
         title: 'Javascript Chats',
@@ -671,7 +711,7 @@ export default [
           src: '/images/committees/hack/js_chats.png',
           alt: 'Image of Hack Fam flyer',
         },
-        desc: 'JavaScript is one of the most popular languages that people use outside of academic settings at UCLA. Come out to JavaScript Chats with ACM Hack, a weekly discussion on intermediate/advanced JavaScript. This series aims to deepen your understanding of the language’s features and designs. We also plan to cover frameworks and related topics.',
+        desc: <>JavaScript is one of the most popular languages that people use outside of academic settings at UCLA. Come out to JavaScript Chats with ACM Hack, a weekly discussion on intermediate/advanced JavaScript. This series aims to deepen your understanding of the language’s features and designs. We also plan to cover frameworks and related topics.</>,
       },
     ],
     introImage: '/images/committees/hack/hack_motif_applied.png',
@@ -681,9 +721,9 @@ export default [
     diamond: '/images/diamonds/hack_diamond.svg',
     internship: {
       whatWeDo: 'Hack is all about empowering the community with the means to build amazing things using software. We deal primarily with software development, most commonly web and mobile app development, and host events for these such as workshops and hackathons.',
-      whatInternsWillDo: 'Interns will work closely with the rest of the team to organize events, fulfilling roles (i.e. event  director, curriculum developer, marketing) chosen based on personal interest prior to each quarter. Interns may choose to additionally work on our internal dev team to maintain the Hack and HOTH websites.',
+      whatInternsWillDo: (<>Interns will work closely with the rest of the team to organize events, fulfilling roles (i.e. event  director, curriculum developer, marketing) chosen based on personal interest prior to each quarter. Interns may choose to additionally work on our internal dev team to maintain the Hack and HOTH websites.</>),
       card: '/images/cards/hack_card.svg',
       nextSteps: 'All Interns have the opportunity to become officers in the Spring if they choose to stay.',
     },
   },
-];
+] satisfies Committee[];

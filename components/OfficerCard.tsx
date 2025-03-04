@@ -1,6 +1,27 @@
 import Image from 'next/legacy/image';
 import styles from '../styles/components/OfficerCard.module.scss';
 
+export type OfficerProps = {
+  name: string;
+  pronouns: string;
+  role: string;
+  committee: string;
+  major: string;
+  year: string;
+  photo: string;
+  alt?: string;
+  bio?: string; 
+  size?: string;
+  style?: string; 
+}
+
+type OfficersProps = {
+  officers: OfficerProps[],
+  size: string,
+  style?: string
+}
+
+
 function Officer({
   name,
   pronouns,
@@ -14,8 +35,8 @@ function Officer({
   bio,
   size,
   style,
-}) {
-  if (style && style.toLowerCase() === 'jedi') {
+}:OfficerProps){
+  if (style && style?.toLowerCase() === 'jedi') {
     return (
       <div className={styles['mb-2']}>
         <div className={styles['jedi-profile-img']}>
@@ -72,7 +93,7 @@ function Officer({
   }
 }
 
-function Officers(props) {
+function Officers(props:OfficersProps) {
   return (
     // TODO: more flexible mobile views
     (<>
@@ -81,7 +102,7 @@ function Officers(props) {
           {...officer}
           size={props.size}
           style={props.style}
-          key={props.officers.name}
+          key={officer.name}
         />
       ))}
     </>)

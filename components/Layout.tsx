@@ -1,8 +1,11 @@
-
 import Footer from './Footer';
 import Navbar from './Navbar';
 
-function Layout(props) {
+interface LayoutProps {
+  children: React.ReactNode;
+}
+
+function Layout(props:LayoutProps) {
   return (
     <>
       <div className="app-container">
