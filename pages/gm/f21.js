@@ -275,7 +275,7 @@ function F21() {
               </p>
             </div>
             <p className="gm-program-row">
-            {/* eslint-disable-next-line @next/next/no-img-element */}  
+              {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/images/committees/board_wordmark.svg"
                 alt="ACM board"
@@ -283,7 +283,7 @@ function F21() {
               &nbsp;&nbsp;External: Tina Huang
             </p>
             <p className="gm-program-row">
-            {/* eslint-disable-next-line @next/next/no-img-element */}  
+              {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/images/committees/board_wordmark.svg"
                 alt="ACM board"

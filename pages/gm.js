@@ -1,9 +1,9 @@
 import { faFileAlt, faVideo } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { NextSeo } from 'next-seo';
 
 import Image from 'next/legacy/image';
 import Link from 'next/link';
+import { NextSeo } from 'next-seo';
 
 import Countdown from 'react-countdown';
 
@@ -359,10 +359,10 @@ function gm() {
                 friends!
               </p>
             </div>
-            <div className='gm-program-row'>All ACM officers</div>
+            <div className="gm-program-row">All ACM officers</div>
           </div>
         </div>
-			</div>
+      </div>
       {/* Past GMs */}
       <div className="content-container-medium">
         <hr></hr>
@@ -379,7 +379,7 @@ function gm() {
                       className="button"
                       target="_blank"
                       rel="noopener noreferrer"
-                      >
+                    >
                       <FontAwesomeIcon
                         icon={faFileAlt}
                         fixedWidth
@@ -420,8 +420,8 @@ function gm() {
           </div>
         ))}
       </div>
-		</Layout>
-	);
+    </Layout>
+  );
 }
 
 export default gm;
