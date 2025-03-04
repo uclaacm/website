@@ -347,6 +347,7 @@ function gm() {
             </div>
             {data.initiatives.map((item) => (
               <p key={item.id} className="gm-program-row">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
                 {item}
               </p>
             ))}

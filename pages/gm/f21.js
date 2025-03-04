@@ -213,55 +213,55 @@ function F21() {
                 Fall quarter
               </p>
             </div>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
             <p className="gm-program-row">
+            {/* eslint-disable-next-line @next/next/no-img-element */}  
               <img
                 src="/images/committees/studio_wordmark.svg"
                 alt="ACM studio"
               />{' '}
               Christian Loanzon, Peter Sutarjo
             </p>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
             <p className="gm-program-row">
+            {/* eslint-disable-next-line @next/next/no-img-element */}  
               <img src="/images/committees/icpc_wordmark.svg" alt="ACM icpc" />{' '}
               Jacob Zhang
             </p>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
             <p className="gm-program-row">
+            {/* eslint-disable-next-line @next/next/no-img-element */}  
               <img
                 src="/images/committees/design_wordmark.svg"
                 alt="ACM design"
               />{' '}
               Crystal Huynh, Muthu Palaniappan
             </p>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
             <p className="gm-program-row">
+            {/* eslint-disable-next-line @next/next/no-img-element */}  
               <img
                 src="/images/committees/cyber_wordmark.svg"
                 alt="ACM cyber"
               />{' '}
               Josh Lee, Henry Chang
             </p>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
             <p className="gm-program-row">
+            {/* eslint-disable-next-line @next/next/no-img-element */}  
               <img
                 src="/images/committees/teachLA_wordmark.svg"
                 alt="ACM teachLA"
               />{' '}
               Sophie Schoenmeyer, Chloe Uy
             </p>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
             <p className="gm-program-row">
+            {/* eslint-disable-next-line @next/next/no-img-element */}  
               <img src="/images/committees/w_wordmark.svg" alt="ACM w" /> Cindy
               Zhang, Lena O&apos;Grady
             </p>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
             <p className="gm-program-row">
+            {/* eslint-disable-next-line @next/next/no-img-element */}  
               <img src="/images/committees/ai_wordmark.svg" alt="ACM ai" />{' '}
               Justin Yi
             </p>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
             <p className="gm-program-row">
+            {/* eslint-disable-next-line @next/next/no-img-element */}  
               <img src="/images/committees/hack_wordmark.svg" alt="ACM hack" />{' '}
               Asha Kar, Eugene Lo
             </p>
@@ -274,16 +274,16 @@ function F21() {
                 events
               </p>
             </div>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
             <p className="gm-program-row">
+            {/* eslint-disable-next-line @next/next/no-img-element */}  
               <img
                 src="/images/committees/board_wordmark.svg"
                 alt="ACM board"
               />
               &nbsp;&nbsp;External: Tina Huang
             </p>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
             <p className="gm-program-row">
+            {/* eslint-disable-next-line @next/next/no-img-element */}  
               <img
                 src="/images/committees/board_wordmark.svg"
                 alt="ACM board"
