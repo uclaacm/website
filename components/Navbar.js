@@ -8,26 +8,24 @@ export default function Navbar() {
 
   // switches mobile menu state
   const menuActivate = () => {
-    setMenuActive(menuActive ? false : true);
+    setMenuActive(prev => !prev);
   };
 
   return (
-    (<nav id="navbar">
+    <nav id="navbar">
       <section id="nav-container">
         <Link
           href="/"
           id="nav-title"
           className="nav-section left"
-          aria-label="acm home">
-
+          aria-label="ACM Home">
           {/* TODO: resolve next/image issue */}
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src={'/images/acm_wordmark_chapter.svg'}
+            src="/images/acm_wordmark_chapter.svg"
             className="acm-logo"
             alt="ACM at UCLA"
           />
-
         </Link>
         <section id="nav-items-container">
           <button
@@ -52,9 +50,8 @@ export default function Navbar() {
                 <ActiveLink
                   activeClassName="active"
                   href="/about"
-                  passHref={true}
                 >
-                  <button type="button" role="link" onClick={menuActivate}>
+                  <button type="button" onClick={menuActivate}>
                     About
                   </button>
                 </ActiveLink>
@@ -62,10 +59,8 @@ export default function Navbar() {
               <li>
                 <ActiveLink
                   activeClassName="active"
-                  href="/committees"
-                  passHref={true}
-                >
-                  <button type="button" role="link" onClick={menuActivate}>
+                  href="/committees">
+                  <button type="button" onClick={menuActivate}>
                     Committees
                   </button>
                 </ActiveLink>
@@ -73,143 +68,57 @@ export default function Navbar() {
               {/* <li><Link href="/gm"><a>{gmData.date.quarter} GM</a></Link></li> */}
               <li id="committee-mobile-nav-item">
                 <ul className="committee-mobile-nav" role="presentation">
-                  <li><ActiveLink activeClassName="active" href="/committees#studio" passHref={true}><button type="button" onClick={menuActivate}>Studio</button></ActiveLink></li>
-                  <li><ActiveLink activeClassName="active" href="/committees#icpc" passHref={true}><button type="button" onClick={menuActivate}>ICPC</button></ActiveLink></li>
-                  <li><ActiveLink activeClassName="active" href="/committees#design" passHref={true}><button type="button" onClick={menuActivate}>Design</button></ActiveLink></li>
-                  <li><ActiveLink activeClassName="active" href="/committees#cyber" passHref={true}><button type="button" onClick={menuActivate}>Cyber</button></ActiveLink></li>
-                  <li><ActiveLink activeClassName="active" href="/committees#teachla" passHref={true}><button type="button" onClick={menuActivate}>Teach LA</button></ActiveLink></li>
-                  <li><ActiveLink activeClassName="active" href="/committees#w" passHref={true}><button type="button" onClick={menuActivate}>W</button></ActiveLink></li>
-                  <li><ActiveLink activeClassName="active" href="/committees#ai" passHref={true}><button type="button" onClick={menuActivate}>AI</button></ActiveLink></li>
-                  <li><ActiveLink activeClassName="active" href="/committees#cloud" passHref={true}><button type="button" onClick={menuActivate}>Cloud</button></ActiveLink></li>
-                  <li><ActiveLink activeClassName="active" href="/committees#hack" passHref={true}><button type="button" onClick={menuActivate}>Hack</button></ActiveLink></li>
-                  <li>
-                    <ActiveLink
-                      activeClassName="active"
-                      href="/committees#studio"
-                      passHref={true}
-                    >
-                      <button type="button" onClick={menuActivate}>
-                        Studio
-                      </button>
-                    </ActiveLink>
-                  </li>
-                  <li>
-                    <ActiveLink
-                      activeClassName="active"
-                      href="/committees#icpc"
-                      passHref={true}
-                    >
-                      <button type="button" onClick={menuActivate}>
-                        ICPC
-                      </button>
-                    </ActiveLink>
-                  </li>
-                  <li>
-                    <ActiveLink
-                      activeClassName="active"
-                      href="/committees#design"
-                      passHref={true}
-                    >
-                      <button type="button" onClick={menuActivate}>
-                        Design
-                      </button>
-                    </ActiveLink>
-                  </li>
-                  <li>
-                    <ActiveLink
-                      activeClassName="active"
-                      href="/committees#cyber"
-                      passHref={true}
-                    >
-                      <button type="button" onClick={menuActivate}>
-                        Cyber
-                      </button>
-                    </ActiveLink>
-                  </li>
-                  <li>
-                    <ActiveLink
-                      activeClassName="active"
-                      href="/committees#teachla"
-                      passHref={true}
-                    >
-                      <button type="button" onClick={menuActivate}>
-                        Teach LA
-                      </button>
-                    </ActiveLink>
-                  </li>
-                  <li>
-                    <ActiveLink
-                      activeClassName="active"
-                      href="/committees#w"
-                      passHref={true}
-                    >
-                      <button type="button" onClick={menuActivate}>
-                        W
-                      </button>
-                    </ActiveLink>
-                  </li>
-                  <li>
-                    <ActiveLink
-                      activeClassName="active"
-                      href="/committees#ai"
-                      passHref={true}
-                    >
-                      <button type="button" onClick={menuActivate}>
-                        AI
-                      </button>
-                    </ActiveLink>
-                  </li>
-                  <li>
-                    <ActiveLink
-                      activeClassName="active"
-                      href="/committees#hack"
-                      passHref={true}
-                    >
-                      <button type="button" onClick={menuActivate}>
-                        Hack
-                      </button>
-                    </ActiveLink>
-                  </li>
+                  {[
+                    { name: 'Studio', id: 'studio' },
+                    { name: 'ICPC', id: 'icpc' },
+                    { name: 'Design', id: 'design' },
+                    { name: 'Cyber', id: 'cyber' },
+                    { name: 'Teach LA', id: 'teachla' },
+                    { name: 'W', id: 'w' },
+                    { name: 'AI', id: 'ai' },
+                    { name: 'Cloud', id: 'cloud' },
+                    { name: 'Hack', id: 'hack' },
+                  ].map(({ name, id }) => (
+                    <li key={id}>
+                      <ActiveLink
+                        activeClassName="active"
+                        href={`/committees#${id}`}
+                      >
+                        <button type="button" onClick={menuActivate}>
+                          {name}
+                        </button>
+                      </ActiveLink>
+                    </li>
+                  ))}
                 </ul>
               </li>
               <li className="hide-on-desktop">initiatives</li>
               <li className="hide-on-desktop" id="initiatives-mobile-nav-item">
                 <ul className="committee-mobile-nav" role="presentation">
-                  <li><ActiveLink activeClassName="active" href="/jedi" passHref={true}><button type="button" onClick={menuActivate}>JEDI</button></ActiveLink></li>
-                  <li><ActiveLink activeClassName="active" href="/impact" passHref={true}><button type="button" onClick={menuActivate}>impact</button></ActiveLink></li>
-                  <li>
-                    <ActiveLink
-                      activeClassName="active"
-                      act
-                      href="/jedi"
-                      passHref={true}
-                    >
-                      <button type="button" onClick={menuActivate}>
-                        JEDI
-                      </button>
-                    </ActiveLink>
-                  </li>
-                  <li>
-                    <ActiveLink
-                      activeClassName="active"
-                      href="/impact"
-                      passHref={true}
-                    >
-                      <button type="button" onClick={menuActivate}>
-                        impact
-                      </button>
-                    </ActiveLink>
-                  </li>
+                  {[
+                    { name: 'JEDI', href: '/jedi' },
+                    { name: 'Impact', href: '/impact' },
+                  ].map(({ name, href }) => (
+                    <li key={name}>
+                      <ActiveLink
+                        activeClassName="active"
+                        href={href}
+                      >
+                        <button type="button" onClick={menuActivate}>
+                          {name}
+                        </button>
+                      </ActiveLink>
+                    </li>
+                  ))}
                 </ul>
               </li>
               <li>
                 <ActiveLink
                   activeClassName="active"
                   href="/officers"
-                  passHref={true}
                 >
-                  <button type="button" role="link" onClick={menuActivate}>
-                    Team
+                  <button type="button" onClick={menuActivate}>
+                  Team
                   </button>
                 </ActiveLink>
               </li>
@@ -217,9 +126,8 @@ export default function Navbar() {
                 <ActiveLink
                   activeClassName="active"
                   href="/events"
-                  passHref={true}
                 >
-                  <button type="button" role="link" onClick={menuActivate}>
+                  <button type="button" onClick={menuActivate}>
                     Events
                   </button>
                 </ActiveLink>
@@ -228,9 +136,8 @@ export default function Navbar() {
                 <ActiveLink
                   activeClassName="active"
                   href="/internship"
-                  passHref={true}
                 >
-                  <button type="button" role="link" onClick={menuActivate}>
+                  <button type="button" onClick={menuActivate}>
                     Join Us
                   </button>
                 </ActiveLink>
@@ -239,9 +146,8 @@ export default function Navbar() {
                 <ActiveLink
                   activeClassName="active"
                   href="https://opensource.uclaacm.com/"
-                  passHref={true}
                 >
-                  <button type="button" role="link" onClick={menuActivate}>
+                  <button type="button" onClick={menuActivate}>
                     Open Source
                   </button>
                 </ActiveLink>
@@ -250,15 +156,13 @@ export default function Navbar() {
                 <Link
                   href="https://members.uclaacm.com"
                   className="button button-transparent button-lg font-header">
-
                   Member Login
-
                 </Link>
               </li>
             </ul>
           </section>
         </section>
       </section>
-    </nav>)
+    </nav>
   );
 }
