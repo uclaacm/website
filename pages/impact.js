@@ -8,7 +8,6 @@ import WorkshopCard from '../components/Impact/WorkshopCard';
 import Layout from '../components/Layout';
 import Officers from '../components/OfficerCard';
 import { InstagramEmbed } from 'react-social-media-embed';
-import { useKonamiCode } from '../utils/konamiCode';
 import { pastEvents } from '../data/impact';
 import data from '../offoutput.json';
 import impactNewBanner from '../public/images/impact/impact-new-logo.png';
@@ -24,9 +23,12 @@ const impactBlog = 'https://medium.com/acm-at-ucla';
 
 function Impact() {
   const [gameActive, setGameActive] = useState(false);
+  const [rocketButtonHover, setRocketButtonHover] = useState(false);
   
-  // Use the Konami code hook to trigger the game
-  useKonamiCode(() => setGameActive(true));
+  // Function to activate the rocket game
+  const activateGame = () => {
+    setGameActive(true);
+  };
   
   const impactOfficers = data.filter(
     (officer) =>
@@ -53,8 +55,38 @@ function Impact() {
       />
       <Banner decorative />
       <div className={styles.container}>
-        <div className="text-center">
+        <div className="text-center" style={{ position: 'relative' }}>
           <Image src={impactNewBanner} alt="Impact by ACM at UCLA" priority />
+          
+          <button
+            onClick={activateGame}
+            onMouseOver={() => setRocketButtonHover(true)}
+            onFocus={() => setRocketButtonHover(true)}
+            onMouseOut={() => setRocketButtonHover(false)}
+            onBlur={() => setRocketButtonHover(false)}
+            aria-label="Launch rocket game"
+            title="Launch rocket game"
+            style={{
+              position: 'absolute',
+              top: '20px',
+              right: '20px',
+              width: '40px',
+              height: '40px',
+              cursor: 'pointer',
+              zIndex: 10,
+              borderRadius: '50%',
+              opacity: rocketButtonHover ? 0.8 : 0.2,
+              background: 'transparent',
+              border: 'none',
+              transition: 'opacity 0.3s ease',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              padding: 0,
+            }}
+          >
+            <span role="img" aria-hidden="true" style={{ fontSize: '24px' }}>🚀</span>
+          </button>
         </div>
 
         {/* RocketGame component will render when gameActive is true */}
