@@ -55,10 +55,16 @@ function Impact() {
       />
       <Banner decorative />
       <div className={styles.container}>
-        <div className="text-center" style={{ position: 'relative' }}>
-          <Image src={impactNewBanner} alt="Impact by ACM at UCLA" priority />
-          
-          <button
+        <div className="text-center" style={{ position: 'relative', paddingTop: '30px' }}>
+          <div style={{ maxWidth: '80%', margin: '0 auto' }}>
+            <Image 
+              src={impactNewBanner} 
+              alt="Impact by ACM at UCLA" 
+              priority 
+            />
+          </div>
+          {/* uncomment this button if im allowed to */}
+          {/* <button
             onClick={activateGame}
             onMouseOver={() => setRocketButtonHover(true)}
             onFocus={() => setRocketButtonHover(true)}
@@ -86,7 +92,7 @@ function Impact() {
             }}
           >
             <span role="img" aria-hidden="true" style={{ fontSize: '24px' }}>🚀</span>
-          </button>
+          </button> */}
         </div>
 
         {/* RocketGame component will render when gameActive is true */}
