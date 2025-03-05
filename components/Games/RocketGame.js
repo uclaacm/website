@@ -4,6 +4,128 @@ const RocketGame = ({ isActive, onClose }) => {
   const [loadError, setLoadError] = useState(false);
   const mountRef = useRef(null);
   
+  // Animation loop function declared at the top level
+  const animate = (params) => {
+    const {sceneRef, rendererRef, rocketRef, cameraRef, controlsRef, animationFrameRef, velocity, speed, THREE} = params;
+    
+    if (!sceneRef.current || !rendererRef.current) return;
+    
+    const rocket = rocketRef.current;
+    if (rocket) {
+      // Apply movement based on keys pressed
+      if (params.keysPressed.w || params.keysPressed.ArrowUp) {
+        velocity.current.z -= speed;
+      }
+      if (params.keysPressed.s || params.keysPressed.ArrowDown) {
+        velocity.current.z += speed;
+      }
+      if (params.keysPressed.a || params.keysPressed.ArrowLeft) {
+        rocket.rotation.y += params.rotationSpeed;
+      }
+      if (params.keysPressed.d || params.keysPressed.ArrowRight) {
+        rocket.rotation.y -= params.rotationSpeed;
+      }
+      if (params.keysPressed[' ']) { // Space to boost upwards
+        velocity.current.y += speed;
+      }
+      
+      // Apply velocity with direction
+      const direction = new THREE.Vector3(0, 0, -1);
+      direction.applyQuaternion(rocket.quaternion);
+      
+      rocket.position.x += direction.x * velocity.current.z;
+      rocket.position.y += velocity.current.y;
+      rocket.position.z += direction.z * velocity.current.z;
+      
+      // Apply drag
+      velocity.current.x *= 0.95;
+      velocity.current.y *= 0.95;
+      velocity.current.z *= 0.95;
+      
+      // Update camera to follow rocket
+      const offset = new THREE.Vector3(0, 2, 10);
+      offset.applyQuaternion(rocket.quaternion);
+      cameraRef.current.position.copy(rocket.position).add(offset);
+      cameraRef.current.lookAt(rocket.position);
+    }
+    
+    if (controlsRef.current) {
+      controlsRef.current.update();
+    }
+    
+    rendererRef.current.render(sceneRef.current, cameraRef.current);
+    animationFrameRef.current = requestAnimationFrame(() => animate(params));
+  };
+  
+  // Create rocket function declared at the top level
+  const createRocket = (scene, THREE) => {
+    // Create a group to hold all rocket parts
+    const rocketGroup = new THREE.Group();
+    
+    // Rocket body (cylinder)
+    const bodyGeometry = new THREE.CylinderGeometry(0.5, 0.5, 4, 16);
+    const bodyMaterial = new THREE.MeshPhongMaterial({ color: 0xff0000 });
+    const body = new THREE.Mesh(bodyGeometry, bodyMaterial);
+    rocketGroup.add(body);
+    
+    // Rocket nose (cone)
+    const noseGeometry = new THREE.ConeGeometry(0.5, 1, 16);
+    const noseMaterial = new THREE.MeshPhongMaterial({ color: 0xff0000 });
+    const nose = new THREE.Mesh(noseGeometry, noseMaterial);
+    nose.position.y = 2.5;
+    rocketGroup.add(nose);
+    
+    // Rocket fins
+    const finGeometry = new THREE.BoxGeometry(0.1, 1, 1);
+    const finMaterial = new THREE.MeshPhongMaterial({ color: 0xdddddd });
+    
+    // Add 3 fins around the base
+    for (let i = 0; i < 3; i++) {
+      const fin = new THREE.Mesh(finGeometry, finMaterial);
+      fin.position.y = -1.5;
+      fin.position.x = Math.sin((i * Math.PI * 2) / 3) * 0.8;
+      fin.position.z = Math.cos((i * Math.PI * 2) / 3) * 0.8;
+      fin.lookAt(fin.position.clone().multiplyScalar(2));
+      rocketGroup.add(fin);
+    }
+    
+    // Add rocket flames (cone)
+    const flameGeometry = new THREE.ConeGeometry(0.3, 1.5, 16);
+    const flameMaterial = new THREE.MeshBasicMaterial({ 
+      color: 0xff9500,
+      transparent: true,
+      opacity: 0.8,
+    });
+    const flame = new THREE.Mesh(flameGeometry, flameMaterial);
+    flame.position.y = -2.5;
+    flame.rotation.x = Math.PI; // Flip the cone
+    rocketGroup.add(flame);
+    
+    scene.add(rocketGroup);
+    return rocketGroup;
+  };
+  
+  // Add stars function declared at the top level
+  const addStarsToScene = (scene, THREE) => {
+    const starsGeometry = new THREE.BufferGeometry();
+    const starsMaterial = new THREE.PointsMaterial({
+      color: 0xffffff,
+      size: 0.1,
+    });
+    
+    const starsVertices = [];
+    for (let i = 0; i < 5000; i++) {
+      const x = (Math.random() - 0.5) * 2000;
+      const y = (Math.random() - 0.5) * 2000;
+      const z = (Math.random() - 0.5) * 2000;
+      starsVertices.push(x, y, z);
+    }
+    
+    starsGeometry.setAttribute('position', new THREE.Float32BufferAttribute(starsVertices, 3));
+    const stars = new THREE.Points(starsGeometry, starsMaterial);
+    scene.add(stars);
+  };
+
   useEffect(() => {
     if (!isActive) return;
     
@@ -27,17 +149,15 @@ const RocketGame = ({ isActive, onClose }) => {
         const controlsRef = { current: null };
         const animationFrameRef = { current: null };
         const keysPressed = {
-          current: {
-            w: false,
-            a: false,
-            s: false,
-            d: false,
-            ArrowUp: false,
-            ArrowDown: false,
-            ArrowLeft: false,
-            ArrowRight: false,
-            ' ': false, // space
-          }
+          w: false,
+          a: false,
+          s: false,
+          d: false,
+          ArrowUp: false,
+          ArrowDown: false,
+          ArrowLeft: false,
+          ArrowRight: false,
+          ' ': false, // space
         };
         
         const velocity = { current: { x: 0, y: 0, z: 0 } };
@@ -81,7 +201,7 @@ const RocketGame = ({ isActive, onClose }) => {
         }
         
         // Create rocket
-        createRocket(scene, THREE);
+        rocketRef.current = createRocket(scene, THREE);
         
         // Setup controls
         const controls = new OrbitControls(camera, renderer.domElement);
@@ -104,8 +224,8 @@ const RocketGame = ({ isActive, onClose }) => {
         
         // Handle keyboard input
         const handleKeyDown = (e) => {
-          if (keysPressed.current.hasOwnProperty(e.key)) {
-            keysPressed.current[e.key] = true;
+          if (Object.prototype.hasOwnProperty.call(keysPressed, e.key)) {
+            keysPressed[e.key] = true;
             e.preventDefault();
           }
           
@@ -116,134 +236,28 @@ const RocketGame = ({ isActive, onClose }) => {
         };
         
         const handleKeyUp = (e) => {
-          if (keysPressed.current.hasOwnProperty(e.key)) {
-            keysPressed.current[e.key] = false;
+          if (Object.prototype.hasOwnProperty.call(keysPressed, e.key)) {
+            keysPressed[e.key] = false;
           }
         };
         
         window.addEventListener('keydown', handleKeyDown);
         window.addEventListener('keyup', handleKeyUp);
         
-        // Animation loop
-        function animate() {
-          if (!sceneRef.current || !rendererRef.current) return;
-          
-          const rocket = rocketRef.current;
-          if (rocket) {
-            // Apply movement based on keys pressed
-            if (keysPressed.current.w || keysPressed.current.ArrowUp) {
-              velocity.current.z -= speed;
-            }
-            if (keysPressed.current.s || keysPressed.current.ArrowDown) {
-              velocity.current.z += speed;
-            }
-            if (keysPressed.current.a || keysPressed.current.ArrowLeft) {
-              rocket.rotation.y += rotationSpeed;
-            }
-            if (keysPressed.current.d || keysPressed.current.ArrowRight) {
-              rocket.rotation.y -= rotationSpeed;
-            }
-            if (keysPressed.current[' ']) { // Space to boost upwards
-              velocity.current.y += speed;
-            }
-            
-            // Apply velocity with direction
-            const direction = new THREE.Vector3(0, 0, -1);
-            direction.applyQuaternion(rocket.quaternion);
-            
-            rocket.position.x += direction.x * velocity.current.z;
-            rocket.position.y += velocity.current.y;
-            rocket.position.z += direction.z * velocity.current.z;
-            
-            // Apply drag
-            velocity.current.x *= 0.95;
-            velocity.current.y *= 0.95;
-            velocity.current.z *= 0.95;
-            
-            // Update camera to follow rocket
-            const offset = new THREE.Vector3(0, 2, 10);
-            offset.applyQuaternion(rocket.quaternion);
-            cameraRef.current.position.copy(rocket.position).add(offset);
-            cameraRef.current.lookAt(rocket.position);
-          }
-          
-          if (controlsRef.current) {
-            controlsRef.current.update();
-          }
-          
-          rendererRef.current.render(sceneRef.current, cameraRef.current);
-          animationFrameRef.current = requestAnimationFrame(animate);
-        }
-        
-        function createRocket(scene, THREE) {
-          // Create a group to hold all rocket parts
-          const rocketGroup = new THREE.Group();
-          
-          // Rocket body (cylinder)
-          const bodyGeometry = new THREE.CylinderGeometry(0.5, 0.5, 4, 16);
-          const bodyMaterial = new THREE.MeshPhongMaterial({ color: 0xff0000 });
-          const body = new THREE.Mesh(bodyGeometry, bodyMaterial);
-          rocketGroup.add(body);
-          
-          // Rocket nose (cone)
-          const noseGeometry = new THREE.ConeGeometry(0.5, 1, 16);
-          const noseMaterial = new THREE.MeshPhongMaterial({ color: 0xff0000 });
-          const nose = new THREE.Mesh(noseGeometry, noseMaterial);
-          nose.position.y = 2.5;
-          rocketGroup.add(nose);
-          
-          // Rocket fins
-          const finGeometry = new THREE.BoxGeometry(0.1, 1, 1);
-          const finMaterial = new THREE.MeshPhongMaterial({ color: 0xdddddd });
-          
-          // Add 3 fins around the base
-          for (let i = 0; i < 3; i++) {
-            const fin = new THREE.Mesh(finGeometry, finMaterial);
-            fin.position.y = -1.5;
-            fin.position.x = Math.sin((i * Math.PI * 2) / 3) * 0.8;
-            fin.position.z = Math.cos((i * Math.PI * 2) / 3) * 0.8;
-            fin.lookAt(fin.position.clone().multiplyScalar(2));
-            rocketGroup.add(fin);
-          }
-          
-          // Add rocket flames (cone)
-          const flameGeometry = new THREE.ConeGeometry(0.3, 1.5, 16);
-          const flameMaterial = new THREE.MeshBasicMaterial({ 
-            color: 0xff9500,
-            transparent: true,
-            opacity: 0.8
-          });
-          const flame = new THREE.Mesh(flameGeometry, flameMaterial);
-          flame.position.y = -2.5;
-          flame.rotation.x = Math.PI; // Flip the cone
-          rocketGroup.add(flame);
-          
-          scene.add(rocketGroup);
-          rocketRef.current = rocketGroup;
-        }
-        
-        function addStarsToScene(scene, THREE) {
-          const starsGeometry = new THREE.BufferGeometry();
-          const starsMaterial = new THREE.PointsMaterial({
-            color: 0xffffff,
-            size: 0.1
-          });
-          
-          const starsVertices = [];
-          for (let i = 0; i < 5000; i++) {
-            const x = (Math.random() - 0.5) * 2000;
-            const y = (Math.random() - 0.5) * 2000;
-            const z = (Math.random() - 0.5) * 2000;
-            starsVertices.push(x, y, z);
-          }
-          
-          starsGeometry.setAttribute('position', new THREE.Float32BufferAttribute(starsVertices, 3));
-          const stars = new THREE.Points(starsGeometry, starsMaterial);
-          scene.add(stars);
-        }
-        
         // Start animation loop
-        animationFrameRef.current = requestAnimationFrame(animate);
+        animationFrameRef.current = requestAnimationFrame(() => animate({
+          sceneRef,
+          rendererRef,
+          rocketRef,
+          cameraRef,
+          controlsRef,
+          animationFrameRef,
+          keysPressed,
+          velocity,
+          speed,
+          rotationSpeed,
+          THREE,
+        }));
         
         // Setup cleanup function
         cleanupFn = () => {
@@ -260,6 +274,8 @@ const RocketGame = ({ isActive, onClose }) => {
           }
         };
       } catch (error) {
+        // Safely log the error - linting allows this with a warning which is acceptable
+        // eslint-disable-next-line no-console
         console.error('Failed to load Three.js:', error);
         setLoadError(true);
       }
@@ -288,9 +304,9 @@ const RocketGame = ({ isActive, onClose }) => {
         alignItems: 'center',
         color: 'white',
         textAlign: 'center',
-        padding: '20px'
+        padding: '20px',
       }}>
-        <h2>Oops! Couldn't load the rocket game.</h2>
+        <h2>Oops! Couldn&apos;t load the rocket game.</h2>
         <p>There was an issue loading the game resources.</p>
         <button 
           onClick={onClose}
@@ -301,7 +317,7 @@ const RocketGame = ({ isActive, onClose }) => {
             borderRadius: '5px',
             color: 'white',
             cursor: 'pointer',
-            marginTop: '20px'
+            marginTop: '20px',
           }}
         >
           Close
@@ -320,7 +336,7 @@ const RocketGame = ({ isActive, onClose }) => {
           left: 0,
           width: '100vw',
           height: '100vh',
-          zIndex: 1000
+          zIndex: 1000,
         }}
       />
       <div
@@ -332,7 +348,7 @@ const RocketGame = ({ isActive, onClose }) => {
           color: 'white',
           padding: 10,
           borderRadius: 5,
-          zIndex: 1001
+          zIndex: 1001,
         }}
       >
         <h3>Rocket Game Controls</h3>

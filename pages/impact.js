@@ -1,24 +1,24 @@
 import Image from 'next/legacy/image';
+import dynamic from 'next/dynamic';
 import { NextSeo } from 'next-seo';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Banner from '../components/Banner';
 import Carousel from '../components/Impact/Carousel';
 import WorkshopCard from '../components/Impact/WorkshopCard';
 import Layout from '../components/Layout';
 import Officers from '../components/OfficerCard';
+import { InstagramEmbed } from 'react-social-media-embed';
+import { useKonamiCode } from '../utils/konamiCode';
 import { pastEvents } from '../data/impact';
 import data from '../offoutput.json';
 import impactMotifBanner from '../public/images/impact/impact-motif.png';
 import impactathon from '../public/images/impact/impactathon.JPEG';
 import styles from '../styles/pages/impact.module.scss';
-import { InstagramEmbed } from 'react-social-media-embed';
-import { useKonamiCode } from '../utils/konamiCode';
-import dynamic from 'next/dynamic';
 
 // Dynamically import the RocketGame component with no SSR
 const RocketGame = dynamic(
   () => import('../components/Games/RocketGame'),
-  { ssr: false }
+  { ssr: false },
 );
 
 const impactBlog = 'https://medium.com/acm-at-ucla';
@@ -27,7 +27,6 @@ function Impact() {
   const [gameActive, setGameActive] = useState(false);
   
   // Use the Konami code hook to trigger the game
-  // No need to manually call mount/unmount
   useKonamiCode(() => setGameActive(true));
   
   const impactOfficers = data.filter(

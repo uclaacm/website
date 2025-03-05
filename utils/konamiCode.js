@@ -5,7 +5,7 @@ const KONAMI_CODE = [
   'ArrowDown', 'ArrowDown',
   'ArrowLeft', 'ArrowRight',
   'ArrowLeft', 'ArrowRight',
-  'b', 'a'
+  'b', 'a',
 ];
 
 export function useKonamiCode(callback) {
