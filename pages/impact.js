@@ -1,5 +1,6 @@
 import Image from 'next/legacy/image';
 import { NextSeo } from 'next-seo';
+import { useState, useEffect } from 'react';
 import Banner from '../components/Banner';
 import Carousel from '../components/Impact/Carousel';
 import WorkshopCard from '../components/Impact/WorkshopCard';
@@ -11,15 +12,30 @@ import impactMotifBanner from '../public/images/impact/impact-motif.png';
 import impactathon from '../public/images/impact/impactathon.JPEG';
 import styles from '../styles/pages/impact.module.scss';
 import { InstagramEmbed } from 'react-social-media-embed';
+import { useKonamiCode } from '../utils/konamiCode';
+import dynamic from 'next/dynamic';
+
+// Dynamically import the RocketGame component with no SSR
+const RocketGame = dynamic(
+  () => import('../components/Games/RocketGame'),
+  { ssr: false }
+);
 
 const impactBlog = 'https://medium.com/acm-at-ucla';
 
 function Impact() {
+  const [gameActive, setGameActive] = useState(false);
+  
+  // Use the Konami code hook to trigger the game
+  // No need to manually call mount/unmount
+  useKonamiCode(() => setGameActive(true));
+  
   const impactOfficers = data.filter(
     (officer) =>
       officer.role.includes('Impact') &&
       officer.committee.includes('Board, Internal'),
   );
+  
   return (
     <Layout>
       <NextSeo
@@ -28,7 +44,7 @@ function Impact() {
         openGraph={{
           images: [
             {
-              url: 'https://www.uclaacm.com/images/impact/impact-motif.png',
+              url: 'https://www.uclaacm.com/images/impact/impact-new-logo.png',
               width: 2665,
               height: 1333,
               alt: 'The ACM Impact banner: a space shuttle taking off, with a moon behind it',
@@ -42,6 +58,9 @@ function Impact() {
         <div className="text-center">
           <Image src={impactMotifBanner} alt="Impact by ACM at UCLA" priority />
         </div>
+
+        {/* RocketGame component will render when gameActive is true */}
+        <RocketGame isActive={gameActive} onClose={() => setGameActive(false)} />
 
         <h2 className="text-center">Technology + ethics, policy, & society.</h2>
         {/* TODO: make rainbow backing responsive */}
@@ -65,7 +84,6 @@ function Impact() {
           <InstagramEmbed url="https://www.instagram.com/impact_ucla/" width={3280} />
         </div>
 
-        {/* <h2 className="text-center">Our Initiatives</h2> */}
         <h3 className="text-uppercase">Upcoming Events</h3>
         <WorkshopCard
           title={'ACM Impact x Blueprint Impactathon'}
@@ -79,19 +97,6 @@ function Impact() {
           }
           desktopHorizontal
         />
-        {/* <h3 className="text-uppercase">Workshops</h3>
-        <WorkshopCard
-          title={'Careers Workshop Series'}
-          quarter={'Fall 2021'}
-          description={
-            'Wondering how to harness your tech powers for good? Come out to learn about careers in social impact tech, tech in the nonprofit space, civic tech, environmental tech, and more!'
-          }
-          img={impactMotifBanner}
-          alt={
-            'The ACM Impact banner: a space shuttle taking off, with a moon behind it'
-          }
-          desktopHorizontal
-        /> */}
 
         <h3 className="text-uppercase">Past Events</h3>
         <div className="grid-desktop-3 text-center-mobile">
