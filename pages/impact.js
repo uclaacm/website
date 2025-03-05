@@ -12,6 +12,7 @@ import { useKonamiCode } from '../utils/konamiCode';
 import { pastEvents } from '../data/impact';
 import data from '../offoutput.json';
 import impactMotifBanner from '../public/images/impact/impact-motif.png';
+import impactNewBanner from '../public/images/impact/impact-new-logo.png';
 import impactathon from '../public/images/impact/impactathon.JPEG';
 import styles from '../styles/pages/impact.module.scss';
 
@@ -55,7 +56,7 @@ function Impact() {
       <Banner decorative />
       <div className={styles.container}>
         <div className="text-center">
-          <Image src={impactMotifBanner} alt="Impact by ACM at UCLA" priority />
+          <Image src={impactNewBanner} alt="Impact by ACM at UCLA" priority />
         </div>
 
         {/* RocketGame component will render when gameActive is true */}
