@@ -10,6 +10,7 @@ import data from '../offoutput.json';
 import impactMotifBanner from '../public/images/impact/impact-motif.png';
 import impactathon from '../public/images/impact/impactathon.JPEG';
 import styles from '../styles/pages/impact.module.scss';
+import { InstagramEmbed } from 'react-social-media-embed';
 
 const impactBlog = 'https://medium.com/acm-at-ucla';
 
@@ -59,6 +60,10 @@ function Impact() {
           🚨 🚧 Website update in progress...come back soon! 🚧 🚨
         </h3>
         <br />
+
+        <div style={{ display: 'flex', justifyContent: 'center' }}>
+          <InstagramEmbed url="https://www.instagram.com/impact_ucla/" width={3280} />
+        </div>
 
         {/* <h2 className="text-center">Our Initiatives</h2> */}
         <h3 className="text-uppercase">Upcoming Events</h3>
