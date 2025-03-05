@@ -84,20 +84,6 @@ function Impact() {
           <InstagramEmbed url="https://www.instagram.com/impact_ucla/" width={3280} />
         </div>
 
-        <h3 className="text-uppercase">Upcoming Events</h3>
-        <WorkshopCard
-          title={'ACM Impact x Blueprint Impactathon'}
-          quarter={'Spring 2024'}
-          description={
-            'This spring, ACM Impact and Blueprint are hosting UCLA’s first IMPACTATHON! The goal of this hackathon is to partner groups of students with nonprofits in order to aid them in building any technical solutions that the organization requires. Students will get to work directly with nonprofit leaders and work to come up with a product that fits their needs best. The hackathon will be taking place in the first week of spring quarter, from April 12th to 14th. Please fill out the registration form linked here: http://tinyurl.com/impactathon-registration-form!  Prizes and nonprofit organizations announcements soon to come!'
-          }
-          img={impactathon}
-          alt={
-            'The ACM Impact banner: a space shuttle taking off, with a moon behind it'
-          }
-          desktopHorizontal
-        />
-
         <h3 className="text-uppercase">Past Events</h3>
         <div className="grid-desktop-3 text-center-mobile">
           {pastEvents.map((event) => (
@@ -121,7 +107,7 @@ function Impact() {
           >
             this blog post
           </a>
-          &nbsp; to see how you can get involved. We look forward to reading
+          &nbsp;to see how you can get involved. We look forward to reading
           your work—in the meantime, check out some of our existing posts above.
         </p>
 
