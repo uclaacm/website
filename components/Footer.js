@@ -100,7 +100,7 @@ function Footer() {
               ))}
             </ul>
             <h3 className={styles['footer-header']}>ACM Initiatives</h3>
-            <ul className={`list-unstyled text-left ${styles['footer-committee-sidebar-container']}`}>
+            <ul className={`list-unstyled text-center ${styles['footer-committee-sidebar-container']}`}>
               {footerInitiativeLinks.map((initiative) => (
                 <li key={initiative.slug}>
                   <FooterLinkElement

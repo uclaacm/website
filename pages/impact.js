@@ -56,7 +56,7 @@ function Impact() {
       <Banner decorative />
       <div className={styles.container}>
         <div className="text-center" style={{ position: 'relative', paddingTop: '30px' }}>
-          <div style={{ maxWidth: '80%', margin: '0 auto' }}>
+          <div style={{ maxWidth: '80%', margin: '0 auto', padding: '10px' }}>
             <Image 
               src={impactNewBanner} 
               alt="Impact by ACM at UCLA" 
