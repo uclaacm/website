@@ -116,7 +116,10 @@ function Footer() {
                             className="committee-sidebar-image"
                             src={initiative.wordmark_dark}
                             alt={`ACM ${initiative.name}`}
-                            style={{ margin: '0 auto' }}
+                            style={{ 
+                              margin: '0 auto', 
+                              transform: initiative.name === 'Impact' ? 'translateX(-8.5px)' : 'none' 
+                            }}
                             onError={(e) => {
                               e.target.onerror = null;
                               e.target.style.display = "none";
