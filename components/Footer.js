@@ -25,13 +25,14 @@ const footerInitiativeLinks = [
     name: 'Impact', 
     slug: 'impact', 
     path: '/impact',
-    wordmark_dark: '/images/impact/impact-footer.png' 
+    wordmark_dark: '/images/impact/impact-footer.png',
+    useImage: true
   },
   { 
     name: 'JEDI', 
     slug: 'jedi', 
     path: '/jedi',
-    wordmark_dark: '/images/jedi/jedi-wordmark-dark.png' 
+    useImage: false
   },
 ];
 
@@ -99,26 +100,36 @@ function Footer() {
                 </li>
               ))}
             </ul>
-            <h3 className={styles['footer-header']}>ACM Initiatives</h3>
-            <ul className={`list-unstyled text-center ${styles['footer-committee-sidebar-container']}`}>
+            <h3 className={styles['footer-header']} style={{ textAlign: 'center' }}>ACM Initiatives</h3>
+            <ul 
+              className={`list-unstyled ${styles['footer-committee-sidebar-container']}`} 
+              style={{ textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center' }}
+            >
               {footerInitiativeLinks.map((initiative) => (
-                <li key={initiative.slug}>
+                <li key={initiative.slug} style={{ textAlign: 'center', width: '100%' }}>
                   <FooterLinkElement
                     path={initiative.path}
                     title={
-                      <img
-                        className="committee-sidebar-image"
-                        src={initiative.wordmark_dark}
-                        alt={`ACM ${initiative.name}`}
-                        onError={(e) => {
-                          e.target.onerror = null;
-                          e.target.style.display = "none";
-                          const parentNode = e.target.parentNode;
-                          parentNode.textContent = `ACM ${initiative.name}`;
-                          parentNode.style.textAlign = "center";
-                          parentNode.style.display = "block";
-                        }}
-                      />
+                      initiative.useImage ? (
+                        <div style={{ textAlign: 'center', display: 'flex', justifyContent: 'center' }}>
+                          <img
+                            className="committee-sidebar-image"
+                            src={initiative.wordmark_dark}
+                            alt={`ACM ${initiative.name}`}
+                            style={{ margin: '0 auto' }}
+                            onError={(e) => {
+                              e.target.onerror = null;
+                              e.target.style.display = "none";
+                              const parentNode = e.target.parentNode;
+                              parentNode.textContent = `ACM ${initiative.name}`;
+                              parentNode.style.textAlign = "center";
+                              parentNode.style.display = "block";
+                            }}
+                          />
+                        </div>
+                      ) : (
+                        <span style={{ display: 'block', textAlign: 'center' }}>ACM {initiative.name}</span>
+                      )
                     }
                     ext={false}
                   />
