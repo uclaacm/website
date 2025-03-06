@@ -21,8 +21,18 @@ const footerACMLinks = [
 ];
 
 const footerInitiativeLinks = [
-  { title: 'Impact', path: '/impact' },
-  { title: 'JEDI', path: '/jedi' },
+  { 
+    name: 'Impact', 
+    slug: 'impact', 
+    path: '/impact',
+    wordmark_dark: '/images/impact/impact-footer.png' 
+  },
+  { 
+    name: 'JEDI', 
+    slug: 'jedi', 
+    path: '/jedi',
+    wordmark_dark: '/images/jedi/jedi-wordmark-dark.png' 
+  },
 ];
 
 function FooterLinkElement({ title, path, ext }) {
@@ -90,10 +100,28 @@ function Footer() {
               ))}
             </ul>
             <h3 className={styles['footer-header']}>ACM Initiatives</h3>
-            <ul className="list-unstyled">
-              {footerInitiativeLinks.map((link) => (
-                <li key={link.path}>
-                  <FooterLinkElement {...link} />
+            <ul className={`list-unstyled text-left ${styles['footer-committee-sidebar-container']}`}>
+              {footerInitiativeLinks.map((initiative) => (
+                <li key={initiative.slug}>
+                  <FooterLinkElement
+                    path={initiative.path}
+                    title={
+                      <img
+                        className="committee-sidebar-image"
+                        src={initiative.wordmark_dark}
+                        alt={`ACM ${initiative.name}`}
+                        onError={(e) => {
+                          e.target.onerror = null;
+                          e.target.style.display = "none";
+                          const parentNode = e.target.parentNode;
+                          parentNode.textContent = `ACM ${initiative.name}`;
+                          parentNode.style.textAlign = "center";
+                          parentNode.style.display = "block";
+                        }}
+                      />
+                    }
+                    ext={false}
+                  />
                 </li>
               ))}
             </ul>
@@ -120,6 +148,14 @@ function Footer() {
                             className="committee-sidebar-image"
                             src={wordmark_dark}
                             alt={`ACM ${name}`}
+                            onError={(e) => {
+                              e.target.onerror = null;
+                              e.target.style.display = "none";
+                              const parentNode = e.target.parentNode;
+                              parentNode.textContent = `ACM ${name}`;
+                              parentNode.style.textAlign = "center";
+                              parentNode.style.display = "block";
+                            }}
                           />
                         }
                         ext={external_link}
