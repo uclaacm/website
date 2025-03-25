@@ -24,6 +24,7 @@ const impactBlog = 'https://medium.com/acm-at-ucla';
 function Impact() {
   const [gameActive, setGameActive] = useState(false);
   const [rocketButtonHover, setRocketButtonHover] = useState(false);
+  const [currentEventIndex, setCurrentEventIndex] = useState(0);
   
   // Function to activate the rocket game
   const activateGame = () => {
@@ -35,6 +36,31 @@ function Impact() {
       officer.role.includes('Impact') &&
       officer.committee.includes('Board, Internal'),
   );
+  
+  const eventsPerView = 3;
+  
+  const goToPrevEvents = () => {
+    setCurrentEventIndex((prev) => 
+      prev === 0 ? pastEvents.length - 1 : prev - 1
+    );
+  };
+  
+  const goToNextEvents = () => {
+    setCurrentEventIndex((prev) => 
+      prev + 1 >= pastEvents.length ? 0 : prev + 1
+    );
+  };
+  
+  const getVisibleEvents = () => {
+    const events = [];
+    for (let i = 0; i < eventsPerView; i++) {
+      const index = (currentEventIndex + i) % pastEvents.length;
+      events.push(pastEvents[index]);
+    }
+    return events;
+  };
+  
+  const visibleEvents = getVisibleEvents();
   
   return (
     <Layout>
@@ -102,23 +128,43 @@ function Impact() {
         {/* TODO: make rainbow backing responsive */}
         {/* <h2 className={styles['text-center-holographic']}>Technology + ethics, policy, & society.</h2> */}
         <p className="text-center">
-          ACM Impact is an up-and-coming initiative within ACM Board.
+{/*           
           <br />
-          <br />
-          Our mission is to promote an understanding of technology’s ethical and
+          <br /> */}
+          ACM Impact is the social impact initiative within ACM Board. Our mission is to promote an understanding of technology’s ethical and
           societal implications through education, advocacy, and community
           engagement.
         </p>
+        <br/>
+        <h3 className="text-uppercase">Upcoming Events And Projects</h3>
 
         <div style={{ display: 'flex', justifyContent: 'center' }}>
           <InstagramEmbed url="https://www.instagram.com/impact_ucla/" width={3280} />
         </div>
 
-        <h3 className="text-uppercase">Past Events</h3>
-        <div className="grid-desktop-3 text-center-mobile">
-          {pastEvents.map((event) => (
-            <WorkshopCard {...event} key={event.title} />
-          ))}
+        <h3 className="text-uppercase">Past Events and Projects</h3>
+        <div className={styles.carouselContainer}>
+          <button 
+            className={styles.carouselButton}
+            onClick={goToPrevEvents}
+            aria-label="See previous events"
+          >
+            &lt;
+          </button>
+          
+          <div className="grid-desktop-3 text-center-mobile">
+            {visibleEvents.map((event) => (
+              <WorkshopCard {...event} key={event.title} />
+            ))}
+          </div>
+          
+          <button 
+            className={styles.carouselButton}
+            onClick={goToNextEvents}
+            aria-label="See next events"
+          >
+            &gt;
+          </button>
         </div>
 
         <h3 className="text-uppercase">Blog</h3>

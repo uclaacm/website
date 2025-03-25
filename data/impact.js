@@ -27,6 +27,14 @@ export const pastEvents = [
     description:
       'This was a hackathon-like event in which participants joined in teams to create legislation for legal issues like data privacy and sustainability, build connections with mentors, and win prizes!',
   },
+  {
+    title: 'Social Good Pitch-a-Thon',
+    quarter: 'Fall 2023',
+    img: policyPitchathon21,
+    alt: 'a banner titled "impact by acm at ucla: policy pitchathon, saturday april 17 10 AM - 5 PM PDT. features a judicial scale with the earth on one arm, and high-tech scroll on the other.',
+    description:
+      'A hackathon-like event where participants teamed up to pitch technical solutions to real-world social justice and DEI issues, build connections with mentors, and win prizes.',
+  },
 ];
 
 export const people = [
