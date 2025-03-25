@@ -110,12 +110,6 @@ function Impact() {
           engagement.
         </p>
 
-        <br />
-        <h3 className="text-center">
-          🚨 🚧 Website update in progress...come back soon! 🚧 🚨
-        </h3>
-        <br />
-
         <div style={{ display: 'flex', justifyContent: 'center' }}>
           <InstagramEmbed url="https://www.instagram.com/impact_ucla/" width={3280} />
         </div>
