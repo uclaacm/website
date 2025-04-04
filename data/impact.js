@@ -1,8 +1,49 @@
 import careersSocialImpactTech from '../public/images/impact/events/careers-social-tech.jpg';
 import introTechEthics from '../public/images/impact/events/intro-tech-ethics.png';
 import policyPitchathon21 from '../public/images/impact/events/policy-pitchathon-2021.png';
+import brief from '../public/images/impact/events/brief.png'
+import h2i from '../public/images/impact/events/h2i2024.jpg'
+import pitchathon from '../public/images/impact/events/pitchathon.png'
+import careerfair from '../public/images/impact/events/careerfair.png'
+import socialpanel from '../public/images/impact/events/socialpanel.jpeg'
 
 export const pastEvents = [
+  {
+    title: 'Hack2Impact',
+    quarter: 'Every Spring',
+    img: h2i,
+    alt: 'Over 20 people stand in front of a projected screen that says "Hack2Impact 2024"',
+    description: 'Our flagship event in collaboration with LA Blueprint — an annual social good hackathon that challenges participants to develop technical solutions for local nonprofit organizations\' needs.',
+  },
+  {
+    title: 'Social Good Pitch-a-Thon',
+    quarter: 'Fall 2023',
+    img: pitchathon,
+    alt: 'A graphic for the Social Good Pitch-a-Thon',
+    description: 'A hackathon-like event where participants teamed up to pitch technical solutions to real-world social justice and DEI issues, build connections with mentors, and win prizes.',
+  },
+  {
+    title: 'AI Policy Guide',
+    quarter: '',
+    img: brief,
+    alt: 'A robotic arm holding a scale',
+    description: 'Coming soon! A resource created alongside the AI Robotics Ethics Society and AI Safety at UCLA — get the inside scoop on how to get started in the field of AI policy as a UCLA undergraduate.',
+    link: 'AI Policy Guide for UCLA Undergraduate Students',
+  },
+  {
+    title: 'Tech for Good Career Fair',
+    quarter: 'Winter 2024',
+    img: careerfair,
+    alt: 'A graphic for the Tech for Good Career Fair',
+    description: 'In collaboration with UPE Advocacy — an annual career fair that allows attendees to interact with companies, organizations, and opportunities that utilize technology for positive social impact.',
+  },
+  {
+    title: 'Social Impact Panel',
+    quarter: 'Winter 2024',
+    img: socialpanel,
+    alt: 'A laptop showing the panelists and moderators sits on a podium in a dimly lit room',
+    description: 'In collaboration with LA Blueprint — our audience heard from 4 industry professionals working on high-impact tech initiatives and gained insights into aligning their skills and passions with a career that makes a difference.',
+  },
   {
     title: 'Careers in Social Impact Tech',
     quarter: 'Winter 2021',
@@ -26,14 +67,6 @@ export const pastEvents = [
     alt: 'a banner titled "impact by acm at ucla: policy pitchathon, saturday april 17 10 AM - 5 PM PDT. features a judicial scale with the earth on one arm, and high-tech scroll on the other.',
     description:
       'This was a hackathon-like event in which participants joined in teams to create legislation for legal issues like data privacy and sustainability, build connections with mentors, and win prizes!',
-  },
-  {
-    title: 'Social Good Pitch-a-Thon',
-    quarter: 'Fall 2023',
-    img: policyPitchathon21,
-    alt: 'a banner titled "impact by acm at ucla: policy pitchathon, saturday april 17 10 AM - 5 PM PDT. features a judicial scale with the earth on one arm, and high-tech scroll on the other.',
-    description:
-      'A hackathon-like event where participants teamed up to pitch technical solutions to real-world social justice and DEI issues, build connections with mentors, and win prizes.',
   },
 ];
 

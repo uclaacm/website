@@ -23,13 +23,13 @@ const impactBlog = 'https://medium.com/acm-at-ucla';
 
 function Impact() {
   const [gameActive, setGameActive] = useState(false);
-  const [rocketButtonHover, setRocketButtonHover] = useState(false);
+  // const [rocketButtonHover, setRocketButtonHover] = useState(false);
   const [currentEventIndex, setCurrentEventIndex] = useState(0);
   
   // Function to activate the rocket game
-  const activateGame = () => {
-    setGameActive(true);
-  };
+  // const activateGame = () => {
+  //   setGameActive(true);
+  // };
   
   const impactOfficers = data.filter(
     (officer) =>
@@ -128,7 +128,7 @@ function Impact() {
         {/* TODO: make rainbow backing responsive */}
         {/* <h2 className={styles['text-center-holographic']}>Technology + ethics, policy, & society.</h2> */}
         <p className="text-center">
-{/*           
+          {/*           
           <br />
           <br /> */}
           ACM Impact is the social impact initiative within ACM Board. Our mission is to promote an understanding of technology’s ethical and
