@@ -149,10 +149,10 @@ function Impact() {
             onClick={goToPrevEvents}
             aria-label="See previous events"
           >
-            &lt;
+            <span className={`${styles.arrowIcon} ${styles.arrowLeft}`} aria-hidden="true"></span>
           </button>
           
-          <div className="grid-desktop-3 text-center-mobile">
+          <div className={styles.workshopCardsContainer}>
             {visibleEvents.map((event) => (
               <WorkshopCard {...event} key={event.title} />
             ))}
@@ -163,7 +163,7 @@ function Impact() {
             onClick={goToNextEvents}
             aria-label="See next events"
           >
-            &gt;
+            <span className={`${styles.arrowIcon} ${styles.arrowRight}`} aria-hidden="true"></span>
           </button>
         </div>
 

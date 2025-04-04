@@ -63,17 +63,32 @@
 .workshop-card {
   margin-bottom: 2em;
   padding: 0 1em 1em 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .workshop-image-container {
-  // TODO: let's deal with this later :)
-  // border: 1px solid gray;
-  // border-radius: 10px;
-  // filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
   align-items: center;
   display: flex;
   margin: 0 auto;
   max-width: 300px;
+  height: auto;
+  max-height: 180px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 10px;
+
+  & > div {
+    position: unset !important;
+  }
+
+  & img {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+  }
 }
 
 .blog-card {
@@ -154,32 +169,82 @@
 
 .carouselContainer {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
   margin: 20px 0;
+  position: relative;
+  max-width: 100%;
+  min-height: 450px; // Set minimum height to prevent jumping
 }
 
 .carouselButton {
-  background: rgba(0, 0, 0, 0.5);
-  color: white;
+  background: transparent;
+  color: #333;
   border: none;
-  border-radius: 50%;
   width: 40px;
-  height: 40px;
-  font-size: 20px;
+  height: auto; // Allow height to fill container
+  font-size: 18px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  margin: 0 10px;
-  transition: background 0.3s ease;
+  transition: all 0.2s ease;
+  padding: 0;
+  align-self: stretch; // Make button stretch to fill parent height
   
   &:hover {
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.03);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   
   &:focus {
     outline: none;
-    box-shadow: 0 0 0 3px rgba(0, 120, 255, 0.5);
   }
+  
+  &:active {
+    background: rgba(0, 0, 0, 0.05);
+  }
+}
+
+.workshopCardsContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  padding: 0 5px;
+  width: 100%;
+  
+  @media (max-width: variables.$tablet-breakpoint) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  
+  @media (min-width: variables.$tablet-breakpoint) and (max-width: variables.$navbar-breakpoint) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+// Clean arrow icons
+.arrowIcon {
+  width: 10px;
+  height: 10px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.7);
+  border-width: 0 8px 8px 0;
+  padding: 4px;
+  display: inline-block;
+  position: relative;
+  transition: border-color 0.2s ease;
+}
+
+.carouselButton:hover .arrowIcon {
+  border-color: rgba(0, 0, 0, 0.95);
+}
+
+.arrowLeft {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.arrowRight {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
 }
