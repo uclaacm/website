@@ -181,16 +181,17 @@
   background: transparent;
   color: #333;
   border: none;
-  width: 40px;
-  height: auto; // Allow height to fill container
+  width: 50px; // Increased from 40px to 50px
+  height: auto;
   font-size: 18px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   transition: all 0.2s ease;
-  padding: 0;
-  align-self: stretch; // Make button stretch to fill parent height
+  padding: 0; // Adjusted padding
+  align-self: stretch;
+  position: relative; // Add position relative
   
   &:hover {
     background: rgba(0, 0, 0, 0.03);
@@ -231,7 +232,10 @@
   border-width: 0 8px 8px 0;
   padding: 4px;
   display: inline-block;
-  position: relative;
+  position: absolute; // Position absolutely within the button
+  left: 50%; // Center horizontally
+  top: 50%; // Center vertically
+  transform-origin: center; // Set transform origin to center
   transition: border-color 0.2s ease;
 }
 
@@ -240,11 +244,11 @@
 }
 
 .arrowLeft {
-  transform: rotate(135deg);
-  -webkit-transform: rotate(135deg);
+  transform: translate(-50%, -50%) rotate(135deg); // Center and rotate
+  -webkit-transform: translate(-50%, -50%) rotate(135deg);
 }
 
 .arrowRight {
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
+  transform: translate(-50%, -50%) rotate(-45deg); // Center and rotate
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
 }

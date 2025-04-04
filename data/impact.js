@@ -28,7 +28,7 @@ export const pastEvents = [
     img: brief,
     alt: 'A robotic arm holding a scale',
     description: 'Coming soon! A resource created alongside the AI Robotics Ethics Society and AI Safety at UCLA — get the inside scoop on how to get started in the field of AI policy as a UCLA undergraduate.',
-    link: 'AI Policy Guide for UCLA Undergraduate Students',
+    link: 'https://docs.google.com/document/d/15hA2d5xXQifDabpwsogzKdfrXy8SCtPm2IY4QqqOO0w/edit?usp=sharing',
   },
   {
     title: 'Tech for Good Career Fair',
