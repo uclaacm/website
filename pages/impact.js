@@ -175,16 +175,9 @@ function Impact() {
           <a href={impactBlog} target="_blank" rel="noreferrer noopener">
             our blog
           </a>
-          ! Check out&nbsp;
-          <a
-            href="https://medium.com/acm-at-ucla/how-to-write-for-acm-impact-at-ucla-9a1aa0046b85"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            this blog post
-          </a>
-          &nbsp;to see how you can get involved. We look forward to reading
-          your work—in the meantime, check out some of our existing posts above.
+          ! If you'd like to have your work published by us, please email&nbsp;
+          <a href={'mailto:impact@uclaacm.com'}>impact@uclaacm.com</a>. We look forward to reading
+          your work—in the meantime, check out some of our existing posts above. 
         </p>
 
         <h2 className="text-center">People</h2>

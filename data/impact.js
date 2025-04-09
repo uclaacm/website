@@ -8,13 +8,7 @@ import careerfair from '../public/images/impact/events/careerfair.png'
 import socialpanel from '../public/images/impact/events/socialpanel.jpeg'
 
 export const pastEvents = [
-  {
-    title: 'Hack2Impact',
-    quarter: 'Every Spring',
-    img: h2i,
-    alt: 'Over 20 people stand in front of a projected screen that says "Hack2Impact 2024"',
-    description: 'Our flagship event in collaboration with LA Blueprint — an annual social good hackathon that challenges participants to develop technical solutions for local nonprofit organizations\' needs.',
-  },
+
   {
     title: 'Social Good Pitch-a-Thon',
     quarter: 'Fall 2023',
@@ -23,12 +17,19 @@ export const pastEvents = [
     description: 'A hackathon-like event where participants teamed up to pitch technical solutions to real-world social justice and DEI issues, build connections with mentors, and win prizes.',
   },
   {
-    title: 'AI Policy Guide',
-    quarter: '',
+    title: 'Hack2Impact',
+    quarter: 'Every Spring',
+    img: h2i,
+    alt: 'Over 20 people stand in front of a projected screen that says "Hack2Impact 2024"',
+    description: 'Our flagship event in collaboration with LA Blueprint — an annual social good hackathon that challenges participants to develop technical solutions for local nonprofit organizations\' needs.',
+  },
+  {
+    title: 'How to Get Your Start in AI Policy at UCLA',
+    quarter: 'Coming soon!',
     img: brief,
     alt: 'A robotic arm holding a scale',
-    description: 'Coming soon! A resource created alongside the AI Robotics Ethics Society and AI Safety at UCLA — get the inside scoop on how to get started in the field of AI policy as a UCLA undergraduate.',
-    link: 'https://docs.google.com/document/d/15hA2d5xXQifDabpwsogzKdfrXy8SCtPm2IY4QqqOO0w/edit?usp=sharing',
+    description: 'A resource created alongside the AI Robotics Ethics Society and AI Safety at UCLA — get the inside scoop on how to get started in the field of AI policy as a UCLA undergraduate.',
+    // link: 'https://docs.google.com/document/d/15hA2d5xXQifDabpwsogzKdfrXy8SCtPm2IY4QqqOO0w/edit?usp=sharing',
   },
   {
     title: 'Tech for Good Career Fair',
