@@ -9,7 +9,6 @@ import Layout from '../components/Layout';
 import Officers from '../components/OfficerCard';
 import { InstagramEmbed } from 'react-social-media-embed';
 import { pastEvents } from '../data/impact';
-import data from '../offoutput.json';
 import impactNewBanner from '../public/images/impact/impact-new-logo.png';
 import styles from '../styles/pages/impact.module.scss';
 
@@ -23,19 +22,41 @@ const impactBlog = 'https://medium.com/acm-at-ucla';
 
 function Impact() {
   const [gameActive, setGameActive] = useState(false);
-  // const [rocketButtonHover, setRocketButtonHover] = useState(false);
   const [currentEventIndex, setCurrentEventIndex] = useState(0);
   
-  // Function to activate the rocket game
-  // const activateGame = () => {
-  //   setGameActive(true);
-  // };
-  
-  const impactOfficers = data.filter(
-    (officer) =>
-      officer.role.includes('Impact') &&
-      officer.committee.includes('Board, Internal'),
-  );
+  // Custom officers data defined directly in the component
+  const impactOfficers = [
+    {
+      name: 'Rohan Adwankar',
+      pronouns: 'he/him',
+      role: 'Impact Director',
+      committee: "Board, Internal", 
+      major: 'Linguistics and Computer Science',
+      year: 2027,
+      photo: 'https://drive.google.com/file/d/10HlxEAR0uwiAAqYHSqf9H1n2jx_z6rSv/view?usp=drive_link',
+      alt: 'Rohan',
+    },
+    {
+      name: 'Youssef Mehelba',
+      pronouns: 'he/him',
+      role: 'Impact Officer',
+      committee: "Board, Internal", 
+      major: 'Computer Science',
+      year: 2028,
+      photo: '',
+      alt: 'Youssef',
+    },
+    {
+      name: 'Aamani Maddukuri',
+      pronouns: 'she/her',
+      role: 'Impact Officer',
+      committee: "Board, Internal", 
+      major: 'Computer Science',
+      year: 2028,
+      photo: '',
+      alt: 'Aamani',
+    },
+  ];
   
   const eventsPerView = 3;
   
