@@ -36,7 +36,7 @@ Check out our project design doc for more information!
 
 ### Development Setup
 
-We'll follow a very traditional [Node.js](https://nodejs.org) project setup. Before we start, make sure that you have the LTS version of Node (currently ~ `16.x`) and a copy of [`git`](https://git-scm.com/) on your computer. We recommend you use [`nvm`](https://github.com/nvm-sh/nvm), which you should install!
+We'll follow a very traditional [Node.js](https://nodejs.org) project setup. Before we start, make sure that you have the LTS version of Node from ^18.18.0 || ^19.8.0 || >= 20.0.0 (to support Next 15) and a copy of [`git`](https://git-scm.com/) on your computer. We recommend you use [`nvm`](https://github.com/nvm-sh/nvm), which you should install!
 
 First, we'll clone the repo and install all of our dependencies. You only need to do this once.
 
