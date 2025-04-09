@@ -1,3 +1,6 @@
+import { faFileAlt, faVideo } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 import Image from 'next/legacy/image';
 import Link from 'next/link';
 import { NextSeo } from 'next-seo';
@@ -7,6 +10,7 @@ import Countdown from 'react-countdown';
 import Banner from '../components/Banner';
 import Layout from '../components/Layout';
 import gmData from '../gmData.json';
+import pastData from '../past-gm.json';
 
 import aiLogo from '../public/images/committees/ai_wordmark.svg';
 import boardLogo from '../public/images/committees/board_wordmark.svg';
@@ -20,6 +24,11 @@ import teachlaLogo from '../public/images/committees/teachLA_wordmark.svg';
 import wLogo from '../public/images/committees/w_wordmark.svg';
 import googleSlideLogo from '../public/images/slides.png';
 import winterGMgraphic from '../public/images/Winter_GM_2025_graphic.png';
+
+const inlineButtonListStyle = {
+  display: 'inline-block',
+  marginBottom: '1em',
+};
 
 const dayToName = (day) => {
   switch (day) {
@@ -156,6 +165,8 @@ const GMCountdown = (props) => {
 };
 
 function gm() {
+
+  const pastGMs = [...pastData].reverse();
   const data = parseGMData(gmData);
   function countdownRenderer({ days, hours, minutes, seconds, completed }) {
     const { dayString, hourString, minuteString, secondString } =
@@ -335,6 +346,7 @@ function gm() {
             </div>
             {data.initiatives.map((item) => (
               <p key={item.id} className="gm-program-row">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
                 {item}
               </p>
             ))}
@@ -347,9 +359,66 @@ function gm() {
                 friends!
               </p>
             </div>
-            <p className="gm-program-row">All ACM officers</p>
+            <div className="gm-program-row">All ACM officers</div>
           </div>
         </div>
+      </div>
+      {/* Past GMs */}
+      <div className="content-container-medium">
+        <hr></hr>
+        <h2 className="text-center">Past General Meetings</h2>
+        {pastGMs.map((pastGM, index) => (
+          <div className="grid-tablet-2" key={index}>
+            <div>
+              <h3>{pastGM.title + ' // ' + pastGM.date}</h3>
+              <p>{pastGM.description}</p>
+              <ul className="list-unstyled">
+                <li style={inlineButtonListStyle}>
+                  <Link href={pastGM.slides}>
+                    <a
+                      className="button"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FontAwesomeIcon
+                        icon={faFileAlt}
+                        fixedWidth
+                        aria-hidden={true}
+                      />{' '}
+                      Event Slides
+                    </a>
+                  </Link>
+                </li>{' '}
+                <li style={inlineButtonListStyle}>
+                  {pastGM.notes && pastGM.notes.trim() !== '' && (
+                    <Link href={pastGM.notes}>
+                      <a
+                        className="button"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <FontAwesomeIcon
+                          icon={faVideo}
+                          fixedWidth
+                          aria-hidden={true}
+                        />{' '}
+                        Event Recording
+                      </a>
+                    </Link>
+                  )}
+                </li>
+              </ul>
+            </div>
+            <div>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={pastGM.banner}
+                alt={pastGM.alt_text}
+                style={{ maxWidth: '100%' }}
+              />
+            </div>
+          </div>
+        ))}
       </div>
     </Layout>
   );
