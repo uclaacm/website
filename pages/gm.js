@@ -374,36 +374,32 @@ function gm() {
               <p>{pastGM.description}</p>
               <ul className="list-unstyled">
                 <li style={inlineButtonListStyle}>
-                  <Link href={pastGM.slides}>
-                    <a
-                      className="button"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <FontAwesomeIcon
-                        icon={faFileAlt}
-                        fixedWidth
-                        aria-hidden={true}
-                      />{' '}
-                      Event Slides
-                    </a>
+                  <Link
+                    href={pastGM.slides}
+                    className="button"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    <FontAwesomeIcon
+                      icon={faFileAlt}
+                      fixedWidth
+                      aria-hidden={true}
+                    />{' '}Event Slides
                   </Link>
                 </li>{' '}
                 <li style={inlineButtonListStyle}>
                   {pastGM.notes && pastGM.notes.trim() !== '' && (
-                    <Link href={pastGM.notes}>
-                      <a
-                        className="button"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <FontAwesomeIcon
-                          icon={faVideo}
-                          fixedWidth
-                          aria-hidden={true}
-                        />{' '}
-                        Event Recording
-                      </a>
+                    <Link
+                      href={pastGM.notes}
+                      className="button"
+                      target="_blank"
+                      rel="noopener noreferrer">
+
+                      <FontAwesomeIcon
+                        icon={faVideo}
+                        fixedWidth
+                        aria-hidden={true}
+                      />{' '}Event Recording
                     </Link>
                   )}
                 </li>
