@@ -44,7 +44,7 @@ First, we'll clone the repo and install all of our dependencies. You only need t
 $ git clone https://github.com/uclaacm/website.git
 ...
 $ cd website
-$ nvm use
+$ nvm use 20 #or whatever Node Version you installed
 $ npm install
 ```
 
