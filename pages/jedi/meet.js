@@ -1,8 +1,8 @@
 import { faSlack } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Link from 'next/link';
 import { NextSeo } from 'next-seo';
+import Link from 'next/link';
 import JEDINav from '../../components/JEDI/JEDINav';
 import Layout from '../../components/Layout';
 import Officers from '../../components/OfficerCard';

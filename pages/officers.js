@@ -1,11 +1,12 @@
-import Image from 'next/legacy/image';
 import { NextSeo } from 'next-seo';
+import Image from 'next/legacy/image';
 
 import Banner from '../components/Banner';
 import Navigation from '../components/Committees/Sidebar';
-// import Archive from '../components/Committees/ArchiveSidebar';
 import Layout from '../components/Layout';
 import CommitteeSectionOfficers from '../components/Officers/CommitteeSectionOfficers';
+// import Archive from '../components/Committees/ArchiveSidebar';
+
 import data from '../data';
 import teamPhoto from '../public/images/officers/internal_compressed.jpg';
 

@@ -1,5 +1,5 @@
-import Link from 'next/link';
 import { NextSeo } from 'next-seo';
+import Link from 'next/link';
 import AllyshipSpaceCard from '../../components/JEDI/AllyshipSpaceCard';
 import JEDINav from '../../components/JEDI/JEDINav';
 import Layout from '../../components/Layout';
