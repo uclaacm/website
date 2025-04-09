@@ -1,6 +1,6 @@
-import { NextSeo } from 'next-seo';
 import Link from 'next/link';
 import Script from 'next/script';
+import { NextSeo } from 'next-seo';
 
 import Banner from '../components/Banner';
 import Carousel from '../components/Carousel';
