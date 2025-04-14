@@ -1,5 +1,4 @@
 import Image from 'next/legacy/image';
-import dynamic from 'next/dynamic';
 import { NextSeo } from 'next-seo';
 import { useState } from 'react';
 import Banner from '../components/Banner';
@@ -12,16 +11,9 @@ import { pastEvents } from '../data/impact';
 import impactNewBanner from '../public/images/impact/impact-new-logo.png';
 import styles from '../styles/pages/impact.module.scss';
 
-// Dynamically import the RocketGame component with no SSR
-const RocketGame = dynamic(
-  () => import('../components/Games/RocketGame'),
-  { ssr: false },
-);
-
 const impactBlog = 'https://medium.com/acm-at-ucla';
 
 function Impact() {
-  const [gameActive, setGameActive] = useState(false);
   const [currentEventIndex, setCurrentEventIndex] = useState(0);
   
   // Custom officers data defined directly in the component
@@ -33,8 +25,8 @@ function Impact() {
       committee: "Board, Internal", 
       major: 'Linguistics and Computer Science',
       year: 2027,
-      photo: 'https://drive.google.com/file/d/10HlxEAR0uwiAAqYHSqf9H1n2jx_z6rSv/view?usp=drive_link',
-      alt: 'Rohan',
+      // photo: 'https://drive.google.com/file/d/10HlxEAR0uwiAAqYHSqf9H1n2jx_z6rSv/view?usp=drive_link',
+      // alt: 'Rohan',
     },
     {
       name: 'Youssef Mehelba',
@@ -43,8 +35,8 @@ function Impact() {
       committee: "Board, Internal", 
       major: 'Computer Science',
       year: 2028,
-      photo: '',
-      alt: 'Youssef',
+      // photo: '',
+      // alt: 'Youssef',
     },
     {
       name: 'Aamani Maddukuri',
@@ -53,8 +45,8 @@ function Impact() {
       committee: "Board, Internal", 
       major: 'Computer Science',
       year: 2028,
-      photo: '',
-      alt: 'Aamani',
+      // photo: '',
+      // alt: 'Aamani',
     },
   ];
   
@@ -110,48 +102,12 @@ function Impact() {
               priority 
             />
           </div>
-          {/* uncomment this button if im allowed to */}
-          {/* <button
-            onClick={activateGame}
-            onMouseOver={() => setRocketButtonHover(true)}
-            onFocus={() => setRocketButtonHover(true)}
-            onMouseOut={() => setRocketButtonHover(false)}
-            onBlur={() => setRocketButtonHover(false)}
-            aria-label="Launch rocket game"
-            title="Launch rocket game"
-            style={{
-              position: 'absolute',
-              top: '20px',
-              right: '20px',
-              width: '40px',
-              height: '40px',
-              cursor: 'pointer',
-              zIndex: 10,
-              borderRadius: '50%',
-              opacity: rocketButtonHover ? 0.8 : 0.2,
-              background: 'transparent',
-              border: 'none',
-              transition: 'opacity 0.3s ease',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              padding: 0,
-            }}
-          >
-            <span role="img" aria-hidden="true" style={{ fontSize: '24px' }}>🚀</span>
-          </button> */}
         </div>
-
-        {/* RocketGame component will render when gameActive is true */}
-        <RocketGame isActive={gameActive} onClose={() => setGameActive(false)} />
 
         <h2 className="text-center">Technology + ethics, policy, & society.</h2>
         {/* TODO: make rainbow backing responsive */}
         {/* <h2 className={styles['text-center-holographic']}>Technology + ethics, policy, & society.</h2> */}
         <p className="text-center">
-          {/*           
-          <br />
-          <br /> */}
           ACM Impact is the social impact initiative within ACM Board. Our mission is to promote an understanding of technology’s ethical and
           societal implications through education, advocacy, and community
           engagement.
