@@ -24,7 +24,7 @@ const devTeamAdvisor = {
 };
 
 function DevTeam() {
-  const devTeamOfficers = data.filter(officer => officer.role.includes('Dev Team') && officer.committee.includes('Board, Internal'));
+  const devTeamOfficers = data.filter(officer => officer.role.includes('Dev Team') && officer.committee.includes('Board, Dev Team'));
   devTeamOfficers.splice(1, 0, devTeamAdvisor);
   return (
     (<Layout>

@@ -31,6 +31,8 @@ async function getGoogleSheetData(range) {
   await jwtClient.authorize();
 
   const committees = [
+    'Board',
+    'Board, Dev Team',
     'Board, Internal',
     'Board, External',
     'AI',
