@@ -7,8 +7,11 @@ import WorkshopCard from '../components/Impact/WorkshopCard';
 import Layout from '../components/Layout';
 import Officers from '../components/OfficerCard';
 import { InstagramEmbed } from 'react-social-media-embed';
+
 import { pastEvents } from '../data/impact';
+
 import impactNewBanner from '../public/images/impact/impact-new-logo.png';
+
 import styles from '../styles/pages/impact.module.scss';
 
 const impactBlog = 'https://medium.com/acm-at-ucla';

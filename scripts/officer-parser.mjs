@@ -31,6 +31,8 @@ async function getGoogleSheetData(range) {
   await jwtClient.authorize();
 
   const committees = [
+    'Board',
+    'Board, Dev Team',
     'Board, Internal',
     'Board, External',
     'AI',
@@ -70,8 +72,11 @@ async function getGoogleSheetData(range) {
             const url = new URL(image);
             const host = url.hostname;
             if (host === 'drive.google.com') {
-              const fileID = image.match(/\/file\/d\/(.+?)\//)[1]; //convert gdrive urls into viewable url using regex
-              image = `https://drive.google.com/thumbnail?id=${fileID}`;
+              const match = image.match(/\/file\/d\/(.+?)(?:\/|$)/);
+              if (match && match[1]) {
+                const fileID = match[1];
+                image = `https://drive.google.com/thumbnail?id=${fileID}`;
+              }
             } else if (host === 'github.com') {
               const regex =
                 /^https:\/\/github\.com\/([^\/]+)\/([^\/]+)\/blob\/([^\/]+)\/(.+)$/; //convert github urls into viewable url using regex
