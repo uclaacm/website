@@ -21,18 +21,18 @@ const footerACMLinks = [
 ];
 
 const footerInitiativeLinks = [
-  { 
-    name: 'Impact', 
-    slug: 'impact', 
+  {
+    name: 'Impact',
+    slug: 'impact',
     path: '/impact',
     wordmark_dark: '/images/impact/impact-footer.png',
-    useImage: true
+    useImage: true,
   },
-  { 
-    name: 'JEDI', 
-    slug: 'jedi', 
+  {
+    name: 'JEDI',
+    slug: 'jedi',
     path: '/jedi',
-    useImage: false
+    useImage: false,
   },
 ];
 
@@ -101,8 +101,8 @@ function Footer() {
               ))}
             </ul>
             <h3 className={styles['footer-header']} style={{ textAlign: 'center' }}>ACM Initiatives</h3>
-            <ul 
-              className={`list-unstyled ${styles['footer-committee-sidebar-container']}`} 
+            <ul
+              className={`list-unstyled ${styles['footer-committee-sidebar-container']}`}
               style={{ textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center' }}
             >
               {footerInitiativeLinks.map((initiative) => (
@@ -116,17 +116,17 @@ function Footer() {
                             className="committee-sidebar-image"
                             src={initiative.wordmark_dark}
                             alt={`ACM ${initiative.name}`}
-                            style={{ 
-                              margin: '0 auto', 
-                              transform: initiative.name === 'Impact' ? 'translateX(-8.5px)' : 'none' 
+                            style={{
+                              margin: '0 auto',
+                              transform: initiative.name === 'Impact' ? 'translateX(-8.5px)' : 'none',
                             }}
                             onError={(e) => {
                               e.target.onerror = null;
-                              e.target.style.display = "none";
+                              e.target.style.display = 'none';
                               const parentNode = e.target.parentNode;
                               parentNode.textContent = `ACM ${initiative.name}`;
-                              parentNode.style.textAlign = "center";
-                              parentNode.style.display = "block";
+                              parentNode.style.textAlign = 'center';
+                              parentNode.style.display = 'block';
                             }}
                           />
                         </div>
@@ -164,11 +164,11 @@ function Footer() {
                             alt={`ACM ${name}`}
                             onError={(e) => {
                               e.target.onerror = null;
-                              e.target.style.display = "none";
+                              e.target.style.display = 'none';
                               const parentNode = e.target.parentNode;
                               parentNode.textContent = `ACM ${name}`;
-                              parentNode.style.textAlign = "center";
-                              parentNode.style.display = "block";
+                              parentNode.style.textAlign = 'center';
+                              parentNode.style.display = 'block';
                             }}
                           />
                         }

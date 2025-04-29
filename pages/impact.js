@@ -6,6 +6,8 @@ import Carousel from '../components/Impact/Carousel';
 import WorkshopCard from '../components/Impact/WorkshopCard';
 import Layout from '../components/Layout';
 import Officers from '../components/OfficerCard';
+
+// eslint-disable-next-line import/no-unresolved
 import { InstagramEmbed } from 'react-social-media-embed';
 
 import { pastEvents } from '../data/impact';

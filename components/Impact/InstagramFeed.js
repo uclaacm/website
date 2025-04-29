@@ -7,21 +7,21 @@ import instagramLogo from '../../public/images/social/instagram.svg';
 
 const InstagramFeed = ({ username = 'impact_ucla' }) => {
   const profileUrl = `https://www.instagram.com/${username}/`;
-  
+
   return (
     <div className={styles.instagramContainer}>
       <div className={styles.instagramContent}>
         <div className={styles.instagramInfo}>
           <h4>Follow us on Instagram!</h4>
           <p>
-            Stay updated on our latest events, initiatives, and announcements by following 
+            Stay updated on our latest events, initiatives, and announcements by following
             our Instagram account.
           </p>
           <p>
             <strong>
-              <a 
-                href={profileUrl} 
-                target="_blank" 
+              <a
+                href={profileUrl}
+                target="_blank"
                 rel="noreferrer noopener"
                 className={styles.instagramLink}
               >
@@ -29,16 +29,16 @@ const InstagramFeed = ({ username = 'impact_ucla' }) => {
               </a>
             </strong>
           </p>
-          <a 
-            href={profileUrl} 
-            target="_blank" 
+          <a
+            href={profileUrl}
+            target="_blank"
             rel="noreferrer noopener"
             className={styles.instagramButton}
           >
             <div className={styles.instagramIconContainer}>
               {/* If you have the Instagram SVG icon in your public folder */}
               <Image
-                src={instagramLogo || "/images/social/instagram.svg"}
+                src={instagramLogo || '/images/social/instagram.svg'}
                 alt="Instagram"
                 width={24}
                 height={24}
