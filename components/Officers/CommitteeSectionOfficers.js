@@ -16,7 +16,7 @@ function CommitteeOfficers({ committee }) {
                   officer.committee === 'Board, Internal' ||
                   officer.committee === 'Board, External' ||
                   officer.committee === 'President' ||
-                  officer.committee === 'Board', 
+                  officer.committee === 'Board',
               )}
               size="compact"
               committee={committee.name}
