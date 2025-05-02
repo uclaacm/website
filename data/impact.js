@@ -1,11 +1,11 @@
+import brief from '../public/images/impact/events/brief.png';
+import careerfair from '../public/images/impact/events/careerfair.png';
 import careersSocialImpactTech from '../public/images/impact/events/careers-social-tech.jpg';
+import h2i from '../public/images/impact/events/h2i2024.jpg';
 import introTechEthics from '../public/images/impact/events/intro-tech-ethics.png';
+import pitchathon from '../public/images/impact/events/pitchathon.png';
 import policyPitchathon21 from '../public/images/impact/events/policy-pitchathon-2021.png';
-import brief from '../public/images/impact/events/brief.png'
-import h2i from '../public/images/impact/events/h2i2024.jpg'
-import pitchathon from '../public/images/impact/events/pitchathon.png'
-import careerfair from '../public/images/impact/events/careerfair.png'
-import socialpanel from '../public/images/impact/events/socialpanel.jpeg'
+import socialpanel from '../public/images/impact/events/socialpanel.jpeg';
 
 export const pastEvents = [
 

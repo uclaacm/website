@@ -20,14 +20,14 @@ const impactBlog = 'https://medium.com/acm-at-ucla';
 
 function Impact() {
   const [currentEventIndex, setCurrentEventIndex] = useState(0);
-  
+
   // Custom officers data defined directly in the component
   const impactOfficers = [
     {
       name: 'Rohan Adwankar',
       pronouns: 'he/him',
       role: 'Impact Director',
-      committee: "Board, Internal", 
+      committee: 'Board, Internal',
       major: 'Linguistics and Computer Science',
       year: 2027,
       // photo: 'https://drive.google.com/file/d/10HlxEAR0uwiAAqYHSqf9H1n2jx_z6rSv/view?usp=drive_link',
@@ -37,7 +37,7 @@ function Impact() {
       name: 'Youssef Mehelba',
       pronouns: 'he/him',
       role: 'Impact Officer',
-      committee: "Board, Internal", 
+      committee: 'Board, Internal',
       major: 'Computer Science',
       year: 2028,
       // photo: '',
@@ -47,28 +47,28 @@ function Impact() {
       name: 'Aamani Maddukuri',
       pronouns: 'she/her',
       role: 'Impact Officer',
-      committee: "Board, Internal", 
+      committee: 'Board, Internal',
       major: 'Computer Science',
       year: 2028,
       // photo: '',
       // alt: 'Aamani',
     },
   ];
-  
+
   const eventsPerView = 3;
-  
+
   const goToPrevEvents = () => {
-    setCurrentEventIndex((prev) => 
-      prev === 0 ? pastEvents.length - 1 : prev - 1
+    setCurrentEventIndex((prev) =>
+      prev === 0 ? pastEvents.length - 1 : prev - 1,
     );
   };
-  
+
   const goToNextEvents = () => {
-    setCurrentEventIndex((prev) => 
-      prev + 1 >= pastEvents.length ? 0 : prev + 1
+    setCurrentEventIndex((prev) =>
+      prev + 1 >= pastEvents.length ? 0 : prev + 1,
     );
   };
-  
+
   const getVisibleEvents = () => {
     const events = [];
     for (let i = 0; i < eventsPerView; i++) {
@@ -77,9 +77,9 @@ function Impact() {
     }
     return events;
   };
-  
+
   const visibleEvents = getVisibleEvents();
-  
+
   return (
     <Layout>
       <NextSeo
@@ -101,10 +101,10 @@ function Impact() {
       <div className={styles.container}>
         <div className="text-center" style={{ position: 'relative', paddingTop: '30px' }}>
           <div style={{ maxWidth: '80%', margin: '0 auto', padding: '10px' }}>
-            <Image 
-              src={impactNewBanner} 
-              alt="Impact by ACM at UCLA" 
-              priority 
+            <Image
+              src={impactNewBanner}
+              alt="Impact by ACM at UCLA"
+              priority
             />
           </div>
         </div>
@@ -113,9 +113,8 @@ function Impact() {
         {/* TODO: make rainbow backing responsive */}
         {/* <h2 className={styles['text-center-holographic']}>Technology + ethics, policy, & society.</h2> */}
         <p className="text-center">
-          ACM Impact is the social impact initiative within ACM Board. Our mission is to promote an understanding of technology’s ethical and
-          societal implications through education, advocacy, and community
-          engagement.
+          ACM Impact is the social impact initiative within ACM Board. Our mission is to promote an understanding
+          of technology’s ethical and societal implications through education, advocacy, and community engagement.
         </p>
         <br/>
         <h3 className="text-uppercase">Upcoming Events And Projects</h3>
@@ -125,27 +124,27 @@ function Impact() {
         </div>
 
         <h3 className="text-uppercase">Past Events and Projects</h3>
-        <div className={styles.carouselContainer}>
-          <button 
-            className={styles.carouselButton}
+        <div className={styles['carousel-container']}>
+          <button
+            className={styles['carousel-button']}
             onClick={goToPrevEvents}
             aria-label="See previous events"
           >
-            <span className={`${styles.arrowIcon} ${styles.arrowLeft}`} aria-hidden="true"></span>
+            <span className={`${styles.arrowIcon} ${styles['arrow-left']}`} aria-hidden="true"></span>
           </button>
-          
-          <div className={styles.workshopCardsContainer}>
+
+          <div className={styles['workshop-cards-container']}>
             {visibleEvents.map((event) => (
               <WorkshopCard {...event} key={event.title} />
             ))}
           </div>
-          
-          <button 
-            className={styles.carouselButton}
+
+          <button
+            className={styles['carousel-button']}
             onClick={goToNextEvents}
             aria-label="See next events"
           >
-            <span className={`${styles.arrowIcon} ${styles.arrowRight}`} aria-hidden="true"></span>
+            <span className={`${styles['arrow-icon']} ${styles['arrow-right']}`} aria-hidden="true"></span>
           </button>
         </div>
 
@@ -157,9 +156,9 @@ function Impact() {
           <a href={impactBlog} target="_blank" rel="noreferrer noopener">
             our blog
           </a>
-          ! If you'd like to have your work published by us, please email&nbsp;
+          ! If you&rsquo;d like to have your work published by us, please email&nbsp;
           <a href={'mailto:impact@uclaacm.com'}>impact@uclaacm.com</a>. We look forward to reading
-          your work—in the meantime, check out some of our existing posts above. 
+          your work—in the meantime, check out some of our existing posts above.
         </p>
 
         <h2 className="text-center">People</h2>

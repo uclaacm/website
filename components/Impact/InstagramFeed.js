@@ -1,5 +1,5 @@
-import React from 'react';
 import Image from 'next/legacy/image';
+import React from 'react';
 import styles from '../../styles/pages/impact.module.scss';
 
 // Import Instagram logo
@@ -50,7 +50,7 @@ const InstagramFeed = ({ username = 'impact_ucla' }) => {
         <div className={styles.instagramPreview}>
           <p>Recent posts from ACM Impact:</p>
           <div className={styles.instagramMessage}>
-            Due to Instagram's embedding restrictions, we can't display our feed directly on this page. 
+            Due to Instagram&rsquo;s embedding restrictions, we can&rsquo;t display our feed directly on this page.
             Click the button above to see our latest posts!
           </div>
         </div>

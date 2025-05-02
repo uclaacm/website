@@ -79,11 +79,11 @@
   overflow: hidden;
   margin-bottom: 10px;
 
-  & > div {
+  .workshop-image-container > div {
     position: unset !important;
   }
-
-  & img {
+  
+  .workshop-image-container img {
     object-fit: contain;
     width: 100% !important;
     position: relative !important;
@@ -132,6 +132,12 @@
 .carousel-container {
   display: flex;
   flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  margin: 20px 0;
+  position: relative;
+  max-width: 100%;
+  min-height: 450px; // Set minimum height to prevent jumping
 }
 
 .button-container {
@@ -167,20 +173,10 @@
   cursor: pointer;
 }
 
-.carouselContainer {
-  display: flex;
-  align-items: stretch;
-  justify-content: center;
-  margin: 20px 0;
-  position: relative;
-  max-width: 100%;
-  min-height: 450px; // Set minimum height to prevent jumping
-}
-
-.carouselButton {
+.carousel-button {
   background: transparent;
   color: #333;
-  border: none;
+  border: 0;
   width: 50px; // Increased from 40px to 50px
   height: auto;
   font-size: 18px;
@@ -207,7 +203,7 @@
   }
 }
 
-.workshopCardsContainer {
+.workshop-cards-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 15px;
@@ -224,7 +220,7 @@
 }
 
 // Clean arrow icons
-.arrowIcon {
+.arrow-icon {
   width: 10px;
   height: 10px;
   border-style: solid;
@@ -239,16 +235,16 @@
   transition: border-color 0.2s ease;
 }
 
-.carouselButton:hover .arrowIcon {
+.carousel-button:hover .arrow-icon {
   border-color: rgba(0, 0, 0, 0.95);
 }
 
-.arrowLeft {
+.arrow-left {
   transform: translate(-50%, -50%) rotate(135deg); // Center and rotate
   -webkit-transform: translate(-50%, -50%) rotate(135deg);
 }
 
-.arrowRight {
+.arrow-right {
   transform: translate(-50%, -50%) rotate(-45deg); // Center and rotate
   -webkit-transform: translate(-50%, -50%) rotate(-45deg);
 }
