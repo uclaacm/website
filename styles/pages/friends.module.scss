@@ -1,0 +1,96 @@
+@use '../variables.scss';
+
+.friend-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  margin: 0 2em;
+}
+
+// small screens
+.friend-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+
+  .project-card {
+    box-sizing: border-box;
+    flex: 1 1 100%;
+  }
+}
+
+// large screens
+@media (min-width: variables.$tablet-breakpoint) {
+  .friend-card {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    margin: 1em;
+
+    .friend-card-name {
+      margin-top: 0%;
+    }
+  }
+
+  .projects-container .project-card {
+    flex: 0 0 calc(50% - 0.5em);;
+  }
+}
+
+.friend-card-image {
+  display: flex;
+  justify-content: center;
+
+  .image {
+    border-radius: 100%;
+  }
+}
+
+.friend-card-info {
+  width: 100%;
+}
+
+.friend-links-container {
+  display: flex;
+  gap: 0.3em;
+  font-size: 2em;
+}
+
+.project-card {
+  border-radius: 10px;
+  box-shadow: 0 0 1pt 0;
+  padding: 1em;
+
+  img {
+    margin-bottom: 0.5em;
+    border-radius: 4px;
+  }
+
+  h5 {
+    margin: 0.5em 0;
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 0.875rem;
+    color: gray;
+  }
+
+  a {
+    margin-top: 0.5em;
+    font-size: 0.875rem;
+    text-decoration: underline;
+  }
+}
+
+.projects-separator {
+  border: none;
+  border-top: 2px solid gray;
+  margin: 1em 0;
+  opacity: 0.3;
+}

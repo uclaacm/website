@@ -5,33 +5,33 @@ export default [
     links: [
       {
         platform: "website",
-        link: "/",
-      },
-      {
-        platform: "discord",
-        link: "https://discord.gg",
+        link: "https://upe.seas.ucla.edu/",
       },
       {
         platform: "instagram",
-        link: "https://instagram.com",
+        link: "https://www.instagram.com/upeucla",
+      },
+      {
+        platform: "discord",
+        link: "https://tinyurl.com/upe-discord",
       },
     ],
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto sed at atque. Laboriosam quod totam culpa magni error soluta doloremque",
+      "UPE has been a key partner in hosting a variety of events, including town halls and career fairs, enhancing our community's professional development and networking opportunities.",
     projects: [
       {
-        title: "Project A",
+        title: "Town Hall",
         description:
-          "Project summary - Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
-        image: "/images/friends/upe.png",
-        url: "/",
+          "The CS Town Hall is an opportunity for students to directly speak with professors and administrators in the CS department where they can provide feedback to improve curriculum.",
+        image: "",
+        url: "https://acm.cs.ucla.edu/town-hall",
       },
       {
-        title: "Project B",
+        title: "CS Career Fair",
         description:
-          "Project summary - Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
-        image: "/images/friends/upe.png",
-        url: "/",
+          "The CS Career Fair allows students to explore career paths, connect with industry professionals, and learn about job and internship opportunities directly from affiliated company representatives.",
+        image: "",
+        url: "https://www.cs.ucla.edu/upcoming-events/upe-honors-fair-computer-science-career-fair/",
       },
     ],
   },
@@ -41,18 +41,22 @@ export default [
     links: [
       {
         platform: "website",
-        link: "/",
+        link: "https://uclacsfair.splashthat.com/",
+      },
+      {
+        platform: "instagram",
+        link: "https://www.instagram.com/exploretech.la",
       },
     ],
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt eveniet, sed facilis qui quos minus exercitationem labore dolore neque deleniti enim assumenda doloribus distinctio sint architecto obcaecati commodi ducimus iste.",
+      "Our collaborative efforts with exploretech.la have brought exciting exhibitions and opportunities for our members to explore the latest in technology and innovation.",
     projects: [
       {
-        title: "Project C",
+        title: "Town Hall",
         description:
-          "Project summary - Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
-        image: "/images/friends/exploretechla.png",
-        url: "/",
+          "The CS Town Hall is an opportunity for students to directly speak with professors and administrators in the CS department where they can provide feedback to improve curriculum.",
+        image: "",
+        url: "https://acm.cs.ucla.edu/town-hall",
       }
     ],
   },
@@ -62,26 +66,44 @@ export default [
     links: [
       {
         platform: "website",
-        link: "//",
-      },
-      {
-        platform: "discord",
-        link: "https://discord.gg",
+        link: "https://www.creativelabsucla.com/",
       },
       {
         platform: "instagram",
-        link: "https://instagram.com",
+        link: "https://www.instagram.com/creativelabsucla",
+      },
+      {
+        platform: "discord",
+        link: "https://discord.gg/vHenfGNTXJ",
       },
     ],
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt eveniet, sed facilis qui quos minus exercitationem labore dolore neque deleniti enim assumenda doloribus distinctio sint architecto obcaecati commodi ducimus iste.",
-    projects: [],
+      "[insert desc]",
+    projects: [
+      {
+        title: "Playnet",
+        description:
+          "",
+        image: "",
+        url: "ttps://playnet.uclaacm.com/",
+      }
+    ],
   },
   {
     name: "BEAM",
     image: "/images/friends/beam.png",
-    links: [],
-    description: "",
+    links: [
+      {
+        platform: "website",
+        link: "https://beam.ucla.edu/",
+      },
+      {
+        platform: "instagram",
+        link: "https://www.instagram.com/beam_ucla",
+      },
+    ],
+    description: 
+      "BEAM has been a vital collaborator with Teach LA, co-hosting cross-teaching sessions that enrich learning experiences and foster skill-building within our community.",
     projects: [],
   },
   {
