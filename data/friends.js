@@ -41,7 +41,7 @@ export default [
     links: [
       {
         platform: "website",
-        link: "https://uclacsfair.splashthat.com/",
+        link: "https://www.exploretech.la/",
       },
       {
         platform: "instagram",
@@ -85,7 +85,7 @@ export default [
         description:
           "",
         image: "",
-        url: "ttps://playnet.uclaacm.com/",
+        url: "https://playnet.uclaacm.com/",
       }
     ],
   },
@@ -104,27 +104,61 @@ export default [
     ],
     description: 
       "BEAM has been a vital collaborator with Teach LA, co-hosting cross-teaching sessions that enrich learning experiences and foster skill-building within our community.",
-    projects: [],
-  },
-  {
-    name: "ACM at UCSD",
-    image: "/images/friends/acm_ucsd.png",
-    links: [],
-    description: "",
-    projects: [],
+    projects: [
+      {
+        title: "Robotics Fun with BEAM",
+        description:
+          "Robotics Fun with BEAM was a seven-week program where ACM Teach LA and BEAM introduced 4th and 5th graders to robotics, coding, and hands-on assembly with mBots!",
+        image: "",
+        url: "https://teachla.uclaacm.com/beam-robotics",
+      }
+    ],
   },
   {
     name: "LA Hacks",
     image: "/images/friends/lahacks.png",
-    links: [],
-    description: "",
+    links: [
+      {
+        platform: "website",
+        link: "https://lahacks.com/",
+      },
+      {
+        platform: "instagram",
+        link: "https://www.instagram.com/lahacks",
+      },
+    ],
+    description: 
+      "Formerly part of ACM, LA Hacks now collaborates with us on workshops, continuing a tradition of fostering innovation and technical excellence.",
     projects: [],
   },
   {
     name: "QWER Hacks",
     image: "/images/friends/qwerhacks.png",
-    links: [],
-    description: "",
+    links: [
+      {
+        platform: "website",
+        link: "https://www.qwerhacks.com/",
+      },
+      {
+        platform: "instagram",
+        link: "https://www.instagram.com/qwerhacks",
+      },
+    ],
+    description: 
+      "QWER Hacks and our organization share founding members and a commitment to diversity and inclusion, working together on impactful workshops and events.",
+    projects: [],
+  },
+  {
+    name: "ACM at UCSD",
+    image: "/images/friends/acm_ucsd.png",
+    links: [
+      {
+        platform: "website",
+        link: "https://acmucsd.com/",
+      },
+    ],
+    description: 
+      "ACM at UCSD has been a close ally, supporting a wide range of activities and initiatives as a prominent SoCal friend and spin-off from our own organization.",
     projects: [],
   },
 ];

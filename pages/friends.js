@@ -52,7 +52,7 @@ function FriendIconLink({ friend, link }) {
         rel='noreferrer noopener'
         aria-label={iconStr}
       >
-          <LinkIcon platform={link.platform} />
+        <LinkIcon platform={link.platform} />
       </a>
   );
 }
@@ -60,6 +60,7 @@ function FriendIconLink({ friend, link }) {
 function FriendCard({ friend }) {
   return (
     <div className={styles['friend-card']}>
+
       <div className={styles['friend-card-image']}>
         <Image className={styles['image']} src={friend.image} alt={friend.name} width={150} height={150} />
       </div>
@@ -67,7 +68,6 @@ function FriendCard({ friend }) {
       <div className={styles['friend-card-info']}>
         <h2 className={styles['friend-card-name']}>{friend.name}</h2>
         <p>{friend.description}</p>
-
         {/* Links Section */}
         {friend.links.length > 0 && (
           <div className={styles['friend-links-container']}>
@@ -76,36 +76,35 @@ function FriendCard({ friend }) {
             ))}
           </div>
         )}
-        
         {/* Compact Horizontal Projects */}
-        <hr className={styles['projects-separator']} />
-        <h3>Past Collaborations</h3>
-
+        {/* Potentially make the projects a dropdown if the list gets too long in the future? */}
         {friend.projects.length > 0 && (
-          <div className={styles['projects-container']}>
-
-            {friend.projects.map((project, index) => (
-              <div key={index} className={styles['project-card']}>
-                {project.image && <Image 
-                  src={project.image} 
-                  alt={project.title} 
-                  width={80} 
-                  height={80} 
-                />}
-                <h5>{project.title}</h5>
-                <p>{project.description}</p>
-                <a href={project.url} target="_blank" rel="noopener noreferrer">
-                  View
-                </a>
-              </div>
-            ))}
-            
-          </div>
+          <>
+            <hr className={styles['projects-separator']} />
+            <h3>Past Collaborations</h3>
+            <div className={styles['project-cards']}>
+              {friend.projects.map((project, index) => (
+                <div key={index} className={styles['project-card']}>
+                  {project.image && <Image 
+                    src={project.image} 
+                    alt={project.title} 
+                    width={80} 
+                    height={80} 
+                  />}
+                  <div className={styles['project-card-info']}>
+                    <h4>{project.title}</h4>
+                    <p>{project.description}</p>
+                  </div>
+                  <a href={project.url} target="_blank" rel="noopener noreferrer">
+                    View
+                  </a>
+                </div>
+              ))}  
+            </div>
+          </>
         )}
-
-
       </div>
-      
+
     </div>
   );
 }
@@ -134,7 +133,7 @@ function Friends() {
 
       <div className={styles['friend-cards']}>
         {friends.map((friend, index) => (
-          <FriendCard friend={friend} />
+          <FriendCard key={index} friend={friend} />
         ))}
       </div>
 
