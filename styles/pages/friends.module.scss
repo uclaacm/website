@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   gap: 2em;
-  margin: 0 3em 3em 3em;
+  margin: 0 2em 3em 2em;
 }
 
 // small screens
@@ -26,8 +26,13 @@
 
 // large screens
 @media (min-width: variables.$tablet-breakpoint) {
+  .friend-cards {
+    margin: 0 auto 3em auto;
+    max-width: 800px;
+    justify-content: center;
+  }
+
   .friend-card {
-    display: flex;
     flex-direction: row;
     gap: 2em;
 
@@ -36,8 +41,10 @@
     }
   }
 
-  .project-cards .project-card {
-    flex: 0 0 calc(50% - 0.5em);
+  .project-cards {
+    .project-card {
+      flex: 0 0 calc(50% - 0.5em);
+    }
   }
 }
 
@@ -52,6 +59,14 @@
 
 .friend-card-info {
   width: 100%;
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 1em;
+  }
 }
 
 .friend-links-container {
@@ -76,11 +91,11 @@
   .project-card-info {
     h4 {
       margin: 0.5em 0;
-      font-size: 1rem;
+      font-size: 1em;
     }
 
     p {
-      font-size: 0.875rem;
+      font-size: 0.8em;
       color: variables.$font-secondary-color;
     }
   }
