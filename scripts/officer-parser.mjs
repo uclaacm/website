@@ -125,6 +125,6 @@ function writeToOutput(officers) {
   const outputPath = path.join(process.cwd(), 'data', 'offoutput.json');
   fs.writeFile(outputPath, out, (err) => {
     if (err) throw err;
-    console.log('Output successfully saved to offoutput.json');
+    console.log('Output successfully saved to data/offoutput.json');
   });
 }

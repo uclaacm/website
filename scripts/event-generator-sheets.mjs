@@ -205,7 +205,7 @@ function writeToOutput(events) {
     fs.writeFile(outputPath, out, (err) => {
     if (err) throw err;
     // eslint-disable-next-line no-console
-    console.log('Output successfully saved to output.json');
+    console.log('Output successfully saved to data/output.json');
   });
 }
 
