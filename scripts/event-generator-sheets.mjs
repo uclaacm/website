@@ -3,6 +3,7 @@ import { resolve } from 'path';
 import dotenv from 'dotenv';
 import { google } from 'googleapis';
 import { getCssStringFromCommittee, generateSingleEvent } from './lib.mjs';
+import path from 'path';
 
 // .env config
 dotenv.config();
@@ -200,7 +201,8 @@ async function getGoogleSheetData(range) {
 function writeToOutput(events) {
   // Write to output.json
   const out = JSON.stringify(events);
-  fs.writeFile('output.json', out, (err) => {
+  const outputPath = path.join(process.cwd(), 'data', 'output.json');
+    fs.writeFile(outputPath, out, (err) => {
     if (err) throw err;
     // eslint-disable-next-line no-console
     console.log('Output successfully saved to output.json');

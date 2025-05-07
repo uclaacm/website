@@ -1,6 +1,7 @@
 import * as fs from 'fs';
 import { google } from 'googleapis';
 import * as dotenv from 'dotenv';
+import path from 'path';
 
 dotenv.config();
 const SERVICE_ACCOUNT = process.env.SERVICE_ACCOUNT;
@@ -121,7 +122,8 @@ async function getGoogleSheetData(range) {
 function writeToOutput(officers) {
   // Write to offoutput.json
   const out = JSON.stringify(officers);
-  fs.writeFile('offoutput.json', out, (err) => {
+  const outputPath = path.join(process.cwd(), 'data', 'offoutput.json');
+  fs.writeFile(outputPath, out, (err) => {
     if (err) throw err;
     console.log('Output successfully saved to offoutput.json');
   });
