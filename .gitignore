@@ -35,12 +35,12 @@ yarn-error.log*
 
 # script remnants
 *.csv
-output.json
-offoutput.json
-townhall.json
-past-townhall.json
-gmData.json
-past-gm.json
+/data/output.json
+/data/offoutput.json
+/data/townhall.json
+/data/past-townhall.json
+/data/gmData.json
+/data/past-gm.json
 
 # Local Netlify folder
 .netlify

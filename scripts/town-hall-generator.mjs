@@ -1,6 +1,7 @@
 import fs from 'fs';
 import dotenv from 'dotenv';
 import { google } from 'googleapis';
+import path from 'path';
 
 // .env config
 dotenv.config();
@@ -77,15 +78,17 @@ async function fetchPastTownHallData() {
 // Write data from sheets to a json file
 async function writeToOutput(name, formattedData) {
   const output = JSON.stringify(formattedData);
-  fs.writeFile(name, output, (err) => {
+  const filePath = path.join(process.cwd(), 'data', name);
+  fs.writeFile(filePath, output, (err) => {
     if (err) throw err;
     // eslint-disable-next-line no-console
-    console.log('Output successfully saved to', name);
+    console.log('Saved output:', filePath);
   });
 }
 
-// Outputs all necessary json files
+// Outputs all necessary JSON files
 async function writeAllOutputs() {
-  writeToOutput('townhall.json', await fetchTownHallData());
-  writeToOutput('past-townhall.json', await fetchPastTownHallData());
+  await writeToOutput('townhall.json', await fetchTownHallData());
+  await writeToOutput('past-townhall.json', await fetchPastTownHallData());
 }
+
