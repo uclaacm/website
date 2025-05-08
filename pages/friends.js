@@ -68,7 +68,8 @@ function FriendCard({ friend }) {
       <div className={styles['friend-card-info']}>
         <h2 className={styles['friend-card-name']}>{friend.name}</h2>
         <p>{friend.description}</p>
-        {/* Links Section */}
+
+        {/* Friend Links */}
         {friend.links.length > 0 && (
           <div className={styles['friend-links-container']}>
             {friend.links.map((link, index) => (
@@ -76,7 +77,8 @@ function FriendCard({ friend }) {
             ))}
           </div>
         )}
-        {/* Compact Horizontal Projects */}
+
+        {/* Friend Past Collaborations */}
         {/* Potentially make the projects a dropdown if the list gets too long in the future? */}
         {friend.projects.length > 0 && (
           <>
@@ -129,9 +131,8 @@ function Friends() {
       />
       <Banner decorative />
 
-      <h1 className='text-center'>Friends of ACM</h1>
-
-      <div className={styles['friend-cards']}>
+      <div className={styles['friend-container']}>
+        <h1 className='text-center'>Friends of ACM</h1>
         {friends.map((friend, index) => (
           <FriendCard key={index} friend={friend} />
         ))}

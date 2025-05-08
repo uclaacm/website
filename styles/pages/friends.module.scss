@@ -1,6 +1,6 @@
 @use '../variables.scss';
 
-.friend-cards {
+.friend-container {
   display: flex;
   flex-direction: column;
   gap: 2em;
@@ -26,7 +26,7 @@
 
 // large screens
 @media (min-width: variables.$tablet-breakpoint) {
-  .friend-cards {
+  .friend-container {
     margin: 0 auto 3em auto;
     max-width: 800px;
     justify-content: center;
@@ -84,8 +84,8 @@
   padding: 1em;
 
   img {
+    border-radius: 5%;
     margin-bottom: 0.5em;
-    border-radius: 4px;
   }
 
   .project-card-info {
@@ -101,9 +101,9 @@
   }
 
   a {
+    align-self: flex-start;
     color: variables.$acm-cobalt;
-    margin-top: 0.5em;
-    font-size: 0.875rem;
+    font-size: 0.9rem;
     text-decoration: underline;
 
     &:hover {
