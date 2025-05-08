@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   gap: 2em;
-  margin: 0 2em 3em 2em;
+  margin: 0 2em 3em;
 }
 
 // small screens
@@ -17,17 +17,12 @@
   display: flex;
   flex-wrap: wrap;
   gap: 1em;
-
-  .project-card {
-    box-sizing: border-box;
-    flex: 1 1 100%;
-  }
 }
 
 // large screens
 @media (min-width: variables.$tablet-breakpoint) {
   .friend-container {
-    margin: 0 auto 3em auto;
+    margin: 0 auto 3em;
     max-width: 800px;
     justify-content: center;
   }
@@ -52,7 +47,7 @@
   display: flex;
   justify-content: center;
 
-  .image {
+  img {
     border-radius: 100%;
   }
 }
@@ -76,9 +71,11 @@
 }
 
 .project-card {
+  box-sizing: border-box;
   border-radius: 10px;
   box-shadow: 0 0 1pt 0;
   display: flex;
+  flex: 1 1 100%;
   flex-direction: column;
   justify-content: space-between;
   padding: 1em;
@@ -114,7 +111,6 @@
 }
 
 .projects-separator {
-  border: none;
   border-top: 2px solid gray;
   margin: 1em 0;
   opacity: 0.3;

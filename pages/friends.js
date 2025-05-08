@@ -1,5 +1,3 @@
-import { NextSeo } from 'next-seo';
-import Image from 'next/image';
 import {
   faFacebook,
   faInstagram,
@@ -10,13 +8,15 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import { faLink } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Image from 'next/image';
+import { NextSeo } from 'next-seo';
 
-import Layout from '../components/Layout';
 import Banner from '../components/Banner';
-
-import styles from '../styles/pages/friends.module.scss';
+import Layout from '../components/Layout';
 
 import friends from '../data/friends';
+
+import styles from '../styles/pages/friends.module.scss';
 
 // From `committees.js` - refactor into utility
 function LinkIcon({ platform }) {
@@ -45,15 +45,15 @@ function FriendIconLink({ friend, link }) {
   const iconStr =
     link.platform === 'website' ? `${friend}'s website` : `${friend} on ${link.platform}`;
   return (
-      <a
-        className='icon-link'
-        href={link.link}
-        target='_blank'
-        rel='noreferrer noopener'
-        aria-label={iconStr}
-      >
-        <LinkIcon platform={link.platform} />
-      </a>
+    <a
+      className="icon-link"
+      href={link.link}
+      target="_blank"
+      rel="noreferrer noopener"
+      aria-label={iconStr}
+    >
+      <LinkIcon platform={link.platform} />
+    </a>
   );
 }
 
@@ -62,9 +62,9 @@ function FriendCard({ friend }) {
     <div className={styles['friend-card']}>
 
       <div className={styles['friend-card-image']}>
-        <Image className={styles['image']} src={friend.image} alt={friend.name} width={150} height={150} />
+        <Image src={friend.image} alt={friend.name} width={150} height={150} />
       </div>
-      
+
       <div className={styles['friend-card-info']}>
         <h2 className={styles['friend-card-name']}>{friend.name}</h2>
         <p>{friend.description}</p>
@@ -73,7 +73,7 @@ function FriendCard({ friend }) {
         {friend.links.length > 0 && (
           <div className={styles['friend-links-container']}>
             {friend.links.map((link, index) => (
-                <FriendIconLink org={friend.name} link={link} key={index} />
+              <FriendIconLink org={friend.name} link={link} key={index} />
             ))}
           </div>
         )}
@@ -87,11 +87,11 @@ function FriendCard({ friend }) {
             <div className={styles['project-cards']}>
               {friend.projects.map((project, index) => (
                 <div key={index} className={styles['project-card']}>
-                  {project.image && <Image 
-                    src={project.image} 
-                    alt={project.title} 
-                    width={80} 
-                    height={80} 
+                  {project.image && <Image
+                    src={project.image}
+                    alt={project.title}
+                    width={80}
+                    height={80}
                   />}
                   <div className={styles['project-card-info']}>
                     <h4>{project.title}</h4>
@@ -101,7 +101,7 @@ function FriendCard({ friend }) {
                     View
                   </a>
                 </div>
-              ))}  
+              ))}
             </div>
           </>
         )}
@@ -115,7 +115,7 @@ function Friends() {
   return (
     <Layout>
       <NextSeo
-        title='Partner Organizations | ACM at UCLA'
+        title="Partner Organizations | ACM at UCLA"
         description="ACM at UCLA couldn't happen without our amazing sponsors, partners, and affiliates that support all of our work. Interested in parterning with us? Send as an email at acm@ucla.edu!"
         openGraph={{
           images: [
@@ -132,14 +132,14 @@ function Friends() {
       <Banner decorative />
 
       <div className={styles['friend-container']}>
-        <h1 className='text-center'>Friends of ACM</h1>
+        <h1 className="text-center">Friends of ACM</h1>
         {friends.map((friend, index) => (
           <FriendCard key={index} friend={friend} />
         ))}
       </div>
 
     </Layout>
-  )
+  );
 }
 
 export default Friends;
