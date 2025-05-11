@@ -26,9 +26,9 @@ function Timeline({ historyLog }) {
   });
 
   return (
-    <div className={styles['timeline-Container']}>
-      <div className={styles['timeline-VerticalLine-Container']}>
-        <div className={styles['timeline-VerticalLine']}></div>
+    <div className={styles['timeline-container']}>
+      <div className={styles['timeline-verticalline-container']}>
+        <div className={styles['timeline-verticalline']}></div>
         {historyLog.map((event, index) => (
           <div key={index} className={styles['timeline-event-container']}>
             {index % 2 === 0 ? (
