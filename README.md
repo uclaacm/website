@@ -48,9 +48,10 @@ $ nvm use 20 #or whatever Node Version you installed
 $ npm install
 ```
 
-Our app's development and build cycle is managed by [Next.js](https://nextjs.org/); so, we can just run `npm start` to serve our app:
+Our app's development and build cycle is managed by [Next.js](https://nextjs.org/); so, we can just run `npm run build` to update databases and `npm start` to serve our app:
 
 ```sh
+$ npm run build
 $ npm start
 
 > acm-website@0.1.0 start /Users/matt/code/acm-website
