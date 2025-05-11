@@ -1,9 +1,9 @@
 import { NextSeo } from 'next-seo';
-import { historyEvents } from '../data/history';
 import Banner from '../components/Banner';
 import Timeline from '../components/History/Timeline';
 import Layout from '../components/Layout';
-import data from '../data';
+import { historyEvents } from '../data/history';
+
 // import Archive from '../components/Committees/ArchiveSidebar';
 function HistoryBanner() {
   //fix description
