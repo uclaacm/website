@@ -69,7 +69,7 @@ module.exports = {
       {
         protocol: 'https',
         hostname: 'samueli.ucla.edu',
-      }
+      },
     ],
   },
 };
