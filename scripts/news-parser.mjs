@@ -5,7 +5,7 @@ import * as dotenv from 'dotenv';
 dotenv.config();
 
 const SERVICE_ACCOUNT = process.env.SERVICE_ACCOUNT;
-const SPREADSHEET_ID   = process.env.WEBSITE_DATA_HUB_SPREADSHEET_ID;
+const SPREADSHEET_ID   = process.env.DATAHUB_SPREADSHEET_ID;
 
 // Kick it off:
 writeToOutput(await getGoogleSheetData('InTheNews!A2:E'));
