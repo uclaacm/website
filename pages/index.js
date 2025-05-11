@@ -11,9 +11,13 @@ import SocialMedia from '../components/SocialMedia';
 // import ContentBanner from '../components/ContentBanner';
 
 import data from '../data';
+import news from '../newsoutput.json';
 
 function Home() {
-  const { carousel, committees, news } = data;
+  const { carousel, committees } = data;
+  
+  // Reverse news since oldest news at the top of InTheNews Sheet
+  const sortedNews = [...news].reverse();
 
   const [expanded, setExpanded] = useState(false);
   const [windowWidth, setWindowWidth] = useState(1630);
@@ -70,7 +74,7 @@ function Home() {
         <div className="content-section">
           <h2>In the News</h2>
           <div className="achievements-container">
-            {news.slice(0, displayCount).map((article, index) => (
+            {sortedNews.slice(0, displayCount).map((article, index) => (
               <Article key={`${article.date}-${index}`} article={article} />
             ))}
           </div>
