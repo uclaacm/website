@@ -15,7 +15,7 @@ import news from '../newsoutput.json';
 
 function Home() {
   const { carousel, committees } = data;
-  
+
   // Reverse news since oldest news at the top of InTheNews Sheet
   const sortedNews = [...news].reverse();
 
