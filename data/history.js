@@ -1,151 +1,150 @@
 
-
 const historyEvents = [
   {
-    id: "acm-w-charter",
-    date: {
-      year: 2015, 
-      month: "December",
-      date: 1  // day of month is optional
-    },
-    description: "ACM-W officially chartered",
-    details:
-      "UCLA ACM-W was officially chartered, establishing a dedicated committee focused on supporting and promoting women in computing at UCLA.",
-    committee: "ACM-W",
-  },
-  {
-    id: "hacker-expo",
+    id: 'acm-w-charter',
     date: {
       year: 2015,
-      month: "November"
-      // date field is optional
+      month: 'December',
+      date: 1,  // day of month is optional
     },
-    description: "Hacker Expo (now Tech Gala) founded",
+    description: 'ACM-W officially chartered',
     details:
-      "The first Hacker Expo was organized, showcasing student projects and innovations. This event later evolved into what is now known as the Tech Gala.",
-    committee: "General",
+      'UCLA ACM-W was officially chartered, establishing a dedicated committee focused on supporting and promoting women in computing at UCLA.',
+    committee: 'ACM-W',
   },
   {
-    id: "founder-school",
+    id: 'hacker-expo',
+    date: {
+      year: 2015,
+      month: 'November',
+      // date field is optional
+    },
+    description: 'Hacker Expo (now Tech Gala) founded',
+    details:
+      'The first Hacker Expo was organized, showcasing student projects and innovations. This event later evolved into what is now known as the Tech Gala.',
+    committee: 'General',
+  },
+  {
+    id: 'founder-school',
     date: {
       year: 2016,
-      month: "May"
+      month: 'May',
     },
     description: "Launched UCLA's founder school with UPE",
     details:
       "ACM collaborated with Upsilon Pi Epsilon (UPE) to launch UCLA's founder school, providing resources and guidance for student entrepreneurs.",
-    committee: "General",
+    committee: 'General',
   },
   {
-    id: "restructure",
+    id: 'restructure',
     date: {
       year: 2016,
-      month: "May"
+      month: 'May',
     },
-    description: "Restructured ACM into 5 external committees: Hack, AI, ICPC, ACM-W, VRCG",
+    description: 'Restructured ACM into 5 external committees: Hack, AI, ICPC, ACM-W, VRCG',
     details:
-      "A major organizational restructuring created five specialized external committees to better serve different interests within the computing community.",
-    committee: "General",
+      'A major organizational restructuring created five specialized external committees to better serve different interests within the computing community.',
+    committee: 'General',
   },
   {
-    id: "hack-school",
+    id: 'hack-school',
     date: {
       year: 2016,
-      month: "October"
+      month: 'October',
     },
-    description: "Hack School launched",
+    description: 'Hack School launched',
     details:
-      "Hack School was established as an educational initiative to teach practical programming skills to UCLA students.",
-    committee: "ACM-Hack",
+      'Hack School was established as an educational initiative to teach practical programming skills to UCLA students.',
+    committee: 'ACM-Hack',
   },
   {
-    id: "teach-la-start",
+    id: 'teach-la-start',
     date: {
       year: 2017,
-      month: "January"
+      month: 'January',
     },
-    description: "ACM Teach LA started as a board initiative",
+    description: 'ACM Teach LA started as a board initiative',
     details:
-      "Teach LA began as a board initiative focused on bringing computer science education to local schools in Los Angeles.",
-    committee: "ACM-TeachLA",
+      'Teach LA began as a board initiative focused on bringing computer science education to local schools in Los Angeles.',
+    committee: 'ACM-TeachLA',
   },
   {
-    id: "icpc-finals",
+    id: 'icpc-finals',
     date: {
       year: 2017,
-      month: "March"
+      month: 'March',
     },
-    description: "ACM ICPC qualifies for ICPC world finals",
+    description: 'ACM ICPC qualifies for ICPC world finals',
     details:
-      "The UCLA ACM ICPC team achieved a significant milestone by qualifying for the ICPC World Finals, demonstrating exceptional problem-solving skills.",
-    committee: "ACM-ICPC",
+      'The UCLA ACM ICPC team achieved a significant milestone by qualifying for the ICPC World Finals, demonstrating exceptional problem-solving skills.',
+    committee: 'ACM-ICPC',
   },
   {
-    id: "devx-spinoff",
+    id: 'devx-spinoff',
     date: {
       year: 2017,
-      month: "March"
+      month: 'March',
     },
-    description: "DevX spins off out of ACM",
+    description: 'DevX spins off out of ACM',
     details:
-      "DevX, which began as part of ACM, became an independent organization focused on software development for real-world applications.",
-    committee: "General",
+      'DevX, which began as part of ACM, became an independent organization focused on software development for real-world applications.',
+    committee: 'General',
   },
   {
-    id: "game-studio-merge",
+    id: 'game-studio-merge',
     date: {
       year: 2017,
-      month: "March"
+      month: 'March',
     },
-    description: "Bruin Game Studio merges with ACM to become ACM Game Studio",
+    description: 'Bruin Game Studio merges with ACM to become ACM Game Studio',
     details:
-      "Bruin Game Studio joined forces with ACM to form ACM Game Studio, creating a stronger community for game development enthusiasts.",
-    committee: "ACM-Studio",
+      'Bruin Game Studio joined forces with ACM to form ACM Game Studio, creating a stronger community for game development enthusiasts.',
+    committee: 'ACM-Studio',
   },
   {
-    id: "ctf-launch",
+    id: 'ctf-launch',
     date: {
       year: 2017,
-      month: "May"
+      month: 'May',
     },
-    description: "ACM CTF launched",
+    description: 'ACM CTF launched',
     details:
-      "The Capture The Flag (CTF) competition was launched, providing students with hands-on cybersecurity experience in a competitive format.",
-    committee: "ACM-Cyber",
+      'The Capture The Flag (CTF) competition was launched, providing students with hands-on cybersecurity experience in a competitive format.',
+    committee: 'ACM-Cyber',
   },
   {
-    id: "teachla-committee",
+    id: 'teachla-committee',
     date: {
       year: 2018,
-      month: "September"
+      month: 'September',
     },
-    description: "ACM Teach LA becomes a new committee (from board)",
+    description: 'ACM Teach LA becomes a new committee (from board)',
     details:
-      "After demonstrating significant impact as a board initiative, Teach LA was established as a full committee within ACM.",
-    committee: "ACM-TeachLA",
+      'After demonstrating significant impact as a board initiative, Teach LA was established as a full committee within ACM.',
+    committee: 'ACM-TeachLA',
   },
   {
-    id: "design-committee",
+    id: 'design-committee',
     date: {
       year: 2019,
-      month: "January"
+      month: 'January',
     },
-    description: "ACM Design becomes a new committee (putting on external events)",
+    description: 'ACM Design becomes a new committee (putting on external events)',
     details:
-      "ACM Design was formed as a new committee dedicated to design in technology, organizing external events and workshops.",
-    committee: "ACM-Design",
+      'ACM Design was formed as a new committee dedicated to design in technology, organizing external events and workshops.',
+    committee: 'ACM-Design',
   },
   {
-    id: "testing delete later",
+    id: 'testing delete later',
     date: {
       year: 2025,
-      month: "May"
+      month: 'May',
     },
-    description: "ACM CTF launched",
+    description: 'ACM CTF launched',
     details:
-      "The Capture The Flag (CTF) competition was launched, providing students with hands-on cybersecurity experience in a competitive format.",
-    committee: "ACM-Cyber",
+      'The Capture The Flag (CTF) competition was launched, providing students with hands-on cybersecurity experience in a competitive format.',
+    committee: 'ACM-Cyber',
   },
-]
+];
 
 export {historyEvents};
