@@ -78,7 +78,7 @@ export default [
       },
     ],
     description:
-      'Creative Labs has been a partner for various projects - take a look at the example below!',
+      'Creative Labs has been a partner in the past for various projects - take a look at the example below!',
     projects: [
       {
         title: 'Playnet',
