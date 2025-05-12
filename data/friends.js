@@ -78,7 +78,7 @@ export default [
       },
     ],
     description:
-      '[insert desc]',
+      'Creative Labs has been a partner in the part for various projects - take a look at the example below!',
     projects: [
       {
         title: 'Playnet',
