@@ -1,10 +1,10 @@
 @use '../../variables.scss';
 
 .timeline-container {
-  max-width: 1200px;
   margin: 0 auto;
   padding: 2rem 1rem;
   position: relative;
+  min-width: 100%;
 }
 
 .timeline-verticalline-container {
@@ -26,8 +26,8 @@
 .timeline-event-container {
   display: grid;
   grid-template-columns: 45% 10% 45%;
-  margin-bottom: 2rem;
   position: relative;
+  align-items: center;   
 }
 
 .timeline-center {
@@ -55,8 +55,8 @@
 }
 
 .calendar-icon {
-  position: absolute;
-  z-index: 20;
+  position: relative;
+  z-index: 1;
   height: 2rem;
   width: 2rem;
   border-radius: 50%;
@@ -83,6 +83,7 @@
   transition: all 0.3s ease-in-out;
   background-color: white;
   border-radius: 8px;
+  font-size: 1rem;
 
   &:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -91,7 +92,7 @@
 }
 
 .timeline-card-description {
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.25rem;
 }
   
 .timeline-card-committee {
@@ -129,7 +130,7 @@
   padding-top: 0.75rem;
   padding-bottom: 0.5rem;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
-  margin-top: 0.5rem;
+  margin-top: 0.25rem;
   color: #666;
   font-size: 0.9rem;
 }

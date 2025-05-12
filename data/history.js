@@ -134,17 +134,6 @@ const historyEvents = [
       'ACM Design was formed as a new committee dedicated to design in technology, organizing external events and workshops.',
     committee: 'ACM-Design',
   },
-  {
-    id: 'testing delete later',
-    date: {
-      year: 2025,
-      month: 'May',
-    },
-    description: 'ACM CTF launched',
-    details:
-      'The Capture The Flag (CTF) competition was launched, providing students with hands-on cybersecurity experience in a competitive format.',
-    committee: 'ACM-Cyber',
-  },
 ];
 
 export {historyEvents};
