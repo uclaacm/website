@@ -1,0 +1,117 @@
+@use '../variables.scss';
+
+.friend-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  margin: 0 2em 3em;
+}
+
+// small screens
+.friend-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+// large screens
+@media (min-width: variables.$tablet-breakpoint) {
+  .friend-container {
+    margin: 0 auto 3em;
+    max-width: 800px;
+    justify-content: center;
+  }
+
+  .friend-card {
+    flex-direction: row;
+    gap: 2em;
+
+    .friend-card-name {
+      margin-top: 0%;
+    }
+  }
+
+  .project-cards {
+    .project-card {
+      flex: 0 0 calc(50% - 0.5em);
+    }
+  }
+}
+
+.friend-card-image {
+  display: flex;
+  justify-content: center;
+
+  img {
+    border-radius: 100%;
+  }
+}
+
+.friend-card-info {
+  width: 100%;
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+}
+
+.friend-links-container {
+  display: flex;
+  gap: 0.3em;
+  font-size: 2em;
+}
+
+.project-card {
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 0 0 1pt 0;
+  display: flex;
+  flex: 1 1 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1em;
+
+  img {
+    border-radius: 5%;
+    margin-bottom: 0.5em;
+  }
+
+  .project-card-info {
+    h4 {
+      margin: 0.5em 0;
+      font-size: 1em;
+    }
+
+    p {
+      font-size: 0.8em;
+      color: variables.$font-secondary-color;
+    }
+  }
+
+  a {
+    align-self: flex-start;
+    color: variables.$acm-cobalt;
+    font-size: 0.9rem;
+    text-decoration: underline;
+
+    &:hover {
+      color: variables.$acm-black;
+      cursor: pointer;
+    }
+  }
+}
+
+.projects-separator {
+  border-top: 2px solid gray;
+  margin: 1em 0;
+  opacity: 0.3;
+}
