@@ -37,12 +37,12 @@ yarn-error.log*
 *.csv
 
 /data/newsoutput.json
-/data/output.json
-/data/offoutput.json
-/data/townhall.json
-/data/past-townhall.json
-/data/gmData.json
-/data/past-gm.json
+output.json
+offoutput.json
+townhall.json
+past-townhall.json
+gmData.json
+past-gm.json
 
 # Local Netlify folder
 .netlify
