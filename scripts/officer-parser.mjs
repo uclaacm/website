@@ -1,6 +1,7 @@
 import * as fs from 'fs';
 import { google } from 'googleapis';
 import * as dotenv from 'dotenv';
+import path from 'path';
 
 dotenv.config();
 const SERVICE_ACCOUNT = process.env.SERVICE_ACCOUNT;
@@ -31,6 +32,8 @@ async function getGoogleSheetData(range) {
   await jwtClient.authorize();
 
   const committees = [
+    'Board',
+    'Board, Dev Team',
     'Board, Internal',
     'Board, External',
     'AI',
@@ -70,8 +73,11 @@ async function getGoogleSheetData(range) {
             const url = new URL(image);
             const host = url.hostname;
             if (host === 'drive.google.com') {
-              const fileID = image.match(/\/file\/d\/(.+?)\//)[1]; //convert gdrive urls into viewable url using regex
-              image = `https://drive.google.com/thumbnail?id=${fileID}`;
+              const match = image.match(/\/file\/d\/(.+?)(?:\/|$)/);
+              if (match && match[1]) {
+                const fileID = match[1];
+                image = `https://drive.google.com/thumbnail?id=${fileID}`;
+              }
             } else if (host === 'github.com') {
               const regex =
                 /^https:\/\/github\.com\/([^\/]+)\/([^\/]+)\/blob\/([^\/]+)\/(.+)$/; //convert github urls into viewable url using regex
@@ -116,8 +122,9 @@ async function getGoogleSheetData(range) {
 function writeToOutput(officers) {
   // Write to offoutput.json
   const out = JSON.stringify(officers);
-  fs.writeFile('offoutput.json', out, (err) => {
+  const outputPath = path.join(process.cwd(), 'data', 'offoutput.json');
+  fs.writeFile(outputPath, out, (err) => {
     if (err) throw err;
-    console.log('Output successfully saved to offoutput.json');
+    console.log('Output successfully saved to data/offoutput.json');
   });
 }

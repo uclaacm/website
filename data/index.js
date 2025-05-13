@@ -1,6 +1,7 @@
 import Board from './board';
 import Carousel from './carousel';
 import Committees from './committees';
+import Friends from './friends';
 import Internship from './internship';
 import Leadership from './leadership';
 import Sponsors from './sponsors';
@@ -12,6 +13,7 @@ export default {
   sponsors: Sponsors,
   leadership: Leadership,
   tgprojects: TGProjects,
+  friends: Friends,
   internship: Internship,
   board: Board,
 };

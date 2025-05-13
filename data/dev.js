@@ -159,6 +159,26 @@ export const projects = [
     alt: 'Membership Portal!',
   },
   {
+    name: 'Portal Refresh',
+    prim_lang: 'JS',
+    proj_link: 'https://members.uclaacm.com/login',
+    repo_link: 'https://github.com/uclaacm/membership-portal',
+    description: `We are in the process of updating the Membership Portal with a refreshed UI and new
+    features! The new portal will be built with Next.js, TypeScript, and Tailwind CSS.`,
+    img: '/images/dev-projects/membership_new.png',
+    alt: 'New Membership Portal!',
+  },
+  {
+    name: 'Server Cluster',
+    prim_lang: 'N/A',
+    proj_link: '',
+    repo_link: '',
+    description: `ACM server cluster to reduce our reliance on AWS and provide a more cost-effective 
+    solution for hosting our projects. We are in the process of trialing a proof of concept.`,
+    img: '/images/dev-projects/servercluster.png',
+    alt: 'No to AWS!',
+  },
+  {
     name: 'Open Source',
     prim_lang: 'JS',
     proj_link: 'https://opensource.uclaacm.com/',
@@ -194,10 +214,10 @@ export const projects = [
   {
     name: '???',
     prim_lang: '???',
-    proj_link: 'mailto:snigdha0206@g.ucla.edu',
-    repo_link: 'mailto:snigdha0206@g.ucla.edu',
-    description: `Have an idea for a project or any questions?<br><br>Feel free to contact Snigdha 
-    Kansal (<a href="mailto:snigdha0206@g.ucla.edu">Email</a>), our Dev Team Director.`,
+    proj_link: 'mailto:dev@uclaacm.com',
+    repo_link: 'mailto:dev@uclaacm.com',
+    description: `Have an idea for a project or any questions?<br><br>Feel free to contact Alex Zheng
+     (<a href="mailto:dev@uclaacm.com">Email</a>), our Dev Team Director.`,
     img: '/images/dev-projects/acmlogocopy.jpg',
     alt: 'ACM Logo!',
   },
