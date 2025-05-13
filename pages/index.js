@@ -11,7 +11,7 @@ import SocialMedia from '../components/SocialMedia';
 // import ContentBanner from '../components/ContentBanner';
 
 import data from '../data';
-import news from '../newsoutput.json';
+import news from '../data/newsoutput.json';
 
 function Home() {
   const { carousel, committees } = data;
