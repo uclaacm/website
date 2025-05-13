@@ -23,7 +23,7 @@ function Home() {
   const sortedNews = [...news].reverse();
 
   const [expanded, setExpanded] = useState(false);
-  const [windowWidth, setWindowWidth] = useState(1630);
+  const [windowWidth, setWindowWidth] = useState(1440);
 
   useEffect(() => {
     const handleResize = () => setWindowWidth(window.innerWidth);
