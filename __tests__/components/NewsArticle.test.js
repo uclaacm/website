@@ -1,3 +1,14 @@
+// __tests__/components/NewsArticle.test.js
+
+// Mock the dynamically generated newsoutput.json file
+jest.mock('../../data/newsoutput.json', () => [
+  {
+    title: 'Test News Article',
+    date: '2025-01-01',
+    content: 'This is mock content for testing purposes.',
+  },
+]);
+
 import { render } from '@testing-library/react';
 import { axe, toHaveNoViolations } from 'jest-axe';
 
