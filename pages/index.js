@@ -13,7 +13,7 @@ import SocialMedia from '../components/SocialMedia';
 import data from '../data';
 
 /* eslint-disable import/no-unresolved */
-import news from '../data/newsoutput.json'
+import news from '../data/newsoutput.json';
 /* eslint-enable import/no-unresolved */
 
 function Home() {
