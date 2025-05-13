@@ -2,7 +2,6 @@
 
 .content-section {
   margin: auto;
-  max-width: 800px;
   padding: 0 20px;
   position: relative;
 
@@ -32,6 +31,11 @@
     margin: 20px 0;
     text-align: center;
     width: 100%;
+  }
+
+  .subheading {
+    max-width: 800px;
+    justify-self: center;
   }
 }
 
