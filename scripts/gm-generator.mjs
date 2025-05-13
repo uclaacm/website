@@ -1,6 +1,7 @@
 import fs from 'fs';
 import dotenv from 'dotenv';
 import { google } from 'googleapis';
+import path from 'path';
 
 // .env config
 dotenv.config();
@@ -75,10 +76,11 @@ async function fetchPastGMData() {
 // Write data from sheets to a json file
 async function writeToOutput(name, formattedData) {
   const output = JSON.stringify(formattedData);
-  fs.writeFile(name, output, (err) => {
+  const filePath = path.join(process.cwd(), 'data', name);
+  fs.writeFile(filePath, output, (err) => {
     if (err) throw err;
     // eslint-disable-next-line no-console
-    console.log('Saved output:', name);
+    console.log('Saved output:', filePath);
   });
 }
 

@@ -5,7 +5,7 @@ import Projects from '../components/DevProjectCards';
 import Layout from '../components/Layout';
 import Officers from '../components/OfficerCard';
 import { projects } from '../data/dev';
-import data from '../offoutput.json';
+import data from '../data/offoutput.json';
 import styles from '../styles/pages/Dev.module.scss';
 
 /*const devTeamDirector = {
@@ -15,16 +15,16 @@ import styles from '../styles/pages/Dev.module.scss';
 
 const devTeamAdvisor = {
   role: 'Dev Team Advisor',
-  name: 'Arsh Malik',
-  pronouns: 'he/him/his',
+  name: 'Snigdha Kansal',
+  pronouns: 'she/her/hers',
   year: '2025',
   major: 'Computer Science',
   photo:
-    'https://drive.google.com/thumbnail?id=1d1wYxOHHS5hGzC4xOU9_39sUFb1xxSv7',
+    'https://drive.google.com/thumbnail?id=1QMV2ifNFYNHZ1tEyVanN1cqxqTatzR16',
 };
 
 function DevTeam() {
-  const devTeamOfficers = data.filter(officer => officer.role.includes('Dev Team') && officer.committee.includes('Board, Internal'));
+  const devTeamOfficers = data.filter(officer => officer.role.includes('Dev Team') && officer.committee.includes('Board, Dev Team'));
   devTeamOfficers.splice(1, 0, devTeamAdvisor);
   return (
     (<Layout>

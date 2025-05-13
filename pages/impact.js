@@ -8,7 +8,7 @@ import Layout from '../components/Layout';
 import Officers from '../components/OfficerCard';
 
 import { pastEvents } from '../data/impact';
-import data from '../offoutput.json';
+import data from '../data/offoutput.json';
 
 import impactMotifBanner from '../public/images/impact/impact-motif.png';
 import impactathon from '../public/images/impact/impactathon.JPEG';
