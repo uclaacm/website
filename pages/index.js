@@ -11,13 +11,12 @@ import SocialMedia from '../components/SocialMedia';
 // import ContentBanner from '../components/ContentBanner';
 
 import data from '../data';
-import news from '../data/newsoutput.json';
 
 function Home() {
-  const { carousel, committees } = data;
+  const { carousel, committees, newsoutput } = data;
 
   // Reverse news since oldest news at the top of InTheNews Sheet
-  const sortedNews = [...news].reverse();
+  const sortedNews = [...newsoutput].reverse();
 
   const [expanded, setExpanded] = useState(false);
   const [windowWidth, setWindowWidth] = useState(1630);
