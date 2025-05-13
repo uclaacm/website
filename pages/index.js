@@ -11,7 +11,10 @@ import SocialMedia from '../components/SocialMedia';
 // import ContentBanner from '../components/ContentBanner';
 
 import data from '../data';
-import news from '../data/newsoutput.json';
+
+/* eslint-disable import/no-unresolved */
+import news from '../data/newsoutput.json'
+/* eslint-enable import/no-unresolved */
 
 function Home() {
   const { carousel, committees } = data;
