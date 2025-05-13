@@ -1,6 +1,7 @@
 import * as fs from 'fs';
 import { google } from 'googleapis';
 import * as dotenv from 'dotenv';
+import path from 'path';
 
 dotenv.config();
 
@@ -77,9 +78,11 @@ async function getGoogleSheetData(range) {
  * Write the array of articles to disk so we can import it from Next.js
  */
 function writeToOutput(articles) {
-  fs.writeFileSync('newsoutput.json',
-    JSON.stringify(articles, null, 2),
-    'utf-8'
-  );
-  console.log(`✔︎ Wrote ${articles.length} articles to newsoutput.json`);
+    const out = JSON.stringify(articles, null, 2);
+    const outputPath = path.join(process.cwd(), 'data', 'newsoutput.json');
+    
+    fs.writeFile(outputPath, out, 'utf-8', (err) => {
+    if (err) throw err;
+    console.log(`✔︎ Wrote ${articles.length} articles to ${outputPath}`);
+    });
 }

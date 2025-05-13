@@ -41,6 +41,7 @@ townhall.json
 past-townhall.json
 gmData.json
 past-gm.json
+data/newsoutput.json
 
 # Local Netlify folder
 .netlify

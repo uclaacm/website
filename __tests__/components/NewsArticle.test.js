@@ -3,7 +3,7 @@ import { axe, toHaveNoViolations } from 'jest-axe';
 
 import { act } from 'react';
 import NewsArticle from '../../components/NewsArticle';
-import news from '../newsoutput.json';
+import news from '../../data/newsoutput.json';
 
 expect.extend(toHaveNoViolations);
 
