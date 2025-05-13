@@ -13,6 +13,7 @@ const footerACMLinks = [
   { title: 'Dev Team', path: '/dev' },
   { title: 'Sponsors', path: '/sponsors' },
   { title: 'Our Team', path: '/officers' },
+  { title: 'History', path: '/history' },
   {
     title: 'Membership Portal',
     path: 'https://members.uclaacm.com',
