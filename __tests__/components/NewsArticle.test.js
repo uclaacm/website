@@ -3,9 +3,11 @@
 // Mock the dynamically generated newsoutput.json file
 jest.mock('../../data/newsoutput.json', () => [
   {
-    title: 'Test News Article',
     date: '2025-01-01',
-    content: 'This is mock content for testing purposes.',
+    headline: 'Mock headline',
+    image: "https://www.uclaacm.com/images/2017-acm-excellence-award.png",
+    alt: "Mock alt",
+    link: "https://www.cs.ucla.edu/ucla-acm-receives-student-chapter-excellence-award/"
   },
 ]);
 
