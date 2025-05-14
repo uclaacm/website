@@ -1,0 +1,155 @@
+@use '../../variables.scss';
+
+.timeline-container {
+  margin: 0 auto;
+  padding: 2rem 0;
+  position: relative;
+  min-width: 100%;
+}
+
+.timeline-verticalline-container {
+  position: relative;
+  width: 100%;
+  min-height: 500px;
+}
+
+.timeline-verticalline {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%;
+  width: 8px;
+  padding-bottom: 2rem;
+  background-color: variables.$acm-cobalt;
+  border-radius: 9999px;
+}
+
+.timeline-event-container {
+  display: grid;
+  grid-template-columns: 45% 10% 45%;
+  position: relative;
+  align-items: center;   
+}
+
+.timeline-center {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timeline-card-container-left {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+
+.timeline-card-container-right {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 20px;
+}
+
+.timeline-card-container-left-empty,
+.timeline-card-container-right-empty {
+  min-height: 1px;
+}
+
+.calendar-icon {
+  position: relative;
+  z-index: 1;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  font-weight: bold;
+  border-width: 5px;
+  border-style: solid;
+  background-color: white;
+  color: variables.$acm-cobalt;
+  border-color: variables.$acm-cobalt;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Animation styles for timeline elements */
+.timeline-card {
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 300px;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+  border-radius: 8px;
+  font-size: 1rem;
+
+  &:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+  }
+}
+
+.timeline-card-description {
+  margin-bottom: 0.25rem;
+}
+  
+.timeline-card-committee {
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-top: 0.25rem;
+}
+
+.timeline-card-header {
+  display: flex;
+  font-weight: bold;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-card-date {
+  flex-grow: 1;
+}
+
+.timeline-card-chevron {
+  transition: transform 0.3s ease;
+}
+
+.chevron-rotated {
+  transform: rotate(180deg);
+}
+
+.timeline-card-details-container {
+  overflow: hidden;
+  transition: height 0.3s ease;
+}
+
+.timeline-card-details {
+  padding-top: 0.75rem;
+  padding-bottom: 0.5rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  margin-top: 0.25rem;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .timeline-event-container {
+    grid-template-columns: 1fr;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .timeline-card-container-left,
+  .timeline-card-container-right {
+    justify-content: center;
+    padding: 0;
+  }
+
+  .calendar-icon {
+    display: none;
+  }
+}
