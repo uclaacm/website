@@ -8,28 +8,26 @@ function CommitteeOfficers({ committee }) {
   return (
     (<div className="body-wrapper">
       <div className="card-container">
-        <div className="grid-desktop-3">
-          {committee.name === 'Board' ? ( //Board is an exception
-            (<Officers
-              officers={data.filter(
-                (officer) =>
-                  officer.committee === 'Board, Internal' ||
-                  officer.committee === 'Board, External' ||
-                  officer.committee === 'President',
-              )}
-              size="compact"
-              committee={committee.name}
-            />)
-          ) : (
-            <Officers //all other officers are straightforward
-              officers={data.filter(
-                (officer) => officer.committee == committee.name,
-              )}
-              size="compact"
-              committee={committee.name}
-            />
-          )}
-        </div>
+        {committee.name === 'Board' ? ( //Board is an exception
+          (<Officers
+            officers={data.filter(
+              (officer) =>
+                officer.committee === 'Board, Internal' ||
+                officer.committee === 'Board, External' ||
+                officer.committee === 'President',
+            )}
+            size="compact"
+            committee={committee.name}
+          />)
+        ) : (
+          <Officers //all other officers are straightforward
+            officers={data.filter(
+              (officer) => officer.committee == committee.name,
+            )}
+            size="compact"
+            committee={committee.name}
+          />
+        )}
       </div>
     </div>)
   );
