@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Script from 'next/script';
 import { NextSeo } from 'next-seo';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Banner from '../components/Banner';
 import Carousel from '../components/Carousel';
 import Committees from '../components/CommitteeSpread';
@@ -23,17 +23,7 @@ function Home() {
   const sortedNews = [...news].reverse();
 
   const [expanded, setExpanded] = useState(false);
-  const [windowWidth, setWindowWidth] = useState(1440);
 
-  useEffect(() => {
-    const handleResize = () => setWindowWidth(window.innerWidth);
-    handleResize();
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
-
-  const collapsedCount = (windowWidth > 2400 || (windowWidth < 1630 && windowWidth > 1100)) ? 4 : 3;
-  const displayCount = expanded ? 10 : collapsedCount;
   return (
     (<Layout>
       <Script
@@ -77,8 +67,10 @@ function Home() {
 
         <div className="content-section">
           <h2>In the News</h2>
-          <div className="achievements-container">
-            {sortedNews.slice(0, displayCount).map((article, index) => (
+          <div
+            className={`achievements-container ${expanded ? 'expanded' : 'collapsed'}`}
+          >
+            {sortedNews.map((article, index) => (
               <Article key={`${article.date}-${index}`} article={article} />
             ))}
           </div>
