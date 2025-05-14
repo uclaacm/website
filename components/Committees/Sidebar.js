@@ -39,10 +39,12 @@ function Sidebar(props) {
     };
   }, []);
 
+  /*
   // Don't display sidebar if user has scrolled to the bottom of the screen
   if (bottom) {
     return null;
   }
+  */
 
   return (
     <div className="sidebar-item">

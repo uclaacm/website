@@ -5,13 +5,13 @@
   display: inline-flex;
   flex-flow: column nowrap;
   left: 0;
-  margin-top: 40px;
+  //margin-top: 40px;
   padding: 1rem;
-  position: fixed;
+  position: sticky;
   top: 58.5%;
-  transform: translateY(-50%);
+  transform: translateY(-45%);
   transition: opacity 3s ease;
-  z-index: 1000;
+  //z-index: 1000;
 
   .committee {
     align-items: center;

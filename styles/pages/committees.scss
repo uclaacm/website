@@ -1,5 +1,11 @@
 @use '../variables.scss';
 
+.officers-page-container {
+  display: flex;
+  flex-direction: row; /* default anyway, but clearer */
+  align-items: flex-start; /* don't use 'column' here */
+}
+
 .committees-page-content {
   box-sizing: border-box;
   margin: auto;
@@ -43,13 +49,15 @@
 }
 
 .body-wrapper {
-  margin: 50px 0 40px;
+  margin: 50px auto 40px;
+  display: flex;
+  justify-content: center;
 
   .card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Ensures responsive behavior */
     gap: 3em;
+    max-width: 100%;
   }
 }
 
@@ -95,7 +103,7 @@ html {
   padding: 0 30px;
 
   @media (min-width: variables.$navbar-breakpoint) {
-    margin-left: 320px;
+    margin-left: 90px;
   }
 
   @media (max-width: 767px) {

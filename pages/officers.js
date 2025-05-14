@@ -58,20 +58,24 @@ function OfficersPage() {
         }}
       />
       <Banner decorative />
-      <Navigation committees={committeeInfo} />
+      <div className="officers-page-container">
 
-      {/* <Archive committees={committees} /> */}
-      <div className="officers-page-content">
-        <OfficersBanner />
-        <div className="committee-sections-container">
-          {committeeInfo.map((committee) => (
-            <CommitteeSectionOfficers
-              key={committee.name}
-              committee={committee}
-            />
-          ))}
+        <Navigation committees={committeeInfo} />
+
+        {/* <Archive committees={committees} /> */}
+        <div className="officers-page-content">
+          <OfficersBanner />
+          <div className="committee-sections-container">
+            {committeeInfo.map((committee) => (
+              <CommitteeSectionOfficers
+                key={committee.name}
+                committee={committee}
+              />
+            ))}
+          </div>
         </div>
       </div>
+
     </Layout>
   );
 }
