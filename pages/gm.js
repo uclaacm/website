@@ -9,8 +9,8 @@ import Countdown from 'react-countdown';
 
 import Banner from '../components/Banner';
 import Layout from '../components/Layout';
-import gmData from '../gmData.json';
-import pastData from '../past-gm.json';
+import gmData from '../data/gmData.json';
+import pastData from '../data/past-gm.json';
 
 import aiLogo from '../public/images/committees/ai_wordmark.svg';
 import boardLogo from '../public/images/committees/board_wordmark.svg';

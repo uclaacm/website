@@ -8,9 +8,9 @@ import { NextSeo } from 'next-seo';
 import Banner from '../components/Banner';
 import Layout from '../components/Layout';
 
-import pastData from '../past-townhall.json';
+import pastData from '../data/past-townhall.json';
+import data from '../data/townhall.json';
 import TestimonialsCourseChanges from '../public/images/town-hall/testimonials-course-changes.png';
-import data from '../townhall.json';
 
 // NOT FETCHED FROM GOOGLE SHEETS (STATIC DATA)
 const TOWN_HALL_2021_WINTER_VIDEO = 'https://www.youtube.com/embed/Eq2xsShPMVc';

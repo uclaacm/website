@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Script from 'next/script';
 import { NextSeo } from 'next-seo';
-
+import { useState } from 'react';
 import Banner from '../components/Banner';
 import Carousel from '../components/Carousel';
 import Committees from '../components/CommitteeSpread';
@@ -12,8 +12,18 @@ import SocialMedia from '../components/SocialMedia';
 
 import data from '../data';
 
+/* eslint-disable import/no-unresolved */
+import news from '../data/newsoutput.json';
+/* eslint-enable import/no-unresolved */
+
 function Home() {
-  const { carousel, committees, news } = data;
+  const { carousel, committees } = data;
+
+  // Reverse news since oldest news at the top of InTheNews Sheet
+  const sortedNews = [...news].reverse();
+
+  const [expanded, setExpanded] = useState(false);
+
   return (
     (<Layout>
       <Script
@@ -57,10 +67,17 @@ function Home() {
 
         <div className="content-section">
           <h2>In the News</h2>
-          <div className="achievements-container">
-            {news.slice(0, 10).map((article, index) => (
+          <div
+            className={`achievements-container ${expanded ? 'expanded' : 'collapsed'}`}
+          >
+            {sortedNews.map((article, index) => (
               <Article key={`${article.date}-${index}`} article={article} />
             ))}
+          </div>
+          <div className="button-section">
+            <button className="button" onClick={() => setExpanded(!expanded)}>
+              {expanded ? 'Show Less News' : 'Show More News'}
+            </button>
           </div>
         </div>
 

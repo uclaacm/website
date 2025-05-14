@@ -4,7 +4,6 @@ import Committees from './committees';
 import Friends from './friends';
 import Internship from './internship';
 import Leadership from './leadership';
-import News from './news';
 import Sponsors from './sponsors';
 import TGProjects from './tgprojects';
 
@@ -13,7 +12,6 @@ export default {
   carousel: Carousel,
   sponsors: Sponsors,
   leadership: Leadership,
-  news: News,
   tgprojects: TGProjects,
   friends: Friends,
   internship: Internship,

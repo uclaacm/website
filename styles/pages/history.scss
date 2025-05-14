@@ -1,0 +1,26 @@
+@use '../variables.scss';
+
+.history-banner-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.history-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: variables.$acm-cobalt;
+  margin-bottom: 1.5rem;
+}
+
+.history-title-blurb {
+  font-size: 1.25rem;
+  max-width: 48rem;
+  margin: 0 auto;
+}
