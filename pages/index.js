@@ -8,12 +8,13 @@ import Committees from '../components/CommitteeSpread';
 import Layout from '../components/Layout';
 import Article from '../components/NewsArticle';
 import SocialMedia from '../components/SocialMedia';
-// import ContentBanner from '../components/ContentBanner';
+import ContentBanner from '../components/ContentBanner';
 
 import data from '../data';
 
 /* eslint-disable import/no-unresolved */
 import news from '../data/newsoutput.json';
+
 /* eslint-enable import/no-unresolved */
 
 function Home() {
@@ -47,12 +48,10 @@ function Home() {
         }}
       />
       <div className="home-page text-center">
-        {/* <a href="https://www.uclaacm.com/town-hall" style={{ textDecoration: 'none' }}>
-          <ContentBanner
-            title="RSVP for Fall 2024 CS Town Hall!"
-            main
-          />
-        </a> */}
+        <ContentBanner
+          title="Celebrating 50 years of ACM at UCLA"
+          main
+        />
         <Banner />
         <div className="content-section">
           <h2>The largest Computer Science community at UCLA</h2>
