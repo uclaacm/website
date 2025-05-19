@@ -4,11 +4,12 @@ import { NextSeo } from 'next-seo';
 import { useState } from 'react';
 import Banner from '../components/Banner';
 import Carousel from '../components/Carousel';
+import CommitteeIcon from '../components/Committees/CommitteeIcon';
 import Committees from '../components/CommitteeSpread';
+import ContentBanner from '../components/ContentBanner';
 import Layout from '../components/Layout';
 import Article from '../components/NewsArticle';
 import SocialMedia from '../components/SocialMedia';
-import ContentBanner from '../components/ContentBanner';
 
 import data from '../data';
 
@@ -48,10 +49,33 @@ function Home() {
         }}
       />
       <div className="home-page text-center">
-        <ContentBanner
-          title="Celebrating 50 years of ACM at UCLA"
-          main
-        />
+        <ContentBanner>
+          <div className="content-banner-logos-top">
+            <div className="content-banner-logos">
+              <CommitteeIcon committee="studio" />
+              <CommitteeIcon committee="icpc" />
+              <CommitteeIcon committee="design" />
+            </div>
+            <div className="content-banner-logos">
+              <CommitteeIcon committee="cyber" />
+              <CommitteeIcon committee="teachLA" />
+            </div>
+          </div>
+          <h2 className="content-banner-title">
+            Celebrating 50 years of ACM at UCLA!
+          </h2>
+          <div className="content-banner-logos-top">
+            <div className="content-banner-logos">
+              <CommitteeIcon committee="acm" />
+              <CommitteeIcon committee="w" />
+              <CommitteeIcon committee="ai" />
+            </div>
+            <div className="content-banner-logos">
+              <CommitteeIcon committee="cloud" />
+              <CommitteeIcon committee="hack" />
+            </div>
+          </div>
+        </ContentBanner>
         <Banner />
         <div className="content-section">
           <h2>The largest Computer Science community at UCLA</h2>
