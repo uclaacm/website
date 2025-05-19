@@ -1,6 +1,15 @@
 
 const historyEvents = [
   {
+    id: 'acm-founding',
+    date: {
+      year: 1975,
+    },
+    description: 'ACM at UCLA founded',
+    details: 'The UCLA chapter of the global ACM organization was officially chartered, a few years after the formal establishment of the UCLA Computer Science department.',
+    committee: 'General',
+  },
+  {
     id: 'acm-w-charter',
     date: {
       year: 2015,
