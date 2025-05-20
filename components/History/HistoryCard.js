@@ -17,14 +17,14 @@ function HistoryCard({ historyEvent }) {
 
   const monthNames = [
     'January', 'February', 'March', 'April', 'May', 'June',
-    'July', 'August', 'September', 'October', 'November', 'December'
+    'July', 'August', 'September', 'October', 'November', 'December',
   ];
 
   const getMonthName = (monthNumber) => {
     // Assumes monthNumber is 1-based (1 = January)
     return monthNames[monthNumber - 1] || '';
   };
-  
+
   const committeeColors = {
     'ACM-W': '#1BC3A9',
     'ACM-Hack': '#C960FF',
