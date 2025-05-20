@@ -1,9 +1,16 @@
 @use 'sass:list';
 @use '../variables.scss';
 
-$committees: (ai,variables.$ai-arctic), (cyber,variables.$cyber-amber), (design,variables.$design-orange),
-  (hack,variables.$hack-purple), (icpc,variables.$icpc-tangerine), (studio,variables.$studio-raspberry),
-  (teachla,variables.$teachla-green), (w,variables.$w-teal);
+$committees: 
+  (studio,variables.$studio-raspberry),
+  (icpc,variables.$icpc-tangerine), 
+  (design,variables.$design-orange),
+  (cyber,variables.$cyber-amber), 
+  (teachla,variables.$teachla-green), 
+  (w,variables.$w-teal),
+  (ai,variables.$ai-arctic), 
+  (cloud,variables.$cloud-purple),
+  (hack,variables.$hack-purple);
 
 #navbar {
   background: white;
@@ -91,6 +98,65 @@ $committees: (ai,variables.$ai-arctic), (cyber,variables.$cyber-amber), (design,
       margin: 0;
       padding: 0;
 
+      li.top-item {
+        position: relative;
+        padding-top: 15px;
+        padding-bottom: 15px;
+
+        &.committees {
+          .dropdown {
+            @for $i from 1 through length($committees) {
+              $color: nth(nth($committees, $i), 2);
+  
+              li:nth-child(#{$i}) button:hover,
+              li:nth-child(#{$i}) button:focus {
+                color: $color;
+              }
+            }
+          }
+        }
+      
+        // hide dropdown by default
+        .dropdown {
+          display: none;
+          position: absolute;
+          top: 100%;    // just beneath the nav-link
+          left: 0;
+          background: white;
+          box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+          list-style: none;
+          margin: 0;
+          padding: 8px 0;
+          min-width: 200px;
+      
+          li button {
+            display: block;
+            width: 100%;
+            background: none;
+            border: none;
+            text-align: left;
+            font: inherit;
+            cursor: pointer;
+      
+            &:hover {
+              color: variables.$acm-cobalt;
+              cursor: pointer;
+            }
+          }
+        }
+      
+        // on desktop: show on hover
+        &:hover .dropdown {
+          display: block;
+        }
+      }
+      
+      li.member-login {
+        a {
+          width: 110px;
+        }
+      }
+
       li {
         line-height: 40px;
         padding: 0 20px;
@@ -128,11 +194,15 @@ $committees: (ai,variables.$ai-arctic), (cyber,variables.$cyber-amber), (design,
         }
 
         // committee color applied on hover and active
-
-        @each $committee in $committees {
-          [href='/committees##{list.nth($committee, 1)}']:hover,
-          [href='/committees##{list.nth($committee, 1)}'].active {
-            color: #{list.nth($committee, 2)};
+        .committee-mobile-nav {
+          @for $i from 1 through length($committees) {
+            $committee: list.nth($committees, $i);
+            $color: list.nth($committee, 2);
+  
+            li:nth-child(#{$i}) button:hover,
+            li:nth-child(#{$i}) button.active {
+              color: $color;
+            }
           }
         }
       }
@@ -172,6 +242,12 @@ $committees: (ai,variables.$ai-arctic), (cyber,variables.$cyber-amber), (design,
 
           li {
             margin: 5px 0;
+          }
+
+          li.member-login {
+            a {
+              width: 195px;
+            }
           }
 
           &.active {
