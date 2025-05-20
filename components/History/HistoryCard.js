@@ -15,6 +15,16 @@ function HistoryCard({ historyEvent }) {
     }
   }, [historyEvent.details]);
 
+  const monthNames = [
+    'January', 'February', 'March', 'April', 'May', 'June',
+    'July', 'August', 'September', 'October', 'November', 'December'
+  ];
+
+  const getMonthName = (monthNumber) => {
+    // Assumes monthNumber is 1-based (1 = January)
+    return monthNames[monthNumber - 1] || '';
+  };
+  
   const committeeColors = {
     'ACM-W': '#1BC3A9',
     'ACM-Hack': '#C960FF',
@@ -55,7 +65,7 @@ function HistoryCard({ historyEvent }) {
       <div className={styles['timeline-card-content']}>
         <div className={styles['timeline-card-header']}>
           <div className={styles['timeline-card-date']}>
-            {historyEvent.date.year} {historyEvent.date.month} {historyEvent.date.date}
+            {historyEvent.dateObj.year} {getMonthName(historyEvent.dateObj.month)} {historyEvent.dateObj?.date}
           </div>
           <FontAwesomeIcon icon={faChevronDown} className={`${styles['timeline-card-chevron']} ${isExpanded ? styles['chevron-rotated'] : ''}`}/>
         </div>

@@ -19,6 +19,7 @@ writeToOutput(await getGoogleSheetData('History!A2:D'));
  * Pulls a rectangular range from the sheet and returns an array of
  * { date, headline, image, alt, link } objects.
  */
+
 async function getGoogleSheetData(range) {
   const sheets = google.sheets({ version: 'v4' });
 
@@ -43,8 +44,6 @@ async function getGoogleSheetData(range) {
     const historyEvents = [];
 
     for (const row of rows) {
-      // parse date into Date object 
-      // each row: [ date, headline, imageUrl, altText, redirectLink ]
       const [ date, description, details, committee ] = row;
       
       // convert date string to { year, month, date } object
@@ -60,7 +59,6 @@ async function getGoogleSheetData(range) {
             date: parseInt(dd, 10),
           };
         } else if (parts.length === 2) {
-          // MM/YYYY
           const [mm, yyyy] = parts;
           dateObj = {
             year: parseInt(yyyy, 10),
@@ -68,9 +66,6 @@ async function getGoogleSheetData(range) {
           };
         }
       }
-      // assign the parsed dateObj back to date
-      // (or you can use a different property if you want to keep the original string)
-      
       historyEvents.push({ dateObj, description, details, committee});
     }
 

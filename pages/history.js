@@ -2,7 +2,7 @@ import { NextSeo } from 'next-seo';
 import Banner from '../components/Banner';
 import Timeline from '../components/History/Timeline';
 import Layout from '../components/Layout';
-import { historyEvents } from '../data/history';
+import  historyEvents  from '../data/historyEvents.json';
 
 // import Archive from '../components/Committees/ArchiveSidebar';
 function HistoryBanner() {
