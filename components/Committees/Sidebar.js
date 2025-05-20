@@ -1,5 +1,5 @@
 // import Image from 'next/image';
-import { faChevronUp, faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import { faChevronRight, faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { useState } from 'react';
@@ -63,18 +63,18 @@ function Sidebar(props) {
         <button className="dropdown-toggle" onClick={() => setIsDropdownOpen(!isDropdownOpen)}>
           <span className="dropdown-label">ARCHIVE</span>
           <FontAwesomeIcon
-            icon={isDropdownOpen ? faChevronUp : faChevronDown}
+            icon={isDropdownOpen ? faChevronDown : faChevronRight}
             className="dropdown-icon"
           />
         </button>
 
         {isDropdownOpen && (
           <div className="dropdown-menu">
-            {years.map((year) => (
+            {years.reverse().map((year) => (
               <button
                 key={year}
                 className={`dropdown-item ${year === selectedYear ? 'selected' : ''}`}
-                onClick={() => {setSelectedYear(year); setIsDropdownOpen(false);}}
+                onClick={() => {setSelectedYear(year)}}
               >
                 {year}
               </button>
