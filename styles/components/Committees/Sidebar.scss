@@ -9,9 +9,28 @@
   padding: 1rem;
   position: sticky;
   top: 58.5%;
-  transform: translateY(-45%);
+  transform: translateY(-50%);
   transition: opacity 3s ease;
   //z-index: 1000;
+
+  .archive-dropdown {
+    display: inline-block;
+    padding-left: 20px;
+    position: relative;
+    
+
+    .dropdown-toggle {
+      background: none;
+      border-width: 0;
+      //height: 7.5vh;
+      
+      .dropdown-label {
+        border-bottom: 1px solid #CCC;
+        color: variables.$font-primary-color;
+        font-weight: bold;
+      }
+    }
+  }
 
   .committee {
     align-items: center;

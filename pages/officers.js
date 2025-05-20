@@ -59,7 +59,6 @@ function OfficersPage() {
       />
       <Banner decorative />
       <div className="officers-page-container">
-
         <Navigation committees={committeeInfo} />
 
         {/* <Archive committees={committees} /> */}
