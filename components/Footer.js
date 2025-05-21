@@ -23,8 +23,19 @@ const footerACMLinks = [
 ];
 
 const footerInitiativeLinks = [
-  { title: 'Impact', path: '/impact' },
-  { title: 'JEDI', path: '/jedi' },
+  {
+    name: 'Impact',
+    slug: 'impact',
+    path: '/impact',
+    wordmark_dark: '/images/impact/impact-footer.png',
+    useImage: true,
+  },
+  {
+    name: 'JEDI',
+    slug: 'jedi',
+    path: '/jedi',
+    useImage: false,
+  },
 ];
 
 function FooterLinkElement({ title, path, ext }) {
@@ -91,11 +102,42 @@ function Footer() {
                 </li>
               ))}
             </ul>
-            <h3 className={styles['footer-header']}>ACM Initiatives</h3>
-            <ul className="list-unstyled">
-              {footerInitiativeLinks.map((link) => (
-                <li key={link.path}>
-                  <FooterLinkElement {...link} />
+            <h3 className={styles['footer-header']} style={{ textAlign: 'center' }}>ACM Initiatives</h3>
+            <ul
+              className={`list-unstyled ${styles['footer-committee-sidebar-container']}`}
+              style={{ textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center' }}
+            >
+              {footerInitiativeLinks.map((initiative) => (
+                <li key={initiative.slug} style={{ textAlign: 'center', width: '100%' }}>
+                  <FooterLinkElement
+                    path={initiative.path}
+                    title={
+                      initiative.useImage ? (
+                        <div style={{ textAlign: 'center', display: 'flex', justifyContent: 'center' }}>
+                          <img
+                            className="committee-sidebar-image"
+                            src={initiative.wordmark_dark}
+                            alt={`ACM ${initiative.name}`}
+                            style={{
+                              margin: '0 auto',
+                              transform: initiative.name === 'Impact' ? 'translateX(-8.5px)' : 'none',
+                            }}
+                            onError={(e) => {
+                              e.target.onerror = null;
+                              e.target.style.display = 'none';
+                              const parentNode = e.target.parentNode;
+                              parentNode.textContent = `ACM ${initiative.name}`;
+                              parentNode.style.textAlign = 'center';
+                              parentNode.style.display = 'block';
+                            }}
+                          />
+                        </div>
+                      ) : (
+                        <span style={{ display: 'block', textAlign: 'center' }}>ACM {initiative.name}</span>
+                      )
+                    }
+                    ext={false}
+                  />
                 </li>
               ))}
             </ul>
@@ -122,6 +164,14 @@ function Footer() {
                             className="committee-sidebar-image"
                             src={wordmark_dark}
                             alt={`ACM ${name}`}
+                            onError={(e) => {
+                              e.target.onerror = null;
+                              e.target.style.display = 'none';
+                              const parentNode = e.target.parentNode;
+                              parentNode.textContent = `ACM ${name}`;
+                              parentNode.style.textAlign = 'center';
+                              parentNode.style.display = 'block';
+                            }}
                           />
                         }
                         ext={external_link}

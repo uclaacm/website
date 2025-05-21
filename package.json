@@ -21,7 +21,9 @@
     "react-big-calendar": "^1.8.4",
     "react-countdown": "^2.3.5",
     "react-dom": "^18.3.1",
+    "react-social-media-embed": "^2.5.18",
     "sass": "^1.84.0",
+    "three": "^0.157.0",
     "yarn": "^1.22.21"
   },
   "scripts": {
