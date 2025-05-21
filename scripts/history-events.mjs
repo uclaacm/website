@@ -64,6 +64,11 @@ async function getGoogleSheetData(range) {
             year: parseInt(yyyy, 10),
             month: parseInt(mm, 10),
           };
+        } else if (parts.length === 1) {
+          const [yyyy] = parts;
+          dateObj = {
+            year: parseInt(yyyy, 10),
+          };
         }
       }
       historyEvents.push({ dateObj, description, details, committee});
