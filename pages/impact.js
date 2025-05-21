@@ -30,8 +30,8 @@ function Impact() {
       committee: 'Board, Internal',
       major: 'Computer Science',
       year: 2028,
-      // photo: 'https://drive.google.com/file/d/1rGUeoSQrlFVMJFu7dqrkGnNG9lMNmJJ_/view?usp=drivesdk',
-      // alt: 'Youssef',
+      photo: 'https://drive.google.com/uc?export=view&id=1rGUeoSQrlFVMJFu7dqrkGnNG9lMNmJJ_',
+      alt: 'Youssef',
     },
     {
       name: 'Aamani Maddukuri',
@@ -40,8 +40,8 @@ function Impact() {
       committee: 'Board, Internal',
       major: 'Computer Science',
       year: 2028,
-      // photo: '',
-      // alt: 'Aamani',
+      photo: 'https://drive.google.com/uc?export=view&id=1_rOMXh6VZqpOIsrdM9vO6sVD8Cg4tC_p',
+      alt: 'Aamani',
     },
     {
       name: 'Anne Do',
@@ -50,8 +50,8 @@ function Impact() {
       committee: 'Board, Internal',
       major: 'Computer Science',
       year: 2027,
-      // photo: 'https://drive.google.com/file/d/10HlxEAR0uwiAAqYHSqf9H1n2jx_z6rSv/view?usp=drive_link',
-      // alt: 'Anne',
+      photo: 'https://drive.google.com/uc?export=view&id=10HlxEAR0uwiAAqYHSqf9H1n2jx_z6rSv',
+      alt: 'Anne',
     },
   ];
 
