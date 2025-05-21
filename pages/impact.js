@@ -50,7 +50,7 @@ function Impact() {
       committee: 'Board, Internal',
       major: 'Computer Science',
       year: 2027,
-      photo: 'https://drive.google.com/thumbnail?id=10HlxEAR0uwiAAqYHSqf9H1n2jx_z6rSv',
+      photo: 'https://drive.google.com/thumbnail?id=1eJCBbCBYr-CcRXONHq6JP5M_e6o75mxO',
       alt: 'Anne',
     },
   ];
