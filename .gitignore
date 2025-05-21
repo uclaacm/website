@@ -43,6 +43,7 @@ townhall.json
 past-townhall.json
 gmData.json
 past-gm.json
+historyEvents.json
 
 # Local Netlify folder
 .netlify
