@@ -29,7 +29,7 @@
   "scripts": {
     "start": "next dev",
     "start-production": "next start",
-    "build": "npm run ofp && npm run thp && npm run gmp && next build",
+    "build": "npm run ofp && npm run nep && npm run thp && npm run hep && npm run gmp && next build",
     "lint-js": "eslint \"**/*.js\"",
     "lint-js-fix": "eslint --fix \"**/*.js\"",
     "lint-css": "stylelint \"**/*.css\" \"**/*.scss\"",
@@ -39,8 +39,10 @@
     "reg": "node scripts/recurring-event-generator.mjs",
     "seg": "node scripts/single-event-generator.mjs",
     "ofp": "node scripts/officer-parser.mjs",
+    "nep": "node scripts/news-parser.mjs",
     "thp": "node scripts/town-hall-generator.mjs",
     "gmp": "node scripts/gm-generator.mjs",
+    "hep": "node scripts/history-events.mjs",
     "test": "jest --env=jsdom"
   },
   "eslintConfig": {

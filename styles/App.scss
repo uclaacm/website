@@ -19,6 +19,7 @@
 @use 'components/News';
 @use 'components/SocialMedia';
 @use 'components/TechGala/ProjectCard';
+@use 'components/ContentBanner.scss';
 @use 'components/TechGala/ViewBanner';
 
 /* pages */
@@ -27,3 +28,4 @@
 @use 'pages/sponsors';
 @use 'pages/techgala';
 @use 'pages/events-calendar-override';
+@use 'pages/history';

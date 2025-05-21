@@ -12,6 +12,7 @@ import { InstagramEmbed } from 'react-social-media-embed';
 
 import { pastEvents } from '../data/impact';
 
+
 import impactNewBanner from '../public/images/impact/impact-new-logo.png';
 
 import styles from '../styles/pages/impact.module.scss';

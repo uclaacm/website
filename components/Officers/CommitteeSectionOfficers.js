@@ -1,6 +1,6 @@
 // import Image from 'next/image';
 
-import data from '../../offoutput.json';
+import data from '../../data/offoutput.json';
 import Officers from '../Officers/OfficerCard';
 
 function CommitteeOfficers({ committee }) {
@@ -15,7 +15,9 @@ function CommitteeOfficers({ committee }) {
                 (officer) =>
                   officer.committee === 'Board, Internal' ||
                   officer.committee === 'Board, External' ||
-                  officer.committee === 'President',
+                  officer.committee === 'President' ||
+                  officer.committee === 'Board, Dev Team' ||
+                  officer.committee === 'Board',
               )}
               size="compact"
               committee={committee.name}
