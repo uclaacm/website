@@ -24,23 +24,13 @@ function Impact() {
   // Custom officers data defined directly in the component
   const impactOfficers = [
     {
-      name: 'Rohan Adwankar',
-      pronouns: 'he/him',
-      role: 'Impact Director',
-      committee: 'Board, Internal',
-      major: 'Linguistics and Computer Science',
-      year: 2027,
-      // photo: 'https://drive.google.com/file/d/10HlxEAR0uwiAAqYHSqf9H1n2jx_z6rSv/view?usp=drive_link',
-      // alt: 'Rohan',
-    },
-    {
       name: 'Youssef Mehelba',
       pronouns: 'he/him',
       role: 'Impact Officer',
       committee: 'Board, Internal',
       major: 'Computer Science',
       year: 2028,
-      // photo: '',
+      // photo: 'https://drive.google.com/file/d/1rGUeoSQrlFVMJFu7dqrkGnNG9lMNmJJ_/view?usp=drivesdk',
       // alt: 'Youssef',
     },
     {
@@ -52,6 +42,16 @@ function Impact() {
       year: 2028,
       // photo: '',
       // alt: 'Aamani',
+    },
+    {
+      name: 'Anne Do',
+      pronouns: 'she/her',
+      role: 'Impact Advisor',
+      committee: 'Board, Internal',
+      major: 'Computer Science',
+      year: 2027,
+      // photo: 'https://drive.google.com/file/d/10HlxEAR0uwiAAqYHSqf9H1n2jx_z6rSv/view?usp=drive_link',
+      // alt: 'Anne',
     },
   ];
 
@@ -130,7 +130,7 @@ function Impact() {
             onClick={goToPrevEvents}
             aria-label="See previous events"
           >
-            <span className={`${styles.arrowIcon} ${styles['arrow-left']}`} aria-hidden="true"></span>
+            <span className={`${styles['arrow-icon']} ${styles['arrow-left']}`} aria-hidden="true"></span>
           </button>
 
           <div className={styles['workshop-cards-container']}>
