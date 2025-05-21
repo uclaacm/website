@@ -30,7 +30,7 @@ function Impact() {
       committee: 'Board, Internal',
       major: 'Computer Science',
       year: 2028,
-      photo: 'https://drive.google.com/uc?export=view&id=1rGUeoSQrlFVMJFu7dqrkGnNG9lMNmJJ_',
+      photo: 'https://drive.google.com/thumbnail?id=1rGUeoSQrlFVMJFu7dqrkGnNG9lMNmJJ_',
       alt: 'Youssef',
     },
     {
@@ -40,7 +40,7 @@ function Impact() {
       committee: 'Board, Internal',
       major: 'Computer Science',
       year: 2028,
-      photo: 'https://drive.google.com/uc?export=view&id=1_rOMXh6VZqpOIsrdM9vO6sVD8Cg4tC_p',
+      photo: 'https://drive.google.com/thumbnail?id=1_rOMXh6VZqpOIsrdM9vO6sVD8Cg4tC_p',
       alt: 'Aamani',
     },
     {
@@ -50,7 +50,7 @@ function Impact() {
       committee: 'Board, Internal',
       major: 'Computer Science',
       year: 2027,
-      photo: 'https://drive.google.com/uc?export=view&id=10HlxEAR0uwiAAqYHSqf9H1n2jx_z6rSv',
+      photo: 'https://drive.google.com/thumbnail?id=10HlxEAR0uwiAAqYHSqf9H1n2jx_z6rSv',
       alt: 'Anne',
     },
   ];
