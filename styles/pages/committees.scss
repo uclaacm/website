@@ -107,7 +107,7 @@ html {
   padding: 0 30px;
 
   @media (min-width: variables.$navbar-breakpoint) {
-    margin-left: 90px;
+    margin-left: 5em;
   }
 
   @media (max-width: 767px) {
@@ -148,10 +148,6 @@ html {
     padding: 10px; /* Add padding around the image */
     width: 100%;
   }
-
-  // img{
-
-  // }
 
   .committeebanner {
     border-radius: 10px;

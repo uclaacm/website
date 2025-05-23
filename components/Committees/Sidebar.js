@@ -4,8 +4,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { useState } from 'react';
 
-// import data from '../../data/alumoutput.json';
-
 function SidebarLink(props) {
   return (
     <a
