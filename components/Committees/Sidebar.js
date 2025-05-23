@@ -51,7 +51,6 @@ function Sidebar(props) {
   }
   */
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const [selectedYear, setSelectedYear] = useState('2024-2025');
 
   const years = ['2020-2021', '2021-2022', '2022-2023', '2023-2024', '2024-2025'];
 
@@ -73,8 +72,8 @@ function Sidebar(props) {
             {years.reverse().map((year) => (
               <button
                 key={year}
-                className={`dropdown-item ${year === selectedYear ? 'selected' : ''}`}
-                onClick={() => {setSelectedYear(year)}}
+                className={`dropdown-item ${year === props.selectedYear ? 'selected' : ''}`}
+                onClick={() => {props.setSelectedYear(year);}}
               >
                 {year}
               </button>

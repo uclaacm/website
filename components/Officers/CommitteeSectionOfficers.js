@@ -1,16 +1,18 @@
 // import Image from 'next/image';
 
-import data from '../../data/offoutput.json';
+//import data from '../../data/offoutput.json';
+import data from '../../data/alumoutput.json';
 import Officers from '../Officers/OfficerCard';
 
-function CommitteeOfficers({ committee }) {
+function CommitteeOfficers({ committee, selectedYear }) {
+  const yearData = data[selectedYear];
   //maps officers to a particular commitee
   return (
     (<div className="body-wrapper">
       <div className="card-container">
         {committee.name === 'Board' ? ( //Board is an exception
           (<Officers
-            officers={data.filter(
+            officers={yearData.filter(
               (officer) =>
                 officer.committee === 'Board, Internal' ||
                 officer.committee === 'Board, External' ||
@@ -23,7 +25,7 @@ function CommitteeOfficers({ committee }) {
           />)
         ) : (
           <Officers //all other officers are straightforward
-            officers={data.filter(
+            officers={yearData.filter(
               (officer) => officer.committee == committee.name,
             )}
             size="compact"
@@ -36,7 +38,7 @@ function CommitteeOfficers({ committee }) {
 }
 
 function CommitteeSection(props) {
-  const { committee } = props;
+  const { committee, selectedYear } = props;
   return (
     <div id={committee.class} className="committee-section">
       <div className={`committee-header ${committee.class}`}>
@@ -47,7 +49,7 @@ function CommitteeSection(props) {
           alt={`${committee.name}'s logo`}
         />
       </div>
-      <CommitteeOfficers committee={committee} />
+      <CommitteeOfficers committee={committee} selectedYear={selectedYear} />
     </div>
   );
 }

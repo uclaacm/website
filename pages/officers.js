@@ -1,5 +1,6 @@
 import Image from 'next/legacy/image';
 import { NextSeo } from 'next-seo';
+import { useState } from 'react';
 
 import Banner from '../components/Banner';
 import Navigation from '../components/Committees/Sidebar';
@@ -40,6 +41,9 @@ function OfficersBanner() {
 function OfficersPage() {
   const { committees, board } = data;
   const committeeInfo = board.concat(committees);
+
+  const [selectedYear, setSelectedYear] = useState('2024-2025');
+
   return (
     <Layout>
       <NextSeo
@@ -59,7 +63,7 @@ function OfficersPage() {
       />
       <Banner decorative />
       <div className="officers-page-container">
-        <Navigation committees={committeeInfo} />
+        <Navigation committees={committeeInfo} selectedYear={selectedYear} setSelectedYear={setSelectedYear} />
 
         {/* <Archive committees={committees} /> */}
         <div className="officers-page-content">
@@ -67,8 +71,9 @@ function OfficersPage() {
           <div className="committee-sections-container">
             {committeeInfo.map((committee) => (
               <CommitteeSectionOfficers
-                key={committee.name}
+                key={`${committee.name}-${selectedYear}`}
                 committee={committee}
+                selectedYear={selectedYear}
               />
             ))}
           </div>
