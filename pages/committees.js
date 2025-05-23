@@ -58,7 +58,7 @@ function CommitteesPage() {
         <CommitteesBanner />
         <div className="committee-sections-container">
           {committees.map((committee) => (
-            <CommitteeSection key={committee.name} committee={committee} />
+            <CommitteeSection key={committee.name} committee={committee} showArchiveDropdown={false} />
           ))}
         </div>
       </div>

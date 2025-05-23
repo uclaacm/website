@@ -39,6 +39,7 @@ yarn-error.log*
 /data/newsoutput.json
 output.json
 alumoutput.json
+alumyears.json
 offoutput.json
 townhall.json
 past-townhall.json

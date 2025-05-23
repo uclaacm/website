@@ -1,11 +1,16 @@
 // import Image from 'next/image';
 
-//import data from '../../data/offoutput.json';
-import data from '../../data/alumoutput.json';
+import alumData from '../../data/alumoutput.json';
+import alumYears from '../../data/alumyears.json';
+import offData from '../../data/offoutput.json';
+
 import Officers from '../Officers/OfficerCard';
 
 function CommitteeOfficers({ committee, selectedYear }) {
-  const yearData = data[selectedYear];
+  let yearData = alumData[selectedYear];
+  if (selectedYear == alumYears[0]) {
+    yearData = offData;
+  }
   //maps officers to a particular commitee
   return (
     (<div className="body-wrapper">

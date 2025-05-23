@@ -4,6 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { useState } from 'react';
 
+import alumYears from '../../data/alumyears.json';
+
 function SidebarLink(props) {
   return (
     <a
@@ -23,40 +25,13 @@ function SidebarLink(props) {
 }
 
 function Sidebar(props) {
-  /*
-  // Check if user has scrolled to the bottom of the page
-  const footerHeight = 507.667; // is there a better way to do this?
-  const [bottom, setBottom] = useState(false);
-  const scrollBottomListener = () => {
-    const difference =
-      document.documentElement.scrollHeight - window.innerHeight;
-    const scrollposition = document.documentElement.scrollTop;
-    setBottom(difference - scrollposition <= footerHeight);
-  };
-
-  useEffect(() => {
-    window.addEventListener('scroll', scrollBottomListener);
-
-    // cleanup
-    return () => {
-      window.removeEventListener('scroll', scrollBottomListener);
-    };
-  }, []);
-
-  // Don't display sidebar if user has scrolled to the bottom of the screen
-  if (bottom) {
-    return null;
-  }
-  */
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-
-  const years = ['2020-2021', '2021-2022', '2022-2023', '2023-2024', '2024-2025'];
 
   return (
     <div className="sidebar-item">
 
       {/* Archive Dropdown */}
-      <div className="archive-dropdown">
+      {props.showArchiveDropdown && <div className="archive-dropdown">
         <button className="dropdown-toggle" onClick={() => setIsDropdownOpen(!isDropdownOpen)}>
           <span className="dropdown-label">ARCHIVE</span>
           <FontAwesomeIcon
@@ -67,7 +42,7 @@ function Sidebar(props) {
 
         {isDropdownOpen && (
           <div className="dropdown-menu">
-            {years.reverse().map((year) => (
+            {alumYears.map((year) => (
               <button
                 key={year}
                 className={`dropdown-item ${year === props.selectedYear ? 'selected' : ''}`}
@@ -78,7 +53,7 @@ function Sidebar(props) {
             ))}
           </div>
         )}
-      </div>
+      </div>}
 
       {/* Committees */}
       {props.committees.map((committee) => (

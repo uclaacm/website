@@ -9,6 +9,8 @@ import CommitteeSectionOfficers from '../components/Officers/CommitteeSectionOff
 // import Archive from '../components/Committees/ArchiveSidebar';
 
 import data from '../data';
+import alumYears from '../data/alumyears.json';
+
 import teamPhoto from '../public/images/officers/internal_compressed.jpg';
 
 function OfficersBanner() {
@@ -42,7 +44,7 @@ function OfficersPage() {
   const { committees, board } = data;
   const committeeInfo = board.concat(committees);
 
-  const [selectedYear, setSelectedYear] = useState('2024-2025');
+  const [selectedYear, setSelectedYear] = useState(alumYears[0]);
 
   return (
     <Layout>
@@ -63,7 +65,12 @@ function OfficersPage() {
       />
       <Banner decorative />
       <div className="officers-page-container">
-        <Navigation committees={committeeInfo} selectedYear={selectedYear} setSelectedYear={setSelectedYear} />
+        <Navigation
+          committees={committeeInfo}
+          selectedYear={selectedYear}
+          setSelectedYear={setSelectedYear}
+          showArchiveDropdown={true}
+        />
 
         {/* <Archive committees={committees} /> */}
         <div className="officers-page-content">
