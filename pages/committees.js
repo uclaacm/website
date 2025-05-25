@@ -53,13 +53,15 @@ function CommitteesPage() {
         }}
       />
       <Banner decorative />
-      <Navigation committees={committees} />
-      <div className="committees-page-content">
-        <CommitteesBanner />
-        <div className="committee-sections-container">
-          {committees.map((committee) => (
-            <CommitteeSection key={committee.name} committee={committee} showArchiveDropdown={false} />
-          ))}
+      <div className="committees-page-container">
+        <Navigation committees={committees} showArchiveDropdown={false}/>
+        <div className="committees-page-content">
+          <CommitteesBanner />
+          <div className="committee-sections-container">
+            {committees.map((committee) => (
+              <CommitteeSection key={committee.name} committee={committee} showArchiveDropdown={false} />
+            ))}
+          </div>
         </div>
       </div>
     </Layout>

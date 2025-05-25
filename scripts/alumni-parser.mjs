@@ -142,6 +142,15 @@ async function getGoogleSheetData(auth, range) {
   }
 }
 
+async function getSheetNames(auth) {
+  const sheets = google.sheets({ version: 'v4' });
+  const res = await sheets.spreadsheets.get({
+    auth: auth,
+    spreadsheetId: DATAHUB_SPREADSHEET_ID,
+  });
+  return res.data.sheets.map((sheet) => sheet.properties.title);
+}
+
 function writeToOutput(filename, officerData) {
   // Write to alumoutput.json
   const out = JSON.stringify(officerData, null, 2);
@@ -150,13 +159,4 @@ function writeToOutput(filename, officerData) {
     if (err) throw err;
     console.log(`Output successfully saved to data/${filename}`);
   });
-}
-
-async function getSheetNames(auth) {
-  const sheets = google.sheets({ version: 'v4' });
-  const res = await sheets.spreadsheets.get({
-    auth: auth,
-    spreadsheetId: DATAHUB_SPREADSHEET_ID,
-  });
-  return res.data.sheets.map((sheet) => sheet.properties.title);
 }

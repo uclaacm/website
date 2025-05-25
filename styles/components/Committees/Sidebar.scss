@@ -7,13 +7,18 @@
   left: 0;
   padding: 1rem;
   position: sticky;
-  top: 10%;
+  top: 12%;
   transition: opacity 3s ease;
   //z-index: 1000;
 
   .archive-dropdown {
+    height: 7.5vh;
     padding-left: 20px;
-    padding-bottom: 2em;
+
+    &.open {
+      height: auto;
+      padding-bottom: 0.5em;
+    }
 
     .dropdown-toggle {
       align-items: center;

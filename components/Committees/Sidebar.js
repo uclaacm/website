@@ -31,7 +31,7 @@ function Sidebar(props) {
     <div className="sidebar-item">
 
       {/* Archive Dropdown */}
-      {props.showArchiveDropdown && <div className="archive-dropdown">
+      {props.showArchiveDropdown && <div className={`archive-dropdown ${isDropdownOpen ? 'open' : ''}`}>
         <button className="dropdown-toggle" onClick={() => setIsDropdownOpen(!isDropdownOpen)}>
           <span className="dropdown-label">ARCHIVE</span>
           <FontAwesomeIcon

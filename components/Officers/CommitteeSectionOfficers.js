@@ -13,8 +13,8 @@ function CommitteeOfficers({ committee, selectedYear }) {
   }
   //maps officers to a particular commitee
   return (
-    (<div className="body-wrapper">
-      <div className="card-container">
+    (<div className="officers-body-wrapper">
+      <div className="officers-card-container">
         {committee.name === 'Board' ? ( //Board is an exception
           (<Officers
             officers={yearData.filter(
