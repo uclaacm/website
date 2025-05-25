@@ -1,0 +1,37 @@
+@use '../variables.scss';
+
+.content-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 20px 10px;
+
+  color: #FFF;
+  background-color: variables.$acm-cobalt;
+}
+
+.content-banner-title {
+  font-weight: bold;
+  margin: 0 10px;
+  padding: 0;
+}
+
+.content-banner-logos,
+%content-banner-logos {
+  display: flex;
+  align-items: center;
+  gap: 0 15px;
+}
+
+.content-banner-logos-top {
+  @extend %content-banner-logos;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media screen and (max-width: variables.$tablet-breakpoint) {
+  .content-banner-logos {
+    display: none;
+  }
+}

@@ -1,27 +1,29 @@
 import Image from 'next/legacy/image';
 import styles from '../../styles/pages/impact.module.scss';
 
-export default function WorkshopCard({
-  title,
-  description,
-  quarter,
-  img,
-  alt,
-  desktopHorizontal,
-}) {
-  const gridStyle = desktopHorizontal
-    ? 'grid-tablet-2'
-    : styles['grid-tablet-only-2'];
+export default function WorkshopCard({ title, quarter, img, alt, description, link }) {
   return (
-    <div className={`${styles['workshop-card']} ${gridStyle}`}>
-      <div className={styles['workshop-image-container']}>
-        <Image src={img} alt={alt} />
+    <div className={styles.workshopCard}>
+      <div className={styles.workshopImageContainer}>
+        {img && (
+          <Image
+            src={img}
+            alt={alt || `Image for ${title}`}
+            layout="intrinsic"
+            width={300}
+            height={170}
+            objectFit="contain"
+          />
+        )}
       </div>
-      <div>
-        <h4 className={styles['impact-event-header']}>{title}</h4>
-        <p className={styles['impact-event-quarter']}>{quarter}</p>
-        <p>{description}</p>
-      </div>
+      <h4 className={styles.impactEventHeader}>{title}</h4>
+      {quarter && <p className={styles.impactEventQuarter}>{quarter}</p>}
+      <p>{description}</p>
+      {link && (
+        <a href={link} target="_blank" rel="noreferrer noopener">
+          Learn more
+        </a>
+      )}
     </div>
   );
 }
