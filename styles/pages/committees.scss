@@ -22,7 +22,7 @@
   width: 100%;
 
   @media (max-width: variables.$navbar-breakpoint), (max-height: variables.$sidebar-breakpoint) {
-    margin-left: 0em;
+    margin-left: 0;
   }
 
   h1 {
@@ -113,7 +113,7 @@ html {
   padding: 0 30px;
 
   @media (max-width: variables.$navbar-breakpoint), (max-height: variables.$sidebar-breakpoint) {
-    margin-left: 0em;
+    margin-left: 0;
     max-width: 900px;
   }
 

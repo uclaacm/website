@@ -20,7 +20,7 @@ function getCommitteeOfficers(committee, selectedYear) {
 
   if (committee.name === 'Board') {
     return yearData.filter((officer) =>
-      ['Board', 'Board, Dev Team', 'Board, Internal', 'Board, External', 'President'].includes(officer.committee)
+      ['Board', 'Board, Dev Team', 'Board, Internal', 'Board, External', 'President'].includes(officer.committee),
     );
   }
 

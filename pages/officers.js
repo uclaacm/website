@@ -47,8 +47,8 @@ function OfficersPage() {
   const [selectedYear, setSelectedYear] = useState(alumYears[0]);
   const [visibleCommittees, setVisibleCommittees] = useState(committeeInfo);
 
-  // Purpose of this function is to update visibleCommittees so that the 
-  // sidebar committees can be updated based on whether a committee has 
+  // Purpose of this function is to update visibleCommittees so that the
+  // sidebar committees can be updated based on whether a committee has
   // officers for that year.
   const updateCommitteeVisibility = useCallback((committee, isVisible) => {
     setVisibleCommittees((prev) => {
