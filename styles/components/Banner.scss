@@ -146,6 +146,18 @@
     background-color: variables.$teachla-tint;
   }
 
+  &.cloud .square {
+    background-color: variables.$cloud-purple;
+  }
+
+  &.cloud .square.dark {
+    background-color: variables.$cloud-black;
+  }
+
+  &.cloud .square.light {
+    background-color: variables.$cloud-tint;
+  }
+
   .title {
     height: 280px;
     left: 0;

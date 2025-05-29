@@ -49,20 +49,34 @@ const Banner = (props) => {
         'w',
         'ai',
         'hack',
+        'cloud',
       );
     }
 
-    const el = document.querySelector('.banner');
-    timer = setInterval(() => {
-      el.classList.remove(committees[color]);
-      setColor((prevColor) => (prevColor + 1) % committees.length);
-      el.classList.add(committees[color]);
+    const elements = document.querySelectorAll('.banner');
+    // Set up color cycling interval
+    const id = setInterval(() => {
+      setColor((prev) => {
+        // Remove the previous class from all banners
+        elements.forEach(el => {
+          el.classList.remove(committees[prev]);
+        });
+
+        // Calculate next color index
+        const next = (prev + 1) % committees.length;
+
+        // Add the new class to all banners
+        elements.forEach(el => {
+          el.classList.add(committees[next]);
+        });
+
+        return next;
+      });
     }, 4000);
 
-    return () => {
-      clearInterval(timer); // Cleanup on unmount
-    };
-  }, [color, props.decorative]); // Re-run when color or decorative props change
+    // Clean up interval on unmount
+    return () => clearInterval(id);
+  }, [props.decorative]);
 
   const decorative = props.decorative || false;
   const sideCols = props.sideCols || (decorative ? 12 : 7);
