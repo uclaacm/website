@@ -1,6 +1,6 @@
 import Image from 'next/legacy/image';
 import { NextSeo } from 'next-seo';
-import { useState } from 'react';
+import { useCallback, useState } from 'react';
 
 import Banner from '../components/Banner';
 import Navigation from '../components/Committees/Sidebar';
@@ -45,6 +45,27 @@ function OfficersPage() {
   const committeeInfo = board.concat(committees);
 
   const [selectedYear, setSelectedYear] = useState(alumYears[0]);
+  const [visibleCommittees, setVisibleCommittees] = useState(committeeInfo);
+
+  // Purpose of this function is to update visibleCommittees so that the 
+  // sidebar committees can be updated based on whether a committee has 
+  // officers for that year.
+  const updateCommitteeVisibility = useCallback((committee, isVisible) => {
+    setVisibleCommittees((prev) => {
+      const exists = prev.find((c) => c.name === committee.name);
+      if (isVisible && !exists) {
+        // Find the correct index from the full list.
+        const originalIndex = committeeInfo.findIndex(c => c.name === committee.name);
+        // Insert at original index.
+        const newList = [...prev];
+        newList.splice(originalIndex, 0, committee);
+        return newList;
+      } else if (!isVisible && exists) {
+        return prev.filter((c) => c.name !== committee.name);
+      }
+      return prev;
+    });
+  }, []);
 
   return (
     <Layout>
@@ -66,7 +87,7 @@ function OfficersPage() {
       <Banner decorative />
       <div className="officers-page-container">
         <Navigation
-          committees={committeeInfo}
+          committees={visibleCommittees}
           selectedYear={selectedYear}
           setSelectedYear={setSelectedYear}
           showArchiveDropdown={true}
@@ -75,18 +96,18 @@ function OfficersPage() {
         {/* <Archive committees={committees} /> */}
         <div className="officers-page-content">
           <OfficersBanner />
-          <div className="committee-sections-container">
+          <div className="officers-sections-container">
             {committeeInfo.map((committee) => (
               <CommitteeSectionOfficers
                 key={`${committee.name}-${selectedYear}`}
                 committee={committee}
                 selectedYear={selectedYear}
+                updateCommitteeVisibility={updateCommitteeVisibility}
               />
             ))}
           </div>
         </div>
       </div>
-
     </Layout>
   );
 }

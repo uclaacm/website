@@ -57,9 +57,9 @@ function CommitteesPage() {
         <Navigation committees={committees} showArchiveDropdown={false}/>
         <div className="committees-page-content">
           <CommitteesBanner />
-          <div className="committee-sections-container">
+          <div className="committees-sections-container">
             {committees.map((committee) => (
-              <CommitteeSection key={committee.name} committee={committee} showArchiveDropdown={false} />
+              <CommitteeSection key={committee.name} committee={committee} />
             ))}
           </div>
         </div>

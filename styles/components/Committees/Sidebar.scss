@@ -5,9 +5,9 @@
   display: inline-flex;
   flex-flow: column nowrap;
   left: 0;
-  padding: 1rem;
+  padding: 1em;
   position: sticky;
-  top: 12%;
+  top: 10%;
   transition: opacity 3s ease;
   //z-index: 1000;
 
@@ -17,7 +17,7 @@
 
     &.open {
       height: auto;
-      padding-bottom: 0.5em;
+      padding-bottom: 1em;
     }
 
     .dropdown-toggle {

@@ -10,6 +10,8 @@ const DATAHUB_SPREADSHEET_ID = process.env.DATAHUB_SPREADSHEET_ID;
 const auth = await authorizeGoogleAPI();
 const sheetNames = await getSheetNames(auth);
 
+// For each google sheet with name in the format of "Officers(XX-XX)", collect their data by year, and write to alumoutput.json.
+// Dynamically determines the alumni years from the names of google sheets and write to alumyears.json.
 const allData = {};
 const alumYears = [];
 for (const sheet of sheetNames) {
@@ -30,9 +32,9 @@ for (const sheet of sheetNames) {
 
 alumYears.push('2025-2026'); // use dynamic parsing for current year instead? Maybe better to combine current and past officers & rename current officers sheet.
 const sortedYears = Array.from(alumYears).sort().reverse();
-writeToOutput('alumyears.json', sortedYears);
+writeToOutput(sortedYears, 'alumyears.json');
 
-writeToOutput('alumoutput.json', allData);
+writeToOutput(allData, 'alumoutput.json');
 
 ////////////////////////////////////////////////////////
 // Helper Functions
@@ -151,8 +153,8 @@ async function getSheetNames(auth) {
   return res.data.sheets.map((sheet) => sheet.properties.title);
 }
 
-function writeToOutput(filename, officerData) {
-  // Write to alumoutput.json
+function writeToOutput(officerData, filename) {
+  // Write officerData to filename.
   const out = JSON.stringify(officerData, null, 2);
   const outputPath = path.join(process.cwd(), 'data', filename);
   fs.writeFile(outputPath, out, (err) => {
