@@ -32,6 +32,7 @@ const generateCols = (n, m, classPattern = [''], randomize = false) => {
 
 const Banner = (props) => {
   const [randomize, setRandomize] = useState(false);
+  // eslint-disable-next-line no-unused-vars
   const [color, setColor] = useState(0);
 
   useEffect(() => {
@@ -81,7 +82,6 @@ const Banner = (props) => {
       clearInterval(id); // Cleanup on unmount
     };
   }, [props.decorative]); // Re-run when color or decorative props change
-
 
   const decorative = props.decorative || false;
   const sideCols = props.sideCols || (decorative ? 12 : 7);
