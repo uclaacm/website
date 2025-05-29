@@ -39,7 +39,7 @@ yarn-error.log*
 #Generated Data
 /data/newsoutput.json
 /data/output.json
-/data/offoutput.json
+/data/officeroutput.json
 /data/townhall.json
 /data/past-townhall.json
 /data/gmData.json

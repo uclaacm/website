@@ -5,7 +5,7 @@ import Banner from '../components/Banner';
 import Layout from '../components/Layout';
 import Officers from '../components/OfficerCard';
 import SocialMedia from '../components/SocialMedia';
-import data from '../data/offoutput.json';
+import data from '../data/officeroutput.json';
 import acmCommittees from '../public/images/acm_committees.png';
 import boardcollage from '../public/images/boardcollage.png';
 import acmHowToJoin from '../public/images/how-to-join.png';
