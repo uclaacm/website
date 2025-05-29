@@ -33,25 +33,28 @@ const generateCols = (n, m, classPattern = [''], randomize = false) => {
 const Banner = (props) => {
   const [randomize, setRandomize] = useState(false);
   const [color, setColor] = useState(0);
-  let timer;
 
   useEffect(() => {
     setRandomize(true);
+    const base = [
+      'studio',
+      'icpc',
+      'design',
+      'cyber',
+      'teachla',
+      'w',
+      'ai',
+      'hack',
+      'cloud',
+    ];
 
-    const committees = ['acm'];
-    if (!props.decorative) {
-      committees.push(
-        'studio',
-        'icpc',
-        'design',
-        'cyber',
-        'teachla',
-        'w',
-        'ai',
-        'hack',
-        'cloud',
-      );
+    //Shuffle Base Array
+    for (let i = base.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [base[i], base[j]] = [base[j], base[i]];
     }
+
+    const committees = ['acm', ...base];
 
     const elements = document.querySelectorAll('.banner');
     // Set up color cycling interval
