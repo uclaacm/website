@@ -120,11 +120,11 @@ async function getGoogleSheetData(range) {
 }
 
 function writeToOutput(officers) {
-  // Write to offoutput.json
+  // Write to officeroutput.json
   const out = JSON.stringify(officers);
-  const outputPath = path.join(process.cwd(), 'data', 'offoutput.json');
+  const outputPath = path.join(process.cwd(), 'data', 'officeroutput.json');
   fs.writeFile(outputPath, out, (err) => {
     if (err) throw err;
-    console.log('Output successfully saved to data/offoutput.json');
+    console.log('Output successfully saved to data/officeroutput.json');
   });
 }
