@@ -9,7 +9,9 @@ import CommitteeSectionOfficers from '../components/Officers/CommitteeSectionOff
 // import Archive from '../components/Committees/ArchiveSidebar';
 
 import data from '../data';
+/* eslint-disable import/no-unresolved */
 import alumYears from '../data/alumyears.json';
+/* eslint-enable import/no-unresolved */
 
 import teamPhoto from '../public/images/officers/internal_compressed.jpg';
 
