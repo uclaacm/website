@@ -11,6 +11,23 @@
   transition: opacity 3s ease;
   //z-index: 1000;
 
+  .dropdown-toggle {
+    align-items: center;
+    background: none;
+    border: 0;
+    cursor: pointer;
+    display: flex;
+    gap: 0.5em;
+    padding: 0;
+    
+    .dropdown-label {
+      font-family: variables.$font-header;
+      font-size: 1.5em;
+      font-weight: bold;
+      letter-spacing: 0.1em;
+    }
+  }
+
   .archive-dropdown {
     height: 7.5vh;
     padding-left: 20px;
@@ -21,23 +38,6 @@
 
       .dropdown-toggle {
         border-bottom: 1px solid #CCC;
-      }
-    }
-
-    .dropdown-toggle {
-      align-items: center;
-      background: none;
-      border: 0;
-      cursor: pointer;
-      display: flex;
-      gap: 0.5em;
-      padding: 0;
-      
-      .dropdown-label {
-        font-family: variables.$font-header;
-        font-size: 1.5em;
-        font-weight: bold;
-        letter-spacing: 0.1em;
       }
     }
 
