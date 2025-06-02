@@ -1,8 +1,10 @@
 // import Image from 'next/image';
 import { useEffect } from 'react';
 
+/* eslint-disable import/no-unresolved */
 import alumData from '../../data/alumoutput.json';
 import alumYears from '../../data/alumyears.json';
+/* eslint-enable import/no-unresolved */
 import offData from '../../data/offoutput.json';
 
 import Officers from '../Officers/OfficerCard';

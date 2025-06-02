@@ -4,7 +4,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { useState } from 'react';
 
+/* eslint-disable import/no-unresolved */
 import alumYears from '../../data/alumyears.json';
+/* eslint-enable import/no-unresolved */
 
 function SidebarLink(props) {
   return (

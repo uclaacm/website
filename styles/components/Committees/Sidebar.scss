@@ -18,13 +18,16 @@
     &.open {
       height: auto;
       padding-bottom: 1em;
+
+      .dropdown-toggle {
+        border-bottom: 1px solid #CCC;
+      }
     }
 
     .dropdown-toggle {
       align-items: center;
       background: none;
       border: 0;
-      border-bottom: 1px solid #CCC;
       cursor: pointer;
       display: flex;
       gap: 0.5em;
@@ -52,6 +55,10 @@
         font-family: variables.$font-display;
         font-size: 1.2em;
         padding: 0;
+
+        &:hover {
+          color: variables.$acm-cobalt;
+        }
 
         &.selected {
           color: variables.$acm-cobalt;
