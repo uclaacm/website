@@ -1,44 +1,62 @@
 // import Image from 'next/image';
+import { useEffect } from 'react';
 
-import data from '../../data/officeroutput.json';
+/* eslint-disable import/no-unresolved */
+import alumData from '../../data/alumoutput.json';
+import alumYears from '../../data/alumyears.json';
+/* eslint-enable import/no-unresolved */
+import offData from '../../data/officeroutput.json';
+
 import Officers from '../Officers/OfficerCard';
 
-function CommitteeOfficers({ committee }) {
-  //maps officers to a particular commitee
+function getCommitteeOfficers(committee, selectedYear) {
+  let yearData = alumData[selectedYear];
+  // This will be unnecessary if we combine offoutput and alumyears.
+  if (selectedYear === alumYears[0]) {
+    yearData = offData;
+  }
+
+  if (!yearData) {
+    return [];
+  }
+
+  if (committee.name === 'Board') {
+    return yearData.filter((officer) =>
+      ['Board', 'Board, Dev Team', 'Board, Internal', 'Board, External', 'President'].includes(officer.committee),
+    );
+  }
+
+  return yearData.filter((officer) => officer.committee === committee.name);
+}
+
+function CommitteeOfficers({ officers, committee }) {
   return (
-    (<div className="body-wrapper">
-      <div className="card-container">
-        <div className="grid-desktop-3">
-          {committee.name === 'Board' ? ( //Board is an exception
-            (<Officers
-              officers={data.filter(
-                (officer) =>
-                  officer.committee === 'Board, Internal' ||
-                  officer.committee === 'Board, External' ||
-                  officer.committee === 'President' ||
-                  officer.committee === 'Board, Dev Team' ||
-                  officer.committee === 'Board',
-              )}
-              size="compact"
-              committee={committee.name}
-            />)
-          ) : (
-            <Officers //all other officers are straightforward
-              officers={data.filter(
-                (officer) => officer.committee == committee.name,
-              )}
-              size="compact"
-              committee={committee.name}
-            />
-          )}
-        </div>
+    <div className="officers-body-wrapper">
+      <div className="officers-card-container">
+        <Officers
+          officers={officers}
+          size="compact"
+          committee={committee.name}
+        />
       </div>
-    </div>)
+    </div>
   );
 }
 
 function CommitteeSection(props) {
-  const { committee } = props;
+  const { committee, selectedYear, updateCommitteeVisibility } = props;
+
+  const officers = getCommitteeOfficers(committee, selectedYear);
+  const isVisible = officers.length > 0;
+
+  useEffect(() => {
+    updateCommitteeVisibility(committee, isVisible);
+  }, [committee, isVisible, updateCommitteeVisibility]);
+
+  if (!isVisible) {
+    return null;
+  }
+
   return (
     <div id={committee.class} className="committee-section">
       <div className={`committee-header ${committee.class}`}>
@@ -49,7 +67,7 @@ function CommitteeSection(props) {
           alt={`${committee.name}'s logo`}
         />
       </div>
-      <CommitteeOfficers committee={committee} />
+      <CommitteeOfficers officers={officers} committee={committee} />
     </div>
   );
 }
