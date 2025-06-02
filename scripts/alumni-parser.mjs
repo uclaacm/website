@@ -7,34 +7,40 @@ dotenv.config();
 const SERVICE_ACCOUNT = process.env.SERVICE_ACCOUNT;
 const DATAHUB_SPREADSHEET_ID = process.env.DATAHUB_SPREADSHEET_ID;
 
-const auth = await authorizeGoogleAPI();
-const sheetNames = await getSheetNames(auth);
+async function main() {
+  const auth = await authorizeGoogleAPI();
+  const sheetNames = await getSheetNames(auth);
 
-// For each google sheet with name in the format of "Officers(XX-XX)", collect their data by year, and write to alumoutput.json.
-// Dynamically determines the alumni years from the names of google sheets and write to alumyears.json.
-const allData = {};
-const alumYears = [];
-for (const sheet of sheetNames) {
-  if (sheet.startsWith('Officers(')) {
-    const match = sheet.match(/\((\d{2})-(\d{2})\)/);
-    if (match && match[1] && match[2]) {
-      const fullYear = `20${match[1]}-20${match[2]}`;
-      alumYears.push(fullYear);
+  // For each google sheet with name in the format of "Officers(XX-XX)", collect their data by year, and write to alumoutput.json.
+  // Dynamically determines the alumni years from the names of google sheets and write to alumyears.json.
+  const allData = {};
+  const alumYears = [];
+  for (const sheet of sheetNames) {
+    if (sheet.startsWith('Officers(')) {
+      const match = sheet.match(/\((\d{2})-(\d{2})\)/);
+      if (match && match[1] && match[2]) {
+        const fullYear = `20${match[1]}-20${match[2]}`;
+        alumYears.push(fullYear);
 
-      const data = await getGoogleSheetData(auth, `${sheet}!A2:K`);
-      // Store the data in the allData object using the formatted year as the key.
-      allData[fullYear] = data;
-    } else {
-      console.warn(`Unexpected sheet format: ${sheet}`);
+        const data = await getGoogleSheetData(auth, `${sheet}!A2:K`);
+        // Store the data in the allData object using the formatted year as the key.
+        allData[fullYear] = data;
+      } else {
+        console.warn(`Unexpected sheet format: ${sheet}`);
+      }
     }
   }
+
+  alumYears.push('2025-2026'); // use dynamic parsing for current year instead? Maybe better to combine current and past officers & rename current officers sheet.
+  const sortedYears = Array.from(alumYears).sort().reverse();
+  writeToOutput(sortedYears, 'alumyears.json');
+
+  writeToOutput(allData, 'alumoutput.json');
 }
 
-alumYears.push('2025-2026'); // use dynamic parsing for current year instead? Maybe better to combine current and past officers & rename current officers sheet.
-const sortedYears = Array.from(alumYears).sort().reverse();
-writeToOutput(sortedYears, 'alumyears.json');
-
-writeToOutput(allData, 'alumoutput.json');
+main().catch((err) => {
+  console.error('An error occurred:', err);
+});
 
 ////////////////////////////////////////////////////////
 // Helper Functions
