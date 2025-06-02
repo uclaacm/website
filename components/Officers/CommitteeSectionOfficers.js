@@ -5,7 +5,7 @@ import { useEffect } from 'react';
 import alumData from '../../data/alumoutput.json';
 import alumYears from '../../data/alumyears.json';
 /* eslint-enable import/no-unresolved */
-import offData from '../../data/offoutput.json';
+import offData from '../../data/officeroutput.json';
 
 import Officers from '../Officers/OfficerCard';
 

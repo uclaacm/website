@@ -27,6 +27,9 @@ function HistoryCard({ historyEvent }) {
 
   const committeeColors = {
     'ACM-W': '#1BC3A9',
+    'ACM-Cloud': '#9f97ff',
+    'ACM-Impact': '#2fffcc',
+    'ACM-Jedi': '#2fffcc',
     'ACM-Hack': '#C960FF',
     'ACM-ICPC': '#FF8383',
     'ACM-AI': '#28B2FF',
