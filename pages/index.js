@@ -89,6 +89,21 @@ function Home() {
         </div><br /><br />
 
         <div className="content-section">
+          <h2>Our Sponsor!</h2>
+          <div className="banner-center">
+            <a href="https://www.qualcomm.com/company/careers/internships-and-early-in-career-opportunities">
+              <img
+                src="https://cdn.cookielaw.org/logos/b0a5f2cc-0b29-4907-89bf-3f6b380a03c8/0814c8dd-07ff-41eb-a1b0-ee0294137c9a/9ca69c31-5e86-432d-950c-cfa7fcaa3cc8/1280px-Qualcomm-Logo.svg.png"
+                alt="Banner"
+              />
+            </a>
+          </div>
+          <div className="button-section">
+            <Link href="/sponsors" className="button">Sponsor Us!</Link>
+          </div>
+        </div>
+
+        <div className="content-section">
           <h2>In the News</h2>
           <div
             className={`achievements-container ${expanded ? 'expanded' : 'collapsed'}`}
