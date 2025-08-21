@@ -55,6 +55,20 @@
   }
 }
 
+.banner-center {
+  text-align: center;
+
+  img {
+    max-width: 100%;
+    height: 50px;
+    object-fit: contain;
+    aspect-ratio: auto 1 / 1;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .sign-up-section {
   display: flex;
   flex-direction: row;
