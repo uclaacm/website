@@ -26,7 +26,7 @@ export default function Navbar() {
     { label: 'Dev Team', href: '/dev'},
     { label: 'Impact', href: '/impact'},
     { label: 'JEDI', href: '/jedi'},
-  ]
+  ];
 
   const eventLinks = [
     { label: 'Calendar', href: '/events'},
@@ -79,7 +79,7 @@ export default function Navbar() {
               className={`nav-items ${menuActive ? 'active' : ''}`}
               role="presentation"
             >
-              <li className='top-item committees'>
+              <li className="top-item committees">
                 <ActiveLink
                   activeClassName="active"
                   href="/committees">
@@ -87,7 +87,7 @@ export default function Navbar() {
                     Committees
                   </button>
                 </ActiveLink>
-                <ul className='dropdown'>
+                <ul className="dropdown">
                   {committeeLinks.map(({ label, id }) => (
                     <li key={id}>
                       <ActiveLink activeClassName="active" href={`/committees#${id}`}>
@@ -100,7 +100,7 @@ export default function Navbar() {
                 </ul>
               </li>
               {/* <li><Link href="/gm"><a>{gmData.date.quarter} GM</a></Link></li> */}
-              <li id="committee-mobile-nav-item">
+              {/* <li id="committee-mobile-nav-item">
                 <ul className="committee-mobile-nav" role="presentation">
                   {committeeLinks.map(({ label, id }) => (
                     <li key={id}>
@@ -115,12 +115,12 @@ export default function Navbar() {
                     </li>
                   ))}
                 </ul>
-              </li>
-              <li className='top-item'>
+              </li> */}
+              <li className="top-item">
                 <button type="button" onClick={menuActivate}>
                   Initiatives
                 </button>
-                <ul className='dropdown'>
+                <ul className="dropdown">
                   {initiativeLinks.map(({ label, href }) => (
                     <li key={href}>
                       <ActiveLink activeClassName="active" href={href}>
@@ -148,7 +148,7 @@ export default function Navbar() {
                   ))}
                 </ul>
               </li>
-              <li className='top-item'>
+              <li className="top-item">
                 <ActiveLink
                   activeClassName="active"
                   href="/events"
@@ -157,7 +157,7 @@ export default function Navbar() {
                     Events
                   </button>
                 </ActiveLink>
-                <ul className='dropdown'>
+                <ul className="dropdown">
                   {eventLinks.map(({ label, href }) => (
                     <li key={href}>
                       <ActiveLink activeClassName="active" href={href}>
@@ -169,7 +169,23 @@ export default function Navbar() {
                   ))}
                 </ul>
               </li>
-              <li className='top-item'>
+              <li className="hide-on-desktop" id="initiatives-mobile-nav-item">
+                <ul className="committee-mobile-nav" role="presentation">
+                  {eventLinks.map(({ label, href }) => (
+                    <li key={label}>
+                      <ActiveLink
+                        activeClassName="active"
+                        href={href}
+                      >
+                        <button type="button" onClick={menuActivate}>
+                          {label}
+                        </button>
+                      </ActiveLink>
+                    </li>
+                  ))}
+                </ul>
+              </li>
+              <li className="top-item">
                 <ActiveLink
                   activeClassName="active"
                   href="/about"
@@ -178,7 +194,7 @@ export default function Navbar() {
                     About
                   </button>
                 </ActiveLink>
-                <ul className='dropdown'>
+                <ul className="dropdown">
                   {aboutLinks.map(({ label, href }) => (
                     <li key={href}>
                       <ActiveLink activeClassName="active" href={href}>
@@ -190,7 +206,23 @@ export default function Navbar() {
                   ))}
                 </ul>
               </li>
-              <li className='member-login'>
+              <li className="hide-on-desktop" id="initiatives-mobile-nav-item">
+                <ul className="committee-mobile-nav" role="presentation">
+                  {aboutLinks.map(({ label, href }) => (
+                    <li key={label}>
+                      <ActiveLink
+                        activeClassName="active"
+                        href={href}
+                      >
+                        <button type="button" onClick={menuActivate}>
+                          {label}
+                        </button>
+                      </ActiveLink>
+                    </li>
+                  ))}
+                </ul>
+              </li>
+              <li className="member-login">
                 <Link
                   href="https://members.uclaacm.com"
                   className="button button-transparent button-lg font-header">

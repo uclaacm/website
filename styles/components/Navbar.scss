@@ -120,7 +120,7 @@ $committees:
         .dropdown {
           display: none;
           position: absolute;
-          top: 100%;    // just beneath the nav-link
+          top: 103%;
           left: 0;
           background: white;
           box-shadow: 0 4px 8px rgba(0,0,0,0.2);
@@ -128,6 +128,7 @@ $committees:
           margin: 0;
           padding: 8px 0;
           min-width: 200px;
+          border-radius: 12px;
       
           li button {
             display: block;
@@ -187,7 +188,7 @@ $committees:
         display: none;
         height: max-content;
         text-align: center;
-        width: 60%;
+        width: 90%;
 
         li {
           padding: 0;
@@ -248,6 +249,10 @@ $committees:
             a {
               width: 195px;
             }
+          }
+
+          .dropdown {
+            display: none;
           }
 
           &.active {
