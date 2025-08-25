@@ -22,13 +22,12 @@
 
   .achievement {
     display: inline-block;
-    margin: 40px;
+    margin: 30px;
     max-width: 100%;
-    min-height: 250px;
     text-align: center;
     text-decoration: none;
     vertical-align: top;
-    width: 450px;
+    width: 350px;
 
     &:hover {
       transform: scale(1.02);
@@ -37,8 +36,7 @@
     img {
       border: 2px solid #EAEAEA;
       border-radius: 15px;
-      min-height: 250px;
-      width: 450px;
+      width: 350px;
     }
 
     h3 {
