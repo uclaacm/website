@@ -1,9 +1,7 @@
-function ContentBanner({ title }) {
+function ContentBanner({ children }) {
   return (
-    <div className="full-width blue">
-      <div id="banner-right" className="full-width">
-        <h2 style={{ fontSize: '1.6em' }}>{title}</h2>
-      </div>
+    <div className="content-banner">
+      {children}
     </div>
   );
 }

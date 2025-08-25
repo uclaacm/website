@@ -11,14 +11,14 @@ const monthToNumber = {
 
 function Timeline({ historyLog }) {
   historyLog.sort((a, b) => {
-    const yearDiff = b.date.year - a.date.year;
+    const yearDiff = b.dateObj.year - a.dateObj.year;
     if (yearDiff !== 0) return yearDiff;
 
-    const monthA = typeof a.date.month === 'string' ? monthToNumber[a.date.month] : a.date.month;
-    const monthB = typeof b.date.month === 'string' ? monthToNumber[b.date.month] : b.date.month;
+    const monthA = typeof a.dateObj.month === 'string' ? monthToNumber[a.dateObj.month] : a.dateObj.month;
+    const monthB = typeof b.dateObj.month === 'string' ? monthToNumber[b.dateObj.month] : b.dateObj.month;
 
-    if (monthA - monthB === 0 && a.date.date && b.date.date) {
-      const dateDiff = b.date.date - a.date.date;
+    if (monthA - monthB === 0 && a.dateObj.date && b.dateObj.date) {
+      const dateDiff = b.dateObj.date - a.dateObj.date;
       return dateDiff;
     }
 

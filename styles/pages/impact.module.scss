@@ -63,17 +63,32 @@
 .workshop-card {
   margin-bottom: 2em;
   padding: 0 1em 1em 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .workshop-image-container {
-  // TODO: let's deal with this later :)
-  // border: 1px solid gray;
-  // border-radius: 10px;
-  // filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
   align-items: center;
   display: flex;
   margin: 0 auto;
   max-width: 300px;
+  height: auto;
+  max-height: 180px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 10px;
+
+  .workshop-image-container > div {
+    position: unset !important;
+  }
+  
+  .workshop-image-container img {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+  }
 }
 
 .blog-card {
@@ -116,7 +131,13 @@
 
 .carousel-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+  margin: 20px 0;
+  position: relative;
+  max-width: 100%;
+  min-height: 450px; // Set minimum height to prevent jumping
 }
 
 .button-container {
@@ -150,4 +171,80 @@
 .btn-selected:hover,
 .btn-unselected:hover {
   cursor: pointer;
+}
+
+.carousel-button {
+  background: transparent;
+  color: #333;
+  border: 0;
+  width: 50px; // Increased from 40px to 50px
+  height: auto;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  padding: 0; // Adjusted padding
+  align-self: stretch;
+  position: relative; // Add position relative
+  
+  &:hover {
+    background: rgba(0, 0, 0, 0.03);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  &:focus {
+    outline: none;
+  }
+  
+  &:active {
+    background: rgba(0, 0, 0, 0.05);
+  }
+}
+
+.workshop-cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  padding: 0 5px;
+  width: 100%;
+  
+  @media (max-width: variables.$tablet-breakpoint) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  
+  @media (min-width: variables.$tablet-breakpoint) and (max-width: variables.$navbar-breakpoint) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+// Clean arrow icons
+.arrow-icon {
+  width: 10px;
+  height: 10px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.7);
+  border-width: 0 8px 8px 0;
+  padding: 4px;
+  display: inline-block;
+  position: absolute; // Position absolutely within the button
+  left: 50%; // Center horizontally
+  top: 50%; // Center vertically
+  transform-origin: center; // Set transform origin to center
+  transition: border-color 0.2s ease;
+}
+
+.carousel-button:hover .arrow-icon {
+  border-color: rgba(0, 0, 0, 0.95);
+}
+
+.arrow-left {
+  transform: translate(-50%, -50%) rotate(135deg); // Center and rotate
+  -webkit-transform: translate(-50%, -50%) rotate(135deg);
+}
+
+.arrow-right {
+  transform: translate(-50%, -50%) rotate(-45deg); // Center and rotate
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
 }

@@ -21,13 +21,15 @@
     "react-big-calendar": "^1.8.4",
     "react-countdown": "^2.3.5",
     "react-dom": "^18.3.1",
+    "react-social-media-embed": "^2.5.18",
     "sass": "^1.84.0",
+    "three": "^0.157.0",
     "yarn": "^1.22.21"
   },
   "scripts": {
     "start": "next dev",
     "start-production": "next start",
-    "build": "npm run ofp && npm run nep && npm run thp && npm run gmp && next build",
+    "build": "npm run alp && npm run ofp && npm run nep && npm run thp && npm run hep && npm run gmp && next build",
     "lint-js": "eslint \"**/*.js\"",
     "lint-js-fix": "eslint --fix \"**/*.js\"",
     "lint-css": "stylelint \"**/*.css\" \"**/*.scss\"",
@@ -36,10 +38,12 @@
     "lint-fix": "eslint --fix \"**/*.js\" && stylelint --fix \"**/*.css\" \"**/*.scss\"",
     "reg": "node scripts/recurring-event-generator.mjs",
     "seg": "node scripts/single-event-generator.mjs",
+    "alp": "node scripts/alumni-parser.mjs",
     "ofp": "node scripts/officer-parser.mjs",
     "nep": "node scripts/news-parser.mjs",
     "thp": "node scripts/town-hall-generator.mjs",
     "gmp": "node scripts/gm-generator.mjs",
+    "hep": "node scripts/history-events.mjs",
     "test": "jest --env=jsdom"
   },
   "eslintConfig": {

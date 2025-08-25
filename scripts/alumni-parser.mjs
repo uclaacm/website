@@ -5,32 +5,62 @@ import path from 'path';
 
 dotenv.config();
 const SERVICE_ACCOUNT = process.env.SERVICE_ACCOUNT;
-const DIRECTORY_SPREADSHEET_ID = process.env.DIRECTORY_SPREADSHEET_ID;
+const DATAHUB_SPREADSHEET_ID = process.env.DATAHUB_SPREADSHEET_ID;
 
-// await getGoogleSheetData('Officers!A2:K');
-writeToOutput(await getGoogleSheetData('Officers!A2:K'));
+async function main() {
+  const auth = await authorizeGoogleAPI();
+  const sheetNames = await getSheetNames(auth);
+
+  // For each google sheet with name in the format of "Officers(XX-XX)", collect their data by year, and write to alumoutput.json.
+  // Dynamically determines the alumni years from the names of google sheets and write to alumyears.json.
+  const allData = {};
+  const alumYears = [];
+  for (const sheet of sheetNames) {
+    if (sheet.startsWith('Officers(')) {
+      const match = sheet.match(/\((\d{2})-(\d{2})\)/);
+      if (match && match[1] && match[2]) {
+        const fullYear = `20${match[1]}-20${match[2]}`;
+        alumYears.push(fullYear);
+
+        const data = await getGoogleSheetData(auth, `${sheet}!A2:K`);
+        // Store the data in the allData object using the formatted year as the key.
+        allData[fullYear] = data;
+      } else {
+        console.warn(`Unexpected sheet format: ${sheet}`);
+      }
+    }
+  }
+
+  alumYears.push('2025-2026'); // use dynamic parsing for current year instead? Maybe better to combine current and past officers & rename current officers sheet.
+  const sortedYears = Array.from(alumYears).sort().reverse();
+  writeToOutput(sortedYears, 'alumyears.json');
+
+  writeToOutput(allData, 'alumoutput.json');
+}
+
+main().catch((err) => {
+  console.error('An error occurred:', err);
+});
 
 ////////////////////////////////////////////////////////
 // Helper Functions
 ////////////////////////////////////////////////////////
 
-// Read data from Google sheets
-// using sheet range (eg: 'Week 1!A:H)
-async function getGoogleSheetData(range) {
-  const sheets = google.sheets({ version: 'v4' });
-
-  // Get JWT Token to access sheet
+async function authorizeGoogleAPI() {
   const service_account = JSON.parse(SERVICE_ACCOUNT);
   const jwtClient = new google.auth.JWT(
     service_account.client_email,
-    null, // or undefined, or an empty string (depends on your use case)
+    null,
     service_account.private_key,
     ['https://www.googleapis.com/auth/spreadsheets'],
   );
-
-  // Authorize the client
   await jwtClient.authorize();
+  return jwtClient;
+}
 
+// Read data from Google sheets
+// using sheet range (eg: 'Week 1!A:H)
+async function getGoogleSheetData(auth, range) {
   const committees = [
     'Board',
     'Board, Dev Team',
@@ -49,9 +79,10 @@ async function getGoogleSheetData(range) {
 
   // Get data from Google spreadsheets
   try {
+    const sheets = google.sheets({ version: 'v4' });
     const res = await sheets.spreadsheets.values.get({
-      auth: jwtClient,
-      spreadsheetId: DIRECTORY_SPREADSHEET_ID,
+      auth: auth,
+      spreadsheetId: DATAHUB_SPREADSHEET_ID,
       range: range,
     });
 
@@ -119,12 +150,21 @@ async function getGoogleSheetData(range) {
   }
 }
 
-function writeToOutput(officers) {
-  // Write to officeroutput.json
-  const out = JSON.stringify(officers);
-  const outputPath = path.join(process.cwd(), 'data', 'officeroutput.json');
+async function getSheetNames(auth) {
+  const sheets = google.sheets({ version: 'v4' });
+  const res = await sheets.spreadsheets.get({
+    auth: auth,
+    spreadsheetId: DATAHUB_SPREADSHEET_ID,
+  });
+  return res.data.sheets.map((sheet) => sheet.properties.title);
+}
+
+function writeToOutput(officerData, filename) {
+  // Write officerData to filename.
+  const out = JSON.stringify(officerData, null, 2);
+  const outputPath = path.join(process.cwd(), 'data', filename);
   fs.writeFile(outputPath, out, (err) => {
     if (err) throw err;
-    console.log('Output successfully saved to data/officeroutput.json');
+    console.log(`Output successfully saved to data/${filename}`);
   });
 }
