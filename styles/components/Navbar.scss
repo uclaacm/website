@@ -1,9 +1,15 @@
 @use 'sass:list';
 @use '../variables.scss';
 
-$committees: (ai,variables.$ai-arctic), (cyber,variables.$cyber-amber), (design,variables.$design-orange),
-  (hack,variables.$hack-purple), (icpc,variables.$icpc-tangerine), (studio,variables.$studio-raspberry),
-  (teachla,variables.$teachla-green), (w,variables.$w-teal);
+$committees: (studio,variables.$studio-raspberry),
+  (icpc,variables.$icpc-tangerine), 
+  (design,variables.$design-orange),
+  (cyber,variables.$cyber-amber), 
+  (teachla,variables.$teachla-green), 
+  (w,variables.$w-teal),
+  (ai,variables.$ai-arctic), 
+  (cloud,variables.$cloud-purple),
+  (hack,variables.$hack-purple);
 
 #navbar {
   background: white;
@@ -91,25 +97,84 @@ $committees: (ai,variables.$ai-arctic), (cyber,variables.$cyber-amber), (design,
       margin: 0;
       padding: 0;
 
+      button {
+        background-color: transparent;
+        border: 0;
+        color: inherit;
+        font-family: inherit;
+        font-size: 0.95em;
+        font-weight: 600;
+        text-transform: lowercase;
+        transition: 0.2s;
+
+        &:hover {
+          color: variables.$acm-cobalt;
+          cursor: pointer;
+        }
+      }
+
+      li.top-item {
+        position: relative;
+        padding-top: 15px;
+        padding-bottom: 15px;
+
+        // hide dropdown by default
+        .dropdown {
+          display: none;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          background: white;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+          list-style: none;
+          margin: 0;
+          padding: 8px 0;
+          min-width: 200px;
+          border-radius: 12px;
+      
+          li button {
+            display: block;
+            width: 100%;
+            background: none;
+            text-align: left;
+            font: inherit;
+            cursor: pointer;
+      
+            &:hover {
+              color: variables.$acm-cobalt;
+              cursor: pointer;
+            }
+          }
+        }
+
+        &.committees {
+          .dropdown {
+            @for $i from 1 through list.length($committees) {
+              $color: list.nth(list.nth($committees, $i), 2);
+  
+              li:nth-child(#{$i}) button:hover,
+              li:nth-child(#{$i}) button:focus {
+                color: $color;
+              }
+            }
+          }
+        }
+      
+        // on desktop: show on hover
+        &:hover .dropdown {
+          display: block;
+        }
+      }
+      
+      li.member-login {
+        a {
+          width: 110px;
+        }
+      }
+
       li {
         line-height: 40px;
         padding: 0 20px;
-
-        button {
-          background-color: transparent;
-          border: 0;
-          color: inherit;
-          font-family: inherit;
-          font-size: 0.95em;
-          font-weight: 600;
-          text-transform: lowercase;
-          transition: 0.2s;
-
-          &:hover {
-            color: variables.$acm-cobalt;
-            cursor: pointer;
-          }
-        }
 
         // prevents committee text fade on li hover
         &:hover {
@@ -121,18 +186,22 @@ $committees: (ai,variables.$ai-arctic), (cyber,variables.$cyber-amber), (design,
         display: none;
         height: max-content;
         text-align: center;
-        width: 60%;
+        width: 90%;
 
         li {
           padding: 0;
         }
 
         // committee color applied on hover and active
-
-        @each $committee in $committees {
-          [href='/committees##{list.nth($committee, 1)}']:hover,
-          [href='/committees##{list.nth($committee, 1)}'].active {
-            color: #{list.nth($committee, 2)};
+        .committee-mobile-nav {
+          @for $i from 1 through list.length($committees) {
+            $committee: list.nth($committees, $i);
+            $color: list.nth($committee, 2);
+  
+            li:nth-child(#{$i}) button:hover,
+            li:nth-child(#{$i}) button.active {
+              color: $color;
+            }
           }
         }
       }
@@ -172,6 +241,16 @@ $committees: (ai,variables.$ai-arctic), (cyber,variables.$cyber-amber), (design,
 
           li {
             margin: 5px 0;
+          }
+
+          li.member-login {
+            a {
+              width: 195px;
+            }
+          }
+
+          .dropdown {
+            display: none;
           }
 
           &.active {
