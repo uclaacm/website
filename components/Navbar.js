@@ -100,22 +100,6 @@ export default function Navbar() {
                 </ul>
               </li>
               {/* <li><Link href="/gm"><a>{gmData.date.quarter} GM</a></Link></li> */}
-              {/* <li id="committee-mobile-nav-item">
-                <ul className="committee-mobile-nav" role="presentation">
-                  {committeeLinks.map(({ label, id }) => (
-                    <li key={id}>
-                      <ActiveLink
-                        activeClassName="active"
-                        href={`/committees#${id}`}
-                      >
-                        <button type="button" onClick={menuActivate}>
-                          {label}
-                        </button>
-                      </ActiveLink>
-                    </li>
-                  ))}
-                </ul>
-              </li> */}
               <li className="top-item">
                 <button type="button" onClick={menuActivate}>
                   Initiatives
