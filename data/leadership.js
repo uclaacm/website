@@ -1,92 +1,102 @@
 export default [
-	{
-		name: 'Ava Asmani',
-		position: 'President',
-		img: '/images/officers/AvaAsmani.jpg',
-	},
-	{
-		name: 'Zack Pakin',
-		position: 'External Vice President',
-		img: '/images/officers/ZackPakin.jpg',
-	},
-	{
-		name: 'Sujay Jain',
-		position: 'Internal Vice President',
-		img: '/images/officers/SujayJain.jpg',
-	},
-	{
-		name: 'Christina Tong',
-		position: 'Co-President, Hack',
-		img: '/images/officers/ChristinaTong.jpg',
-	},
-	{
-		name: 'Nareh Agazaryan',
-		position: 'Co-President, Hack',
-		img: '/images/officers/NarehAgazaryan.jpg',
-	},
-	{
-		name: 'Aman Oberoi',
-		position: 'President, AI',
-		img: '/images/officers/AmanOberoi.jpg',
-	},
-	{
-		name: 'Paige Brown',
-		position: 'Co-President, ACM-W',
-		img: '/images/officers/PaigeBrown.jpg',
-	},
-	{
-		name: 'Ethan Wong',
-		position: 'Co-President, ACM-W',
-		img: '/images/officers/EthanWong.jpg',
-	},
-	{
-		name: 'Robert Lee',
-		position: 'President, ICPC',
-		img: '/images/officers/RobertLee.jpg',
-	},
-	{
-		name: 'Ray Hsiao',
-		position: 'Co-President, Game Studio',
-		img: '/images/officers/RayHsiao.jpg',
-	},
-	{
-		name: 'Caroline Wang',
-		position: 'Co-President, Game Studio',
-		img: '/images/officers/CarolineWang.jpg',
-	},
-	{
-		name: 'Jerry Xu',
-		position: 'Co-President, Cyber',
-		img: '/images/officers/JerryXu.jpg',
-	},
-	{
-		name: 'Stephen Kelman',
-		position: 'Co-President, Cyber',
-		img: '/images/officers/StephenKelman.jpg',
-	},
-	{
-		name: 'Milo Kearney',
-		position: 'General President, Teach LA',
-		img: '/images/officers/MiloKearney.jpg',
-	},
-	{
-		name: 'Eden Yu',
-		position: 'Vice President, Teach LA',
-		img: '/images/officers/EdenYu.jpg',
-	},
-	{
-		name: 'Jiin Kim',
-		position: 'Dev President, Teach LA',
-		img: '/images/officers/JiinKim.jpg',
-	},
-	{
-		name: 'Muthu Palaniappan',
-		position: 'Co-President, Design',
-		img: '/images/officers/MuthuPalaniappan.jpg',
-	},
-	{
-		name: 'Amy Seo',
-		position: 'Co-President, Design',
-		img: '/images/officers/AmySeo.png',
-	},
+  {
+    name: 'Nyla Zia',
+    role: 'President',
+    photo: '/images/officers/NylaZia.jpeg',
+  },
+  {
+    name: 'Meryl Mathew',
+    role: 'External Vice President',
+    photo: '/images/officers/MerylMathew.jpeg',
+  },
+  {
+    name: 'Larry Zhi',
+    role: 'Internal Vice President',
+    photo: '/images/officers/LarryZhi.jpeg',
+  },
+  {
+    name: 'Jenna Wang',
+    role: 'Co-President, Hack',
+    photo: '/images/officers/acmlogocopy.jpg',
+  },
+  {
+    name: 'Shiyu Ye',
+    role: 'Co-President, Hack',
+    photo: '/images/officers/acmlogocopy.jpg',
+  },
+  {
+    name: 'Gregor MacDonald',
+    role: 'Co-President, AI',
+    photo: '/images/officers/acmlogocopy.jpg',
+  },
+  {
+    name: 'Maxine Wu',
+    role: 'Co-President, AI',
+    photo: '/images/officers/MaxineWu.jpeg',
+  },
+  {
+    name: 'Nemi Desai',
+    role: 'Co-President, ACM-W',
+    photo: '/images/officers/NemiDesai.jpeg',
+  },
+  {
+    name: 'Sananshi Pidyar',
+    role: 'Co-President, ACM-W',
+    photo: '/images/officers/SananshiPidyar.png',
+  },
+  {
+    name: 'William Zhao',
+    role: 'President, ICPC',
+    photo: '/images/officers/acmlogocopy.jpg',
+  },
+  {
+    name: 'Joanna Liu',
+    role: 'Co-President, Game Studio',
+    photo: '/images/officers/JoannaLiu.jpg',
+  },
+  {
+    name: 'Aaron Kwan',
+    role: 'Co-President, Game Studio',
+    photo: '/images/officers/AaronKwan.jpeg',
+  },
+  {
+    name: 'Jason An',
+    role: 'Co-President, Cyber',
+    photo: '/images/officers/JasonAn.png',
+  },
+  {
+    name: 'Savannah Alanis',
+    role: 'Co-President, Cyber',
+    photo: '/images/officers/SavannahAlanis.jpg',
+  },
+  {
+    name: 'Leroy Betterton Gage',
+    role: 'Co-President, Teach LA',
+    photo: '/images/officers/acmlogocopy.jpg',
+  },
+  {
+    name: 'Vera Peker',
+    role: 'Co-President, Teach LA',
+    photo: '/images/officers/acmlogocopy.jpg',
+  },
+  {
+    name: 'Natalie Lord',
+    role: 'Dev President, Teach LA',
+    photo: '/images/officers/NatalieLord.jpeg',
+  },
+  {
+    name: 'Tiffany Zheng',
+    role: 'Co-President, Design',
+    photo: '/images/officers/TiffanyZheng.jpeg',
+  },
+  {
+    name: 'Edward Ng',
+    role: 'Co-President, Design',
+    photo: '/images/officers/EdwardNg.jpeg',
+  },
+  {
+    name: 'Daniel Yang',
+    role: 'President, Cloud',
+    photo: '/images/officers/DanielYang.jpeg',
+  },
 ];

@@ -36,7 +36,7 @@ Check out our project design doc for more information!
 
 ### Development Setup
 
-We'll follow a very traditional [Node.js](https://nodejs.org) project setup. Before we start, make sure that you have the LTS version of Node (currently ~ `16.x`) and a copy of [`git`](https://git-scm.com/) on your computer. We recommend you use [`nvm`](https://github.com/nvm-sh/nvm), which you should install!
+We'll follow a very traditional [Node.js](https://nodejs.org) project setup. Before we start, make sure that you have the LTS version of Node from ^18.18.0 || ^19.8.0 || >= 20.0.0 (to support Next 15) and a copy of [`git`](https://git-scm.com/) on your computer. We recommend you use [`nvm`](https://github.com/nvm-sh/nvm), which you should install!
 
 First, we'll clone the repo and install all of our dependencies. You only need to do this once.
 
@@ -44,13 +44,14 @@ First, we'll clone the repo and install all of our dependencies. You only need t
 $ git clone https://github.com/uclaacm/website.git
 ...
 $ cd website
-$ nvm use
+$ nvm use 20 #or whatever Node Version you installed
 $ npm install
 ```
 
-Our app's development and build cycle is managed by [Next.js](https://nextjs.org/); so, we can just run `npm start` to serve our app:
+Our app's development and build cycle is managed by [Next.js](https://nextjs.org/); so, we can just run `npm run build` to update databases and `npm start` to serve our app:
 
 ```sh
+$ npm run build
 $ npm start
 
 > acm-website@0.1.0 start /Users/matt/code/acm-website

@@ -1,10 +1,21 @@
-$committees: (ai, $ai-arctic), (cyber, $cyber-amber), (design, $design-orange), (hack, $hack-purple), (icpc, $icpc-tangerine), (studio, $studio-raspberry), (teachla, $teachla-green), (w, $w-teal);
+@use 'sass:list';
+@use '../variables.scss';
+
+$committees: (studio,variables.$studio-raspberry),
+  (icpc,variables.$icpc-tangerine), 
+  (design,variables.$design-orange),
+  (cyber,variables.$cyber-amber), 
+  (teachla,variables.$teachla-green), 
+  (w,variables.$w-teal),
+  (ai,variables.$ai-arctic), 
+  (cloud,variables.$cloud-purple),
+  (hack,variables.$hack-purple);
 
 #navbar {
   background: white;
   box-shadow: 0 0 4px #E2E2E2;
-  color: $font-primary-color;
-  font-family: $font-display;
+  color: variables.$font-primary-color;
+  font-family: variables.$font-display;
   font-weight: 600;
   height: 72px;
   left: 0;
@@ -25,9 +36,9 @@ $committees: (ai, $ai-arctic), (cyber, $cyber-amber), (design, $design-orange), 
     #nav-title {
       z-index: 12;
 
-      #acm-logo {
+      .acm-logo {
         height: 60px;
-        margin-top: 05px;
+        margin-top: 5px;
         width: 180px;
       }
     }
@@ -49,7 +60,7 @@ $committees: (ai, $ai-arctic), (cyber, $cyber-amber), (design, $design-orange), 
       z-index: 12;
 
       .bar {
-        background-color: $font-secondary-color;
+        background-color: variables.$font-secondary-color;
         border-radius: 04px;
         height: 03px;
         margin: 2px 0;
@@ -74,7 +85,7 @@ $committees: (ai, $ai-arctic), (cyber, $cyber-amber), (design, $design-orange), 
 
       &:hover {
         .bar {
-          background-color: $acm-cobalt;
+          background-color: variables.$acm-cobalt;
         }
       }
     }
@@ -86,29 +97,88 @@ $committees: (ai, $ai-arctic), (cyber, $cyber-amber), (design, $design-orange), 
       margin: 0;
       padding: 0;
 
+      button {
+        background-color: transparent;
+        border: 0;
+        color: inherit;
+        font-family: inherit;
+        font-size: 0.95em;
+        font-weight: 600;
+        text-transform: lowercase;
+        transition: 0.2s;
+
+        &:hover {
+          color: variables.$acm-cobalt;
+          cursor: pointer;
+        }
+      }
+
+      li.top-item {
+        position: relative;
+        padding-top: 15px;
+        padding-bottom: 15px;
+
+        // hide dropdown by default
+        .dropdown {
+          display: none;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          background: white;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+          list-style: none;
+          margin: 0;
+          padding: 8px 0;
+          min-width: 200px;
+          border-radius: 12px;
+      
+          li button {
+            display: block;
+            width: 100%;
+            background: none;
+            text-align: left;
+            font: inherit;
+            cursor: pointer;
+      
+            &:hover {
+              color: variables.$acm-cobalt;
+              cursor: pointer;
+            }
+          }
+        }
+
+        &.committees {
+          .dropdown {
+            @for $i from 1 through list.length($committees) {
+              $color: list.nth(list.nth($committees, $i), 2);
+  
+              li:nth-child(#{$i}) button:hover,
+              li:nth-child(#{$i}) button:focus {
+                color: $color;
+              }
+            }
+          }
+        }
+      
+        // on desktop: show on hover
+        &:hover .dropdown {
+          display: block;
+        }
+      }
+      
+      li.member-login {
+        a {
+          width: 110px;
+        }
+      }
+
       li {
         line-height: 40px;
         padding: 0 20px;
 
-        button {
-          background-color: transparent;
-          border: 0;
-          color: inherit;
-          font-family: inherit;
-          font-size: 0.95em;
-          font-weight: 600;
-          text-transform: lowercase;
-          transition: 0.2s;
-          
-          &:hover {
-            color: $acm-cobalt;
-            cursor: pointer;
-          }
-        }
-
         // prevents committee text fade on li hover
         &:hover {
-          color: $font-primary-color;
+          color: variables.$font-primary-color;
         }
       }
 
@@ -116,25 +186,29 @@ $committees: (ai, $ai-arctic), (cyber, $cyber-amber), (design, $design-orange), 
         display: none;
         height: max-content;
         text-align: center;
-        width: 60%;
+        width: 90%;
 
         li {
           padding: 0;
         }
 
         // committee color applied on hover and active
-
-        @each $committee in $committees {
-          [href='/committees##{nth($committee, 1)}']:hover,
-          [href='/committees##{nth($committee, 1)}'].active {
-            color: #{nth($committee, 2)};
+        .committee-mobile-nav {
+          @for $i from 1 through list.length($committees) {
+            $committee: list.nth($committees, $i);
+            $color: list.nth($committee, 2);
+  
+            li:nth-child(#{$i}) button:hover,
+            li:nth-child(#{$i}) button.active {
+              color: $color;
+            }
           }
         }
       }
     }
 
-    @media (max-width: $navbar-breakpoint) {
-      #hamburger { 
+    @media (max-width: variables.$navbar-breakpoint) {
+      #hamburger {
         display: flex;
       }
 
@@ -169,6 +243,16 @@ $committees: (ai, $ai-arctic), (cyber, $cyber-amber), (design, $design-orange), 
             margin: 5px 0;
           }
 
+          li.member-login {
+            a {
+              width: 195px;
+            }
+          }
+
+          .dropdown {
+            display: none;
+          }
+
           &.active {
             align-items: center;
             display: flex;
@@ -177,7 +261,7 @@ $committees: (ai, $ai-arctic), (cyber, $cyber-amber), (design, $design-orange), 
             //Highlight the link active just for initiative pages
             #initiatives-mobile-nav-item {
               .active {
-                color: $acm-cobalt;
+                color: variables.$acm-cobalt;
               }
             }
 

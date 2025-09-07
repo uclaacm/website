@@ -1,13 +1,29 @@
+@use '../variables.scss';
+
 .achievements-container {
   margin: auto;
-  text-align: center;
-  width: 100%;
+  max-width: none;
+  width: 90vw;
+  margin-left: calc(50% - 45vw);
+  margin-right: calc(50% - 45vw);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+
+  &.collapsed {
+    max-height: 330px;
+  }
+
+  &.expanded {
+    max-height: none;
+  }
 
   .achievement {
     display: inline-block;
-    margin: 20px;
+    margin: 30px;
     max-width: 100%;
-    min-height: 200px;
     text-align: center;
     text-decoration: none;
     vertical-align: top;
@@ -17,19 +33,16 @@
       transform: scale(1.02);
     }
 
-
     img {
       border: 2px solid #EAEAEA;
       border-radius: 15px;
-      height: 200px;
-      max-width: 350px;
-      max-width: 100%;
+      width: 350px;
     }
 
     h3 {
-      color: $font-primary-color;
-      font-family: $font-body;
-      font-size: 0.9em;
+      color: variables.$font-primary-color;
+      font-family: variables.$font-body;
+      font-size: 1em;
       font-weight: bold;
       text-transform: capitalize;
     }

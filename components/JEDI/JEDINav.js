@@ -1,6 +1,4 @@
 import Link from 'next/link';
-import React from 'react';
-
 import { blogLink } from '../../data/jedi';
 import styles from '../../styles/pages/jedi.module.scss';
 
@@ -27,15 +25,29 @@ const links = [
   },
 ];
 
-function NavLink({ path, title, ext }){
-  return <Link href={path}><a className={styles['jedi-link']} target={ext ? '_blank': ''} rel={ext ? 'noopener noreferrer' : ''}>{title}</a></Link>;
+function NavLink({ path, title, ext }) {
+  return (
+    (<Link
+      href={path}
+      className={styles['jedi-link']}
+      target={ext ? '_blank' : ''}
+      rel={ext ? 'noopener noreferrer' : ''}>
+
+      {title}
+
+    </Link>)
+  );
 }
 
 function JEDINav() {
   return (
     <nav id="jedi-nav" className={styles['mt-2']} aria-label="JEDI side nav">
       <ul className={styles['jedi-horz-nav']}>
-        {links.map((link) => <li key={link.path}><NavLink {...link}/></li>)}
+        {links.map((link) => (
+          <li key={link.path}>
+            <NavLink {...link} />
+          </li>
+        ))}
       </ul>
     </nav>
   );

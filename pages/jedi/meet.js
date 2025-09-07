@@ -1,14 +1,11 @@
-import faSlack from '@fortawesome/free-brands-svg-icons';
+import { faSlack } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { NextSeo } from 'next-seo';
 import Link from 'next/link';
-import React from 'react';
-
+import { NextSeo } from 'next-seo';
 import JEDINav from '../../components/JEDI/JEDINav';
 import Layout from '../../components/Layout';
 import Officers from '../../components/OfficerCard';
-
 import { contactEmail, jedis } from '../../data/jedi';
 import styles from '../../styles/pages/jedi.module.scss';
 
@@ -38,24 +35,24 @@ function Meet() {
         </div>
         <p className="text-center">
           not pictured:&nbsp;
-          <Link href="https://arjunsubramonian.github.io/">
-            <a
-              className={styles['jedi-link']}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Arjun
-            </a>
+          <Link
+            href="https://arjunsubramonian.github.io/"
+            className={styles['jedi-link']}
+            target="_blank"
+            rel="noopener noreferrer">
+
+            Arjun
+
           </Link>
           &nbsp; and&nbsp;
-          <Link href="https://sharvani.urspace.io/">
-            <a
-              className={styles['jedi-link']}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Sharvani
-            </a>
+          <Link
+            href="https://sharvani.urspace.io/"
+            className={styles['jedi-link']}
+            target="_blank"
+            rel="noopener noreferrer">
+
+            Sharvani
+
           </Link>
           , who we wouldn&apos;t have JEDI without!
         </p>

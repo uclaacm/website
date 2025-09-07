@@ -1,4 +1,4 @@
-import React from 'react';
+
 import ao3 from '../public/images/jedi/allyship/ao3.png';
 import cisgenderPrivilege from '../public/images/jedi/allyship/cisgender-privilege.png';
 import disabilityAccessibility from '../public/images/jedi/allyship/disability-accessibility.jpg';

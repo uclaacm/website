@@ -1,3 +1,5 @@
+@use '../variables.scss';
+
 .banner {
   height: 360px;
   overflow: hidden;
@@ -28,7 +30,7 @@
   }
 
   .square {
-    background-color: $acm-cobalt;
+    background-color: variables.$acm-cobalt;
     border-radius: 14px;
     height: 50px;
     margin-bottom: 6px;
@@ -36,41 +38,125 @@
     width: 50px;
   }
 
-  .square.dark { background-color: $acm-black; }
-  .square.light { background-color: $acm-tint; }
-  .square.white { background-color: white !important; }
+  .square.dark {
+    background-color: variables.$acm-black;
+  }
 
-  &.hack .square { background-color: $hack-purple; }
-  &.hack .square.dark { background-color: $hack-black; }
-  &.hack .square.light { background-color: $hack-tint; }
+  .square.light {
+    background-color: variables.$acm-tint;
+  }
 
-  &.ai .square { background-color: $ai-arctic; }
-  &.ai .square.dark { background-color: $ai-black; }
-  &.ai .square.light { background-color: $ai-tint; }
+  .square.white {
+    background-color: white !important;
+  }
 
-  &.w .square { background-color: $w-teal; }
-  &.w .square.dark { background-color: $w-black; }
-  &.w .square.light { background-color: $w-tint; }
+  &.hack .square {
+    background-color: variables.$hack-purple;
+  }
 
-  &.cyber .square { background-color: $cyber-amber; }
-  &.cyber .square.dark { background-color: $cyber-black; }
-  &.cyber .square.light { background-color: $cyber-tint; }
+  &.hack .square.dark {
+    background-color: variables.$hack-black;
+  }
 
-  &.studio .square { background-color: $studio-raspberry; }
-  &.studio .square.dark { background-color: $studio-black; }
-  &.studio .square.light { background-color: $studio-tint; }
+  &.hack .square.light {
+    background-color: variables.$hack-tint;
+  }
 
-  &.icpc .square { background-color: $icpc-tangerine; }
-  &.icpc .square.dark { background-color: $icpc-black; }
-  &.icpc .square.light { background-color: $icpc-tint; }
+  &.ai .square {
+    background-color: variables.$ai-arctic;
+  }
 
-  &.design .square { background-color: $design-orange; }
-  &.design .square.dark { background-color: $design-black; }
-  &.design .square.light { background-color: $design-tint; }
+  &.ai .square.dark {
+    background-color: variables.$ai-black;
+  }
 
-  &.teachla .square { background-color: $teachla-green; }
-  &.teachla .square.dark { background-color: $teachla-black; }
-  &.teachla .square.light { background-color: $teachla-tint; }
+  &.ai .square.light {
+    background-color: variables.$ai-tint;
+  }
+
+  &.w .square {
+    background-color: variables.$w-teal;
+  }
+
+  &.w .square.dark {
+    background-color: variables.$w-black;
+  }
+
+  &.w .square.light {
+    background-color: variables.$w-tint;
+  }
+
+  &.cyber .square {
+    background-color: variables.$cyber-amber;
+  }
+
+  &.cyber .square.dark {
+    background-color: variables.$cyber-black;
+  }
+
+  &.cyber .square.light {
+    background-color: variables.$cyber-tint;
+  }
+
+  &.studio .square {
+    background-color: variables.$studio-raspberry;
+  }
+
+  &.studio .square.dark {
+    background-color: variables.$studio-black;
+  }
+
+  &.studio .square.light {
+    background-color: variables.$studio-tint;
+  }
+
+  &.icpc .square {
+    background-color: variables.$icpc-tangerine;
+  }
+
+  &.icpc .square.dark {
+    background-color: variables.$icpc-black;
+  }
+
+  &.icpc .square.light {
+    background-color: variables.$icpc-tint;
+  }
+
+  &.design .square {
+    background-color: variables.$design-orange;
+  }
+
+  &.design .square.dark {
+    background-color: variables.$design-black;
+  }
+
+  &.design .square.light {
+    background-color: variables.$design-tint;
+  }
+
+  &.teachla .square {
+    background-color: variables.$teachla-green;
+  }
+
+  &.teachla .square.dark {
+    background-color: variables.$teachla-black;
+  }
+
+  &.teachla .square.light {
+    background-color: variables.$teachla-tint;
+  }
+
+  &.cloud .square {
+    background-color: variables.$cloud-purple;
+  }
+
+  &.cloud .square.dark {
+    background-color: variables.$cloud-black;
+  }
+
+  &.cloud .square.light {
+    background-color: variables.$cloud-tint;
+  }
 
   .title {
     height: 280px;
@@ -82,8 +168,8 @@
     width: 100%;
 
     h1 {
-      color: $acm-cobalt;
-      font-family: $font-display;
+      color: variables.$acm-cobalt;
+      font-family: variables.$font-display;
       font-size: 2.3em;
       font-weight: bold;
       margin: 0;
@@ -92,12 +178,39 @@
     }
   }
 
-  &.hack    .title h1 { color: $hack-purple; }
-  &.ai      .title h1 { color: $ai-arctic; }
-  &.w       .title h1 { color: $w-teal; }
-  &.cyber   .title h1 { color: $cyber-amber; }
-  &.studio  .title h1 { color: $studio-raspberry; }
-  &.icpc    .title h1 { color: $icpc-tangerine; }
-  &.design  .title h1 { color: $design-orange; }
-  &.teachla .title h1 { color: $teachla-green; }
+  &.hack .title h1 {
+    color: variables.$hack-purple;
+  }
+
+  &.ai .title h1 {
+    color: variables.$ai-arctic;
+  }
+
+  &.w .title h1 {
+    color: variables.$w-teal;
+  }
+
+  &.cyber .title h1 {
+    color: variables.$cyber-amber;
+  }
+
+  &.studio .title h1 {
+    color: variables.$studio-raspberry;
+  }
+
+  &.icpc .title h1 {
+    color: variables.$icpc-tangerine;
+  }
+
+  &.design .title h1 {
+    color: variables.$design-orange;
+  }
+
+  &.teachla .title h1 {
+    color: variables.$teachla-green;
+  }
+
+  &.cloud .title h1 {
+    color: variables.$cloud-purple;
+  }
 }

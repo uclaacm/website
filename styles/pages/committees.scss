@@ -1,9 +1,29 @@
+@use '../variables.scss';
+
+.officers-page-container,
+.committees-page-container {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1.5em;
+  margin-top: -20px;
+  width: 100%;
+
+  @media (max-width: variables.$navbar-breakpoint), (max-height: variables.$sidebar-breakpoint) {
+    justify-content: center;
+  }
+}
+
 .committees-page-content {
   box-sizing: border-box;
-  margin: auto;
+  margin-left: 3em;
   max-width: 900px;
   padding: 0 30px;
   width: 100%;
+
+  @media (max-width: variables.$navbar-breakpoint), (max-height: variables.$sidebar-breakpoint) {
+    margin-left: 0;
+  }
 
   h1 {
     font-size: 2em;
@@ -16,7 +36,7 @@
   }
 
   p {
-    font-family: $font-body;
+    font-family: variables.$font-body;
     font-size: 1em;
     line-height: 150%;
 
@@ -40,10 +60,10 @@
   }
 }
 
-.body-wrapper {
+.committee-body-wrapper {
   margin: 50px 0 40px;
 
-  .card-container {
+  .committee-card-container {
     display: flex;
     flex-wrap: wrap;
   }
@@ -52,6 +72,7 @@
 .image-wrapper {
   border-radius: 10px;
   box-shadow: 0 0 1pt 0;
+  padding: 10px 20px;
 
   // this is kind of gnarly, but the !important override is needed to overwrite the CSS built into /next/image
   // the div is to change display from inline-block to block so there's no weird spacing between border and image
@@ -63,12 +84,12 @@
 
   img {
     box-shadow: none !important;
-  }  
+  }
 }
 
 .committee-banner-container {
   @media (min-width: 688px) {
-    margin-top: -20px;
+    //margin-top: -20px;
     min-height: 500px;
 
     p {
@@ -83,3 +104,78 @@ html {
   scroll-padding-top: 75px;
 }
 
+.officers-page-content {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin-left: 3em;
+  max-width: 1100px;
+  padding: 0 30px;
+
+  @media (max-width: variables.$navbar-breakpoint), (max-height: variables.$sidebar-breakpoint) {
+    margin-left: 0;
+    max-width: 900px;
+  }
+
+  h1 {
+    font-size: 2em;
+    margin: 10px 0;
+  }
+
+  h2 {
+    font-size: 1.2em;
+    margin: 0;
+  }
+
+  p {
+    font-family: variables.$font-body;
+    font-size: 1em;
+    line-height: 150%;
+
+    &.subheading {
+      font-size: 1em;
+    }
+
+    strong {
+      font-weight: bold;
+    }
+  }
+
+  .officer-image {
+    border-radius: 50%; /* Make the image completely round */
+    height: 100%;
+    padding: 10px; /* Add padding around the image */
+    width: 100%;
+  }
+
+  .committeebanner {
+    border-radius: 10px;
+    // box-shadow: 0 0 1pt 0;
+    width: 50%;
+    // display: block;
+    // margin: auto;
+  }
+
+  @media (min-width: 688px) {
+    padding: 0 60px;
+  }
+
+  .bannerpic {
+    border-radius: 10px;
+    box-shadow: 0 0 1pt 0;
+    width: 100%;
+  }
+}
+
+.officers-body-wrapper {
+  margin: 50px auto 40px;
+  display: flex;
+  justify-content: center;
+
+  .officers-card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Ensures responsive behavior */
+    gap: 3em;
+    max-width: 100%;
+  }
+}

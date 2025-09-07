@@ -1,53 +1,68 @@
 // import Image from 'next/image';
-import React, { useEffect, useState } from 'react';
+import { faChevronRight, faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-function SidebarLink(props){
-	return (
-		<a
-			className={`committee ${props.committee.class}`}
-			href={`#${props.committee.class}`}
-		>
-			<div className="committee-sidebar-image">
-				{/* TODO: resolve next/image issue */}
-				{/* eslint-disable-next-line @next/next/no-img-element */}
-				<img src={props.committee.image} alt={`Logo and Wordmark for ACM ${props.committee.name}`} />
-			</div>
-		</a>
-	);
+import { useState } from 'react';
+
+/* eslint-disable import/no-unresolved */
+import alumYears from '../../data/alumyears.json';
+/* eslint-enable import/no-unresolved */
+
+function SidebarLink(props) {
+  return (
+    <a
+      className={`committee ${props.committee.class}`}
+      href={`#${props.committee.class}`}
+    >
+      <div className="committee-sidebar-image">
+        {/* TODO: resolve next/image issue */}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={props.committee.image}
+          alt={`Logo and Wordmark for ACM ${props.committee.name}`}
+        />
+      </div>
+    </a>
+  );
 }
 
-function Sidebar(props){
-	// Check if user has scrolled to the bottom of the page
-	const footerHeight = 507.667; // is there a better way to do this?
-	const [bottom, setBottom] = useState(false);
-	const scrollBottomListener = () => {
-		const difference = document.documentElement.scrollHeight - window.innerHeight;
-		const scrollposition = document.documentElement.scrollTop;
-		setBottom(difference - scrollposition <= footerHeight);
-	};
+function Sidebar(props) {
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
-	useEffect(() => {
-		window.addEventListener('scroll', scrollBottomListener);
+  return (
+    <div className="sidebar-item">
 
-		// cleanup
-		return () => {
-			window.removeEventListener('scroll', scrollBottomListener);
-		};
-	}, []);
+      {/* Archive Dropdown */}
+      {props.showArchiveDropdown && <div className={`archive-dropdown ${isDropdownOpen ? 'open' : ''}`}>
+        <button className="dropdown-toggle" onClick={() => setIsDropdownOpen(!isDropdownOpen)}>
+          <span className="dropdown-label">ARCHIVE</span>
+          <FontAwesomeIcon
+            icon={isDropdownOpen ? faChevronDown : faChevronRight}
+            className="dropdown-icon"
+          />
+        </button>
 
+        {isDropdownOpen && (
+          <div className="dropdown-menu">
+            {alumYears.map((year) => (
+              <button
+                key={year}
+                className={`dropdown-item ${year === props.selectedYear ? 'selected' : ''}`}
+                onClick={() => {props.setSelectedYear(year);}}
+              >
+                {year}
+              </button>
+            ))}
+          </div>
+        )}
+      </div>}
 
-	// Don't display sidebar if user has scrolled to the bottom of the screen
-	if (bottom) {
-		return null;
-	}
-
-	return (
-		<div className="sidebar-item">
-			{props.committees.map(
-				committee => <SidebarLink key={committee.name} committee={committee} />,
-			)}
-		</div>
-	);
+      {/* Committees */}
+      {props.committees.map((committee) => (
+        <SidebarLink key={committee.name} committee={committee} />
+      ))}
+    </div>
+  );
 }
 
 export default Sidebar;

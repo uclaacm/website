@@ -1,19 +1,76 @@
+@use '../../variables.scss';
+
 .sidebar-item {
   background: none;
   display: inline-flex;
   flex-flow: column nowrap;
   left: 0;
-  margin-top: 40px;
-  padding: 1rem;
-  position: fixed;
-  top: 58.5%;
-  transform: translateY(-50%);
+  padding: 1em;
+  position: sticky;
+  top: 10%;
   transition: opacity 3s ease;
-  z-index: 1000;
+  //z-index: 1000;
+
+  .dropdown-toggle {
+    align-items: center;
+    background: none;
+    border: 0;
+    cursor: pointer;
+    display: flex;
+    gap: 0.5em;
+    padding: 0;
+    
+    .dropdown-label {
+      font-family: variables.$font-header;
+      font-size: 1.5em;
+      font-weight: bold;
+      letter-spacing: 0.1em;
+    }
+  }
+
+  .archive-dropdown {
+    height: 7.5vh;
+    padding-left: 20px;
+
+    &.open {
+      height: auto;
+      padding-bottom: 1em;
+
+      .dropdown-toggle {
+        border-bottom: 1px solid #CCC;
+      }
+    }
+
+    .dropdown-menu {
+      align-items: flex-start;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5em;
+      margin-top: 1em;
+
+      .dropdown-item {
+        background: none;
+        border-width: 0;
+        cursor: pointer;
+        font-family: variables.$font-display;
+        font-size: 1.2em;
+        padding: 0;
+
+        &:hover {
+          color: variables.$acm-cobalt;
+        }
+
+        &.selected {
+          color: variables.$acm-cobalt;
+          font-weight: bold;
+        }
+      }
+    }
+  }
 
   .committee {
     align-items: center;
-    color: $font-primary-color;
+    color: variables.$font-primary-color;
     display: inline-block;
     height: 7.5vh;
     position: relative;
@@ -34,10 +91,9 @@
   }
 }
 
-
 .committee-mobile-nav li {
   display: inline-block;
-  font-family: $font-header;
+  font-family: variables.$font-header;
   font-size: 16px !important;
   font-weight: bold;
   margin-bottom: 0 !important;
@@ -60,21 +116,19 @@
   white-space: pre;
 }
 
-
 .committee-mobile-nav {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   padding: 0;
-
 }
 
-@media screen and (max-width: $navbar-breakpoint) {
+@media screen and (max-width: variables.$navbar-breakpoint) {
   .sidebar-item {
     display: none;
   }
 }
 
-@media screen and (max-height: $sidebar-breakpoint) {
+@media screen and (max-height: variables.$sidebar-breakpoint) {
   .sidebar-item {
     display: none;
   }

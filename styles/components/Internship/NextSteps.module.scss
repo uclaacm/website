@@ -1,7 +1,7 @@
-@import '../../variables.scss';
+@use '../../variables.scss';
 
 .next-steps-card-inner {
-  @include shadow-boxes();
+  @include variables.shadow-boxes();
   background-color: #FFF;
   border-radius: 1rem;
   cursor: pointer;
@@ -10,7 +10,7 @@
   transform-style: preserve-3d;
   transition: transform 1s;
   width: 100%;
-  
+
   &.is-flipped {
     transform: rotateY(180deg);
   }
@@ -18,7 +18,7 @@
   img {
     height: 35px;
     margin-left: 10px;
-    position: relative;  
+    position: relative;
   }
 }
 
@@ -32,7 +32,7 @@
   perspective: 1000px;
   width: 197px;
 }
-  
+
 .next-steps-card-face {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -40,13 +40,13 @@
   height: 100%;
   position: absolute;
   width: 100%;
-    
+
   .card-info-name {
     margin: 0;
   }
 
   &.back {
-    border: 1px solid $acm-black;
+    border: 1px solid variables.$acm-black;
     height: 90%;
     padding: 10px;
     text-align: left;
