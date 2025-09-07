@@ -31,6 +31,7 @@ module.exports = {
     'react/prop-types': 'off',
     'react/no-unknown-property': 'off',
     'react/react-in-jsx-scope': 'off',
+    '@next/next/no-img-element': 'off',
 
     // many of these rules are taken from our friends at Creative Labs;
     // see their config here: https://github.com/UCLA-Creative-Labs/sunshine/blob/master/.eslintrc.js

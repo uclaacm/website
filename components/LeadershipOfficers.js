@@ -20,17 +20,17 @@ function Officer(props) {
   );
 }
 
-function Officers(props){
-	return (
-		// TODO: more flexible mobile views
-		<div className="grid-desktop-3">
-			{
-				props.officers.map(
-					officer => <Officer officer={officer} key={officer.name + officer.position} />,
-				)
-			}
-		</div>
-	);
+function Officers(props) {
+  return (
+    // TODO: more flexible mobile views
+    <div className="grid-desktop-3">
+      {
+        props.officers.map(
+          officer => <Officer officer={officer} key={officer.name + officer.position} />,
+        )
+      }
+    </div>
+  );
 }
 
 export default Officers;
