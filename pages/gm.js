@@ -5,6 +5,7 @@ import Image from 'next/legacy/image';
 import Link from 'next/link';
 import { NextSeo } from 'next-seo';
 
+import { useEffect, useState } from 'react';
 import Countdown from 'react-countdown';
 
 import Banner from '../components/Banner';
@@ -23,7 +24,6 @@ import studioLogo from '../public/images/committees/studio_wordmark.svg';
 import teachlaLogo from '../public/images/committees/teachLA_wordmark.svg';
 import wLogo from '../public/images/committees/w_wordmark.svg';
 import googleSlideLogo from '../public/images/slides.png';
-import winterGMgraphic from '../public/images/Winter_GM_2025_graphic.png';
 
 const inlineButtonListStyle = {
   display: 'inline-block',
@@ -102,6 +102,7 @@ const parseGMData = (jsonContent) => {
     gm_end_time: new Date(data?.gm_end_time),
     rsvp_link: data?.rsvp_link,
     quarter: data?.quarter,
+    banner_link: data?.banner_link,
     slides_link: data?.slides_link,
     location: data?.location,
     day_of_week: dayToName(startTime.getDay()),
@@ -165,9 +166,14 @@ const GMCountdown = (props) => {
 };
 
 function gm() {
-
   const pastGMs = [...pastData].reverse();
   const data = parseGMData(gmData);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
   function countdownRenderer({ days, hours, minutes, seconds, completed }) {
     const { dayString, hourString, minuteString, secondString } =
       calculateTimeStrings({ days, hours, minutes, seconds });
@@ -233,12 +239,15 @@ function gm() {
       <Banner decorative />
       <div className="text-center">
         <Image
-          src={winterGMgraphic}
+          src={data.banner_link}
           className="gm-graphic"
+          layout="fill"
           alt={`${data.quarter} GM ${data.gm_start_time.getFullYear()} Marketing Graphic. ${data.quarter} GM will happen on ${data.day_of_week}, ${data.gm_start_time.getMonth()} ${data.date_with_suffix} from ${data.gm_start_time.getHours()}:${data.gm_start_time.getMinutes()} to ${data.gm_end_time.getHours()}:${data.gm_end_time.getMinutes()} in ${data.location}`}
         />
       </div>
-      <Countdown date={data.gm_start_time} renderer={countdownRenderer} />
+      {mounted && (
+        <Countdown date={data.gm_start_time} renderer={countdownRenderer} />
+      )}
       <div className="content-container-tight text-center">
         <div id="info-wrapper">
           <h2>Relevant information</h2>

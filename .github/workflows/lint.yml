@@ -22,6 +22,7 @@ jobs:
         node-version: [20.x]
 
     env:
+      DATAHUB_SPREADSHEET_ID: ${{ secrets.DATAHUB_SPREADSHEET_ID }}
       EVENTS_SPREADSHEET_ID: ${{ secrets.EVENTS_SPREADSHEET_ID }}
       SERVICE_ACCOUNT: ${{ secrets.SERVICE_ACCOUNT }}
       DIRECTORY_SPREADSHEET_ID: ${{ secrets.DIRECTORY_SPREADSHEET_ID }}
