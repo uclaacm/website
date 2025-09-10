@@ -11,3 +11,12 @@ updates:
       interval: 'weekly'
     reviewers:
       - 'uclaacm/website-team'
+    
+    ignore:
+      # Don’t open PRs for eslint at all
+      - dependency-name: "eslint"
+        update-types: ["version-update:semver-major", "version-update:semver-minor", "version-update:semver-patch"]
+
+      # Don’t open PRs for eslint-config-next at all
+      - dependency-name: "eslint-config-next"
+        update-types: ["version-update:semver-major", "version-update:semver-minor", "version-update:semver-patch"]
