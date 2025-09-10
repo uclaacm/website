@@ -12,7 +12,7 @@
     "@testing-library/dom": "^10.4.0",
     "a": "^4.0.0",
     "dotenv": "^16.4.5",
-    "googleapis": "^144.0.0",
+    "googleapis": "^159.0.0",
     "moment": "^2.29.4",
     "next": "^15.5.2",
     "next-seo": "^6.5.0",
