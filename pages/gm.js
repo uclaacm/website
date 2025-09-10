@@ -241,7 +241,8 @@ function gm() {
         <Image
           src={data.banner_link}
           className="gm-graphic"
-          layout="fill"
+          width={3840}
+          height={1860}
           alt={`${data.quarter} GM ${data.gm_start_time.getFullYear()} Marketing Graphic. ${data.quarter} GM will happen on ${data.day_of_week}, ${data.gm_start_time.getMonth()} ${data.date_with_suffix} from ${data.gm_start_time.getHours()}:${data.gm_start_time.getMinutes()} to ${data.gm_end_time.getHours()}:${data.gm_end_time.getMinutes()} in ${data.location}`}
         />
       </div>
