@@ -63,7 +63,7 @@ function Home() {
           </div>
           <h2 className="content-banner-title">
             <Link href="/gm" style={{ marginRight: '8px', color: 'white' }}>
-              Fall GM is this Tuesday!
+              RSVP to Fall GM Tuesday Week 1!
             </Link>
           </h2>
           <div className="content-banner-logos-top">
