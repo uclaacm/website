@@ -62,7 +62,9 @@ function Home() {
             </div>
           </div>
           <h2 className="content-banner-title">
-            Celebrating 50 years of ACM at UCLA!
+            <Link href="/gm" style={{ marginRight: '8px', color: 'white' }}>
+              RSVP to Fall GM Tuesday Week 1!
+            </Link>
           </h2>
           <div className="content-banner-logos-top">
             <div className="content-banner-logos">
