@@ -158,7 +158,7 @@ const GMCountdown = (props) => {
         target="_blank"
         rel="noreferrer noopener">
 
-        RSVP Now to get the zoom link!
+        RSVP Here!
 
       </Link>
     </div>
