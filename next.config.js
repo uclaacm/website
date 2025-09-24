@@ -70,6 +70,10 @@ module.exports = {
         protocol: 'https',
         hostname: 'samueli.ucla.edu',
       },
+      {
+        protocol: 'https',
+        hostname: 'www.cs.ucla.edu',
+      },
     ],
   },
 };
