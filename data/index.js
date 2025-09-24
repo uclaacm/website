@@ -1,6 +1,7 @@
 import Board from './board';
 import Carousel from './carousel';
 import Committees from './committees';
+import { dev as Dev } from './dev';
 import Friends from './friends';
 import Internship from './internship';
 import Leadership from './leadership';
@@ -16,4 +17,5 @@ export default {
   friends: Friends,
   internship: Internship,
   board: Board,
+  dev: Dev,
 };
