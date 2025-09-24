@@ -20,7 +20,6 @@ import styles from '../styles/pages/Internship.module.scss';
 const { committees, internship, board, dev } = data;
 
 const internshipInfo = board.concat(dev, committees);
-console.log(internshipInfo);
 
 const { items, testimonials, QA } = internship;
 

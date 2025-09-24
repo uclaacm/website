@@ -132,7 +132,7 @@ export const dev = [
           The Dev Team is the technical backbone of ACM, maintaining core platforms for 230
           officers and 1,000+ members. We maintain and create open source
           organization-wide projects such as the official ACM at UCLA website, building a server
-          cluster, membership portal, open source, committee website template, and the discord  
+          cluster, membership portal, open source, committee website template, and the discord
           bot. Any previous experience is not required but well appreciated!
 
           Check out our projects{' '}
@@ -151,15 +151,15 @@ export const dev = [
           </li>
           <li>
             {' '}
-            Interns will have the opportunity to work on real projects that will be used by the 
-            entire ACM organization. Starting Winter quarter, interns will be assigned to a project 
+            Interns will have the opportunity to work on real projects that will be used by the
+            entire ACM organization. Starting Winter quarter, interns will be assigned to a project
             team based on their interests and the needs of the Dev Team.
             {' '}
           </li>
           <li>
             {' '}
-            Project teams are interdiciplinary and interns will have the opportunity to work in 
-            fields such as frontend, backend, design, devops, system administration, server 
+            Project teams are interdiciplinary and interns will have the opportunity to work in
+            fields such as frontend, backend, design, devops, system administration, server
             management, and more.
             {' '}
           </li>
@@ -170,7 +170,7 @@ export const dev = [
           </li>
           <li>
             {' '}
-            You will also have the opportunity to run for the position of Dev Team Director in the 
+            You will also have the opportunity to run for the position of Dev Team Director in the
             Spring.
           </li>
         </ul>

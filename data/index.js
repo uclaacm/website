@@ -1,7 +1,7 @@
 import Board from './board';
-import { dev as Dev } from './dev';
 import Carousel from './carousel';
 import Committees from './committees';
+import { dev as Dev } from './dev';
 import Friends from './friends';
 import Internship from './internship';
 import Leadership from './leadership';
