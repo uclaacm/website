@@ -56,7 +56,11 @@
 }
 
 .banner-center {
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
 
   img {
     max-width: 100%;
@@ -64,8 +68,14 @@
     object-fit: contain;
     aspect-ratio: auto 1 / 1;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .banner-center {
+    flex-direction: column;
+    gap: 20px;
   }
 }
 

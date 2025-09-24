@@ -81,7 +81,43 @@ function Sponsors() {
           </div>
         </div>
         <p className="subheading">
-          A special thanks to all of our UCLA Computer Science industry
+          A massive shoutout to our direct sponsors of ACM, who get their logo featured prominently
+          on our website homepage and marketing materials.
+        </p>
+        <div className="banner-center">
+          <a href="https://www.qualcomm.com/company/careers/internships-and-early-in-career-opportunities">
+            <img
+              src="https://cdn.cookielaw.org/logos/b0a5f2cc-0b29-4907-89bf-3f6b380a03c8/0814c8dd-07ff-41eb-a1b0-ee0294137c9a/9ca69c31-5e86-432d-950c-cfa7fcaa3cc8/1280px-Qualcomm-Logo.svg.png"
+              alt="Qualcomm Banner"
+            />
+          </a>
+          <a href="https://www.lockheedmartin.com/en-us/careers/candidates/students-early-careers.html">
+            <img
+              src="https://www.lockheedmartin.com/content/dam/lockheed-martin/general/lm-logo.svg"
+              alt="Lockheed Martin Banner"
+            />
+          </a>
+          <a href="https://www.hudsonrivertrading.com/student-opportunities/">
+            <img
+              src="https://www.hudsonrivertrading.com/wp-content/uploads/2024/04/01-HRT-Primary-Logo-Q2-2024-1.svg"
+              alt="Hudson River Trading Banner"
+            />
+          </a>
+          <a href="https://www.janestreet.com/join-jane-street/internships/">
+            <img
+              src="https://www.janestreet.com/assets/logo_horizontal-16929188a56384c8e77bea91967c4553146ed7293f60a8f4f2ab6a06187881ce.svg"
+              alt="Jane Street Banner"
+            />
+          </a>
+        </div>
+        <h2 style={{ marginTop: '15px' }}>Interested in becoming a sponsor?</h2>
+        <div style={{ marginTop: '0' }} className="button-section">
+          <Link href="mailto:acm@ucla.edu" className="button">
+            Contact Us at acm@ucla.edu
+          </Link>
+        </div>
+        <p style={{ marginTop: '40px' }} className="subheading">
+          Finally, a special thanks to all of our UCLA Computer Science industry
           affiliates for their support:
         </p>
         <div className="sponsor-container">
@@ -92,16 +128,17 @@ function Sponsors() {
               target="_blank"
               rel="noreferrer noopener"
               key={sponsor.name}
+              style={{ display: 'inline-block', width: '200px', height: '80px', position: 'relative', padding: 0, margin: '20px', boxSizing: 'border-box' }}
             >
-              <Image alt={sponsor.name} src={sponsor.image} />
+              <Image
+                alt={sponsor.name}
+                src={sponsor.image}
+                layout="fill"
+                objectFit="contain"
+                sizes="200px"
+              />
             </a>
           ))}
-        </div>
-        <h2>Interested in becoming a sponsor?</h2>
-        <div className="button-section">
-          <Link href="mailto:acm@ucla.edu" className="button">
-            Contact Us at acm@ucla.edu
-          </Link>
         </div>
       </div>
     </Layout>)
