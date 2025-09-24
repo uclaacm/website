@@ -57,10 +57,6 @@ export default [
             </li>
             <li>
               {' '}
-              Dev Team upholds projects taken over the course of the year by ACM
-            </li>
-            <li>
-              {' '}
               Impact focuses on spreading awareness to the ACM community about
               the social impact of Technology/Computer Science
             </li>
@@ -111,16 +107,6 @@ export default [
           </li>
           <li>
             {' '}
-            The Dev team interns will maintain existing ACM projects and add
-            features.{' '}
-          </li>
-          <li>
-            {' '}
-            Dev Team interns will also build new ACM infrastructure and projects
-            for the CS community
-          </li>
-          <li>
-            {' '}
             The Impact interns will plan Impact events and help out with the
             blog
           </li>
@@ -162,7 +148,7 @@ export default [
       ),
       card: '/images/cards/board_card.svg',
       nextSteps:
-        'Dev Team interns have the opportunity to become Dev Team officers in the spring. All other interns will run for a director position in the Spring or will no longer officially be a member of the board.',
+        'Interns on Board will do projects for their respective roles during their intern term, then will re-apply and get direct priority for their officer role in the spring.',
     },
   },
 ];

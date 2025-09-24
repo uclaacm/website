@@ -1,141 +1,4 @@
-// Note: people array is now depreciated, board members is parsed from ggl sheets using officerparser.mjs
-export const people = [
-  {
-    name: 'Arsh Malik',
-    pronouns: 'he/him',
-    position: 'Dev Team Director',
-    major: 'Computer Science Major',
-    year: 2025,
-    img: '/images/officers/ArshMalik.jpg',
-    alt: 'Arsh in front of the blue sky',
-  },
-  {
-    name: 'Matthew Nieva',
-    pronouns: 'he/him',
-    position: 'Dev Team Advisor',
-    major: 'Computer Science and Engineering Major',
-    year: 2024,
-    img: '/images/officers/MattNieva.jpg',
-    alt: 'Matt standing below some arches',
-  },
-  {
-    name: 'Advaith Gowrishetty',
-    pronouns: 'he/him',
-    position: 'Dev Team Advisor',
-    major: 'Computer Science Major',
-    year: 2023,
-    img: '/images/officers/AdvaithGowrishetty.jpg',
-    alt: 'Advaith standing in a park',
-  },
-  {
-    name: 'Joseph Camyre',
-    pronouns: 'he/him',
-    position: 'Deployment Lead',
-    major: 'Computer Science Major',
-    year: 2025,
-    img: '/images/officers/JosephCamyre.jpg',
-    alt: 'Joseph at Royce Hall',
-  },
-  {
-    name: 'Harvey Zhao',
-    pronouns: 'he/him',
-    position: 'Frontend Lead',
-    major: 'Computer Science Major',
-    year: 2024,
-    img: '/images/officers/HarveyZhao.jpg',
-    alt: 'Harvey with a white background',
-  },
-  {
-    name: 'Victor Wen',
-    pronouns: 'he/him',
-    position: 'Backend Lead',
-    major: 'Computer Science Major',
-    year: 2024,
-    img: '/images/officers/acmlogocopy.jpg',
-    alt: 'acm logo',
-  },
-  {
-    name: 'Elizabeth Kim',
-    pronouns: 'she/her',
-    position: 'Dev Team Officer',
-    major: 'Linguistics and Computer Science Major',
-    year: 2025,
-    img: '/images/officers/ElizabethKim.jpg',
-    alt: 'Elizabeth in front of pink flowers',
-  },
-  {
-    name: 'Franklin Zhu',
-    pronouns: 'he/him',
-    position: 'Dev Team Officer',
-    major: 'Cognitive Science Major',
-    year: 2026,
-    img: '/images/officers/FranklinZhu.jpg',
-    alt: 'Franklin smiling in a suit',
-  },
-  {
-    name: 'Utkarsh Lal',
-    pronouns: 'he/him',
-    position: 'Dev Team Officer',
-    major: 'Computer Science Major',
-    year: 2025,
-    img: '/images/officers/UtkarshLal.jpg',
-    alt: 'Utkarsh smiling in a suit',
-  },
-  {
-    name: 'Maxwell Gonick',
-    pronouns: 'he/him',
-    position: 'Dev Team Officer',
-    major: 'Computer Science Major',
-    year: 2025,
-    img: '/images/officers/acmlogocopy.jpg',
-    alt: 'acm logo',
-  },
-  {
-    name: 'Amy He',
-    pronouns: 'she/her',
-    position: 'Dev Team Officer',
-    major: 'Computer Science Major',
-    year: 2024,
-    img: '/images/officers/acmlogocopy.jpg',
-    alt: 'acm logo',
-  },
-  {
-    name: 'Andy Ren',
-    pronouns: 'he/him',
-    position: 'Dev Team Officer',
-    major: 'Math of Computation Major',
-    year: 2026,
-    img: '/images/officers/acmlogocopy.jpg',
-    alt: 'acm logo',
-  },
-  {
-    name: 'Yan Hauw',
-    pronouns: 'he/him',
-    position: 'Dev Team Officer',
-    major: 'Computer Science Major',
-    year: 2023,
-    img: '/images/officers/acmlogocopy.jpg',
-    alt: 'acm logo',
-  },
-  {
-    name: 'Charles Zhu',
-    pronouns: 'he/him',
-    position: 'Dev Team Officer',
-    major: 'Computer Science Major',
-    year: 2026,
-    img: '/images/officers/acmlogocopy.jpg',
-    alt: 'acm logo',
-  },
-  {
-    name: 'Chi-Wei Chen',
-    pronouns: 'he/him',
-    position: 'Dev Team Officer',
-    major: 'Computer Science Major',
-    year: 2026,
-    img: '/images/officers/acmlogocopy.jpg',
-    alt: 'acm logo',
-  },
-];
+import Link from 'next/link';
 
 export const projects = [
   {
@@ -220,5 +83,101 @@ export const projects = [
      (<a href="mailto:dev@uclaacm.com">Email</a>), our Dev Team Director.`,
     img: '/images/dev-projects/acmlogocopy.jpg',
     alt: 'ACM Logo!',
+  },
+];
+
+// Data for Dev Team Internship Info
+export const dev = [
+  {
+    name: 'Dev Team',
+    class: 'board',
+    image: '/images/committees/dev/dev_wordmark.png',
+    introImage: '/images/committees/studio/studio_motif_applied.png',
+    infoCards: [
+      {
+        title: 'Dev Team',
+        image: {
+          src: '',
+          alt: '',
+        },
+        desc: '',
+      },
+    ],
+    diamond: '/images/committees/dev/dev_diamond.png',
+    links: [
+      {
+        platform: 'carrd',
+        link: 'https://acmstudio.carrd.co/',
+      },
+      {
+        platform: 'discord',
+        link: 'https://discord.gg/9jDH6rN',
+      },
+      {
+        platform: 'itch',
+        link: 'https://acmstudio.itch.io/',
+      },
+      {
+        platform: 'instagram',
+        link: 'https://www.instagram.com/acmstudio.ucla/?hl=en',
+      },
+      {
+        platform: 'facebook',
+        link: 'https://www.facebook.com/groups/uclaacmstudio',
+      },
+    ],
+    internship: {
+      whatWeDo: (
+        <>
+          The Dev Team is the technical backbone of ACM, maintaining core platforms for 230
+          officers and 1,000+ members. We maintain and create open source
+          organization-wide projects such as the official ACM at UCLA website, building a server
+          cluster, membership portal, open source, committee website template, and the discord  
+          bot. Any previous experience is not required but well appreciated!
+
+          Check out our projects{' '}
+          <Link href="/dev" target="_blank" rel="noopener noreferrer">
+            here!
+          </Link>
+        </>
+      ),
+      whatInternsWillDo: (
+        <ul>
+          <li>
+            {' '}
+            You will go through an intern training program through Fall quarter, before tackling
+            real projects for Dev Team under the guidance of another Dev Team member.
+            {' '}
+          </li>
+          <li>
+            {' '}
+            Interns will have the opportunity to work on real projects that will be used by the 
+            entire ACM organization. Starting Winter quarter, interns will be assigned to a project 
+            team based on their interests and the needs of the Dev Team.
+            {' '}
+          </li>
+          <li>
+            {' '}
+            Project teams are interdiciplinary and interns will have the opportunity to work in 
+            fields such as frontend, backend, design, devops, system administration, server 
+            management, and more.
+            {' '}
+          </li>
+          <li>
+            {' '}
+            All interns have the opportunity to become Dev Team officers in the Spring.
+            {' '}
+          </li>
+          <li>
+            {' '}
+            You will also have the opportunity to run for the position of Dev Team Director in the 
+            Spring.
+          </li>
+        </ul>
+      ),
+      card: '/images/cards/board_card.svg',
+      nextSteps:
+        'Dev Team interns have the opportunity to become Dev Team officers in the spring, and will be assigned to a project team based on their interests and the needs of the Dev Team.',
+    },
   },
 ];

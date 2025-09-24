@@ -1,4 +1,5 @@
 import Board from './board';
+import { dev as Dev } from './dev';
 import Carousel from './carousel';
 import Committees from './committees';
 import Friends from './friends';
@@ -16,4 +17,5 @@ export default {
   friends: Friends,
   internship: Internship,
   board: Board,
+  dev: Dev,
 };

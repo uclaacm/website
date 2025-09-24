@@ -17,9 +17,11 @@ import data from '../data';
 
 import styles from '../styles/pages/Internship.module.scss';
 
-const { committees, internship, board } = data;
+const { committees, internship, board, dev } = data;
 
-const internshipInfo = board.concat(committees);
+const internshipInfo = board.concat(dev, committees);
+console.log(internshipInfo);
+
 const { items, testimonials, QA } = internship;
 
 function InternshipPage() {
@@ -45,8 +47,7 @@ function InternshipPage() {
         <h1>ACM Internship Program</h1>
         {/* eslint-disable-next-line max-len */}
         <h2>
-          The ACM internship program is closed. <br></br> Check back in upcoming
-          quarters for Officer Recruitment.
+          The ACM internship program will open on 09/30. <br></br> Check back after Fall GM to apply!
         </h2>
         <br></br>
         <p className={styles['internship-intro']}>
