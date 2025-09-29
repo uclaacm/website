@@ -127,13 +127,7 @@ function Footer() {
                             style={{
                               margin: '0 auto',
                               transform:
-                                initiative.name === 'Impact'
-                                    ? 'translateX(-8.5px)'
-                                    : initiative.name === 'Dev Team'
-                                    ? 'translateX(-23px) scale(0.85)'
-                                    : initiative.name === 'JEDI'
-                                    ? 'translateX(-18px) scale(0.94)'
-                                    : 'none',
+                                initiative.name === 'Impact' ? 'translateX(-8.5px)' : initiative.name === 'Dev Team' ? 'translateX(-23px) scale(0.85)' : initiative.name === 'JEDI' ? 'translateX(-18px) scale(0.94)' : 'none',
                             }}
                             onError={(e) => {
                               e.target.onerror = null;
