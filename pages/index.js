@@ -91,12 +91,30 @@ function Home() {
         </div><br /><br />
 
         <div className="content-section">
-          <h2>Our Sponsor!</h2>
+          <h2>Our Sponsors!</h2>
           <div className="banner-center">
             <a href="https://www.qualcomm.com/company/careers/internships-and-early-in-career-opportunities">
               <img
                 src="https://cdn.cookielaw.org/logos/b0a5f2cc-0b29-4907-89bf-3f6b380a03c8/0814c8dd-07ff-41eb-a1b0-ee0294137c9a/9ca69c31-5e86-432d-950c-cfa7fcaa3cc8/1280px-Qualcomm-Logo.svg.png"
-                alt="Banner"
+                alt="Qualcomm Banner"
+              />
+            </a>
+            <a href="https://www.lockheedmartin.com/en-us/careers/candidates/students-early-careers.html">
+              <img
+                src="https://www.lockheedmartin.com/content/dam/lockheed-martin/general/lm-logo.svg"
+                alt="Lockheed Martin Banner"
+              />
+            </a>
+            <a href="https://www.hudsonrivertrading.com/student-opportunities/">
+              <img
+                src="https://www.hudsonrivertrading.com/wp-content/uploads/2024/04/01-HRT-Primary-Logo-Q2-2024-1.svg"
+                alt="Hudson River Trading Banner"
+              />
+            </a>
+            <a href="https://www.janestreet.com/join-jane-street/internships/">
+              <img
+                src="https://www.janestreet.com/assets/logo_horizontal-16929188a56384c8e77bea91967c4553146ed7293f60a8f4f2ab6a06187881ce.svg"
+                alt="Jane Street Banner"
               />
             </a>
           </div>
