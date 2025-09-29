@@ -109,7 +109,7 @@ function Footer() {
               ))}
             </ul>
             <h3 className={styles['footer-header']} style={{ textAlign: 'center' }}>ACM Initiatives</h3>
-            <ul 
+            <ul
               className={`list-unstyled text-left ${styles['footer-committee-sidebar-container']}`}
               //style={{ textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center' }}
             >
@@ -126,14 +126,14 @@ function Footer() {
                             alt={`ACM ${initiative.name}`}
                             style={{
                               margin: '0 auto',
-                                transform:
-                                  initiative.name === 'Impact'
-                                    ? 'translateX(-8.5px)'
-                                    : initiative.name === 'Dev Team'
-                                    ? 'translateX(-23px) scale(0.85)'
-                                    : initiative.name === 'JEDI'
-                                    ? 'translateX(-18px) scale(0.94)'
-                                    : 'none',
+                              transform:
+                                initiative.name === 'Impact'
+                                  ? 'translateX(-8.5px)'
+                                  : initiative.name === 'Dev Team'
+                                  ? 'translateX(-23px) scale(0.85)'
+                                  : initiative.name === 'JEDI'
+                                  ? 'translateX(-18px) scale(0.94)'
+                                  : 'none',
                             }}
                             onError={(e) => {
                               e.target.onerror = null;
