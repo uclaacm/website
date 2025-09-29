@@ -10,7 +10,7 @@ const footerACMLinks = [
   { title: 'General Meeting', path: '/gm' },
   { title: 'CS Town Hall', path: '/town-hall' },
   { title: 'Internship Program', path: '/internship' },
-  { title: 'Dev Team', path: '/dev' },
+  //{ title: 'Dev Team', path: '/dev' },
   { title: 'Sponsors', path: '/sponsors' },
   { title: 'Our Team', path: '/officers' },
   {
@@ -22,6 +22,13 @@ const footerACMLinks = [
 
 const footerInitiativeLinks = [
   {
+    name: 'Dev Team',
+    slug: 'dev',
+    path: '/dev',
+    wordmark_dark: '/images/dev/dev-team-footer.png',
+    useImage: true,
+  },
+  {
     name: 'Impact',
     slug: 'impact',
     path: '/impact',
@@ -32,7 +39,8 @@ const footerInitiativeLinks = [
     name: 'JEDI',
     slug: 'jedi',
     path: '/jedi',
-    useImage: false,
+    wordmark_dark: '/images/jedi/jedi-footer.png',
+    useImage: true,
   },
 ];
 
@@ -101,9 +109,9 @@ function Footer() {
               ))}
             </ul>
             <h3 className={styles['footer-header']} style={{ textAlign: 'center' }}>ACM Initiatives</h3>
-            <ul
-              className={`list-unstyled ${styles['footer-committee-sidebar-container']}`}
-              style={{ textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center' }}
+            <ul 
+              className={`list-unstyled text-left ${styles['footer-committee-sidebar-container']}`}
+              //style={{ textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center' }}
             >
               {footerInitiativeLinks.map((initiative) => (
                 <li key={initiative.slug} style={{ textAlign: 'center', width: '100%' }}>
@@ -118,7 +126,14 @@ function Footer() {
                             alt={`ACM ${initiative.name}`}
                             style={{
                               margin: '0 auto',
-                              transform: initiative.name === 'Impact' ? 'translateX(-8.5px)' : 'none',
+                                transform:
+                                  initiative.name === 'Impact'
+                                    ? 'translateX(-8.5px)'
+                                    : initiative.name === 'Dev Team'
+                                    ? 'translateX(-23px) scale(0.85)'
+                                    : initiative.name === 'JEDI'
+                                    ? 'translateX(-18px) scale(0.94)'
+                                    : 'none',
                             }}
                             onError={(e) => {
                               e.target.onerror = null;
