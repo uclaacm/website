@@ -46,9 +46,10 @@ function InternshipPage() {
         <h1>ACM Internship Program</h1>
         {/* eslint-disable-next-line max-len */}
         <h2>
-          The ACM internship program will open on 09/30. <br></br> Check back after Fall GM to apply!
+          The ACM internship program is closed. <br></br> Check back in upcoming
+          quarters for Officer Recruitment.
         </h2>
-        <br></br>
+        <br />
         <p className={styles['internship-intro']}>
           The ACM Internship program is a program that facilitates the
           transition of UCLA students to ACM officers. Interns learn about the
