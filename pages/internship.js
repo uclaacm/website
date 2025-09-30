@@ -46,31 +46,10 @@ function InternshipPage() {
         <h1>ACM Internship Program</h1>
         {/* eslint-disable-next-line max-len */}
         <h2>
-          The ACM internship program is now open!! <br /> Apply by October 14th!
+          The ACM internship program is closed. <br></br> Check back in upcoming
+          quarters for Officer Recruitment.
         </h2>
-        <a
-          href="https://airtable.com/appMwlxblu4PU9zmF/pagjXOmt1OorH6FvJ/form"
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{
-            display: 'inline-block',
-            padding: '0.75rem 2rem',
-            background: '#1e6cff',
-            color: '#fff',
-            border: 'none',
-            borderRadius: '8px',
-            fontSize: '1.2rem',
-            fontWeight: 600,
-            textDecoration: 'none',
-            boxShadow: '0 2px 8px rgba(30,108,255,0.15)',
-            transition: 'background 0.2s',
-          }}
-          onMouseOver={e => (e.currentTarget.style.background = '#1551b8')}
-          onMouseOut={e => (e.currentTarget.style.background = '#1e6cff')}
-        >
-          Click here to apply!
-        </a>
-        <br /><br />
+        <br />
         <p className={styles['internship-intro']}>
           The ACM Internship program is a program that facilitates the
           transition of UCLA students to ACM officers. Interns learn about the

@@ -61,11 +61,13 @@ function Home() {
               <CommitteeIcon committee="teachLA" />
             </div>
           </div>
+          {/* General Home Page Banner
           <h2 className="content-banner-title">
             <Link href="/internship" style={{ marginRight: '8px', color: 'white' }}>
               ACM Internship Apps are now open!
             </Link>
           </h2>
+          */}
           <div className="content-banner-logos-top">
             <div className="content-banner-logos">
               <CommitteeIcon committee="acm" />
