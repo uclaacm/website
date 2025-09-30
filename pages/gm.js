@@ -219,11 +219,20 @@ function gm() {
       />
     );
   }
+
+  const datetime = data.gm_start_time.toLocaleString('en-US', {
+    month: 'numeric',
+    day: 'numeric',
+    hour: 'numeric',
+    minute: 'numeric',
+    timeZoneName: 'short',
+  });
+
   return (
     <Layout>
       <NextSeo
         title={`${data.quarter} General Meeting | ACM at UCLA`}
-        description={`ACM's ${data.quarter} General Meeting will take place on ${data.gm_start_time.getMonth()} ${data.date_with_suffix} at ${data.gm_start_time.getHours()}:${data.gm_start_time.getMinutes()} PT!`}
+        description={`ACM's ${data.quarter} General Meeting will take place on ${datetime}!`}
         openGraph={{
           images: [
             {
