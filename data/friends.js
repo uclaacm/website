@@ -13,7 +13,7 @@ export default [
       },
       {
         platform: 'discord',
-        link: 'https://tinyurl.com/upe-discord',
+        link: 'https://discord.gg/yg3XbH6A6j',
       },
     ],
     description:
