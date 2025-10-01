@@ -62,8 +62,8 @@ function Home() {
             </div>
           </div>
           <h2 className="content-banner-title">
-            <Link href="/gm" style={{ marginRight: '8px', color: 'white' }}>
-              RSVP to Fall GM Tuesday Week 1!
+            <Link href="/internship" style={{ marginRight: '8px', color: 'white' }}>
+              ACM Internship Apps are now open!
             </Link>
           </h2>
           <div className="content-banner-logos-top">
