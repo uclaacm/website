@@ -117,6 +117,12 @@ function Home() {
                 alt="Jane Street Banner"
               />
             </a>
+            <a href="https://job-boards.greenhouse.io/traversal">
+            <img
+              src="https://cdn.prod.website-files.com/67ce9cc441bf0ed1a31127be/6839322cf4cab479030c9969_d8577d5878313dd713d75599363023e0_Traversal-logo-full.svg"
+              alt="Traversal Banner"
+            />
+          </a>
           </div>
           <div className="button-section">
             <Link href="/sponsors" className="button">Sponsor Us!</Link>
