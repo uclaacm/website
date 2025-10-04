@@ -181,10 +181,10 @@ export default function Navbar() {
                 <ul className="dropdown">
                   {aboutLinks.map(({ label, href }) => (
                     <li key={href}>
-                      <ActiveLink activeClassName="active" href={href}>
-                        <button type="button" onClick={menuActivate}>
+                      <ActiveLink activeClassName="active" href={href} onClick={menuActivate}>
+                        <div className="dropdown-item">
                           {label}
-                        </button>
+                        </div>
                       </ActiveLink>
                     </li>
                   ))}
