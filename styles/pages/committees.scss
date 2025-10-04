@@ -169,13 +169,12 @@ html {
 
 .officers-body-wrapper {
   margin: 50px auto 40px;
-  display: flex;
-  justify-content: center;
 
   .officers-card-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Ensures responsive behavior */
+    grid-template-columns: repeat(auto-fit, 280px); /* Ensures responsive behavior */
     gap: 3em;
-    max-width: 100%;
+    width: 100%;
+    justify-content: center;
   }
 }

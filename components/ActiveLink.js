@@ -13,6 +13,21 @@ const ActiveLink = ({ children, activeClassName, ...props }) => {
       ? `${childClassName} ${activeClassName}`.trim()
       : childClassName;
 
+  // check if it's an external link
+  if (props.href.startsWith('http')) {
+    return (
+      <a
+        href={props.href}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {cloneElement(child, {
+          className: className || null,
+        })}
+      </a>
+    );
+  }
+
   return (
     //clones child with className if className exists
     (<Link {...props} legacyBehavior>
