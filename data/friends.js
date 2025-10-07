@@ -13,7 +13,7 @@ export default [
       },
       {
         platform: 'discord',
-        link: 'https://discord.gg/yg3XbH6A6j',
+        link: 'https://tinyurl.com/upe-ucla-discord',
       },
     ],
     description:
