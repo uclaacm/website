@@ -291,7 +291,7 @@ export default [
     diamond: '/images/diamonds/cyber_diamond.svg',
     internship: {
       whatWeDo: 'Our mission is to create a community in which both experts and beginners alike can grow in the field of cybersecurity skills and knowledge. We want to make cybersecurity simple and accessible for everyone.',
-      whatInternsWillDo: (<>ACM Cyber is currently not taking any interns. If you are interested in joining or becoming an active member in ACM Cyber, please check out {<a href="https://www.acmcyber.com/join">here</a>}.</>),
+      whatInternsWillDo: (<>ACM Cyber does not participate in the ACM Internship program, and will instead directly recruit officers during the second half of Winter quarter. However, we have many opportunities to get involved immediately, such as giving talks to the club, helping organize LA CTF, our largest event of the year held in February, writing cybersecurity CTF challenges, and more - no experience required! If any of the above sounds interesting to you, make sure to attend the ACM Cyber General Meeting, join our Discord {<a href="https://www.acmcyber.com/discord">here</a>}, and learn more about how to become an active member {<a href="https://www.acmcyber.com/join">here</a>}.</>),
       card: '/images/cards/cyber_card.svg',
       nextSteps: 'All active members of ACM Cyber can apply to become officers in the Winter.',
     },

@@ -109,6 +109,12 @@ function Sponsors() {
               alt="Jane Street Banner"
             />
           </a>
+          <a href="https://job-boards.greenhouse.io/traversal">
+            <img
+              src="https://s8-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/594/200/original/traversal_full_logo.png?1748636932"
+              alt="Traversal Banner"
+            />
+          </a>
         </div>
         <h2 style={{ marginTop: '15px' }}>Interested in becoming a sponsor?</h2>
         <div style={{ marginTop: '0' }} className="button-section">
