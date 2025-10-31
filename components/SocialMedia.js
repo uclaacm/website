@@ -43,7 +43,7 @@ function SocialMedia(props) {
       </a>
       <a
         className="icon-link"
-        href="https://discord.gg/eWmzKsY"
+        href="/discord"
         target="_blank"
         rel="noreferrer noopener"
         aria-label="ACM at UCLA on Discord"

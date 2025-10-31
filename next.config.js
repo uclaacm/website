@@ -1,4 +1,14 @@
 module.exports = {
+  async redirects() {
+    return [
+      {
+        source: '/discord',
+        destination: 'https://discord.gg/eWmzKsY',
+        permanent: false, // 302 redirect
+      },
+    ];
+  },
+
   output: 'standalone',
   images: {
     remotePatterns: [
