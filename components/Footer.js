@@ -1,67 +1,68 @@
-import Link from "next/link";
+import Link from 'next/link';
 
-import SocialMedia from "./SocialMedia";
-import committees from "../data/committees";
-import styles from "../styles/components/Footer.module.scss";
+import SocialMedia from './SocialMedia';
+import committees from '../data/committees';
+import styles from '../styles/components/Footer.module.scss';
 
 const footerACMLinks = [
-  { title: "About", path: "/about" },
-  { title: "Events", path: "/events" },
-  { title: "General Meeting", path: "/gm" },
-  { title: "CS Town Hall", path: "/town-hall" },
-  { title: "Internship Program", path: "/internship" },
+  { title: 'About', path: '/about' },
+  { title: 'Events', path: '/events' },
+  { title: 'General Meeting', path: '/gm' },
+  { title: 'CS Town Hall', path: '/town-hall' },
+  { title: 'Internship Program', path: '/internship' },
   //{ title: 'Dev Team', path: '/dev' },
-  { title: "Sponsors", path: "/sponsors" },
-  { title: "Our Team", path: "/officers" },
+  { title: 'Sponsors', path: '/sponsors' },
+  { title: 'Our Team', path: '/officers' },
   {
-    title: "Membership Portal",
-    path: "https://members.uclaacm.com",
+    title: 'Membership Portal',
+    path: 'https://members.uclaacm.com',
     ext: true,
   },
 ];
 
 const footerInitiativeLinks = [
   {
-    name: "Dev Team",
-    slug: "dev",
-    path: "/dev",
-    wordmark_dark: "/images/dev/dev-team-footer.png",
+    name: 'Dev Team',
+    slug: 'dev',
+    path: '/dev',
+    wordmark_dark: '/images/dev/dev-team-footer.png',
     useImage: true,
   },
   {
-    name: "Impact",
-    slug: "impact",
-    path: "/impact",
-    wordmark_dark: "/images/impact/impact-footer.png",
+    name: 'Impact',
+    slug: 'impact',
+    path: '/impact',
+    wordmark_dark: '/images/impact/impact-footer.png',
     useImage: true,
   },
   {
-    name: "JEDI",
-    slug: "jedi",
-    path: "/jedi",
-    wordmark_dark: "/images/jedi/jedi-footer.png",
+    name: 'JEDI',
+    slug: 'jedi',
+    path: '/jedi',
+    wordmark_dark: '/images/jedi/jedi-footer.png',
     useImage: true,
   },
 ];
 
 function FooterLinkElement({ title, path, ext }) {
   return (
-    <Link
+    (<Link
       href={path}
-      className={styles["link-footer"]}
-      target={ext ? "_blank" : ""}
-      rel={ext ? "noopener noreferrer" : ""}
-    >
+      className={styles['link-footer']}
+      target={ext ? '_blank' : ''}
+      rel={ext ? 'noopener noreferrer' : ''}>
+
       {title}
-    </Link>
+
+    </Link>)
   );
 }
 
 function Footer() {
   return (
-    <footer className={styles.footer}>
+    (<footer className={styles.footer}>
       <nav
-        className={styles["footer-inner"]}
+        className={styles['footer-inner']}
         aria-labelledby="footer-navigation"
       >
         <h2 className="sr-only" id="footer-navigation">
@@ -69,16 +70,17 @@ function Footer() {
         </h2>
         <div className="grid-desktop-3">
           <div>
-            <h3 className={styles["footer-header"]}>Find us on social media</h3>
+            <h3 className={styles['footer-header']}>Find us on social media</h3>
             <SocialMedia type="light" />
             <div className="mt-1">
               <Link
                 href="http://eepurl.com/hdEvNP"
                 className="button tight"
                 target="_blank"
-                rel="noreferrer noopener"
-              >
+                rel="noreferrer noopener">
+
                 Join our Mailing List
+
               </Link>
             </div>
             <div className="mt-1">
@@ -86,22 +88,22 @@ function Footer() {
                 href="https://linktr.ee/acmucla"
                 className="button tight"
                 target="_blank"
-                rel="noreferrer noopener"
-              >
+                rel="noreferrer noopener">
+
                 Linktree
+
               </Link>
             </div>
-            <p className={styles["footer-header"]}>Reach us at</p>
-            <a className={styles["link-footer"]} href="mailto: acm@ucla.edu">
+            <p className={styles['footer-header']}>Reach us at</p>
+            <a className={styles['link-footer']} href="mailto: acm@ucla.edu">
               <span className="footer-text">acm@ucla.edu</span>
             </a>
-            <h3 className={styles["footer-header"]}>Made By</h3>
+            <h3 className={styles['footer-header']}>Made By</h3>
             <ul
-              className={`list-unstyled text-left ${styles["footer-committee-sidebar-container"]}`}
+              className={`list-unstyled text-left ${styles['footer-committee-sidebar-container']}`}
             >
               <li
-                key={footerInitiativeLinks[0].slug}
-                style={{ textAlign: "center", width: "100%" }}
+                key={footerInitiativeLinks[0].slug} style={{ textAlign: 'center', width: '100%' }}
               >
                 <FooterLinkElement
                   path={footerInitiativeLinks[0].path}
@@ -109,9 +111,9 @@ function Footer() {
                     footerInitiativeLinks[0].useImage ? (
                       <div
                         style={{
-                          textAlign: "center",
-                          display: "flex",
-                          justifyContent: "center",
+                          textAlign: 'center',
+                          display: 'flex',
+                          justifyContent: 'center',
                         }}
                       >
                         <img
@@ -119,23 +121,21 @@ function Footer() {
                           src={footerInitiativeLinks[0].wordmark_dark}
                           alt={`ACM ${footerInitiativeLinks[0].name}`}
                           style={{
-                            margin: "0 auto",
-                            transform: "translateX(-7px) scale(0.85)",
+                            margin: '0 auto',
+                            transform: 'translateX(-7px) scale(0.85)',
                           }}
                           onError={(e) => {
                             e.target.onerror = null;
-                            e.target.style.display = "none";
+                            e.target.style.display = 'none';
                             const parentNode = e.target.parentNode;
                             parentNode.textContent = `ACM ${footerInitiativeLinks[0].name}`;
-                            parentNode.style.textAlign = "center";
-                            parentNode.style.display = "block";
+                            parentNode.style.textAlign = 'center';
+                            parentNode.style.display = 'block';
                           }}
                         />
                       </div>
                     ) : (
-                      <span style={{ display: "block", textAlign: "center" }}>
-                        ACM {footerInitiativeLinks[0].name}
-                      </span>
+                      <span style={{ display: 'block', textAlign: 'center' }}>ACM {footerInitiativeLinks[0].name}</span>
                     )
                   }
                   ext={false}
@@ -144,7 +144,7 @@ function Footer() {
             </ul>
           </div>
           <div>
-            <h3 className={styles["footer-header"]}>About ACM at UCLA</h3>
+            <h3 className={styles['footer-header']}>About ACM at UCLA</h3>
             <ul className="list-unstyled">
               {footerACMLinks.map((link) => (
                 <li key={link.path}>
@@ -152,61 +152,39 @@ function Footer() {
                 </li>
               ))}
             </ul>
-            <h3
-              className={styles["footer-header"]}
-              style={{ textAlign: "center" }}
-            >
-              ACM Initiatives
-            </h3>
+            <h3 className={styles['footer-header']} style={{ textAlign: 'center' }}>ACM Initiatives</h3>
             <ul
-              className={`list-unstyled text-left ${styles["footer-committee-sidebar-container"]}`}
+              className={`list-unstyled text-left ${styles['footer-committee-sidebar-container']}`}
               //style={{ textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center' }}
             >
               {footerInitiativeLinks.map((initiative) => (
-                <li
-                  key={initiative.slug}
-                  style={{ textAlign: "center", width: "100%" }}
-                >
+                <li key={initiative.slug} style={{ textAlign: 'center', width: '100%' }}>
                   <FooterLinkElement
                     path={initiative.path}
                     title={
                       initiative.useImage ? (
-                        <div
-                          style={{
-                            textAlign: "center",
-                            display: "flex",
-                            justifyContent: "center",
-                          }}
-                        >
+                        <div style={{ textAlign: 'center', display: 'flex', justifyContent: 'center' }}>
                           <img
                             className="committee-sidebar-image"
                             src={initiative.wordmark_dark}
                             alt={`ACM ${initiative.name}`}
                             style={{
-                              margin: "0 auto",
+                              margin: '0 auto',
                               transform:
-                                initiative.name === "Impact"
-                                  ? "translateX(-8.5px)"
-                                  : initiative.name === "Dev Team"
-                                  ? "translateX(-23px) scale(0.85)"
-                                  : initiative.name === "JEDI"
-                                  ? "translateX(-18px) scale(0.94)"
-                                  : "none",
+                                initiative.name === 'Impact' ? 'translateX(-8.5px)' : initiative.name === 'Dev Team' ? 'translateX(-23px) scale(0.85)' : initiative.name === 'JEDI' ? 'translateX(-18px) scale(0.94)' : 'none',
                             }}
                             onError={(e) => {
                               e.target.onerror = null;
-                              e.target.style.display = "none";
+                              e.target.style.display = 'none';
                               const parentNode = e.target.parentNode;
                               parentNode.textContent = `ACM ${initiative.name}`;
-                              parentNode.style.textAlign = "center";
-                              parentNode.style.display = "block";
+                              parentNode.style.textAlign = 'center';
+                              parentNode.style.display = 'block';
                             }}
                           />
                         </div>
                       ) : (
-                        <span style={{ display: "block", textAlign: "center" }}>
-                          ACM {initiative.name}
-                        </span>
+                        <span style={{ display: 'block', textAlign: 'center' }}>ACM {initiative.name}</span>
                       )
                     }
                     ext={false}
@@ -217,9 +195,9 @@ function Footer() {
             {/* TODO: consider where to put impact/jedi! events & initiatives? */}
           </div>
           <div>
-            <h3 className={styles["footer-header"]}>Committees</h3>
+            <h3 className={styles['footer-header']}>Committees</h3>
             <ul
-              className={`list-unstyled text-left ${styles["footer-committee-sidebar-container"]}`}
+              className={`list-unstyled text-left ${styles['footer-committee-sidebar-container']}`}
             >
               {committees.map(
                 ({ name, slug, external_link, wordmark_dark }) => {
@@ -239,11 +217,11 @@ function Footer() {
                             alt={`ACM ${name}`}
                             onError={(e) => {
                               e.target.onerror = null;
-                              e.target.style.display = "none";
+                              e.target.style.display = 'none';
                               const parentNode = e.target.parentNode;
                               parentNode.textContent = `ACM ${name}`;
-                              parentNode.style.textAlign = "center";
-                              parentNode.style.display = "block";
+                              parentNode.style.textAlign = 'center';
+                              parentNode.style.display = 'block';
                             }}
                           />
                         }
@@ -251,7 +229,7 @@ function Footer() {
                       />
                     </li>
                   );
-                }
+                },
               )}
             </ul>
           </div>
@@ -271,12 +249,12 @@ function Footer() {
           </a>
         </div>
         <div>
-          <span className={styles["footer-text-thin"]}>
+          <span className={styles['footer-text-thin']}>
             &copy; ACM at UCLA 2025.
           </span>
         </div>
       </nav>
-    </footer>
+    </footer>)
   );
 }
 
