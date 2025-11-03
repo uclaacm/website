@@ -20,7 +20,7 @@ export default [
       },
       {
         platform: 'discord',
-        link: 'https://discord.gg/9jDH6rN',
+        link: '/studio/discord',
       },
       {
         platform: 'itch',
@@ -101,7 +101,7 @@ export default [
       },
       {
         platform: 'discord',
-        link: 'https://discord.gg/6pxWhttfs6',
+        link: '/icpc/discord',
       },
       {
         platform: 'instagram',
@@ -168,7 +168,7 @@ export default [
       // },
       {
         platform: 'discord',
-        link: 'https://discord.gg/hS62MnPm',
+        link: '/design/discord',
       },
       {
         platform: 'instagram',
@@ -243,7 +243,7 @@ export default [
       },
       {
         platform: 'discord',
-        link: 'https://discord.gg/j9dgf2q',
+        link: '/cyber/discord',
       },
       {
         platform: 'instagram',
@@ -443,7 +443,7 @@ export default [
       // },
       {
         platform: 'discord',
-        link: 'https://discord.gg/QcU9AVW9hm',
+        link: '/ai/discord',
       },
       {
         platform: 'instagram',
@@ -524,7 +524,7 @@ export default [
       },
       {
         platform: 'discord',
-        link: 'https://discord.gg/s2VGxKqTYA',
+        link: '/cloud/discord',
       },
       {
         platform: 'instagram',
@@ -637,7 +637,7 @@ export default [
       },
       {
         platform: 'discord',
-        link: 'https://discord.gg/dUp8g8wgCv',
+        link: '/hack/discord',
       },
       {
         platform: 'instagram',
