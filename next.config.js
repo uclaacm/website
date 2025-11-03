@@ -9,17 +9,17 @@ module.exports = {
       {
         source: '/studio/discord',
         destination: 'https://discord.gg/9jDH6rN',
-        permanent: false, 
+        permanent: false,
       },
       {
         source: '/icpc/discord',
         destination: 'https://discord.gg/6pxWhttfs6',
-        permanent: false, 
+        permanent: false,
       },
       {
         source: '/design/discord',
         destination: 'https://discord.gg/hS62MnPm',
-        permanent: false, 
+        permanent: false
       },
       {
         source: '/cyber/discord',
@@ -29,18 +29,18 @@ module.exports = {
       {
         source: '/ai/discord',
         destination: 'https://discord.gg/QcU9AVW9hm',
-        permanent: false, 
+        permanent: false,
       },
       {
         source: '/cloud/discord',
         destination: 'https://discord.gg/s2VGxKqTYA',
-        permanent: false, 
+        permanent: false,
       },
       {
         source: '/hack/discord',
         destination: 'https://discord.gg/dUp8g8wgCv',
-        permanent: false, 
-      }
+        permanent: false,
+      },
     ];
   },
 
