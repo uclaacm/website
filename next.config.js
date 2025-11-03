@@ -19,7 +19,7 @@ module.exports = {
       {
         source: '/design/discord',
         destination: 'https://discord.gg/hS62MnPm',
-        permanent: false
+        permanent: false,
       },
       {
         source: '/cyber/discord',
