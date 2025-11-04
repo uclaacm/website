@@ -18,7 +18,7 @@ module.exports = {
       },
       {
         source: '/design/discord',
-        destination: 'https://discord.gg/hS62MnPm',
+        destination: 'https://discord.gg/aXTHXBF5nh',
         permanent: false,
       },
       {
