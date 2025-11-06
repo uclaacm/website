@@ -5,7 +5,7 @@ import path from 'path';
 
 // .env config
 dotenv.config();
-const SPREADSHEET_ID = process.env?.TOWNHALL_SPREADSHEET_ID;
+const SPREADSHEET_ID = process.env?.DATAHUB_SPREADSHEET_ID;
 const SERVICE_ACCOUNT = process.env?.SERVICE_ACCOUNT;
 
 // Output json file
