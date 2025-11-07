@@ -98,6 +98,36 @@ function Footer() {
             <a className={styles['link-footer']} href="mailto: acm@ucla.edu">
               <span className="footer-text">acm@ucla.edu</span>
             </a>
+            <h3 className={styles['footer-header']}>Website Made By</h3>
+            <FooterLinkElement
+              path={footerInitiativeLinks[0].path}
+              title={
+                footerInitiativeLinks[0].useImage ? (
+                  <div className={styles['footer-image-container']}>
+                    <img
+                      className="committee-sidebar-image"
+                      src={footerInitiativeLinks[0].wordmark_dark}
+                      alt={`ACM ${footerInitiativeLinks[0].name}`}
+                      style={{
+                        margin: '0 auto',
+                        transform: 'translateX(-3px) scale(0.85)',
+                      }}
+                      onError={(e) => {
+                        e.target.onerror = null;
+                        e.target.style.display = 'none';
+                        const parentNode = e.target.parentNode;
+                        parentNode.textContent = `ACM ${footerInitiativeLinks[0].name}`;
+                        parentNode.style.textAlign = 'center';
+                        parentNode.style.display = 'block';
+                      }}
+                    />
+                  </div>
+                ) : (
+                  <span className="footer-text">ACM {footerInitiativeLinks[0].name}</span>
+                )
+              }
+              ext={false}
+            />
           </div>
           <div>
             <h3 className={styles['footer-header']}>About ACM at UCLA</h3>
@@ -119,7 +149,7 @@ function Footer() {
                     path={initiative.path}
                     title={
                       initiative.useImage ? (
-                        <div style={{ textAlign: 'center', display: 'flex', justifyContent: 'center' }}>
+                        <div className={styles['footer-image-container']}>
                           <img
                             className="committee-sidebar-image"
                             src={initiative.wordmark_dark}
@@ -140,7 +170,7 @@ function Footer() {
                           />
                         </div>
                       ) : (
-                        <span style={{ display: 'block', textAlign: 'center' }}>ACM {initiative.name}</span>
+                        <span className="footer-text">ACM {initiative.name}</span>
                       )
                     }
                     ext={false}
