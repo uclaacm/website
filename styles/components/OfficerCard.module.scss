@@ -77,6 +77,12 @@
   justify-content: center;
 }
 
+.dev-officer-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
 .officer-image {
   border: 2px solid #EAEAEA;
   border-radius: 50%;
