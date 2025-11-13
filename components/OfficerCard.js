@@ -56,7 +56,7 @@ function Officer({
       >
         <div className={styles['officer-image-container']}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={photo} alt={alt} style={{ maxWidth: '100%' }} />
+          <img src={photo} alt={alt} /*style={{ maxWidth: '100%' }}*/ className={styles['dev-officer-image']} />
         </div>
         <div>
           <h3 className={styles.name}>{name}</h3>
