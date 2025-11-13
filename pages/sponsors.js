@@ -87,7 +87,7 @@ function Sponsors() {
         <div className="banner-center">
           <a href="https://www.qualcomm.com/company/careers/internships-and-early-in-career-opportunities">
             <img
-              src="https://cdn.brandfetch.io/id57CH5xdF/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1676997044726"
+              src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Qualcomm-Logo.svg"
               alt="Qualcomm Banner"
             />
           </a>
