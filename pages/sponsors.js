@@ -87,7 +87,7 @@ function Sponsors() {
         <div className="banner-center">
           <a href="https://www.qualcomm.com/company/careers/internships-and-early-in-career-opportunities">
             <img
-              src="https://cdn.cookielaw.org/logos/b0a5f2cc-0b29-4907-89bf-3f6b380a03c8/0814c8dd-07ff-41eb-a1b0-ee0294137c9a/9ca69c31-5e86-432d-950c-cfa7fcaa3cc8/1280px-Qualcomm-Logo.svg.png"
+              src="https://cdn.brandfetch.io/id57CH5xdF/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1676997044726"
               alt="Qualcomm Banner"
             />
           </a>
