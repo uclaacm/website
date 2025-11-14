@@ -1,14 +1,15 @@
-import Image from 'next/legacy/image';
+// import Image from 'next/legacy/image';
 import { useState, useEffect } from 'react';
 
-// width of each img in px
+// width of each frame in px
 // needs to be updated if style.scss changes
-const IMAGE_WIDTH = 360;
+const FRAME_WIDTH = 450;
+// const FRAME_HEIGHT = 240;
 const ITEMS_PER_SECTION = 4;
 
 const Carousel = ({ images }) => {
   const [sections, setSections] = useState([]);
-  const sectionWidth = (IMAGE_WIDTH * ITEMS_PER_SECTION) / 2;
+  const sectionWidth = (FRAME_WIDTH * ITEMS_PER_SECTION) / 2;
 
   useEffect(() => {
     const numItems = images.length;
@@ -19,15 +20,17 @@ const Carousel = ({ images }) => {
         left: (i / ITEMS_PER_SECTION) * sectionWidth,
         width: sectionWidth,
         items: images.slice(i, i + ITEMS_PER_SECTION).map((item, index) => (
-          <a
-            href={item}
-            target="_blank"
-            rel="noreferrer noopener"
-            key={index}
-            tabIndex="-1"
-          >
-            <Image src={item} width={IMAGE_WIDTH} height={IMAGE_WIDTH} alt="" />
-          </a>
+          <div className="image-frame" key={index}>
+            <a
+              href={item}
+              target="_blank"
+              rel="noreferrer noopener"
+              tabIndex="-1"
+              className="image-link"
+            >
+              <img src={item} alt="" className="framed-image" />
+            </a>
+          </div>
         )),
       });
     }
