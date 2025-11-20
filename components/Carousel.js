@@ -3,12 +3,13 @@ import { useState, useEffect } from 'react';
 
 // width of each frame in px
 // needs to be updated if style.scss changes
-const FRAME_WIDTH = 450;
-// const FRAME_HEIGHT = 240;
+const FRAME_WIDTH = 340;
 const ITEMS_PER_SECTION = 4;
 
 const Carousel = ({ images }) => {
   const [sections, setSections] = useState([]);
+  const [isOpen, setIsOpen] = useState(false);
+  const [currentImage, setCurrentImage] = useState(null);
   const sectionWidth = (FRAME_WIDTH * ITEMS_PER_SECTION) / 2;
 
   useEffect(() => {
@@ -21,15 +22,24 @@ const Carousel = ({ images }) => {
         width: sectionWidth,
         items: images.slice(i, i + ITEMS_PER_SECTION).map((item, index) => (
           <div className="image-frame" key={index}>
-            <a
-              href={item}
-              target="_blank"
-              rel="noreferrer noopener"
-              tabIndex="-1"
-              className="image-link"
+            <div
+              className="image-click"
+              onClick={() => {
+                setCurrentImage(item);
+                setIsOpen(true);
+              }}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                  setCurrentImage(item);
+                  setIsOpen(true);
+                }
+              }}
+              role="button"
+              tabIndex={0}
+              style={{ cursor: 'pointer' }}
             >
               <img src={item} alt="" className="framed-image" />
-            </a>
+            </div>
           </div>
         )),
       });
@@ -68,6 +78,29 @@ const Carousel = ({ images }) => {
           );
         })}
       </div>
+      {isOpen && (
+        <div
+          className="popup-overlay"
+          onClick={() => setIsOpen(false)}
+          onKeyDown={(e) => {
+            if (e.key === 'Escape') {
+              setIsOpen(false);
+            }
+          }}
+          role="button"
+          tabIndex={0}
+        >
+          <button id="close-button" onClick={() => setIsOpen(false)}>✕</button>
+          <div
+            className="popup-content"
+            onClick={(e) => e.stopPropagation()}
+            onKeyDown={(e) => e.stopPropagation()}
+            role="presentation"
+          >
+            <img src={currentImage} alt="" className="popup-image" />
+          </div>
+        </div>
+      )}
     </div>
   );
 };
