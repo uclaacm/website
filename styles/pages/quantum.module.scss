@@ -1,0 +1,425 @@
+@use '../variables.scss';
+
+.quantum-page {
+  min-height: 100vh;
+  background: #fff;
+  overflow-x: hidden;
+  letter-spacing: 0.5px;
+  
+  *, & { box-sizing: border-box; }
+}
+
+// Banner Section
+.banner-section {
+  position: relative;
+  background: #fff;
+  padding: 60px 20px 80px;
+  overflow: hidden;
+}
+
+.banner-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  position: relative;
+  z-index: 2;
+  min-height: 500px;
+}
+
+.banner-left {
+  flex: 1;
+  max-width: 600px;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  img {
+    min-width: 300px;
+    width: 100%;
+    max-width: 500px;
+    height: 250px;
+    object-fit: cover;
+  }
+}
+
+.banner-text {
+  p {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 0;
+    padding: 0 20px;
+    word-wrap: break-word;
+    letter-spacing: 0.5px;
+  }
+
+  .meeting-info {
+    font-size: 0.95rem;
+    font-weight: bold;
+    padding: 20px;
+    margin: 0;
+    color: #000;
+    letter-spacing: 0.6px;
+  }
+}
+
+.youtube-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.youtube-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+  padding: 18px 36px;
+  background: #3B5998;
+  color: white;
+  border-radius: 40px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 2;
+  letter-spacing: 0.8px;
+
+  &:hover {
+    background: #2d4373;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(59, 89, 152, 0.3);
+  }
+
+  svg { font-size: 1.5rem; }
+}
+
+.banner-right {
+  flex: 1;
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .banner-image {
+    width: 100%;
+    height: 500px;
+    max-width: 450px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+}
+
+// Decorative shapes - consolidated
+.shape-left, .shape-right, .shape-bottom-left, .shape-bottom-right {
+  position: absolute;
+  pointer-events: none;
+  opacity: 0.6;
+  z-index: 0;
+
+  img { width: 100%; height: auto; }
+}
+
+.shape-left {
+  left: 0;
+  bottom: -110px;
+  max-width: 250px;
+}
+
+.shape-right {
+  right: 0;
+  top: 50%;
+  transform: translateY(-95%) translateX(-10%);
+  max-width: 500px;
+}
+
+.shape-bottom-left {
+  left: 0;
+  bottom: 100;
+  max-width: 600px;
+  transform: translateY(-370px) translateX(-50px) rotate(270deg);
+}
+
+.shape-bottom-right {
+  right: 0;
+  bottom: 0;
+  max-width: 250px;
+  transform: translateY(400%) rotate(180deg);
+}
+
+// Workshop Schedule Section
+.schedule-section {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 20px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  overflow: visible;
+
+  h2 {
+    font-family: 'Lexend', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 1000;
+    color: #181818;
+    margin-bottom: 60px;
+  }
+}
+
+.workshops-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-bottom: 30px;
+  justify-items: center;
+  overflow: visible;
+}
+
+.workshop-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+
+.workshop-number {
+  width: 120px;
+  height: 120px;
+  background-color: #b9cdf2;
+  color: white;
+  font-family: Impact, "Arial Black", sans-serif;
+  font-size: 70px;
+  font-weight: 600;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  letter-spacing: 1px;
+}
+
+.workshop-content {
+  h3 {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: #181818;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    word-wrap: break-word;
+    letter-spacing: 0.8px;
+    width: 300px
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    text-align: left;
+    width: 250px;
+
+    li {
+      font-family: 'Lexend', sans-serif;
+      font-size: 0.95rem;
+      line-height: 1.4;
+      color: #595959;
+      margin-bottom: 3px;
+      padding-left: 20px;
+      position: relative;
+      letter-spacing: 0.8px;
+
+      &::before {
+        content: '•';
+        position: absolute;
+        left: 0;
+        color: black;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.workshop-arrow {
+  position: absolute;
+  right: -50px;
+  top: 150px;
+  color: #1E6CFF;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+
+  img { width: 60px; height: auto; }
+}
+
+.schedule-note {
+  font-family: 'Lexend', sans-serif;
+  font-size: 1.1rem;
+  color: #333;
+  margin-top: 40px;
+  font-style: italic;
+  letter-spacing: 0.6px;
+}
+
+// Team Section
+.team-section {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 20px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+
+  h2 {
+    font-family: variables.$font-display;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #181818;
+    margin-bottom: 60px;
+    letter-spacing: 1px;
+  }
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.team-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h4 {
+    font-family: variables.$font-display;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #181818;
+    margin-top: 15px;
+    letter-spacing: 0.6px;
+  }
+}
+
+.member-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.placeholder-photo {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #e0e0e0 0%, #f5f5f5 100%);
+}
+
+// Social Media Section
+.social-section {
+  padding: 40px 20px 60px;
+  text-align: center;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  position: relative;
+  z-index: 2;
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+
+    img {
+      width: 40px;
+      height: 40px;
+      transition: transform 0.3s ease;
+    }
+
+    &:hover img { transform: scale(1.2); }
+  }
+}
+
+// Responsive Design - Consolidated
+@media (max-width: variables.$navbar-breakpoint) {
+  .banner-content {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .banner-right { max-width: 400px; }
+
+  .workshops-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .workshop-arrow { display: none; }
+  .team-grid { grid-template-columns: repeat(2, 1fr); gap: 30px; }
+}
+
+@media (max-width: variables.$tablet-breakpoint) {
+  .banner-section { padding: 30px 15px 70px; }
+  .logo-container img { max-width: 250px; }
+
+  .schedule-section h2, .team-section h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    padding: 0 10px;
+  }
+
+  .workshops-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 0 10px;
+  }
+
+  .workshop-number {
+    width: 100px;
+    height: 100px;
+    font-size: 3.5rem;
+  }
+
+  .team-grid { gap: 25px; }
+  .member-photo { width: 120px; height: 120px; }
+
+  .social-links {
+    gap: 20px;
+    a img { width: 35px; height: 35px; }
+  }
+}
+
+@media (max-width: variables.$sidebar-breakpoint) {
+  .banner-text p { font-size: 0.9rem; }
+  .youtube-button { padding: 10px 20px; font-size: 0.9rem; }
+  .team-grid { grid-template-columns: 1fr; }
+}
