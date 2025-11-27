@@ -26,6 +26,7 @@ export default function Navbar() {
     { label: 'Dev Team', href: '/dev'},
     { label: 'Impact', href: '/impact'},
     { label: 'JEDI', href: '/jedi'},
+    { label: 'Quantum', href: '/quantum'},
   ];
 
   const eventLinks = [
