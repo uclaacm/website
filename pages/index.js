@@ -4,9 +4,9 @@ import { NextSeo } from 'next-seo';
 import { useState } from 'react';
 import Banner from '../components/Banner';
 import Carousel from '../components/Carousel';
-import CommitteeIcon from '../components/Committees/CommitteeIcon';
+//import CommitteeIcon from '../components/Committees/CommitteeIcon';
 import Committees from '../components/CommitteeSpread';
-import ContentBanner from '../components/ContentBanner';
+//import ContentBanner from '../components/ContentBanner';
 import Layout from '../components/Layout';
 import Article from '../components/NewsArticle';
 import SocialMedia from '../components/SocialMedia';
@@ -49,6 +49,7 @@ function Home() {
         }}
       />
       <div className="home-page text-center">
+        {/*
         <ContentBanner>
           <div className="content-banner-logos-top">
             <div className="content-banner-logos">
@@ -61,13 +62,11 @@ function Home() {
               <CommitteeIcon committee="teachLA" />
             </div>
           </div>
-          {/*
           <h2 className="content-banner-title">
             <Link href="/internship" style={{ marginRight: '8px', color: 'white' }}>
               ACM Internship Apps are now open!
             </Link>
           </h2>
-          */}
           <div className="content-banner-logos-top">
             <div className="content-banner-logos">
               <CommitteeIcon committee="acm" />
@@ -80,6 +79,7 @@ function Home() {
             </div>
           </div>
         </ContentBanner>
+        */}
         <Banner />
         <div className="content-section">
           <h2>The largest Computer Science community at UCLA</h2>

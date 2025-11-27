@@ -6,6 +6,41 @@ module.exports = {
         destination: 'https://discord.gg/eWmzKsY',
         permanent: false, // 302 redirect
       },
+      {
+        source: '/studio/discord',
+        destination: 'https://discord.gg/9jDH6rN',
+        permanent: false,
+      },
+      {
+        source: '/icpc/discord',
+        destination: 'https://discord.gg/6pxWhttfs6',
+        permanent: false,
+      },
+      {
+        source: '/design/discord',
+        destination: 'https://discord.gg/aXTHXBF5nh',
+        permanent: false,
+      },
+      {
+        source: '/cyber/discord',
+        destination: 'https://discord.gg/j9dgf2q',
+        permanent: false,
+      },
+      {
+        source: '/ai/discord',
+        destination: 'https://discord.gg/QcU9AVW9hm',
+        permanent: false,
+      },
+      {
+        source: '/cloud/discord',
+        destination: 'https://discord.gg/s2VGxKqTYA',
+        permanent: false,
+      },
+      {
+        source: '/hack/discord',
+        destination: 'https://discord.gg/dUp8g8wgCv',
+        permanent: false,
+      },
     ];
   },
 
