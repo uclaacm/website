@@ -243,19 +243,11 @@ export default [
       },
       {
         platform: 'discord',
-        link: '/cyber/discord',
+        link: 'https://acmcyber.com/discord',
       },
       {
         platform: 'instagram',
         link: 'https://www.instagram.com/uclacyber',
-      },
-      {
-        platform: 'facebook',
-        link: 'https://www.facebook.com/groups/uclacyber/',
-      },
-      {
-        platform: 'twitter',
-        link: 'https://twitter.com/pbrucla',
       },
     ],
     infoCards: [
