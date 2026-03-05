@@ -48,7 +48,7 @@ const footerInitiativeLinks = [
     path: '/quantum',
     wordmark_dark: '/images/quantum/quantum-footer.png',
     useImage: true,
-  }
+  },
 ];
 
 function FooterLinkElement({ title, path, ext }) {

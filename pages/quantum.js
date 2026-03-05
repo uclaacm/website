@@ -1,7 +1,6 @@
-import Image from 'next/legacy/image';
-import { NextSeo } from 'next-seo';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { NextSeo } from 'next-seo';
 import Layout from '../components/Layout';
 import styles from '../styles/pages/quantum.module.scss';
 
@@ -50,15 +49,15 @@ function Quantum() {
   const team = [
     {
       name: 'Victor Yu',
-      photo: '/images/quantum/quantum-officers/VictorYu.jpg', 
+      photo: '/images/quantum/quantum-officers/VictorYu.jpg',
     },
     {
       name: 'Ian Kwon',
-      photo: '/images/quantum/quantum-officers/IanKwon.jpg', 
+      photo: '/images/quantum/quantum-officers/IanKwon.jpg',
     },
     {
       name: 'Aarav Pabla',
-      photo: '/images/quantum/quantum-officers/AaravPabla.jpg', 
+      photo: '/images/quantum/quantum-officers/AaravPabla.jpg',
     },
     {
       name: 'Coming Soon',
@@ -100,7 +99,10 @@ function Quantum() {
                   advanced mathematics or physics required.
                 </p>
                 <p className={styles['meeting-info']}>
-                  <strong>For the Winter 2026 quarter, find us for the Introductory Track in M.S. 5147, each Tuesday from 6:00 pm - 7:50 pm!</strong>
+                  <strong>
+                    For the Winter 2026 quarter, find us for the Introductory
+                    Track in M.S. 5147, each Tuesday from 6:00 pm - 7:50 pm!
+                  </strong>
                 </p>
               </div>
             </div>
@@ -112,7 +114,7 @@ function Quantum() {
               />
             </div>
           </div>
-          
+
           <div className={styles['shape-right']}>
             <img src="/images/quantum/Union.png" alt="" />
           </div>
@@ -167,15 +169,17 @@ function Quantum() {
         <div className={styles['advanced-track-section']}>
           <h2>Advanced Track</h2>
           <p className={styles['advanced-track-description']}>
-            New for Winter 2026! Join us <strong>every two weeks on Thursdays at 6:00 PM</strong> for 
-            our advanced track where we contribute to an open source quantum computing library. 
-            This is a great opportunity to gain real-world experience and make meaningful 
-            contributions to the quantum computing community.
+            New for Winter 2026! Join us
+            <strong> every two weeks on Thursdays at 6:00 PM </strong>
+            for our advanced track where we contribute to an open source
+            quantum computing library. This is a great opportunity to gain
+            real-world experience and make meaningful contributions to the
+            quantum computing community.
           </p>
         </div>
 
         <div className={styles['shape-bottom-right']}>
-            <img src="/images/quantum/shape.png" alt="" />
+          <img src="/images/quantum/shape.png" alt="" />
         </div>
 
         {/* Team Section */}
@@ -198,7 +202,7 @@ function Quantum() {
         </div>
 
         <div className={styles['shape-bottom-left']}>
-            <img src="/images/quantum/Union.png" alt="" />
+          <img src="/images/quantum/Union.png" alt="" />
         </div>
 
         {/* Social Media Section */}
@@ -250,4 +254,3 @@ function Quantum() {
 }
 
 export default Quantum;
-
