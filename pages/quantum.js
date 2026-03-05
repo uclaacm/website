@@ -213,7 +213,7 @@ function Quantum() {
               <img src="/images/quantum/social_media_icons/instagram.svg" alt="Instagram" />
             </a>
             <a
-              href="https://www.linkedin.com/company/acm-at-ucla/"
+              href="https://www.linkedin.com/company/ucla-acm"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
