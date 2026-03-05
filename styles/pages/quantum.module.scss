@@ -277,6 +277,40 @@
   letter-spacing: 0.6px;
 }
 
+// Advanced Track Section
+.advanced-track-section {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 40px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  background: linear-gradient(135deg, #e8f4ff 0%, #f0f9ff 50%, #e0f2ff 100%);
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(30, 108, 255, 0.1);
+
+  h2 {
+    font-family: variables.$font-display;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #181818;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+  }
+}
+
+.advanced-track-description {
+  font-family: 'Lexend', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+  letter-spacing: 0.5px;
+
+  strong {
+    color: #1E6CFF;
+  }
+}
+
 // Team Section
 .team-section {
   max-width: 1200px;

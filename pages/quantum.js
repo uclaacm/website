@@ -25,7 +25,7 @@ function Quantum() {
     },
     {
       number: 3,
-      title: 'Deutsch-Jozsa Teleportation',
+      title: 'Deutsch-Jozsa Algorithm',
       points: [
         'Learn about one of the earliest quantum algorithms',
         'Understand & implement an algorithm with quantum advantage',
@@ -45,28 +45,20 @@ function Quantum() {
         "Implement Grover's algorithm in Qiskit and run it on real quantum hardware",
       ],
     },
-    {
-      number: 6,
-      title: "Shor's Algorithm",
-      points: [
-        'Learn about the famous factoring algorithm',
-        'An algorithm with exponential speedup',
-      ],
-    },
   ];
 
   const team = [
     {
       name: 'Victor Yu',
-      photo: '/images/quantum/quantum-officers/VictorYu.jpg', // Placeholder until actual photo is added
+      photo: '/images/quantum/quantum-officers/VictorYu.jpg', 
     },
     {
       name: 'Ian Kwon',
-      photo: '/images/quantum/quantum-officers/IanKwon.jpg', // Placeholder until actual photo is added
+      photo: '/images/quantum/quantum-officers/IanKwon.jpg', 
     },
     {
-      name: 'Naren Sathishkumar',
-      photo: '/images/quantum/quantum-officers/SatishKumar.jpg', // Placeholder until actual photo is added
+      name: 'Aarav Pabla',
+      photo: '/images/quantum/quantum-officers/AaravPabla.jpg', 
     },
     {
       name: 'Coming Soon',
@@ -78,7 +70,7 @@ function Quantum() {
     <Layout>
       <NextSeo
         title="Quantum | ACM at UCLA"
-        description="Quantum is an initiative that aims to remove the barrier to entry in quantum science. Hosted by the Association for Computing Machinery Student Association at UCLA, we teach introductory quantum computing by focusing on intuition—no advanced mathematics required."
+        description="Quantum is an initiative that aims to remove the barrier to entry in quantum science. Hosted in collaboration with the Quantum Computing Student Association at UCLA, we teach introductory quantum computing by focusing on intuition—no advanced mathematics or physics required."
         openGraph={{
           images: [
             {
@@ -102,13 +94,13 @@ function Quantum() {
               <div className={styles['banner-text']}>
                 <p>
                   Quantum is an initiative that aims to remove the barrier to
-                  entry in quantum science. Hosted by the Association for
-                  Computing Machinery Student Association at UCLA, we teach
+                  entry in quantum science. Hosted in collaboration with the
+                  Quantum Computing Student Association at UCLA, we teach
                   introductory quantum computing by focusing on intuition—no
-                  advanced mathematics required.
+                  advanced mathematics or physics required.
                 </p>
                 <p className={styles['meeting-info']}>
-                  <strong>For the Fall 2025 quarter, find us in Boelter 2444, each Wednesday from 6:00-7:50 pm!</strong>
+                  <strong>For the Winter 2026 quarter, find us for the Introductory Track in M.S. 5147, each Tuesday from 6:00 pm - 7:50 pm!</strong>
                 </p>
               </div>
             </div>
@@ -143,7 +135,7 @@ function Quantum() {
 
         {/* Workshop Schedule Section */}
         <div className={styles['schedule-section']}>
-          <h2>Fall Workshop Schedule</h2>
+          <h2>Winter Workshop Schedule</h2>
           <div className={styles['workshops-container']}>
             {workshops.map((workshop, index) => (
               <div key={workshop.number} className={styles['workshop-item']}>
@@ -168,6 +160,17 @@ function Quantum() {
           </div>
           <p className={styles['schedule-note']}>
             And a social, guest lecture, and more!
+          </p>
+        </div>
+
+        {/* Advanced Track Section */}
+        <div className={styles['advanced-track-section']}>
+          <h2>Advanced Track</h2>
+          <p className={styles['advanced-track-description']}>
+            New for Winter 2026! Join us <strong>every two weeks on Thursdays at 6:00 PM</strong> for 
+            our advanced track where we contribute to an open source quantum computing library. 
+            This is a great opportunity to gain real-world experience and make meaningful 
+            contributions to the quantum computing community.
           </p>
         </div>
 
