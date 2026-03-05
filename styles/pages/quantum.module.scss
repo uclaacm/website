@@ -2,17 +2,20 @@
 
 .quantum-page {
   min-height: 100vh;
-  background: #fff;
+  background: #FFF;
   overflow-x: hidden;
   letter-spacing: 0.5px;
-  
-  *, & { box-sizing: border-box; }
+
+  *,
+  & {
+    box-sizing: border-box;
+  }
 }
 
 // Banner Section
 .banner-section {
   position: relative;
-  background: #fff;
+  background: #FFF;
   padding: 60px 20px 80px;
   overflow: hidden;
 }
@@ -38,7 +41,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
   img {
     min-width: 300px;
     width: 100%;
@@ -95,12 +98,14 @@
   letter-spacing: 0.8px;
 
   &:hover {
-    background: #2d4373;
+    background: #2D4373;
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(59, 89, 152, 0.3);
   }
 
-  svg { font-size: 1.5rem; }
+  svg {
+    font-size: 1.5rem;
+  }
 }
 
 .banner-right {
@@ -121,13 +126,19 @@
 }
 
 // Decorative shapes - consolidated
-.shape-left, .shape-right, .shape-bottom-left, .shape-bottom-right {
+.shape-left,
+.shape-right,
+.shape-bottom-left,
+.shape-bottom-right {
   position: absolute;
   pointer-events: none;
   opacity: 0.6;
   z-index: 0;
 
-  img { width: 100%; height: auto; }
+  img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .shape-left {
@@ -145,7 +156,7 @@
 
 .shape-bottom-left {
   left: 0;
-  bottom: 100;
+  bottom: 100px;
   max-width: 600px;
   transform: translateY(-370px) translateX(-50px) rotate(270deg);
 }
@@ -197,16 +208,16 @@
 .workshop-number {
   width: 120px;
   height: 120px;
-  background-color: #b9cdf2;
+  background-color: #B9CDF2;
   color: white;
-  font-family: Impact, "Arial Black", sans-serif;
+  font-family: Impact, 'Arial Black', sans-serif;
   font-size: 70px;
   font-weight: 600;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   letter-spacing: 1px;
 }
 
@@ -224,7 +235,7 @@
     justify-content: center;
     word-wrap: break-word;
     letter-spacing: 0.8px;
-    width: 300px
+    width: 300px;
   }
 
   ul {
@@ -265,7 +276,10 @@
   align-items: center;
   z-index: 1;
 
-  img { width: 60px; height: auto; }
+  img {
+    width: 60px;
+    height: auto;
+  }
 }
 
 .schedule-note {
@@ -285,7 +299,7 @@
   text-align: center;
   position: relative;
   z-index: 2;
-  background: linear-gradient(135deg, #e8f4ff 0%, #f0f9ff 50%, #e0f2ff 100%);
+  background: linear-gradient(135deg, #E8F4FF 0%, #F0F9FF 50%, #E0F2FF 100%);
   border-radius: 20px;
   box-shadow: 0 4px 12px rgba(30, 108, 255, 0.1);
 
@@ -370,7 +384,7 @@
 .placeholder-photo {
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, #e0e0e0 0%, #f5f5f5 100%);
+  background: linear-gradient(135deg, #E0E0E0 0%, #F5F5F5 100%);
 }
 
 // Social Media Section
@@ -399,7 +413,9 @@
       transition: transform 0.3s ease;
     }
 
-    &:hover img { transform: scale(1.2); }
+    &:hover img {
+      transform: scale(1.2);
+    }
   }
 }
 
@@ -410,22 +426,36 @@
     gap: 40px;
   }
 
-  .banner-right { max-width: 400px; }
+  .banner-right {
+    max-width: 400px;
+  }
 
   .workshops-container {
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
   }
 
-  .workshop-arrow { display: none; }
-  .team-grid { grid-template-columns: repeat(2, 1fr); gap: 30px; }
+  .workshop-arrow {
+    display: none;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
 }
 
 @media (max-width: variables.$tablet-breakpoint) {
-  .banner-section { padding: 30px 15px 70px; }
-  .logo-container img { max-width: 250px; }
+  .banner-section {
+    padding: 30px 15px 70px;
+  }
 
-  .schedule-section h2, .team-section h2 {
+  .logo-container img {
+    max-width: 250px;
+  }
+
+  .schedule-section h2,
+  .team-section h2 {
     font-size: 2rem;
     margin-bottom: 40px;
     padding: 0 10px;
@@ -443,17 +473,36 @@
     font-size: 3.5rem;
   }
 
-  .team-grid { gap: 25px; }
-  .member-photo { width: 120px; height: 120px; }
+  .team-grid {
+    gap: 25px;
+  }
+
+  .member-photo {
+    width: 120px;
+    height: 120px;
+  }
 
   .social-links {
     gap: 20px;
-    a img { width: 35px; height: 35px; }
+
+    a img {
+      width: 35px;
+      height: 35px;
+    }
   }
 }
 
 @media (max-width: variables.$sidebar-breakpoint) {
-  .banner-text p { font-size: 0.9rem; }
-  .youtube-button { padding: 10px 20px; font-size: 0.9rem; }
-  .team-grid { grid-template-columns: 1fr; }
+  .banner-text p {
+    font-size: 0.9rem;
+  }
+
+  .youtube-button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
 }
