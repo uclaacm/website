@@ -238,6 +238,14 @@ function Footer() {
           <span className={styles['footer-text-thin']}>
             &copy; ACM at UCLA 2025.
           </span>
+          {' '}
+          <Link href="/terms" className={styles['link-footer']} style={{ fontSize: '0.85rem', fontWeight: 300 }}>
+            Terms of Service
+          </Link>
+          {' · '}
+          <Link href="/privacy" className={styles['link-footer']} style={{ fontSize: '0.85rem', fontWeight: 300 }}>
+            Privacy Policy
+          </Link>
         </div>
       </nav>
     </footer>)
