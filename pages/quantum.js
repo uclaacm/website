@@ -1,5 +1,5 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { NextSeo } from 'next-seo';
 import Layout from '../components/Layout';
 import styles from '../styles/pages/quantum.module.scss';
