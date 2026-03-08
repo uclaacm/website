@@ -42,6 +42,13 @@ const footerInitiativeLinks = [
     wordmark_dark: '/images/jedi/jedi-footer.png',
     useImage: true,
   },
+  {
+    name: 'Quantum',
+    slug: 'quantum',
+    path: '/quantum',
+    wordmark_dark: '/images/quantum/quantum-footer.png',
+    useImage: true,
+  },
 ];
 
 function FooterLinkElement({ title, path, ext }) {
@@ -157,7 +164,7 @@ function Footer() {
                             style={{
                               margin: '0 auto',
                               transform:
-                                initiative.name === 'Impact' ? 'translateX(-8.5px)' : initiative.name === 'Dev Team' ? 'translateX(-23px) scale(0.85)' : initiative.name === 'JEDI' ? 'translateX(-18px) scale(0.94)' : 'none',
+                                initiative.name === 'Impact' ? 'translateX(-8.5px)' : initiative.name === 'Dev Team' ? 'translateX(-23px) scale(0.85)' : initiative.name === 'JEDI' ? 'translateX(-18px) scale(0.94)' : initiative.name === 'Quantum' ? 'translateX(5px) scale(1.15)' : 'none',
                             }}
                             onError={(e) => {
                               e.target.onerror = null;
