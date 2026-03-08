@@ -28,7 +28,8 @@ function PrivacyPolicy() {
 
         <h2>3. Mailing List</h2>
         <p>
-          If you subscribe to our mailing list, your email address is stored. We use it solely to send ACM at UCLA announcements and newsletters.
+          If you subscribe to our mailing list, your email address is stored. We use it solely to send ACM at
+          UCLA announcements and newsletters.
           You may unsubscribe at any time via the link in any email we send.
         </p>
 
