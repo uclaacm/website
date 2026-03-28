@@ -8,8 +8,6 @@ import { projects } from '../data/dev';
 import data from '../data/officeroutput.json';
 import styles from '../styles/pages/Dev.module.scss';
 
-
-
 function DevTeam() {
   const devTeamExec = data.filter((officer) => {
     const role = officer.role || '';
