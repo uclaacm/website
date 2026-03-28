@@ -8,26 +8,21 @@ import { projects } from '../data/dev';
 import data from '../data/officeroutput.json';
 import styles from '../styles/pages/Dev.module.scss';
 
-/*const devTeamDirector = {
-    name: 'Snigdha Kansal',
-    email: 'snigdha0206@g.ucla.edu',
-};*/
-
-const devTeamAdvisor = {
-  role: 'Dev Team Advisor',
-  name: 'Snigdha Kansal',
-  pronouns: 'she/her/hers',
-  year: '2025',
-  major: 'Computer Science',
-  photo:
-    'https://drive.google.com/thumbnail?id=1QMV2ifNFYNHZ1tEyVanN1cqxqTatzR16',
-};
-
 function DevTeam() {
-  const devTeamOfficers = data.filter(officer => officer.role.includes('Dev Team') && officer.committee.includes('Board, Dev Team'));
-  devTeamOfficers.splice(1, 0, devTeamAdvisor);
+  const devTeamExec = data.filter((officer) => {
+    const role = officer.role || '';
+    const hasExecRole = role.includes('Director') || role.includes('Advisor') || role.includes('Project Manager');
+    return hasExecRole && officer.committee.includes('Dev Team');
+  });
+
+  const devTeamOfficers = data.filter((officer) => {
+    const role = officer.role || '';
+    const hasExecRole = role.includes('Director') || role.includes('Advisor') || role.includes('Project Manager');
+    const hasDevTeamRole = role.includes('Dev Team');
+    return hasDevTeamRole && !hasExecRole && officer.committee.includes('Board, Dev Team');
+  });
   return (
-    (<Layout>
+    <Layout>
       <NextSeo
         title="ACM Dev Team | ACM at UCLA"
         description="The ACM Dev Team handles general internal development needs for ACM at UCLA. We maintain and create organization-wide projects such as the website, Discord bot, Membership Portal, and CMS Template."
@@ -66,12 +61,16 @@ function DevTeam() {
             Github
           </Link>.
         </p>
-        <h2 className="text-center">People</h2>
+        <h2 className="text-center">Leadership</h2>
+        <div className="grid-desktop-3 text-center-mobile">
+          <Officers officers={devTeamExec} />
+        </div>
+        <h2 className="text-center">Members</h2>
         <div className="grid-desktop-3 text-center-mobile">
           <Officers officers={devTeamOfficers} />
         </div>
       </div>
-    </Layout>)
+    </Layout>
   );
 }
 
