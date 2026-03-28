@@ -24,23 +24,21 @@ const devTeamAdvisor = {
 };
 
 function DevTeam() {
-  const devTeamExec = data.filter(officer => 
-    (officer.role.includes('Dev Team Director') || 
-     officer.role.includes('Dev Team Advisor') ||
-     officer.role.includes('Dev Team Project Manager')) && 
-    officer.committee.includes('Dev Team')
-  );
-  
-  const devTeamOfficers = data.filter(officer => 
-    officer.role.includes('Dev Team') && 
-    !officer.role.includes('Director') &&
-    !officer.role.includes('Advisor') &&
-    !officer.role.includes('Project Manager') &&
-    officer.committee.includes('Board, Dev Team')
-  );
+  const devTeamExec = data.filter((officer) => {
+    const role = officer.role || '';
+    const hasExecRole = role.includes('Director') || role.includes('Advisor') || role.includes('Project Manager');
+    return hasExecRole && officer.committee.includes('Dev Team');
+  });
+
+  const devTeamOfficers = data.filter((officer) => {
+    const role = officer.role || '';
+    const hasExecRole = role.includes('Director') || role.includes('Advisor') || role.includes('Project Manager');
+    const hasDevTeamRole = role.includes('Dev Team');
+    return hasDevTeamRole && !hasExecRole && officer.committee.includes('Board, Dev Team');
+  });
   devTeamOfficers.splice(1, 0, devTeamAdvisor);
   return (
-    (<Layout>
+    <Layout>
       <NextSeo
         title="ACM Dev Team | ACM at UCLA"
         description="The ACM Dev Team handles general internal development needs for ACM at UCLA. We maintain and create organization-wide projects such as the website, Discord bot, Membership Portal, and CMS Template."
@@ -88,7 +86,7 @@ function DevTeam() {
           <Officers officers={devTeamOfficers} />
         </div>
       </div>
-    </Layout>)
+    </Layout>
   );
 }
 
