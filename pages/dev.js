@@ -8,20 +8,7 @@ import { projects } from '../data/dev';
 import data from '../data/officeroutput.json';
 import styles from '../styles/pages/Dev.module.scss';
 
-/*const devTeamDirector = {
-    name: 'Snigdha Kansal',
-    email: 'snigdha0206@g.ucla.edu',
-};*/
 
-const devTeamAdvisor = {
-  role: 'Dev Team Advisor',
-  name: 'Snigdha Kansal',
-  pronouns: 'she/her/hers',
-  year: '2025',
-  major: 'Computer Science',
-  photo:
-    'https://drive.google.com/thumbnail?id=1QMV2ifNFYNHZ1tEyVanN1cqxqTatzR16',
-};
 
 function DevTeam() {
   const devTeamExec = data.filter((officer) => {
@@ -36,7 +23,6 @@ function DevTeam() {
     const hasDevTeamRole = role.includes('Dev Team');
     return hasDevTeamRole && !hasExecRole && officer.committee.includes('Board, Dev Team');
   });
-  devTeamOfficers.splice(1, 0, devTeamAdvisor);
   return (
     <Layout>
       <NextSeo
