@@ -24,7 +24,20 @@ const devTeamAdvisor = {
 };
 
 function DevTeam() {
-  const devTeamOfficers = data.filter(officer => officer.role.includes('Dev Team') && officer.committee.includes('Board, Dev Team'));
+  const devTeamExec = data.filter(officer => 
+    (officer.role.includes('Dev Team Director') || 
+     officer.role.includes('Dev Team Advisor') ||
+     officer.role.includes('Dev Team Project Manager')) && 
+    officer.committee.includes('Dev Team')
+  );
+  
+  const devTeamOfficers = data.filter(officer => 
+    officer.role.includes('Dev Team') && 
+    !officer.role.includes('Director') &&
+    !officer.role.includes('Advisor') &&
+    !officer.role.includes('Project Manager') &&
+    officer.committee.includes('Board, Dev Team')
+  );
   devTeamOfficers.splice(1, 0, devTeamAdvisor);
   return (
     (<Layout>
@@ -66,7 +79,11 @@ function DevTeam() {
             Github
           </Link>.
         </p>
-        <h2 className="text-center">People</h2>
+        <h2 className="text-center">Leadership</h2>
+        <div className="grid-desktop-3 text-center-mobile">
+          <Officers officers={devTeamExec} />
+        </div>
+        <h2 className="text-center">Members</h2>
         <div className="grid-desktop-3 text-center-mobile">
           <Officers officers={devTeamOfficers} />
         </div>
