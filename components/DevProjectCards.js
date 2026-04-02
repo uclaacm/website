@@ -20,6 +20,9 @@ function DiamondCard({ project, slotIndex, isCenter, onClick }) {
 
   return (
     <div
+      role="button"
+      tabIndex={0}
+      onKeyDown={(e) => { if (e.key === 'Enter') onClick(); }}
       style={{
         position: 'absolute',
         // eslint-disable-next-line quotes
