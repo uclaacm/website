@@ -66,7 +66,7 @@ function DevTeam() {
         <h2 className="text-center">Where We&apos;ve Worked</h2>
         <p className={styles['project-info']}>
           {/* eslint-disable-next-line max-len */}
-          Our ACM Dev officers and alumni have interned and worked at companies including Google, Amazon, Viasat, Apple...
+          Our ACM Dev officers and alumni have interned and worked at companies including Google, Amazon, Viasat, Apple, TikTok, Coinbase, and Oracle!
         </p>
         <h2 className="text-center">Leadership</h2>
         <div className="grid-desktop-3 text-center-mobile">
