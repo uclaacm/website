@@ -62,7 +62,7 @@ function DevTeam() {
             Github
           </Link>.
         </p>
-        <h2 className="text-center">Where We&aposve Worked</h2>
+        <h2 className="text-center">Where We&apos;ve Worked</h2>
         <p className={styles['project-info']}>
           {/* eslint-disable-next-line max-len */}
           Our ACM Dev officers and alumni have interned and worked at companies including Google, Amazon, Viasat, Apple...
