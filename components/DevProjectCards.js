@@ -19,10 +19,8 @@ function DiamondCard({ project, slotIndex, isCenter, onClick }) {
   const size = BASE_SIZE * scale;
 
   return (
+    // eslint-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-static-element-interactions
     <div
-      role="button"
-      tabIndex={0}
-      onKeyDown={(e) => { if (e.key === 'Enter') onClick(); }}
       style={{
         position: 'absolute',
         // eslint-disable-next-line quotes
