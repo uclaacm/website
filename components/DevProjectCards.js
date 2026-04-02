@@ -22,7 +22,9 @@ function DiamondCard({ project, slotIndex, isCenter, onClick }) {
     <div
       style={{
         position: 'absolute',
+        // eslint-disable-next-line quotes
         left: `calc(50% + ${offset}px)`,
+        // eslint-disable-next-line quotes
         transform: `translateX(-50%)`,
         zIndex,
         opacity,
@@ -131,7 +133,7 @@ function DiamondCarousel({ projects: projectList }) {
           {projectList.map((p, i) => (
             <button
               key={p.name}
-              className={`${carouselStyles['carousel-dot']} ${i === activeIndex ? carouselStyles['active'] : ''}`}
+              className={`${carouselStyles['carousel-dot']} ${i === activeIndex ? carouselStyles.active : ''}`}
               onClick={() => setActiveIndex(i)}
               aria-label={`Go to ${p.name}`}
             />
@@ -207,9 +209,9 @@ function Project({
         className={`${styles['project-card']} ${styles['grid-tablet-only-2']}`}
       >
         <div className={styles['project-image-container']}>
-          <div className={styles['rotated']}>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={img} alt={alt} style={{ maxWidth: '100%' }} />
+          <div className={styles.rotated}>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src={img} alt={alt} style={{ maxWidth: '100%' }} />
           </div>
         </div>
         <div>
