@@ -30,7 +30,7 @@ $tablet-breakpoint: 768px;
   }
 }
 
-.project-spacing{
+.project-spacing {
   margin-top: 2rem;
 }
 
@@ -62,7 +62,7 @@ $tablet-breakpoint: 768px;
 
 .carousel-btn {
   background: none;
-  border: none;
+  border: 0;
   border-radius: 50%;
   box-shadow: 0 0 0 1.5px rgba(150, 150, 150, 0.2), 0 0 8px 1px rgba(150, 150, 150, 0.1);
   cursor: pointer;
@@ -85,7 +85,7 @@ $tablet-breakpoint: 768px;
 
 .carousel-dot {
   background: #61616140;
-  border: none;
+  border: 0;
   border-radius: 50%;
   cursor: pointer;
   height: 0.5rem;
