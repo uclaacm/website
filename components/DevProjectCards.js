@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 import Image from 'next/image';
 import { useState } from 'react';
 import styles from '../styles/components/DevProjCard.module.scss';

@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 import Link from 'next/link';
 import { NextSeo } from 'next-seo';
 import Banner from '../components/Banner';
