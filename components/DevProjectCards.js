@@ -1,5 +1,146 @@
 import Image from 'next/image';
+import { useState } from 'react';
 import styles from '../styles/components/DevProjCard.module.scss';
+import carouselStyles from '../styles/pages/Dev.module.scss';
+
+// Slot config: position offset -> { scale, zIndex, offset from center in px }
+const SLOT_CONFIG = [
+  { scale: 0.52, zIndex: 1,  offset: -320, opacity: 0.8 },
+  { scale: 0.70, zIndex: 2,  offset: -175, opacity: 0.9 },
+  { scale: 1.00, zIndex: 5,  offset: 0, opacity: 1 },
+  { scale: 0.70, zIndex: 2,  offset: 175, opacity: 0.9 },
+  { scale: 0.52, zIndex: 1,  offset: 320, opacity: 0.8 },
+];
+
+const BASE_SIZE = 280; // px, for the center diamond
+
+function DiamondCard({ project, slotIndex, isCenter, onClick }) {
+  const { scale, zIndex, offset, opacity } = SLOT_CONFIG[slotIndex];
+  const size = BASE_SIZE * scale;
+
+  return (
+    <div
+      style={{
+        position: 'absolute',
+        left: `calc(50% + ${offset}px)`,
+        transform: `translateX(-50%)`,
+        zIndex,
+        opacity,
+        transition: 'all 0.7s cubic-bezier(0.25, 0.1, 0.25, 1)',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+      }}
+      onClick={onClick}
+    >
+      <div
+        className={`${styles['diamond-wrapper']} ${isCenter ? styles['is-center'] : ''}`}
+        style={{ width: size, height: size }}
+      >
+        <div className={styles['diamond-inner']}>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={project.img}
+            alt={project.alt}
+            className={styles['diamond-img']}
+          />
+          {isCenter && (
+            <div className={styles['diamond-hover-content']}>
+              <div className={styles['description-header']}>
+                {project.name !== '???' && (
+                  <>
+                    <span
+                      className={`${styles['dev-badge']} ${styles[project.prim_lang]}`}
+                    />
+                    &nbsp;
+                  </>
+                )}
+                {project.prim_lang}
+                {project.name !== '???' && (
+                  <>
+                    &nbsp;•&nbsp;
+                    <a href={project.proj_link} target="_blank" rel="noopener noreferrer">
+                      <u>Proj</u>
+                    </a>
+                    &nbsp;•&nbsp;
+                    <a href={project.repo_link} target="_blank" rel="noopener noreferrer">
+                      <u>Repo</u>
+                    </a>
+                  </>
+                )}
+              </div>
+              <div className={styles['description-box']}>
+                <p dangerouslySetInnerHTML={{ __html: project.description }} />
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function DiamondCarousel({ projects: projectList }) {
+  const [activeIndex, setActiveIndex] = useState(0);
+  const total = projectList.length;
+
+  const getWrapped = (i) => ((i % total) + total) % total;
+
+  // The 5 visible projects, centered on activeIndex
+  const visibleProjects = [-2, -1, 0, 1, 2].map((offset) => ({
+    project: projectList[getWrapped(activeIndex + offset)],
+    offset,
+  }));
+
+  return (
+    <div className={carouselStyles['carousel-section']}>
+      <div className={carouselStyles['carousel-track']}>
+        <button
+          className={carouselStyles['carousel-btn']}
+          onClick={() => setActiveIndex(getWrapped(activeIndex - 1))}
+          aria-label="Previous project"
+          style={{ position: 'absolute', left: '-4.5rem', fontSize: '0.75rem', color: 'rgba(150, 150, 150, 1)' }}
+        >
+          ⟨
+        </button>
+        {visibleProjects.map(({ project, offset }, slotIndex) => (
+          <DiamondCard
+            key={project.name}
+            project={project}
+            slotIndex={slotIndex}
+            isCenter={offset === 0}
+            onClick={() => {
+              if (offset !== 0) setActiveIndex(getWrapped(activeIndex + offset));
+            }}
+          />
+        ))}
+        <button
+          className={carouselStyles['carousel-btn']}
+          onClick={() => setActiveIndex(getWrapped(activeIndex + 1))}
+          aria-label="Next project"
+          style={{ position: 'absolute', right: '-4.5rem', fontSize: '0.75rem', color: 'rgba(150, 150, 150, 1)' }}
+        >
+          ⟩
+        </button>
+      </div>
+      <p className={styles['diamond-title']} style={{ position: 'relative', zIndex: 10, marginTop: '1rem' }}>
+        {projectList[activeIndex].name}
+      </p>
+      <div className={carouselStyles['carousel-controls']}>
+        <div className={carouselStyles['carousel-dots']}>
+          {projectList.map((p, i) => (
+            <button
+              key={p.name}
+              className={`${carouselStyles['carousel-dot']} ${i === activeIndex ? carouselStyles['active'] : ''}`}
+              onClick={() => setActiveIndex(i)}
+              aria-label={`Go to ${p.name}`}
+            />
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
 
 function Project({
   name,
@@ -66,8 +207,10 @@ function Project({
         className={`${styles['project-card']} ${styles['grid-tablet-only-2']}`}
       >
         <div className={styles['project-image-container']}>
+          <div className={styles['rotated']}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src={img} alt={alt} style={{ maxWidth: '100%' }} />
+          </div>
         </div>
         <div>
           <h3 className={styles.name}>{name}</h3>
@@ -108,6 +251,11 @@ function Project({
 }
 
 function projects(props) {
+  // Use the diamond carousel for the default (no size/style) case
+  if (!props.size && !props.style) {
+    return <DiamondCarousel projects={props.projects} />;
+  }
+
   return (
     // TODO: more flexible mobile views
     (<>
