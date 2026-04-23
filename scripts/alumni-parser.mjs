@@ -41,7 +41,7 @@ async function main() {
     }
     
     if (fullYear) {
-      const data = await getGoogleSheetData(auth, `${sheet}!A2:K`);
+      const data = await getGoogleSheetData(auth, `${sheet}!A3:K`);
       allData[fullYear] = data;
     }
   }
@@ -50,7 +50,7 @@ async function main() {
   // Example: if latest archived is Officers(25-26), then Officers sheet = 26-27
   const currentFullYear = `20${latestYear}-20${latestYear + 1}`;
   alumYears.push(currentFullYear);
-  const currentData = await getGoogleSheetData(auth, `Officers!A2:K`);
+  const currentData = await getGoogleSheetData(auth, `Officers!A3:K`);
   allData[currentFullYear] = currentData;
   
   // Also write current officers to officeroutput.json for backwards compatibility
