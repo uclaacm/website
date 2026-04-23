@@ -15,12 +15,18 @@ async function main() {
   // Dynamically determines the alumni years from the names of google sheets and write to alumyears.json.
   const allData = {};
   const alumYears = [];
+  let latestYear = 0;
+  
   for (const sheet of sheetNames) {
     if (sheet.startsWith('Officers(')) {
       const match = sheet.match(/\((\d{2})-(\d{2})\)/);
       if (match && match[1] && match[2]) {
         const fullYear = `20${match[1]}-20${match[2]}`;
         alumYears.push(fullYear);
+        
+        // Track the latest year found in the regex sheets
+        const endYear = parseInt(match[2]);
+        latestYear = Math.max(latestYear, endYear);
 
         const data = await getGoogleSheetData(auth, `${sheet}!A2:K`);
         // Store the data in the allData object using the formatted year as the key.
@@ -31,12 +37,11 @@ async function main() {
     }
   }
 
-  // Add current school year (Sept-Aug cycle) dynamically
-  const now = new Date();
-  const currentYear = now.getFullYear();
-  const schoolYear = now.getMonth() >= 8 ? currentYear + 1 : currentYear; // Sept onwards = next academic year
-  alumYears.push(`${currentYear}-${schoolYear}`);
-  // TODO: Better approach: rename 'Officers' sheet to 'Officers(XX-XX)' when moving to past years
+  // Current year is the "Officers" sheet, which is one year ahead of the latest Officers(XX-XX) sheet
+  // Example: if latest is Officers(25-26), then Officers sheet = 26-27
+  const currentFullYear = `20${latestYear}-20${latestYear + 1}`;
+  alumYears.push(currentFullYear);
+  
   const sortedYears = Array.from(alumYears).sort().reverse();
   writeToOutput(sortedYears, 'alumyears.json');
 
