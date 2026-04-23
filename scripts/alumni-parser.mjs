@@ -31,7 +31,7 @@ async function main() {
     }
   }
 
-  alumYears.push('2025-2026'); // use dynamic parsing for current year instead? Maybe better to combine current and past officers & rename current officers sheet.
+  alumYears.push('2026-2027'); // use dynamic parsing for current year instead? Maybe better to combine current and past officers & rename current officers sheet.
   const sortedYears = Array.from(alumYears).sort().reverse();
   writeToOutput(sortedYears, 'alumyears.json');
 
