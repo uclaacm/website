@@ -41,7 +41,7 @@ async function main() {
     }
     
     if (fullYear) {
-      const data = await getGoogleSheetData(auth, `${sheet}!A3:K`);
+      const data = await getGoogleSheetData(auth, `${sheet}!A2:K`);
       allData[fullYear] = data;
     }
   }
