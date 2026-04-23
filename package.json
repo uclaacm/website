@@ -39,7 +39,7 @@
     "reg": "node scripts/recurring-event-generator.mjs",
     "seg": "node scripts/single-event-generator.mjs",
     "alp": "node scripts/alumni-parser.mjs",
-    "ofp": "node scripts/officer-parser.mjs",
+
     "nep": "node scripts/news-parser.mjs",
     "thp": "node scripts/town-hall-generator.mjs",
     "gmp": "node scripts/gm-generator.mjs",
