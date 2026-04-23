@@ -31,7 +31,12 @@ async function main() {
     }
   }
 
-  alumYears.push('2026-2027'); // use dynamic parsing for current year instead? Maybe better to combine current and past officers & rename current officers sheet.
+  // Add current school year (Sept-Aug cycle) dynamically
+  const now = new Date();
+  const currentYear = now.getFullYear();
+  const schoolYear = now.getMonth() >= 8 ? currentYear + 1 : currentYear; // Sept onwards = next academic year
+  alumYears.push(`${currentYear}-${schoolYear}`);
+  // TODO: Better approach: rename 'Officers' sheet to 'Officers(XX-XX)' when moving to past years
   const sortedYears = Array.from(alumYears).sort().reverse();
   writeToOutput(sortedYears, 'alumyears.json');
 
