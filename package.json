@@ -29,7 +29,7 @@
   "scripts": {
     "start": "next dev",
     "start-production": "next start",
-    "build": "npm run alp && npm run ofp && npm run nep && npm run thp && npm run hep && npm run gmp && next build",
+    "build": "npm run alp && npm run nep && npm run thp && npm run hep && npm run gmp && next build",
     "lint-js": "eslint \"**/*.js\"",
     "lint-js-fix": "eslint --fix \"**/*.js\"",
     "lint-css": "stylelint \"**/*.css\" \"**/*.scss\"",
