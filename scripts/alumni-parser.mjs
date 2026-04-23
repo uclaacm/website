@@ -11,40 +11,53 @@ async function main() {
   const auth = await authorizeGoogleAPI();
   const sheetNames = await getSheetNames(auth);
 
-  // For each google sheet with name in the format of "Officers(XX-XX)", collect their data by year, and write to alumoutput.json.
-  // Dynamically determines the alumni years from the names of google sheets and write to alumyears.json.
+  // Parse all officer sheets (current + historical) from DATAHUB_SPREADSHEET_ID
+  // For current officers, sheet name is "Officers"
+  // For past officers, sheet names follow format "Officers(XX-XX)"
   const allData = {};
   const alumYears = [];
   let latestYear = 0;
   
   for (const sheet of sheetNames) {
-    if (sheet.startsWith('Officers(')) {
+    let fullYear = null;
+    
+    if (sheet === 'Officers') {
+      // Current officers sheet - determine year from latest Officers(XX-XX)
+      // We'll add this after we find latestYear
+      continue;
+    } else if (sheet.startsWith('Officers(')) {
       const match = sheet.match(/\((\d{2})-(\d{2})\)/);
       if (match && match[1] && match[2]) {
-        const fullYear = `20${match[1]}-20${match[2]}`;
+        fullYear = `20${match[1]}-20${match[2]}`;
         alumYears.push(fullYear);
         
-        // Track the latest year found in the regex sheets
+        // Track the latest year found
         const endYear = parseInt(match[2]);
         latestYear = Math.max(latestYear, endYear);
-
-        const data = await getGoogleSheetData(auth, `${sheet}!A2:K`);
-        // Store the data in the allData object using the formatted year as the key.
-        allData[fullYear] = data;
       } else {
         console.warn(`Unexpected sheet format: ${sheet}`);
+        continue;
       }
+    }
+    
+    if (fullYear) {
+      const data = await getGoogleSheetData(auth, `${sheet}!A2:K`);
+      allData[fullYear] = data;
     }
   }
 
-  // Current year is the "Officers" sheet, which is one year ahead of the latest Officers(XX-XX) sheet
-  // Example: if latest is Officers(25-26), then Officers sheet = 26-27
+  // Current officers are in "Officers" sheet, which represents year (latestYear + 1)
+  // Example: if latest archived is Officers(25-26), then Officers sheet = 26-27
   const currentFullYear = `20${latestYear}-20${latestYear + 1}`;
   alumYears.push(currentFullYear);
+  const currentData = await getGoogleSheetData(auth, `Officers!A2:K`);
+  allData[currentFullYear] = currentData;
+  
+  // Also write current officers to officeroutput.json for backwards compatibility
+  writeToOutput(currentData, 'officeroutput.json');
   
   const sortedYears = Array.from(alumYears).sort().reverse();
   writeToOutput(sortedYears, 'alumyears.json');
-
   writeToOutput(allData, 'alumoutput.json');
 }
 
