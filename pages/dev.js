@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 import Link from 'next/link';
 import { NextSeo } from 'next-seo';
 import Banner from '../components/Banner';
@@ -41,9 +42,10 @@ function DevTeam() {
           </Link>&nbsp;with the Dev Team!
         </p>
         <h2 className="text-center">Our Projects</h2>
-        <div className="grid-desktop-3 text-center-mobile">
+        {/* <div className="grid-desktop-3 text-center-mobile">
           <Projects projects={projects} />
-        </div>
+        </div> */}
+        <Projects projects={projects} />
         <h2 className="text-center">Our Commitment to Open Source</h2>
         <p className={styles['project-info']}>
           Everything we build is&nbsp;
@@ -61,11 +63,17 @@ function DevTeam() {
             Github
           </Link>.
         </p>
+        <h2 className="text-center">Where We&apos;ve Worked</h2>
+        <p className={styles['project-info']}>
+          {/* eslint-disable-next-line max-len */}
+          Our ACM Dev officers and alumni have interned and worked at companies including Google, Amazon, Viasat, Apple, TikTok, Coinbase, and Oracle!
+        </p>
         <h2 className="text-center">Leadership</h2>
         <div className="grid-desktop-3 text-center-mobile">
           <Officers officers={devTeamExec} />
         </div>
-        <h2 className="text-center">Members</h2>
+        {/* <h2 className="text-center">Members</h2> */}
+        <h2 className="text-center">People</h2>
         <div className="grid-desktop-3 text-center-mobile">
           <Officers officers={devTeamOfficers} />
         </div>
