@@ -101,13 +101,12 @@ function About() {
           <div className={styles['text-section']}>
             <h1>What is ACM Board?</h1>
             <p>
-              {/* eslint-disable-next-line max-len */}
-              ACM Board is our leadership and administrative team including our{' '}
-              <Link href="/dev"> dev team</Link> that handles behind-scenes
-              logistics, financing, plans and hosts ACM-wide events
-              {/* eslint-disable-next-line max-len */}
-              and works towards improving the CS curriculum at UCLA by engaging
-              the CS faculty and department leadership.
+              ACM Board is our leadership and administrative team. Internal
+              Board keeps ACM running through finance, logistics, marketing,
+              and community-building, while External Board connects ACM with
+              companies, alumni, UCLA faculty, and other campus organizations.
+              Together, they plan ACM-wide events and advocate for students with
+              the CS department.
             </p>
           </div>
         </div>
@@ -137,18 +136,19 @@ function About() {
           >
             <Image
               src={initiative}
-              alt="the logos of all ACM intiatives"
+              alt="the logos of ACM initiatives"
               priority={true}
             />
           </div>
           <div className={styles['text-section']}>
             <h1>What are ACM Initiatives?</h1>
             <p>
-              ACM Initiatives are independent teams of ACM officers who dedicate
-              their time to work on long term projects and ideas that advance
-              our mission. Our current Initiatives include
-              <a href="impact"> Impact</a>, <a href="jedi"> JEDI</a>, and
-              Rustaceans.
+              ACM Initiatives are independent teams within Board that turn new
+              ideas into long-term projects for our community. Learn more about
+              our <Link href="/dev">Dev Team</Link>,{' '}
+              <Link href="/jedi">JEDI</Link>,{' '}
+              <Link href="/impact">Impact</Link>, and{' '}
+              <Link href="/quantum">Quantum</Link> initiatives.
             </p>
           </div>
         </div>
@@ -163,6 +163,10 @@ function About() {
             <p>
               No matter what your background or major is, we would love to have
               you at our events and activities!
+            </p>
+            <p>
+              Visit our <Link href="/events">event calendar</Link> to find an
+              upcoming workshop, social, or speaker event.
             </p>
             <p>
               To keep up with what&rsquo;s happening, we recommend joining&nbsp;
@@ -201,15 +205,45 @@ function About() {
             </div>
           </div>
         </div>
-        <div className={`${styles['content-section']} ${styles.leadership}`}>
+        <div className={styles['content-section']}>
           <h2>Leadership</h2>
           <p>
-            Our President and Internal/External Vice Presidents support the
-            entire ACM community while our committee presidents foster the
-            growth of their committee.
+            Our President sets ACM&rsquo;s direction, our Internal and External
+            Vice Presidents support the organization&rsquo;s operations and
+            partnerships, and our committee presidents help each community
+            grow.
           </p>
           <div className="grid-desktop-3">
             <Officers officers={filteredOfficers} size="compact" />
+          </div>
+        </div>
+        <div className={styles['content-section']}>
+          <div className={`${styles['text-section']} ${styles['full-width']}`}>
+            <h1>Who&rsquo;s who?</h1>
+            <p>
+              Meet <Link href="/officers">our officers</Link> and learn who
+              leads each part of ACM at UCLA.
+            </p>
+          </div>
+        </div>
+        <div className={styles['content-section']}>
+          <div className={`${styles['text-section']} ${styles['full-width']}`}>
+            <h1>How did ACM come to be?</h1>
+            <p>
+              Read <Link href="/history">our history</Link> to see how ACM at
+              UCLA grew and the milestones that shaped our community.
+            </p>
+          </div>
+        </div>
+        <div className={styles['content-section']}>
+          <div className={`${styles['text-section']} ${styles['full-width']}`}>
+            <h1>What clubs on campus does ACM collaborate with?</h1>
+            <p>
+              Explore our <Link href="/friends">Friends of ACM</Link> to learn
+              about organizations we have worked with. Clubs interested in
+              collaborating can reach our External Vice President at{' '}
+              <a href="mailto:acm@ucla.edu">acm@ucla.edu</a>.
+            </p>
           </div>
         </div>
       </div>
