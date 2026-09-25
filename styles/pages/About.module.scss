@@ -77,6 +77,10 @@
     text-align: left;
   }
 
+  .full-width {
+    max-width: 100%;
+  }
+
   h1 {
     font-size: 2em;
     line-height: 110%;
@@ -86,14 +90,10 @@
   }
 
   p {
-    font-size: 0.95em;
+    font-size: 1em;
     line-height: 150%;
     margin: 0 22px 14px;
   }
-}
-
-.leadership {
-  margin-bottom: 0 !important; //overrides content-section
 }
 
 .social-media {
