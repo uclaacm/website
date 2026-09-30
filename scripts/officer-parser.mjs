@@ -50,7 +50,7 @@ async function main() {
   // Example: if latest archived is Officers(25-26), then Officers sheet = 26-27
   const currentFullYear = `20${latestYear}-20${latestYear + 1}`;
   alumYears.push(currentFullYear);
-  const currentData = await getGoogleSheetData(auth, `Officers!A3:K`);
+  const currentData = await getGoogleSheetData(auth, `Officers!A3:M`, true);
   allData[currentFullYear] = currentData;
   
   // Also write current officers to officeroutput.json for backwards compatibility
@@ -83,7 +83,7 @@ async function authorizeGoogleAPI() {
 
 // Read data from Google sheets
 // using sheet range (eg: 'Week 1!A:H)
-async function getGoogleSheetData(auth, range) {
+async function getGoogleSheetData(auth, range, isCurrent = false) {
   const committees = [
     'Board',
     'Board, Dev Team',
@@ -114,6 +114,8 @@ async function getGoogleSheetData(auth, range) {
     const rows = res?.data.values;
     for (let i = 0; i < rows.length; i++) {
       const row = rows[i];
+      // Current sheet has extra Transfer?/Grad? columns (G, H); drop them
+      if (isCurrent) row.splice(6, 2);
       if (committees.includes(row[0])) {
         currCommittee = row[0];
       } else if (row[1]) {
@@ -143,6 +145,7 @@ async function getGoogleSheetData(auth, range) {
             }
           } catch (err) {
             console.log(err);
+            image = 'https://t4.ftcdn.net/jpg/02/15/84/43/360_F_215844325_ttX9YiIIyeaR7Ne6EaLLjMAmy4GvPC69.jpg';
           }
         }
         row[11] = currCommittee;
