@@ -1,9 +1,13 @@
 // import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Image from 'next/legacy/image';
+import { useState } from 'react';
 
 import styles from '../../styles/components/Officers/OfficerCard.module.scss';
 import '@fortawesome/fontawesome-svg-core/styles.css';
+
+const DEFAULT_PHOTO =
+  'https://t4.ftcdn.net/jpg/02/15/84/43/360_F_215844325_ttX9YiIIyeaR7Ne6EaLLjMAmy4GvPC69.jpg';
 
 function Officer({
   name,
@@ -16,6 +20,10 @@ function Officer({
   /* eslint-disable-next-line no-unused-vars */
   committee, // no officer card formats use committee yet
 }) {
+  // Fall back to the default photo if the image fails to load
+  // (e.g. a Google Drive file that isn't shared publicly)
+  const [failedImg, setFailedImg] = useState(null);
+  const photo = img && img !== failedImg ? img : DEFAULT_PHOTO;
   if (size && size.toLowerCase() === 'compact') {
     return (
       <div
@@ -25,12 +33,14 @@ function Officer({
           <div className={styles['image-container']}>
             <Image
               className="officer-image"
-              src={img}
+              src={photo}
               alt={alt}
               width={130}
               height={130}
               objectFit="cover" // Crop to fit the aspect ratio
               unoptimized={true}
+              referrerPolicy="no-referrer" // Google Drive images return 429 when a Referer is sent
+              onError={() => setFailedImg(img)}
             />
           </div>
         </div>
