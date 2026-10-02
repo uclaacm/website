@@ -21,14 +21,12 @@ const { committees, internship, board, dev } = data;
 
 const internshipInfo = board.concat(dev, committees);
 
-// Quantum is an initiative, not a committee, so it only gets a transition card
+// TODO: Add Quantum as a committee instead of initiative, this is temporary
 const nextStepsInfo = internshipInfo.concat({
   name: 'Quantum',
   image: '/images/committees/quantum_wordmark.png',
-  // the PNG has transparent padding, so it needs to be taller to match the SVG wordmarks
   imageHeight: '36px',
   internship: {
-    // TODO: replace with Quantum's transition info
     nextSteps: 'Interns will have the opportunity to become Quantum officers.',
   },
 });
