@@ -35,7 +35,7 @@ function Quantum() {
       number: '06',
       title: 'Extra content',
       description: "If there is sufficient interest and time, we'll cover anything you're curious about!",
-    }
+    },
   ];
 
   const applied = [
@@ -50,14 +50,14 @@ function Quantum() {
     {
       title: 'Spin qubits',
       description: 'Explored the theory of spin qubits',
-    }
+    },
   ];
 
   const team = [
     {
       name: 'Victor Yu',
       position: 'CO-PRESIDENT',
-      introduction: 'Victor is a third-year at UCLA studying Eletrical Engineering. He works in the Petta Group to develop automated tune-up and qubit calibration sequences for quantum dot devices. In his free time, he enjoys playing the piano, reading fantasy & science fiction, eating good food, and going on runs.',
+      introduction: 'Victor is a third-year at UCLA studying Electrical Engineering. He works in the Petta Group to develop automated tune-up and qubit calibration sequences for quantum dot devices. In his free time, he enjoys playing the piano, reading fantasy & science fiction, eating good food, and going on runs.',
       photo: '/images/quantum/quantum-officers/VictorYu.jpg',
     },
     {
@@ -69,7 +69,7 @@ function Quantum() {
     {
       name: 'Cyrus Zeng',
       position: 'OFFICER',
-      introduction: 'Cyrus Zeng is a second-year at UCLA studying math and computer science. Outside of class he builds data and product projects - recommendation systems, analytics dashboards, and product wireframes - and is learning quantum in his own time as well. He likes anything music, follows soccer and the Premier League, and occassionally hits the gym.',
+      introduction: 'Cyrus Zeng is a second-year at UCLA studying math and computer science. Outside of class he builds data and product projects - recommendation systems, analytics dashboards, and product wireframes - and is learning quantum in his own time as well. He likes anything music, follows soccer and the Premier League, and occasionally hits the gym.',
       photo: null,
     },
   ];
@@ -162,18 +162,18 @@ function Quantum() {
           <div className={styles['applied-track-container']}>
             <h3>The Applied Track</h3>
             <p className={styles['advanced-track-description']}>
-            The Applied Track is intended to explore whatever you're most interested in! 
-            This is a great opportunity to gain real-world experience and make meaningful 
+            The Applied Track is intended to explore whatever you&apos;re most interested in!
+            This is a great opportunity to gain real-world experience and make meaningful
             contributions to the quantum computing community.
-          </p>
-          <div className={styles['applied-track-grid']}>
-            {applied.map((item, index) => (
-              <div key={index} className={styles['applied-track-item']}>
-                <h4>{item.title}</h4>
-                <p>{item.description}</p>
-              </div>
-            ))}
-          </div>
+            </p>
+            <div className={styles['applied-track-grid']}>
+              {applied.map((item, index) => (
+                <div key={index} className={styles['applied-track-item']}>
+                  <h4>{item.title}</h4>
+                  <p>{item.description}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
 
