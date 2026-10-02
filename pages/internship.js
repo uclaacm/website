@@ -46,8 +46,8 @@ function InternshipPage() {
         <h1>ACM Internship Program</h1>
         {/* eslint-disable-next-line max-len */}
         <h2>
-          The ACM Internship Program is now closed. <br />
-          Please check back in future quarters for officer recruitment!
+          Intern applications will open after Fall GM! Apply on the{' '}
+          <a href="https://members.uclaacm.com/home">ACM Membership Portal</a>.
         </h2>
         <br />
         <p className={styles['internship-intro']}>

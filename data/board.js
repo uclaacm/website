@@ -134,16 +134,6 @@ export default [
             Marketing interns will advertise general ACM events and maintain our
             online presence.
           </li>
-          <li>
-            {' '}
-            Photography interns will record memories of our events, and take
-            headshots.
-          </li>
-          <li>
-            {' '}
-            Transfer Affairs Intern will coordinate events to engage the
-            transfer community at UCLA.
-          </li>
         </ul>
       ),
       card: '/images/cards/board_card.svg',
