@@ -26,7 +26,7 @@ export const projects = [
     prim_lang: 'JS',
     proj_link: 'https://members.uclaacm.com/login',
     repo_link: 'https://github.com/uclaacm/membership-portal',
-    description: `We are in the process of improving the Membreship Portal and built-in internship portal with a refreshed UI and new
+    description: `We are in the process of improving the Membership Portal and built-in internship portal with a refreshed UI and new
     features!`,
     img: '/images/dev-projects/membership_new.png',
     alt: 'New Membership Portal!',
