@@ -32,7 +32,7 @@ export const projects = [
     alt: 'New Membership Portal!',
   },
   {
-    name: 'AWS (ACM Web Servers)',
+    name: 'AWS (ACM Web Services)',
     prim_lang: 'N/A',
     proj_link: '',
     repo_link: '',
