@@ -17,7 +17,7 @@ export const projects = [
     proj_link: 'https://members.uclaacm.com/login',
     repo_link: 'https://github.com/uclaacm/membership-portal',
     description: `The Membership Portal is where ACM members can check in to events to earn 
-    points! We built the Membership Portal with Node.js, Express.js, PostgreSQL, Redux and React.js.`,
+    points! We built the Membership Portal with Node.js, Express.js, PostgreSQL, and React.js.`,
     img: '/images/dev-projects/membership.png',
     alt: 'Membership Portal!',
   },
@@ -26,18 +26,18 @@ export const projects = [
     prim_lang: 'JS',
     proj_link: 'https://members.uclaacm.com/login',
     repo_link: 'https://github.com/uclaacm/membership-portal',
-    description: `We are in the process of updating the Membership Portal with a refreshed UI and new
-    features! The new portal will be built with Next.js, TypeScript, and Tailwind CSS.`,
+    description: `We are in the process of improving the Membership Portal and built-in internship portal with a refreshed UI and new
+    features!`,
     img: '/images/dev-projects/membership_new.png',
     alt: 'New Membership Portal!',
   },
   {
-    name: 'Server Cluster',
+    name: 'AWS (ACM Web Services)',
     prim_lang: 'N/A',
     proj_link: '',
     repo_link: '',
-    description: `ACM server cluster to reduce our reliance on AWS and provide a more cost-effective 
-    solution for hosting our projects. We are in the process of trialing a proof of concept.`,
+    description: `AWS includes our server clusters and in-house infrastructure to reduce our reliance on AWS and provide a more cost-effective 
+    solution for hosting our projects.`,
     img: '/images/dev-projects/servercluster.png',
     alt: 'No to AWS!',
   },
@@ -79,7 +79,7 @@ export const projects = [
     prim_lang: '???',
     proj_link: 'mailto:dev@uclaacm.com',
     repo_link: 'mailto:dev@uclaacm.com',
-    description: `Have an idea for a project or any questions?<br><br>Feel free to contact Alex Zheng
+    description: `Have an idea for a project or any questions?<br><br>Feel free to contact Camilla Chan
      (<a href="mailto:dev@uclaacm.com">Email</a>), our Dev Team Director.`,
     img: '/images/dev-projects/acmlogocopy.jpg',
     alt: 'ACM Logo!',

@@ -1,52 +1,53 @@
-import moment from 'moment';
+// import moment from 'moment';
 import { NextSeo } from 'next-seo';
-import { useState } from 'react';
-import { Calendar, momentLocalizer } from 'react-big-calendar';
+// import { useState } from 'react';
+// import { Calendar, momentLocalizer } from 'react-big-calendar';
 
 import Banner from '../components/Banner';
-import Filters from '../components/Events/Filters';
-import SelectedEvent from '../components/Events/SelectedEvent';
+// import Filters from '../components/Events/Filters';
+// import SelectedEvent from '../components/Events/SelectedEvent';
 import Layout from '../components/Layout';
 
-import getAllEvents from '../scripts/event-generator-sheets.mjs';
+// import getAllEvents from '../scripts/event-generator-sheets.mjs';
 import styles from '../styles/pages/Events.module.scss';
 
-import 'react-big-calendar/lib/css/react-big-calendar.css';
+// import 'react-big-calendar/lib/css/react-big-calendar.css';
 
-const localizer = momentLocalizer(moment);
+// const localizer = momentLocalizer(moment);
 
-// see eventPropGetter
-const getEventClassByEvent = (event) => {
-  let modifierStr = '';
-  if (event.committee) {
-    modifierStr = `rbc-override-${event.committee}`;
-  }
-  return {
-    className: `rbc-override-event ${modifierStr}`,
-  };
-};
+// // see eventPropGetter
+// const getEventClassByEvent = (event) => {
+//   let modifierStr = '';
+//   if (event.committee) {
+//     modifierStr = `rbc-override-${event.committee}`;
+//   }
+//   return {
+//     className: `rbc-override-event ${modifierStr}`,
+//   };
+// };
 
 // const googleCalendarShare = 'https://calendar.google.com/calendar/u/2?cid=YWNtYnJ1aW5zQGdtYWlsLmNvbQ';
 
-function Events({ events }) {
-  const [activeEvent, setActiveEvent] = useState(null);
+// function Events({ events }) {
+function Events() {
+  // const [activeEvent, setActiveEvent] = useState(null);
 
-  const [indexedEvents, setIndexedEvents] = useState(() => {
-    // Check if events exist and have the expected structure
-    if (!Array.isArray(events)) return [];
-    return events.map((event, index) => ({ ...event, id: index }));
-  });
+  // const [indexedEvents, setIndexedEvents] = useState(() => {
+  //   // Check if events exist and have the expected structure
+  //   if (!Array.isArray(events)) return [];
+  //   return events.map((event, index) => ({ ...event, id: index }));
+  // });
 
-  // Handle changes from Filters
-  const handleFilteredEvents = (newEvents) => {
-    // Validate newEvents before updating
-    if (Array.isArray(newEvents)) {
-      setIndexedEvents(newEvents);
-    } else {
-      // Optional: Handle unexpected newEvents format (maybe set to an empty array or log an error)
-      setIndexedEvents([]);
-    }
-  };
+  // // Handle changes from Filters
+  // const handleFilteredEvents = (newEvents) => {
+  //   // Validate newEvents before updating
+  //   if (Array.isArray(newEvents)) {
+  //     setIndexedEvents(newEvents);
+  //   } else {
+  //     // Optional: Handle unexpected newEvents format (maybe set to an empty array or log an error)
+  //     setIndexedEvents([]);
+  //   }
+  // };
 
   return (
     (<Layout>
@@ -69,10 +70,12 @@ function Events({ events }) {
       <div className={styles['events-container']}>
         <h1 className="text-center">Our Events</h1>
         <p className="text-center">
-          Take a look at our fancy calendar. An updated google calendar of
-          events is in the works!
+          {/* Take a look at our fancy calendar. An updated google calendar of
+          events is in the works! */}
+          Take a look at our fancy calendar and events page in the{' '}
+          <a href="https://members.uclaacm.com/events">ACM Membership Portal</a>!
         </p>
-        <div className={styles['calendar-view-container']}>
+        {/* <div className={styles['calendar-view-container']}>
           <div>
             <Filters handleChange={handleFilteredEvents} />
             {indexedEvents.length ? ( // Check if we have events to show
@@ -100,7 +103,7 @@ function Events({ events }) {
             )}
           </div>
           <SelectedEvent event={activeEvent} />
-        </div>
+        </div> */}
         <p>
           {/* eslint-disable-next-line max-len */}
           This event page is still new. Please send us any feedback you have via
@@ -122,25 +125,25 @@ function Events({ events }) {
   );
 }
 
-export const getStaticProps = async () => {
-  try {
-    const events = await getAllEvents();
-    return {
-      props: {
-        events: events,
-      },
-      revalidate: 3600,
-    };
-  } catch (error) {
-    // eslint-disable-next-line no-console
-    console.error('Failed to fetch events:', error.message);
-    return {
-      props: {
-        events: [], // Return empty array as fallback
-      },
-      revalidate: 3600,
-    };
-  }
-};
+// export const getStaticProps = async () => {
+//   try {
+//     const events = await getAllEvents();
+//     return {
+//       props: {
+//         events: events,
+//       },
+//       revalidate: 3600,
+//     };
+//   } catch (error) {
+//     // eslint-disable-next-line no-console
+//     console.error('Failed to fetch events:', error.message);
+//     return {
+//       props: {
+//         events: [], // Return empty array as fallback
+//       },
+//       revalidate: 3600,
+//     };
+//   }
+// };
 
 export default Events;
