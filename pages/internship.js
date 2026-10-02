@@ -21,6 +21,18 @@ const { committees, internship, board, dev } = data;
 
 const internshipInfo = board.concat(dev, committees);
 
+// Quantum is an initiative, not a committee, so it only gets a transition card
+const nextStepsInfo = internshipInfo.concat({
+  name: 'Quantum',
+  image: '/images/committees/quantum_wordmark.png',
+  // the PNG has transparent padding, so it needs to be taller to match the SVG wordmarks
+  imageHeight: '36px',
+  internship: {
+    // TODO: replace with Quantum's transition info
+    nextSteps: 'Interns will have the opportunity to become Quantum officers.',
+  },
+});
+
 const { items, testimonials, QA } = internship;
 
 function InternshipPage() {
@@ -90,12 +102,13 @@ function InternshipPage() {
           role="tablist"
           aria-label="Intern to officer transition cards for each committee"
         >
-          {internshipInfo.map((committee) => (
+          {nextStepsInfo.map((committee) => (
             <NextSteps
               image={committee.image}
               name={committee.name}
               key={committee.name}
               info={committee.internship.nextSteps}
+              imageHeight={committee.imageHeight}
             />
           ))}
         </div>

@@ -1,5 +1,5 @@
 function NextSteps(props) {
-  const { image, name, info } = props;
+  const { image, name, info, imageHeight = '30px' } = props;
   return (
     // <button className={styles['committee-card']} onClick={() => setFlipped(!isFlipped)} role='tab'>
     //     <div className={`${styles['next-steps-card-inner']} ${styles[isFlipped ? null : 'is-flipped']}`}>
@@ -26,7 +26,7 @@ function NextSteps(props) {
         }}
       >
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={image} alt={name} height="30px" />
+        <img src={image} alt={name} height={imageHeight} />
         <p>{info}</p>
       </div>
     </>)
