@@ -9,17 +9,17 @@ function Quantum() {
     {
       number: '01',
       title: 'The qubit and quantum gates',
-      description: "Learn what makes a qubit more powerful than a classical bit and how we can manipulate them with quantum gates.",
+      description: 'Learn what makes a qubit more powerful than a classical bit and how we can manipulate them with quantum gates.',
     },
     {
       number: '02',
       title: 'Quantum circuits & teleportation',
-      description: "Begin constructing more complex quantum circuits, including a teleportation circuit! Learn to code in Qiskit.",
+      description: 'Begin constructing more complex quantum circuits, including a teleportation circuit! Learn to code in Qiskit.',
     },
     {
       number: '03',
       title: 'Deutsch-Jozsa algorithm',
-      description: "Learn about and implement one of the first quantum algorithms with quantum advantage.",
+      description: 'Learn about and implement one of the first quantum algorithms with quantum advantage.',
     },
     {
       number: '04',
@@ -29,12 +29,12 @@ function Quantum() {
     {
       number: '05',
       title: "Grover's Algorithm — the implementation",
-      description: "Work in groups to implement Gover's algorithm from scratch and run it on real quantum computers!",
+      description: "Work in groups to implement Grover's algorithm from scratch and run it on real quantum computers!",
     },
     {
       number: '06',
-      title: "Extra content",
-      description: "If there is sufficient interest and time, we'll cover anything you're curious about!"
+      title: 'Extra content',
+      description: "If there is sufficient interest and time, we'll cover anything you're curious about!",
     }
   ];
 
@@ -121,7 +121,6 @@ function Quantum() {
           </div>
         </div>
 
-
         <div className={styles['youtube-button-container']}>
           <a
             href="https://www.youtube.com/watch?v=6PcuyKaVyho&list=PLPO7_kXilXFaG_Cz6P27Y4u-PozoocHv-"
@@ -142,7 +141,7 @@ function Quantum() {
           <hr className={styles['section-divider']} ></hr>
           <h2>Introductory Workshop Schedule</h2>
           <div className={styles['workshops-container']}>
-            {workshops.map((workshop, index) => (
+            {workshops.map((workshop) => (
               <div key={workshop.number} className={styles['workshop-item']}>
                 <div className={styles['workshop-number']}>
                   {workshop.number}
