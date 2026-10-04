@@ -429,10 +429,10 @@ export default [
     tagline: 'Learning Machine Learning',
     external_link: null,
     links: [
-      // {
-      //  platform: 'website',
-      //  link: null,
-      // },
+      {
+        platform: 'website',
+        link: 'https://ai.uclaacm.com',
+      },
       {
         platform: 'discord',
         link: '/ai/discord',
