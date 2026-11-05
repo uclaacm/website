@@ -21,6 +21,16 @@ const { committees, internship, board, dev } = data;
 
 const internshipInfo = board.concat(dev, committees);
 
+// TODO: Add Quantum as a committee instead of initiative, this is temporary
+const nextStepsInfo = internshipInfo.concat({
+  name: 'Quantum',
+  image: '/images/committees/quantum_wordmark.png',
+  imageHeight: '36px',
+  internship: {
+    nextSteps: 'Interns will have the opportunity to become Quantum officers.',
+  },
+});
+
 const { items, testimonials, QA } = internship;
 
 function InternshipPage() {
@@ -46,8 +56,8 @@ function InternshipPage() {
         <h1>ACM Internship Program</h1>
         {/* eslint-disable-next-line max-len */}
         <h2>
-          The ACM Internship Program is now closed. <br />
-          Please check back in future quarters for officer recruitment!
+          Intern applications will open after Fall GM! Apply on the{' '}
+          <a href="https://members.uclaacm.com/home">ACM Membership Portal</a>.
         </h2>
         <br />
         <p className={styles['internship-intro']}>
@@ -90,12 +100,13 @@ function InternshipPage() {
           role="tablist"
           aria-label="Intern to officer transition cards for each committee"
         >
-          {internshipInfo.map((committee) => (
+          {nextStepsInfo.map((committee) => (
             <NextSteps
               image={committee.image}
               name={committee.name}
               key={committee.name}
               info={committee.internship.nextSteps}
+              imageHeight={committee.imageHeight}
             />
           ))}
         </div>

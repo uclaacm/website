@@ -4,31 +4,31 @@ import styles from '../styles/pages/Internship.module.scss';
 export default {
   items: [
     {
-      date: '09/30',
+      date: '10/2',
       name: 'Fall General Meeting',
       info: 'Come learn about the different ACM committees!',
       active: true,
     },
     {
-      date: '09/30',
-      name: 'Application Form is Open',
-      info: 'Applications open right after the Fall GM! You get to choose 3 committees to apply to. You must apply by 10/14',
+      date: '10/2',
+      name: 'Applications open in membership portal',
+      info: 'Applications open right after the Fall GM! You get to choose 3 committees to apply to. You must apply by 10/16',
       active: true,
     },
     {
-      date: '10/14',
+      date: '10/16',
       name: 'Applications Due',
       info: 'Submit your application by 11:59 pm',
       active: true,
     },
     {
-      date: '10/20+',
+      date: 'Weeks 4/5',
       name: 'Interviews',
       info: 'A handful of applicants will be chosen for an interview with the committee(s) you applied to',
       active: true,
     },
     {
-      date: '11/3',
+      date: 'Week 6',
       name: 'Decisions Released',
       info: 'Hear back via Email what committee(s) accepted you',
       active: true,

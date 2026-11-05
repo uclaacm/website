@@ -7,60 +7,69 @@ import styles from '../styles/pages/quantum.module.scss';
 function Quantum() {
   const workshops = [
     {
-      number: 1,
-      title: 'Introduction to Quantum Gates',
-      points: [
-        'Learn about H-gates, X-gates and use them to construct classical logic',
-      ],
+      number: '01',
+      title: 'The qubit and quantum gates',
+      description: 'Learn what makes a qubit more powerful than a classical bit and how we can manipulate them with quantum gates.',
     },
     {
-      number: 2,
-      title: 'Quantum Circuits & Teleportation',
-      points: [
-        'Learn about the Bell-state and Bloch sphere',
-        'Begin coding in Qiskit',
-        'Quantum teleportation!',
-      ],
+      number: '02',
+      title: 'Quantum circuits & teleportation',
+      description: 'Begin constructing more complex quantum circuits, including a teleportation circuit! Learn to code in Qiskit.',
     },
     {
-      number: 3,
-      title: 'Deutsch-Jozsa Algorithm',
-      points: [
-        'Learn about one of the earliest quantum algorithms',
-        'Understand & implement an algorithm with quantum advantage',
-      ],
+      number: '03',
+      title: 'Deutsch-Jozsa algorithm',
+      description: 'Learn about and implement one of the first quantum algorithms with quantum advantage.',
     },
     {
-      number: 4,
-      title: "Grover's Algorithm, Part 1",
-      points: [
-        "Learn about Grover's algorithm, an influential quantum search algorithm",
-      ],
+      number: '04',
+      title: "Grover's Algorithm — the theory",
+      description: "Learn about the fastest known approach to unstructured search, Grover's algorithm.",
     },
     {
-      number: 5,
-      title: "Grover's Algorithm, Part 2",
-      points: [
-        "Implement Grover's algorithm in Qiskit and run it on real quantum hardware",
-      ],
+      number: '05',
+      title: "Grover's Algorithm — the implementation",
+      description: "Work in groups to implement Grover's algorithm from scratch and run it on real quantum computers!",
+    },
+    {
+      number: '06',
+      title: 'Extra content',
+      description: "If there is sufficient interest and time, we'll cover anything you're curious about!",
+    },
+  ];
+
+  const applied = [
+    {
+      title: 'Open source',
+      description: 'Implemented quantum algorithms in open-source libraries',
+    },
+    {
+      title: 'QEC + benchmarks',
+      description: 'Contributed to error correction & benchmarking efforts',
+    },
+    {
+      title: 'Spin qubits',
+      description: 'Explored the theory of spin qubits',
     },
   ];
 
   const team = [
     {
       name: 'Victor Yu',
+      position: 'CO-PRESIDENT',
+      introduction: 'Victor is a third-year at UCLA studying Electrical Engineering. He works in the Petta Group to develop automated tune-up and qubit calibration sequences for quantum dot devices. In his free time, he enjoys playing the piano, reading fantasy & science fiction, eating good food, and going on runs.',
       photo: '/images/quantum/quantum-officers/VictorYu.jpg',
     },
     {
-      name: 'Ian Kwon',
-      photo: '/images/quantum/quantum-officers/IanKwon.jpg',
-    },
-    {
       name: 'Aarav Pabla',
+      position: 'CO-PRESIDENT',
+      introduction: 'Aarav is a computer science and physics student. He is interested in fault-tolerant quantum computing and quantum complexity theory. He has worked on efficient quantum code architectures and creating robust implementations of fault-tolerant protocols in the presence of realistic hardware noise. In his free time, he likes to go on bike trips, play tennis, and go amusement park hopping.',
       photo: '/images/quantum/quantum-officers/AaravPabla.jpg',
     },
     {
-      name: 'Coming Soon',
+      name: 'Cyrus Zeng',
+      position: 'OFFICER',
+      introduction: 'Cyrus Zeng is a second-year at UCLA studying math and computer science. Outside of class he builds data and product projects - recommendation systems, analytics dashboards, and product wireframes - and is learning quantum in his own time as well. He likes anything music, follows soccer and the Premier League, and occasionally hits the gym.',
       photo: null,
     },
   ];
@@ -100,18 +109,10 @@ function Quantum() {
                 </p>
                 <p className={styles['meeting-info']}>
                   <strong>
-                    For the Winter 2026 quarter, find us for the Introductory
-                    Track in M.S. 5147, each Tuesday from 6:00 pm - 7:50 pm!
+                    [ Applied Track - MS 6201 Tuesdays, 6-7pm ]
                   </strong>
                 </p>
               </div>
-            </div>
-            <div className={styles['banner-right']}>
-              <img
-                src="/images/quantum/banner.png"
-                alt="Quantum Banner Graphic"
-                className={styles['banner-image']}
-              />
             </div>
           </div>
 
@@ -137,45 +138,43 @@ function Quantum() {
 
         {/* Workshop Schedule Section */}
         <div className={styles['schedule-section']}>
-          <h2>Winter Workshop Schedule</h2>
+          <hr className={styles['section-divider']} ></hr>
+          <h2>Introductory Workshop Schedule</h2>
           <div className={styles['workshops-container']}>
-            {workshops.map((workshop, index) => (
+            {workshops.map((workshop) => (
               <div key={workshop.number} className={styles['workshop-item']}>
                 <div className={styles['workshop-number']}>
                   {workshop.number}
                 </div>
                 <div className={styles['workshop-content']}>
                   <h3>{workshop.title}</h3>
-                  <ul>
-                    {workshop.points.map((point, idx) => (
-                      <li key={idx}>{point}</li>
-                    ))}
-                  </ul>
+                  <p>{workshop.description}</p>
                 </div>
-                {index < workshops.length - 1 && index !== 2 && (
-                  <div className={styles['workshop-arrow']}>
-                    <img src="/images/quantum/arrow.png" alt="" />
-                  </div>
-                )}
               </div>
             ))}
           </div>
-          <p className={styles['schedule-note']}>
-            And a social, guest lecture, and more!
-          </p>
         </div>
 
-        {/* Advanced Track Section */}
-        <div className={styles['advanced-track-section']}>
-          <h2>Advanced Track</h2>
-          <p className={styles['advanced-track-description']}>
-            New for Winter 2026! Join us
-            <strong> every two weeks on Thursdays at 6:00 PM </strong>
-            for our advanced track where we contribute to an open source
-            quantum computing library. This is a great opportunity to gain
-            real-world experience and make meaningful contributions to the
-            quantum computing community.
-          </p>
+        {/* Applied Track Section */}
+        <div className={styles['applied-track-section']}>
+          <hr className={styles['section-divider']} ></hr>
+          <h2>Applied Track Schedule</h2>
+          <div className={styles['applied-track-container']}>
+            <h3>The Applied Track</h3>
+            <p className={styles['advanced-track-description']}>
+            The Applied Track is intended to explore whatever you&apos;re most interested in!
+            This is a great opportunity to gain real-world experience and make meaningful
+            contributions to the quantum computing community.
+            </p>
+            <div className={styles['applied-track-grid']}>
+              {applied.map((item, index) => (
+                <div key={index} className={styles['applied-track-item']}>
+                  <h4>{item.title}</h4>
+                  <p>{item.description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
 
         <div className={styles['shape-bottom-right']}>
@@ -184,7 +183,8 @@ function Quantum() {
 
         {/* Team Section */}
         <div className={styles['team-section']}>
-          <h2>Team</h2>
+          <hr className={styles['section-divider']} ></hr>
+          <h2>Meet the Team</h2>
           <div className={styles['team-grid']}>
             {team.map((member, index) => (
               <div key={index} className={styles['team-member']}>
@@ -195,7 +195,9 @@ function Quantum() {
                     <div className={styles['placeholder-photo']}></div>
                   )}
                 </div>
-                <h4>{member.name}</h4>
+                <h3>{member.name}</h3>
+                <h4>{member.position}</h4>
+                <p>{member.introduction}</p>
               </div>
             ))}
           </div>

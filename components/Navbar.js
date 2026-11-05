@@ -30,7 +30,7 @@ export default function Navbar() {
   ];
 
   const eventLinks = [
-    { label: 'Calendar', href: '/events'},
+    // { label: 'Calendar', href: '/events'},
     { label: 'Linktree', href: 'https://linktr.ee/acmucla'},
     { label: 'General Meeting', href: '/gm'},
     { label: 'CS Town Hall', href: '/town-hall'},
