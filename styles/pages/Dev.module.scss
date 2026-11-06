@@ -17,6 +17,7 @@
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 2rem;
 }
 
 $navbar-breakpoint: 992px;
@@ -26,5 +27,73 @@ $tablet-breakpoint: 768px;
   .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+}
+
+.project-spacing {
+  margin-top: 2rem;
+}
+
+// diamond carousel container
+.carousel-section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0.75rem 0 2rem;
+  width: 100%;
+}
+
+.carousel-track {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 400px; // enough height for the largest diamond + its title beneath
+  position: relative;
+  width: 100%;
+}
+
+.carousel-controls {
+  align-items: center;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 0.8rem;
+}
+
+.carousel-btn {
+  background: none;
+  border: 0;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1.5px rgba(150, 150, 150, 0.2), 0 0 8px 1px rgba(150, 150, 150, 0.1);
+  cursor: pointer;
+  font-size: 1.2rem;
+  height: 2.5rem;
+  line-height: 1;
+  transition: box-shadow 0.2s, color 0.2s;
+  width: 2.5rem;
+
+  &:hover {
+    box-shadow: 0 0 0 1.5px #10A0D4, 0 0 8px 1px rgba(16, 160, 212, 0.3);
+    color: #10A0D4;
+  }
+}
+
+.carousel-dots {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.carousel-dot {
+  background: #61616140;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 0.5rem;
+  padding: 0;
+  transition: background 0.2s;
+  width: 0.5rem;
+
+  &.active {
+    background: #10A0D4;
   }
 }
